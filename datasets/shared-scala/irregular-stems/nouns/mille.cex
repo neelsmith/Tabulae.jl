@@ -1,0 +1,16 @@
+StemUrn#LexicalEntity#String#Gender#Case#Number
+
+latcommon.irregn29060a#ls.n29060#mille#neut#nom#sg
+latcommon.irregn29060b#ls.n29060#mille#neut#gen#sg
+latcommon.irregn29060c#ls.n29060#mille#neut#dat#sg
+latcommon.irregn29060d#ls.n29060#mille#neut#acc#sg
+latcommon.irregn29060e#ls.n29060#mille#neut#abl#sg
+latcommon.irregn29060f#ls.n29060#mille#neut#voc#sg
+
+
+latcommon.irregn29060a#ls.n29060#milia#neut#nom#pl
+
+latcommon.irregn29060c#ls.n29060#milibus#neut#dat#pl
+latcommon.irregn29060d#ls.n29060#milia#neut#acc#pl
+latcommon.irregn29060e#ls.n29060#milibus#neut#abl#pl
+latcommon.irregn29060f#ls.n29060#milia#neut#voc#pl

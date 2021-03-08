@@ -1,0 +1,9 @@
+RuleUrn#InflectionClasses#Ending#gender#Case#Number
+
+latcommoninfl.es_is1#es_is#es#masc#nom#sg
+latcommoninfl.es_is2#es_is#is#masc#gen#sg
+latcommoninfl.es_is2bis#es_is#i#masc#gen#sg
+latcommoninfl.es_is3#es_is#i#masc#dat#sg
+latcommoninfl.es_is4#es_is#em#masc#acc#sg
+latcommoninfl.es_is5#es_is#e#masc#abl#sg
+latcommoninfl.es_is6#es_is#es#masc#nom#pl

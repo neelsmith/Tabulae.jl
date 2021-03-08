@@ -1,0 +1,11 @@
+RuleUrn#InflectionClasses#Ending#Gender#Case#Number
+
+latcommoninfl.es_ae1#es_ae#es#masc#nom#sg
+latcommoninfl.es_ae1b#es_ae#a#masc#nom#sg
+latcommoninfl.es_ae2#es_ae#ae#masc#gen#sg
+latcommoninfl.es_ae3#es_ae#ae#masc#dat#sg
+latcommoninfl.es_ae4b#es_ae#am#masc#acc#sg
+latcommoninfl.es_ae4#es_ae#en#masc#acc#sg
+latcommoninfl.es_ae5#es_ae#e#masc#abl#sg
+latcommoninfl.es_ae5b#es_ae#a#masc#abl#sg
+latcommoninfl.es_ae6#es_ae#a#masc#voc#sg
