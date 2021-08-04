@@ -1,32 +1,19 @@
 module Tabulae
+using CitableParserBuilder
 using CitableObject
 using Glob, Unicode
+using DocStringExtensions, Documenter
 
 
    
 
+
+
+
+#export buildparser
+
+include("forms.jl")
 #=
-
-export AbbreviatedUrn
-export buildparser
-
-export Stem
-export Rule
-export Analysis
-
-
-
-abstract type Stem end
-abstract type StemType end
-abstract type Rule end
-abstract type RuleType end
-abstract type Analysis end
-abstract type AnalysisType end
-abstract type AbbreviatedUrn end
-
-
- 
-
 include("config.jl")
 include("dataset.jl")
 include("abbrurn.jl")
@@ -39,4 +26,5 @@ include("acceptorsquashers.jl")
 # Specific analytical types ("parts of speech")
 include("uninflected.jl")
 =#
+
 end # module
