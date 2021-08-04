@@ -12,8 +12,13 @@ using DocStringExtensions, Documenter
 
 #export buildparser
 export LatinMorphologicalForm
+export fromfst
 
 include("forms.jl")
+include("formvalues.jl")
+include("serialization.jl")
+
+include("morphology/finiteverb.jl")
 
 #=
 include("config.jl")
