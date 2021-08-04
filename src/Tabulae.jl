@@ -11,8 +11,10 @@ using DocStringExtensions, Documenter
 
 
 #export buildparser
+export LatinMorphologicalForm
 
 include("forms.jl")
+
 #=
 include("config.jl")
 include("dataset.jl")
