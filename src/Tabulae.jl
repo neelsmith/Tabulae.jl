@@ -19,6 +19,7 @@ include("formvalues.jl")
 include("serialization.jl")
 
 include("morphology/finiteverb.jl")
+include("morphology/noun.jl")
 
 #=
 include("config.jl")

@@ -51,9 +51,9 @@ const uninflectedpairs = [
 $(SIGNATURES)
 """
 const genderpairs = [
-    (1, "masculine"),
-    (2, "feminine"),
-    (3, "neuter")
+    (1, "masc"),
+    (2, "fem"),
+    (3, "neut")
 ]
 
 """Constants for substantive case.
@@ -61,12 +61,12 @@ const genderpairs = [
 $(SIGNATURES)
 """
 const casepairs = [
-    (1, "nominative"),
-    (2, "genitive"),
-    (3, "dative"),
-    (4, "accusative"),
-    (5, "ablative"),
-    (6, "vocative")
+    (1, "nom"),
+    (2, "gen"),
+    (3, "dat"),
+    (4, "acc"),
+    (5, "abl"),
+    (6, "voc")
 ]
 
 

@@ -1,7 +1,8 @@
 
 function functionforform()
     Dict(
-        "verb" =>  Tabulae.verbfromfst
+        "verb" =>  Tabulae.verbfromfst,
+        "noun" => Tabulae.nounfromfst
     )
 end
 
