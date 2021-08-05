@@ -12,7 +12,8 @@ using DocStringExtensions, Documenter
 
 #export buildparser
 export LatinMorphologicalForm
-export fromfst
+export LatinNoun, LatinFiniteVerb
+export fromfst, formurn
 
 include("forms.jl")
 include("formvalues.jl")
