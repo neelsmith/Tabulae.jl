@@ -17,9 +17,12 @@ function formurn(noun::LatinNoun)
     noun.nnumber,"000",noun.ngender,noun.ncase,"00"))
 end
 
+"""Parse a string of SFST output into a `LatinNoun`.
+
+$(SIGNATURES)
+"""
 function nounfromfst(fstdata)
     nounrulere = r"<([^<]+)><([^<]+)>[^>]*<([^<]+)><([^<]+)><([^<]+)>"  
-    # "<h_hs><noun>ας<feminine><accusative>"
     matchedup = collect(eachmatch(nounrulere, fstdata))
     
     if isempty(matchedup)
