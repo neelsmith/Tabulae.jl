@@ -10,10 +10,8 @@ end
 $(SIGNATURES)
 """
 function fromfst(s)
-
     (stemraw,rule) = split(s, "<div>")
     stem = replace(stemraw, "<#>" => "#")
-
 
     stemre = r"<u>([^<]+)</u><u>([^<]+)</u>([^<]+)<([^>]+)>(.+)"
 
@@ -24,22 +22,28 @@ function fromfst(s)
     rulere = r"(<[^>]+><[^>]+>)([^<]*)(.*)<u>(.+)</u>"
     rulematch = collect(eachmatch(rulere, rule))
     (typeinfo, ending, ruledata, ruleidval) = rulematch[1].captures
+    (typeinfo, ending, ruledata, ruleidval)
 
-
+    # Look up function creating appropriate 
+    # object for this category of word:
     fnctndict = functionforform()
     fnct = fnctndict[analysiscat]
 
-    
     # Depends on what is regular, what is irregular!
-    formurn = ""
+    formcode = ""
+    
     if analysiscat == "irregular"
-        formurn = fnct(stemdata)
+        formcode = fnct(stemdata)  |> formurn
     else
-        formurn =  string(typeinfo, ending, ruledata) |> fnct
+        formcode =  fnct(string(typeinfo, ending, ruledata))  |> formurn
+        
     end
     
-    Analysis(string(tkn,ending), LexemeUrn(lexidval), formurn, RuleUrn(ruleidval), StemUrn(stemidval))
+    Analysis(string(tkn,ending), LexemeUrn(lexidval), formcode, RuleUrn(ruleidval), StemUrn(stemidval))
 
 end
 
 # <u>latcommon.nounn305</u><u>ls.n305</u>acast<noun><masc><us_i><div><us_i><noun>i<masc><nom><pl><u>livymorph.us_i6</u>
+
+
+#<u>latcommon.compoundn87_3</u><u>ls.n87</u><#>abeg<verb><pftact><div><pftact><verb>it<3rd><sg><pft><indic><act><u>latcommon.pftact_pft3</u>

@@ -75,9 +75,9 @@ const casepairs = [
 $(SIGNATURES)
 """
 const personpairs = [
-    (1, "first"),
-    (2, "second"),
-    (3, "third")
+    (1, "1st"),
+    (2, "2nd"),
+    (3, "3rd")
 ]
 
 """Constants for number.
@@ -85,8 +85,8 @@ const personpairs = [
 $(SIGNATURES)
 """
 const numberpairs = [
-    (1, "singular"),
-    (2, "plural")
+    (1, "sg"),
+    (2, "pl")
 ]
 
 """Constants for voice.
@@ -94,8 +94,8 @@ const numberpairs = [
 $(SIGNATURES)
 """
 const voicepairs = [
-    (1, "active"),
-    (2, "passive")
+    (1, "act"),
+    (2, "pass")
 ]
 
 """Constants for tense.
@@ -103,12 +103,12 @@ const voicepairs = [
 $(SIGNATURES)
 """
 const tensepairs = [
-    (1, "present"),
-    (2, "imperfect"),
-    (3, "future"),
-    (4, "perfect"),
-    (5, "pluperfect"),
-    (5, "future_perfect")
+    (1, "pres"),
+    (2, "impft"),
+    (3, "fut"),
+    (4, "pft"),
+    (5, "plupft"),
+    (5, "futpft")
 ]
 
 """Constants for mood.
@@ -117,9 +117,9 @@ const tensepairs = [
 $(SIGNATURES)
 """
 const moodpairs = [
-    (1, "indicative"),
-    (2, "subjunctive"),
-    (3, "imperative")
+    (1, "indic"),
+    (2, "subj"),
+    (3, "imptv")
 ]
 
 

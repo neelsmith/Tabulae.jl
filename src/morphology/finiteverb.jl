@@ -12,17 +12,23 @@ struct LatinFiniteVerb <: LatinMorphologicalForm
     voicelabel::AbstractString 
 end
 
+"""Compose a FormUrn for a `LatinVerbForm`.
 
-"""Parse a string of SFST output into a `LatinFiniteVerb`
+$(SIGNATURES)
+"""
+function formurn(verbform::LatinFiniteVerb)
+    FormUrn(string("morphforms.", FINITEVERB,verbform.vperson, verbform.vnumber, 
+    verbform.vtense, verbform.vmood, verbform.vvoice, "000"))
+end
+
+"""Parse a string of SFST output into a `LatinFiniteVerb`.
 
 $(SIGNATURES)
 """
 function verbfromfst(fstdata)
-
-    # Example rule string:
-    #  "<w_regular><finiteverb>ει<third><singular><present><indicative><active>"
-    # Extract PNTMV from a string like the example:
-    verbrulere = r"<[^<]+><finiteverb>[^<]*<([^<]+)><([^<]+)><([^<]+)><([^<]+)><([^<]+)>"
+    # Extract PNTMV from a string like this:
+    #<pftact><verb>it<3rd><sg><pft><indic><act>
+    verbrulere = r"<[^<]+><verb>[^<]*<([^<]+)><([^<]+)><([^<]+)><([^<]+)><([^<]+)>"
     matchedup = collect(eachmatch(verbrulere, fstdata))
 
     if isempty(matchedup)
@@ -36,15 +42,12 @@ function verbfromfst(fstdata)
         tensedict = labeldict(tensepairs)
         mooddict = labeldict(moodpairs)
         voicedict = labeldict(voicepairs)
-        verbform = FiniteVerbForm(persondict[p], p,
+        verbform = LatinFiniteVerb(persondict[p], p,
         numberdict[n], n,
         tensedict[t], t,
         mooddict[m], m,
         voicedict[v], v
-        )
-
-        FormUrn(string("morphforms.", FINITEVERB,verbform.vperson, verbform.vnumber, 
-        verbform.vtense, verbform.vmood, verbform.vvoice, "000"))
+        )        
     end
 end
 
