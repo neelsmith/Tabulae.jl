@@ -4,12 +4,6 @@ using CitableObject
 using Glob, Unicode
 using DocStringExtensions, Documenter
 
-
-   
-
-
-
-
 #export buildparser
 export LatinMorphologicalForm
 export LatinNoun, LatinFiniteVerb

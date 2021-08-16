@@ -1,4 +1,6 @@
 
+"""Dictionary of functions to use for distinct analytical types.
+"""
 function functionforform()
     Dict(
         "verb" =>  Tabulae.verbfromfst,

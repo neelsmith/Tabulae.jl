@@ -2,6 +2,5 @@ using Tabulae
 using CitableObject, CitableParserBuilder
 using Test
 
-@testset "test something" begin
-    
-end
+include("test_nounforms.jl")
+include("test_verbforms.jl")
