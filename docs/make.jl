@@ -26,3 +26,7 @@ makedocs(
         
     ],
     )
+
+deploydocs(
+    repo = "github.com/neelsmith/Tabulae.jl.git",
+)
