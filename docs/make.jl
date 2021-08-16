@@ -18,7 +18,10 @@ using Tabulae
 makedocs(
     sitename="Tabulae.jl",
     pages = [
-        "Home" => "index.md",
+        "Home" => Any[
+            "User's guide" => "index.md",
+            "Working with FormUrns" => "guide/formurns.md"
+        ],
         "Reference: code" => Any[
             "Latin Morphology API" =>  "apis/apis.md",
             "FormUrns" => "apis/forms.md"

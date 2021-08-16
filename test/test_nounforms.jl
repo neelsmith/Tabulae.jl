@@ -1,4 +1,8 @@
 
+@testset "Test parsing a LatinNoun form from SFST output" begin
+    sfst = "<u>latcommon.nounn6506</u><u>ls.n6506</u>can<noun><masc><is_is><div><is_is><noun>em<masc><acc><sg><u>latcommoninfl.is_is4</u>"
+    
+end
 
 @testset "Test getting FormUrn for Noun form" begin
     noun = LatinNoun(1,1,1)
@@ -31,7 +35,5 @@
     @test Tabulae.degreecode(formU) == 0
     @test Tabulae.degreelabel(formU) == "none"
     @test Tabulae.uninflectedcode(formU) == 0
-
-
 
 end

@@ -14,28 +14,27 @@ function formurn(noun::LatinNoun)
     noun.nnumber,"000",noun.ngender,noun.ncase,"00"))
 end
 
-"""Parse a string of SFST output into a `LatinNoun`.
+"""Parse a string of SFST output into a `LatinNoun` form.
 
 $(SIGNATURES)
 """
 function nounfromfst(fstdata)
+    # 1="h_hs", 2="noun", 3="feminine", 4="accusative", 5="singular")
     nounrulere = r"<([^<]+)><([^<]+)>[^>]*<([^<]+)><([^<]+)><([^<]+)>"  
     matchedup = collect(eachmatch(nounrulere, fstdata))
     
     if isempty(matchedup)
         @warn("Unable to parse FST analysis \"" * fstdata * "\"")
         nothing
-    else
-        # 1="h_hs", 2="noun", 3="feminine", 4="accusative", 5="singular")
 
-        (nounclass,pos, g,c,n) = matchedup[1].captures
+    else
+        (nounclass,pos,g,c,n) = matchedup[1].captures
         
         genderdict = labeldict(genderpairs)
         casedict = labeldict(casepairs)
         numberdict = labeldict(numberpairs)
 
         LatinNoun(genderdict[g], casedict[c], numberdict[n])
-        #FormUrn(string("morphforms.", NOUN,"0",nounform.nnumber,"000",nounform.ngender,nounform.ncase,"00"))
     end
 
 end
