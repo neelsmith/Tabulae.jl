@@ -1,0 +1,1 @@
+# Implement participle as LatinMorphologicalForm

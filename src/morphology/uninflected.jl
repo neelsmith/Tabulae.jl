@@ -1,0 +1,1 @@
+# Implement uninflected forms as LatinMorphologicalForm
