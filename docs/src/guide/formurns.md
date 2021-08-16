@@ -1,9 +1,30 @@
 
-# Working with `FormUrn`s
+# `LatinMorphologicalForm`a  and `FormUrn`s
+
+Implementations of the `LatinMorphologicalForm` are interchangeable with `FormUrn`s in the Tabulae collection.
+
+We can directly construct `LatinMorphologicalForm`s with type-specific parameters.  For example, a `LatinFiniteVerb` can be directly constructed with values for the person, number, tense, mood and voice, and a `LatinNoun` with values for gender, case, and number.
+
+```@example formurns
+using Tabulae
+verb = LatinFiniteVerb(3,1,1,1,1)
+formurn(verb)
+```
+
+```@example formurns
+noun = LatinNoun(1,1,1)
+```
+
+
+`Tabulae.jl` can represent `LatinMorphologicalForm`s as `FormUrn`s belonging to a collection of URN values for Latin morphology.  We can convert any `LatinMorphologicalForm` to a `FormUrn` with the `formurn` function.
+
+```@example formurns
+nounUrn = formurn(noun)
+```
 
 
 
-`Tabulae.jl` can represent implementations of `LatinMorphologicalForm` as `FormUrn`s belonging to a collection of URN values for Latin morphology.  Object identifiers in this collection are ten-character strings with each character representing an integer code for the following morphological properties:
+Object identifiers in this collection are ten-character strings with each character representing an integer code for the following morphological properties:
 
 1. "part of speech" (analytical type)
 2. person
@@ -17,20 +38,6 @@
 10. uninflected category
 
 
-A `LatinNoun` can be directly constructed with values for the gender, case and number.
-
-```@example intro
-using Tabulae
-noun = LatinNoun(1,1,1)
-formurn(noun)
-```
-
-A `LatinFiniteVerb` can be directly constructed with values for the person, number, tense, mood and voice.
-
-```@example intro
-verb = LatinFiniteVerb(3,1,1,1,1)
-formurn(verb)
-```
 
 
 ## Examples
@@ -39,6 +46,8 @@ formurn(verb)
 
 
 ```@example intro
+using Tabulae # hide
+noun = LatinNoun(1,1,1) # hide
 urn = formurn(noun)
 Tabulae.poslabel(urn)
 ```
@@ -59,4 +68,14 @@ Tabulae.numberlabel(urn)
 
 ```@example intro
 Tabulae.personlabel(urn)
+```
+
+## Roundtripping
+
+
+We can also convert a `FormUrn` to a Latin form object with *a function still to be written...*
+
+
+```@example formurns
+#roundtrip = fromurn(nounUrn)
 ```

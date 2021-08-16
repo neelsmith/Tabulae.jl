@@ -19,8 +19,8 @@ makedocs(
     sitename="Tabulae.jl",
     pages = [
         "Home" => Any[
-            "User's guide" => "index.md",
-            "Working with FormUrns" => "guide/formurns.md"
+            "User's guide: introduction" => "index.md",
+            "FormUrns" => "guide/formurns.md"
         ],
         "Reference: code" => Any[
             "Latin Morphology API" =>  "apis/apis.md",
