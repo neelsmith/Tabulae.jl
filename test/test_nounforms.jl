@@ -1,7 +1,7 @@
 
 
 @testset "Test getting FormUrn for Noun form" begin
-    noun = LatinNoun(1,"masculine",1,"nominative",1,"singular")
+    noun = LatinNoun(1,1,1)
     formU = formurn(noun)
     @test formU == FormUrn("morphforms.2010001100")
 

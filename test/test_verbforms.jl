@@ -1,9 +1,9 @@
 
 
 @testset "Test getting FormUrn for finite verb form" begin
-    verb = LatinFiniteVerb(3,"third",1,"singular",1,"present",1,"indicative",1, "active")
+    verb = LatinFiniteVerb(3,1,1,1,1)
     verbU = formurn(verb)
-    @test verbU == FormUrn("morphforms.331111000")
+    @test verbU == FormUrn("morphforms.3311110000")
     @test Tabulae.poscode(verbU) == 3
     @test Tabulae.poslabel(verbU) == "verb-finite"
     @test Tabulae.personcode(verbU) == 3
@@ -24,5 +24,6 @@
     @test Tabulae.caselabel(verbU) == "none"
     @test Tabulae.degreecode(verbU) == 0
     @test Tabulae.degreelabel(verbU) == "none"
-    @test_broken Tabulae.uninflectedcode(verbU) == 0
+    @test Tabulae.uninflectedcode(verbU) == 0
+    @test Tabulae.uninflectedlabel(verbU) == "none"
 end

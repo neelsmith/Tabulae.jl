@@ -1,11 +1,8 @@
 """Nouns have gender, case and number."""
 struct LatinNoun <: LatinMorphologicalForm
-    ngender::Int64
-    genderlabel::AbstractString    
+    ngender::Int64 
     ncase::Int64
-    caselabel::AbstractString    
     nnumber::Int64
-    numberlabel::AbstractString    
 end
 
 """Compose a FormUrn for a `LatinNoun`.
@@ -37,9 +34,7 @@ function nounfromfst(fstdata)
         casedict = labeldict(casepairs)
         numberdict = labeldict(numberpairs)
 
-        LatinNoun(genderdict[g], g,
-        casedict[c], c,
-        numberdict[n], n)
+        LatinNoun(genderdict[g], casedict[c], numberdict[n])
         #FormUrn(string("morphforms.", NOUN,"0",nounform.nnumber,"000",nounform.ngender,nounform.ncase,"00"))
     end
 

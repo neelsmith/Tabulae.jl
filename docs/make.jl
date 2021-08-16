@@ -20,7 +20,8 @@ makedocs(
     pages = [
         "Home" => "index.md",
         "Reference: code" => Any[
-            "Julia API documentation" =>  "apis/apis.md"
+            "Latin Morphology API" =>  "apis/apis.md",
+            "FormUrns" => "apis/forms.md"
         ],
         
     ],
