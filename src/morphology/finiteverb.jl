@@ -37,16 +37,17 @@ $(SIGNATURES)
 """
 function verbfromfst(fstdata)
     # Extract PNTMV from a string like this:
-    #<pftact><verb>it<3rd><sg><pft><indic><act>
-    verbrulere = r"<[^<]+><verb>[^<]*<([^<]+)><([^<]+)><([^<]+)><([^<]+)><([^<]+)>"
+    #<3rd><sg><pft><indic><act>
+    #verbrulere = r"<[^<]+><verb>[^<]*
+    verbrulere = r"<([^<]+)><([^<]+)><([^<]+)><([^<]+)><([^<]+)>"
     matchedup = collect(eachmatch(verbrulere, fstdata))
 
     if isempty(matchedup)
         @warn("Unable to parse FST analysis \"" * fstdata * "\" as verb form.")
         nothing
+
     else
         (p,n, t, m, v) = matchedup[1].captures
-
         persondict = labeldict(personpairs)
         numberdict = labeldict(numberpairs)
         tensedict = labeldict(tensepairs)

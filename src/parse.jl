@@ -37,7 +37,7 @@ function functionforcategory()
         #"uninflected" => Tabulae.uninflectedfromfst,
         "noun" => Tabulae.nounfromfst,
         #"pronoun" => Tabulae.pronounfromfst,
-        "finiteverb" =>  Tabulae.verbfromfst,
+        "verb" =>  Tabulae.verbfromfst,
         #"infinitive" => Tabulae.infinitivefromfst,
         #"participle" => Tabulae.participlefromfst,
         #"verbaladjective" => Tabulae.verbaladjectivefromfst,
@@ -51,7 +51,8 @@ end
 $(SIGNATURES)
 """
 function analysisforline(fst::AbstractString)
-        (stem, rule) = split(fst, "<div>")
+        tidier = replace(fst, "<#>" => "#" )
+        (stem, rule) = split(tidier, "<div>")
 
         # Stem part of SFST has a regular structure:
         # always begins with stem ID, lexeme ID,
@@ -66,7 +67,7 @@ function analysisforline(fst::AbstractString)
         rulere = r"<([^>]+)><([^>]+)>([^<]*)(.*)<u>(.+)</u>"
         rulematch = collect(eachmatch(rulere, rule))
         (inflclass, analysiscategory, ending, ruledata, ruleidval) = rulematch[1].captures
-       # @info("RULE ANALYSIS ", (inflclass, analysiscategory, ending, ruledata, ruleidval) )
+        # @info("RULE ANALYSIS ", (inflclass, analysiscategory, ending, ruledata, ruleidval) )
         fnctndict = functionforcategory()
         fnct = fnctndict[analysiscategory]
         #@info("Function is ", fnct)

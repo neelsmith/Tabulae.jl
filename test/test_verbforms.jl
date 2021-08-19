@@ -1,4 +1,13 @@
 
+@testset "Test parsing a LatinFiniteVerb form from SFST output" begin
+    verbfst = "<u>latcommon.verbn5128</u><u>ls.n5128</u><#>belliger<verb><conj1><div><conj1><verb>auit<3rd><sg><pft><indic><act><u>lat23morph.are_pft3</u>"
+    infl = split(verbfst,"<div>")[2]
+    verb = Tabulae.verbfromfst(infl)
+    expected = LatinFiniteVerb(3,1,4,1,1)
+    @test verb == expected
+    
+end
+
 @testset "Test parsing a FormUrn into a verb form" begin
     frm = FormUrn("morphforms.3311110000")
     @test Tabulae.verbfromurn(frm) ==  LatinFiniteVerb(3,1,1,1,1)
@@ -31,13 +40,4 @@ end
     @test Tabulae.degreelabel(verbU) == "none"
     @test Tabulae.uninflectedcode(verbU) == 0
     @test Tabulae.uninflectedlabel(verbU) == "none"
-end
-
-@testset "Test parsing a LatinFiniteVerb form from SFST output" begin
-    sfst = "<u>latcommon.compoundn65_1</u><u>ls.n65</u><#>abiret<3rd><sg><impft><subj><act><irregcverb><div><irregcverb><u>irreginfl.3</u>"
-    infl = split(sfst,"<div>")[2]
-    noun = Tabulae.verbfromfst(infl)
-    expected = LatinFiniteVerb(3,1,3,2,1)
-    @test noun == expected
-    
 end

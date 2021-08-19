@@ -9,6 +9,8 @@ function fromurn(frm::FormUrn)
     pos = poscode(frm)
     if pos == Tabulae.NOUN
         nounfromurn(frm)
+    elseif pos == Tabulae.FINITEVERB
+        verbfromurn(frm)
     else
         @warn("Unrecognized or unimplemented pos code ", pos)
         nothing
