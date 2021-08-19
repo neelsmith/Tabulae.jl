@@ -1,5 +1,8 @@
 module Tabulae
 using CitableParserBuilder
+import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, parselistfromurl
+
+
 using CitableObject
 using Glob, Unicode
 using DocStringExtensions, Documenter
@@ -29,5 +32,8 @@ include("acceptorsquashers.jl")
 # Specific analytical types ("parts of speech")
 include("uninflected.jl")
 =#
+
+
+include("parse.jl")
 
 end # module
