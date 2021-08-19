@@ -7,6 +7,21 @@ struct LatinFiniteVerb <: LatinMorphologicalForm
     vvoice::Int64
 end
 
+
+
+"""Compose a `LatinFiniteVerb` for a FormUrn.
+"""
+function verbfromurn(frm::FormUrn)
+    digitchars = split(frm.objectid,"")
+    p = parse(Int64, digitchars[2])
+    n = parse(Int64, digitchars[3])
+    t = parse(Int64, digitchars[4])
+    m = parse(Int64, digitchars[5])
+    v = parse(Int64, digitchars[6])
+    LatinFiniteVerb(p,n,t,m,v)
+end
+
+
 """Compose a FormUrn for a `LatinVerbForm`.
 
 $(SIGNATURES)
