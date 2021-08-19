@@ -31,20 +31,19 @@ to determine a `FormUrn` from the FST description of form.
 $(SIGNATURES)
 """
 function functionforcategory()
-    nothing
-    #=
+ 
     Dict(
-        "irregular" => Tabulae.irregularfromfst,
-        "uninflected" => Tabulae.uninflectedfromfst,
+        #"irregular" => Tabulae.irregularfromfst,
+        #"uninflected" => Tabulae.uninflectedfromfst,
         "noun" => Tabulae.nounfromfst,
-        "pronoun" => Tabulae.pronounfromfst,
+        #"pronoun" => Tabulae.pronounfromfst,
         "finiteverb" =>  Tabulae.verbfromfst,
-        "infinitive" => Tabulae.infinitivefromfst,
-        "participle" => Tabulae.participlefromfst,
-        "verbaladjective" => Tabulae.verbaladjectivefromfst,
-        "adjective" => Tabulae.adjectivefromfst
+        #"infinitive" => Tabulae.infinitivefromfst,
+        #"participle" => Tabulae.participlefromfst,
+        #"verbaladjective" => Tabulae.verbaladjectivefromfst,
+        #"adjective" => Tabulae.adjectivefromfst
     )
-    =#
+
 end
 
 """Parse a single line of SFST output into an `Analysis`.
@@ -59,7 +58,7 @@ function analysisforline(fst::AbstractString)
         # token, and analysis category, before
         # then appending category-specific data.
         stemre = r"<u>([^<]+)</u><u>([^<]+)</u>([^<]+)<([^>]+)>(.+)"
-        stemmatch = collect(eachmatch(stemre, FstBuilder.greekfromfst(stem)))
+        stemmatch = collect(eachmatch(stemre, stem))
         (stemidval, lexidval, tkn, stemtype, stemdata) = stemmatch[1].captures
         #@info("STEM ANALYSIS ", (stemidval, lexidval, tkn, stemtype, stemdata) )
         # Rule part of SFST also has a regular structure:

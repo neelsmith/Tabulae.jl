@@ -14,6 +14,7 @@ export fromfst, formurn
 
 include("forms.jl")
 include("formvalues.jl")
+include("latinformurns.jl")
 include("serialization.jl")
 
 include("morphology/finiteverb.jl")
