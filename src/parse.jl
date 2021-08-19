@@ -51,9 +51,17 @@ end
 $(SIGNATURES)
 """
 function analysisforline(fst::AbstractString)
-        tidier = replace(fst, "<#>" => "#" )
+    tidier = replace(fst, "<#>" => "#" )
+    if ! contains(tidier, "<div>")
+        @warn("BAD FST: ", tidier)
+        nothing
+
+
+
+    else
         (stem, rule) = split(tidier, "<div>")
 
+        #
         # Stem part of SFST has a regular structure:
         # always begins with stem ID, lexeme ID,
         # token, and analysis category, before
@@ -61,48 +69,112 @@ function analysisforline(fst::AbstractString)
         stemre = r"<u>([^<]+)</u><u>([^<]+)</u>([^<]+)<([^>]+)>(.+)"
         stemmatch = collect(eachmatch(stemre, stem))
         (stemidval, lexidval, tkn, stemtype, stemdata) = stemmatch[1].captures
-        #@info("STEM ANALYSIS ", (stemidval, lexidval, tkn, stemtype, stemdata) )
+
         # Rule part of SFST also has a regular structure:
         # 
         rulere = r"<([^>]+)><([^>]+)>([^<]*)(.*)<u>(.+)</u>"
-        rulematch = collect(eachmatch(rulere, rule))
-        (inflclass, analysiscategory, ending, ruledata, ruleidval) = rulematch[1].captures
-        # @info("RULE ANALYSIS ", (inflclass, analysiscategory, ending, ruledata, ruleidval) )
-        fnctndict = functionforcategory()
-        fnct = fnctndict[analysiscategory]
-        #@info("Function is ", fnct)
-        # Depends on what is regular, what is irregular!
-        formcode = ""
-        if analysiscategory == "irregular"
-            formcode = fnct(stemdata) |> formurn
-        elseif analysiscategory == "uninflected"
-            formcode = fnct(inflclass) |> formurn
-        elseif analysiscategory == "pronoun"
-            formcode = fnct(stemdata) |> formurn
-        else
-            formcode =  string(ruledata) |> fnct |> formurn
+
+        # This regex will fail on old output format of irregulars, however, so 
+        # need to test with try/catch.
+        try
+            rulematch = collect(eachmatch(rulere, rule))
+            (inflclass, analysiscategory, ending, ruledata, ruleidval) = rulematch[1].captures
+            # @info("RULE ANALYSIS ", (inflclass, analysiscategory, ending, ruledata, ruleidval) )
+            fnctndict = functionforcategory()
+            if ! haskey(fnctndict, analysiscategory)
+                @warn("Could not find analysis function for ", analysiscategory)
+                missing
+            else
+                fnct = fnctndict[analysiscategory]
+                # Depends on what is regular, what is irregular!
+                formcode = ""
+                if analysiscategory == "irregular"
+                    formcode = fnct(stemdata) |> formurn
+                elseif analysiscategory == "uninflected"
+                    formcode = fnct(inflclass) |> formurn
+                elseif analysiscategory == "pronoun"
+                    formcode = fnct(stemdata) |> formurn
+                else
+                    formcode =  string(ruledata) |> fnct |> formurn
+                end
+                
+                Analysis(string(tkn,ending), LexemeUrn(lexidval), formcode, StemUrn(stemidval), RuleUrn(ruleidval))
+            end
+
+
+        catch e # Failed to apply rule regex
+            @warn("Could not parse rule statement ", rule)
+            nothing
         end
-        
-        Analysis(string(tkn,ending), LexemeUrn(lexidval), formcode, StemUrn(stemidval), RuleUrn(ruleidval))
+    end
 end
 
-"""Parse a string of FST output for a single token
-to a list of `Analysis` objects.
 
+"""Download FST output from a URL ad parse into `Analysis` objects.
+
+$(SIGNATURES)
+"""
+function parseurl(url::AbstractString)
+    fst = String(HTTP.get(url).body)
+    parsefst(fst)
+end
+
+"""Parse FST output for multiple tokens.
 
 $(SIGNATURES)
 """
 function parsefst(fststring::AbstractString)
-    analyses = []
     lines = split(fststring,"\n")
-    if  length(lines) < 2
-        msg = string("parsefst: bad FST string ", fststring, " with ", length(lines), " lines." )
+    nonempty = filter(ln -> ! isempty(ln), lines)
+    
+    current = []
+    rslts = []
+    for ln in nonempty
+    
+        if isempty(current)
+            push!(current, replace(ln, "> " => ""))
+           
+        else
+            if ln[1] == '>'
+                # New token
+                rslt =  parsetokenfst(current)
+                push!(rslts,rslt)
+                current = [ln]
+
+            elseif startswith(ln, "no result")
+                push!(rslts, ln)
+                current = []
+            
+            else   
+                push!(current, ln)    
+            end
+
+        end
+    end
+    # Don't forget last one!
+    if ! isempty(current)
+        @info(string("ADDING FINAL ", current))
+        push!(rslts,parsetokenfst(current))
+    end
+    
+    rslts
+end
+
+"""Parse FST output for a single token to a list of `Analysis` objects.
+
+$(SIGNATURES)
+"""
+function parsetokenfst(fstlines)
+    @debug("Parse token fst ", fstlines)
+    analyses = []
+    if  length(fstlines) < 2
+        msg = string("parsetokenfst: bad FST ", fstlines, " with ", length(fstlines), " lines." )
         throw(ArgumentError(msg))
-    elseif startswith(lines[2], "no result")
+    elseif startswith(fstlines[2], "no result")
         # let analyses stay empty
     else
         # skip header line and empty lines
-        for ln in filter(l -> ! isempty(l), lines[2:end])
+        for ln in filter(l -> ! isempty(l), fstlines[2:end])
             push!(analyses, analysisforline(ln))
         end
     end
@@ -125,10 +197,9 @@ end
 $(SIGNATURES)
 """
 function parsetoken(parser::TabulaeParser, tkn::AbstractString)
-    stripped = FstBuilder.fstgreek(tkn) 
-    applyparser(parser, stripped) |> parsefst
+    stripped = replace(tkn, "<#>" => "#")
+    applyparser(parser, stripped) |> parsetokenfst
 end
-
 
 """Parse a list of words, and return a dictionary of tokens to a 
 (possibly empty) Vector of `Analysis` objects.
@@ -153,4 +224,6 @@ function parselistfromurl(p::TabulaeParser,u)
     words = split(String(HTTP.get(u).body) , "\n")
     parsewordlist(p,words)
 end
+
+
 
