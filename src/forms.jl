@@ -15,6 +15,11 @@ function fromurn(frm::FormUrn)
     end
 end
 
+
+function fromanalysis(a::Analysis)
+    fromurn(a.form)
+end
+
 """Generic function to convert form information in a `Rule`
 to a `RuleUrn`.
 

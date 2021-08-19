@@ -6,5 +6,5 @@
     @test analysis.token == "canem"
     @test analysis.lexeme == LexemeUrn("ls.n6506")
     @test analysis.form == FormUrn("morphforms.2010001400") 
-    @test Tabulae.from(analysis.form) == LatinNoun(1, 4, 1)
+    @test fromanalysis(analysis) == LatinNoun(1,4,1)
 end
