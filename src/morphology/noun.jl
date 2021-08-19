@@ -9,6 +9,11 @@ end
 """Compose a `LatinNoun` for a FormUrn.
 """
 function nounfromurn(frm::FormUrn)
+    digitchars = split(frm.objectid,"")
+    g = parse(Int64, digitchars[7])
+    c = parse(Int64, digitchars[8])
+    n = parse(Int64, digitchars[3])
+    LatinNoun(g,c,n)
 end
 
 """Compose a FormUrn for a `LatinNoun`.

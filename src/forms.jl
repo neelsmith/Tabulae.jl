@@ -6,7 +6,13 @@ abstract type LatinMorphologicalForm end
 $(SIGNATURES)
 """
 function fromurn(frm::FormUrn)
-
+    pos = poscode(frm)
+    if pos == Tabulae.NOUN
+        nounfromurn(frm)
+    else
+        @warn("Unrecognized or unimplemented pos code ", pos)
+        nothing
+    end
 end
 
 """Generic function to convert form information in a `Rule`
