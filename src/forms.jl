@@ -1,6 +1,27 @@
 """Abstract type of a morphological form."""
 abstract type LatinMorphologicalForm end
 
+"""Convert a `FormUrn` to a `LatinMorphologicalForm`.
+
+$(SIGNATURES)
+"""
+function fromurn(frm::FormUrn)
+    pos = poscode(frm)
+    if pos == Tabulae.NOUN
+        nounfromurn(frm)
+    elseif pos == Tabulae.FINITEVERB
+        verbfromurn(frm)
+    else
+        @warn("Unrecognized or unimplemented pos code ", pos)
+        nothing
+    end
+end
+
+
+function fromanalysis(a::Analysis)
+    fromurn(a.form)
+end
+
 """Generic function to convert form information in a `Rule`
 to a `RuleUrn`.
 
@@ -43,7 +64,7 @@ $(SIGNATURES)
 All subclasses of `LatinMorphologicalForm` should implement this specifically
 for their subclass.
 """
-function urn(LatinMorphologicalForm)
+function formurn(LatinMorphologicalForm)
     @warn("urn: unrecognized type of LatinMorphologicalForm.")
     nothing
 end
@@ -78,7 +99,6 @@ $(SIGNATURES)
 """
 function morphform(u::FormUrn)
     morphform(u.objectid)
-
 end
 
 

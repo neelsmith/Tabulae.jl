@@ -1,7 +1,16 @@
 
 @testset "Test parsing a LatinNoun form from SFST output" begin
     sfst = "<u>latcommon.nounn6506</u><u>ls.n6506</u>can<noun><masc><is_is><div><is_is><noun>em<masc><acc><sg><u>latcommoninfl.is_is4</u>"
+    infl = split(sfst,"<div>")[2]
+    noun = Tabulae.nounfromfst(infl)
+    expected = LatinNoun(1, 4, 1)
+    @test noun == expected
     
+end
+
+@testset "Test parsing a FormUrn into a Noun form" begin
+    frm = FormUrn("morphforms.2010001100")
+    @test Tabulae.nounfromurn(frm) == LatinNoun(1,1,1)
 end
 
 @testset "Test getting FormUrn for Noun form" begin

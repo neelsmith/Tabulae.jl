@@ -1,5 +1,9 @@
 module Tabulae
 using CitableParserBuilder
+import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, parselistfromurl
+
+using HTTP
+
 using CitableObject
 using Glob, Unicode
 using DocStringExtensions, Documenter
@@ -7,10 +11,11 @@ using DocStringExtensions, Documenter
 #export buildparser
 export LatinMorphologicalForm
 export LatinNoun, LatinFiniteVerb
-export fromfst, formurn
+export fromfst, formurn, fromanalysis
 
 include("forms.jl")
 include("formvalues.jl")
+include("latinformurns.jl")
 include("serialization.jl")
 
 include("morphology/finiteverb.jl")
@@ -29,5 +34,8 @@ include("acceptorsquashers.jl")
 # Specific analytical types ("parts of speech")
 include("uninflected.jl")
 =#
+
+
+include("parse.jl")
 
 end # module

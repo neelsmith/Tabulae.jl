@@ -5,6 +5,17 @@ struct LatinNoun <: LatinMorphologicalForm
     nnumber::Int64
 end
 
+
+"""Compose a `LatinNoun` for a FormUrn.
+"""
+function nounfromurn(frm::FormUrn)
+    digitchars = split(frm.objectid,"")
+    g = parse(Int64, digitchars[7])
+    c = parse(Int64, digitchars[8])
+    n = parse(Int64, digitchars[3])
+    LatinNoun(g,c,n)
+end
+
 """Compose a FormUrn for a `LatinNoun`.
 
 $(SIGNATURES)
@@ -19,8 +30,7 @@ end
 $(SIGNATURES)
 """
 function nounfromfst(fstdata)
-    # 1="h_hs", 2="noun", 3="feminine", 4="accusative", 5="singular")
-    nounrulere = r"<([^<]+)><([^<]+)>[^>]*<([^<]+)><([^<]+)><([^<]+)>"  
+    nounrulere = r"<([^<]+)><([^<]+)><([^<]+)>"  
     matchedup = collect(eachmatch(nounrulere, fstdata))
     
     if isempty(matchedup)
@@ -28,7 +38,7 @@ function nounfromfst(fstdata)
         nothing
 
     else
-        (nounclass,pos,g,c,n) = matchedup[1].captures
+        (g,c,n) = matchedup[1].captures
         
         genderdict = labeldict(genderpairs)
         casedict = labeldict(casepairs)
