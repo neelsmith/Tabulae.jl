@@ -201,6 +201,7 @@ function parsetoken(parser::TabulaeParser, tkn::AbstractString)
     applyparser(parser, stripped) |> parsetokenfst
 end
 
+#=
 """Parse a list of words, and return a dictionary of tokens to a 
 (possibly empty) Vector of `Analysis` objects.
 
@@ -215,6 +216,7 @@ function parsewordlist(p::TabulaeParser, tokens)
     parses
 end
 
+
 function parselistfromfile(p::TabulaeParser,f)
     words = readdlm(f,'|')
     parsewordlist(p,words)
@@ -225,5 +227,5 @@ function parselistfromurl(p::TabulaeParser,u)
     parsewordlist(p,words)
 end
 
-
+=#
 
