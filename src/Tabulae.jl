@@ -10,7 +10,7 @@ using DocStringExtensions, Documenter
 
 #export buildparser
 export LatinMorphologicalForm
-export LatinNoun, LatinFiniteVerb
+export LatinNoun, LatinFiniteVerb, LatinUninflectedForm
 export fromfst, formurn, fromanalysis
 
 include("forms.jl")
@@ -20,6 +20,7 @@ include("serialization.jl")
 
 include("morphology/finiteverb.jl")
 include("morphology/noun.jl")
+include("morphology/uninflected.jl")
 
 #=
 include("config.jl")

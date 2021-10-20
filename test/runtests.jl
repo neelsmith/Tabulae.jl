@@ -3,6 +3,7 @@ using CitableObject, CitableParserBuilder
 using Test
 
 include("test_nounforms.jl")
+include("test_uninflectedforms.jl")
 include("test_verbforms.jl")
 
 
