@@ -116,6 +116,53 @@ function irregularverbfromfst(fstdata)
     nothing
 end
 
+
+
+"""Find tense of a form.
+
+$(SIGNATURES)
+"""
+function lmpTense(verb::LMFFiniteVerb)
+    verb.vtense
+end
+
+"""Find mood of a form.
+
+$(SIGNATURES)
+"""
+function lmpMood(verb::LMFFiniteVerb)
+    verb.vmood
+end
+
+
+"""Find voice of a form.
+
+$(SIGNATURES)
+"""
+function lmpVoice(verb::LMFFiniteVerb)
+    verb.vvoice
+end
+
+
+"""Find person of a form.
+
+$(SIGNATURES)
+"""
+function lmpPerson(verb::LMFFiniteVerb)
+    verb.vperson
+end
+
+
+"""Find number of a form.
+
+$(SIGNATURES)
+"""
+function lmpNumber(verb::LMFFiniteVerb)
+    verb.vnumber
+end
+
+
+
 #=
 
 """Compose a `LMFFiniteVerb` for a FormUrn.
