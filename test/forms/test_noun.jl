@@ -7,9 +7,9 @@
     @test cex(noun) == "urn:cite2:tabulae:forms.v1:2010001400|masculine accusative singular"
     @test lmfNoun(urn(noun)) == noun
 
-    nouncode = "2010001400"
-    noun2 = lmfNoun(nouncode)
-    @test noun2 == LMFNoun(LMPGender(1), LMPCase(4), LMPNumber(1))
+    
+    @test noun == lmfNoun("2010001400")
+    
 
     frm = FormUrn("forms.2010001400")
     @test noun == lmfNoun(frm)
@@ -18,5 +18,8 @@
     @test lmpGender(noun) == lmpGender("masculine")
     @test lmpCase(noun) == lmpCase("accusative")
     @test lmpNumber(noun) == lmpNumber("singular")
+
+    fst = ""
+    @test_broken noun == Tabulae.nounfromfst(fst)
 end
 

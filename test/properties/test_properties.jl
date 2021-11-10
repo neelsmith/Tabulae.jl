@@ -13,6 +13,6 @@
     @test isnothing(lmpPerson(noun))
     @test isnothing(lmpDegree(noun))
 
-    infinitive = ""
-    @test_broken isnothing(lmpNumber(infinitive))
+    infinitive = LMFInfinitive(lmpTense("present"), lmpVoice("active"))
+    @test isnothing(lmpNumber(infinitive))
 end
