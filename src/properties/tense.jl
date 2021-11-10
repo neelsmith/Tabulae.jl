@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpTense(s::AbstractString)
-    s in keys(tensecodes) ? LMPTense(tensecodes[s]) : DomainError(string(s, " is not a valid value for tense.")) 
+    s in keys(tensecodes) ? LMPTense(tensecodes[s]) : throw(DomainError(string(s, " is not a valid value for tense.")) )
 end
 
 

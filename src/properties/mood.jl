@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpMood(s::AbstractString)
-    s in keys(moodcodes) ? LMPMood(moodcodes[s]) : DomainError(string(s, " is not a valid value for mood.")) 
+    s in keys(moodcodes) ? LMPMood(moodcodes[s]) : throw(DomainError(string(s, " is not a valid value for mood.")) )
 end
 
 """Create `LMPMood` from integer code.

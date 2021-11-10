@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpPerson(s::AbstractString)
-    s in keys(personcodes) ? LMPPerson(personcodes[s]) : DomainError(string(s, " is not a valid value for person.")) 
+    s in keys(personcodes) ? LMPPerson(personcodes[s]) : throw(DomainError(string(s, " is not a valid value for person.")) )
 end
 
 """Create `LMPPerson` from integer code.

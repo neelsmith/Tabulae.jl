@@ -5,4 +5,7 @@
     @test code(tense) == 1
     @test label(tense) == "present"
 
+    @test_throws DomainError lmpTense("subjunctive")
+    @test_throws DomainError lmpTense(10)
+
 end

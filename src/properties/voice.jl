@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpVoice(s::AbstractString)
-    s in keys(voicecodes) ? LMPVoice(voicecodes[s]) : DomainError(string(s, " is not a valid value for voice.")) 
+    s in keys(voicecodes) ? LMPVoice(voicecodes[s]) : throw(DomainError(string(s, " is not a valid value for voice.")) )
 end
 
 """Create `LMPVoice` from integer code.

@@ -4,4 +4,7 @@
     @test lmpPerson(3) == LMPPerson(3)
     @test code(person) == 3
     @test label(person) == "third"
+
+    @test_throws DomainError lmpPerson("subjunctive")
+    @test_throws DomainError lmpPerson(4)
 end
