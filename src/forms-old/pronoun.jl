@@ -1,1 +1,0 @@
-# Implement infinitive as LatinMorphologicalForm

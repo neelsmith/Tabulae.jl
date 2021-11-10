@@ -104,12 +104,7 @@ function nounfromfst(fstdata)
 
     else
         (g,c,n) = matchedup[1].captures
-        
-        genderdict = labeldict(genderpairs)
-        casedict = labeldict(casepairs)
-        numberdict = labeldict(numberpairs)
-
-        LatinNoun(genderdict[g], casedict[c], numberdict[n])
+        LMFNoun(lmpGender(g), lmpCase(c), lmpNumber(n))
     end
 
 end

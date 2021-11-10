@@ -1,1 +1,0 @@
-# Implement gerund as LatinMorphologicalForm
