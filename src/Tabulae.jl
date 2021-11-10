@@ -18,6 +18,7 @@ import CitableBase: label
 import CitableBase: cex
 
 export urn, label, cex
+export ruleurn
 
 #export dataset
 #export rulesarray, stemsarray
@@ -40,7 +41,10 @@ export LMFFiniteVerb, lmfFiniteVerb
 export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun
 
+export NounIO, VerbIO
 
+export TabulaeRule
+export TabulaeNounRule
 
 include("tabulaeio.jl")
 include("dataset.jl")
@@ -50,6 +54,8 @@ include("citable_forms/forms.jl")
 include("formvalues.jl")
 #include("latinformurns.jl")
 #include("serialization.jl")
+
+
 
 include("properties/property.jl")
 include("properties/tense.jl")
@@ -65,9 +71,9 @@ include("properties/uninflected.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/noun.jl")
 include("citable_forms/infinitive.jl")
-#include("forms/noun.jl")
-#include("forms/uninflected.jl")
 
+include("citable_rules/rules.jl")
+include("citable_rules/nouns.jl")
 
 
 #include("parse.jl")

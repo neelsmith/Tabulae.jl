@@ -22,3 +22,5 @@ include("properties/test_uninflected.jl")
 include("forms/test_finiteverb.jl")
 include("forms/test_noun.jl")
 include("forms/test_infinitive.jl")
+
+include("rules/test_nounrules.jl")

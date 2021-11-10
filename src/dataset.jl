@@ -93,7 +93,7 @@ function rulesarray(dirlist; delimiter = "|")
 
             delimitedreader = (iodict[dirname])
             for f in cexfiles
-                #@info("PROCESS FILE ", f)
+                @info("PROCESS FILE ", f)
                 raw = readlines(f)
                 lines = filter(s -> ! isempty(s), raw)
                 for i in 2:length(lines)
