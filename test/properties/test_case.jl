@@ -1,9 +1,9 @@
-@testset "Test gender property" begin
-    gender = lmpGender("feminine")
-    @test gender == lmpGender(2)
-    @test lmpGender(2) == LMPGender(2)
-    @test code(gender) == 2
-    @test label(gender) == "feminine"
-    @test_throws DomainError lmpGender("present")
-    @test_throws DomainError lmpGender(5)
+@testset "Test case property" begin
+    mcase = lmpCase("ablative")
+    @test mcase == lmpCase(5)
+    @test lmpCase(5) == LMPCase(5)
+    @test code(mcase) == 5
+    @test label(mcase) == "ablative"
+    @test_throws DomainError lmpCase("present")
+    @test_throws DomainError lmpCase(0)
 end

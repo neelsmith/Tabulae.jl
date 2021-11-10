@@ -1,11 +1,11 @@
-@testset "Test tense property" begin
-    tense = lmpTense("present")
-    @test tense  == LMPTense(1)
-    @test lmpTense(1) == LMPTense(1)
-    @test code(tense) == 1
-    @test label(tense) == "present"
+@testset "Test uninflected part of speech property" begin
+    uninfl = lmpUninflectedType("preposition")
+    @test uninfl  == LMPUninflectedType(2)
+    @test lmpUninflectedType(2) == LMPUninflectedType(2)
+    @test code(uninfl) == 2
+    @test label(uninfl) == "preposition"
 
-    @test_throws DomainError lmpTense("subjunctive")
-    @test_throws DomainError lmpTense(10)
+    @test_throws DomainError lmpUninflectedType("subjunctive")
+    @test_throws DomainError lmpUninflectedType(0)
 
 end

@@ -1,7 +1,7 @@
 struct LMPDegree <: LatinMorphologicalProperty
     code::Int64
     function LMPDegree(code)
-        code in keys(numberlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(degreelabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpDegree(s::AbstractString)
-    s in keys(numbercodes) ? LMPDegree(numbercodes[s]) : throw(DomainError(string(s, " is not a valid value for number.")) )
+    s in keys(degreecodes) ? LMPDegree(degreecodes[s]) : throw(DomainError(string(s, " is not a valid value for number.")) )
 end
 
 """Create `LMPPerson` from integer code.
