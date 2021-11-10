@@ -1,0 +1,1 @@
+# Implement adjective as LatinMorphologicalForm
