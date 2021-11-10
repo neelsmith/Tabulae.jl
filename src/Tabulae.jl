@@ -40,6 +40,8 @@ export LMFNoun, lmfNoun
 
 
 
+include("tabulaeio.jl")
+include("dataset.jl")
 
 #export fromfst, formurn, fromanalysis
 include("citable_forms/forms.jl")

@@ -19,7 +19,7 @@
     @test lmpCase(noun) == lmpCase("accusative")
     @test lmpNumber(noun) == lmpNumber("singular")
 
-    fst = ""
-    @test_broken noun == Tabulae.nounfromfst(fst)
+    fst = "<masculine><accusative><singular>"
+    @test noun == Tabulae.nounfromfst(fst)
 end
 
