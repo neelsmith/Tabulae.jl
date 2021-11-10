@@ -35,6 +35,7 @@ export LMPUninflectedType, lmpUninflectedType
 
 export LatinMorphologicalForm
 export LMFFiniteVerb, lmfFiniteVerb
+export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun
 
 
@@ -59,6 +60,7 @@ include("properties/uninflected.jl")
 
 include("citable_forms/finiteverb.jl")
 include("citable_forms/noun.jl")
+include("citable_forms/infinitive.jl")
 #include("forms/noun.jl")
 #include("forms/uninflected.jl")
 

@@ -90,3 +90,26 @@ function lmpNumber(noun::LMFNoun)
     noun.nnumber
 end
 
+"""Parse a string of SFST output into a `LatinNoun` form.
+
+$(SIGNATURES)
+"""
+function nounfromfst(fstdata)
+    nounrulere = r"<([^<]+)><([^<]+)><([^<]+)>"  
+    matchedup = collect(eachmatch(nounrulere, fstdata))
+    
+    if isempty(matchedup)
+        @warn("Unable to parse FST analysis \"" * fstdata * "\"")
+        nothing
+
+    else
+        (g,c,n) = matchedup[1].captures
+        
+        genderdict = labeldict(genderpairs)
+        casedict = labeldict(casepairs)
+        numberdict = labeldict(numberpairs)
+
+        LatinNoun(genderdict[g], casedict[c], numberdict[n])
+    end
+
+end
