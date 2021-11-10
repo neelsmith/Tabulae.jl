@@ -39,7 +39,7 @@ Work on `Tabulae.jl` currently focuses on implementing the `LatinMorphologicalFo
 Currently implemented:
 
 - `LatinNoun`
-- `LatinFiniteVerb`
+- `LMFFiniteVerb`
 
 In progress:
 

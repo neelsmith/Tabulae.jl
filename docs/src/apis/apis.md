@@ -12,7 +12,7 @@ Depth = 3
 ```@docs
 LatinMorphologicalForm
 LatinNoun
-LatinFiniteVerb
+LMFFiniteVerb
 ```
 
 ## Public function APIs

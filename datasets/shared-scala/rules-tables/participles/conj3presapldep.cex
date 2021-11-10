@@ -1,14 +1,14 @@
-RuleUrn#InflectionClasses#Ending#Gender#Case#Number#Tense#Voice
-latcommoninfl.ere3_conj3deppresapl1#conj3dep#ens#masc#nom#sg#pres#act
-latcommoninfl.ere3_conj3deppresapl2#conj3dep#entis#masc#gen#sg#pres#act
-latcommoninfl.ere3_conj3deppresapl3#conj3dep#enti#masc#dat#sg#pres#act
-latcommoninfl.ere3_conj3deppresapl4#conj3dep#entem#masc#acc#sg#pres#act
-latcommoninfl.ere3_conj3deppresapl5#conj3dep#ente#masc#abl#sg#pres#act
-latcommoninfl.ere3_conj3deppresapl5b#conj3dep#enti#masc#abl#sg#pres#act
-latcommoninfl.ere3_conj3deppresapl6#conj3dep#ens#masc#voc#sg#pres#act
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number|Tense|Voice
+latcommoninfl.ere3_conj3deppresapl1|conj3dep|ens|masc|nom|sg|pres|act
+latcommoninfl.ere3_conj3deppresapl2|conj3dep|entis|masc|gen|sg|pres|act
+latcommoninfl.ere3_conj3deppresapl3|conj3dep|enti|masc|dat|sg|pres|act
+latcommoninfl.ere3_conj3deppresapl4|conj3dep|entem|masc|acc|sg|pres|act
+latcommoninfl.ere3_conj3deppresapl5|conj3dep|ente|masc|abl|sg|pres|act
+latcommoninfl.ere3_conj3deppresapl5b|conj3dep|enti|masc|abl|sg|pres|act
+latcommoninfl.ere3_conj3deppresapl6|conj3dep|ens|masc|voc|sg|pres|act
 
-latcommoninfl.ere3_conj3deppresapl7#conj3dep#entes#masc#nom#pl#pres#act
-latcommoninfl.ere3_conj3deppresapl8#conj3dep#entium#masc#gen#pl#pres#act
+latcommoninfl.ere3_conj3deppresapl7|conj3dep|entes|masc|nom|pl|pres|act
+latcommoninfl.ere3_conj3deppresapl8|conj3dep|entium|masc|gen|pl|pres|act
 latcommoninfl.ere3_conj3deppresapl9#conj3dep#entibus#masc#dat#pl#pres#act
 latcommoninfl.ere3_conj3deppresapl10#conj3dep#entes#masc#acc#pl#pres#act
 latcommoninfl.ere3_conj3deppresapl10b#conj3dep#entis#masc#acc#pl#pres#act
