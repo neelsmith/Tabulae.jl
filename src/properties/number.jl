@@ -50,7 +50,7 @@ const numberlabels = Dict(
 
 $(SIGNATURES)
 """
-const personcodes = Dict(
+const numbercodes = Dict(
     "singular" => 1,
     "plural" => 2
 )
