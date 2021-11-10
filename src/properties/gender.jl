@@ -9,7 +9,7 @@ end
 
 $(SIGNATURES)
 """
-function lmpPerson(s::AbstractString)
+function lmpGender(s::AbstractString)
     s in keys(gendercodes) ? LMPGender(gendercodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
 end
 

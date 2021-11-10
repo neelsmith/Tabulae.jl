@@ -9,7 +9,7 @@ end
 
 $(SIGNATURES)
 """
-function lmpPerson(s::AbstractString)
+function lmpNumber(s::AbstractString)
     s in keys(numbercodes) ? LMPNumber(numbercodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
 end
 
@@ -17,7 +17,7 @@ end
 
 $(SIGNATURES)
 """
-function lmpPerson(code::Int64)
+function lmpNumber(code::Int64)
     LMPPerson(code)
 end
 

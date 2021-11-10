@@ -1,5 +1,3 @@
-"""Abstract type of a morphological form."""
-abstract type LatinMorphologicalForm end
 
 """Convert a `FormUrn` to a `LatinMorphologicalForm`.
 
@@ -31,8 +29,6 @@ function abbrurn(rule::T) where {T <: RuleUrn}
     @warn "Function abbrurn not implemented for type $typeof(rule)."
     nothing
 end
-
-const BASE_MORPHOLOGY_URN = "urn:cite2:tabulae:forms.v1:"
 
 
 """Compose CEX representation of CITE colletion of all recognized forms.

@@ -40,7 +40,7 @@ export LMFFiniteVerb, lmfFiniteVerb
 
 
 #export fromfst, formurn, fromanalysis
-#include("forms.jl")
+include("citable_forms/forms.jl")
 include("formvalues.jl")
 #include("latinformurns.jl")
 #include("serialization.jl")
@@ -49,9 +49,10 @@ include("properties/property.jl")
 include("properties/tense.jl")
 include("properties/mood.jl")
 include("properties/voice.jl")
+include("properties/person.jl")
+include("properties/number.jl")
 include("properties/gender.jl")
 include("properties/case.jl")
-include("properties/number.jl")
 include("properties/degree.jl")
 include("properties/uninflected.jl")
 
