@@ -2,6 +2,8 @@ using Tabulae
 using CitableObject, CitableParserBuilder
 using Test
 
+include("test_dataset.jl")
+
 #include("test_nounforms.jl")
 #include("test_uninflectedforms.jl")
 #include("test_verbforms.jl")
@@ -24,3 +26,5 @@ include("forms/test_noun.jl")
 include("forms/test_infinitive.jl")
 
 include("rules/test_nounrules.jl")
+
+include("stems/test_nounstems.jl")

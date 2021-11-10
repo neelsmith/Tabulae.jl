@@ -93,7 +93,7 @@ function rulesarray(dirlist; delimiter = "|")
 
             delimitedreader = (iodict[dirname])
             for f in cexfiles
-                @info("PROCESS FILE ", f)
+                #@info("PROCESS FILE ", f)
                 raw = readlines(f)
                 lines = filter(s -> ! isempty(s), raw)
                 for i in 2:length(lines)
@@ -124,19 +124,19 @@ function stemsarray(dirlist; delimiter = "|")
     #@info("Getting regular stems for $dirlist")
     iodict = Dict(
         [
-        "adjectives" => AdjectiveIO("adjective"),
+        #"adjectives" => AdjectiveIO("adjective"),
         "nouns" => NounIO("noun"),
-        "pronouns" => PronounIO("pronoun"),
-        "uninflected" => UninflectedIO("uninflected"),
-        "verbs-simplex" => VerbIO("verb")
+        #"pronouns" => PronounIO("pronoun"),
+        #"uninflected" => UninflectedIO("uninflected"),
+        #"verbs-simplex" => VerbIO("verb")
         ]
     )
     stemdirs = [
-        "adjectives",
+        #"adjectives",
         "nouns",
-        "pronouns",
-        "uninflected",
-        "verbs-simplex",
+        #"pronouns",
+        #"uninflected",
+        #"verbs-simplex",
         
     ]
 
@@ -164,18 +164,18 @@ function stemsarray(dirlist; delimiter = "|")
 
     irregiodict = Dict(
         [
-        "uninflected" => UninflectedIO("uninflected"),
+        #"uninflected" => UninflectedIO("uninflected"),
         "nouns" => IrregularNounIO("noun"),
-        "verbs" => IrregularVerbIO("finite verb"),
-        "infinitives" => IrregularInfinitiveIO("infinitive"),
-        "adjectives" => IrregularAdjectiveIO("adjectives")
+        #"verbs" => IrregularVerbIO("finite verb"),
+        #"infinitives" => IrregularInfinitiveIO("infinitive"),
+        #"adjectives" => IrregularAdjectiveIO("adjectives")
         ]
     )
     irregstemdirs = [
         "nouns",
-        "verbs",
-        "infinitives",
-        "adjectives"
+        #"verbs",
+        #"infinitives",
+        #"adjectives"
     ]
     #@info("Getting irregular stems for $dirlist")
     for datasrc in dirlist

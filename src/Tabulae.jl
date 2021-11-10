@@ -20,8 +20,8 @@ import CitableBase: cex
 export urn, label, cex
 export ruleurn
 
-#export dataset
-#export rulesarray, stemsarray
+export dataset
+export rulesarray, stemsarray
 
 
 export label, code
@@ -45,6 +45,9 @@ export NounIO, VerbIO
 
 export TabulaeRule
 export TabulaeNounRule
+
+export TabulaeStem
+export TabulaeNounStem
 
 include("tabulaeio.jl")
 include("dataset.jl")
@@ -71,6 +74,9 @@ include("properties/uninflected.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/noun.jl")
 include("citable_forms/infinitive.jl")
+
+include("citable_stems/stems.jl")
+include("citable_stems/regularnouns.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
