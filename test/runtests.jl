@@ -7,7 +7,13 @@ using Test
 #include("test_verbforms.jl")
 #include("test_parsing.jl")
 
+
+include("properties/test_properties.jl")
+#=
 include("properties/test_tense.jl")
 include("properties/test_mood.jl")
 include("properties/test_voice.jl")
 include("properties/test_person.jl")
+=#
+
+include("forms/test_finiteverb.jl")
