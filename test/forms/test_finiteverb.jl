@@ -8,4 +8,9 @@
     @test lmpVoice(verb) == lmpVoice("active")
     @test lmpPerson(verb) == lmpPerson("third")
     @test lmpNumber(verb) == lmpNumber("singular")
+
+ 
+    @test verb == lmfFiniteVerb("3314110000")
+    frm = FormUrn("forms.3314110000")
+    @test Tabulae.formurn(verb) == frm
 end
