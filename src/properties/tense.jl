@@ -1,0 +1,66 @@
+struct LMPTense <: LatinMorphologicalProperty
+    code::Int64
+    function GMPLMPTenseMood(code)
+        code in keys(moodlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+    end
+end
+
+"""Create `LMPTense` from descriptive string.
+
+$(SIGNATURES)
+"""
+function lmpTense(s::AbstractString)
+    s in keys(tensecodes) ? LMPTense(tensecodes[s]) : DomainError(string(s, " is not a valid value for tense.")) 
+end
+
+
+"""Create `LMPTense` from integer code.
+
+$(SIGNATURES)
+"""
+function lmpTense(code::Int64)
+    LMPTense(code)
+end
+
+"""Integer code for  tense value.
+
+$(SIGNATURES)
+"""
+function code(tense::LMPTense)
+    tense.code
+end
+
+
+"""Human-readable label for tense value.
+
+$(SIGNATURES)
+"""
+function label(tense::LMPTense)
+    tense[tense.code]
+end
+
+"""Dictionary mapping codes to labels for tense.
+
+$(SIGNATURES)
+"""
+const tenselabels = Dict(
+    1 => "present",
+    2 => "imperfect",
+    3 => "future",
+    4 => "perfect",
+    5 => "pluperfect",
+    6 => "future_perfect",
+)
+
+"""Dictionary mapping labels to codes for tense.
+
+$(SIGNATURES)
+"""
+const tensecodes = Dict(
+    "present" => 1,
+    "imperfect" => 2,
+    "future" => 3,  
+    "perfect" => 4,  
+    "pluperfect" => 5,  
+    "future_perfect" => 6,  
+)

@@ -8,19 +8,29 @@ using CitableObject
 using Glob, Unicode
 using DocStringExtensions, Documenter
 
-#export buildparser
+export label, code
+export LatinMorphologicalProperty
+export LMPTense, lmpTense
+export LMPMood, lmpMood
+export LMPVoice, lmpVoice
+
 export LatinMorphologicalForm
-export LatinNoun, LatinFiniteVerb, LatinUninflectedForm
+export LatinNoun, LMFFiniteVerb, LatinUninflectedForm
+
 export fromfst, formurn, fromanalysis
+
 
 include("forms.jl")
 include("formvalues.jl")
 include("latinformurns.jl")
 include("serialization.jl")
 
-include("morphology/finiteverb.jl")
-include("morphology/noun.jl")
-include("morphology/uninflected.jl")
+include("properties/property.jl")
+include("properties/mood.jl")
+
+include("forms/finiteverb.jl")
+include("forms/noun.jl")
+include("forms/uninflected.jl")
 
 #=
 include("config.jl")

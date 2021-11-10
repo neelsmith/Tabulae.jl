@@ -13,7 +13,7 @@ end
 
 
 
-@testset "Test top-level parsing of a LatinFiniteVerb form from SFST output" begin
+@testset "Test top-level parsing of a LMFFiniteVerb form from SFST output" begin
     
     verbfst = "<u>latcommon.verbn5128</u><u>ls.n5128</u><#>belliger<verb><conj1><div><conj1><verb>auit<3rd><sg><pft><indic><act><u>lat23morph.are_pft3</u>"
     analysis = Tabulae.analysisforline(verbfst)
@@ -22,7 +22,7 @@ end
     @test analysis.lexeme == LexemeUrn("ls.n5128")
     @test analysis.form == FormUrn("morphforms.3314110000") 
 
-    @test fromanalysis(analysis) == LatinFiniteVerb(3,1,4,1,1)
+    @test fromanalysis(analysis) == LMFFiniteVerb(3,1,4,1,1)
 end
 
 

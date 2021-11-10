@@ -1,15 +1,15 @@
 """Finite verbs have person, number, tense, mood and voice."""
-struct LatinFiniteVerb <: LatinMorphologicalForm
-    vperson::Int64
-    vnumber::Int64
-    vtense::Int64
-    vmood::Int64
-    vvoice::Int64
+struct LMFFiniteVerb <: LatinMorphologicalForm
+    vperson::LMPPerson
+    vnumber::LMPNumber
+    vtense::LMPTense
+    vmood::LMPMood
+    vvoice::LMPVoice
 end
 
 
 
-"""Compose a `LatinFiniteVerb` for a FormUrn.
+"""Compose a `LMFFiniteVerb` for a FormUrn.
 """
 function verbfromurn(frm::FormUrn)
     digitchars = split(frm.objectid,"")
@@ -18,7 +18,7 @@ function verbfromurn(frm::FormUrn)
     t = parse(Int64, digitchars[4])
     m = parse(Int64, digitchars[5])
     v = parse(Int64, digitchars[6])
-    LatinFiniteVerb(p,n,t,m,v)
+    LMFFiniteVerb(p,n,t,m,v)
 end
 
 
@@ -26,12 +26,12 @@ end
 
 $(SIGNATURES)
 """
-function formurn(verbform::LatinFiniteVerb)
+function formurn(verbform::LMFFiniteVerb)
     FormUrn(string("morphforms.", FINITEVERB,verbform.vperson, verbform.vnumber, 
     verbform.vtense, verbform.vmood, verbform.vvoice, "0000"))
 end
 
-"""Parse a string of SFST output into a `LatinFiniteVerb`.
+"""Parse a string of SFST output into a `LMFFiniteVerb`.
 
 $(SIGNATURES)
 """
@@ -53,7 +53,7 @@ function verbfromfst(fstdata)
         tensedict = labeldict(tensepairs)
         mooddict = labeldict(moodpairs)
         voicedict = labeldict(voicepairs)
-        verbform = LatinFiniteVerb(persondict[p],numberdict[n],
+        verbform = LMFFiniteVerb(persondict[p],numberdict[n],
         tensedict[t], mooddict[m], voicedict[v])        
     end
 end

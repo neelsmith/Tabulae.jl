@@ -3,11 +3,11 @@
 
 Implementations of the `LatinMorphologicalForm` are interchangeable with `FormUrn`s in the Tabulae collection.
 
-We can directly construct `LatinMorphologicalForm`s with type-specific parameters.  For example, a `LatinFiniteVerb` can be directly constructed with values for the person, number, tense, mood and voice, and a `LatinNoun` with values for gender, case, and number.
+We can directly construct `LatinMorphologicalForm`s with type-specific parameters.  For example, a `LMFFiniteVerb` can be directly constructed with values for the person, number, tense, mood and voice, and a `LatinNoun` with values for gender, case, and number.
 
 ```@example formurns
 using Tabulae
-verb = LatinFiniteVerb(3,1,1,1,1)
+verb = LMFFiniteVerb(3,1,1,1,1)
 formurn(verb)
 ```
 

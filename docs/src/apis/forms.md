@@ -1,5 +1,21 @@
 
-# Functions for working with `FormUrn`s
+# Basics of Latin morphology
+
+## Morphological properties
+
+```@docs
+LatinMorphologicalProperty
+code
+label
+LMFMood
+lmfMood
+LMFTense
+lmfTense
+LMFVoice
+lmfVoice
+```
+
+## Old functions
 
 
 ```@docs
