@@ -7,4 +7,4 @@ using Test
 #include("test_verbforms.jl")
 #include("test_parsing.jl")
 
-include("test_properties.jl")
+include("properties/test_tense.jl")

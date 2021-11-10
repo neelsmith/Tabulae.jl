@@ -1,7 +1,7 @@
 struct LMPVoice <: LatinMorphologicalProperty
     code::Int64
     function LMPVoice(code)
-        code in keys(moodlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(voicelabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpVoice(s::AbstractString)
-    s in keys(moodcodes) ? LMPVoice(moodcodes[s]) : DomainError(string(s, " is not a valid value for mood.")) 
+    s in keys(voicecodes) ? LMPVoice(voicecodes[s]) : DomainError(string(s, " is not a valid value for voice.")) 
 end
 
 """Create `LMPVoice` from integer code.

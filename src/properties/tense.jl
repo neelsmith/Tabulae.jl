@@ -1,7 +1,7 @@
 struct LMPTense <: LatinMorphologicalProperty
     code::Int64
-    function GMPLMPTenseMood(code)
-        code in keys(moodlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+    function LMPTense(code)
+        code in keys(tenselabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -36,7 +36,7 @@ end
 $(SIGNATURES)
 """
 function label(tense::LMPTense)
-    tense[tense.code]
+    tenselabels[tense.code]
 end
 
 """Dictionary mapping codes to labels for tense.
