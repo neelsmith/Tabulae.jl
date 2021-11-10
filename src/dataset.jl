@@ -9,8 +9,8 @@ Their subdirectory organization must follow Tabulae' specifications.
 """
 struct Dataset
     dirs
-    orthography::LatinOrthography
-    function Dataset(dirlist; ortho::T = latin23()) where {T <: LatinOrthography}
+    orthography::LatinOrthographicSystem
+    function Dataset(dirlist; ortho::T = latin23()) where {T <: LatinOrthographicSystem}
         if isempty(rulesarray(dirlist))
             throw(ArgumentError("No inflectional rules found."))
 
@@ -33,11 +33,11 @@ $(SIGNATURES)
 
 # Arguments
 
-- `dir` Full path to a directory with Kanones data.
+- `dir` Full path to a directory with Tabulae data.
 - `ortho` An instance of a `Orthography`.
 """
-function dataset(dir::AbstractString; ortho::T = latin23()) where {T <: LatinOrthography}
-    Kanones.Dataset([dir]; ortho = ortho)
+function dataset(dir::AbstractString; ortho::T = latin23()) where {T <: LatinOrthographicSystem}
+    Tabulae.Dataset([dir]; ortho = ortho)
 end
 
 
@@ -48,10 +48,10 @@ $(SIGNATURES)
 
 # Arguments
 
-- `srclist` List of full paths to a directory with Kanones data.
-- `ortho` An instance of a `LatinOrthography`; defaults to `Latin23`.
+- `srclist` List of full paths to a directory with Tabulae data.
+- `ortho` An instance of a `LatinOrthographicSystem`; defaults to `Latin23`.
 """
-function dataset(srclist::Array; ortho::T = literaryGreek()) where {T <: LatinOrthography}
+function dataset(srclist::Array; ortho::T = latin23()) where {T <: LatinOrthographicSystem}
     Tabulae.Dataset(srclist; ortho =  ortho)
 end
 
@@ -112,11 +112,11 @@ end
 
 $(SIGNATURES)
 """
-function stemsarray(kd::Kanones.Dataset)
+function stemsarray(kd::Tabulae.Dataset)
     stemsarray(kd.dirs)
 end
 
-"""Read all stem data from a `Kanones.Dataset` into an array of `Stem`s.
+"""Read all stem data from a `Tabulae.Dataset` into an array of `Stem`s.
 
 $(SIGNATURES)
 """

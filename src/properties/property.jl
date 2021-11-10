@@ -1,4 +1,4 @@
-"""Abstract type of a morphological form in Kanones."""
+"""Abstract type of a morphological form in Tabulae."""
 abstract type LatinMorphologicalProperty end
 
 """Integer code for  morphological property value.

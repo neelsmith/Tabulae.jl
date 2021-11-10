@@ -24,40 +24,40 @@ struct IrregularNounIO <: TabulaeIO
 end
 
 """
-KanonesIO type for reading and writing data for finite verb form.
+TabulaeIO type for reading and writing data for finite verb form.
 
 $(SIGNATURES)
 """    
-struct VerbIO <: KanonesIO
+struct VerbIO <: TabulaeIO
     label::AbstractString
 end
 
 """
-KanonesIO type for reading and writing data for irregular finite verb forms.
+TabulaeIO type for reading and writing data for irregular finite verb forms.
 
 $(SIGNATURES)
 """
-struct IrregularVerbIO <: KanonesIO
+struct IrregularVerbIO <: TabulaeIO
     label::AbstractString
 end
 
 """
-KanonesIO type for reading and writing data for infinitive rules only.
+TabulaeIO type for reading and writing data for infinitive rules only.
 
 $(SIGNATURES)
 
 """
-struct InfinitiveIO <: KanonesIO
+struct InfinitiveIO <: TabulaeIO
     label::AbstractString
 end
 
 """
-KanonesIO type for reading and writing data for irregular infinitive forms.
+TabulaeIO type for reading and writing data for irregular infinitive forms.
 
 $(SIGNATURES)
 
 """
-struct IrregularInfinitiveIO <: KanonesIO
+struct IrregularInfinitiveIO <: TabulaeIO
     label::AbstractString
 end
 

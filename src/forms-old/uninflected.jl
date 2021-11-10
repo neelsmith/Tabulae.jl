@@ -32,7 +32,7 @@ $(SIGNATURES)
 """
 function uninflectedfromfst(fstdata)
     nothing
-    # Kanones does this better.
+    # Tabulae does this better.
     #
     #=
     # <u>latcommon.indecln4</u><u>ls.n4</u>a<indecl><indeclprep><div><indeclprep><indecl><u>indeclinfl.1</u>

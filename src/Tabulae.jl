@@ -2,6 +2,8 @@ module Tabulae
 using CitableParserBuilder
 import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, parselistfromurl
 
+using LatinOrthography
+
 using HTTP
 
 using CitableObject
