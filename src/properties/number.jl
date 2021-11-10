@@ -18,7 +18,7 @@ end
 $(SIGNATURES)
 """
 function lmpNumber(code::Int64)
-    LMPPerson(code)
+    LMPNumber(code)
 end
 
 """Integer code for a `LMPPerson` value.

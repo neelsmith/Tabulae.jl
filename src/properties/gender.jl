@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpGender(s::AbstractString)
-    s in keys(gendercodes) ? LMPGender(gendercodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
+    s in keys(gendercodes) ? LMPGender(gendercodes[s]) : throw(DomainError(string(s, " is not a valid value for number.")))
 end
 
 """Create `LMPGender` from integer code.

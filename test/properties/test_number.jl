@@ -4,6 +4,6 @@
     @test lmpNumber(2) == LMPNumber(2)
     @test code(num) == 2
     @test label(num) == "plural"
-    @test_throws DomainError lmpPerson("present")
-    @test_throws DomainError lmpPerson(5)
+    @test_throws DomainError LMPNumber("present")
+    @test_throws DomainError LMPNumber(5)
 end

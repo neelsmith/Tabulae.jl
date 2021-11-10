@@ -9,11 +9,11 @@ using Test
 
 
 include("properties/test_properties.jl")
-#=
 include("properties/test_tense.jl")
 include("properties/test_mood.jl")
 include("properties/test_voice.jl")
 include("properties/test_person.jl")
-=#
+include("properties/test_number.jl")
+include("properties/test_gender.jl")
 
 include("forms/test_finiteverb.jl")

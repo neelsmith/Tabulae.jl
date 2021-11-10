@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpDegree(s::AbstractString)
-    s in keys(numbercodes) ? LMPDegree(numbercodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
+    s in keys(numbercodes) ? LMPDegree(numbercodes[s]) : throw(DomainError(string(s, " is not a valid value for number.")) )
 end
 
 """Create `LMPPerson` from integer code.

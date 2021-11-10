@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpUninflectedType(s::AbstractString)
-    s in keys(uninflectedcodes) ? LMPUninflectedType(uninflectedcodes[s]) : DomainError(string(s, " is not a valid value for uninflected part of speech.")) 
+    s in keys(uninflectedcodes) ? LMPUninflectedType(uninflectedcodes[s]) : throw(DomainError(string(s, " is not a valid value for uninflected part of speech.")) )
 end
 
 """Create `LMPGender` from integer code.

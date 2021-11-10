@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpCase(s::AbstractString)
-    s in keys(casecodes) ? LMPCase(casecodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
+    s in keys(casecodes) ? LMPCase(casecodes[s]) : throw(DomainError(string(s, " is not a valid value for number.")) )
 end
 
 """Create `LMPGender` from integer code.
