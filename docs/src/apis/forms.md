@@ -7,14 +7,24 @@
 LatinMorphologicalProperty
 code
 label
-LMFMood
-lmfMood
-LMFTense
-lmfTense
-LMFVoice
-lmfVoice
 ```
 
+Specific property types and their consturctor/accessor functions:
+
+```@docs
+LMFTense
+lmfTense
+LMFMood
+lmfMood
+LMFVoice
+lmfVoice
+LMFPerson
+lmfPerson
+LMFNumber
+lmfNumber
+```
+
+`
 ## Old functions
 
 
