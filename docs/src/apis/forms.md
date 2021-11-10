@@ -22,6 +22,12 @@ LMFPerson
 lmfPerson
 LMFNumber
 lmfNumber
+LMFGender
+lmfGender
+LMFCase
+lmfCase
+LMFDegree
+lmfDegree
 ```
 
 `

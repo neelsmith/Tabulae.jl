@@ -14,6 +14,10 @@ export LMPTense, lmpTense
 export LMPMood, lmpMood
 export LMPVoice, lmpVoice
 export LMPPerson, lmpPerson
+export LMPNumber, lmpNumber
+export LMPGender, lmpGender
+export LMPCase, lmpCase
+export LMPDegree, lmpDegree
 
 export LatinMorphologicalForm
 export LatinNoun, LMFFiniteVerb, LatinUninflectedForm

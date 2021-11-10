@@ -1,7 +1,7 @@
 struct LMPCase <: LatinMorphologicalProperty
     code::Int64
     function LMPCase(code)
-        code in keys(genderlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(caselabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -9,19 +9,19 @@ end
 
 $(SIGNATURES)
 """
-function lmpPerson(s::AbstractString)
-    s in keys(gendercodes) ? LMPCase(gendercodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
+function lmpCase(s::AbstractString)
+    s in keys(casecodes) ? LMPCase(casecodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
 end
 
 """Create `LMPGender` from integer code.
 
 $(SIGNATURES)
 """
-function lmpGender(code::Int64)
+function lmpCase(code::Int64)
     LMPCase(code)
 end
 
-"""Integer code for a `LMPGender` value.
+"""Integer code for a `LMPCase` value.
 
 $(SIGNATURES)
 """
@@ -29,7 +29,7 @@ function code(cs::LMPCase)
     cs.code
 end
 
-"""Human-readable label for a `LMPGender` value.
+"""Human-readable label for a `LMPCase` value.
 
 $(SIGNATURES)
 """
@@ -42,9 +42,12 @@ end
 $(SIGNATURES)
 """
 const caselabels = Dict(
-    1 => "masculine",
-    2 => "feminine",
-    3 => "neuter"
+    1 => "nominative",
+    2 => "genitive",
+    3 => "dative",
+    4 => "accusative",
+    5 => "ablative",
+    6 => "vocative"
 )
 
 """Dictionary mapping labels to codes for case.
@@ -52,7 +55,10 @@ const caselabels = Dict(
 $(SIGNATURES)
 """
 const casecodes = Dict(
-    "masculine" => 1,
-    "feminine" => 2,
-    "neuter" => 3
+    "nominative" => 1,
+    "genitive" => 2,
+    "dative" => 3,
+    "accusative" => 4,
+    "ablative" => 5,
+    "vocative" => 6
 )
