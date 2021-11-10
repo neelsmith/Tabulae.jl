@@ -20,3 +20,4 @@ include("properties/test_degree.jl")
 include("properties/test_uninflected.jl")
 
 include("forms/test_finiteverb.jl")
+include("forms/test_noun.jl")

@@ -6,12 +6,12 @@
     @test isnothing(lmpDegree(verb))
     @test isnothing(lmpUninflectedType(verb))
 
-    noun = ""
-    @test_broken isnothing(lmpTense(noun))
-    @test_broken isnothing(lmpMood(noun))
-    @test_broken isnothing(lmpVoice(noun))
-    @test_broken isnothing(lmpPerson(noun))
-    @test_broken isnothing(lmpDegree(noun))
+    noun = LMFNoun(lmpGender("masculine"), lmpCase("accusative"), lmpNumber("singular"))
+    @test isnothing(lmpTense(noun))
+    @test isnothing(lmpMood(noun))
+    @test isnothing(lmpVoice(noun))
+    @test isnothing(lmpPerson(noun))
+    @test isnothing(lmpDegree(noun))
 
     infinitive = ""
     @test_broken isnothing(lmpNumber(infinitive))

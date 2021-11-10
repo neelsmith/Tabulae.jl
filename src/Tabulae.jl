@@ -35,7 +35,8 @@ export LMPUninflectedType, lmpUninflectedType
 
 export LatinMorphologicalForm
 export LMFFiniteVerb, lmfFiniteVerb
-#export LatinNoun, , LatinUninflectedForm
+export LMFNoun, lmfNoun
+
 
 
 
@@ -57,6 +58,7 @@ include("properties/degree.jl")
 include("properties/uninflected.jl")
 
 include("citable_forms/finiteverb.jl")
+include("citable_forms/noun.jl")
 #include("forms/noun.jl")
 #include("forms/uninflected.jl")
 
