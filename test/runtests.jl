@@ -15,5 +15,8 @@ include("properties/test_voice.jl")
 include("properties/test_person.jl")
 include("properties/test_number.jl")
 include("properties/test_gender.jl")
+include("properties/test_case.jl")
+#include("properties/test_degree.jl")
+#include("properties/test_uninflected.jl")
 
 include("forms/test_finiteverb.jl")
