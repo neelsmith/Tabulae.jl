@@ -11,10 +11,9 @@ function installalphabet(src::Tabulae.Dataset, target::AbstractString)
     targetfile = joinpath(targetdir, "alphabet.fst")
     lines = [
         "% Characters list supplied by dataset's orthography functions:",
-        string("#consonant# = ", consonants(src.orthography)),
-        "#=consonant# = #consonant#",
+        string("#alphabetic# = ", alphabetic(src.orthography)),
         "",
-        string("#vowel# = ", vowels(src.orthography)),
+        string("#punctuation# = ", punctuation(src.orthography)),
         ""
     ]
     open(targetfile, "w") do io
@@ -36,13 +35,13 @@ function installsymbols(src::AbstractString, target::AbstractString)
     for fst in fstfiles
         srcfile = joinpath(src, "symbols", fst)
         targetfile = joinpath(targetdir, fst)
-        cp(srcfile, targetfile)
+        cp(srcfile, targetfile; force=true)
     end
     toplevel = joinpath(target, "symbols.fst")
     open(toplevel, "w") do io
         print(io, symbolsfst(target))
     end
-    phonologyfst = open(joinpath(src, "symbols", "phonology.fst","r")) do phonology
+    phonologyfst = open(joinpath(src, "symbols", "phonology.fst"), "r") do phonology
         read(phonology, String)
     end
     prefix = join([
@@ -54,7 +53,7 @@ function installsymbols(src::AbstractString, target::AbstractString)
         "% Basic alphabet specific to this orthographic system:",
         "#include \"" * target * "/symbols/alphabet.fst\""
     ], "\n")
-    open(joinpath(target, "symbols", "phonology.fst", "w")) do io
+    open(joinpath(target, "symbols", "phonology.fst"), "w") do io
         print(io, prefix * "\n\n" * phonologyfst * "\n")
     end
     
