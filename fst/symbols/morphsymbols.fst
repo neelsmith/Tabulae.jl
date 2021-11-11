@@ -11,21 +11,26 @@
 %
 % 1. Noun morphology:
 %
-#gender# = <masc><fem><neut>
-#case# = <nom><acc><gen><dat><abl><voc>
-#number# = <sg><pl>
+#gender# = <masculine><feminine><neuter>
+#case# = <nominative><accusative><genitive><dative><ablative><vocative>
+#number# = <singular><plural>
 %
-% 2. Adjective morphology:
+% 2. Additional adjective morphology:
 %
-#degree# = <pos><comp><superl>
+#degree# = <positive><comparative><superlative>
 %
 % 3. Verb morphology:
 %
-#person# = <1st><2nd><3rd>
+#person# = <first><second><third>
 % number already defined in noun morphology
-#tense# = <pres><impft><fut><futpft><pft><plupft>
-#mood# = <indic><subj><imptv>
-#voice# = <act><pass>
+#tense# = <present><imperfect><future><future_perfect><perfect><pluperfect>
+#mood# = <indicative><subjunctive><imperative>
+#voice# = <active><passive>
+%
+% 4. Uninflected forms:
+%
+#uninflected# =  <conjunction><particle><interjection><preposition><adverb><numeral>
+
 
 % Need to add gerunds, supine....
 

@@ -22,7 +22,7 @@ function buildacceptor(target)
 
     ], "\n")
     squasherunion = join(["% Union of all URN squashers:",
-    raw"$acceptor$ =  $squashnounurn$ ", "\n"])
+    raw"$acceptor$ =  $squashnounurn$ "], "\n")
     #=join([
         "% Union of all URN squashers:",
         raw"$acceptor$ = $squashuninflurn$ | $squashnounurn$ | $squashirregurn$ | $squashverburn$ | $squashinfinitiveurn$ | $squashparticipleurn$ | $squashverbaladjectiveurn$ | $squashadjectiveurn$ | $squashpronounurn$ "
@@ -32,7 +32,7 @@ function buildacceptor(target)
         "%% Put all symbols in 2 categories:  pass",
         "%% surface symbols through, suppress analytical symbols.",
         raw"#analysissymbol# = #editorial# #urntag# #uninflected# #pos# #morphtag# #stemtype#  #separator#",
-        raw"#surfacesymbol# = #letter#",
+        raw"#surfacesymbol# = #alphabetic#",
         raw"ALPHABET = [#surfacesymbol#] [#analysissymbol#]:<>",
         raw"$stripsym$ = .+"
     ],"\n")

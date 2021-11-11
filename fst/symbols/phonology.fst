@@ -11,7 +11,7 @@
 #diacritic# = #diaeresis#
 
 
-#character# = #letter# #diacritic#
+#character# = #alphabetic# #diacritic#
 $character$ = [#character#]
 
 % Additional editorial symbols used in stem files:
