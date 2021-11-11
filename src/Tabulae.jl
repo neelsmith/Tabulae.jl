@@ -82,11 +82,10 @@ include("citable_rules/nouns.jl")
 
 
 
-
-
 include("builder/config.jl")
 include("builder/fstcomposer.jl")
 include("builder/compiler.jl")
+include("builder/acceptorsquashers.jl")
 
 
 end # module

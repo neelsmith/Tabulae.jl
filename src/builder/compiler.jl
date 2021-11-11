@@ -13,7 +13,7 @@ end
 
 $(SIGNATURES)
 
-Returns the path to the compiled binary `greek.a` which can then be used
+Returns the path to the compiled binary `latin.a` which can then be used
 as an argument to the `parsetoken` function.
 """
 function buildparser(src::Tabulae.Dataset, fstdir::AbstractString, target::AbstractString, label = "Tabulae parser"; force::Bool = false)
@@ -34,14 +34,14 @@ function buildparser(src::Tabulae.Dataset, fstdir::AbstractString, target::Abstr
         installsymbols(fstdir, target)
 
         # Automatically composed FST, based on path to target directory.
-        buildfinalfst(joinpath(target, "greek.fst"))
+        buildfinalfst(joinpath(target, "latin.fst"))
         buildacceptor(joinpath(target, "acceptor.fst"))
         buildmakefile(joinpath(target, "makefile"))
         
         # Compile SFST binary
         compilefst(target)
     end
-    Tabulae.TabulaeParser(label, joinpath(target, "greek.a"))
+    Tabulae.TabulaeParser(label, joinpath(target, "latin.a"))
 end
 
 """Compile binary parser with `make`.
@@ -78,7 +78,7 @@ function buildmakefile(target)
     whichcompiler = read(`which fst-compiler-utf8`, String)
     fstcompiler = replace(whichcompiler, "\n" => "")
 
-    topline = dir * "/greek.a: " * dir * "/symbols.fst " * dir * "/acceptor.a " * dir * "/inflection.a"
+    topline = dir * "/latin.a: " * dir * "/symbols.fst " * dir * "/acceptor.a " * dir * "/inflection.a"
     doc = join([topline,
         "\n",
         "%.a: %.fst\n",
@@ -90,18 +90,18 @@ function buildmakefile(target)
     end
 end
 
-"""Compose top-level transducer `greek.fst`.
+"""Compose top-level transducer `latin.fst`.
 
 $(SIGNATURES)
 
 # Arguments
 
-- `target` is the full path to the desination file `greek.fst`.
+- `target` is the full path to the desination file `latin.fst`.
 """
 function buildfinalfst(target)
     fstdir = dirname(target)
     doc = join([
-        "%% greek.fst : a Finite State Transducer for ancient greek morphology",
+        "%% latin.fst : a Finite State Transducer for ancient latin morphology",
         "%",
         "% All symbols used in the FST:",
         "#include \"" * fstdir * "/symbols.fst\"",

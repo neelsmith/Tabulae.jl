@@ -4,9 +4,10 @@
     tds = dataset([srcdir])
 
     parserdir =  joinpath(tempdir(), "testtabbuild")
-    if ! ispath(parserdir)
-        mkdir(parserdir)
+    if  ispath(parserdir)
+        rm(parserdir; recursive = true)   
     end
+    mkdir(parserdir)
 
     Tabulae.installalphabet(tds, parserdir)      
     fstsrc = joinpath(repo, "fst")
