@@ -24,3 +24,4 @@ end
 # buildfinalfst
 # √ buildlexicon
 # buildinflection
+

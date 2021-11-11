@@ -3,11 +3,12 @@ using CitableObject, CitableParserBuilder
 using Test
 
 
-
+include("fstbuilding/test_fstdataformatting.jl")
+#=
 include("fstbuilding/test_sfstconfig.jl")
 include("fstbuilding/test_fstinstall.jl")
 include("fstbuilding/test_fstdatasets.jl")
-
+=#
 #=
 include("test_dataset.jl")
 

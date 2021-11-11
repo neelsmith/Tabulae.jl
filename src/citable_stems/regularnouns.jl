@@ -94,7 +94,7 @@ end
 
 $(SIGNATURES)
 """
-function fst(nounio::NounIO, n::TabulaeNounStem; ortho::LatinOrthographicSystem = latin23())
+function fst(n::TabulaeNounStem)
     # E.g.:
     # <u>latcommon\.nounn14736</u><u>ls\.n14736</u>don<noun><neut><us_i>
     join([
