@@ -84,4 +84,7 @@ include("citable_rules/nouns.jl")
 
 #include("parse.jl")
 
+include("builder/config.jl")
+include("builder/fstcomposer.jl")
+
 end # module
