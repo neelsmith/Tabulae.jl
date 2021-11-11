@@ -5,21 +5,24 @@
 
 
     # CHANGE THIS WHEN WORKING
-    BASEWRITETEST =  joinpath(repo, "testoutquick")
-    
-    targetdir = joinpath(BASEWRITETEST, "testtabbuild")
+    parserdir =  joinpath(tempdir(), "testtabbuild")
+    if ! ispath(parserdir)
+        mkdir(parserdir)
+    end
+
+    Tabulae.installalphabet(tds, parserdir)      
     fstsrc = joinpath(repo, "fst")
-    Tabulae.installalphabet(tds, targetdir)
-    Tabulae.installsymbols(fstsrc, targetdir)
 
+    Tabulae.installsymbols(fstsrc, parserdir)
 
-    @test isfile(joinpath(targetdir, "symbols.fst"))
-    symbolsdir = joinpath(targetdir, "symbols")
+    @test isfile(joinpath(parserdir, "symbols.fst"))
+    symbolsdir = joinpath(parserdir, "symbols")
     @test isfile(joinpath(symbolsdir, "alphabet.fst"))
     @test isfile(joinpath(symbolsdir, "markup.fst"))
     @test isfile(joinpath(symbolsdir, "morphsymbols.fst"))
     @test isfile(joinpath(symbolsdir, "stemtypes.fst"))
     
-    
-
+    # Clean up: remove temporary files
+    rm(parserdir; recursive = true)
+    @test isfile(parserdir) == false
 end
