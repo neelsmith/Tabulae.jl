@@ -3,8 +3,6 @@
     srcdir = joinpath(repo, "datasets", "core-infl-shared") 
     tds = dataset([srcdir])
 
-
-    # CHANGE THIS WHEN WORKING
     parserdir =  joinpath(tempdir(), "testtabbuild")
     if ! ispath(parserdir)
         mkdir(parserdir)

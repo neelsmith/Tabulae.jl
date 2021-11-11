@@ -49,6 +49,9 @@ export TabulaeNounRule
 export TabulaeStem
 export TabulaeNounStem
 
+
+export fst
+
 include("tabulaeio.jl")
 include("dataset.jl")
 
@@ -86,5 +89,6 @@ include("citable_rules/nouns.jl")
 
 include("builder/config.jl")
 include("builder/fstcomposer.jl")
+include("builder/compiler.jl")
 
 end # module

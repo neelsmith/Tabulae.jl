@@ -45,3 +45,8 @@ function lmpUninflected(stem::T) where {T <: TabulaeStem}
     @warn "Function lmpUninflected not implemented for stems of type $(typeof(stem))."
     nothing
 end
+
+function fst(stem::T; ortho::LatinOrthographicSystem = latin23()) where {T <: TabulaeStem}
+    @warn "Function fst not implemented for stems of type $(typeof(stem))."
+    nothing
+end

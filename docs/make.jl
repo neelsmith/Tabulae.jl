@@ -24,7 +24,8 @@ makedocs(
         ],
         "Reference: code" => Any[
             "Latin Morphology API" =>  "apis/apis.md",
-            "FormUrns" => "apis/forms.md"
+            "FormUrns" => "apis/forms.md",
+            "Building and compiling SFST" => "apis/fst.md"
         ],
         
     ],
