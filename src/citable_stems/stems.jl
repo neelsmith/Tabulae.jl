@@ -1,5 +1,12 @@
 abstract type TabulaeStem <: Stem end
 
+
+
+function fst(stem::T) where {IOT <: TabulaeIO, T <: TabulaeStem}
+    @warn "Function fst not implemented for stems of type $(typeof(stem))."
+    nothing
+end
+
 function lmpGender(stem::T) where {T <: TabulaeStem}
     @warn "Function lmpGender not implemented for stems of type $(typeof(stem))."
     nothing
@@ -43,10 +50,5 @@ end
 
 function lmpUninflected(stem::T) where {T <: TabulaeStem}
     @warn "Function lmpUninflected not implemented for stems of type $(typeof(stem))."
-    nothing
-end
-
-function fst(stem::T; ortho::LatinOrthographicSystem = latin23()) where {T <: TabulaeStem}
-    @warn "Function fst not implemented for stems of type $(typeof(stem))."
     nothing
 end

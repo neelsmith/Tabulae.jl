@@ -142,7 +142,7 @@ function buildlexicon(src, target)
      stems = Tabulae.stemsarray(src)
      lexicon = []
      for s in stems
-        push!(lexicon, fst(s; ortho = src.orthography))
+        push!(lexicon, fst(s))
      end
     open(target, "w") do io
         print(io, join(lexicon, "\n"))
@@ -164,7 +164,7 @@ function buildinflection(src::Tabulae.Dataset, target)
     ruleset = Tabulae.rulesarray(src)
     inflection = []
     for r in ruleset
-        push!(inflection, fst(r; ortho = src.orthography))
+        push!(inflection, fst(r))
     end
     fstvar =  raw"$inflection$"
     opening = fstvar * " = "
