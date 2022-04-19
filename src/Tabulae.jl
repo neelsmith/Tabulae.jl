@@ -22,7 +22,7 @@ export ruleurn
 
 export dataset
 export rulesarray, stemsarray
-
+export registry
 
 export label, code
 export LatinMorphologicalProperty
@@ -54,6 +54,7 @@ export fst
 
 include("tabulaeio.jl")
 include("dataset.jl")
+include("urnregistry/registry.jl")
 
 include("citable_forms/forms.jl")
 include("formvalues.jl")

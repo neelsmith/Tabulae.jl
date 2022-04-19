@@ -1,10 +1,12 @@
 using Tabulae
 using CitableObject, CitableParserBuilder
+using CitableCorpus, CitableText
 using Test
 
 
 
 include("test_dataset.jl")
+include("test_registry.jl")
 
 include("properties/test_properties.jl")
 include("properties/test_tense.jl")
