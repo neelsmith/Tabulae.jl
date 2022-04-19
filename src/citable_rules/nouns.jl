@@ -117,24 +117,3 @@ function ruleurn(rule::TabulaeNounRule)
     # PosPNTMVGCDCat
     RuleUrn(string("tabulaeforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
 end
-
-#=
-
-"""Compose representation of `TabulaeNounRule` for FST  lexicon.
-
-$(SIGNATURES)
-"""
-function fst(n::TabulaeNounRule)
-    # E.g.:
-    # <us_i><noun>um<neut><nom><sg><u>livymorph.us_i13</u>
-    join([
-        "<", n.inflectionclass ,">",
-        "<noun>",
-        "<", n.ending, ">",
-        "<", label(n.ngender), ">", 
-        "<", label(n.ncase), ">", 
-        "<", label(n.nnumber), ">", 
-        "<u>", protectreserved(string(n.ruleid)), "</u>"
-    ])
-end
-=#
