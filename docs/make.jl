@@ -25,7 +25,9 @@ makedocs(
             "Vocabulary" => "guide/lexemes.md",
             "Morphological forms" => "guide/forms.md",
             "Rules data" => "guide/rules.md",
-            "Stems data" => "guide/stems.md"
+            "Stems data" => "guide/stems.md",
+            "Analyses" => "guide/analyses.md",
+
         ],
         "Reference: code" => Any[
             "Latin Morphology API" =>  "apis/apis.md",

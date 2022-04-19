@@ -60,8 +60,12 @@ end
 
 $(SIGNATURES)
 """
-function formurn(lmfNoun::LMFNoun)
-    FormUrn(string("forms.", NOUN,"0",code(lmfNoun.nnumber),"000", code(lmfNoun.ngender), code(lmfNoun.ncase), "00"))
+function formurn(noun::LMFNoun)
+    FormUrn(string("forms.", NOUN,"0",code(noun.nnumber),"000", code(noun.ngender), code(noun.ncase), "00"))
+end
+
+function code(noun::LMFNoun)
+    urn(noun) |> objectcomponent
 end
 
 
@@ -90,6 +94,8 @@ function lmpNumber(noun::LMFNoun)
     noun.nnumber
 end
 
+
+#=
 """Parse a string of SFST output into a `LatinNoun` form.
 
 $(SIGNATURES)
@@ -108,3 +114,4 @@ function nounfromfst(fstdata)
     end
 
 end
+=#
