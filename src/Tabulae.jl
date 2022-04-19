@@ -39,9 +39,10 @@ export LMPDegree, lmpDegree
 export LMPUninflectedType, lmpUninflectedType
 
 export LatinMorphologicalForm, lmForm
+export allforms
 export LMFFiniteVerb, lmfFiniteVerb
 export LMFInfinitive, lmfInfinitive
-export LMFNoun, lmfNoun
+export LMFNoun, lmfNoun, nounformcodes, nounforms
 
 export NounIO, VerbIO
 
@@ -88,11 +89,5 @@ include("generate/generate.jl")
 include("parser/parser.jl")
 include("parser/dictparser.jl")
 
-#=
-include("builder/config.jl")
-include("builder/fstcomposer.jl")
-include("builder/compiler.jl")
-include("builder/acceptorsquashers.jl")
-=#
 
 end # module

@@ -5,6 +5,32 @@ struct LMFNoun <: LatinMorphologicalForm
     nnumber::LMPNumber
 end
 
+
+"""Generate list of codes for all noun forms.
+$(SIGNATURES)
+"""
+function nounformcodes()
+    genderints = keys(Tabulae.genderlabels) |> collect |> sort
+    caseints = keys(Tabulae.caselabels) |> collect |> sort
+    numints = keys(Tabulae.numberlabels) |> collect |> sort
+    formlist = []
+    for g in genderints
+        for c in caseints
+            for n in numints
+                push!(formlist, "20$(n)000$(g)$(c)00")
+            end
+        end
+    end
+    formlist
+end
+
+"""Generate list of all noun forms.
+$(SIGNATURES)
+"""
+function nounforms()
+    nounformcodes() .|> lmfNoun
+end
+
 """Noun forms are citable by Cite2Urn"""
 CitableTrait(::Type{LMFNoun}) = CitableByCite2Urn()
 

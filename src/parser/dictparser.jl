@@ -28,4 +28,15 @@ end
 $(SIGNATURES)
 """
 function dictionaryParser(td::Tabulae.Dataset)
+
+    # all noun forms x all noun stems
+    nounforms()
+    # all finite forms x all verb stems
+    # all infinitive forms x all verb stems
+    # all participle forms x all verb stems
+    # all gerund forms x all verb stems
+    # all gerundive forms x all verb stems
+    # all supine forms x all verb stems
+    # all pronoun forms x all pronoun stems
+    # all adjective forms x all adjective stems
 end

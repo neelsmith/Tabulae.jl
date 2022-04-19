@@ -23,7 +23,12 @@ function generate(frm::T, lex::LexemeUrn,  td::Tabulae.Dataset) where {T <: Lati
 end 
 
 
+"""Generate vector of possible strings the combination of `rule` and `stem`.
 
+$(SIGNATURES)
+"""
 function generate(rule::TRule, stem::TStem,  td::Tabulae.Dataset) where {TRule <: TabulaeRule, TStem <: TabulaeStem}
     generate(lmForm(rule), lexeme(stem), td)
 end 
+
+

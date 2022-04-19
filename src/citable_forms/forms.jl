@@ -37,3 +37,28 @@ $(SIGNATURES)
 function cex(mf::T; delimiter = "|") where {T <: LatinMorphologicalForm}
     join([urn(mf), label(mf)], delimiter)
 end
+
+
+"""Generate a complete list of possible morphological forms.
+$(SIGNATURES)
+"""
+function allforms(td::Tabulae.Dataset)
+    formlist = []
+    stems = stemsarray(td)
+    nounstems = filter(s -> s isa TabulaeNounStem, stems)
+    for s in nounstems
+        for f in nounforms()
+            generated = generate(f, lexeme(s), td)
+            # four urns?
+            # a = Analysis(s, )
+            if !isempty(generated)
+                push!(formlist, generated)
+            end
+        end
+    end
+
+
+
+    formlist
+end
+
