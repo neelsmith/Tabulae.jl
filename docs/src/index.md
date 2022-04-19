@@ -4,12 +4,12 @@
 
 ## Key points
 
-- Datasets are composed of tables of inflectional rules, and tables of vocabulary stems.
-- Each dataset follows a specified orthography.
+- Tabulae *datasets* are composed of tables of inflectional rules, and tables of vocabulary stems.
+- Each dataset follows a specified *orthography*.
 - Forms and lexemes are identified by URNs that are independent of orthography.
 - Datasets are compatible between the Scala and Julia systems.
-- Data tables use abbreviated URNs; a configuration allows expansion to full Cite2Urns.
-- Tabulae.jl is a pure Julia system: it has no external dependencies.
+- Data tables use *abbreviated URNs*; configuration of the dataset allows expansion to full `Cite2Urns`.
+- `Tabulae.jl` is a pure Julia system: it has no external dependencies.
 
 
 

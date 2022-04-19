@@ -3,7 +3,7 @@
 $(SIGNATURES)
 """
 function registry(td::Tabulae.Dataset)
-    dict = Dict{String, Cite2Urn}()
+    dict = Dict{String, String}()
     registrydirs = [
         "lexemes",
         "rules",
@@ -20,8 +20,7 @@ function registry(td::Tabulae.Dataset)
                     lns = readlines(f)
                     for ln in filter(l -> !isempty(l), lns[2:end])
                         cols = split(ln, "|")
-                        u = Cite2Urn(cols[2])
-                        dict[cols[1]] = u
+                        dict[cols[1]] = cols[2]
                     end
                 end
 

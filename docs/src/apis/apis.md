@@ -11,21 +11,12 @@ Depth = 3
 
 ```@docs
 LatinMorphologicalForm
-LatinNoun
+LMFNoun
 LMFFiniteVerb
 ```
 
 ## Public function APIs
 
 ```@docs
-fromfst
 formurn
-```
-
-## Internal APIs
-
-
-```@docs
-Tabulae.nounfromfst
-Tabulae.verbfromfst
 ```
