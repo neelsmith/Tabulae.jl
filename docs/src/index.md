@@ -13,7 +13,6 @@
 
 
 
-
 !!! note
 
     All code examples in this site use the Tabulae data set in the [`datasets/core-infl-shared` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) of the Tabulae github repository.

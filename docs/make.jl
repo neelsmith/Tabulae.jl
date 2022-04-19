@@ -20,6 +20,7 @@ makedocs(
     pages = [
         "Home" => Any[
             "User's guide: introduction" => "index.md",
+            "Identification with URNs" => "guide/urns.md",
             "Vocabulary" => "guide/lexemes.md",
             "Morphological forms" => "guide/forms.md",
             "Rules data" => "guide/rules.md",
