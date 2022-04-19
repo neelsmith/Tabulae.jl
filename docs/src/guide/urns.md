@@ -18,6 +18,17 @@ repo = pwd() |> dirname |> dirname  |> dirname
 - you use the other three types URNs to identify content in a `Tabulae` data set    
 - you record each collection in a URN registry that supports round-trip conversion of `AbbreviatedUrn`s and `Cite2Urn`s.
 
+## The URN registry
+
+- organized in three subdirectories of the dataset's `urnregistry` directory:
+     - `lexemes`
+     - `rules`
+     - `stems`
+- identical three-column delimited text files: collection ID, collection URN, label
+- as many file names as you like ending in `.cex`; empty lines OK
+
+
+You can get a dictionary of collection IDs to full URNs for your data aset with the `registry` function.
 
 
 ## Working with URNs

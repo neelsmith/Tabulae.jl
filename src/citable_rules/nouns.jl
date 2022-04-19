@@ -62,7 +62,6 @@ function urn(nr::TabulaeNounRule; registry = nothing)
     end
 end
 
-
 """Compose CEX text for a `TabulaeNounRule`.
 If `registry` is nothing, use abbreivated URN;
 otherwise, expand identifier to full `Cite2Urn`.

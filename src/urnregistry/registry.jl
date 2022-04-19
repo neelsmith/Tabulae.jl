@@ -3,6 +3,7 @@
 $(SIGNATURES)
 """
 function registry(td::Tabulae.Dataset)
+    dict = Dict{String, Cite2Urn}()
     registrydirs = [
         "lexemes",
         "rules",
@@ -15,10 +16,19 @@ function registry(td::Tabulae.Dataset)
             if isempty(cexfiles)
                 @warn("No URN registry  found for $(reg) in dataset $(dir)")
             else
-                
+                for f in cexfiles
+                    lns = readlines(f)
+                    for ln in filter(l -> !isempty(l), lns[2:end])
+                        cols = split(ln, "|")
+                        u = Cite2Urn(cols[2])
+                        dict[cols[1]] = u
+                    end
+                end
+
             end
         end
     end
+    dict
 end
 
 

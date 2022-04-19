@@ -87,12 +87,12 @@ function rulesarray(dirlist; delimiter = "|")
     rulesarr = Rule[]
 
     for datasrc in dirlist
-        for dirname in rulesdirs 
+        for dir in rulesdirs 
             #@info("PROCESSING DIR ", dirname)
-            dir = joinpath(datasrc, "rules-tables", dirname)
-            cexfiles = glob("*.cex", dir)
+            fullpath = joinpath(datasrc, "rules-tables", dir)
+            cexfiles = glob("*.cex", fullpath)
 
-            delimitedreader = (iodict[dirname])
+            delimitedreader = (iodict[dir])
             for f in cexfiles
                 #@info("PROCESS FILE ", f)
                 raw = readlines(f)

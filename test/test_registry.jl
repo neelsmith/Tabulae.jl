@@ -1,10 +1,11 @@
 @testset "Test constructing a dictionary from registry of collections" begin
-    repo = dirname(pwd())
-    srcdir = joinpath(repo, "datasets", "core-infl-shared") 
+    repo = pwd()
+    srcdir = joinpath(repo, "datasets", "goodregistry") 
     tds = dataset([srcdir])
     @test isa(tds, Tabulae.Dataset)
 
     dict = registry(tds)
+    @test length(dict) == 3
 end
 
 
