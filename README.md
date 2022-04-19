@@ -5,9 +5,13 @@
 
 A julia package implementing the Tabulae system for building Latin morphological parsers.
 
-Versions `0.3.x` were designed to read SFST output from the Scala implementation of Tabulae's basic ideas [here](https://github.com/neelsmith/tabulae).  
+## Unit tests
 
-Beginning with version `0.4.0`, `Tabulae.jl` is no longer fully compatible with the format of the SFST output from the Scala package.
+Tabulae includes a large suite of unit tests.  To run all of all them, just use the standard `test` command from package mode (and be prepared to wait).
+
+If you want to run a selection of tests, you can do that from the `tests` directory by running `julia select_tests.jl [FILENAMES]`.   `select_tests.jl` uses the `TestSetExtensions.jl` package; if you prefer its reporting format, you can run all the tests with  `julia select_tests.jl test* */test*jl`.
+
+
 
 
 ## Progress
