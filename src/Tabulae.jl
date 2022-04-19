@@ -72,7 +72,6 @@ include("properties/case.jl")
 include("properties/degree.jl")
 include("properties/uninflected.jl")
 
-
 include("citable_forms/noun.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
@@ -83,7 +82,11 @@ include("citable_stems/regularnouns.jl")
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
 
-include("generate.jl")
+include("generate/generate.jl")
+
+
+include("parser/parser.jl")
+include("parser/dictparser.jl")
 
 #=
 include("builder/config.jl")
