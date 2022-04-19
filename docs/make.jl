@@ -20,12 +20,14 @@ makedocs(
     pages = [
         "Home" => Any[
             "User's guide: introduction" => "index.md",
-            "FormUrns" => "guide/formurns.md"
+            "Vocabulary" => "guide/lexemes.md",
+            "Morphological forms" => "guide/forms.md",
+            "Rules data" => "guide/rules.md",
+            "Stems data" => "guide/stems.md"
         ],
         "Reference: code" => Any[
             "Latin Morphology API" =>  "apis/apis.md",
-            "FormUrns" => "apis/forms.md",
-            "Building and compiling SFST" => "apis/fst.md"
+            "FormUrns" => "apis/forms.md"
         ],
         
     ],

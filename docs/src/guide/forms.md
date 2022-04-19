@@ -1,5 +1,7 @@
 
-# `LatinMorphologicalForm`a  and `FormUrn`s
+# Morphological forms
+
+## `LatinMorphologicalForms`  and `FormUrn`s
 
 Implementations of the `LatinMorphologicalForm` are interchangeable with `FormUrn`s in the Tabulae collection.
 

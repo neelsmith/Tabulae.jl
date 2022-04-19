@@ -106,16 +106,20 @@ function generatenoun(form::FormUrn,lex::LexemeUrn,  kd::Kanones.Dataset)::Vecto
         selectirregnoun(irregnounmatches, form)
     end
 end
+=#
 
-"""Generate vector of possible strings for correctly accented form of a noun form identified by `analysis`.
+"""Generate vector of possible strings for a form identified by `analysis`.
 
 $(SIGNATURES)
 """
-function generatenoun(analysis::Analysis, kd::Kanones.Dataset)::Vector{AbstractString}
-    generatenoun(analysis.form, analysis.lexeme,  kd)
+function generatenoun(analysis::Analysis, td::Tabulae.Dataset)::Vector{AbstractString}
+    generate(analysis.form, analysis.lexeme,  td)
 end
-=#
 
-function generate(form::FormUrn,lex::LexemeUrn,  kd::Tabulae.Dataset)::Vector{AbstractString}
+"""Generate vector of possible strings for a form of `lex` identified by `form`.
+
+$(SIGNATURES)
+"""
+function generate(form::FormUrn,lex::LexemeUrn,  td::Tabulae.Dataset)::Vector{AbstractString}
     []
 end
