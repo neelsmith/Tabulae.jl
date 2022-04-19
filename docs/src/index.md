@@ -8,7 +8,7 @@
 - Each dataset follows a specified *orthography*.
 - Forms and lexemes are identified by URNs that are independent of orthography.
 - Datasets are compatible between the Scala and Julia systems.
-- Data tables use *abbreviated URNs*; configuration of the dataset allows expansion to full `Cite2Urns`.
+- Data tables use *abbreviated URNs*; adding a URN registry to the dataset allows expanding abbreviated URNs to full `Cite2Urns`.
 - `Tabulae.jl` is a pure Julia system: it has no external dependencies.
 
 

@@ -14,9 +14,3 @@ LatinMorphologicalForm
 LMFNoun
 LMFFiniteVerb
 ```
-
-## Public function APIs
-
-```@docs
-formurn
-```

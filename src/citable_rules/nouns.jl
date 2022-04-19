@@ -9,6 +9,13 @@ struct TabulaeNounRule <: TabulaeRule
     nnumber::LMPNumber
 end
 
+"""Create a `LMFNoun` from `rule`.
+$(SIGNATURES)
+"""
+function lmForm(rule::TabulaeNounRule)
+    LMFNoun(rule.ngender, rule.ncase, rule.nnumber)
+end
+
 """Read one row of a rules table for noun tokens,
 and create a `TabulaeNounRule`.
 

@@ -7,7 +7,7 @@
 
 ## TBA
 
-!!! info
+!!! info "TBA: labelling lexemes"
 
-    - Labelling lexeme identifiers with Lewis-Short lemmata
+    A forthcoming release of `Tabulae.jl` will include functions for labelling lexeme identifiers with Lewis-Short lemmata.
 

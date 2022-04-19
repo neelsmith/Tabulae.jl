@@ -1,7 +1,7 @@
 
 # Morphological forms and their properties
 
-## `LatinMorphologicalForms`  and `FormUrn`s
+## `LatinMorphologicalForms` 
 
 Implementations of the abstract `LatinMorphologicalForm` model the properties identifying a particular type of token. For example, a `LMFNoun` has properties for gender, case and number.  Each of these properties in turn are subtypes of the `LatinMorphologicalProperty`.  We can construct a form directly from these properties.  For example, a `LMFNoun` can be constructed like this:
 
@@ -14,11 +14,17 @@ n = lmpNumber("singular")
 noun = LMFNoun(g,c,n)
 ```
 
+
+## Tabulae's collection of form values
+
 Forms are identified by a `Cite2Urn` belonging to the collection `urn:cite2:tabulae:forms.v1`.
 
+As citable objects, they include the `label` function.
+
 ```@example formurns
-urn(noun)
+label(noun)
 ```
+
 
 
 Object identifiers in this collection are ten-character strings with each character representing an integer code for the following morphological properties:
@@ -34,6 +40,12 @@ Object identifiers in this collection are ten-character strings with each charac
 9. degree
 10. uninflected category
 
+In the following line, the initial digit `2` means "noun form"; the number value `1` means singular; the gender value `3` means "neuter" and the case value `1` means "nominative".
+
+```@example formurns
+urn(noun)
+```
+
 Convenience methods let you work with these identifiers directly, or as a `FormUrn` (from the `CitableParserBuilder` package).
 
 ```@example formurns
@@ -47,61 +59,35 @@ code(noun)
 
 
 
-For each type, a corresponding function (with a name beginning in lowercase) constructs a form from a variety of different kinds of sources.
-
-From a `Cite2Urn`:
+For each subtype of `LatinMorphologicalForm`, a corresponding constructor function (with a name beginning in lowercase) accepts a variety of kinds of sources for a form, such as a `Cite2Urn`:
 
 ```@example formurns
-u = Tabulae.formurn(noun)
+u = urn(noun)
 lmfNoun(u) == noun
 ```
 
-
-From a `Rule` object...
-
+Other sources you can use to create a `LatinMorphologicalForm` include strings, abbreviated URNs, `Analysis` objects and `TabulaeRule` objects.  See the API documentation for details.
 
 
 
 
 
+## Properties
 
-
-## Examples
-
-`Tabulae.jl` offers functions for extracting specific integer values from a `FormUrn`, and for composing labels for the values.
+Each implementation of the `LatinMorphologicalProperty` has a corresponding lower-case function you can use to extract that property from a form.
 
 
 ```@example intro
-using Tabulae # hide
-noun = LatinNoun(1,1,1) # hide
-urn = formurn(noun)
-Tabulae.poslabel(urn)
+gender = lmpGender(noun)
 ```
 
+You can use the `code` and `label` functions to find an integer code and readable string for any morphological property.
+
 ```@example intro
-Tabulae.genderlabel(urn)
+code(gender)
 ```
 
 
 ```@example intro
-Tabulae.caselabel(urn)
-```
-
-
-```@example intro
-Tabulae.numberlabel(urn)
-```
-
-```@example intro
-Tabulae.personlabel(urn)
-```
-
-## Roundtripping
-
-
-We can also convert a `FormUrn` to a Latin form object with *a function still to be written...*
-
-
-```@example formurns
-#roundtrip = fromurn(nounUrn)
+label(gender)
 ```
