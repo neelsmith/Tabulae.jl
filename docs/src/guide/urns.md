@@ -3,7 +3,7 @@
 
 
 ```@setup tabulae
-repo = pwd() |> dirname |> dirname  
+repo = pwd() |> dirname |> dirname  |> dirname
 ```
 
 ```@example tabulae
