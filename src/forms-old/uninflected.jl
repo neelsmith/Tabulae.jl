@@ -20,7 +20,7 @@ end
 $(SIGNATURES)
 """
 function formurn(uninflected::LatinUninflectedForm)
-    FormUrn(string("morphforms.100000000", uninflected.ucategory))
+    FormUrn(string("tabulaeforms.100000000", uninflected.ucategory))
 end
 
 

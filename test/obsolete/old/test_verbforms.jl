@@ -9,7 +9,7 @@
 end
 
 @testset "Test parsing a FormUrn into a verb form" begin
-    frm = FormUrn("morphforms.3311110000")
+    frm = FormUrn("tabulaeforms.3311110000")
     @test Tabulae.verbfromurn(frm) ==  LMFFiniteVerb(3,1,1,1,1)
 end
 
@@ -17,7 +17,7 @@ end
 @testset "Test getting FormUrn for finite verb form" begin
     verb = LMFFiniteVerb(3,1,1,1,1)
     verbU = formurn(verb)
-    @test verbU == FormUrn("morphforms.3311110000")
+    @test verbU == FormUrn("tabulaeforms.3311110000")
     @test Tabulae.poscode(verbU) == 3
     @test Tabulae.poslabel(verbU) == "verb-finite"
     @test Tabulae.personcode(verbU) == 3

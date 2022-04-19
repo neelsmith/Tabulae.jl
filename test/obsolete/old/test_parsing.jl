@@ -6,7 +6,7 @@
     @test isa(analysis, CitableParserBuilder.Analysis)
     @test analysis.token == "canem"
     @test analysis.lexeme == LexemeUrn("ls.n6506")
-    @test analysis.form == FormUrn("morphforms.2010001400") 
+    @test analysis.form == FormUrn("tabulaeforms.2010001400") 
     @test fromanalysis(analysis) == LatinNoun(1,4,1)
 end
 
@@ -20,7 +20,7 @@ end
     @test isa(analysis, CitableParserBuilder.Analysis)
     @test analysis.token == "#belligerauit"
     @test analysis.lexeme == LexemeUrn("ls.n5128")
-    @test analysis.form == FormUrn("morphforms.3314110000") 
+    @test analysis.form == FormUrn("tabulaeforms.3314110000") 
 
     @test fromanalysis(analysis) == LMFFiniteVerb(3,1,4,1,1)
 end

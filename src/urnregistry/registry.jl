@@ -6,8 +6,7 @@ function registry(td::Tabulae.Dataset)
     registrydirs = [
         "lexemes",
         "rules",
-        "stems",
-        
+        "stems"
     ]
     for dir in td.dirs
         for reg in registrydirs
@@ -15,6 +14,8 @@ function registry(td::Tabulae.Dataset)
             cexfiles = glob("*.cex", src)
             if isempty(cexfiles)
                 @warn("No URN registry  found for $(reg) in dataset $(dir)")
+            else
+                
             end
         end
     end

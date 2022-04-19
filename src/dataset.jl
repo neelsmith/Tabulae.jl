@@ -22,10 +22,7 @@ struct Dataset
         # with registry
         
         else
-            try
-                
-            catch
-            end
+            
             new(dirlist, ortho)
         end   
     end

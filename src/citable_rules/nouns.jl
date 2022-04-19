@@ -94,10 +94,10 @@ $(SIGNATURES)
 """
 function ruleurn(rule::TabulaeNounRule)
     # PosPNTMVGCDCat
-    RuleUrn(string("morphforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
+    RuleUrn(string("tabulaeforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
 end
 
-
+#=
 
 """Compose representation of `TabulaeNounRule` for FST  lexicon.
 
@@ -116,3 +116,4 @@ function fst(n::TabulaeNounRule)
         "<u>", protectreserved(string(n.ruleid)), "</u>"
     ])
 end
+=#
