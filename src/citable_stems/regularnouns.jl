@@ -90,6 +90,22 @@ function lexeme(n::TabulaeNounStem)
     n.lexid
 end
 
+
+"""Identify inflection type for `noun`.
+$(SIGNATURES)
+"""
+function inflectionType(noun::TabulaeNounStem)
+    noun.inflectionclass
+end
+
+"""Identify stem string for `noun`.
+$(SIGNATURES)
+"""
+function stemvalue(noun::TabulaeNounStem)
+    noun.form
+end
+
+#=
 """Compose representation of `TabulaeNounStem` for FST  lexicon.
 
 $(SIGNATURES)
@@ -105,3 +121,4 @@ function fst(n::TabulaeNounStem)
         "<", n.inflectionclass ,">"
     ])
 end
+=#

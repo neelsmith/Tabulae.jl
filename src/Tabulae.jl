@@ -20,6 +20,8 @@ import CitableBase: cex
 export urn, label, cex
 export ruleurn
 
+
+
 export dataset
 export rulesarray, stemsarray
 export registry
@@ -43,14 +45,14 @@ export LMFNoun, lmfNoun
 
 export NounIO, VerbIO
 
-export TabulaeRule
+export TabulaeRule, inflectionType
 export TabulaeNounRule
 
-export TabulaeStem
+export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 
+export generate
 
-export fst
 
 include("tabulaeio.jl")
 include("dataset.jl")
@@ -81,12 +83,13 @@ include("citable_stems/regularnouns.jl")
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
 
+include("generate.jl")
 
-
+#=
 include("builder/config.jl")
 include("builder/fstcomposer.jl")
 include("builder/compiler.jl")
 include("builder/acceptorsquashers.jl")
-
+=#
 
 end # module

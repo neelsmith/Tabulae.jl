@@ -16,6 +16,21 @@ function lmForm(rule::TabulaeNounRule)
     LMFNoun(rule.ngender, rule.ncase, rule.nnumber)
 end
 
+
+"""Identify inflection type for `rule`.
+$(SIGNATURES)
+"""
+function inflectionType(rule::TabulaeNounRule)
+    rule.inflectionclass
+end
+
+"""Identify ending for `rule`.
+$(SIGNATURES)
+"""
+function ending(rule::TabulaeNounRule)
+    rule.ending
+end
+
 """Read one row of a rules table for noun tokens,
 and create a `TabulaeNounRule`.
 
