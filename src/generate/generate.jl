@@ -21,3 +21,9 @@ function generate(frm::T, lex::LexemeUrn,  td::Tabulae.Dataset) where {T <: Lati
     end
     generated
 end 
+
+
+
+function generate(rule::TRule, stem::TStem,  td::Tabulae.Dataset) where {TRule <: TabulaeRule, TStem <: TabulaeStem}
+    generate(lmForm(rule), lexeme(stem), td)
+end 
