@@ -61,3 +61,23 @@ struct IrregularInfinitiveIO <: TabulaeIO
     label::AbstractString
 end
 
+
+
+
+"""
+Required function for TabulaeIO subtypes.
+
+$(SIGNATURES)
+"""
+function readrulerow(io::T, s::AbstractString) where {T <: TabulaeIO}
+    throws(DomainError("readrulerow function has not been implemented for type $(typeof(io))"))
+end
+
+"""
+Required function for TabulaeIO subtypes.
+
+$(SIGNATURES)
+"""
+function readstremrow(io::T, s::AbstractString) where {T <: TabulaeIO}
+    throws(DomainError("readstremrow function has not been implemented for type $(typeof(io))"))
+end

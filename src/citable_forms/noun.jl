@@ -5,6 +5,32 @@ struct LMFNoun <: LatinMorphologicalForm
     nnumber::LMPNumber
 end
 
+
+"""Generate list of codes for all noun forms.
+$(SIGNATURES)
+"""
+function nounformcodes()
+    genderints = keys(Tabulae.genderlabels) |> collect |> sort
+    caseints = keys(Tabulae.caselabels) |> collect |> sort
+    numints = keys(Tabulae.numberlabels) |> collect |> sort
+    formlist = []
+    for n in numints
+        for g in genderints
+            for c in caseints
+                push!(formlist, "20$(n)000$(g)$(c)00")
+            end
+        end
+    end
+    formlist
+end
+
+"""Generate list of all noun forms.
+$(SIGNATURES)
+"""
+function nounforms()
+    nounformcodes() .|> lmfNoun
+end
+
 """Noun forms are citable by Cite2Urn"""
 CitableTrait(::Type{LMFNoun}) = CitableByCite2Urn()
 
@@ -60,8 +86,12 @@ end
 
 $(SIGNATURES)
 """
-function formurn(lmfNoun::LMFNoun)
-    FormUrn(string("forms.", NOUN,"0",code(lmfNoun.nnumber),"000", code(lmfNoun.ngender), code(lmfNoun.ncase), "00"))
+function formurn(noun::LMFNoun)
+    FormUrn(string("forms.", NOUN,"0",code(noun.nnumber),"000", code(noun.ngender), code(noun.ncase), "00"))
+end
+
+function code(noun::LMFNoun)
+    urn(noun) |> objectcomponent
 end
 
 
@@ -90,21 +120,3 @@ function lmpNumber(noun::LMFNoun)
     noun.nnumber
 end
 
-"""Parse a string of SFST output into a `LatinNoun` form.
-
-$(SIGNATURES)
-"""
-function nounfromfst(fstdata)
-    nounrulere = r"<([^<]+)><([^<]+)><([^<]+)>"  
-    matchedup = collect(eachmatch(nounrulere, fstdata))
-    
-    if isempty(matchedup)
-        @warn("Unable to parse FST analysis \"" * fstdata * "\"")
-        nothing
-
-    else
-        (g,c,n) = matchedup[1].captures
-        LMFNoun(lmpGender(g), lmpCase(c), lmpNumber(n))
-    end
-
-end

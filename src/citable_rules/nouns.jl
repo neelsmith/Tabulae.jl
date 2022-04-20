@@ -9,6 +9,28 @@ struct TabulaeNounRule <: TabulaeRule
     nnumber::LMPNumber
 end
 
+"""Create a `LMFNoun` from `rule`.
+$(SIGNATURES)
+"""
+function lmForm(rule::TabulaeNounRule)
+    LMFNoun(rule.ngender, rule.ncase, rule.nnumber)
+end
+
+
+"""Identify inflection type for `rule`.
+$(SIGNATURES)
+"""
+function inflectionType(rule::TabulaeNounRule)
+    rule.inflectionclass
+end
+
+"""Identify ending for `rule`.
+$(SIGNATURES)
+"""
+function ending(rule::TabulaeNounRule)
+    rule.ending
+end
+
 """Read one row of a rules table for noun tokens,
 and create a `TabulaeNounRule`.
 
@@ -62,7 +84,6 @@ function urn(nr::TabulaeNounRule; registry = nothing)
     end
 end
 
-
 """Compose CEX text for a `TabulaeNounRule`.
 If `registry` is nothing, use abbreivated URN;
 otherwise, expand identifier to full `Cite2Urn`.
@@ -94,7 +115,5 @@ $(SIGNATURES)
 """
 function ruleurn(rule::TabulaeNounRule)
     # PosPNTMVGCDCat
-    RuleUrn(string("morphforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
+    RuleUrn(string("tabulaeforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
 end
-
-

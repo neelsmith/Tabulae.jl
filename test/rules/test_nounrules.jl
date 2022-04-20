@@ -13,5 +13,5 @@
      @test urn(rule; registry = dict) == Cite2Urn("urn:cite2:tabulae:nouninfl.v1:us_i13")
      @test cex(rule; registry = dict) == "urn:cite2:tabulae:nouninfl.v1:us_i13|Noun inflection rule: ending -um in class us_i can be neuter nominative singular."
  
-     @test Tabulae.ruleurn(rule) == RuleUrn("morphforms.2010003100")
+     @test Tabulae.ruleurn(rule) == RuleUrn("tabulaeforms.2010003100")
 end

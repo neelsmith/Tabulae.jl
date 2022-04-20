@@ -9,14 +9,14 @@
 end
 
 @testset "Test parsing a FormUrn into a Noun form" begin
-    frm = FormUrn("morphforms.2010001100")
+    frm = FormUrn("tabulaeforms.2010001100")
     @test Tabulae.nounfromurn(frm) == LatinNoun(1,1,1)
 end
 
 @testset "Test getting FormUrn for Noun form" begin
     noun = LatinNoun(1,1,1)
     formU = formurn(noun)
-    @test formU == FormUrn("morphforms.2010001100")
+    @test formU == FormUrn("tabulaeforms.2010001100")
 
     @test Tabulae.poscode(formU) == 2
     @test Tabulae.poslabel(formU) == "noun"

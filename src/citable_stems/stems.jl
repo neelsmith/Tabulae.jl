@@ -1,5 +1,31 @@
 abstract type TabulaeStem <: Stem end
 
+
+"""Find lexeme recorded in `stem`.
+$(SIGNATURES)
+"""
+function lexeme(stem::T) where {T <: TabulaeStem}
+    @warn "Function lexeme not implemented for stems of type $(typeof(stem))."
+    nothing
+end
+
+"""Identify inflection type for `stem`.
+$(SIGNATURES)
+"""
+function inflectionType(stem::T) where {T <: TabulaeStem}
+    @warn "Function inflectionType not implemented for stems of type $(typeof(stem))."
+    nothing
+end
+
+"""Identify stem form for `stem`.
+$(SIGNATURES)
+"""
+function stemvalue(stem::T) where {T <: TabulaeStem}
+    @warn "Function stemvalue not implemented for stems of type $(typeof(stem))."
+    nothing
+end
+
+
 function lmpGender(stem::T) where {T <: TabulaeStem}
     @warn "Function lmpGender not implemented for stems of type $(typeof(stem))."
     nothing

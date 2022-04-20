@@ -21,7 +21,7 @@ end
 $(SIGNATURES)
 """
 function formurn(noun::LatinNoun)
-    FormUrn(string("morphforms.",  NOUN,"0",
+    FormUrn(string("tabulaeforms.",  NOUN,"0",
     noun.nnumber,"000",noun.ngender,noun.ncase,"00"))
 end
 

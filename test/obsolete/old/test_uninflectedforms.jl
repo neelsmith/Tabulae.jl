@@ -1,6 +1,6 @@
 
 @testset "Test parsing a FormUrn into an uninflected Latin form" begin
-    frm = FormUrn("morphforms.1000000002")
+    frm = FormUrn("tabulaeforms.1000000002")
     @test Tabulae.uninflectedfromurn(frm) == LatinUninflectedForm(2)
 end
 
@@ -8,7 +8,7 @@ end
 @testset "Test getting FormUrn for an uninflected Latin form" begin
     uninflected = LatinUninflectedForm(2)
     formU = formurn(uninflected)
-    @test formU == FormUrn("morphforms.1000000002")
+    @test formU == FormUrn("tabulaeforms.1000000002")
    
     @test Tabulae.poscode(formU) == 1
     @test Tabulae.poslabel(formU) == "uninflected"

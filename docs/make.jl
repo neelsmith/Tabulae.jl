@@ -20,8 +20,20 @@ makedocs(
     pages = [
         "Home" => Any[
             "User's guide: introduction" => "index.md",
-            "FormUrns" => "guide/formurns.md"
+            "Datasets" => "guide/datasets.md",
+            "Identification with URNs" => "guide/urns.md",
+            "Vocabulary" => "guide/lexemes.md",
+            "Morphological forms" => "guide/forms.md",
+            "Rules data" => "guide/rules.md",
+            "Stems data" => "guide/stems.md",
+            "Analyses" => "guide/analyses.md",
+
         ],
+        "Reference: inflectional types and paradigms" => Any[
+            "Paradigms" =>  "infltypes/index.md",
+            "Nouns" => "infltypes/nouns/index.md"
+        ],
+
         "Reference: code" => Any[
             "Latin Morphology API" =>  "apis/apis.md",
             "FormUrns" => "apis/forms.md"
