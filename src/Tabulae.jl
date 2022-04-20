@@ -4,7 +4,7 @@ import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, pars
 
 using LatinOrthography
 
-using HTTP
+using Downloads
 
 using CitableObject
 using Glob, Unicode
@@ -52,6 +52,12 @@ export TabulaeNounRule
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 
+
+
+export StringParser, stringParser
+export analysis_line, analysis_lines
+
+
 export generate
 export mddeclension
 
@@ -88,6 +94,7 @@ include("generate/generate.jl")
 
 include("parser/parser.jl")
 include("parser/dictparser.jl")
+include("parser/stringparser.jl")
 
 include("for-apps/md.jl")
 
