@@ -1,5 +1,5 @@
 """Abstract type of a morphological parser."""
-abstract type TabulaeParser end
+abstract type TabulaeParser <: CitableParser end
 
 """Parse a single token `s` using parser `p`.
 $(SIGNATURES)
