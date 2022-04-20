@@ -20,7 +20,7 @@ If you want to run a selection of tests, you can do that from the `tests` direct
 | Analytical type	| morphology | analyze | generate |
 | --- | --- | --- | --- |
 | uninflected token | |||
-| noun | |||
+| noun | ✅ |  ✅ |  ✅ |
 | pronoun | |||
 | finite verb | |||
 | infinitive | |||
