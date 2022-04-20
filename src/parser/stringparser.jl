@@ -3,6 +3,22 @@ struct StringParser <: TabulaeParser
     entries
 end
 
+"""Parse a single token using `parser`.
+$(SIGNATURES)
+"""
+function parsetoken(s::AbstractString, parser::StringParser; data = nothing)
+    ptrn = s * "|"
+    matches = filter(ln -> startswith(ln, ptrn), parser.entries)
+    map(ln -> fromline(ln), matches)
+end
+
+
+"""Instantiate a `StringParser` for `td`.
+$(SIGNATURES)
+"""
+function stringParser(td::Tabulae.Dataset)
+    analysis_lines(td) |> StringParser
+end
 
 """Instantiate a `StringParser` from a set of analyses read from a local file.
 $(SIGNATURES)
