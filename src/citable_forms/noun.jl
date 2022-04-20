@@ -14,9 +14,9 @@ function nounformcodes()
     caseints = keys(Tabulae.caselabels) |> collect |> sort
     numints = keys(Tabulae.numberlabels) |> collect |> sort
     formlist = []
-    for g in genderints
-        for c in caseints
-            for n in numints
+    for n in numints
+        for g in genderints
+            for c in caseints
                 push!(formlist, "20$(n)000$(g)$(c)00")
             end
         end
@@ -120,24 +120,3 @@ function lmpNumber(noun::LMFNoun)
     noun.nnumber
 end
 
-
-#=
-"""Parse a string of SFST output into a `LatinNoun` form.
-
-$(SIGNATURES)
-"""
-function nounfromfst(fstdata)
-    nounrulere = r"<([^<]+)><([^<]+)><([^<]+)>"  
-    matchedup = collect(eachmatch(nounrulere, fstdata))
-    
-    if isempty(matchedup)
-        @warn("Unable to parse FST analysis \"" * fstdata * "\"")
-        nothing
-
-    else
-        (g,c,n) = matchedup[1].captures
-        LMFNoun(lmpGender(g), lmpCase(c), lmpNumber(n))
-    end
-
-end
-=#

@@ -25,6 +25,29 @@ function generate(frm::T, lex::LexemeUrn,  td::Tabulae.Dataset)::Vector{Analysis
 end 
 
 
+function generate(frmUrn::FormUrn, lex::LexemeUrn,  td::Tabulae.Dataset)#::Vector{Analysis} 
+    generated = Analysis[]
+    stems = stemsarray(td)
+    stemlist = filter(s -> lexeme(s) == lex, stems)
+    if isempty(stemlist)
+        @warn("No stems matched lexeme $(lex)")
+        
+    else
+        rules = rulesarray(td)
+        
+        for stem in stemlist
+            classrules = filter(r -> inflectionType(r) == inflectionType(stem) && r == frmUrn, rules)
+            for rule in classrules
+                token = string(stemvalue(stem), ending(rule))
+                #push!(generated, string(stemvalue(stem), ending(r)))
+                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule)))
+            end
+        end
+    end
+    generated
+end
+
+
 """Generate vector of possible strings the combination of `rule` and `stem`.
 
 $(SIGNATURES)

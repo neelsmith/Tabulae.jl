@@ -53,7 +53,7 @@ export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 
 export generate
-
+export mddeclension
 
 include("tabulaeio.jl")
 include("dataset.jl")
@@ -89,5 +89,6 @@ include("generate/generate.jl")
 include("parser/parser.jl")
 include("parser/dictparser.jl")
 
+include("for-apps/md.jl")
 
 end # module

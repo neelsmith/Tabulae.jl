@@ -29,6 +29,11 @@ makedocs(
             "Analyses" => "guide/analyses.md",
 
         ],
+        "Reference: inflectional types and paradigms" => Any[
+            "Paradigms" =>  "infltypes/index.md",
+            "Nouns" => "infltypes/nouns/index.md"
+        ],
+
         "Reference: code" => Any[
             "Latin Morphology API" =>  "apis/apis.md",
             "FormUrns" => "apis/forms.md"
