@@ -39,7 +39,7 @@ export LMPDegree, lmpDegree
 export LMPUninflectedType, lmpUninflectedType
 
 export LatinMorphologicalForm, lmForm
-export allforms
+export analyses
 export LMFFiniteVerb, lmfFiniteVerb
 export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun, nounformcodes, nounforms

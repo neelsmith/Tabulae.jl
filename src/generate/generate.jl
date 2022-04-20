@@ -2,8 +2,8 @@
 
 $(SIGNATURES)
 """
-function generate(frm::T, lex::LexemeUrn,  td::Tabulae.Dataset) where {T <: LatinMorphologicalForm}
-    generated = []
+function generate(frm::T, lex::LexemeUrn,  td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
+    generated = Analysis[]
     stems = stemsarray(td)
     stemlist = filter(s -> lexeme(s) == lex, stems)
     if isempty(stemlist)
@@ -14,8 +14,10 @@ function generate(frm::T, lex::LexemeUrn,  td::Tabulae.Dataset) where {T <: Lati
         
         for stem in stemlist
             classrules = filter(r -> inflectionType(r) == inflectionType(stem) && lmForm(r) == frm, rules)
-            for r in classrules
-                push!(generated, string(stemvalue(stem), ending(r)))
+            for rule in classrules
+                token = string(stemvalue(stem), ending(rule))
+                #push!(generated, string(stemvalue(stem), ending(r)))
+                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule)))
             end
         end
     end
@@ -27,7 +29,7 @@ end
 
 $(SIGNATURES)
 """
-function generate(rule::TRule, stem::TStem,  td::Tabulae.Dataset) where {TRule <: TabulaeRule, TStem <: TabulaeStem}
+function generate(rule::TRule, stem::TStem,  td::Tabulae.Dataset)::Vector{Analysis} where {TRule <: TabulaeRule, TStem <: TabulaeStem}
     generate(lmForm(rule), lexeme(stem), td)
 end 
 

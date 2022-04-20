@@ -39,38 +39,33 @@ function cex(mf::T; delimiter = "|") where {T <: LatinMorphologicalForm}
 end
 
 
-"""Generate a complete list of possible morphological forms.
+"""Generate a complete list of all possible noun forms.
 $(SIGNATURES)
 """
-function allforms(td::Tabulae.Dataset)
-    formlist = []
+function nounanalyses(td::Tabulae.Dataset)::Vector{Analysis}
+    formlist = Analysis[]
+
     stems = stemsarray(td)
     nounstems = filter(s -> s isa TabulaeNounStem, stems)
     for nounstem in nounstems
-        
         # Filter nounforms() for matching gender.
        
         # THEN generate for those forms
         for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())
             generated = generate(f, lexeme(nounstem), td)
-            # four urns?
-            # a = Analysis(s, )
-#=
-struct Analysis
-    token::AbstractString
-    lexeme::LexemeUrn
-    form::FormUrn
-    stem::StemUrn
-    rule::RuleUrn
-end
-
-            =#
-            for str in generated
-                a = Analysis(str, lexeme(nounstem), formurn(f), urn(nounstem), RuleUrn("dummy.rule"))
-                push!(formlist, a)
+            for g in generated
+                push!(formlist, g)
             end
         end
     end
     formlist
+end
+
+"""Generate a complete list of possible morphological forms.
+$(SIGNATURES)
+"""
+function analyses(td::Tabulae.Dataset)::Vector{Analysis}
+    formlist = Analysis[]
+    formlist = append!(formlist, nounanalyses(td)) 
 end
 
