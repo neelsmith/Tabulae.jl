@@ -46,19 +46,31 @@ function allforms(td::Tabulae.Dataset)
     formlist = []
     stems = stemsarray(td)
     nounstems = filter(s -> s isa TabulaeNounStem, stems)
-    for s in nounstems
-        for f in nounforms()
-            generated = generate(f, lexeme(s), td)
+    for nounstem in nounstems
+        
+        # Filter nounforms() for matching gender.
+       
+        # THEN generate for those forms
+        for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())
+            generated = generate(f, lexeme(nounstem), td)
             # four urns?
             # a = Analysis(s, )
-            if !isempty(generated)
-                push!(formlist, generated)
+#=
+struct Analysis
+    token::AbstractString
+    lexeme::LexemeUrn
+    form::FormUrn
+    stem::StemUrn
+    rule::RuleUrn
+end
+
+            =#
+            for str in generated
+                a = Analysis(str, lexeme(nounstem), formurn(f), urn(nounstem), RuleUrn("dummy.rule"))
+                push!(formlist, a)
             end
         end
     end
-
-
-
     formlist
 end
 

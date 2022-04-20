@@ -90,6 +90,12 @@ function lexeme(n::TabulaeNounStem)
     n.lexid
 end
 
+"""Gender for a `TabulaeNounStem`
+$(SIGNATURES)
+"""
+function lmpGender(n::TabulaeNounStem)
+    n.gender
+end
 
 """Identify inflection type for `noun`.
 $(SIGNATURES)
