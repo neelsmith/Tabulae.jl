@@ -1,6 +1,7 @@
 using Tabulae
 using CitableObject, CitableParserBuilder
 using CitableCorpus, CitableText
+using CitableBase
 using Test
 
 

@@ -11,7 +11,7 @@ using Glob, Unicode
 using DocStringExtensions, Documenter
 
 
-using CitableBase: Citable
+using CitableBase
 import CitableBase: CitableTrait
 import CitableBase: urn
 import CitableBase: label

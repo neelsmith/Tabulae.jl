@@ -17,4 +17,13 @@
     alist = map(ln -> Tabulae.fromline(ln), donum)
     @test alist isa Vector{Analysis}
 
+    u = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/dev/test/samplecex/analyses.cex"
+    parser1 = stringParser(u, UrlReader)
+    @test parser1 isa StringParser
+
+    f = joinpath(pwd(), "samplecex", "analyses.cex")
+    parser2 = stringParser(f, FileReader)
+    @test parser2 isa StringParser
+    @test length(parser1.entries) == length(parser2.entries)
+
 end

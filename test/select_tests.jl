@@ -1,8 +1,9 @@
 using Pkg
 Pkg.activate("..")
 
-
+using Downloads
 using Tabulae
+using CitableBase
 using CitableObject, CitableParserBuilder
 using CitableCorpus, CitableText
 using Orthography, LatinOrthography

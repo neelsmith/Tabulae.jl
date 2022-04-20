@@ -7,15 +7,16 @@ end
 """Instantiate a `StringParser` from a set of analyses read from a local file.
 $(SIGNATURES)
 """
-function stringParser(f, FileReader)
+function stringParser(f, freader::Type{FileReader})
     StringParser(readlines(f))
 end
 
-"""Instantiate a `StringParser` from a set of analyses read from a local file.
+"""Instantiate a `StringParser` from a set of analyses read from a URL.
 $(SIGNATURES)
 """
-function stringParser(u, UrlReader)
-    
+function stringParser(u, ureader::Type{UrlReader})
+    @warn("What's wrong with this functioN?")
+    Downloads.download(u) |> readlines |> StringParser
 end
 
 """Serialize a single analysis to delimited text.
