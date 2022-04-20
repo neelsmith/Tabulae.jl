@@ -56,7 +56,7 @@ export TabulaeNounStem
 
 export StringParser, stringParser
 export analysis_line, analysis_lines
-
+export parsetoken
 
 export generate
 export mddeclension
