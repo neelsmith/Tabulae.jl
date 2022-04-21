@@ -11,7 +11,7 @@ $(SIGNATURES)
 """
 function nounformcodes()
     genderints = keys(Tabulae.genderlabels) |> collect |> sort
-    caseints = keys(Tabulae.caselabels) |> collect |> sort
+    caseints = keys(Tabulae.caselabeldict) |> collect |> sort
     numints = keys(Tabulae.numberlabels) |> collect |> sort
     formlist = []
     for n in numints

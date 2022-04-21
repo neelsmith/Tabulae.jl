@@ -1,15 +1,10 @@
 module Tabulae
-using CitableParserBuilder
-import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, parselistfromurl
-
-using LatinOrthography
-
 using Downloads
-
-using CitableObject
 using Glob, Unicode
 using DocStringExtensions, Documenter
 
+using CitableParserBuilder
+import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, parselistfromurl
 
 using CitableBase
 import CitableBase: CitableTrait
@@ -17,10 +12,11 @@ import CitableBase: urn
 import CitableBase: label
 import CitableBase: cex
 
+using LatinOrthography
+using CitableObject
+
 export urn, label, cex
 export ruleurn
-
-
 
 export dataset
 export rulesarray, stemsarray
@@ -53,7 +49,6 @@ export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 
 
-
 export StringParser, stringParser
 export analysis_line, analysis_lines
 export parsetoken
@@ -62,7 +57,9 @@ export generate
 export mddeclension
 
 include("tabulaeio.jl")
-include("dataset.jl")
+include("dataset/dataset.jl")
+include("dataset/rulesarray.jl")
+include("dataset/stemsarray.jl")
 include("urnregistry/registry.jl")
 
 include("citable_forms/forms.jl")

@@ -31,7 +31,9 @@ makedocs(
         ],
         "Reference: inflectional types and paradigms" => Any[
             "Paradigms" =>  "infltypes/index.md",
-            "Nouns" => "infltypes/nouns/index.md"
+            "Nouns" => "infltypes/nouns/index.md",
+            "Nouns: first declension" => "infltypes/nouns/decl1.md",
+            "Nouns: second declension" => "infltypes/nouns/decl2.md",
         ],
 
         "Reference: code" => Any[
