@@ -1,12 +1,11 @@
 
 
-"""Compose markdown tabe with declension of a single lexeme.
+"""Compose markdown table with declension of a single lexeme.
 $(SIGNATURES)
 """
 function mddeclension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
     mdlines = ["| | Singular | Plural |", "| --- | --- | --- |"]
-    stems = stemsarray(td)
-    stemmatches = filter(s -> lexeme(s) == lex, stems)
+    stemmatches = stemsforlexeme(td, lex)
     if isempty(stemmatches)
         @warn("No matches in data set for lexeme $(lex).")
         nothing
@@ -20,14 +19,10 @@ function mddeclension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
         pl_analyses  = map(f -> generate(f, lex, td), pl)
 
         for (i,f) in enumerate(sing)
-            
             caselabel = lmpCase(f) |> label
-            
-            singtokenlist = sing_analyses[i][1].token # REPLACE WIHT REAL FUNTION FROM CPB
-            pltokenlist = pl_analyses[i][1].token # REPLACE WIHT REAL  FUCNTION FROM CitableParserBuilder
+            singtokenlist =  CitableParserBuilder.tokens(sing_analyses[i])
+            pltokenlist = CitableParserBuilder.tokens(pl_analyses[i])
             push!(mdlines, string("| **", caselabel, "** | ", singtokenlist, " | ", pltokenlist, " |"))
-            
-            
         end
 
     end
@@ -35,14 +30,41 @@ function mddeclension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
 end
 
 
-#=
-function mddeclension(lex::LexemeUrn, kd::Kanones.Dataset; withvocative::Bool = false)
-    labels = ["nominative", "genitive", "dative", "accusative"]
-    lines = ["| | Singular | Plural |", "| --- | --- | --- |"]
-    arry = decline(lex, kd;  withvocative = withvocative)
-    for i in 1:4
-        push!(lines, string("| **", labels[i], "** | ", join(arry[i], ", "), " | ", join(arry[i + 4], ", "), " |"))
+
+"""Compose markdown table with parallel declensions of a list of lexemes.
+$(SIGNATURES)
+"""
+function mddeclension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; vocative = false, headings = [])
+    mdlines = []
+    if length(headings) == length(lexemelist)
+        push!(mdlines, "| | " * join(headings, " | ") * " |")   
+    else
+        push!(mdlines, "| |" * join(map(l -> l.objectid, lexemelist), " | ") * " |")
     end
-    join(lines,"\n")
+    colcount = length(lexemelist) + 1
+    separator = "|" * repeat(" --- |", colcount)
+    push!(mdlines, separator)
+
+
+
+
+    genderlist = map(l -> Tabulae.stemsforlexeme(td, l)[1] |> lmpGender, lexemelist)
+    # Singular forms:
+    for (i, label) in enumerate(caselabels())
+        row = []
+        for (j,lex) in enumerate(lexemelist)
+            gndr = genderlist[j]
+            frm = LMFNoun(gndr, lmpCase(i), lmpNumber(1))
+            token = generate(frm, lex, td) |> CitableParserBuilder.tokens
+            push!(row, token)
+        end
+
+        push!(mdlines, "| *" * label * "* | " * join(row, " | ") * " |")
+    end
+    
+
+    # loop cases and add column for each lexeme
+
+
+    join(mdlines,"\n")
 end
-=#

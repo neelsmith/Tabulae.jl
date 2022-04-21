@@ -57,7 +57,9 @@ export generate
 export mddeclension
 
 include("tabulaeio.jl")
-include("dataset.jl")
+include("dataset/dataset.jl")
+include("dataset/rulesarray.jl")
+include("dataset/stemsarray.jl")
 include("urnregistry/registry.jl")
 
 include("citable_forms/forms.jl")
