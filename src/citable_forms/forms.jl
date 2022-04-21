@@ -48,8 +48,9 @@ function nounanalyses(td::Tabulae.Dataset)::Vector{Analysis}
     stems = stemsarray(td)
 
     nounstems = filter(s -> s isa TabulaeNounStem, stems)
-    for nounstem in nounstems
+    for (i, nounstem) in enumerate(nounstems)
         # Filter nounforms() for matching gender.
+        @info("Analysis $(i)...")
        
         # THEN generate for those forms
         for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())
@@ -69,6 +70,7 @@ $(SIGNATURES)
 """
 function analyses(td::Tabulae.Dataset)::Vector{Analysis}
     formlist = Analysis[]
+    @info("Analyzing all noun forms in dataset...")
     formlist = append!(formlist, nounanalyses(td)) 
 end
 

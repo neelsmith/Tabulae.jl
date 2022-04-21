@@ -3,6 +3,15 @@ struct StringParser <: TabulaeParser
     entries
 end
 
+"""Write entries to file.
+$(SIGNATURES)
+"""
+function tofile(p::StringParser, f)
+    open(f, "w") do io
+        write(f, join(p.entries,"\n"))
+    end
+end
+
 """Parse a single token using `parser`.
 $(SIGNATURES)
 """
