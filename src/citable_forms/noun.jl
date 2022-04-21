@@ -120,3 +120,32 @@ function lmpNumber(noun::LMFNoun)
     noun.nnumber
 end
 
+
+
+
+
+"""Generate a complete list of all possible noun forms.
+$(SIGNATURES)
+"""
+function nounanalyses(td::Tabulae.Dataset)::Vector{Analysis}
+    formlist = Analysis[]
+
+    stems = stemsarray(td)
+
+    nounstems = filter(s -> s isa TabulaeNounStem, stems)
+    for (i, nounstem) in enumerate(nounstems)
+        # Filter nounforms() for matching gender.
+        @info("Analysis $(i)...")
+       
+        # THEN generate for those forms
+        for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())
+            generated = generate(f, lexeme(nounstem), td)
+            for g in generated
+                push!(formlist, g)
+            end
+        end
+    end
+
+    
+    formlist
+end

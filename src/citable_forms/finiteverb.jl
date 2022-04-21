@@ -85,28 +85,6 @@ function lmfFiniteVerb(a::Analysis)
 end
 
 
-"""Parse a string of SFST output into a `LMFFiniteVerb`.
-
-$(SIGNATURES)
-"""
-function verbfromfst(fstdata)
-    # Extract PNTMV from a string like this:
-    #<3rd><sg><pft><indic><act>
-    #verbrulere = r"<[^<]+><verb>[^<]*
-    verbrulere = r"<([^<]+)><([^<]+)><([^<]+)><([^<]+)><([^<]+)>"
-    matchedup = collect(eachmatch(verbrulere, fstdata))
-
-    if isempty(matchedup)
-        @warn("Unable to parse FST analysis \"" * fstdata * "\" as verb form.")
-        nothing
-
-    else
-        (p,n, t, m, v) = matchedup[1].captures
-        LMFFiniteVerb(lmpPerson(p),lmpNumber(n),
-        lmpTense(t), lmpMood(m), lmpVoice(v))        
-    end
-end
-
 """Compose URN for finite verb form from FST representation of analytical data.
 
 $(SIGNATURES)
@@ -115,8 +93,6 @@ function irregularverbfromfst(fstdata)
     @warn("Reading irregular verbs from FST not yet implemented")
     nothing
 end
-
-
 
 """Find tense of a form.
 
