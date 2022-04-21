@@ -31,7 +31,6 @@ end
 $(SIGNATURES)
 """
 function stringParser(u, ureader::Type{UrlReader})
-    @warn("What's wrong with this functioN?")
     Downloads.download(u) |> readlines |> StringParser
 end
 
