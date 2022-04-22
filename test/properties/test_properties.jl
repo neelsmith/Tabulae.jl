@@ -1,6 +1,5 @@
 @testset "Test generic functions for morphological properties" begin
-    sfst = "<third><singular><perfect><indicative><active>"
-    verb = Tabulae.verbfromfst(sfst)
+    verb = LMFFiniteVerb(LMPPerson(3), LMPNumber(1), LMPTense(4), LMPMood(1), LMPVoice(1))
     @test isnothing(lmpCase(verb))
     @test isnothing(lmpGender(verb))
     @test isnothing(lmpDegree(verb))

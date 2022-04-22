@@ -9,7 +9,7 @@
     @test lmpNumber(verb) == lmpNumber("singular")
 
  
-    @test fromcode = lmfFiniteVerb("3314110000")
+    fromcode = lmfFiniteVerb("3314110000")
     frm = FormUrn("forms.3314110000")
     @test Tabulae.formurn(fromcode) == frm
 end
