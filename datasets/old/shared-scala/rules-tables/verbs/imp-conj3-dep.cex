@@ -1,35 +1,35 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-latcommon.ere3_conj3impft7|conj3dep|ebar|first|singular|impft|indicative|passive
-latcommon.ere3_conj3impft8|conj3dep|ebaris|second|singular|impft|indicative|passive
-latcommon.ere3_conj3impft8b|conj3dep|ebare|second|singular|impft|indicative|passive
-latcommon.ere3_conj3impft9|conj3dep|ebatur|third|singular|impft|indicative|passive
-latcommon.ere3_conj3impft10|conj3dep|ebamur|first|plural|impft|indicative|passive
-latcommon.ere3_conj3impft11|conj3dep|ebamini|second|plural|impft|indicative|passive
-latcommon.ere3_conj3impft12|conj3dep|ebantur|third|plural|impft|indicative|passive
+latcommon.ere3_conj3impft7|conj3dep|ebar|first|singular|imperfect|indicative|passive
+latcommon.ere3_conj3impft8|conj3dep|ebaris|second|singular|imperfect|indicative|passive
+latcommon.ere3_conj3impft8b|conj3dep|ebare|second|singular|imperfect|indicative|passive
+latcommon.ere3_conj3impft9|conj3dep|ebatur|third|singular|imperfect|indicative|passive
+latcommon.ere3_conj3impft10|conj3dep|ebamur|first|plural|imperfect|indicative|passive
+latcommon.ere3_conj3impft11|conj3dep|ebamini|second|plural|imperfect|indicative|passive
+latcommon.ere3_conj3impft12|conj3dep|ebantur|third|plural|imperfect|indicative|passive
 
-latcommon.ere3_conj3impft19|conj3dep|erer|first|singular|impft|subjunctive|passive
-latcommon.ere3_conj3impft20|conj3dep|ereris|second|singular|impft|subjunctive|passive
-latcommon.ere3_conj3impft20b|conj3dep|erere|second|singular|impft|subjunctive|passive
-latcommon.ere3_conj3impft21|conj3dep|eretur|third|singular|impft|subjunctive|passive
-latcommon.ere3_conj3impft22|conj3dep|eremur|first|plural|impft|subjunctive|passive
-latcommon.ere3_conj3impft23|conj3dep|eremini|second|plural|impft|subjunctive|passive
-latcommon.ere3_conj3impft24|conj3dep|erentur|third|plural|impft|subjunctive|passive
+latcommon.ere3_conj3impft19|conj3dep|erer|first|singular|imperfect|subjunctive|passive
+latcommon.ere3_conj3impft20|conj3dep|ereris|second|singular|imperfect|subjunctive|passive
+latcommon.ere3_conj3impft20b|conj3dep|erere|second|singular|imperfect|subjunctive|passive
+latcommon.ere3_conj3impft21|conj3dep|eretur|third|singular|imperfect|subjunctive|passive
+latcommon.ere3_conj3impft22|conj3dep|eremur|first|plural|imperfect|subjunctive|passive
+latcommon.ere3_conj3impft23|conj3dep|eremini|second|plural|imperfect|subjunctive|passive
+latcommon.ere3_conj3impft24|conj3dep|erentur|third|plural|imperfect|subjunctive|passive
 
-latcommon.ere3_c3presimpft7|c3presdep|ebar|first|singular|impft|indicative|passive
-latcommon.ere3_c3presimpft8|c3presdep|ebaris|second|singular|impft|indicative|passive
-latcommon.ere3_c3presimpft8b|c3presdep|ebare|second|singular|impft|indicative|passive
-latcommon.ere3_c3presimpft9|c3presdep|ebatur|third|singular|impft|indicative|passive
-latcommon.ere3_c3presimpft10|c3presdep|ebamur|first|plural|impft|indicative|passive
-latcommon.ere3_c3presimpft11|c3presdep|ebamini|second|plural|impft|indicative|passive
-latcommon.ere3_c3presimpft12|c3presdep|ebantur|third|plural|impft|indicative|passive
+latcommon.ere3_c3presimpft7|c3presdep|ebar|first|singular|imperfect|indicative|passive
+latcommon.ere3_c3presimpft8|c3presdep|ebaris|second|singular|imperfect|indicative|passive
+latcommon.ere3_c3presimpft8b|c3presdep|ebare|second|singular|imperfect|indicative|passive
+latcommon.ere3_c3presimpft9|c3presdep|ebatur|third|singular|imperfect|indicative|passive
+latcommon.ere3_c3presimpft10|c3presdep|ebamur|first|plural|imperfect|indicative|passive
+latcommon.ere3_c3presimpft11|c3presdep|ebamini|second|plural|imperfect|indicative|passive
+latcommon.ere3_c3presimpft12|c3presdep|ebantur|third|plural|imperfect|indicative|passive
 
 
-latcommon.ere3_c3presimpft19|c3presdep|erer|first|singular|impft|subjunctive|passive
-latcommon.ere3_c3presimpft20|c3presdep|ereris|second|singular|impft|subjunctive|passive
-latcommon.ere3_c3presimpft20b|c3presdep|erere|second|singular|impft|subjunctive|passive
-latcommon.ere3_c3presimpft21|c3presdep|eretur|third|singular|impft|subjunctive|passive
-latcommon.ere3_c3presimpft22|c3presdep|eremur|first|plural|impft|subjunctive|passive
-latcommon.ere3_c3presimpft23|c3presdep|eremini|second|plural|impft|subjunctive|passive
-latcommon.ere3_c3presimpft24|c3presdep|erentur|third|plural|impft|subjunctive|passive
+latcommon.ere3_c3presimpft19|c3presdep|erer|first|singular|imperfect|subjunctive|passive
+latcommon.ere3_c3presimpft20|c3presdep|ereris|second|singular|imperfect|subjunctive|passive
+latcommon.ere3_c3presimpft20b|c3presdep|erere|second|singular|imperfect|subjunctive|passive
+latcommon.ere3_c3presimpft21|c3presdep|eretur|third|singular|imperfect|subjunctive|passive
+latcommon.ere3_c3presimpft22|c3presdep|eremur|first|plural|imperfect|subjunctive|passive
+latcommon.ere3_c3presimpft23|c3presdep|eremini|second|plural|imperfect|subjunctive|passive
+latcommon.ere3_c3presimpft24|c3presdep|erentur|third|plural|imperfect|subjunctive|passive

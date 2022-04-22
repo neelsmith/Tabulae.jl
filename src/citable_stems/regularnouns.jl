@@ -110,21 +110,3 @@ $(SIGNATURES)
 function stemvalue(noun::TabulaeNounStem)
     noun.form
 end
-
-#=
-"""Compose representation of `TabulaeNounStem` for FST  lexicon.
-
-$(SIGNATURES)
-"""
-function fst(n::TabulaeNounStem)
-    # E.g.:
-    # <u>latcommon\.nounn14736</u><u>ls\.n14736</u>don<noun><neut><us_i>
-    join([
-        "<u>", protectreserved(string(n.stemid)) ,"</u>", 
-        "<u>", protectreserved(string(n.lexid)), "</u>", 
-        n.form, 
-        "<", label(n.gender), ">", 
-        "<", n.inflectionclass ,">"
-    ])
-end
-=#

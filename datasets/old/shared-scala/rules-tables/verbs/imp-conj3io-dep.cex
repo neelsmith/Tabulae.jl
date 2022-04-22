@@ -1,36 +1,36 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-latcommon.ereio_conj3ioimpft7|conj3iodep|iebar|first|singular|impft|indicative|passive
-latcommon.ereio_conj3ioimpft8|conj3iodep|iebaris|second|singular|impft|indicative|passive
-latcommon.ereio_conj3ioimpft8b|conj3iodep|iebare|second|singular|impft|indicative|passive
-latcommon.ereio_conj3ioimpft9|conj3iodep|iebatur|third|singular|impft|indicative|passive
-latcommon.ereio_conj3ioimpft10|conj3iodep|iebamur|first|plural|impft|indicative|passive
-latcommon.ereio_conj3ioimpft11|conj3iodep|iebamini|second|plural|impft|indicative|passive
-latcommon.ereio_conj3ioimpft12|conj3iodep|iebantur|third|plural|impft|indicative|passive
+latcommon.ereio_conj3ioimpft7|conj3iodep|iebar|first|singular|imperfect|indicative|passive
+latcommon.ereio_conj3ioimpft8|conj3iodep|iebaris|second|singular|imperfect|indicative|passive
+latcommon.ereio_conj3ioimpft8b|conj3iodep|iebare|second|singular|imperfect|indicative|passive
+latcommon.ereio_conj3ioimpft9|conj3iodep|iebatur|third|singular|imperfect|indicative|passive
+latcommon.ereio_conj3ioimpft10|conj3iodep|iebamur|first|plural|imperfect|indicative|passive
+latcommon.ereio_conj3ioimpft11|conj3iodep|iebamini|second|plural|imperfect|indicative|passive
+latcommon.ereio_conj3ioimpft12|conj3iodep|iebantur|third|plural|imperfect|indicative|passive
 
-latcommon.ereio_conj3ioimpft19|conj3iodep|erer|first|singular|impft|subjunctive|passive
-latcommon.ereio_conj3ioimpft20|conj3iodep|ereris|second|singular|impft|subjunctive|passive
-latcommon.ereio_conj3ioimpft20b|conj3iodep|erere|second|singular|impft|subjunctive|passive
-latcommon.ereio_conj3ioimpft21|conj3iodep|eretur|third|singular|impft|subjunctive|passive
-latcommon.ereio_conj3ioimpft22|conj3iodep|eremur|first|plural|impft|subjunctive|passive
-latcommon.ereio_conj3ioimpft23|conj3iodep|eremini|second|plural|impft|subjunctive|passive
-latcommon.ereio_conj3ioimpft24|conj3iodep|erentur|third|plural|impft|subjunctive|passive
-
-
-latcommon.ereio_c3iopresimpft7|c3iopresdep|iebar|first|singular|impft|indicative|passive
-latcommon.ereio_c3iopresimpft8|c3iopresdep|iebaris|second|singular|impft|indicative|passive
-latcommon.ereio_c3iopresimpft8b|c3iopresdep|iebare|second|singular|impft|indicative|passive
-latcommon.ereio_c3iopresimpft9|c3iopresdep|iebatur|third|singular|impft|indicative|passive
-latcommon.ereio_c3iopresimpft10|c3iopresdep|iebamur|first|plural|impft|indicative|passive
-latcommon.ereio_c3iopresimpft11|c3iopresdep|iebamini|second|plural|impft|indicative|passive
-latcommon.ereio_c3iopresimpft12|c3iopresdep|iebantur|third|plural|impft|indicative|passive
+latcommon.ereio_conj3ioimpft19|conj3iodep|erer|first|singular|imperfect|subjunctive|passive
+latcommon.ereio_conj3ioimpft20|conj3iodep|ereris|second|singular|imperfect|subjunctive|passive
+latcommon.ereio_conj3ioimpft20b|conj3iodep|erere|second|singular|imperfect|subjunctive|passive
+latcommon.ereio_conj3ioimpft21|conj3iodep|eretur|third|singular|imperfect|subjunctive|passive
+latcommon.ereio_conj3ioimpft22|conj3iodep|eremur|first|plural|imperfect|subjunctive|passive
+latcommon.ereio_conj3ioimpft23|conj3iodep|eremini|second|plural|imperfect|subjunctive|passive
+latcommon.ereio_conj3ioimpft24|conj3iodep|erentur|third|plural|imperfect|subjunctive|passive
 
 
-latcommon.ereio_c3iopresimpft19|c3iopresdep|erer|first|singular|impft|subjunctive|passive
-latcommon.ereio_c3iopresimpft20|c3iopresdep|ereris|second|singular|impft|subjunctive|passive
-latcommon.ereio_c3iopresimpft20b|c3iopresdep|erere|second|singular|impft|subjunctive|passive
-latcommon.ereio_c3iopresimpft21|c3iopresdep|eretur|third|singular|impft|subjunctive|passive
-latcommon.ereio_c3iopresimpft22|c3iopresdep|eremur|first|plural|impft|subjunctive|passive
-latcommon.ereio_c3iopresimpft23|c3iopresdep|eremini|second|plural|impft|subjunctive|passive
-latcommon.ereio_c3iopresimpft24|c3iopresdep|erentur|third|plural|impft|subjunctive|passive
+latcommon.ereio_c3iopresimpft7|c3iopresdep|iebar|first|singular|imperfect|indicative|passive
+latcommon.ereio_c3iopresimpft8|c3iopresdep|iebaris|second|singular|imperfect|indicative|passive
+latcommon.ereio_c3iopresimpft8b|c3iopresdep|iebare|second|singular|imperfect|indicative|passive
+latcommon.ereio_c3iopresimpft9|c3iopresdep|iebatur|third|singular|imperfect|indicative|passive
+latcommon.ereio_c3iopresimpft10|c3iopresdep|iebamur|first|plural|imperfect|indicative|passive
+latcommon.ereio_c3iopresimpft11|c3iopresdep|iebamini|second|plural|imperfect|indicative|passive
+latcommon.ereio_c3iopresimpft12|c3iopresdep|iebantur|third|plural|imperfect|indicative|passive
+
+
+latcommon.ereio_c3iopresimpft19|c3iopresdep|erer|first|singular|imperfect|subjunctive|passive
+latcommon.ereio_c3iopresimpft20|c3iopresdep|ereris|second|singular|imperfect|subjunctive|passive
+latcommon.ereio_c3iopresimpft20b|c3iopresdep|erere|second|singular|imperfect|subjunctive|passive
+latcommon.ereio_c3iopresimpft21|c3iopresdep|eretur|third|singular|imperfect|subjunctive|passive
+latcommon.ereio_c3iopresimpft22|c3iopresdep|eremur|first|plural|imperfect|subjunctive|passive
+latcommon.ereio_c3iopresimpft23|c3iopresdep|eremini|second|plural|imperfect|subjunctive|passive
+latcommon.ereio_c3iopresimpft24|c3iopresdep|erentur|third|plural|imperfect|subjunctive|passive
