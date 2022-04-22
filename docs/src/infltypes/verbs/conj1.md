@@ -11,6 +11,19 @@ latcommon.verbn2280|ls.n2280|am|conj1
 Paradigms generated from these entries:
 
 
+## Present
+
+```@eval
+using Tabulae, CitableParserBuilder, Markdown
+repo = pwd() |> dirname |> dirname  |> dirname |> dirname
+srcdir = joinpath(repo, "datasets", "core-infl-shared") 
+tds = dataset([srcdir])
+amo = LexemeUrn("ls.n2280")
+
+present = LMPTense(1)
+Markdown.parse(md_tenseconjugation(present, amo, tds))
+```
+
 ## Imperfect 
 
 ```@eval
