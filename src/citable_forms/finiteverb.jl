@@ -142,26 +142,48 @@ end
 $(SIGNATURES)
 """
 function verbanalyses(td::Tabulae.Dataset)::Vector{Analysis}
-    formlist = Analysis[]
+    analysislist = []
 
     stems = stemsarray(td)
-
     verbstems = filter(s -> s isa TabulaeVerbStem, stems)
     for (i, verbstem) in enumerate(verbstems)
-        # Filter nounforms() for matching gender.
         @info("Analyzing verb $(i)/$(length(verbstems))")
-       
-        # THEN generate for those forms
-        #=
-        for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())
-            generated = generate(f, lexeme(nounstem), td)
+        for f in finiteverbforms()
+            generated = generate(f, lexeme(verbstem), td)
             for g in generated
-                push!(formlist, g)
+                @debug("Generated $(typeof(g)): ", g)
+                push!(analysislist, g)
             end
         end
-        =#
     end
+    analysislist
+end
 
-    
+
+
+"""Generate list of all finite verb forms.
+$(SIGNATURES)
+"""
+function finiteverbforms()
+    finiteverbcodes() .|> lmfFiniteVerb
+end
+
+
+"""Generate codes for all finite verb forms.
+$(SIGNATURES)
+"""
+function finiteverbcodes()
+    formlist = []
+    for v in [1,2] # voice
+        for t in (keys(Tabulae.tenselabels) |> collect |> sort)
+            for m in [1,2] #mood 
+                for n in [1,2] # number 
+                    for p in [1,2,3] # person
+                        push!(formlist, string(FINITEVERB,p,n,t,m,v,"0000"))
+                    end
+                end
+            end
+        end
+    end
     formlist
 end

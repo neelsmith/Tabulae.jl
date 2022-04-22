@@ -7,7 +7,6 @@
     @test lmpVoice(verb) == lmpVoice("active")
     @test lmpPerson(verb) == lmpPerson("third")
     @test lmpNumber(verb) == lmpNumber("singular")
-
  
     fromcode = lmfFiniteVerb("3314110000")
     frm = FormUrn("forms.3314110000")
