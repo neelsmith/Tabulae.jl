@@ -23,5 +23,5 @@ v = Vector{LexemeUrn}()
 push!(v, soul)
 push!(v, farmer)
 hdgs = ["`a_ae` *feminine*", "`a_ae` *masculine*"]
-Markdown.parse(mddeclension(v, tds, headings = hdgs))
+Markdown.parse(md_declension(v, tds, headings = hdgs))
 ```

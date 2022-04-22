@@ -50,13 +50,13 @@ export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 export TabulaeVerbStem
 
-
 export StringParser, stringParser
 export analysis_line, analysis_lines
 export parsetoken
 
 export generate
-export mddeclension
+export md_declension
+export md_tenseconjugation
 
 include("tabulaeio.jl")
 include("dataset/dataset.jl")
@@ -92,11 +92,11 @@ include("citable_rules/verbs.jl")
 
 include("generate/generate.jl")
 
-
 include("parser/parser.jl")
 include("parser/dictparser.jl")
 include("parser/stringparser.jl")
 
-include("for-apps/md.jl")
+include("for-apps/mddeclension.jl")
+include("for-apps/verbparadigms.jl")
 
 end # module
