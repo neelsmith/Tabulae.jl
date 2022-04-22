@@ -1,26 +1,26 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-latcommon.ereio_conj3iofut7|conj3iodep|iar|first|singular|fut|indicative|passive
-latcommon.ereio_conj3iofut8|conj3iodep|ieris|second|singular|fut|indicative|passive
-latcommon.ereio_conj3iofut8b|conj3iodep|iere|second|singular|fut|indicative|passive
-latcommon.ereio_conj3iofut9|conj3iodep|ietur|third|singular|fut|indicative|passive
-latcommon.ereio_conj3iofut10|conj3iodep|iemur|first|plural|fut|indicative|passive
-latcommon.ereio_conj3iofut11|conj3iodep|iemini|second|plural|fut|indicative|passive
-latcommon.ereio_conj3iofut12|conj3iodep|ientur|third|plural|fut|indicative|passive
+latcommon.ereio_conj3iofut7|conj3iodep|iar|first|singular|future|indicative|passive
+latcommon.ereio_conj3iofut8|conj3iodep|ieris|second|singular|future|indicative|passive
+latcommon.ereio_conj3iofut8b|conj3iodep|iere|second|singular|future|indicative|passive
+latcommon.ereio_conj3iofut9|conj3iodep|ietur|third|singular|future|indicative|passive
+latcommon.ereio_conj3iofut10|conj3iodep|iemur|first|plural|future|indicative|passive
+latcommon.ereio_conj3iofut11|conj3iodep|iemini|second|plural|future|indicative|passive
+latcommon.ereio_conj3iofut12|conj3iodep|ientur|third|plural|future|indicative|passive
 
-latcommon.ereio_conj3iofut17|conj3iodep|itor|second|singular|fut|imptv|passive
-latcommon.ereio_conj3iofut18|conj3iodep|itor|third|singular|fut|imptv|passive
-latcommon.ereio_conj3ioiofut19|conj3iodep|iuntor|third|plural|fut|imptv|passive
+latcommon.ereio_conj3iofut17|conj3iodep|itor|second|singular|future|imperative|passive
+latcommon.ereio_conj3iofut18|conj3iodep|itor|third|singular|future|imperative|passive
+latcommon.ereio_conj3ioiofut19|conj3iodep|iuntor|third|plural|future|imperative|passive
 
-latcommon.ereio_c3iopresfut7|c3iopresdep|iar|first|singular|fut|indicative|passive
-latcommon.ereio_c3iopresfut8|c3iopresdep|ieris|second|singular|fut|indicative|passive
-latcommon.ereio_c3iopresfut8b|c3iopresdep|iere|second|singular|fut|indicative|passive
-latcommon.ereio_c3iopresfut9|c3iopresdep|ietur|third|singular|fut|indicative|passive
-latcommon.ereio_c3iopresfut10|c3iopresdep|iemur|first|plural|fut|indicative|passive
-latcommon.ereio_c3iopresfut11|c3iopresdep|iemini|second|plural|fut|indicative|passive
-latcommon.ereio_c3iopresfut12|c3iopresdep|ientur|third|plural|fut|indicative|passive
+latcommon.ereio_c3iopresfut7|c3iopresdep|iar|first|singular|future|indicative|passive
+latcommon.ereio_c3iopresfut8|c3iopresdep|ieris|second|singular|future|indicative|passive
+latcommon.ereio_c3iopresfut8b|c3iopresdep|iere|second|singular|future|indicative|passive
+latcommon.ereio_c3iopresfut9|c3iopresdep|ietur|third|singular|future|indicative|passive
+latcommon.ereio_c3iopresfut10|c3iopresdep|iemur|first|plural|future|indicative|passive
+latcommon.ereio_c3iopresfut11|c3iopresdep|iemini|second|plural|future|indicative|passive
+latcommon.ereio_c3iopresfut12|c3iopresdep|ientur|third|plural|future|indicative|passive
 
-latcommon.ereio_c3iopresfut17|c3iopresdep|itor|second|singular|fut|imptv|passive
-latcommon.ereio_c3iopresfut18|c3iopresdep|itor|third|singular|fut|imptv|passive
-latcommon.ereio_c3iopresfut19|c3iopresdep|iuntor|third|plural|fut|imptv|passive
+latcommon.ereio_c3iopresfut17|c3iopresdep|itor|second|singular|future|imperative|passive
+latcommon.ereio_c3iopresfut18|c3iopresdep|itor|third|singular|future|imperative|passive
+latcommon.ereio_c3iopresfut19|c3iopresdep|iuntor|third|plural|future|imperative|passive
