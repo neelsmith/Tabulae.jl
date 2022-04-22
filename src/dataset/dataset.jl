@@ -4,7 +4,7 @@ A Tabulae dataset in a local file system.
 # Members
 
 - `dirs` is a list of full paths to the root directory of one or more datasets.  
-Their subdirectory organization must follow Tabulae' specifications.
+Their subdirectory organization must follow Tabulae's specifications.
 - `orthography` is an implementation of the `Orthography` interface
 """
 struct Dataset

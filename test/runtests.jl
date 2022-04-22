@@ -26,3 +26,6 @@ include("forms/test_listgenerators.jl")
 
 include("rules/test_nounrules.jl")
 include("stems/test_nounstems.jl")
+
+include("rules/test_verbrules.jl")
+include("stems/test_verbstems.jl")

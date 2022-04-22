@@ -26,17 +26,6 @@ function ending(rule::T) where {T <: TabulaeRule}
     nothing
 end
 
-#=
-"""
-Required function for TabulaeIO subtypes.
-
-$(SIGNATURES)
-"""
-function fst(rule::T) where {IOT <: TabulaeIO, T <: TabulaeRule}
-    throws(DomainError("fst function has not been implemented for type $(typeof(io))"))
-end
-=#
-
 
 function lmpGender(stem::T) where {T <: TabulaeRule}
     @warn "Function lmpGender not implemented for rules of type $(typeof(stem))."

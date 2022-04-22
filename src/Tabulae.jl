@@ -44,9 +44,11 @@ export NounIO, VerbIO
 
 export TabulaeRule, inflectionType
 export TabulaeNounRule
+export TabulaeFiniteVerbRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
+export TabulaeVerbStem
 
 
 export StringParser, stringParser
@@ -82,9 +84,11 @@ include("citable_forms/infinitive.jl")
 
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
+include("citable_stems/regularverbs.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
+include("citable_rules/verbs.jl")
 
 include("generate/generate.jl")
 

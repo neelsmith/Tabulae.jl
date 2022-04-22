@@ -14,14 +14,13 @@ function rulesarray(dirlist; delimiter = "|")
     iodict = Dict(
         [
         "nouns" => NounIO("noun"),
-        "finiteverbs" => VerbIO("verb"),
+        "verbs" => VerbIO("verb"),
         "infinitives" => InfinitiveIO("infinitives")
         ]
     )
     rulesdirs = [
         "nouns",
-      
-        "finiteverbs",
+        "verbs",
         "infinitives",
         
     ]

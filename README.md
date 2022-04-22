@@ -22,7 +22,7 @@ If you want to run a selection of tests, you can do that from the `tests` direct
 | uninflected token | |||
 | noun | ✅ |  ✅ |  ✅ |
 | pronoun | |||
-| finite verb | |||
+| finite verb | ✅ |✅ | ✅ |
 | infinitive | |||
 | participle | |||
 | gerund | |||

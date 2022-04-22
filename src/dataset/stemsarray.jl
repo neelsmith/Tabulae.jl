@@ -20,7 +20,7 @@ function stemsarray(dirlist; delimiter = "|")
         "nouns" => NounIO("noun"),
         #"pronouns" => PronounIO("pronoun"),
         #"uninflected" => UninflectedIO("uninflected"),
-        #"verbs-simplex" => VerbIO("verb")
+        "verbs-simplex" => VerbIO("verb")
         ]
     )
     stemdirs = [
@@ -28,7 +28,7 @@ function stemsarray(dirlist; delimiter = "|")
         "nouns",
         #"pronouns",
         #"uninflected",
-        #"verbs-simplex",
+        "verbs-simplex",
         
     ]
 

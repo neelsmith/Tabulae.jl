@@ -1,14 +1,14 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number|Tense|Voice
-latcommoninfl.ere3_conj3deppresapl1|conj3dep|ens|masculine|nominative|sg|pres|act
-latcommoninfl.ere3_conj3deppresapl2|conj3dep|entis|masculine|genitive|sg|pres|act
-latcommoninfl.ere3_conj3deppresapl3|conj3dep|enti|masculine|dative|sg|pres|act
-latcommoninfl.ere3_conj3deppresapl4|conj3dep|entem|masculine|accusative|sg|pres|act
-latcommoninfl.ere3_conj3deppresapl5|conj3dep|ente|masculine|ablative|sg|pres|act
-latcommoninfl.ere3_conj3deppresapl5b|conj3dep|enti|masculine|ablative|sg|pres|act
-latcommoninfl.ere3_conj3deppresapl6|conj3dep|ens|masculine|vocative|sg|pres|act
+latcommoninfl.ere3_conj3deppresapl1|conj3dep|ens|masculine|nominative|singular|pres|active
+latcommoninfl.ere3_conj3deppresapl2|conj3dep|entis|masculine|genitive|singular|pres|active
+latcommoninfl.ere3_conj3deppresapl3|conj3dep|enti|masculine|dative|singular|pres|active
+latcommoninfl.ere3_conj3deppresapl4|conj3dep|entem|masculine|accusative|singular|pres|active
+latcommoninfl.ere3_conj3deppresapl5|conj3dep|ente|masculine|ablative|singular|pres|active
+latcommoninfl.ere3_conj3deppresapl5b|conj3dep|enti|masculine|ablative|singular|pres|active
+latcommoninfl.ere3_conj3deppresapl6|conj3dep|ens|masculine|vocative|singular|pres|active
 
-latcommoninfl.ere3_conj3deppresapl7|conj3dep|entes|masculine|nominative|pl|pres|act
-latcommoninfl.ere3_conj3deppresapl8|conj3dep|entium|masculine|genitive|pl|pres|act
+latcommoninfl.ere3_conj3deppresapl7|conj3dep|entes|masculine|nominative|plural|pres|active
+latcommoninfl.ere3_conj3deppresapl8|conj3dep|entium|masculine|genitive|plural|pres|active
 latcommoninfl.ere3_conj3deppresapl9#conj3dep#entibus#masc#dat#pl#pres#act
 latcommoninfl.ere3_conj3deppresapl10#conj3dep#entes#masc#acc#pl#pres#act
 latcommoninfl.ere3_conj3deppresapl10b#conj3dep#entis#masc#acc#pl#pres#act

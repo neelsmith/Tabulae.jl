@@ -85,39 +85,6 @@ function lmfFiniteVerb(a::Analysis)
 end
 
 
-"""Parse a string of SFST output into a `LMFFiniteVerb`.
-
-$(SIGNATURES)
-"""
-function verbfromfst(fstdata)
-    # Extract PNTMV from a string like this:
-    #<3rd><sg><pft><indic><act>
-    #verbrulere = r"<[^<]+><verb>[^<]*
-    verbrulere = r"<([^<]+)><([^<]+)><([^<]+)><([^<]+)><([^<]+)>"
-    matchedup = collect(eachmatch(verbrulere, fstdata))
-
-    if isempty(matchedup)
-        @warn("Unable to parse FST analysis \"" * fstdata * "\" as verb form.")
-        nothing
-
-    else
-        (p,n, t, m, v) = matchedup[1].captures
-        LMFFiniteVerb(lmpPerson(p),lmpNumber(n),
-        lmpTense(t), lmpMood(m), lmpVoice(v))        
-    end
-end
-
-"""Compose URN for finite verb form from FST representation of analytical data.
-
-$(SIGNATURES)
-"""
-function irregularverbfromfst(fstdata)
-    @warn("Reading irregular verbs from FST not yet implemented")
-    nothing
-end
-
-
-
 """Find tense of a form.
 
 $(SIGNATURES)
@@ -168,4 +135,55 @@ $(SIGNATURES)
 """
 function formurn(verbform::LMFFiniteVerb)
     FormUrn(string("forms.", FINITEVERB, code(verbform.vperson), code(verbform.vnumber), code(verbform.vtense), code(verbform.vmood), code(verbform.vvoice), "0000"))
+end
+
+
+"""Generate a complete list of all possible verb forms.
+$(SIGNATURES)
+"""
+function verbanalyses(td::Tabulae.Dataset)::Vector{Analysis}
+    analysislist = []
+
+    stems = stemsarray(td)
+    verbstems = filter(s -> s isa TabulaeVerbStem, stems)
+    for (i, verbstem) in enumerate(verbstems)
+        @info("Analyzing verb $(i)/$(length(verbstems))")
+        for f in finiteverbforms()
+            generated = generate(f, lexeme(verbstem), td)
+            for g in generated
+                @debug("Generated $(typeof(g)): ", g)
+                push!(analysislist, g)
+            end
+        end
+    end
+    analysislist
+end
+
+
+
+"""Generate list of all finite verb forms.
+$(SIGNATURES)
+"""
+function finiteverbforms()
+    finiteverbcodes() .|> lmfFiniteVerb
+end
+
+
+"""Generate codes for all finite verb forms.
+$(SIGNATURES)
+"""
+function finiteverbcodes()
+    formlist = []
+    for v in [1,2] # voice
+        for t in (keys(Tabulae.tenselabels) |> collect |> sort)
+            for m in [1,2] #mood 
+                for n in [1,2] # number 
+                    for p in [1,2,3] # person
+                        push!(formlist, string(FINITEVERB,p,n,t,m,v,"0000"))
+                    end
+                end
+            end
+        end
+    end
+    formlist
 end
