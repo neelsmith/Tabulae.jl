@@ -44,6 +44,7 @@ export NounIO, VerbIO
 
 export TabulaeRule, inflectionType
 export TabulaeNounRule
+export TabulaeFiniteVerbRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
@@ -87,6 +88,7 @@ include("citable_stems/regularverbs.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
+include("citable_rules/verbs.jl")
 
 include("generate/generate.jl")
 
