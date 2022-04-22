@@ -85,15 +85,6 @@ function lmfFiniteVerb(a::Analysis)
 end
 
 
-"""Compose URN for finite verb form from FST representation of analytical data.
-
-$(SIGNATURES)
-"""
-function irregularverbfromfst(fstdata)
-    @warn("Reading irregular verbs from FST not yet implemented")
-    nothing
-end
-
 """Find tense of a form.
 
 $(SIGNATURES)
@@ -144,4 +135,33 @@ $(SIGNATURES)
 """
 function formurn(verbform::LMFFiniteVerb)
     FormUrn(string("forms.", FINITEVERB, code(verbform.vperson), code(verbform.vnumber), code(verbform.vtense), code(verbform.vmood), code(verbform.vvoice), "0000"))
+end
+
+
+"""Generate a complete list of all possible verb forms.
+$(SIGNATURES)
+"""
+function verbanalyses(td::Tabulae.Dataset)::Vector{Analysis}
+    formlist = Analysis[]
+
+    stems = stemsarray(td)
+
+    verbstems = filter(s -> s isa TabulaeVerbStem, stems)
+    for (i, verbstem) in enumerate(verbstems)
+        # Filter nounforms() for matching gender.
+        @info("Analyzing verb $(i)/$(length(verbstems))")
+       
+        # THEN generate for those forms
+        #=
+        for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())
+            generated = generate(f, lexeme(nounstem), td)
+            for g in generated
+                push!(formlist, g)
+            end
+        end
+        =#
+    end
+
+    
+    formlist
 end
