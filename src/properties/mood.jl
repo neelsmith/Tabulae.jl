@@ -1,7 +1,7 @@
 struct LMPMood <: LatinMorphologicalProperty
     code::Int64
     function LMPMood(code)
-        code in keys(moodlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(moodlabeldict) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpMood(s::AbstractString)
-    s in keys(moodcodes) ? LMPMood(moodcodes[s]) : throw(DomainError(string(s, " is not a valid value for mood.")) )
+    s in keys(moodcodedict) ? LMPMood(moodcodedict[s]) : throw(DomainError(string(s, " is not a valid value for mood.")) )
 end
 
 """Create `LMPMood` from integer code.
@@ -34,14 +34,14 @@ end
 $(SIGNATURES)
 """
 function label(mood::LMPMood)
-   moodlabels[mood.code]
+   moodlabeldict[mood.code]
 end
 
 """Dictionary mapping codes to labels for mood.
 
 $(SIGNATURES)
 """
-const moodlabels = Dict(
+const moodlabeldict = Dict(
     1 => "indicative",
     2 => "subjunctive",
     3 => "imperative"
@@ -51,7 +51,7 @@ const moodlabels = Dict(
 
 $(SIGNATURES)
 """
-const moodcodes = Dict(
+const moodcodedict = Dict(
     "indicative" => 1,
     "subjunctive" => 2,
     "imperative" => 3,

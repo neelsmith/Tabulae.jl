@@ -1,7 +1,7 @@
 struct LMPPerson <: LatinMorphologicalProperty
     code::Int64
     function LMPPerson(code)
-        code in keys(personlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(personlabeldict) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpPerson(s::AbstractString)
-    s in keys(personcodes) ? LMPPerson(personcodes[s]) : throw(DomainError(string(s, " is not a valid value for person.")) )
+    s in keys(personcodedict) ? LMPPerson(personcodedict[s]) : throw(DomainError(string(s, " is not a valid value for person.")) )
 end
 
 """Create `LMPPerson` from integer code.
@@ -34,14 +34,14 @@ end
 $(SIGNATURES)
 """
 function label(person::LMPPerson)
-    personlabels[person.code]
+    personlabeldict[person.code]
 end
 
 """Dictionary mapping codes to labels for person.
 
 $(SIGNATURES)
 """
-const personlabels = Dict(
+const personlabeldict = Dict(
     1 => "first",
     2 => "second",
     3 => "third"
@@ -51,7 +51,7 @@ const personlabels = Dict(
 
 $(SIGNATURES)
 """
-const personcodes = Dict(
+const personcodedict = Dict(
     "first" => 1,
     "second" => 2,
     "third" => 3

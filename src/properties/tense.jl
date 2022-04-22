@@ -1,7 +1,7 @@
 struct LMPTense <: LatinMorphologicalProperty
     code::Int64
     function LMPTense(code)
-        code in keys(tenselabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(tenselabeldict) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpTense(s::AbstractString)
-    s in keys(tensecodes) ? LMPTense(tensecodes[s]) : throw(DomainError(string(s, " is not a valid value for tense.")) )
+    s in keys(tensecodedict) ? LMPTense(tensecodedict[s]) : throw(DomainError(string(s, " is not a valid value for tense.")) )
 end
 
 
@@ -36,14 +36,14 @@ end
 $(SIGNATURES)
 """
 function label(tense::LMPTense)
-    tenselabels[tense.code]
+    tenselabeldict[tense.code]
 end
 
 """Dictionary mapping codes to labels for tense.
 
 $(SIGNATURES)
 """
-const tenselabels = Dict(
+const tenselabeldict = Dict(
     1 => "present",
     2 => "imperfect",
     3 => "future",
@@ -56,7 +56,7 @@ const tenselabels = Dict(
 
 $(SIGNATURES)
 """
-const tensecodes = Dict(
+const tensecodedict = Dict(
     "present" => 1,
     "imperfect" => 2,
     "future" => 3,  

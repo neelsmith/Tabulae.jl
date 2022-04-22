@@ -1,7 +1,7 @@
 struct LMPNumber <: LatinMorphologicalProperty
     code::Int64
     function LMPNumber(code)
-        code in keys(numberlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(numberlabeldict) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpNumber(s::AbstractString)
-    s in keys(numbercodes) ? LMPNumber(numbercodes[s]) : DomainError(string(s, " is not a valid value for number.")) 
+    s in keys(numbercodedict) ? LMPNumber(numbercodedict[s]) : DomainError(string(s, " is not a valid value for number.")) 
 end
 
 """Create `LMPPerson` from integer code.
@@ -34,14 +34,14 @@ end
 $(SIGNATURES)
 """
 function label(num::LMPNumber)
-    numberlabels[num.code]
+    numberlabeldict[num.code]
 end
 
 """Dictionary mapping codes to labels for number.
 
 $(SIGNATURES)
 """
-const numberlabels = Dict(
+const numberlabeldict = Dict(
     1 => "singular",
     2 => "plural"
 )
@@ -50,7 +50,7 @@ const numberlabels = Dict(
 
 $(SIGNATURES)
 """
-const numbercodes = Dict(
+const numbercodedict = Dict(
     "singular" => 1,
     "plural" => 2
 )

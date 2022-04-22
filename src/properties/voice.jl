@@ -1,7 +1,7 @@
 struct LMPVoice <: LatinMorphologicalProperty
     code::Int64
     function LMPVoice(code)
-        code in keys(voicelabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(voicelabeldict) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function lmpVoice(s::AbstractString)
-    s in keys(voicecodes) ? LMPVoice(voicecodes[s]) : throw(DomainError(string(s, " is not a valid value for voice.")) )
+    s in keys(voicecodedict) ? LMPVoice(voicecodedict[s]) : throw(DomainError(string(s, " is not a valid value for voice.")) )
 end
 
 """Create `LMPVoice` from integer code.
@@ -34,14 +34,14 @@ end
 $(SIGNATURES)
 """
 function label(voice::LMPVoice)
-    voicelabels[voice.code]
+    voicelabeldict[voice.code]
 end
 
 """Dictionary mapping codes to labels for voice.
 
 $(SIGNATURES)
 """
-const voicelabels = Dict(
+const voicelabeldict = Dict(
     1 => "active",
     2 => "passive"
 )
@@ -50,7 +50,7 @@ const voicelabels = Dict(
 
 $(SIGNATURES)
 """
-const voicecodes = Dict(
+const voicecodedict = Dict(
     "active" => 1,
     "passive" => 2
 )
