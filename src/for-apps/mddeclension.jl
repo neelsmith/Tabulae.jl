@@ -3,7 +3,7 @@
 """Compose markdown table with declension of a single lexeme.
 $(SIGNATURES)
 """
-function mddeclension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
+function md_declension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
     mdlines = ["| | Singular | Plural |", "| --- | --- | --- |"]
     stemmatches = stemsforlexeme(td, lex)
     if isempty(stemmatches)
@@ -34,7 +34,7 @@ end
 """Compose markdown table with parallel declensions of a list of lexemes.
 $(SIGNATURES)
 """
-function mddeclension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; vocative = false, headings = [])
+function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; vocative = false, headings = [])
     mdlines = []
     if length(headings) == length(lexemelist)
         push!(mdlines, "| | " * join(headings, " | ") * " |")   
