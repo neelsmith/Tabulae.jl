@@ -36,7 +36,7 @@ export LMPUninflectedType, lmpUninflectedType
 
 export LatinMorphologicalForm, lmForm
 export analyses
-export LMFFiniteVerb, lmfFiniteVerb
+export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 

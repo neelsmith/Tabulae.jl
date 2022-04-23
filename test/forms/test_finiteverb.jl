@@ -7,7 +7,9 @@
     @test lmpVoice(verb) == lmpVoice("active")
     @test lmpPerson(verb) == lmpPerson("third")
     @test lmpNumber(verb) == lmpNumber("singular")
- 
+    @test (lmpTense(verb)  |> perfectsystem)
+    @test perfectsystem(verb)
+
     fromcode = lmfFiniteVerb("3314110000")
     frm = FormUrn("forms.3314110000")
     @test Tabulae.formurn(fromcode) == frm

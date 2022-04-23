@@ -201,3 +201,21 @@ function finiteverbcodes()
     end
     formlist
 end
+
+
+"""True if `verb` is in the perfect system.
+$(SIGNATURES)
+"""
+function perfectsystem(verb::LMFFiniteVerb)
+    lmpTense(verb) |> perfectsystem    
+end
+
+
+"""True if `verb` is in the perfect system.
+$(SIGNATURES)
+"""
+function perfectsystem(tns::LMPTense)
+    tns == lmpTense("perfect") || 
+    tns == lmpTense("pluperfect") ||
+    tns == lmpTense("future_perfect")
+end
