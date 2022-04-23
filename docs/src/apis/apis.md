@@ -1,16 +1,47 @@
 
 # Latin morphology API documentation
 
+## Morphological properties
 
-```@contents
-Pages = ["apis.md"]
-Depth = 3
+
+```@docs
+LMPTense
+LMPMood
+LMPVoice
+LMPPerson
+LMPNumber
+LMPGender
+LMPCase
+LMPDegree
+LMPUninflectedType
 ```
 
-## Public types
+
+Constructor functions:
+
+```@docs
+lmpTense
+lmpMood
+lmpVoice
+lmpPerson
+lmpNumber
+lmpGender
+lmpCase
+lmpDegree
+lmpUninflectedType
+```
+
+
+## Morphological forms
 
 ```@docs
 LatinMorphologicalForm
 LMFNoun
 LMFFiniteVerb
+```
+
+
+```@docs
+LatinMorphologicalProperty
+code
 ```

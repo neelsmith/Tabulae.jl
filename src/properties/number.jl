@@ -1,3 +1,4 @@
+"Number of substantive or of finite verb form."
 struct LMPNumber <: LatinMorphologicalProperty
     code::Int64
     function LMPNumber(code)

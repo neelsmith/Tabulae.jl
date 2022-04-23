@@ -1,3 +1,4 @@
+"Case of substantive form."
 struct LMPCase <: LatinMorphologicalProperty
     code::Int64
     function LMPCase(code)

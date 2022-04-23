@@ -1,3 +1,4 @@
+"Gender of substantive form."
 struct LMPGender <: LatinMorphologicalProperty
     code::Int64
     function LMPGender(code)

@@ -1,3 +1,4 @@
+"Voice of finite, infinitive or participial form of verb."
 struct LMPVoice <: LatinMorphologicalProperty
     code::Int64
     function LMPVoice(code)

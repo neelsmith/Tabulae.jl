@@ -1,3 +1,4 @@
+"""Tense of finite, infinitive or participial form of verb."""
 struct LMPTense <: LatinMorphologicalProperty
     code::Int64
     function LMPTense(code)

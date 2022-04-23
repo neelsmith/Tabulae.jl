@@ -1,3 +1,4 @@
+"Person of finite verb form."
 struct LMPPerson <: LatinMorphologicalProperty
     code::Int64
     function LMPPerson(code)

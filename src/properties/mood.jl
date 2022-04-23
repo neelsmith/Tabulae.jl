@@ -1,3 +1,4 @@
+"""Mood of finite verb form."""
 struct LMPMood <: LatinMorphologicalProperty
     code::Int64
     function LMPMood(code)
