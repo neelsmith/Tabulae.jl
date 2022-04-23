@@ -32,4 +32,6 @@ end
     srcdir = joinpath(repo, "datasets", "core-infl-shared") 
     tds = dataset([srcdir])
     parser = stringParser(tds) 
+
+    #@test parsetoken("amo",p) |> CitableParserBuilder.tokens    
 end
