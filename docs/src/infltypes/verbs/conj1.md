@@ -3,6 +3,10 @@
 Stem types: `conj1`
 
 `c1pres1` (TBA)
+ `c1pres`
+ `pftact`
+
+
 Stem listing:
 
 ```
