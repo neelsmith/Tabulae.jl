@@ -26,7 +26,7 @@ function md_declension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
         end
 
     end
-    join(mdlines,"\n")
+    join(mdlines,"\n") * "\n\n"
 end
 
 

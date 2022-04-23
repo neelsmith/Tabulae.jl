@@ -1,7 +1,8 @@
+"Gender of substantive form."
 struct LMPGender <: LatinMorphologicalProperty
     code::Int64
     function LMPGender(code)
-        code in keys(genderlabels) ? new(code) : throw(DomainError(string(code, " is out of range.")))
+        code in keys(genderlabeldict) ? new(code) : throw(DomainError(string(code, " is out of range.")))
     end
 end
 
@@ -10,7 +11,7 @@ end
 $(SIGNATURES)
 """
 function lmpGender(s::AbstractString)
-    s in keys(gendercodes) ? LMPGender(gendercodes[s]) : throw(DomainError(string(s, " is not a valid value for number.")))
+    s in keys(gendercodedict) ? LMPGender(gendercodedict[s]) : throw(DomainError(string(s, " is not a valid value for number.")))
 end
 
 """Create `LMPGender` from integer code.
@@ -34,14 +35,14 @@ end
 $(SIGNATURES)
 """
 function label(gender::LMPGender)
-    genderlabels[gender.code]
+    genderlabeldict[gender.code]
 end
 
 """Dictionary mapping codes to labels for gender.
 
 $(SIGNATURES)
 """
-const genderlabels = Dict(
+const genderlabeldict = Dict(
     1 => "masculine",
     2 => "feminine",
     3 => "neuter"
@@ -51,7 +52,7 @@ const genderlabels = Dict(
 
 $(SIGNATURES)
 """
-const gendercodes = Dict(
+const gendercodedict = Dict(
     "masculine" => 1,
     "feminine" => 2,
     "neuter" => 3

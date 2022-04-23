@@ -5,14 +5,25 @@ struct LMFNoun <: LatinMorphologicalForm
     nnumber::LMPNumber
 end
 
+"""Construct a `LMFNoun` from string values.
+$(SIGNATURES)
+"""
+function lmfNoun(g::AbstractString, c::AbstractString, n::AbstractString)
+    LMFNoun(
+        gendercodedict[g] |> LMPGender,
+        casecodedict[c] |> LMPCase,
+        numbercodedict[n] |> LMPNumber
+    )
+end
+
 
 """Generate list of codes for all noun forms.
 $(SIGNATURES)
 """
 function nounformcodes()
-    genderints = keys(Tabulae.genderlabels) |> collect |> sort
+    genderints = keys(Tabulae.genderlabeldict) |> collect |> sort
     caseints = keys(Tabulae.caselabeldict) |> collect |> sort
-    numints = keys(Tabulae.numberlabels) |> collect |> sort
+    numints = keys(Tabulae.numberlabeldict) |> collect |> sort
     formlist = []
     for n in numints
         for g in genderints
@@ -90,6 +101,10 @@ function formurn(noun::LMFNoun)
     FormUrn(string("forms.", NOUN,"0",code(noun.nnumber),"000", code(noun.ngender), code(noun.ncase), "00"))
 end
 
+
+"""Sequence of digits encoding form `noun`
+$(SIGNATURES)
+"""
 function code(noun::LMFNoun)
     urn(noun) |> objectcomponent
 end

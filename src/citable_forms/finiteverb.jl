@@ -25,6 +25,20 @@ function label(verb::LMFFiniteVerb)
         ], " ")
 end
 
+"""Construct a `LMFNoun` from string values.
+$(SIGNATURES)
+"""
+function lmfFiniteVerb(p::AbstractString, n::AbstractString, t::AbstractString, m::AbstractString, v::AbstractString)
+    LMFFiniteVerb(
+        personcodedict[p] |> LMPPerson,
+        numbercodedict[n] |> LMPNumber,
+        tensecodedict[t] |> LMPTense,
+        moodcodedict[m] |> LMPMood,
+        voicecodedict[v] |> LMPVoice
+
+    )
+end
+
 """Compose a Cite2Urn for a `LMFFiniteVerb`.
 
 $(SIGNATURES)
@@ -175,7 +189,7 @@ $(SIGNATURES)
 function finiteverbcodes()
     formlist = []
     for v in [1,2] # voice
-        for t in (keys(Tabulae.tenselabels) |> collect |> sort)
+        for t in (keys(Tabulae.tenselabeldict) |> collect |> sort)
             for m in [1,2] #mood 
                 for n in [1,2] # number 
                     for p in [1,2,3] # person
@@ -186,4 +200,22 @@ function finiteverbcodes()
         end
     end
     formlist
+end
+
+
+"""True if `verb` is in the perfect system.
+$(SIGNATURES)
+"""
+function perfectsystem(verb::LMFFiniteVerb)
+    lmpTense(verb) |> perfectsystem    
+end
+
+
+"""True if `verb` is in the perfect system.
+$(SIGNATURES)
+"""
+function perfectsystem(tns::LMPTense)
+    tns == lmpTense("perfect") || 
+    tns == lmpTense("pluperfect") ||
+    tns == lmpTense("future_perfect")
 end

@@ -77,17 +77,17 @@ Other sources you can use to create a `LatinMorphologicalForm` include strings, 
 Each implementation of the `LatinMorphologicalProperty` has a corresponding lower-case function you can use to extract that property from a form.
 
 
-```@example intro
+```@example formurns
 gender = lmpGender(noun)
 ```
 
 You can use the `code` and `label` functions to find an integer code and readable string for any morphological property.
 
-```@example intro
+```@example formurns
 code(gender)
 ```
 
 
-```@example intro
+```@example formurns
 label(gender)
 ```

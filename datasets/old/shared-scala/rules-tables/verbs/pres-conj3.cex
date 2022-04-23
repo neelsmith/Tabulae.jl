@@ -33,7 +33,7 @@ latcommon.ere3_conj3pres24#conj3#antur#3rd#pl#pres#subj#pass
 
 latcommon.ere3_conj3pres25#conj3#e#2nd#sg#pres#imptv#act
 latcommon.ere3_conj3pres26#conj3#ite#2nd#pl#pres#imptv#act
-latcommon.ere3_conj3pres27#conj3#ere#2st#sg#pres#imptv#pass
+latcommon.ere3_conj3pres27#conj3#ere#second#sg#pres#imptv#pass
 latcommon.ere3_conj3pres28#conj3#imini#2nd#pl#pres#imptv#pass
 
 latcommon.ere3_c3prespres1#c3pres#o#1st#sg#pres#indic#act
@@ -70,5 +70,5 @@ latcommon.ere3_c3prespres24#c3pres#antur#3rd#pl#pres#subj#pass
 
 latcommon.ere3_c3prespres25#c3pres#e#2nd#sg#pres#imptv#act
 latcommon.ere3_c3prespres26#c3pres#ite#2nd#pl#pres#imptv#act
-latcommon.ere3_c3prespres27#c3pres#ere#2st#sg#pres#imptv#pass
+latcommon.ere3_c3prespres27#c3pres#ere#second#sg#pres#imptv#pass
 latcommon.ere3_c3prespres28#c3pres#imini#2nd#pl#pres#imptv#pass

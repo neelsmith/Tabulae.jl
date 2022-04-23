@@ -1,3 +1,4 @@
+"Degree of adjective or adverb."
 struct LMPDegree <: LatinMorphologicalProperty
     code::Int64
     function LMPDegree(code)

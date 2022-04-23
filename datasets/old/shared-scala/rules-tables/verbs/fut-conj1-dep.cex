@@ -1,27 +1,27 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-latcommon.are_conj1fut7|conj1dep|abor|first|singular|fut|indicative|passive
-latcommon.are_conj1fut8|conj1dep|aberis|second|singular|fut|indicative|passive
-latcommon.are_conj1fut8b|conj1dep|abere|second|singular|fut|indicative|passive
-latcommon.are_conj1fut9|conj1dep|abitur|third|singular|fut|indicative|passive
-latcommon.are_conj1fut10|conj1dep|abimur|first|plural|fut|indicative|passive
-latcommon.are_conj1fut11|conj1dep|abimini|second|plural|fut|indicative|passive
-latcommon.are_conj1fut12|conj1dep|abuntur|third|plural|fut|indicative|passive
+latcommon.are_conj1fut7|conj1dep|abor|first|singular|future|indicative|passive
+latcommon.are_conj1fut8|conj1dep|aberis|second|singular|future|indicative|passive
+latcommon.are_conj1fut8b|conj1dep|abere|second|singular|future|indicative|passive
+latcommon.are_conj1fut9|conj1dep|abitur|third|singular|future|indicative|passive
+latcommon.are_conj1fut10|conj1dep|abimur|first|plural|future|indicative|passive
+latcommon.are_conj1fut11|conj1dep|abimini|second|plural|future|indicative|passive
+latcommon.are_conj1fut12|conj1dep|abuntur|third|plural|future|indicative|passive
 
-latcommon.are_conj1fut17|conj1dep|ator|second|singular|fut|imptv|passive
-latcommon.are_conj1fut18|conj1dep|ator|third|singular|fut|imptv|passive
-latcommon.are_conj1fut19|conj1dep|antor|third|plural|fut|imptv|passive
+latcommon.are_conj1fut17|conj1dep|ator|second|singular|future|imperative|passive
+latcommon.are_conj1fut18|conj1dep|ator|third|singular|future|imperative|passive
+latcommon.are_conj1fut19|conj1dep|antor|third|plural|future|imperative|passive
 
 
-latcommon.are_c1presfut7|c1presdep|abor|first|singular|fut|indicative|passive
-latcommon.are_c1presfut8|c1presdep|aberis|second|singular|fut|indicative|passive
-latcommon.are_c1presfut8b|c1presdep|abere|second|singular|fut|indicative|passive
-latcommon.are_c1presfut9|c1presdep|abitur|third|singular|fut|indicative|passive
-latcommon.are_c1presfut10|c1presdep|abimur|first|plural|fut|indicative|passive
-latcommon.are_c1presfut11|c1presdep|abimini|second|plural|fut|indicative|passive
-latcommon.are_c1presfut12|c1presdep|abuntur|third|plural|fut|indicative|passive
+latcommon.are_c1presfut7|c1presdep|abor|first|singular|future|indicative|passive
+latcommon.are_c1presfut8|c1presdep|aberis|second|singular|future|indicative|passive
+latcommon.are_c1presfut8b|c1presdep|abere|second|singular|future|indicative|passive
+latcommon.are_c1presfut9|c1presdep|abitur|third|singular|future|indicative|passive
+latcommon.are_c1presfut10|c1presdep|abimur|first|plural|future|indicative|passive
+latcommon.are_c1presfut11|c1presdep|abimini|second|plural|future|indicative|passive
+latcommon.are_c1presfut12|c1presdep|abuntur|third|plural|future|indicative|passive
 
-latcommon.are_c1presfut17|c1presdep|ator|second|singular|fut|imptv|passive
-latcommon.are_c1presfut18|c1presdep|ator|third|singular|fut|imptv|passive
-latcommon.are_c1presfut19|c1presdep|antor|third|plural|fut|imptv|passive
+latcommon.are_c1presfut17|c1presdep|ator|second|singular|future|imperative|passive
+latcommon.are_c1presfut18|c1presdep|ator|third|singular|future|imperative|passive
+latcommon.are_c1presfut19|c1presdep|antor|third|plural|future|imperative|passive

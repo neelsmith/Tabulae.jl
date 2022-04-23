@@ -19,7 +19,7 @@ latcommon.ire_conj4pres23#conj4dep#iamini#2nd#pl#pres#subj#pass
 latcommon.ire_conj4pres24#conj4dep#iantur#3rd#pl#pres#subj#pass
 
 
-latcommon.ire_conj4pres27#conj4dep#ire#2st#sg#pres#imptv#pass
+latcommon.ire_conj4pres27#conj4dep#ire#second#sg#pres#imptv#pass
 latcommon.ire_conj4pres28#conj4dep#imini#2nd#pl#pres#imptv#pass
 
 latcommon.ire_c4prespres7#c4presdep#ior#1st#sg#pres#indic#pass
@@ -38,5 +38,5 @@ latcommon.ire_c4prespres22#c4presdep#iamur#1st#pl#pres#subj#pass
 latcommon.ire_c4prespres23#c4presdep#iamini#2nd#pl#pres#subj#pass
 latcommon.ire_c4prespres24#c4presdep#iantur#3rd#pl#pres#subj#pass
 
-latcommon.ire_c4prespres27#c4presdep#ire#2st#sg#pres#imptv#pass
+latcommon.ire_c4prespres27#c4presdep#ire#second#sg#pres#imptv#pass
 latcommon.ire_c4prespres28#c4presdep#imini#2nd#pl#pres#imptv#pass

@@ -34,9 +34,9 @@ export LMPCase, lmpCase
 export LMPDegree, lmpDegree
 export LMPUninflectedType, lmpUninflectedType
 
-export LatinMorphologicalForm, lmForm
+export LatinMorphologicalForm, lmForm, code
 export analyses
-export LMFFiniteVerb, lmfFiniteVerb
+export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 

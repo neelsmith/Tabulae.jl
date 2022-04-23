@@ -1,3 +1,4 @@
+"""Type of uninflected form ("part of speech")."""
 struct LMPUninflectedType <: LatinMorphologicalProperty
     code::Int64
     function LMPUninflectedType(code)

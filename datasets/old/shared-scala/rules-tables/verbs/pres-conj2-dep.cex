@@ -1,45 +1,45 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-latcommon.ere_conj2pres7|conj2dep|eor|first|singular|pres|indicative|passive
-latcommon.ere_conj2pres8|conj2dep|eris|second|singular|pres|indicative|passive
-latcommon.ere_conj2pres8b|conj2dep|ere|second|singular|pres|indicative|passive
-latcommon.ere_conj2pres9|conj2dep|etur|third|singular|pres|indicative|passive
-latcommon.ere_conj2pres10|conj2dep|emur|first|plural|pres|indicative|passive
-latcommon.ere_conj2pres11|conj2dep|emini|second|plural|pres|indicative|passive
-latcommon.ere_conj2pres12|conj2dep|entur|third|plural|pres|indicative|passive
+latcommon.ere_conj2pres7|conj2dep|eor|first|singular|present|indicative|passive
+latcommon.ere_conj2pres8|conj2dep|eris|second|singular|present|indicative|passive
+latcommon.ere_conj2pres8b|conj2dep|ere|second|singular|present|indicative|passive
+latcommon.ere_conj2pres9|conj2dep|etur|third|singular|present|indicative|passive
+latcommon.ere_conj2pres10|conj2dep|emur|first|plural|present|indicative|passive
+latcommon.ere_conj2pres11|conj2dep|emini|second|plural|present|indicative|passive
+latcommon.ere_conj2pres12|conj2dep|entur|third|plural|present|indicative|passive
 
 
 
-latcommon.ere_conj2pres19|conj2dep|ear|first|singular|pres|subjunctive|passive
-latcommon.ere_conj2pres20|conj2dep|earis|second|singular|pres|subjunctive|passive
-latcommon.ere_conj2pres20b|conj2dep|eare|second|singular|pres|subjunctive|passive
-latcommon.ere_conj2pres21|conj2dep|eatur|third|singular|pres|subjunctive|passive
-latcommon.ere_conj2pres22|conj2dep|eamur|first|plural|pres|subjunctive|passive
-latcommon.ere_conj2pres23|conj2dep|eamini|second|plural|pres|subjunctive|passive
-latcommon.ere_conj2pres24|conj2dep|eantur|third|plural|pres|subjunctive|passive
+latcommon.ere_conj2pres19|conj2dep|ear|first|singular|present|subjunctive|passive
+latcommon.ere_conj2pres20|conj2dep|earis|second|singular|present|subjunctive|passive
+latcommon.ere_conj2pres20b|conj2dep|eare|second|singular|present|subjunctive|passive
+latcommon.ere_conj2pres21|conj2dep|eatur|third|singular|present|subjunctive|passive
+latcommon.ere_conj2pres22|conj2dep|eamur|first|plural|present|subjunctive|passive
+latcommon.ere_conj2pres23|conj2dep|eamini|second|plural|present|subjunctive|passive
+latcommon.ere_conj2pres24|conj2dep|eantur|third|plural|present|subjunctive|passive
 
 
-latcommon.ere_conj2pres27|conj2dep|ere|second|singular|pres|imptv|passive
-latcommon.ere_conj2pres28|conj2dep|emini|second|plural|pres|imptv|passive
+latcommon.ere_conj2pres27|conj2dep|ere|second|singular|present|imperative|passive
+latcommon.ere_conj2pres28|conj2dep|emini|second|plural|present|imperative|passive
 
 
-latcommon.ere_c2prespres7|c2presdep|eor|first|singular|pres|indicative|passive
-latcommon.ere_c2prespres8|c2presdep|eris|second|singular|pres|indicative|passive
-latcommon.ere_c2prespres8b|c2presdep|ere|second|singular|pres|indicative|passive
-latcommon.ere_c2prespres9|c2presdep|etur|third|singular|pres|indicative|passive
-latcommon.ere_c2prespres10|c2presdep|emur|first|plural|pres|indicative|passive
-latcommon.ere_c2prespres11|c2presdep|emini|second|plural|pres|indicative|passive
-latcommon.ere_c2prespres12|c2presdep|entur|third|plural|pres|indicative|passive
+latcommon.ere_c2prespres7|c2presdep|eor|first|singular|present|indicative|passive
+latcommon.ere_c2prespres8|c2presdep|eris|second|singular|present|indicative|passive
+latcommon.ere_c2prespres8b|c2presdep|ere|second|singular|present|indicative|passive
+latcommon.ere_c2prespres9|c2presdep|etur|third|singular|present|indicative|passive
+latcommon.ere_c2prespres10|c2presdep|emur|first|plural|present|indicative|passive
+latcommon.ere_c2prespres11|c2presdep|emini|second|plural|present|indicative|passive
+latcommon.ere_c2prespres12|c2presdep|entur|third|plural|present|indicative|passive
 
 
-latcommon.ere_c2prespres19|c2presdep|ear|first|singular|pres|subjunctive|passive
-latcommon.ere_c2prespres20|c2presdep|earis|second|singular|pres|subjunctive|passive
-latcommon.ere_c2prespres20b|c2presdep|eare|second|singular|pres|subjunctive|passive
-latcommon.ere_c2prespres21|c2presdep|eatur|third|singular|pres|subjunctive|passive
-latcommon.ere_c2prespres22|c2presdep|eamur|first|plural|pres|subjunctive|passive
-latcommon.ere_c2prespres23|c2presdep|eamini|second|plural|pres|subjunctive|passive
-latcommon.ere_c2prespres24|c2presdep|eantur|third|plural|pres|subjunctive|passive
+latcommon.ere_c2prespres19|c2presdep|ear|first|singular|present|subjunctive|passive
+latcommon.ere_c2prespres20|c2presdep|earis|second|singular|present|subjunctive|passive
+latcommon.ere_c2prespres20b|c2presdep|eare|second|singular|present|subjunctive|passive
+latcommon.ere_c2prespres21|c2presdep|eatur|third|singular|present|subjunctive|passive
+latcommon.ere_c2prespres22|c2presdep|eamur|first|plural|present|subjunctive|passive
+latcommon.ere_c2prespres23|c2presdep|eamini|second|plural|present|subjunctive|passive
+latcommon.ere_c2prespres24|c2presdep|eantur|third|plural|present|subjunctive|passive
 
-latcommon.ere_c2prespres27|c2presdep|ere|second|singular|pres|imptv|passive
-latcommon.ere_c2prespres28|c2presdep|emini|second|plural|pres|imptv|passive
+latcommon.ere_c2prespres27|c2presdep|ere|second|singular|present|imperative|passive
+latcommon.ere_c2prespres28|c2presdep|emini|second|plural|present|imperative|passive

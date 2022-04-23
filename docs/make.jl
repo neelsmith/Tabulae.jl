@@ -37,11 +37,16 @@ makedocs(
 
             "Verbs" => "infltypes/verbs/index.md",
             "Verbs: first conjugation" => "infltypes/verbs/conj1.md",
+    
+            "Verbs: second conjugation" => "infltypes/verbs/conj2.md",
+            "Verbs: third conjugation" => "infltypes/verbs/conj3.md",
+            "Verbs: third-io conjugation" => "infltypes/verbs/conj3io.md",
+            "Verbs: fourth conjugation" => "infltypes/verbs/conj4.md",
         ],
 
         "Reference: code" => Any[
-            "Latin Morphology API" =>  "apis/apis.md",
-            "FormUrns" => "apis/forms.md"
+            "Latin Morphology API" =>  "apis/apis.md"
+           
         ],
         
     ],

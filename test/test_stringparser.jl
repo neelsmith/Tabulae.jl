@@ -25,5 +25,11 @@
     parser2 = stringParser(f, FileReader)
     @test parser2 isa StringParser
     @test length(parser1.entries) == length(parser2.entries)
+end
 
+@testset "Test StringParser against core data set" begin
+    repo = dirname(pwd())
+    srcdir = joinpath(repo, "datasets", "core-infl-shared") 
+    tds = dataset([srcdir])
+    parser = stringParser(tds) 
 end
