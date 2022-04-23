@@ -16,6 +16,12 @@ function label(inf::LMFInfinitive)
     join([label(inf.tense), label(inf.voice), "infinitive"]," ")
 end
 
+"""Sequence of digits encoding form `verb`
+$(SIGNATURES)
+"""
+function code(verb::LMFFiniteVerb)
+    urn(verb) |> objectcomponent
+end
 
 """Compose a Cite2Urn for a `LMFInfinitive`.
 

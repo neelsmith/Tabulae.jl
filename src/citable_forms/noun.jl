@@ -101,6 +101,10 @@ function formurn(noun::LMFNoun)
     FormUrn(string("forms.", NOUN,"0",code(noun.nnumber),"000", code(noun.ngender), code(noun.ncase), "00"))
 end
 
+
+"""Sequence of digits encoding form `noun`
+$(SIGNATURES)
+"""
 function code(noun::LMFNoun)
     urn(noun) |> objectcomponent
 end
