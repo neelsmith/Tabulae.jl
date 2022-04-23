@@ -34,12 +34,12 @@ latcommon.irrvadn3112428|ls.n31124|nolueramus|1st|pl|plupft|indic|act
 latcommon.irrvadn3112429|ls.n31124|nolueratis|2nd|pl|plupft|indic|act
 latcommon.irrvadn3112430|ls.n31124|noluerant|3rd|pl|plupft|indic|act
 
-latcommon.irrvadn3112431|ls.n31124|noluero|1st|sg|futpft|indic|act
-latcommon.irrvadn3112432|ls.n31124|nolueris|2nd|sg|futpft|indic|act
-latcommon.irrvadn3112433|ls.n31124|noluerit|3rd|sg|futpft|indic|act
-latcommon.irrvadn3112434|ls.n31124|noluerimus|1st|pl|futpft|indic|act
-latcommon.irrvadn3112435|ls.n31124|nolueritis|2nd|pl|futpft|indic|act
-latcommon.irrvadn3112436|ls.n31124|noluerint|3rd|pl|futpft|indic|act
+latcommon.irrvadn3112431|ls.n31124|noluero|1st|sg|future_perfect|indic|act
+latcommon.irrvadn3112432|ls.n31124|nolueris|2nd|sg|future_perfect|indic|act
+latcommon.irrvadn3112433|ls.n31124|noluerit|3rd|sg|future_perfect|indic|act
+latcommon.irrvadn3112434|ls.n31124|noluerimus|1st|pl|future_perfect|indic|act
+latcommon.irrvadn3112435|ls.n31124|nolueritis|2nd|pl|future_perfect|indic|act
+latcommon.irrvadn3112436|ls.n31124|noluerint|3rd|pl|future_perfect|indic|act
 
 latcommon.irrvadn3112437|ls.n31124|nolim|1st|sg|pres|subj|act
 latcommon.irrvadn3112438|ls.n31124|nolis|2nd|sg|pres|subj|act

@@ -36,12 +36,12 @@ latcommon.n37193ad|ls.n37193|potueramus|1st|pl|plupft|indic|act
 latcommon.n37193ae|ls.n37193|potueratis|2nd|pl|plupft|indic|act
 latcommon.n37193af|ls.n37193|potuerant|3rd|pl|plupft|indic|act
 
-latcommon.n37193ag|ls.n37193|potuero|1st|sg|futpft|indic|act
-latcommon.n37193ah|ls.n37193|potueris|2nd|sg|futpft|indic|act
-latcommon.n37193ai|ls.n37193|potuerit|3rd|sg|futpft|indic|act
-latcommon.n37193aj|ls.n37193|potuerimus|1st|pl|futpft|indic|act
-latcommon.n37193ak|ls.n37193|potueritis|2nd|pl|futpft|indic|act
-latcommon.n37193al|ls.n37193|potuerint|3rd|pl|futpft|indic|act
+latcommon.n37193ag|ls.n37193|potuero|1st|sg|future_perfect|indic|act
+latcommon.n37193ah|ls.n37193|potueris|2nd|sg|future_perfect|indic|act
+latcommon.n37193ai|ls.n37193|potuerit|3rd|sg|future_perfect|indic|act
+latcommon.n37193aj|ls.n37193|potuerimus|1st|pl|future_perfect|indic|act
+latcommon.n37193ak|ls.n37193|potueritis|2nd|pl|future_perfect|indic|act
+latcommon.n37193al|ls.n37193|potuerint|3rd|pl|future_perfect|indic|act
 
 latcommon.n37193am|ls.n37193|possim|1st|sg|pres|subj|act
 latcommon.n37193an|ls.n37193|possis|2nd|sg|pres|subj|act

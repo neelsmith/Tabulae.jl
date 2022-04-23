@@ -36,12 +36,12 @@ latcommon.irregverbn46529ad|ls.n46529|fueramus|1st|pl|plupft|indic|act
 latcommon.irregverbn46529ae|ls.n46529|fueratis|2nd|pl|plupft|indic|act
 latcommon.irregverbn46529af|ls.n46529|fuerant|3rd|pl|plupft|indic|act
 
-latcommon.irregverbn46529ag|ls.n46529|fuero|1st|sg|futpft|indic|act
-latcommon.irregverbn46529ah|ls.n46529|fueris|2nd|sg|futpft|indic|act
-latcommon.irregverbn46529ai|ls.n46529|fuerit|3rd|sg|futpft|indic|act
-latcommon.irregverbn46529aj|ls.n46529|fuerimus|1st|pl|futpft|indic|act
-latcommon.irregverbn46529ak|ls.n46529|fueritis|2nd|pl|futpft|indic|act
-latcommon.irregverbn46529al|ls.n46529|fuerint|3rd|pl|futpft|indic|act
+latcommon.irregverbn46529ag|ls.n46529|fuero|1st|sg|future_perfect|indic|act
+latcommon.irregverbn46529ah|ls.n46529|fueris|2nd|sg|future_perfect|indic|act
+latcommon.irregverbn46529ai|ls.n46529|fuerit|3rd|sg|future_perfect|indic|act
+latcommon.irregverbn46529aj|ls.n46529|fuerimus|1st|pl|future_perfect|indic|act
+latcommon.irregverbn46529ak|ls.n46529|fueritis|2nd|pl|future_perfect|indic|act
+latcommon.irregverbn46529al|ls.n46529|fuerint|3rd|pl|future_perfect|indic|act
 
 latcommon.irregverbn46529am|ls.n46529|sim|1st|sg|pres|subj|act
 latcommon.irregverbn46529an|ls.n46529|sis|2nd|sg|pres|subj|act

@@ -37,12 +37,12 @@ latcommon.irrvadn101028|ls.n1010|adfueramus|1st|pl|plupft|indic|act
 latcommon.irrvadn101029|adlexent.n1010|adfueratis|2nd|pl|plupft|indic|act
 latcommon.irrvadn101030|ls.n1010|adfuerant|3rd|pl|plupft|indic|act
 
-latcommon.irrvadn101031|ls.n1010|adfuero|1st|sg|futpft|indic|act
-latcommon.irrvadn101032|ls.n1010|adfueris|2nd|sg|futpft|indic|act
-latcommon.irrvadn101033|ls.n1010|adfuerit|3rd|sg|futpft|indic|act
-latcommon.irrvadn101034|ls.n1010|adfuerimus|1st|pl|futpft|indic|act
-latcommon.irrvadn101035|ls.n1010|adfueritis|2nd|pl|futpft|indic|act
-latcommon.irrvadn101036|ls.n1010|adfuerint|3rd|pl|futpft|indic|act
+latcommon.irrvadn101031|ls.n1010|adfuero|1st|sg|future_perfect|indic|act
+latcommon.irrvadn101032|ls.n1010|adfueris|2nd|sg|future_perfect|indic|act
+latcommon.irrvadn101033|ls.n1010|adfuerit|3rd|sg|future_perfect|indic|act
+latcommon.irrvadn101034|ls.n1010|adfuerimus|1st|pl|future_perfect|indic|act
+latcommon.irrvadn101035|ls.n1010|adfueritis|2nd|pl|future_perfect|indic|act
+latcommon.irrvadn101036|ls.n1010|adfuerint|3rd|pl|future_perfect|indic|act
 
 latcommon.irrvadn101037|ls.n1010|adsim|1st|sg|pres|subj|act
 latcommon.irrvadn101038|ls.n1010|adsis|2nd|sg|pres|subj|act
