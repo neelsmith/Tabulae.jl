@@ -8,12 +8,6 @@ latcommon.pftact_futpft4|pftact|erimus|first|plural|futpft|indicative|active
 latcommon.pftact_futpft5|pftact|eritis|second|plural|futpft|indicative|active
 latcommon.pftact_futpft6|pftact|erint|third|plural|futpft|indicative|active
 
-latcommon.ere_futpft1|conj2|uero|first|singular|futpft|indicative|active
-latcommon.ere_futpft2|conj2|ueris|second|singular|futpft|indicative|active
-latcommon.ere_futpft3|conj2|uerit|third|singular|futpft|indicative|active
-latcommon.ere_futpft4|conj2|uerimus|first|plural|futpft|indicative|active
-latcommon.ere_futpft5|conj2|ueritis|second|plural|futpft|indicative|active
-latcommon.ere_futpft6|conj2|uerint|third|plural|futpft|indicative|active
 
 
 latcommon.ereio_futpft1|conj3io|ero|first|singular|futpft|indicative|active

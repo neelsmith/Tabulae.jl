@@ -1,0 +1,8 @@
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+
+latcommon.ere_futpft1|conj2|vero|first|singular|futpft|indicative|active
+latcommon.ere_futpft2|conj2|veris|second|singular|futpft|indicative|active
+latcommon.ere_futpft3|conj2|verit|third|singular|futpft|indicative|active
+latcommon.ere_futpft4|conj2|verimus|first|plural|futpft|indicative|active
+latcommon.ere_futpft5|conj2|veritis|second|plural|futpft|indicative|active
+latcommon.ere_futpft6|conj2|verint|third|plural|futpft|indicative|active
