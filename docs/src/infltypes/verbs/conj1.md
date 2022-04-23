@@ -1,5 +1,8 @@
 # First conjugation verbs
 
+Stem types: `conj1`
+
+`c1pres1` (TBA)
 Stem listing:
 
 ```
