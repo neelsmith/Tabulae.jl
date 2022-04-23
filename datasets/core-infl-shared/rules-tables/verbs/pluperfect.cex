@@ -9,22 +9,6 @@ latcommon.are_plupft11a|conj1|assetis|second|plural|plupft|subjunctive|active
 latcommon.are_plupft12a|conj1|assent|third|plural|plupft|subjunctive|active
 
 
-
-latcommon.ere_plupft1|conj2|ueram|first|singular|plupft|indicative|active
-latcommon.ere_plupft2|conj2|ueras|second|singular|plupft|indicative|active
-latcommon.ere_plupft3|conj2|uerat|third|singular|plupft|indicative|active
-latcommon.ere_plupft4|conj2|ueramus|first|plural|plupft|indicative|active
-latcommon.ere_plupft5|conj2|ueratis|second|plural|plupft|indicative|active
-latcommon.ere_plupft6|conj2|uerant|third|plural|plupft|indicative|active
-
-latcommon.ere_plupft7|conj2|uissem|first|singular|plupft|subjunctive|active
-latcommon.ere_plupft8|conj2|uisses|second|singular|plupft|subjunctive|active
-latcommon.ere_plupft9|conj2|uisset|third|singular|plupft|subjunctive|active
-latcommon.ere_plupft10|conj2|uissemus|first|plural|plupft|subjunctive|active
-latcommon.ere_plupft11|conj2|uissetis|second|plural|plupft|subjunctive|active
-latcommon.ere_plupft12|conj2|uissent|third|plural|plupft|subjunctive|active
-
-
 latcommon.ereio_plupft1|conj3io|eram|first|singular|plupft|indicative|active
 latcommon.ereio_plupft2|conj3io|eras|second|singular|plupft|indicative|active
 latcommon.ereio_plupft3|conj3io|erat|third|singular|plupft|indicative|active
