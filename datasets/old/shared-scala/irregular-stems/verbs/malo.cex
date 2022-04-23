@@ -21,20 +21,20 @@ latcommon.irrvadn2776116|ls.n27761|malemus|1st|pl|fut|indic|act
 latcommon.irrvadn2776117|ls.n27761|maletis|2nd|pl|fut|indic|act
 latcommon.irrvadn2776118|ls.n27761|malent|3rd|pl|fut|indic|act
 
-latcommon.irrvadn2776119|ls.n27761|malui|1st|sg|pft|indic|act
-latcommon.irrvadn2776120|ls.n27761|maluisti|2nd|sg|pft|indic|act
-latcommon.irrvadn2776121|ls.n27761|maluit|3rd|sg|pft|indic|act
-latcommon.irrvadn2776122|ls.n27761|maluimus|1st|pl|pft|indic|act
-latcommon.irrvadn2776123|ls.n27761|maluistis|2nd|pl|pft|indic|act
-latcommon.irrvadn2776124|ls.n27761|maluerunt|3rd|pl|pft|indic|act
-latcommon.irrvadn2776124b|ls.n27761|maluere|3rd|pl|pft|indic|act
+latcommon.irrvadn2776119|ls.n27761|malui|1st|sg|perfect|indic|act
+latcommon.irrvadn2776120|ls.n27761|maluisti|2nd|sg|perfect|indic|act
+latcommon.irrvadn2776121|ls.n27761|maluit|3rd|sg|perfect|indic|act
+latcommon.irrvadn2776122|ls.n27761|maluimus|1st|pl|perfect|indic|act
+latcommon.irrvadn2776123|ls.n27761|maluistis|2nd|pl|perfect|indic|act
+latcommon.irrvadn2776124|ls.n27761|maluerunt|3rd|pl|perfect|indic|act
+latcommon.irrvadn2776124b|ls.n27761|maluere|3rd|pl|perfect|indic|act
 
-latcommon.irrvadn2776125|ls.n27761|malueram|1st|sg|plupft|indic|act
-latcommon.irrvadn2776126|ls.n27761|malueras|2nd|sg|plupft|indic|act
-latcommon.irrvadn2776127|ls.n27761|maluerat|3rd|sg|plupft|indic|act
-latcommon.irrvadn2776128|ls.n27761|malueramus|1st|pl|plupft|indic|act
-latcommon.irrvadn2776129|ls.n27761|malueratis|2nd|pl|plupft|indic|act
-latcommon.irrvadn2776130|ls.n27761|maluerant|3rd|pl|plupft|indic|act
+latcommon.irrvadn2776125|ls.n27761|malueram|1st|sg|pluperfect|indic|act
+latcommon.irrvadn2776126|ls.n27761|malueras|2nd|sg|pluperfect|indic|act
+latcommon.irrvadn2776127|ls.n27761|maluerat|3rd|sg|pluperfect|indic|act
+latcommon.irrvadn2776128|ls.n27761|malueramus|1st|pl|pluperfect|indic|act
+latcommon.irrvadn2776129|ls.n27761|malueratis|2nd|pl|pluperfect|indic|act
+latcommon.irrvadn2776130|ls.n27761|maluerant|3rd|pl|pluperfect|indic|act
 
 latcommon.irrvadn2776131|ls.n27761|maluero|1st|sg|future_perfect|indic|act
 latcommon.irrvadn2776132|ls.n27761|malueris|2nd|sg|future_perfect|indic|act
@@ -57,16 +57,16 @@ latcommon.irrvadn2776146|ls.n27761|mallemus|1st|pl|impft|subj|act
 latcommon.irrvadn2776147|ls.n27761|malletis|2nd|pl|impft|subj|act
 latcommon.irrvadn2776148|ls.n27761|mallent|3rd|pl|impft|subj|act
 
-latcommon.irrvadn2776149|ls.n27761|maluerim|1st|sg|pft|subj|act
-latcommon.irrvadn2776150|ls.n27761|malueris|2nd|sg|pft|subj|act
-latcommon.irrvadn2776151|ls.n27761|maluerit|3rd|sg|pft|subj|act
-latcommon.irrvadn2776152|ls.n27761|maluerimus|1st|pl|pft|subj|act
-latcommon.irrvadn2776153|ls.n27761|malueritis|2nd|pl|pft|subj|act
-latcommon.irrvadn2776154|ls.n27761|maluerint|3rd|pl|pft|subj|act
+latcommon.irrvadn2776149|ls.n27761|maluerim|1st|sg|perfect|subj|act
+latcommon.irrvadn2776150|ls.n27761|malueris|2nd|sg|perfect|subj|act
+latcommon.irrvadn2776151|ls.n27761|maluerit|3rd|sg|perfect|subj|act
+latcommon.irrvadn2776152|ls.n27761|maluerimus|1st|pl|perfect|subj|act
+latcommon.irrvadn2776153|ls.n27761|malueritis|2nd|pl|perfect|subj|act
+latcommon.irrvadn2776154|ls.n27761|maluerint|3rd|pl|perfect|subj|act
 
-latcommon.irrvadn2776155|ls.n27761|maluissem|1st|sg|plupft|subj|act
-latcommon.irrvadn2776156|ls.n27761|maluisses|2nd|sg|plupft|subj|act
-latcommon.irrvadn2776157|ls.n27761|maluisset|3rd|sg|plupft|subj|act
-latcommon.irrvadn2776158|ls.n27761|maluissemus|1st|pl|plupft|subj|act
-latcommon.irrvadn2776159|ls.n27761|maluissetis|2nd|pl|plupft|subj|act
-latcommon.irrvadn2776160|ls.n27761|maluissent|3rd|pl|plupft|subj|act
+latcommon.irrvadn2776155|ls.n27761|maluissem|1st|sg|pluperfect|subj|act
+latcommon.irrvadn2776156|ls.n27761|maluisses|2nd|sg|pluperfect|subj|act
+latcommon.irrvadn2776157|ls.n27761|maluisset|3rd|sg|pluperfect|subj|act
+latcommon.irrvadn2776158|ls.n27761|maluissemus|1st|pl|pluperfect|subj|act
+latcommon.irrvadn2776159|ls.n27761|maluissetis|2nd|pl|pluperfect|subj|act
+latcommon.irrvadn2776160|ls.n27761|maluissent|3rd|pl|pluperfect|subj|act

@@ -22,20 +22,20 @@ latcommon.irrverbn25416|ls.n254|aberimus|1st|pl|fut|indic|act
 latcommon.irrverbn25417|ls.n254|aberitis|2nd|pl|fut|indic|act
 latcommon.irrverbn25418|ls.n254|aberunt|3rd|pl|fut|indic|act
 
-latcommon.irrverbn25419|ls.n254|afui|1st|sg|pft|indic|act
-latcommon.irrverbn25420|ls.n254|afuisti|2nd|sg|pft|indic|act
-latcommon.irrverbn25421|ls.n254|afuit|3rd|sg|pft|indic|act
-latcommon.irrverbn25422|ls.n254|afuimus|1st|pl|pft|indic|act
-latcommon.irrverbn25423|ls.n254|afuistis|2nd|pl|pft|indic|act
-latcommon.irrverbn25424|ls.n254|afuerunt|3rd|pl|pft|indic|act
-latcommon.irrverbn25424b|ls.n254|afuere|3rd|pl|pft|indic|act
+latcommon.irrverbn25419|ls.n254|afui|1st|sg|perfect|indic|act
+latcommon.irrverbn25420|ls.n254|afuisti|2nd|sg|perfect|indic|act
+latcommon.irrverbn25421|ls.n254|afuit|3rd|sg|perfect|indic|act
+latcommon.irrverbn25422|ls.n254|afuimus|1st|pl|perfect|indic|act
+latcommon.irrverbn25423|ls.n254|afuistis|2nd|pl|perfect|indic|act
+latcommon.irrverbn25424|ls.n254|afuerunt|3rd|pl|perfect|indic|act
+latcommon.irrverbn25424b|ls.n254|afuere|3rd|pl|perfect|indic|act
 
-latcommon.irrverbn25425|ls.n254|afueram|1st|sg|plupft|indic|act
-latcommon.irrverbn25426|ls.n254|afueras|2nd|sg|plupft|indic|act
-latcommon.irrverbn25427|ls.n254|afuerat|3rd|sg|plupft|indic|act
-latcommon.irrverbn25428|ls.n254|afueramus|1st|pl|plupft|indic|act
-latcommon.irrverbn25429|ablexent.n254|afueratis|2nd|pl|plupft|indic|act
-latcommon.irrverbn25430|ls.n254|afuerant|3rd|pl|plupft|indic|act
+latcommon.irrverbn25425|ls.n254|afueram|1st|sg|pluperfect|indic|act
+latcommon.irrverbn25426|ls.n254|afueras|2nd|sg|pluperfect|indic|act
+latcommon.irrverbn25427|ls.n254|afuerat|3rd|sg|pluperfect|indic|act
+latcommon.irrverbn25428|ls.n254|afueramus|1st|pl|pluperfect|indic|act
+latcommon.irrverbn25429|ablexent.n254|afueratis|2nd|pl|pluperfect|indic|act
+latcommon.irrverbn25430|ls.n254|afuerant|3rd|pl|pluperfect|indic|act
 
 latcommon.irrverbn25431|ls.n254|afuero|1st|sg|future_perfect|indic|act
 latcommon.irrverbn25432|ls.n254|afueris|2nd|sg|future_perfect|indic|act
@@ -58,19 +58,19 @@ latcommon.irrverbn25446|ls.n254|abessemus|1st|pl|impft|subj|act
 latcommon.irrverbn25447|ls.n254|abessetis|2nd|pl|impft|subj|act
 latcommon.irrverbn25448|ls.n254|abessent|3rd|pl|impft|subj|act
 
-latcommon.irrverbn25449|ls.n254|afuerim|1st|sg|pft|subj|act
-latcommon.irrverbn25450|ls.n254|afueris|2nd|sg|pft|subj|act
-latcommon.irrverbn25451|ls.n254|afuerit|3rd|sg|pft|subj|act
-latcommon.irrverbn25452|ls.n254|afuerimus|1st|pl|pft|subj|act
-latcommon.irrverbn25453|ls.n254|afueritis|2nd|pl|pft|subj|act
-latcommon.irrverbn25454|ls.n254|afuerint|3rd|pl|pft|subj|act
+latcommon.irrverbn25449|ls.n254|afuerim|1st|sg|perfect|subj|act
+latcommon.irrverbn25450|ls.n254|afueris|2nd|sg|perfect|subj|act
+latcommon.irrverbn25451|ls.n254|afuerit|3rd|sg|perfect|subj|act
+latcommon.irrverbn25452|ls.n254|afuerimus|1st|pl|perfect|subj|act
+latcommon.irrverbn25453|ls.n254|afueritis|2nd|pl|perfect|subj|act
+latcommon.irrverbn25454|ls.n254|afuerint|3rd|pl|perfect|subj|act
 
-latcommon.irrverbn25455|ls.n254|afuissem|1st|sg|plupft|subj|act
-latcommon.irrverbn25456|ls.n254|afuisses|2nd|sg|plupft|subj|act
-latcommon.irrverbn25457|ls.n254|afuisset|3rd|sg|plupft|subj|act
-latcommon.irrverbn25458|ls.n254|afuissemus|1st|pl|plupft|subj|act
-latcommon.irrverbn25459|ls.n254|afuissetis|2nd|pl|plupft|subj|act
-latcommon.irrverbn25460|ls.n254|afuissent|3rd|pl|plupft|subj|act
+latcommon.irrverbn25455|ls.n254|afuissem|1st|sg|pluperfect|subj|act
+latcommon.irrverbn25456|ls.n254|afuisses|2nd|sg|pluperfect|subj|act
+latcommon.irrverbn25457|ls.n254|afuisset|3rd|sg|pluperfect|subj|act
+latcommon.irrverbn25458|ls.n254|afuissemus|1st|pl|pluperfect|subj|act
+latcommon.irrverbn25459|ls.n254|afuissetis|2nd|pl|pluperfect|subj|act
+latcommon.irrverbn25460|ls.n254|afuissent|3rd|pl|pluperfect|subj|act
 
 latcommon.irrverbn254133|ls.n254|abes|2nd|sg|pres|imptv|act
 latcommon.irrverbn254134|ls.n254|abeste|2nd|pl|pres|imptv|act

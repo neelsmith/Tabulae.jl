@@ -21,20 +21,20 @@ latcommon.n37193q|ls.n37193|poterimus|1st|pl|fut|indic|act
 latcommon.n37193r|ls.n37193|poteritis|2nd|pl|fut|indic|act
 latcommon.n37193s|ls.n37193|poterunt|3rd|pl|fut|indic|act
 
-latcommon.n37193t|ls.n37193|potui|1st|sg|pft|indic|act
-latcommon.n37193u|ls.n37193|potuisti|2nd|sg|pft|indic|act
-latcommon.n37193v|ls.n37193|potuit|3rd|sg|pft|indic|act
-latcommon.n37193w|ls.n37193|potuimus|1st|pl|pft|indic|act
-latcommon.n37193x|ls.n37193|potuistis|2nd|pl|pft|indic|act
-latcommon.n37193y|ls.n37193|potuerunt|3rd|pl|pft|indic|act
-latcommon.n37193z|ls.n37193|potuere|3rd|pl|pft|indic|act
+latcommon.n37193t|ls.n37193|potui|1st|sg|perfect|indic|act
+latcommon.n37193u|ls.n37193|potuisti|2nd|sg|perfect|indic|act
+latcommon.n37193v|ls.n37193|potuit|3rd|sg|perfect|indic|act
+latcommon.n37193w|ls.n37193|potuimus|1st|pl|perfect|indic|act
+latcommon.n37193x|ls.n37193|potuistis|2nd|pl|perfect|indic|act
+latcommon.n37193y|ls.n37193|potuerunt|3rd|pl|perfect|indic|act
+latcommon.n37193z|ls.n37193|potuere|3rd|pl|perfect|indic|act
 
-latcommon.n37193aa|ls.n37193|potueram|1st|sg|plupft|indic|act
-latcommon.n37193ab|ls.n37193|potueras|2nd|sg|plupft|indic|act
-latcommon.n37193ac|ls.n37193|potuerat|3rd|sg|plupft|indic|act
-latcommon.n37193ad|ls.n37193|potueramus|1st|pl|plupft|indic|act
-latcommon.n37193ae|ls.n37193|potueratis|2nd|pl|plupft|indic|act
-latcommon.n37193af|ls.n37193|potuerant|3rd|pl|plupft|indic|act
+latcommon.n37193aa|ls.n37193|potueram|1st|sg|pluperfect|indic|act
+latcommon.n37193ab|ls.n37193|potueras|2nd|sg|pluperfect|indic|act
+latcommon.n37193ac|ls.n37193|potuerat|3rd|sg|pluperfect|indic|act
+latcommon.n37193ad|ls.n37193|potueramus|1st|pl|pluperfect|indic|act
+latcommon.n37193ae|ls.n37193|potueratis|2nd|pl|pluperfect|indic|act
+latcommon.n37193af|ls.n37193|potuerant|3rd|pl|pluperfect|indic|act
 
 latcommon.n37193ag|ls.n37193|potuero|1st|sg|future_perfect|indic|act
 latcommon.n37193ah|ls.n37193|potueris|2nd|sg|future_perfect|indic|act
@@ -57,16 +57,16 @@ latcommon.n37193av|ls.n37193|possemus|1st|pl|impft|subj|act
 latcommon.n37193aw|ls.n37193|possetis|2nd|pl|impft|subj|act
 latcommon.n37193ax|ls.n37193|possent|3rd|pl|impft|subj|act
 
-latcommon.n37193ay|ls.n37193|potuerim|1st|sg|pft|subj|act
-latcommon.n37193az|ls.n37193|potueris|2nd|sg|pft|subj|act
-latcommon.n37193ba|ls.n37193|potuerit|3rd|sg|pft|subj|act
-latcommon.n37193bb|ls.n37193|potuerimus|1st|pl|pft|subj|act
-latcommon.n37193bc|ls.n37193|potueritis|2nd|pl|pft|subj|act
-latcommon.n37193bd|ls.n37193|potuerint|3rd|pl|pft|subj|act
+latcommon.n37193ay|ls.n37193|potuerim|1st|sg|perfect|subj|act
+latcommon.n37193az|ls.n37193|potueris|2nd|sg|perfect|subj|act
+latcommon.n37193ba|ls.n37193|potuerit|3rd|sg|perfect|subj|act
+latcommon.n37193bb|ls.n37193|potuerimus|1st|pl|perfect|subj|act
+latcommon.n37193bc|ls.n37193|potueritis|2nd|pl|perfect|subj|act
+latcommon.n37193bd|ls.n37193|potuerint|3rd|pl|perfect|subj|act
 
-latcommon.n37193be|ls.n37193|potuissem|1st|sg|plupft|subj|act
-latcommon.n37193bf|ls.n37193|potuisses|2nd|sg|plupft|subj|act
-latcommon.n37193bg|ls.n37193|potuisset|3rd|sg|plupft|subj|act
-latcommon.n37193bh|ls.n37193|potuissemus|1st|pl|plupft|subj|act
-latcommon.n37193bi|ls.n37193|potuissetis|2nd|pl|plupft|subj|act
-latcommon.n37193bj|ls.n37193|potuissent|3rd|pl|plupft|subj|act
+latcommon.n37193be|ls.n37193|potuissem|1st|sg|pluperfect|subj|act
+latcommon.n37193bf|ls.n37193|potuisses|2nd|sg|pluperfect|subj|act
+latcommon.n37193bg|ls.n37193|potuisset|3rd|sg|pluperfect|subj|act
+latcommon.n37193bh|ls.n37193|potuissemus|1st|pl|pluperfect|subj|act
+latcommon.n37193bi|ls.n37193|potuissetis|2nd|pl|pluperfect|subj|act
+latcommon.n37193bj|ls.n37193|potuissent|3rd|pl|pluperfect|subj|act

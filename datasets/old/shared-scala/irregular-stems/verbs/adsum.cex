@@ -22,20 +22,20 @@ latcommon.irrvadn101016|ls.n1010|aderimus|1st|pl|fut|indic|act
 latcommon.irrvadn101017|ls.n1010|aderitis|2nd|pl|fut|indic|act
 latcommon.irrvadn101018|ls.n1010|aderunt|3rd|pl|fut|indic|act
 
-latcommon.irrvadn101019|ls.n1010|adfui|1st|sg|pft|indic|act
-latcommon.irrvadn101020|ls.n1010|adfuisti|2nd|sg|pft|indic|act
-latcommon.irrvadn101021|ls.n1010|adfuit|3rd|sg|pft|indic|act
-latcommon.irrvadn101022|ls.n1010|adfuimus|1st|pl|pft|indic|act
-latcommon.irrvadn101023|ls.n1010|adfuistis|2nd|pl|pft|indic|act
-latcommon.irrvadn101024|ls.n1010|adfuerunt|3rd|pl|pft|indic|act
-latcommon.irrvadn101024b|ls.n1010|adfuere|3rd|pl|pft|indic|act
+latcommon.irrvadn101019|ls.n1010|adfui|1st|sg|perfect|indic|act
+latcommon.irrvadn101020|ls.n1010|adfuisti|2nd|sg|perfect|indic|act
+latcommon.irrvadn101021|ls.n1010|adfuit|3rd|sg|perfect|indic|act
+latcommon.irrvadn101022|ls.n1010|adfuimus|1st|pl|perfect|indic|act
+latcommon.irrvadn101023|ls.n1010|adfuistis|2nd|pl|perfect|indic|act
+latcommon.irrvadn101024|ls.n1010|adfuerunt|3rd|pl|perfect|indic|act
+latcommon.irrvadn101024b|ls.n1010|adfuere|3rd|pl|perfect|indic|act
 
-latcommon.irrvadn101025|ls.n1010|adfueram|1st|sg|plupft|indic|act
-latcommon.irrvadn101026|ls.n1010|adfueras|2nd|sg|plupft|indic|act
-latcommon.irrvadn101027|ls.n1010|adfuerat|3rd|sg|plupft|indic|act
-latcommon.irrvadn101028|ls.n1010|adfueramus|1st|pl|plupft|indic|act
-latcommon.irrvadn101029|adlexent.n1010|adfueratis|2nd|pl|plupft|indic|act
-latcommon.irrvadn101030|ls.n1010|adfuerant|3rd|pl|plupft|indic|act
+latcommon.irrvadn101025|ls.n1010|adfueram|1st|sg|pluperfect|indic|act
+latcommon.irrvadn101026|ls.n1010|adfueras|2nd|sg|pluperfect|indic|act
+latcommon.irrvadn101027|ls.n1010|adfuerat|3rd|sg|pluperfect|indic|act
+latcommon.irrvadn101028|ls.n1010|adfueramus|1st|pl|pluperfect|indic|act
+latcommon.irrvadn101029|adlexent.n1010|adfueratis|2nd|pl|pluperfect|indic|act
+latcommon.irrvadn101030|ls.n1010|adfuerant|3rd|pl|pluperfect|indic|act
 
 latcommon.irrvadn101031|ls.n1010|adfuero|1st|sg|future_perfect|indic|act
 latcommon.irrvadn101032|ls.n1010|adfueris|2nd|sg|future_perfect|indic|act
@@ -58,19 +58,19 @@ latcommon.irrvadn101046|ls.n1010|adessemus|1st|pl|impft|subj|act
 latcommon.irrvadn101047|ls.n1010|adessetis|2nd|pl|impft|subj|act
 latcommon.irrvadn101048|ls.n1010|adessent|3rd|pl|impft|subj|act
 
-latcommon.irrvadn101049|ls.n1010|adfuerim|1st|sg|pft|subj|act
-latcommon.irrvadn101050|ls.n1010|adfueris|2nd|sg|pft|subj|act
-latcommon.irrvadn101051|ls.n1010|adfuerit|3rd|sg|pft|subj|act
-latcommon.irrvadn101052|ls.n1010|adfuerimus|1st|pl|pft|subj|act
-latcommon.irrvadn101053|ls.n1010|adfueritis|2nd|pl|pft|subj|act
-latcommon.irrvadn101054|ls.n1010|adfuerint|3rd|pl|pft|subj|act
+latcommon.irrvadn101049|ls.n1010|adfuerim|1st|sg|perfect|subj|act
+latcommon.irrvadn101050|ls.n1010|adfueris|2nd|sg|perfect|subj|act
+latcommon.irrvadn101051|ls.n1010|adfuerit|3rd|sg|perfect|subj|act
+latcommon.irrvadn101052|ls.n1010|adfuerimus|1st|pl|perfect|subj|act
+latcommon.irrvadn101053|ls.n1010|adfueritis|2nd|pl|perfect|subj|act
+latcommon.irrvadn101054|ls.n1010|adfuerint|3rd|pl|perfect|subj|act
 
-latcommon.irrvadn101055|ls.n1010|adfuissem|1st|sg|plupft|subj|act
-latcommon.irrvadn101056|ls.n1010|adfuisses|2nd|sg|plupft|subj|act
-latcommon.irrvadn101057|ls.n1010|adfuisset|3rd|sg|plupft|subj|act
-latcommon.irrvadn101058|ls.n1010|adfuissemus|1st|pl|plupft|subj|act
-latcommon.irrvadn101059|ls.n1010|adfuissetis|2nd|pl|plupft|subj|act
-latcommon.irrvadn101060|ls.n1010|adfuissent|3rd|pl|plupft|subj|act
+latcommon.irrvadn101055|ls.n1010|adfuissem|1st|sg|pluperfect|subj|act
+latcommon.irrvadn101056|ls.n1010|adfuisses|2nd|sg|pluperfect|subj|act
+latcommon.irrvadn101057|ls.n1010|adfuisset|3rd|sg|pluperfect|subj|act
+latcommon.irrvadn101058|ls.n1010|adfuissemus|1st|pl|pluperfect|subj|act
+latcommon.irrvadn101059|ls.n1010|adfuissetis|2nd|pl|pluperfect|subj|act
+latcommon.irrvadn101060|ls.n1010|adfuissent|3rd|pl|pluperfect|subj|act
 
 latcommon.irrvadn1010133|ls.n1010|ades|2nd|sg|pres|imptv|act
 latcommon.irrvadn1010134|ls.n1010|adeste|2nd|pl|pres|imptv|act

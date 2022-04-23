@@ -22,20 +22,20 @@ latcommon.irrvadn5129816|ls.n51298|volemus|1st|pl|fut|indic|act
 latcommon.irrvadn5129817|ls.n51298|voletis|2nd|pl|fut|indic|act
 latcommon.irrvadn5129818|ls.n51298|volent|3rd|pl|fut|indic|act
 
-latcommon.irrvadn5129819|ls.n51298|volui|1st|sg|pft|indic|act
-latcommon.irrvadn5129820|ls.n51298|voluisti|2nd|sg|pft|indic|act
-latcommon.irrvadn5129821|ls.n51298|voluit|3rd|sg|pft|indic|act
-latcommon.irrvadn5129822|ls.n51298|voluimus|1st|pl|pft|indic|act
-latcommon.irrvadn5129823|ls.n51298|voluistis|2nd|pl|pft|indic|act
-latcommon.irrvadn5129824|ls.n51298|voluerunt|3rd|pl|pft|indic|act
-latcommon.irrvadn5129824b|ls.n51298|voluere|3rd|pl|pft|indic|act
+latcommon.irrvadn5129819|ls.n51298|volui|1st|sg|perfect|indic|act
+latcommon.irrvadn5129820|ls.n51298|voluisti|2nd|sg|perfect|indic|act
+latcommon.irrvadn5129821|ls.n51298|voluit|3rd|sg|perfect|indic|act
+latcommon.irrvadn5129822|ls.n51298|voluimus|1st|pl|perfect|indic|act
+latcommon.irrvadn5129823|ls.n51298|voluistis|2nd|pl|perfect|indic|act
+latcommon.irrvadn5129824|ls.n51298|voluerunt|3rd|pl|perfect|indic|act
+latcommon.irrvadn5129824b|ls.n51298|voluere|3rd|pl|perfect|indic|act
 
-latcommon.irrvadn5129825|ls.n51298|volueram|1st|sg|plupft|indic|act
-latcommon.irrvadn5129826|ls.n51298|volueras|2nd|sg|plupft|indic|act
-latcommon.irrvadn5129827|ls.n51298|voluerat|3rd|sg|plupft|indic|act
-latcommon.irrvadn5129828|ls.n51298|volueramus|1st|pl|plupft|indic|act
-latcommon.irrvadn5129829|ls.n51298|volueratis|2nd|pl|plupft|indic|act
-latcommon.irrvadn5129830|ls.n51298|voluerant|3rd|pl|plupft|indic|act
+latcommon.irrvadn5129825|ls.n51298|volueram|1st|sg|pluperfect|indic|act
+latcommon.irrvadn5129826|ls.n51298|volueras|2nd|sg|pluperfect|indic|act
+latcommon.irrvadn5129827|ls.n51298|voluerat|3rd|sg|pluperfect|indic|act
+latcommon.irrvadn5129828|ls.n51298|volueramus|1st|pl|pluperfect|indic|act
+latcommon.irrvadn5129829|ls.n51298|volueratis|2nd|pl|pluperfect|indic|act
+latcommon.irrvadn5129830|ls.n51298|voluerant|3rd|pl|pluperfect|indic|act
 
 latcommon.irrvadn5129831|ls.n51298|voluero|1st|sg|future_perfect|indic|act
 latcommon.irrvadn5129832|ls.n51298|volueris|2nd|sg|future_perfect|indic|act
@@ -58,16 +58,16 @@ latcommon.irrvadn5129846|ls.n51298|vellemus|1st|pl|impft|subj|act
 latcommon.irrvadn5129847|ls.n51298|velletis|2nd|pl|impft|subj|act
 latcommon.irrvadn5129848|ls.n51298|vellent|3rd|pl|impft|subj|act
 
-latcommon.irrvadn5129849|ls.n51298|voluerim|1st|sg|pft|subj|act
-latcommon.irrvadn5129850|ls.n51298|volueris|2nd|sg|pft|subj|act
-latcommon.irrvadn5129851|ls.n51298|voluerit|3rd|sg|pft|subj|act
-latcommon.irrvadn5129852|ls.n51298|voluerimus|1st|pl|pft|subj|act
-latcommon.irrvadn5129853|ls.n51298|volueritis|2nd|pl|pft|subj|act
-latcommon.irrvadn5129854|ls.n51298|voluerint|3rd|pl|pft|subj|act
+latcommon.irrvadn5129849|ls.n51298|voluerim|1st|sg|perfect|subj|act
+latcommon.irrvadn5129850|ls.n51298|volueris|2nd|sg|perfect|subj|act
+latcommon.irrvadn5129851|ls.n51298|voluerit|3rd|sg|perfect|subj|act
+latcommon.irrvadn5129852|ls.n51298|voluerimus|1st|pl|perfect|subj|act
+latcommon.irrvadn5129853|ls.n51298|volueritis|2nd|pl|perfect|subj|act
+latcommon.irrvadn5129854|ls.n51298|voluerint|3rd|pl|perfect|subj|act
 
-latcommon.irrvadn5129855|ls.n51298|voluissem|1st|sg|plupft|subj|act
-latcommon.irrvadn5129856|ls.n51298|voluisses|2nd|sg|plupft|subj|act
-latcommon.irrvadn5129857|ls.n51298|voluisset|3rd|sg|plupft|subj|act
-latcommon.irrvadn5129858|ls.n51298|voluissemus|1st|pl|plupft|subj|act
-latcommon.irrvadn5129859|ls.n51298|voluissetis|2nd|pl|plupft|subj|act
-latcommon.irrvadn5129860|ls.n51298|voluissent|3rd|pl|plupft|subj|act
+latcommon.irrvadn5129855|ls.n51298|voluissem|1st|sg|pluperfect|subj|act
+latcommon.irrvadn5129856|ls.n51298|voluisses|2nd|sg|pluperfect|subj|act
+latcommon.irrvadn5129857|ls.n51298|voluisset|3rd|sg|pluperfect|subj|act
+latcommon.irrvadn5129858|ls.n51298|voluissemus|1st|pl|pluperfect|subj|act
+latcommon.irrvadn5129859|ls.n51298|voluissetis|2nd|pl|pluperfect|subj|act
+latcommon.irrvadn5129860|ls.n51298|voluissent|3rd|pl|pluperfect|subj|act

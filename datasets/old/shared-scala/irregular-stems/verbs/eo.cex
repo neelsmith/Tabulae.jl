@@ -35,12 +35,12 @@ latcommon.irrvadn1586864|ls.n15868|iremus|1st|pl|impft|subj|act
 latcommon.irrvadn1586865|ls.n15868|iretis|2nd|pl|impft|subj|act
 latcommon.irrvadn1586866|ls.n15868|irent|3rd|pl|impft|subj|act
 
-latcommon.irrvadn1586879|ls.n15868|issem|1st|sg|plupft|subj|act
-latcommon.irrvadn1586880|ls.n15868|isses|2nd|sg|plupft|subj|act
-latcommon.irrvadn1586881|ls.n15868|isset|3rd|sg|plupft|subj|act
-latcommon.irrvadn1586882|ls.n15868|issemus|1st|pl|plupft|subj|act
-latcommon.irrvadn1586883|ls.n15868|issetis|2nd|pl|plupft|subj|act
-latcommon.irrvadn1586884|ls.n15868|issent|3rd|pl|plupft|subj|act
+latcommon.irrvadn1586879|ls.n15868|issem|1st|sg|pluperfect|subj|act
+latcommon.irrvadn1586880|ls.n15868|isses|2nd|sg|pluperfect|subj|act
+latcommon.irrvadn1586881|ls.n15868|isset|3rd|sg|pluperfect|subj|act
+latcommon.irrvadn1586882|ls.n15868|issemus|1st|pl|pluperfect|subj|act
+latcommon.irrvadn1586883|ls.n15868|issetis|2nd|pl|pluperfect|subj|act
+latcommon.irrvadn1586884|ls.n15868|issent|3rd|pl|pluperfect|subj|act
 
 latcommon.irrvadn1586891|ls.n15868|i|2nd|sg|pres|imptv|act
 latcommon.irrvadn1586892|ls.n15868|ite|2nd|pl|pres|imptv|act

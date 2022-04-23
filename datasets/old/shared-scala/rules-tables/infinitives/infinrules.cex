@@ -8,14 +8,14 @@ latcommoninfl.are_inf5|c1pres|ari|pres|pass
 
 latcommoninfl.ere_inf1|conj2|ere|pres|act
 latcommoninfl.ere_inf2|conj2|eri|pres|pass
-latcommoninfl.ere_inf3|conj2|uisse|pft|act
+latcommoninfl.ere_inf3|conj2|uisse|perfect|act
 latcommoninfl.ere_inf4|c2pres|ere|pres|act
 latcommoninfl.ere_inf5|c2pres|eri|pres|pass
 
 latcommoninfl.ere3_inf1|conj3|ere|pres|act
 latcommoninfl.ere3_inf2|conj3|i|pres|pass
 
-latcommoninfl.ere3_inf3|conj3|isse|pft|act
+latcommoninfl.ere3_inf3|conj3|isse|perfect|act
 latcommoninfl.ere3_inf4|c3pres|ere|pres|act
 latcommoninfl.ere3_inf5|c3pres|i|pres|pass
 latcommoninfl.ereio_inf5b|c3presdep|i|pres|pass
@@ -23,7 +23,7 @@ latcommoninfl.ereio_inf5b|c3presdep|i|pres|pass
 latcommoninfl.ereio_inf1|conj3io|ere|pres|act
 latcommoninfl.ereio_inf2|conj3iodep|i|pres|pass
 latcommoninfl.ereio_inf2b|c3iopresdep|i|pres|pass
-latcommoninfl.ereio_inf3|conj3io|isse|pft|act
+latcommoninfl.ereio_inf3|conj3io|isse|perfect|act
 latcommoninfl.ereio_inf4|c3iopres|ere|pres|act
 latcommoninfl.ereio_inf5|c3iopres|i|pres|pass
 
@@ -33,4 +33,4 @@ latcommoninfl.ire_inf2|conj4|iri|pres|pass
 latcommoninfl.ire_inf4|c4pres|ire|pres|act
 latcommoninfl.ire_inf5|c4pres|iri|pres|pass
 
-latcommoninfl.pft_inf1|pftact|isse|pft|act
+latcommoninfl.pft_inf1|pftact|isse|perfect|act

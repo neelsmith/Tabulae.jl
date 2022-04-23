@@ -35,12 +35,12 @@ latcommon.irrverbn6564|ls.n65|abiremus|1st|pl|impft|subj|act
 latcommon.irrverbn6565|ls.n65|abiretis|2nd|pl|impft|subj|act
 latcommon.irrverbn6566|ls.n65|abirent|3rd|pl|impft|subj|act
 
-latcommon.irrverbn6579|ls.n65|abissem|1st|sg|plupft|subj|act
-latcommon.irrverbn6580|ls.n65|abisses|2nd|sg|plupft|subj|act
-latcommon.irrverbn6581|ls.n65|abisset|3rd|sg|plupft|subj|act
-latcommon.irrverbn6582|ls.n65|abissemus|1st|pl|plupft|subj|act
-latcommon.irrverbn6583|ls.n65|abissetis|2nd|pl|plupft|subj|act
-latcommon.irrverbn6584|ls.n65|abissent|3rd|pl|plupft|subj|act
+latcommon.irrverbn6579|ls.n65|abissem|1st|sg|pluperfect|subj|act
+latcommon.irrverbn6580|ls.n65|abisses|2nd|sg|pluperfect|subj|act
+latcommon.irrverbn6581|ls.n65|abisset|3rd|sg|pluperfect|subj|act
+latcommon.irrverbn6582|ls.n65|abissemus|1st|pl|pluperfect|subj|act
+latcommon.irrverbn6583|ls.n65|abissetis|2nd|pl|pluperfect|subj|act
+latcommon.irrverbn6584|ls.n65|abissent|3rd|pl|pluperfect|subj|act
 
 latcommon.irrverbn6591|ls.n65|abi|2nd|sg|pres|imptv|act
 latcommon.irrverbn6592|ls.n65|abite|2nd|pl|pres|imptv|act
