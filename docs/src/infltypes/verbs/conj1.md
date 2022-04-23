@@ -1,21 +1,18 @@
 # First conjugation verbs
 
-Stem types: `conj1`
-
-`c1pres1` (TBA)
- `c1pres`
- `pftact`
+Stem type: `conj1`
 
 
-Stem listing:
+
+Example stem listing:
 
 ```
-StemUrn|LexicalEntity|StemString|MorphologicalClass|Notes
+StemUrn|LexicalEntity|StemString|MorphologicalClass
 latcommon.verbn2280|ls.n2280|am|conj1
 ```
 
 
-Paradigms generated from these entries:
+Paradigms generated from this entry:
 
 
 ## Present

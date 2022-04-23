@@ -57,4 +57,9 @@ end
 
 
 
+function ruleclasses(td::Tabulae.Dataset)
+    
+end
 
+function stemclasses(td::Tabulae.Dataset)
+end

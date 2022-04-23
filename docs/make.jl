@@ -42,6 +42,8 @@ makedocs(
             "Verbs: third conjugation" => "infltypes/verbs/conj3.md",
             "Verbs: third-io conjugation" => "infltypes/verbs/conj3io.md",
             "Verbs: fourth conjugation" => "infltypes/verbs/conj4.md",
+            "Verbs with irreglar principal parts" => "infltypes/verbs/princparts.md"
+
         ],
 
         "Reference: code" => Any[
