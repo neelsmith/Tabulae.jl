@@ -193,7 +193,14 @@ function finiteverbcodes()
             for m in [1,2] #mood 
                 for n in [1,2] # number 
                     for p in [1,2,3] # person
-                        push!(formlist, string(FINITEVERB,p,n,t,m,v,"0000"))
+                        if moodlabeldict[m] == "subjunctive" 
+                            # NO future or future perfect subjunctive:
+                            if ! startswith(tenselabeldict[t],"future")
+                                push!(formlist, string(FINITEVERB,p,n,t,m,v,"0000"))
+                            end
+                        else
+                            push!(formlist, string(FINITEVERB,p,n,t,m,v,"0000"))
+                        end
                     end
                 end
             end
@@ -224,5 +231,5 @@ end
 $(SIGNATURES)
 """
 function hassubjunctive(tns::LMPTense)
-    ! (tns == lmpTense("future"))
+    ! (tns == lmpTense("future")) && ! (tns == lmpTense("future_perfect"))
 end
