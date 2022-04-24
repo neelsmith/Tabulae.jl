@@ -1,6 +1,5 @@
 @testset "Test utilities for building a StringParser" begin
 
-
     a = Analysis("donum", LexemeUrn("ls.n14736"), FormUrn("forms.2010003100"), StemUrn("latcommon.nounn14736"), RuleUrn("nouninfl.us_i13"))
     expected = "donum|ls.n14736|forms.2010003100|latcommon.nounn14736|nouninfl.us_i13"
     @test analysis_line(a) == expected

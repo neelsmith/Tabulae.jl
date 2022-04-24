@@ -21,7 +21,6 @@ function parsetoken(s::AbstractString, parser::StringParser; data = nothing)
     map(ln -> fromline(ln), matches)
 end
 
-
 """Instantiate a `StringParser` for `td`.
 $(SIGNATURES)
 """
