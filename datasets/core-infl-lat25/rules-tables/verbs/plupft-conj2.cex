@@ -1,11 +1,11 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
-latcommon.ere_plupft1|conj2|ueram|first|singular|pluperfect|indicative|active
-latcommon.ere_plupft2|conj2|ueras|second|singular|pluperfect|indicative|active
-latcommon.ere_plupft3|conj2|uerat|third|singular|pluperfect|indicative|active
-latcommon.ere_plupft4|conj2|ueramus|first|plural|pluperfect|indicative|active
-latcommon.ere_plupft5|conj2|ueratis|second|plural|pluperfect|indicative|active
-latcommon.ere_plupft6|conj2|uerant|third|plural|pluperfect|indicative|active
+latcommon.ere_plupft1|conj2|veram|first|singular|pluperfect|indicative|active
+latcommon.ere_plupft2|conj2|veras|second|singular|pluperfect|indicative|active
+latcommon.ere_plupft3|conj2|verat|third|singular|pluperfect|indicative|active
+latcommon.ere_plupft4|conj2|veramus|first|plural|pluperfect|indicative|active
+latcommon.ere_plupft5|conj2|veratis|second|plural|pluperfect|indicative|active
+latcommon.ere_plupft6|conj2|verant|third|plural|pluperfect|indicative|active
 
 latcommon.ere_plupft7|conj2|uissem|first|singular|pluperfect|subjunctive|active
 latcommon.ere_plupft8|conj2|uisses|second|singular|pluperfect|subjunctive|active
