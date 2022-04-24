@@ -211,11 +211,18 @@ function perfectsystem(verb::LMFFiniteVerb)
 end
 
 
-"""True if `verb` is in the perfect system.
+"""True if `tns` is in the perfect system.
 $(SIGNATURES)
 """
 function perfectsystem(tns::LMPTense)
     tns == lmpTense("perfect") || 
     tns == lmpTense("pluperfect") ||
     tns == lmpTense("future_perfect")
+end
+
+"""True if `tns` has subjunctive forms.
+$(SIGNATURES)
+"""
+function hassubjunctive(tns::LMPTense)
+    ! (tns == lmpTense("future"))
 end
