@@ -33,3 +33,13 @@ latcommon.pftact_plupft10|pftact|issemus|first|plural|pluperfect|subjunctive|act
 latcommon.pftact_plupft11|pftact|issetis|second|plural|pluperfect|subjunctive|active
 latcommon.pftact_plupft12|pftact|issent|third|plural|pluperfect|subjunctive|active
 
+
+
+
+latcommon.pftact_futpft1|pftact|ero|first|singular|future_perfect|indicative|active
+latcommon.pftact_futpft2|pftact|eris|second|singular|future_perfect|indicative|active
+latcommon.pftact_futpft3|pftact|erit|third|singular|future_perfect|indicative|active
+latcommon.pftact_futpft4|pftact|erimus|first|plural|future_perfect|indicative|active
+latcommon.pftact_futpft5|pftact|eritis|second|plural|future_perfect|indicative|active
+latcommon.pftact_futpft6|pftact|erint|third|plural|future_perfect|indicative|active
+

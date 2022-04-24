@@ -1,21 +1,5 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
-latcommon.ere_pft1|conj2|ui|first|singular|perfect|indicative|active
-latcommon.ere_pft2|conj2|uisti|second|singular|perfect|indicative|active
-latcommon.ere_pft3|conj2|uit|third|singular|perfect|indicative|active
-latcommon.ere_pft4|conj2|uimus|first|plural|perfect|indicative|active
-latcommon.ere_pft5|conj2|uistis|second|plural|perfect|indicative|active
-latcommon.ere_pft6|conj2|uerunt|third|plural|perfect|indicative|active
-latcommon.ere_pft6b|conj2|uere|third|plural|perfect|indicative|active
-
-latcommon.ere_pft7|conj2|uerim|first|singular|perfect|subjunctive|active
-latcommon.ere_pft8|conj2|ueris|second|singular|perfect|subjunctive|active
-latcommon.ere_pft8b|conj2|uere|second|singular|perfect|subjunctive|active
-latcommon.ere_pft9|conj2|uerit|third|singular|perfect|subjunctive|active
-latcommon.ere_pft10|conj2|uerimus|first|plural|perfect|subjunctive|active
-latcommon.ere_pft11|conj2|ueritis|second|plural|perfect|subjunctive|active
-latcommon.ere_pft12|conj2|uerint|third|plural|perfect|subjunctive|active
-
 latcommon.ereio_pft1|conj3io|i|first|singular|perfect|indicative|active
 latcommon.ereio_pft2|conj3io|isti|second|singular|perfect|indicative|active
 latcommon.ereio_pft3|conj3io|it|third|singular|perfect|indicative|active
