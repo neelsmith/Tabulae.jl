@@ -21,7 +21,8 @@ Paradigms generated from this entry:
 using Tabulae, CitableParserBuilder, Markdown
 repo = pwd() |> dirname |> dirname  |> dirname |> dirname
 srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-tds = dataset([srcdir])
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+tds = dataset([srcdir, lat25dir])
 amo = LexemeUrn("ls.n2280")
 
 present = lmpTense("present")
