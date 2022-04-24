@@ -29,8 +29,9 @@ end
 
 @testset "Test StringParser against core data set" begin
     repo = dirname(pwd())
-    srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-    tds = dataset([srcdir])
+    common = joinpath(repo, "datasets", "core-infl-shared") 
+    lat25 = joinpath(repo, "datasets", "core-infl-lat25") 
+    tds = dataset([common, lat25])
     parser = stringParser(tds) 
 
     #@test parsetoken("amo",p) |> CitableParserBuilder.tokens    
