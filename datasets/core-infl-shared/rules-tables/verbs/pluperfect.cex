@@ -36,17 +36,3 @@ latcommon.ere3_plupft9|conj3|isset|third|singular|pluperfect|subjunctive|active
 latcommon.ere3_plupft10|conj3|issemus|first|plural|pluperfect|subjunctive|active
 latcommon.ere3_plupft11|conj3|issetis|second|plural|pluperfect|subjunctive|active
 latcommon.ere3_plupft12|conj3|issent|third|plural|pluperfect|subjunctive|active
-
-latcommon.pftact_plupft1|pftact|eram|first|singular|pluperfect|indicative|active
-latcommon.pftact_plupft2|pftact|eras|second|singular|pluperfect|indicative|active
-latcommon.pftact_plupft3|pftact|erat|third|singular|pluperfect|indicative|active
-latcommon.pftact_plupft4|pftact|eramus|first|plural|pluperfect|indicative|active
-latcommon.pftact_plupft5|pftact|eratis|second|plural|pluperfect|indicative|active
-latcommon.pftact_plupft6|pftact|erant|third|plural|pluperfect|indicative|active
-
-latcommon.pftact_plupft7|pftact|issem|first|singular|pluperfect|subjunctive|active
-latcommon.pftact_plupft8|pftact|isses|second|singular|pluperfect|subjunctive|active
-latcommon.pftact_plupft9|pftact|isset|third|singular|pluperfect|subjunctive|active
-latcommon.pftact_plupft10|pftact|issemus|first|plural|pluperfect|subjunctive|active
-latcommon.pftact_plupft11|pftact|issetis|second|plural|pluperfect|subjunctive|active
-latcommon.pftact_plupft12|pftact|issent|third|plural|pluperfect|subjunctive|active

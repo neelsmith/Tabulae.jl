@@ -22,8 +22,9 @@ Paradigms generated from this entry:
 ```@eval
 using Tabulae, CitableParserBuilder, Markdown
 repo = pwd() |> dirname |> dirname  |> dirname |> dirname
-srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-tds = dataset([srcdir])
+commondir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+tds = dataset([commondir, lat25dir])
 debeo = LexemeUrn("ls.n12387")
 
 present = lmpTense("present")
@@ -40,8 +41,9 @@ Markdown.parse(md_tenseconjugation(present, debeo, tds))
 ```@eval
 using Tabulae, CitableParserBuilder, Markdown
 repo = pwd() |> dirname |> dirname  |> dirname |> dirname
-srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-tds = dataset([srcdir])
+commondir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+tds = dataset([commondir, lat25dir])
 debeo = LexemeUrn("ls.n12387")
 
 impft = lmpTense("imperfect")
@@ -54,8 +56,9 @@ Markdown.parse(md_tenseconjugation(impft, debeo, tds))
 ```@eval
 using Tabulae, CitableParserBuilder, Markdown
 repo = pwd() |> dirname |> dirname  |> dirname |> dirname
-srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-tds = dataset([srcdir])
+commondir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+tds = dataset([commondir, lat25dir])
 debeo = LexemeUrn("ls.n12387")
 
 present = lmpTense("future")
@@ -68,8 +71,9 @@ Markdown.parse(md_tenseconjugation(present, debeo, tds))
 ```@eval
 using Tabulae, CitableParserBuilder, Markdown
 repo = pwd() |> dirname |> dirname  |> dirname |> dirname
-srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-tds = dataset([srcdir])
+commondir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+tds = dataset([commondir, lat25dir])
 debeo = LexemeUrn("ls.n12387")
 
 present = lmpTense("perfect")
@@ -85,8 +89,9 @@ Markdown.parse(md_tenseconjugation(present, debeo, tds))
 ```@eval
 using Tabulae, CitableParserBuilder, Markdown
 repo = pwd() |> dirname |> dirname  |> dirname |> dirname
-srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-tds = dataset([srcdir])
+commondir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+tds = dataset([commondir, lat25dir])
 debeo = LexemeUrn("ls.n12387")
 
 present = lmpTense("pluperfect")
@@ -100,8 +105,9 @@ Markdown.parse(md_tenseconjugation(present, debeo, tds))
 ```@eval
 using Tabulae, CitableParserBuilder, Markdown
 repo = pwd() |> dirname |> dirname  |> dirname |> dirname
-srcdir = joinpath(repo, "datasets", "core-infl-shared") 
-tds = dataset([srcdir])
+commondir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+tds = dataset([commondir, lat25dir])
 debeo = LexemeUrn("ls.n12387")
 
 present = lmpTense("future_perfect")
