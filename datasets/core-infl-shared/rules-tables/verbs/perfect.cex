@@ -1,20 +1,5 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
-latcommon.pftact_pft1|pftact|i|first|singular|perfect|indicative|active
-latcommon.pftact_pft2|pftact|isti|second|singular|perfect|indicative|active
-latcommon.pftact_pft3|pftact|it|third|singular|perfect|indicative|active
-latcommon.pftact_pft4|pftact|imus|first|plural|perfect|indicative|active
-latcommon.pftact_pft5|pftact|istis|second|plural|perfect|indicative|active
-latcommon.pftact_pft6|pftact|erunt|third|plural|perfect|indicative|active
-latcommon.pftact_pft6b|pftact|ere|third|plural|perfect|indicative|active
-
-latcommon.pftact_pft7|pftact|erim|first|singular|perfect|subjunctive|active
-latcommon.pftact_pft8|pftact|eris|second|singular|perfect|subjunctive|active
-latcommon.pftact_pft9|pftact|erit|third|singular|perfect|subjunctive|active
-latcommon.pftact_pft10|pftact|erimus|first|plural|perfect|subjunctive|active
-latcommon.pftact_pft11|pftact|eristis|second|plural|perfect|subjunctive|active
-latcommon.pftact_pft12|pftact|erint|third|plural|perfect|subjunctive|active
-
 latcommon.ere_pft1|conj2|ui|first|singular|perfect|indicative|active
 latcommon.ere_pft2|conj2|uisti|second|singular|perfect|indicative|active
 latcommon.ere_pft3|conj2|uit|third|singular|perfect|indicative|active
