@@ -34,6 +34,9 @@ makedocs(
             "Nouns" => "infltypes/nouns/index.md",
             "Nouns: first declension" => "infltypes/nouns/decl1.md",
             "Nouns: second declension" => "infltypes/nouns/decl2.md",
+            "Nouns: third declension" => "infltypes/nouns/decl3.md",
+            "Nouns: fourth declension" => "infltypes/nouns/decl4.md",
+            "Nouns: fifth declension" => "infltypes/nouns/decl5.md",
 
             "Verbs" => "infltypes/verbs/index.md",
             "Verbs: first conjugation" => "infltypes/verbs/conj1.md",
@@ -42,6 +45,8 @@ makedocs(
             "Verbs: third conjugation" => "infltypes/verbs/conj3.md",
             "Verbs: third-io conjugation" => "infltypes/verbs/conj3io.md",
             "Verbs: fourth conjugation" => "infltypes/verbs/conj4.md",
+            "Verbs with irreglar principal parts" => "infltypes/verbs/princparts.md"
+
         ],
 
         "Reference: code" => Any[

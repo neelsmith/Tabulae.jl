@@ -57,4 +57,10 @@ end
 
 
 
+function ruleclasses(td::Tabulae.Dataset)
+    "IMPLEMENT THIS"
+end
 
+function stemclasses(td::Tabulae.Dataset)
+    "IMPLEMENT THIS"
+end

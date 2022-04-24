@@ -25,33 +25,48 @@ $(SIGNATURES)
 """
 function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     tenseforms = filter(f -> f.vtense == t, finiteverbforms())
+   
+
+    mdlines = ["Active voice", "",
+    "| | Indicative | Subjunctive |",   
+    "| --- | --- | --- |"]
     
-    
-    mdlines = ["Active voice", 
-    "",
-    "| | Indicative | Subjunctive |",
-    "| --- | --- | --- |"
-    ]
+
+    # Indicative singular:
     for i in 1:3
         indic = tenseforms[i]
         indicative = CitableParserBuilder.tokens( generate(indic,lex,td))
-
-        subj = tenseforms[i + 6]
-        subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
         rowheader = join([label(lmpPerson(indic)), label(lmpNumber(indic)) ], " ")
-        push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
+
+        if hassubjunctive(t)
+            subj = tenseforms[i + 6]
+            subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))    
+            push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
+        else
+            push!(mdlines, "| **$(rowheader)** | $(indicative) | - | ")
+        end
     end
 
+
+    
     for i in 4:6
         indic = tenseforms[i]
         indicative = CitableParserBuilder.tokens( generate(indic,lex,td))
-
-        subj = tenseforms[i + 6]
-        subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
         rowheader = join([label(lmpPerson(indic)), label(lmpNumber(indic)) ], " ")
-        push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
+
+        if hassubjunctive(t)
+            subj = tenseforms[i + 6]
+            subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
+            push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
+        else
+            push!(mdlines, "| **$(rowheader)** | $(indicative) | - | ")
+        end
     end
 
+    passive_origin = hassubjunctive(t) ?  13 : 7
+
+    
+    offset = perfectsystem(t) ? 3 : 6
     if perfectsystem(t)
         push!(mdlines, "Passive voice of $(label(t)): TBA")
     else
@@ -59,23 +74,31 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
         push!(mdlines, "")
         push!(mdlines, "| | Indicative | Subjunctive |")
         push!(mdlines, "| --- | --- | --- |")
-        for i in 13:15
+        for i in passive_origin:passive_origin+2
             ind = tenseforms[i]
             indicative = CitableParserBuilder.tokens( generate(ind,lex,td))
-
-            subj = tenseforms[i + 6]
-            subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
             rowheader = join([label(lmpPerson(ind)), label(lmpNumber(ind)) ], " ")
-            push!(mdlines, "| **$(rowheader)** | $(indicative) |  $(subjunctive) | ")
+
+            if hassubjunctive(t)
+                subj = tenseforms[i + offset]
+                subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
+                push!(mdlines, "| **$(rowheader)** | $(indicative) |  $(subjunctive) | ")
+            else
+                push!(mdlines, "| **$(rowheader)** | $(indicative) |  - | ")
+            end
         end
-        for i in 10:12
+        for i in passive_origin+3:passive_origin+5
             ind = tenseforms[i]
             indicative = CitableParserBuilder.tokens( generate(ind,lex,td))
-
-            subj = tenseforms[i + 6]
-            subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
             rowheader = join([label(lmpPerson(ind)), label(lmpNumber(ind)) ], " ")
-            push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
+
+            if hassubjunctive(t)
+                subj = tenseforms[i + offset]
+                subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
+                push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
+            else
+                push!(mdlines, "| **$(rowheader)** | $(indicative) |  - | ")
+            end
         end
     end
     join(mdlines, "\n")

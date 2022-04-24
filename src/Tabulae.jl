@@ -20,6 +20,7 @@ export ruleurn
 
 export dataset
 export rulesarray, stemsarray
+export rulesclasses, stemsclasses
 export registry
 
 export label, code
