@@ -10,7 +10,7 @@ Their subdirectory organization must follow Tabulae's specifications.
 struct Dataset
     dirs
     orthography::LatinOrthographicSystem
-    function Dataset(dirlist; ortho::T = latin23()) where {T <: LatinOrthographicSystem}
+    function Dataset(dirlist; ortho::T = latin25()) where {T <: LatinOrthographicSystem}
         if isempty(rulesarray(dirlist))
             throw(ArgumentError("No inflectional rules found."))
 
@@ -54,13 +54,16 @@ function dataset(srclist::Array; ortho::T = latin23()) where {T <: LatinOrthogra
     Tabulae.Dataset(srclist; ortho =  ortho)
 end
 
-
-
-
+"""List inflectional types appearing in dataset's rulesets.
+$(SIGNATURES)
+"""
 function ruleclasses(td::Tabulae.Dataset)
-    "IMPLEMENT THIS"
+    map(v -> inflectionType(v), rulesarray(td)) |> unique |> sort
 end
 
+"""List inflectional types appearing in dataset's stem lists.
+$(SIGNATURES)
+"""
 function stemclasses(td::Tabulae.Dataset)
-    "IMPLEMENT THIS"
+    map(v -> inflectionType(v), stemsarray(td)) |> unique |> sort
 end
