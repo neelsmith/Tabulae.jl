@@ -233,3 +233,24 @@ $(SIGNATURES)
 function hassubjunctive(tns::LMPTense)
     ! (tns == lmpTense("future")) && ! (tns == lmpTense("future_perfect"))
 end
+
+
+
+
+
+
+function verbanalyses(verbstems::Vector{Stem}, rules::Vector{Rule})::Vector{Analysis}
+    analysislist = []
+
+    for (i, verbstem) in enumerate(verbstems)
+        @info("Analyzing verb $(i)/$(length(verbstems))")
+        for f in finiteverbforms()
+            generated = generate(f, lexeme(verbstem),  rules)
+            for g in generated
+                @debug("Generated $(typeof(g)): ", g)
+                push!(analysislist, g)
+            end
+        end
+    end
+    analysislist
+end

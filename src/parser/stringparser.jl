@@ -21,12 +21,18 @@ function parsetoken(s::AbstractString, parser::StringParser; data = nothing)
     map(ln -> fromline(ln), matches)
 end
 
-
 """Instantiate a `StringParser` for `td`.
 $(SIGNATURES)
 """
 function stringParser(td::Tabulae.Dataset)
-    analysis_lines(td) |> StringParser
+    #analysis_lines(td) |> StringParser
+
+    analyses = []
+    rules = rulesarray(td)
+    for stem in stemsarray(td)
+        append!(analyses, buildparseable(stem, rules))
+    end
+    analyses
 end
 
 """Instantiate a `StringParser` from a set of analyses read from a local file.
@@ -84,4 +90,22 @@ function fromline(s::AbstractString; delimiter = "|")
         StemUrn(pieces[4]),
         RuleUrn(pieces[5])
     )
+end
+
+
+
+"""Generate all forms possible for `stem`.
+$(SIGNATURES)
+"""
+function buildparseable(stem::Stem,  rules::Vector{Rule}) where {T <: LatinMorphologicalForm}
+    generated = []        
+    classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
+    #@info("$(stem) matches rules $(classrules)")
+    for rule in classrules
+        token = string(stemvalue(stem), ending(rule))
+        
+        push!(generated, string(token, "|", lexeme(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+
+    end
+    generated
 end
