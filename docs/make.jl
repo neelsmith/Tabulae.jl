@@ -4,7 +4,7 @@
 #
 # Run this from repository root to serve:
 #
-#   julia -e 'using LiveServer; serve(dir="docs/build")'julia -e 'using LiveServer; serve(dir="docs/build")' 
+#   julia -e 'using LiveServer; serve(dir="docs/build", port=8000)'
 #
 using Pkg
 Pkg.activate(".")
@@ -19,6 +19,7 @@ makedocs(
     sitename="Tabulae.jl",
     pages = [
         "Home" => Any[
+            "Quick start" => "quick.md",
             "User's guide: introduction" => "index.md",
             "Datasets" => "guide/datasets.md",
             "Identification with URNs" => "guide/urns.md",
