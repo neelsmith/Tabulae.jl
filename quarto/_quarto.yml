@@ -35,6 +35,8 @@ website:
     - title: "Tutorials"
       contents: 
         - tutorials/index.qmd
+        - tutorials/parser.qmd
+        
     - title: "Guides"
       contents:
         - guides/index.qmd

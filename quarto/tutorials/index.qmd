@@ -5,3 +5,6 @@ title: Tutorials
 Get your quick starts here! This section has introductory tutorials to help you learn Tabulae.
 
 
+## Prerequisites
+
+You’ll need to [install Julia](https://julialang.org/downloads/) before you can use Kanónes

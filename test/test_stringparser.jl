@@ -33,5 +33,5 @@ end
     tds = dataset([common, lat25])
     parser = stringParser(tds) 
 
-    #@test parsetoken("amo",p) |> CitableParserBuilder.tokens    
+    #   @test parsetoken("amo",p) # |> CitableParserBuilder.tokens    
 end

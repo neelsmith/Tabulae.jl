@@ -32,7 +32,7 @@ function stringParser(td::Tabulae.Dataset)
     for stem in stemsarray(td)
         append!(analyses, buildparseable(stem, rules))
     end
-    analyses
+    analyses |> StringParser
 end
 
 """Instantiate a `StringParser` from a set of analyses read from a local file.

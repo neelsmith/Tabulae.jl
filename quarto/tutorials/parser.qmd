@@ -1,0 +1,76 @@
+---
+title: "Build a parser and parse Latin strings"
+---
+
+```{julia}
+#| echo: false
+#| output: false
+#repo  = pwd()
+repo = pwd() |> dirname |> dirname
+
+```
+
+
+::: callout-tip
+## Follow along
+
+To replicate all the steps in this tutorial:
+
+-   [install Julia](https://julialang.org/downloads/) if you haven't already done so
+-   download or clone the [Tabulae.jl repository](https://github.com/neelsmith/Tabulae.jl)
+-   start a Julia REPL
+:::
+
+## Building a parser from local files
+
+
+You can build a parser from delimited-text files organized in directories following Tabulae's conventions. In this tutorial, we'll use the files in the [`core-infl-shared`](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) and 
+
+[`core-infl-lat25`](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-lat25) directories in the `datasets` directory of the Kanónes github repository. 
+
+If you have a variable named `repo` with the root directory of the Kanónes repository, then the full path to the directories will:
+
+```{julia}
+#| output: false
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+```
+
+### Instantiate a data set
+
+You can create a `Tabulae.DataSet` from a list of one or more directories.
+
+```{julia}
+#| output: false
+using Tabulae
+ds = dataset([shareddir, lat25dir])
+```
+
+
+
+### Compile a parser
+
+You can then build a parser from a data set.
+
+```{julia}
+#| warnings: false
+#| output: false
+p = stringParser(ds)
+```
+
+
+
+### Interactive parsing
+
+Use the `parsetoken` function to parse a string with a parser.
+
+
+
+::: callout-warning
+This is currently busted.
+:::
+
+```{julia}
+s = "audiverunt"
+#parses = parsetoken(s, p)
+```
