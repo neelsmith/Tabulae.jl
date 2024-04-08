@@ -4,7 +4,7 @@ jupyter: julia-1.10
 execute:
   freeze: auto
 date: last-modified  
-margin-header: "⚠️ *These are incomplete preliminary notes from a pre-release draft.*"
+margin-header: "⚠️ *These are place-holder pages for a forthcoming release of documentation for Tabulae.jl.*"
 format:
   html: 
     toc: true
