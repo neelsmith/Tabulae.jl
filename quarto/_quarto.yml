@@ -1,0 +1,57 @@
+project:
+  type: website
+jupyter: julia-1.10  
+execute:
+  freeze: auto
+date: last-modified  
+margin-header: "⚠️ *These are incomplete preliminary notes from a pre-release draft.*"
+format:
+  html: 
+    toc: true
+
+
+website:
+  title: "tabulae"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Tutorials"
+        file: tutorials/index.qmd          
+      - text: "Concepts"
+        file: concepts/index.qmd   
+      - text: "Guides"
+        file: guides/index.qmd           
+      - text: "Reference"
+        file: reference/index.qmd  
+    right:   
+      - icon: github
+        href: https://github.com/neelsmith/Tabulae.jl
+        aria-label: GitHub
+
+  sidebar:
+    - title: "Tutorials"
+      contents: 
+        - tutorials/index.qmd
+    - title: "Guides"
+      contents:
+        - guides/index.qmd
+    - title: "Reference"
+      contents: 
+        - reference/index.qmd
+
+    - title: "Concepts"
+      contents: 
+        - concepts/index.qmd
+
+
+        
+
+    - title: "Home"
+      contents:
+        - index.qmd               
+ 
+
+           
