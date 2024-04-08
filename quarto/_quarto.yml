@@ -43,6 +43,7 @@ website:
     - title: "Reference"
       contents: 
         - reference/index.qmd
+        - reference/analytical_types.qmd  
 
     - title: "Concepts"
       contents: 

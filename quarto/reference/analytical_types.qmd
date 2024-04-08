@@ -1,0 +1,18 @@
+---
+title: "Analytical types"
+---
+
+
+::: {.callout-caution}
+Content of this page TBA
+:::
+
+- Noun
+- Pronoun
+- Adjective
+- Adverb
+- Finite verb
+- Infinitive
+- Participle
+- Uninflected form
+

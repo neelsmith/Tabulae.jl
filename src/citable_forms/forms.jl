@@ -7,6 +7,14 @@ const BASE_MORPHOLOGY_URN = "urn:cite2:tabulae:forms.v1:"
 """Latin morphological forms are citable by Cite2Urn"""
 CitableTrait(::T) where {T <: LatinMorphologicalForm} = CitableByCite2Urn()
 
+"""Return Tabi;ae code for analytical type
+encoded in first digit of `codestring`.
+$(SIGNATURES)
+"""
+function poscode(codestring::AbstractString)
+    parse(Int32, codestring[1])
+end
+
 
 """Convert a `LatinMorphologicalForm` to a Cite2Urn.
 
@@ -49,3 +57,46 @@ function analyses(td::Tabulae.Dataset)::Vector{Analysis}
     formlist = append!(formlist, verbanalyses(td)) 
 end
 
+
+
+"""Create a `LatinMorphologicalForm` from a form code.
+$(SIGNATURES)
+"""
+function latinForm(codestr::AbstractString)
+    if poscode(codestr) == ADJECTIVE
+        lmfAdjective(codestr)
+    elseif poscode(codestr) == NOUN
+        lmfNoun(codestr)
+    elseif poscode(codestr) == FINITEVERB
+        lmfFiniteVerb(codestr)
+    elseif poscode(codestr) == INFINITIVE
+        lmfInfinitive(codestr)
+    elseif poscode(codestr) == PARTICIPLE
+        lmfParticiple(codestr)
+    elseif poscode(codestr) == PRONOUN
+        lmfPronoun(codestr)
+    elseif poscode(codestr) == UNINFLECTED
+        lmfUninflected(codestr)
+    end
+end
+
+"""Create a `LatinMorphologicalForm` from a `FormUrn`.
+$(SIGNATURES)
+"""
+function latinForm(u::CitableParserBuilder.FormUrn)
+    latinForm(CitableParserBuilder.objectid(u))
+end
+
+"""Create a `LatinMorphologicalForm` from `u`, a `Cite2Urn` identifying a form.
+$(SIGNATURES)
+"""
+function latinForm(u::Cite2Urn)
+    latinForm(objectcomponent(u))
+end
+
+"""Create a `LatinMorphologicalForm` from the `FormUrn` in `a`.
+$(SIGNATURES)
+"""
+function latinForm(a::Analysis)
+    latinForm(a.form)
+end

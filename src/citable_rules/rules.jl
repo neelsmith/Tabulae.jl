@@ -72,3 +72,9 @@ function lmpUninflected(rule::T) where {T <: TabulaeRule}
     @warn "Function lmpUninflected not implemented for rules of type $(typeof(rule))."
     nothing
 end
+
+
+
+function latinForm(r::T) where {T <: TabulaeRule}
+    formurn(r) |> latinForm
+end

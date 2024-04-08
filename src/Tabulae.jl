@@ -40,6 +40,7 @@ export analyses
 export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun, nounformcodes, nounforms
+export latinForm
 
 export NounIO, VerbIO
 
