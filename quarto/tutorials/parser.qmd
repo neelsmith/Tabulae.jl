@@ -5,8 +5,8 @@ title: "Build a parser and parse Latin strings"
 ```{julia}
 #| echo: false
 #| output: false
-#repo  = pwd()
-repo = pwd() |> dirname |> dirname
+repo  = pwd()
+#repo = pwd() |> dirname |> dirname
 
 ```
 
@@ -25,7 +25,6 @@ To replicate all the steps in this tutorial:
 
 
 You can build a parser from delimited-text files organized in directories following Tabulae's conventions. In this tutorial, we'll use the files in the [`core-infl-shared`](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) and 
-
 [`core-infl-lat25`](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-lat25) directories in the `datasets` directory of the Kanónes github repository. 
 
 If you have a variable named `repo` with the root directory of the Kanónes repository, then the full path to the directories will:
@@ -65,12 +64,27 @@ p = stringParser(ds)
 Use the `parsetoken` function to parse a string with a parser.
 
 
+```{julia}
+s = "donum"
+parses = parsetoken(s, p)
+```
 
-::: callout-warning
-This is currently busted.
-:::
+The result is a Vector of analyses. Each `Analysis` includes a *morphological form* object and an identifier for a *lexeme* (or vocabulary item). You can use the `latinForm` and `lexemeurn` functions to extract these from an `Analysis`; for a human-readable string value, use the `label` function on the result. E.g., label the first form in the result:
 
 ```{julia}
-s = "audiverunt"
-#parses = parsetoken(s, p)
+parses[1] |> latinForm |> label
+```
+
+or use Julia broadcasting to label the forms of all parses:
+
+```{julia}
+parses .|> latinForm .|> label
+```
+
+
+Use broadcasting to find URNs for the lexeme from each analysis with the `lexemeurn` function from the `CitableParserBuilder` package:
+
+```{julia}
+using CitableParserBuilder
+lexemelist = parses .|> lexemeurn
 ```
