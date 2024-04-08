@@ -5,8 +5,8 @@ title: "Build a parser and parse Latin strings"
 ```{julia}
 #| echo: false
 #| output: false
-repo  = pwd()
-#repo = pwd() |> dirname |> dirname
+#repo  = pwd()
+repo = pwd() |> dirname |> dirname
 
 ```
 
