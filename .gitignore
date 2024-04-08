@@ -3,3 +3,5 @@ Manifest.toml
 docs/build/
 .vscode/
 datasets/lewis-short/
+_freeze/
+_site/
