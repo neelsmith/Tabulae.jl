@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 61b181da-508b-42aa-89fb-8ae43e75ee64
+      url: 'https://neelsmith.quarto.pub/tabulae'
