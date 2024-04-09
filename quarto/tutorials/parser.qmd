@@ -65,7 +65,7 @@ Use the `parsetoken` function to parse a string with a parser.
 
 
 ```{julia}
-s = "donum"
+s = "agricolam"
 parses = parsetoken(s, p)
 ```
 

@@ -41,6 +41,7 @@ website:
       contents:
         - guides/index.qmd
         - guides/properties-guide.qmd
+        - guides/forms-guide.qmd
     - title: "Reference"
       contents: 
         - reference/index.qmd
@@ -50,6 +51,7 @@ website:
     - title: "Concepts"
       contents: 
         - concepts/index.qmd
+        - concepts/datasets.qmd
 
 
         

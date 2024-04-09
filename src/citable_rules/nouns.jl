@@ -9,7 +9,7 @@ struct TabulaeNounRule <: TabulaeRule
     nnumber::LMPNumber
 end
 
-"""Create a `LMFNoun` from `rule`.
+"""Create a `LMFNoun` form from a rule.
 $(SIGNATURES)
 """
 function lmForm(rule::TabulaeNounRule)
@@ -53,6 +53,19 @@ function readrulerow(usp::NounIO, delimited::AbstractString; delimiter = "|")
         TabulaeNounRule(ruleid, inflclass, ending, g,c,n)
     end
     
+end
+
+
+function lmpGender(r::TabulaeNounRule)
+    r.ngender
+end
+
+function lmpCase(r::TabulaeNounRule)
+    r.ncase
+end
+
+function lmpNumber(r::TabulaeNounRule)
+    r.nnumber
 end
 
 """Noun rules are citable by Cite2Urn"""

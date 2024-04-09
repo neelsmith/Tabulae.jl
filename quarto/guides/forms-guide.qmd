@@ -1,0 +1,43 @@
+---
+title: "Working with morphological forms"
+---
+
+```{julia}
+#| output: false
+#| echo: false
+using Tabulae
+```
+
+
+:::{.callout-tip}
+See the reference section for a list of analytical types in Tabulae.
+:::
+
+
+## The immutable collection
+
+:::{.callout-warning}
+## Incomplete
+
+This page is highly incomplete
+:::
+
+- there is a citable collection of forms
+- each form is identified by URN
+
+## Constructing objects for morphological forms
+
+- you can construct a form object directly from a URN
+- you can construct a form object from a string code which is the object component of the URN
+
+
+
+
+Values for morphological form are expressed with types that have names beginning with `LMF` (for "Latin Morphological Form").  Each type has a corresponding function beginning with lowercase `lmf` that can construct an instance of the type from either a numeric code or a type-specific list of string values.
+
+
+## Working with morphological form objects
+
+- get its urn
+- get a label for it
+- retrieve its properties

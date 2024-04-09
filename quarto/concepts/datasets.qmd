@@ -1,0 +1,28 @@
+---
+title: Organization of datasets
+---
+
+:::{.callout-warning}
+These notes are highly incomplete
+:::
+
+- stems tables
+- rules tables
+
+Read by IO objects
+
+
+## IO
+
+```{julia}
+#| output: false
+#| echo: false
+
+using Tabulae
+```
+
+```{julia}
+rdr = Tabulae.NounIO("noun")
+rcrd = "latcommon.noun1626|ls.n1626|agricol|masculine|a_ae"
+nounstem = Tabulae.readstemrow(rdr,rcrd)
+```

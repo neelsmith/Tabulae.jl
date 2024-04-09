@@ -97,7 +97,24 @@ end
 """Generate all forms possible for `stem`.
 $(SIGNATURES)
 """
-function buildparseable(stem::Stem,  rules::Vector{Rule}) where {T <: LatinMorphologicalForm}
+function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}) 
+    generated = []        
+    classrules = filter(rules) do r
+        inflectionType(r) == inflectionType(stem) &&
+        lmpGender(r) == lmpGender(stem)
+    end
+    @info("$(stem) matches rules $(classrules)")
+    for rule in classrules
+        token = string(stemvalue(stem), ending(rule))
+        
+        push!(generated, string(token, "|", lexeme(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+
+    end
+    generated
+end
+
+
+function buildparseable(stem::Stem,  rules::Vector{Rule})
     generated = []        
     classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
     #@info("$(stem) matches rules $(classrules)")

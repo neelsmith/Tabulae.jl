@@ -4,18 +4,30 @@ title: "Analytical types"
 
 
 
-Names of Julia types are listed where that analytical type has been implemented in the current version of Tabulae.
 
+## Substantive types
 
-- Noun: `LMFNoun`
+*Noun*. Objects of type `LMFNoun` have properties retreivable with the functions `lmpGender`, `lmpCase`, `lmpNumber`.
+
+Not yet implemented:
+
 - Pronoun
 - Adjective
 - Adverb
-- Finite verb: `LMFFiniteVerb`  
+
+## Verbal types
+
+*Finite verb*. Objects of type `LMFFiniteVerb` have properties retreivable with the functions `lmpPerson`, `lmpNumber`, `lmpTense`, `lmpMood`, `lmpVoice`.
+
+Not yet implemented:
+
 - Infinitive
 - Participle
 - Supine
 - Gerund
 - Gerundive
+
+## Other types
+
 - Uninflected form
 
