@@ -3,16 +3,19 @@ title: "Analytical types"
 ---
 
 
-::: {.callout-caution}
-Content of this page TBA
-:::
 
-- Noun
+Names of Julia types are listed where that analytical type has been implemented in the current version of Tabulae.
+
+
+- Noun: `LMFNoun`
 - Pronoun
 - Adjective
 - Adverb
-- Finite verb
+- Finite verb: `LMFFiniteVerb`  
 - Infinitive
 - Participle
+- Supine
+- Gerund
+- Gerundive
 - Uninflected form
 

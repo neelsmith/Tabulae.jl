@@ -40,9 +40,11 @@ website:
     - title: "Guides"
       contents:
         - guides/index.qmd
+        - guides/properties-guide.qmd
     - title: "Reference"
       contents: 
         - reference/index.qmd
+        - reference/properties.qmd
         - reference/analytical_types.qmd  
 
     - title: "Concepts"

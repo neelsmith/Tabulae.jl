@@ -69,7 +69,7 @@ s = "donum"
 parses = parsetoken(s, p)
 ```
 
-The result is a Vector of analyses. Each `Analysis` includes a *morphological form* object and an identifier for a *lexeme* (or vocabulary item). You can use the `latinForm` and `lexemeurn` functions to extract these from an `Analysis`; for a human-readable string value, use the `label` function on the result. E.g., label the first form in the result:
+The result is a Vector of analyses. Each `Analysis` (from the `CitableParserBuilder` package) includes a *morphological form* object and an identifier for a *lexeme* (or vocabulary item). You can use the `latinForm` and `lexemeurn` functions to extract these from an `Analysis`; for a human-readable string value, use the `label` function on the result. E.g., label the first form in the result:
 
 ```{julia}
 parses[1] |> latinForm |> label

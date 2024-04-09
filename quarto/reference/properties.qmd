@@ -1,0 +1,15 @@
+---
+title: "Morphological properties"
+---
+
+
+
+- person: `LMPPerson`
+- number: `LMPNumber`
+- tense: `LMPTense`
+- voice: `LMPVoice`
+- mood: `LMPMood`
+- gender: `LMPGender`
+- case: `LMPCase`
+- degree: `LMPDegree`
+- uninflected type: `LMPUninflectedType`
