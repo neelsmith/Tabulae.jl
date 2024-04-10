@@ -1,0 +1,15 @@
+---
+title: "Morphological analysis"
+---
+
+Morphological analysis of a lexical token follows the model of the `CitableParserBuilder` package. It comprises four pieces of information, each of which can be identified by URN value. Two items give the results of the analysis:
+
+- the lexeme
+- the morphological form
+
+
+Two items explain how the analysis was derived:
+
+- the rule 
+- the stem
+

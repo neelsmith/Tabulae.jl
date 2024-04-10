@@ -1,0 +1,17 @@
+---
+title: "Layout of directories in a Tabulae dataset"
+---
+
+
+```
+├── rules-tables
+│   ├── nouns
+│   └── verbs
+├── stems-tables
+│   ├── nouns
+│   └── verbs-simplex
+└── urnregistry
+    ├── lexemes
+    ├── rules
+    └── stems
+```

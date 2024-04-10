@@ -6,8 +6,12 @@ title: Organization of datasets
 These notes are highly incomplete
 :::
 
+A dataset is a set of delimited-text files in an explicitly defined orthography. 
+
 - stems tables
 - rules tables
+
+The file layout follows a set of covnentions. (See reference section for full definition.)
 
 Read by IO objects
 

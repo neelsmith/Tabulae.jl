@@ -48,10 +48,12 @@ website:
         - reference/index.qmd
         - reference/properties.qmd
         - reference/analytical_types.qmd  
+        - reference/file_layout.qmd
 
     - title: "Concepts"
       contents: 
         - concepts/index.qmd
+        - concepts/analysis.qmd
         - concepts/datasets.qmd
 
 
