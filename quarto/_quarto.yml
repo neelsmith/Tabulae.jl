@@ -1,11 +1,12 @@
 project:
   type: website
 jupyter: julia-1.10  
+theme: spacelab
 execute:
   freeze: auto
 date: last-modified  
 margin-header: "⚠️ *These are place-holder pages for a forthcoming release of documentation for Tabulae.jl.*"
-theme: spacelab
+
 format:
   html: 
     toc: true
