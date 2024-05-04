@@ -10,7 +10,6 @@ jupyter: julia-1.10
 
 This site is simply a placeholder until documentation for the revised version of Tabulae is available.
 
-
 ## Documentation
 
 | | Learning the package | Using the package |
@@ -21,5 +20,5 @@ This site is simply a placeholder until documentation for the revised version of
 
 
 ::: {.callout-tip title="More of my work"}
-> *Find more of my digital scholarship [here](https://neelsmith.quarto.pub/digschol/)*.
+> Find more of my digital scholarship on [quarto.pub](https://neelsmith.quarto.pub/digschol/).
 :::
