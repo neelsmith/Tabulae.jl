@@ -3,9 +3,10 @@ title: "Analytical types and their properties"
 ---
 
 
+Morphological forms are subtypes of the abstract `LatinMorphologicalForm`.
 
-## Types
 
+## Concrete types of the `LatinMorphologicalForm`
 
 
 ### Substantive types
@@ -68,7 +69,7 @@ Not yet implemented:
 
 
 
-## Morphological properties
+## Retrieving morphological properties of forms
 
 - Properties of *noun*s are retreivable with the functions `lmpGender`, `lmpCase`, `lmpNumber`.
 - Properties of *finite verbs* are retreivable with the functions `lmpPerson`, `lmpNumber`, `lmpTense`, `lmpMood`, `lmpVoice`.
