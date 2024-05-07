@@ -3,13 +3,112 @@ title: "Morphological properties"
 ---
 
 
+`LMPPerson`
 
-- person: `LMPPerson`
-- number: `LMPNumber`
-- tense: `LMPTense`
-- voice: `LMPVoice`
-- mood: `LMPMood`
-- gender: `LMPGender`
-- case: `LMPCase`
-- degree: `LMPDegree`
-- uninflected type: `LMPUninflectedType`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+using Tabulae
+@doc LMPPerson
+```
+:::
+
+`LMPNumber`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPNumber
+```
+:::
+
+
+
+
+`LMPTense`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPTense
+```
+:::
+
+
+`LMPVoice`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPVoice
+```
+:::
+
+`LMPMood`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPMood
+```
+:::
+
+`LMPGender`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPGender
+```
+:::
+
+
+`LMPCase`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPCase
+```
+:::
+
+
+`LMPDegree`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPDegree
+```
+:::
+
+
+`LMPUninflectedType`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPUninflectedType
+```
+:::

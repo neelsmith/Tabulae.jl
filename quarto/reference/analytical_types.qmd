@@ -1,13 +1,25 @@
 ---
-title: "Analytical types"
+title: "Analytical types and their properties"
 ---
 
 
 
+## Types
 
-## Substantive types
 
-*Noun*. Objects of type `LMFNoun` have properties retreivable with the functions `lmpGender`, `lmpCase`, `lmpNumber`.
+
+### Substantive types
+
+`LMFNoun`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+using Tabulae
+@doc LMFNoun
+```
+:::
 
 Not yet implemented:
 
@@ -15,9 +27,22 @@ Not yet implemented:
 - Adjective
 - Adverb
 
-## Verbal types
 
-*Finite verb*. Objects of type `LMFFiniteVerb` have properties retreivable with the functions `lmpPerson`, `lmpNumber`, `lmpTense`, `lmpMood`, `lmpVoice`.
+
+
+### Verbal types
+
+`LMFFiniteVerb`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMFFiniteVerb
+```
+:::
+
 
 Not yet implemented:
 
@@ -27,7 +52,112 @@ Not yet implemented:
 - Gerund
 - Gerundive
 
-## Other types
 
-- Uninflected form
+### Other types
+
+`LMPUninflectedType`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPUninflectedType
+```
+:::
+
+
+
+## Morphological properties
+
+- Properties of *noun*s are retreivable with the functions `lmpGender`, `lmpCase`, `lmpNumber`.
+- Properties of *finite verbs* are retreivable with the functions `lmpPerson`, `lmpNumber`, `lmpTense`, `lmpMood`, `lmpVoice`.
+
+`lmpGender`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpGender
+```
+:::
+
+
+
+`lmpCase`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpCase
+```
+:::
+
+
+`lmpNumber`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpGender
+```
+:::
+
+
+
+`lmpPerson`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpPerson
+```
+:::
+
+
+`lmpTense`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpTense
+```
+:::
+
+
+`lmpMood`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpMood
+```
+:::
+
+
+`lmpVoice`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpVoice
+```
+:::
+
+
+
 
