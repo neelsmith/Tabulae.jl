@@ -20,7 +20,7 @@ To replicate all the steps in this tutorial:
 - assign to the variable `repo` the path to the cloned repository
 :::
 
-Start by repeating the steps from the [introductory tutorial](./parser.qmd) to compile a parser:
+Start by repeating the steps from the [introductory tutorial](./parser.qmd) to compile a parser, and assign it to variable named `parser`:
 
 ```{julia}
 #| code-fold: true
@@ -110,7 +110,7 @@ lmpTense("perfect")
 ```
 
 
-We can take advantage of this in normal Julia operations on collections of analyses. For instance, we could separate out all the *plural* analyses for *agricolae*:
+We can take advantage of this in normal Julia operations on collections of analyses. For instance, we could separate out all the *plural* analyses for the token *agricolae*:
 
 ```{julia}
 plurals = filter(parse -> lmpNumber(latinForm(parse)) == lmpNumber("plural"), parses2)
@@ -124,7 +124,7 @@ plurals .|> latinForm .|> label
 
 
 ::: {.callout-note title="⚠️ TBA"}
-Note that this *not* a traditional "part of speech." Rather, the subtypes of `LatinMorphologicalForm` are *analytical types*. Verbs have distinct analytical types for finite, infinitive and participle forms, for example.
+Note that subtypes of `LatinMorphologicalForm* are *not* a traditional "part of speech." Rather, they are *analytical types*. Verbs have distinct analytical types for finite, infinitive and participle forms, for example.
 
 ☛ Add contrasting example here with infinitive or other non-finite form of verb.
 :::
