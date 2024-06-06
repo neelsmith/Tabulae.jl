@@ -7,6 +7,20 @@ Get your quick starts here! This section has introductory tutorials to help you 
 All code examples in this site use the Tabulae data set in the [`datasets/core-infl-shared` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) of the Tabulae github repository.
 
 
+## Quickest start
+
+
+```@setup quick
+using Tabulae, CitableParserBuilder
+repo = pwd() |> dirname |> dirname  |> dirname
+```
+
+```@example quick
+srcdir = joinpath(repo, "datasets", "core-infl-shared") 
+tds = dataset([srcdir])
+parser = StringParser(tds)
+
+```
 
 ## Prerequisites
 

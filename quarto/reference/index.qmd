@@ -3,4 +3,4 @@ title: "Reference"
 ---
 
 
-Find detailed reference information about Tabulae's model of Latin morphology, and how it is implemented in Julia.
+Find detailed reference information including APIs about Tabulae's model of Latin morphology, and how it is implemented in Julia.
