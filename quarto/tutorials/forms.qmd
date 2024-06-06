@@ -6,7 +6,7 @@
 Implementations of the abstract `LatinMorphologicalForm` model the properties identifying a particular type of token. For example, a `LMFNoun` has properties for gender, case and number.  Each of these properties in turn are subtypes of the `LatinMorphologicalProperty`.  We can construct a form directly from these properties.  For example, a `LMFNoun` can be constructed like this:
 
 
-```@example formurns
+```{julia}
 using Tabulae
 g = lmpGender("masculine")
 c = lmpCase("accusative")
@@ -21,7 +21,7 @@ Forms are identified by a `Cite2Urn` belonging to the collection `urn:cite2:tabu
 
 As citable objects, they include the `label` function.
 
-```@example formurns
+```{julia}
 label(noun)
 ```
 
@@ -42,16 +42,16 @@ Object identifiers in this collection are ten-character strings with each charac
 
 In the following line, the initial digit `2` means "noun form"; the number value `1` means singular; the gender value `3` means "neuter" and the case value `1` means "nominative".
 
-```@example formurns
+```{julia}
 urn(noun)
 ```
 
 Convenience methods let you work with these identifiers directly, or as a `FormUrn` (from the `CitableParserBuilder` package).
 
-```@example formurns
+```{julia}
 Tabulae.formurn(noun)
 ```
-```@example formurns
+```{julia}
 code(noun)
 ```
 
@@ -61,7 +61,7 @@ code(noun)
 
 For each subtype of `LatinMorphologicalForm`, a corresponding constructor function (with a name beginning in lowercase) accepts a variety of kinds of sources for a form, such as a `Cite2Urn`:
 
-```@example formurns
+```{julia}
 u = urn(noun)
 lmfNoun(u) == noun
 ```
@@ -77,17 +77,17 @@ Other sources you can use to create a `LatinMorphologicalForm` include strings, 
 Each implementation of the `LatinMorphologicalProperty` has a corresponding lower-case function you can use to extract that property from a form.
 
 
-```@example formurns
+```{julia}
 gender = lmpGender(noun)
 ```
 
 You can use the `code` and `label` functions to find an integer code and readable string for any morphological property.
 
-```@example formurns
+```{julia}
 code(gender)
 ```
 
 
-```@example formurns
+```{julia}
 label(gender)
 ```

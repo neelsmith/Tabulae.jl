@@ -2,24 +2,50 @@
 title: Tutorials
 ---
 
-Get your quick starts here! This section has introductory tutorials to help you learn Tabulae.
+Introductory tutorials to help you learn Tabulae.
 
-All code examples in this site use the Tabulae data set in the [`datasets/core-infl-shared` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) of the Tabulae github repository.
 
+::: {.callout-important}
+All code examples in these tutorials use the Tabulae data set in the [`datasets/core-infl-shared` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) of the Tabulae github repository.
+:::
 
 ## Quickest start
 
 
-```@setup quick
-using Tabulae, CitableParserBuilder
-repo = pwd() |> dirname |> dirname  |> dirname
+```{julia}
+#| echo: false
+#| warning: false
+#| output: false
+repo = pwd() |> dirname |> dirname
 ```
 
-```@example quick
+
+Build a Tabulae dataset from a directory of local files:
+
+```{julia}
+#| output: false
+#| warning: false
+using Tabulae, CitableParserBuilder
 srcdir = joinpath(repo, "datasets", "core-infl-shared") 
 tds = dataset([srcdir])
-parser = StringParser(tds)
 
+```
+
+
+Compile a parser from the dataset, and parse Latin tokens:
+
+
+
+```{julia}
+#| warning: false
+parser = stringParser(tds)
+parses = parsetoken("animo", parser)
+```
+
+Label the results:
+
+```{julia}
+parses .|> latinForm .|> label
 ```
 
 ## Prerequisites

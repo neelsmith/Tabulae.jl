@@ -17,6 +17,7 @@ $(SIGNATURES)
 """
 function parsetoken(s::AbstractString, parser::StringParser; data = nothing)
     ptrn = s * "|"
+    @debug("Looking for $(s) in parser data")
     matches = filter(ln -> startswith(ln, ptrn), parser.entries)
     map(ln -> fromline(ln), matches)
 end

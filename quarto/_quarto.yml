@@ -45,6 +45,11 @@ website:
       contents: 
         - tutorials/index.qmd
         - tutorials/parser.qmd
+        - tutorials/forms.qmd
+        - tutorials/urns.qmd
+        
+
+
         
     - title: "Guides"
       contents:
