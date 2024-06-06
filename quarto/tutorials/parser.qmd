@@ -13,8 +13,6 @@ repo = pwd() |> dirname |> dirname
 
 ::: {.callout-tip collapse="true" title="Follow along"}
 
-
-
 To replicate all the steps in this tutorial:
 
 - [install Julia](https://julialang.org/downloads/) if you haven't already done so
@@ -88,3 +86,5 @@ Tabulae's `latinForm` function extracts the form identifier from an analysis, an
 parses .|> latinForm .|> label
 ```
 
+
+See the following tutorial on [working with morphological forms](./forms.qmd)
