@@ -4,6 +4,9 @@ title: Tutorials
 
 Get your quick starts here! This section has introductory tutorials to help you learn Tabulae.
 
+All code examples in this site use the Tabulae data set in the [`datasets/core-infl-shared` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) of the Tabulae github repository.
+
+
 
 ## Prerequisites
 
