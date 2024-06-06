@@ -1,0 +1,7 @@
+# Formatting utilities
+
+::: {.callout-caution}
+TBA
+:::
+
+Formatting mardkwon and/or HTML for paradigms, etc.

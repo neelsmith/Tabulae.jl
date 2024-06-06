@@ -46,6 +46,8 @@ website:
         - tutorials/index.qmd
         - tutorials/parser.qmd
         - tutorials/forms.qmd
+        - tutorials/save-load.qmd
+        - tutorials/utils.qmd
         
 
 

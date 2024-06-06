@@ -47,7 +47,10 @@ end
 $(SIGNATURES)
 """
 function stringParser(u, ureader::Type{UrlReader})
-    Downloads.download(u) |> readlines |> StringParser
+    tmpfile = Downloads.download(u) 
+    sp = readlines(tmpfile) |> StringParser
+    rm(tmpfile)
+    sp
 end
 
 """Serialize a single analysis to delimited text.

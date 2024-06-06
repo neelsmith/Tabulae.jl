@@ -1,7 +1,10 @@
+#=
 """A parser parsing tokens by looking them up in a precomputed dictionary of all recognized forms."""
 struct DictionaryParser <: TabulaeParser
     dict    
 end
+
+
 
 """Parse token `s` by looking it up in `p.dict`.
 $(SIGNATURES)
@@ -22,7 +25,7 @@ function parsetoken(s::AbstractString, p::DictionaryParser)::Vector{Analysis}
     results
 end
 
-
+=#
 
 """Build a dictionary parser for a Tabulae.Dataset.
 $(SIGNATURES)
