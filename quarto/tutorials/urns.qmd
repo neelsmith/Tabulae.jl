@@ -2,8 +2,11 @@
 # Identification with URNs
 
 
-```@setup urns
-repo = pwd() |> dirname |> dirname  |> dirname
+```{julia}
+#| echo: false
+#| warning: false
+#| output: false
+repo = pwd() |> dirname |> dirname
 ```
 
 ## Key points
@@ -39,7 +42,7 @@ ls|urn:cite2:shot:ls.v1:|Latin lexical entities appearing in Lewis-Short's Latin
 You can get a dictionary of collection IDs to full URNs for your data aset with the `registry` function.
 
 
-```@example urns
+```{julia}
 using Tabulae
 srcdata = joinpath(repo, "datasets", "core-infl-shared")
 tabds = Tabulae.Dataset([srcdata])
@@ -50,7 +53,7 @@ abbrdict = registry(tabds)
 
 `abbreviate` returns an abbreviated string value for a `Cite2Urn`:
 
-```@example urns
+```{julia}
 using CitableParserBuilder
 using CitableObject
 longurn = Cite2Urn("urn:cite2:shot:ls.v1:n14736")
@@ -59,13 +62,13 @@ shortform = abbreviate(longurn)
 
 You can use that string to create the appropriate type of abbreviated URN:
 
-```@example urns
+```{julia}
 lex = LexemeUrn(shortform)
 ```
 
 To convert an `AbbreviatedUrn` to a `Cite2Urn`, you need to supply the dataset's URN registry.
 
 
-```@example urns
+```{julia}
 expanded = expand(lex, abbrdict)
 ```
