@@ -56,7 +56,7 @@ website:
         - guides/properties-guide.qmd
         - guides/forms-guide.qmd
         - guides/urns.qmd
-        - guides/urnregistry.qmd
+        
     - title: "Reference"
       contents: 
         - reference/index.qmd

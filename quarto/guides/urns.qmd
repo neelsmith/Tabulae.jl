@@ -76,3 +76,40 @@ To convert an `AbbreviatedUrn` to a `Cite2Urn`, you need to supply the dataset's
 #| warning: false
 expanded = expand(lex, abbrdict)
 ```
+
+
+
+
+
+
+## APIs
+
+expand/abbreviate
+
+
+## Labelling dictionaries
+
+
+
+
+##Setting up a URN registry for your dataset
+
+
+### Outline
+
+- organized in three subdirectories of the dataset's `urnregistry` directory:
+     - `lexemes`
+     - `rules`
+     - `stems`
+- identical three-column delimited text files: collection ID, collection URN, label
+- as many file names as you like ending in `.cex`; empty lines OK
+
+
+Example:
+
+
+```
+CollectionId|CollectionUrn|Label
+ls|urn:cite2:shot:ls.v1:|Latin lexical entities appearing in Lewis-Short's Latin Dictionary.
+```
+

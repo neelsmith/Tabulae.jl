@@ -6,7 +6,7 @@ Use these introductory tutorials to get started with `Tabulae.jl`.
 
 ## Prerequisites
 
-You’ll need to [install Julia](https://julialang.org/downloads/) before you can use Kanónes.
+You’ll need to [install Julia](https://julialang.org/downloads/) before you can use Tabulae.
 
 ::: {.callout-important title="Note: tutorial data sets"}
 All code examples in these tutorials use the data sets in the [`datasets` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets) of the Tabulae github repository. Code examples assume that the path to the Tabulae github repository is in the variable `repo`.
