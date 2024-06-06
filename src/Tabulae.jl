@@ -4,12 +4,15 @@ using Glob, Unicode
 using DocStringExtensions, Documenter
 
 using CitableParserBuilder
-import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, parselistfromurl
+import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, parselistfromurl
+
+
 
 using CitableBase
 import CitableBase: CitableTrait
 import CitableBase: urn
 import CitableBase: label
+
 import CitableBase: cex
 
 using LatinOrthography

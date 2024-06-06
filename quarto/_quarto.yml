@@ -46,7 +46,6 @@ website:
         - tutorials/index.qmd
         - tutorials/parser.qmd
         - tutorials/forms.qmd
-        - tutorials/urns.qmd
         
 
 
@@ -56,6 +55,8 @@ website:
         - guides/index.qmd
         - guides/properties-guide.qmd
         - guides/forms-guide.qmd
+        - guides/urns.qmd
+        - guides/urnregistry.qmd
     - title: "Reference"
       contents: 
         - reference/index.qmd

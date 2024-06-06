@@ -7,9 +7,12 @@ This section explains what makes Tabulae different from other approaches to Lati
 
 ## Key points
 
+
+
 - Tabulae *datasets* are composed of tables of inflectional rules, and tables of vocabulary stems.
 - Each dataset follows a specified *orthography*.
 - *Forms* and *lexemes* are identified by URNs that are independent of orthography.
 - Datasets are compatible between the Scala and Julia implementations of Tabulae.
 - Data tables use *abbreviated URNs*; adding a URN registry to the dataset allows expanding abbreviated URNs to full `Cite2Urn`s.
 - `Tabulae.jl` is a pure Julia system: it has no external dependencies
+- `Tabulae.jl` implements the model of citable morphological parsing defined the `CitableParserBuilders` package ([documentation](https://neelsmith.quarto.pub/citableparserbuilder/))

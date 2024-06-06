@@ -43,6 +43,7 @@ You can get a dictionary of collection IDs to full URNs for your data aset with 
 
 
 ```{julia}
+#| warning: false
 using Tabulae
 srcdata = joinpath(repo, "datasets", "core-infl-shared")
 tabds = Tabulae.Dataset([srcdata])
@@ -54,6 +55,7 @@ abbrdict = registry(tabds)
 `abbreviate` returns an abbreviated string value for a `Cite2Urn`:
 
 ```{julia}
+#| warning: false
 using CitableParserBuilder
 using CitableObject
 longurn = Cite2Urn("urn:cite2:shot:ls.v1:n14736")
@@ -63,6 +65,7 @@ shortform = abbreviate(longurn)
 You can use that string to create the appropriate type of abbreviated URN:
 
 ```{julia}
+#| warning: false
 lex = LexemeUrn(shortform)
 ```
 
@@ -70,5 +73,6 @@ To convert an `AbbreviatedUrn` to a `Cite2Urn`, you need to supply the dataset's
 
 
 ```{julia}
+#| warning: false
 expanded = expand(lex, abbrdict)
 ```

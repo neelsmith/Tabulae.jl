@@ -2,11 +2,14 @@
 title: Tutorials
 ---
 
-Introductory tutorials to help you learn Tabulae.
+Use these introductory tutorials to get started with `Tabulae.jl`.
 
+## Prerequisites
+
+You’ll need to [install Julia](https://julialang.org/downloads/) before you can use Kanónes
 
 ::: {.callout-important}
-All code examples in these tutorials use the Tabulae data set in the [`datasets/core-infl-shared` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets/core-infl-shared) of the Tabulae github repository.
+All code examples in these tutorials use the data sets in the [`datasets` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets) of the Tabulae github repository. Code examples assume that the path to the Tabulae github repository is in the variable `repo`.
 :::
 
 ## Quickest start
@@ -42,12 +45,9 @@ parser = stringParser(tds)
 parses = parsetoken("animo", parser)
 ```
 
-Label the results:
+Extract the morphological forms from the parses, and label them:
 
 ```{julia}
 parses .|> latinForm .|> label
 ```
 
-## Prerequisites
-
-You’ll need to [install Julia](https://julialang.org/downloads/) before you can use Kanónes
