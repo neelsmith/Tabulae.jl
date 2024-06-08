@@ -1,0 +1,10 @@
+# Appendices: automated paradigms
+
+
+::: {.callout-caution title="TBA"}
+TBA
+:::
+
+
+- Demonstrate utilities for pre-formatted displays
+- Demonstrate the coverage of core rule sets

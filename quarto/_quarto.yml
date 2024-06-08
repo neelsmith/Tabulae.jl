@@ -28,6 +28,8 @@ website:
         file: guides/index.qmd           
       - text: "Reference"
         file: reference/index.qmd  
+      - text: "Appendices"
+        file: appendices/index.qmd         
     right:   
       - icon: github
         href: https://github.com/neelsmith/Tabulae.jl

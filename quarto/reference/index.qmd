@@ -18,6 +18,10 @@ See detailed reference information including APIs about Tabulae's model of Latin
 
 [Analytical types](./analytical_types.qmd)
 
+[Rule types](./ruletypes.qmd)
+
+[Stem types](./stemtypes.qmd)
+
 :::
 
 ::: {.column width="5%"}
