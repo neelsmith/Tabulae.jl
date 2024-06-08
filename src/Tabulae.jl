@@ -5,6 +5,9 @@ using DocStringExtensions, Documenter
 
 using CitableParserBuilder
 import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, parselistfromurl
+import CitableParserBuilder: datasource
+import CitableParserBuilder: orthography
+import CitableParserBuilder: delimiter
 
 
 
@@ -14,6 +17,9 @@ import CitableBase: urn
 import CitableBase: label
 
 import CitableBase: cex
+
+
+
 
 using LatinOrthography
 using CitableObject
@@ -55,7 +61,7 @@ export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 export TabulaeVerbStem
 
-export StringParser, stringParser
+export TabulaeStringParser, stringParser
 export analysis_line, analysis_lines
 export parsetoken
 

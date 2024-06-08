@@ -1,3 +1,4 @@
+#=
 """Abstract type of a morphological parser."""
 abstract type TabulaeParser <: CitableParser end
 
@@ -9,3 +10,4 @@ function parsetoken(s::AbstractString, p::T) where {T <: TabulaeParser}
     []
 end
 
+=#
