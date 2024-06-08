@@ -1,6 +1,28 @@
 # Rule types
 
+```{julia}
+#| output: false
+#| warning: false
 
+repo = joinpath(pwd() |> dirname |> dirname)
+```
+
+
+We'll work with a dataset and a parser defined in this cell.
+
+```{julia}
+#| warning: false
+#| output: false
+#| code-fold: true
+#| code-summary: Define dataset and parser
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+
+
+using Tabulae
+ds = dataset([shareddir, lat25dir])
+p = tabulaeStringParser(ds)
+```
 
 ::: {.callout-caution title="Contents TBA"}
 TBA
@@ -12,3 +34,22 @@ TBA
 - implement `readrulerow` and `writerulerow` using a subtype of `TabulaeIO`
 - implement `latinform`, and all the (relevant) property functions
 - implement `inflectiontype` and `ending`
+
+
+## VerbRule
+
+For finite forms
+
+## InfinitiveRule
+
+
+- use an `InfinitiveIO` object to read delimited text. The result is an `InfinitiveRule`.
+
+```{julia}
+infinitiveruletext = "latcommon.are_inf1|conj1|are|present|active"
+using Tabulae
+infinio = InfinitiveIO("infin. io")
+infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
+```
+
+## NounRule
