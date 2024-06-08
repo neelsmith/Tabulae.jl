@@ -5,9 +5,21 @@
 Documentation of file format for rules for forms derived from verb stems.
 :::
 
-- finite
-- infinitive
-- participle
-- supine
-- gerundive
-- gerund
+
+## Finite
+Looks like:
+
+```
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+latcommon.c1pftact_pft1|conj1|avi|first|singular|perfect|indicative|active
+```
+
+## Infinitive
+
+## Participle
+
+## Gerundive
+
+## Gerund
+
+## Supine

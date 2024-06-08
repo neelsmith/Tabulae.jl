@@ -9,6 +9,14 @@ Comparatively straightforward: depends on type
 
 ## Nouns
 
+
+Looks like:
+
+```
+StemUrn|LexicalEntity|Stem|Gender|InflClass
+latcommon.noun1626|ls.n1626|agricol|masculine|a_ae
+```
+
 ## Adjectives
 
 ## Uninflected
