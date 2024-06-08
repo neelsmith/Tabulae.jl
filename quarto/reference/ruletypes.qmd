@@ -5,3 +5,10 @@
 ::: {.callout-caution title="Contents TBA"}
 TBA
 :::
+
+## Outline
+
+- subtypes of TabulaeRule
+- implement `readstemrow` and `readrulerow` using a subtype of `TabulaeIO`
+- implement `latinform`, and all the (relevant) property functions
+- implement `inflectiontype` and `ending`

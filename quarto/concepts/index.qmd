@@ -16,3 +16,17 @@ This section explains what makes Tabulae different from other approaches to Lati
 - Data tables use *abbreviated URNs*; adding a URN registry to the dataset allows expanding abbreviated URNs to full `Cite2Urn`s.
 - `Tabulae.jl` is a pure Julia system: it has no external dependencies
 - `Tabulae.jl` implements the model of citable morphological parsing defined the `CitableParserBuilders` package ([documentation](https://neelsmith.quarto.pub/citableparserbuilder/))
+
+
+## Architecture
+
+
+### Datasets
+
+- datasets: datamainted in stem and rules directories 
+- rule types and stem types
+- IO readers for reading/writing datasets
+
+### Building parser
+
+- Cartesian product of rules * stems, filtered on inflectional class
