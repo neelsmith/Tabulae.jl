@@ -1,7 +1,16 @@
-# Rule types
+# Stem types
 
 
 
 ::: {.callout-caution title="Contents TBA"}
 TBA
 :::
+
+## Outline
+
+- subtypes of TabulaeStem
+- implement `readstemrow` and `writestemrow` using a subtype of `TabulaeIO`
+- implement `lexeme`
+- implement `inflectiontype` and `stemvalue`
+- (nouns implement `lmpGender` since it is inherent to the stem)
+- implement functions for citability in CITE architecture (the stem itself is a citable object)

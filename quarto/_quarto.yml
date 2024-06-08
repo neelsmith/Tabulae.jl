@@ -69,6 +69,8 @@ website:
         - text: "API documentation:"
         - reference/properties.qmd
         - reference/analytical_types.qmd  
+        - reference/ruletypes.qmd
+        - reference/stemtypes.qmd
         - text: "---"
         - text: "Tabulae datasets:"
         - reference/file_layout.qmd
