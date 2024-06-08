@@ -70,7 +70,12 @@ website:
         - text: "---"
         - text: "Tabulae datasets:"
         - reference/file_layout.qmd
+        - reference/fileformat-verbs.qmd
+        - reference/fileformat-others.qmd
+        - reference/fileformat-irregulars.qmd        
         - reference/inflclasses.qmd
+        - reference/fileformat-verbrules.qmd
+        - reference/fileformat-otherrules.qmd
         - reference/urnregistries.qmd
 
 

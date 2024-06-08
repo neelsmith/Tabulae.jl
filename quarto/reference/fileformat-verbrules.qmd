@@ -1,0 +1,13 @@
+
+# Delimited file format: rules for verb forms
+
+::: {.callout-caution title="TBA"}
+Documentation of file format for rules for forms derived from verb stems.
+:::
+
+- finite
+- infinitive
+- participle
+- supine
+- gerundive
+- gerund

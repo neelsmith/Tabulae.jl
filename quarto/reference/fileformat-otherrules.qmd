@@ -1,0 +1,14 @@
+
+# Delimited file format: rules for regular forms other than verbs
+
+::: {.callout-caution title="TBA"}
+Documentation of file format for rules for all forms other than verbs.
+:::
+
+Comparatively straightforward: depends on type
+
+## Nouns
+
+## Adjectives
+
+## Uninflected

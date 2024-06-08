@@ -1,0 +1,12 @@
+# Delimited file format: stems for verbal forms
+
+::: {.callout-caution title="TBA"}
+Documentation of file format for simplex and compound verbs will be here.
+:::
+
+
+## Simplex verbs
+
+
+## Compound verbs
+

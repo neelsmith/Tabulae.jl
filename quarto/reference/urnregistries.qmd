@@ -1,4 +1,4 @@
-# Managing a URN registry
+# The URN registry
 
 
 
