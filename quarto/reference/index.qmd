@@ -1,6 +1,69 @@
 ---
-title: "Reference"
+title: "**Reference**"
 ---
 
 
-Find detailed reference information including APIs about Tabulae's model of Latin morphology, and how it is implemented in Julia.
+See detailed reference information including APIs about Tabulae's model of Latin morphology, and how it is implemented in Julia.
+
+
+
+
+
+:::: {.columns}
+
+::: {.column width="20%"}
+**API documentation**
+
+[Morphological properties](./properties.qmd)
+
+[Analytical types](./analytical_types.qmd)
+
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="20%"}
+
+**Tabulae datasets**
+
+[Layout of directories](./file_layout.qmd)
+
+[The URN registry](./urnregistries.qmd)
+
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="20%"}
+
+**Datasets: stems**
+
+[Verbal forms](./fileformat-verbs.qmd)
+
+[Other regular forms](./fileformat-others.qmd)
+
+
+[Irregular forms](./fileformat-irregulars.qmd)
+
+
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="20%"}
+
+**Datasets: rules**
+
+[Rules for verb forms](./fileformat-verbrules.qmd)
+
+[Rules for other forms](./fileformat-otherrules.qmd)
+
+:::
+
+::::

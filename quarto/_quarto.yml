@@ -70,13 +70,18 @@ website:
         - text: "---"
         - text: "Tabulae datasets:"
         - reference/file_layout.qmd
+        - reference/urnregistries.qmd
+        - text: "---"
+        - text: "Stems:"        
         - reference/fileformat-verbs.qmd
         - reference/fileformat-others.qmd
         - reference/fileformat-irregulars.qmd        
         - reference/inflclasses.qmd
+        - text: "---"
+        - text: "Rules:"           
         - reference/fileformat-verbrules.qmd
         - reference/fileformat-otherrules.qmd
-        - reference/urnregistries.qmd
+
 
 
     - title: "Concepts"
