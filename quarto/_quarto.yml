@@ -47,6 +47,7 @@ website:
         - tutorials/parser.qmd
         - tutorials/forms.qmd
         - tutorials/save-load.qmd
+        - tutorials/editing.qmd
         - tutorials/utils.qmd
         
 
@@ -62,9 +63,16 @@ website:
     - title: "Reference"
       contents: 
         - reference/index.qmd
+        - text: "---"        
+        - text: "API documentation:"
         - reference/properties.qmd
         - reference/analytical_types.qmd  
+        - text: "---"
+        - text: "Tabulae datasets:"
         - reference/file_layout.qmd
+        - reference/inflclasses.qmd
+        - reference/urnregistries.qmd
+
 
     - title: "Concepts"
       contents: 

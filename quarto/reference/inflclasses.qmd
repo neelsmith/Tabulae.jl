@@ -1,0 +1,7 @@
+# Inflectional classes
+
+
+::: {.callout-caution title="Contents TBA"}
+A full list of inflectional classes used in the core Tabulae datasets will be 
+added here.
+:::
