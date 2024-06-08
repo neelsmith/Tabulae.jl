@@ -61,7 +61,7 @@ export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 export TabulaeVerbStem
 
-export TabulaeStringParser, stringParser
+export TabulaeStringParser, tabulaeStringParser
 export analysis_line, analysis_lines
 export parsetoken
 

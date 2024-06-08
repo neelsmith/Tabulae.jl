@@ -32,7 +32,7 @@ using Tabulae
 shareddir = joinpath(repo, "datasets", "core-infl-shared") 
 lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
 
-parser = dataset([shareddir, lat25dir]) |> stringParser
+parser = dataset([shareddir, lat25dir]) |> tabulaeStringParser
 ```
 
 

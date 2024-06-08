@@ -54,7 +54,7 @@ You can then build a parser from a data set.
 ```{julia}
 #| warnings: false
 #| output: false
-p = stringParser(ds)
+p = tabulaeStringParser(ds)
 ```
 
 

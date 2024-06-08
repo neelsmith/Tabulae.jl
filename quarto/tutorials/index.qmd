@@ -41,7 +41,7 @@ Compile a parser from the dataset, and parse Latin tokens:
 
 ```{julia}
 #| warning: false
-parser = stringParser(tds)
+parser = tabulaeStringParser(tds)
 parses = parsetoken("animo", parser)
 ```
 

@@ -17,11 +17,11 @@
     @test alist isa Vector{Analysis}
 
     u = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/dev/test/samplecex/analyses.cex"
-    parser1 = stringParser(u, UrlReader)
+    parser1 = tabulaeStringParser(u, UrlReader)
     @test parser1 isa TabulaeStringParser
 
     f = joinpath(pwd(), "samplecex", "analyses.cex")
-    parser2 = stringParser(f, FileReader)
+    parser2 = tabulaeStringParser(f, FileReader)
     @test parser2 isa TabulaeStringParser
     @test length(parser1.entries) == length(parser2.entries)
 end
@@ -31,7 +31,7 @@ end
     common = joinpath(repo, "datasets", "core-infl-shared") 
     lat25 = joinpath(repo, "datasets", "core-infl-lat25") 
     tds = dataset([common, lat25])
-    parser = stringParser(tds) 
+    parser = tabulaeStringParser(tds) 
 
     #   @test parsetoken("amo",p) # |> CitableParserBuilder.tokens    
 end
