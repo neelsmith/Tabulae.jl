@@ -8,9 +8,53 @@ TBA
 
 ## Outline
 
-- subtypes of TabulaeStem
+- subtypes of `TabulaeStem`
 - implement `readstemrow` and `writestemrow` using a subtype of `TabulaeIO`
+
+
+## Common function
 - implement `lexeme`
 - implement `inflectiontype` and `stemvalue`
 - (nouns implement `lmpGender` since it is inherent to the stem)
 - implement functions for citability in CITE architecture (the stem itself is a citable object)
+
+
+```{julia}
+using Tabulae
+verbrow = "latcommon.verbn2280|ls.n2280|am|conj1"
+
+verbio = VerbIO("verb reader")
+verbstem = Tabulae.readstemrow(verbio, verbrow)
+```
+
+```{julia}
+lexeme(verbstem)
+```
+
+
+```{julia}
+stemvalue(verbstem)
+```
+
+```{julia}
+#inflectiontype(verbstem)
+```
+
+### Citable stuff
+
+```{julia}
+label(verbstem)
+```
+
+```{julia}
+urn(verbstem)
+```
+
+```{julia}
+cex(verbstem)
+```
+
+## Verb stems
+
+- serve all analytical types made from verb stems!
+
