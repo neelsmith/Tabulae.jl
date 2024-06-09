@@ -28,7 +28,7 @@ The current version of Tabulae does not yet support generating paradigms from a 
 
 ## Noun declensions
 
-One noun:
+Format a paradigm for a single noun:
 
 
 ```{julia}
@@ -38,7 +38,7 @@ animus = LexemeUrn("ls.n2636")
 md_declension(animus, ds) |> Markdown.parse
 ```
 
-A list of nouns:
+Format a paradigm for a  list of nouns; optionally, include a list of headings to use for the column for each noun.
 
 
 ```{julia}

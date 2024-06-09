@@ -28,6 +28,7 @@ verbstem = Tabulae.readstemrow(verbio, verbrow)
 ```
 
 ```{julia}
+using CitableParserBuilder
 lexemeurn(verbstem)
 ```
 
