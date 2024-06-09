@@ -16,7 +16,7 @@ ds = dataset([shareddir, lat25dir])
 ```{julia}
 #| echo: false
 #| asis: true
-anima = LexemeUrn("ls.n2636")
+anima = LexemeUrn("ls.n2612")
 agricola = LexemeUrn("ls.n1626")
 md_declension([anima, agricola], ds; headings = ["anima (*f*)", "agricola (*m*)"]) |> Markdown.parse
 ```

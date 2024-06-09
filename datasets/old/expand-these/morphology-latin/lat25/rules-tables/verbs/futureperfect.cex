@@ -1,0 +1,17 @@
+RuleUrn#InflectionClasses#Ending#Person#Number#Tense#Mood#Voice
+
+
+lat25morph.are_futpft1#conj1#avero#1st#sg#futpft#indic#act
+lat25morph.are_futpft2#conj1#averis#2nd#sg#futpft#indic#act
+lat25morph.are_futpft3#conj1#averit#3rd#sg#futpft#indic#act
+lat25morph.are_futpft4#conj1#averimus#1st#pl#futpft#indic#act
+lat25morph.are_futpft5#conj1#averitis#2nd#pl#futpft#indic#act
+lat25morph.are_futpft6#conj1#averint#3rd#pl#futpft#indic#act
+
+
+lat25morph.ire_futpft1#conj4#ivero#1st#sg#futpft#indic#act
+lat25morph.ire_futpft2#conj4#iveris#2nd#sg#futpft#indic#act
+lat25morph.ire_futpft3#conj4#iverit#3rd#sg#futpft#indic#act
+lat25morph.ire_futpft4#conj4#iverimus#1st#pl#futpft#indic#act
+lat25morph.ire_futpft5#conj4#iveritis#2nd#pl#futpft#indic#act
+lat25morph.ire_futpft6#conj4#iverint#3rd#pl#futpft#indic#act

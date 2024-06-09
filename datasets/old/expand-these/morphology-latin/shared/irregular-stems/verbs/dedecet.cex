@@ -1,0 +1,12 @@
+StemUrn#LexicalEntity#String#Person#Number#Tense#Mood#Voice
+
+latcommon.irrvadn126071#ls.n12607#dedecet#3rd#sg#pres#indic#act
+latcommon.irrvadn126072#ls.n12607#dedecebat#3rd#sg#impft#indic#act
+latcommon.irrvadn126073#ls.n12607#dedecet#3rd#sg#fut#indic#act
+latcommon.irrvadn126074#ls.n12607#dedecuit#3rd#sg#pft#indic#act
+latcommon.irrvadn126075#ls.n12607#dedecuerat#3rd#sg#plupft#indic#act
+latcommon.irrvadn126076#ls.n12607#dedecuerit#3rd#sg#futpft#indic#act
+latcommon.irrvadn126077#ls.n12607#dedeceat#3rd#sg#pres#subj#act
+latcommon.irrvadn126078#ls.n12607#dedeceret#3rd#sg#impft#subj#act
+latcommon.irrvadn126079#ls.n12607#dedecuerit#3rd#sg#pft#subj#act
+latcommon.irrvadn1260710#ls.n12607#dedecuisset#3rd#sg#plupft#subj#act

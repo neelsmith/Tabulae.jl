@@ -59,6 +59,8 @@ website:
         - appendices/nouns-1st.qmd
         - appendices/nouns-2nd.qmd
         - appendices/nouns-3rd.qmd                
+        - appendices/nouns-4th.qmd                
+        - appendices/nouns-5th.qmd                
 
         
     - title: "Guides"

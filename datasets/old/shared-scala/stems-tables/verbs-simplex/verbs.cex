@@ -154,7 +154,7 @@ latcommon.verbn14180b|ls.n14180|didic|pftact
 latcommon.verbn14334|ls.n14334|displic|conj2
 latcommon.verbn14599a|ls.n14599|d|c1pres
 latcommon.verbn14599b|ls.n14599|ded|pftact
-latcommon.verbn14599c|ls.n14599|dat|pftpass
+latcommon.verbn14599c|ls.n14599|dative|pftpass
 latcommon.verbn14602|ls.n14602|doc|conj2
 latcommon.verbn14735|ls.n14735|don|conj1
 latcommon.verbn14747|ls.n14747|dorm|conj4
@@ -643,7 +643,7 @@ latcommon.verbn49421b1|ls.n49421|tutud|pftact
 latcommon.verbn49421b2|ls.n49421|tud|pftact
 latcommon.verbn49421c|ls.n49421|tuns|pftpass
 latcommon.verbn49551|ls.n49551|tut|conj1dep
-latcommon.verbn49595|ls.n49595|tyrann|masc|us_i
+latcommon.verbn49595|ls.n49595|tyrann|masculine|us_i
 latcommon.verbn49971|ls.n49971|usurp|conj1
 latcommon.verbn50002a|ls.n50002|ut|c3pres
 latcommon.verbn50002c|ls.n50002|us|pftpass

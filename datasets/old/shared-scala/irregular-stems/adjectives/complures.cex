@@ -1,18 +1,18 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number|Degree
 
 
-latcommon.irregadjn9638av|ls.n9638|complures|masc|nom|pl|comp
-latcommon.irregadjn9638aw|ls.n9638|complurium|masc|gen|pl|comp
-latcommon.irregadjn9638ax|ls.n9638|compluribus|masc|dat|pl|comp
-latcommon.irregadjn9638ay|ls.n9638|complures|masc|acc|pl|comp
-latcommon.irregadjn9638az|ls.n9638|compluris|masc|acc|pl|comp
-latcommon.irregadjn9638ba|ls.n9638|compluribus|masc|abl|pl|comp
-latcommon.irregadjn9638bb|ls.n9638|complures|masc|voc|pl|comp
+latcommon.irregadjn9638av|ls.n9638|complures|masculine|nominative|pl|comp
+latcommon.irregadjn9638aw|ls.n9638|complurium|masculine|genitive|pl|comp
+latcommon.irregadjn9638ax|ls.n9638|compluribus|masculine|dative|pl|comp
+latcommon.irregadjn9638ay|ls.n9638|complures|masculine|accusative|pl|comp
+latcommon.irregadjn9638az|ls.n9638|compluris|masculine|accusative|pl|comp
+latcommon.irregadjn9638ba|ls.n9638|compluribus|masculine|ablative|pl|comp
+latcommon.irregadjn9638bb|ls.n9638|complures|masculine|vocative|pl|comp
 
-latcommon.irregadjn9638bc|ls.n9638|complures|fem|nom|pl|comp
-latcommon.irregadjn9638bd|ls.n9638|complurium|fem|gen|pl|comp
-latcommon.irregadjn9638be|ls.n9638|compluribus|fem|dat|pl|comp
-latcommon.irregadjn9638bf|ls.n9638|complures|fem|acc|pl|comp
-latcommon.irregadjn9638bg|ls.n9638|compluris|fem|acc|pl|comp
-latcommon.irregadjn9638bh|ls.n9638|compluribus|fem|abl|pl|comp
-latcommon.irregadjn9638bi|ls.n9638|complures|fem|voc|pl|comp
+latcommon.irregadjn9638bc|ls.n9638|complures|feminine|nominative|pl|comp
+latcommon.irregadjn9638bd|ls.n9638|complurium|feminine|genitive|pl|comp
+latcommon.irregadjn9638be|ls.n9638|compluribus|feminine|dative|pl|comp
+latcommon.irregadjn9638bf|ls.n9638|complures|feminine|accusative|pl|comp
+latcommon.irregadjn9638bg|ls.n9638|compluris|feminine|accusative|pl|comp
+latcommon.irregadjn9638bh|ls.n9638|compluribus|feminine|ablative|pl|comp
+latcommon.irregadjn9638bi|ls.n9638|complures|feminine|vocative|pl|comp

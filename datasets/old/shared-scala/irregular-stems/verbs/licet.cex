@@ -1,12 +1,12 @@
 StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-latcommon.irrvadn26547|ls.n26547|licet|3rd|sg|pres|indic|act
-livymorph.irrvlicet9|ls.n26547|licebat|3rd|sg|impft|indic|act
-livymorph.irrvlicet15|ls.n26547|licebit|3rd|sg|fut|indic|act
-livymorph.irrvlicet21|ls.n26547|licuit|3rd|sg|perfect|indic|act
-latcommon.irrvadn265473|ls.n26547|licuerat|3rd|sg|pluperfect|indic|act
-livymorph.irrvlicet45|ls.n26547|licuerit|3rd|sg|future_perfect|indic|act
-livymorph.irrvlicet57|ls.n26547|liceat|3rd|sg|pres|subj|act
-livymorph.irrvlicet63|ls.n26547|liceret|3rd|sg|impft|subj|act
-livymorph.irrvlicet69|ls.n26547|licuerit|3rd|sg|perfect|subj|act
-livymorph.irrvlicet81|ls.n26547|licuisset|3rd|sg|pluperfect|subj|act
+latcommon.irrvadn26547|ls.n26547|licet|3rd|singular|pres|indic|act
+livymorph.irrvlicet9|ls.n26547|licebat|3rd|singular|impft|indic|act
+livymorph.irrvlicet15|ls.n26547|licebit|3rd|singular|fut|indic|act
+livymorph.irrvlicet21|ls.n26547|licuit|3rd|singular|perfect|indic|act
+latcommon.irrvadn265473|ls.n26547|licuerat|3rd|singular|pluperfect|indic|act
+livymorph.irrvlicet45|ls.n26547|licuerit|3rd|singular|future_perfect|indic|act
+livymorph.irrvlicet57|ls.n26547|liceat|3rd|singular|pres|subj|act
+livymorph.irrvlicet63|ls.n26547|liceret|3rd|singular|impft|subj|act
+livymorph.irrvlicet69|ls.n26547|licuerit|3rd|singular|perfect|subj|act
+livymorph.irrvlicet81|ls.n26547|licuisset|3rd|singular|pluperfect|subj|act

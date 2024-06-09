@@ -1,0 +1,12 @@
+RuleUrn#InflectionClasses#Ending#Gender#Case#Number
+
+ocremorph.eps_ipis1#eps_ipis#eps#masc#nom#sg
+ocremorph.eps_ipis2#eps_ipis#ipis#masc#gen#sg
+ocremorph.eps_ipis3#eps_ipis#ipi#masc#dat#sg
+ocremorph.eps_ipis4#eps_ipis#ipem#masc#acc#sg
+ocremorph.eps_ipis5#eps_ipis#ipe#masc#abl#sg
+ocremorph.eps_ipis6#eps_ipis#ipes#masc#nom#pl
+ocremorph.eps_ipis7#eps_ipis#ipivm#masc#gen#pl
+ocremorph.eps_ipis8#eps_ipis#ipibvs#masc#dat#pl
+ocremorph.eps_ipis9#eps_ipis#ipes#masc#acc#pl
+ocremorph.eps_ipis10#eps_ipis#ipibvs#masc#abl#pl

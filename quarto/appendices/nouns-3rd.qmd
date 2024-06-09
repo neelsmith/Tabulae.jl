@@ -1,5 +1,31 @@
 # Third-declension nouns
 
-::: {.callout-caution}
-TBA
+::: {.callout-caution title="Incomplete"}
+This page will eventually include examples of all variations of third declension nouns including i-stems.
 :::
+
+
+
+
+
+
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+repo = pwd() |> dirname |> dirname
+
+using Tabulae, CitableParserBuilder, Markdown
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+ds = dataset([shareddir, lat25dir])
+```
+
+```{julia}
+#| echo: false
+#| asis: true
+consul = LexemeUrn("ls.n10676")
+
+md_declension([consul], ds; headings = ["consul (*m*)"]) |> Markdown.parse
+```

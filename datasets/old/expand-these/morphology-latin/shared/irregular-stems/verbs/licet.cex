@@ -1,0 +1,12 @@
+StemUrn#LexicalEntity#String#Person#Number#Tense#Mood#Voice
+
+latcommon.irrvadn26547#ls.n26547#licet#3rd#sg#pres#indic#act
+livymorph.irrvlicet9#ls.n26547#licebat#3rd#sg#impft#indic#act
+livymorph.irrvlicet15#ls.n26547#licebit#3rd#sg#fut#indic#act
+livymorph.irrvlicet21#ls.n26547#licuit#3rd#sg#pft#indic#act
+latcommon.irrvadn265473#ls.n26547#licuerat#3rd#sg#plupft#indic#act
+livymorph.irrvlicet45#ls.n26547#licuerit#3rd#sg#futpft#indic#act
+livymorph.irrvlicet57#ls.n26547#liceat#3rd#sg#pres#subj#act
+livymorph.irrvlicet63#ls.n26547#liceret#3rd#sg#impft#subj#act
+livymorph.irrvlicet69#ls.n26547#licuerit#3rd#sg#pft#subj#act
+livymorph.irrvlicet81#ls.n26547#licuisset#3rd#sg#plupft#subj#act

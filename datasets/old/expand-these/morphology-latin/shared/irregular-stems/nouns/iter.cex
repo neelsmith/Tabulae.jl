@@ -1,0 +1,14 @@
+StemUrn#LexicalEntity#String#Gender#Case#Number
+
+latcommon.irregn25107a#lexent.n25107#iter#neut#nom#sg
+latcommon.irregn25107b#lexent.n25107#itineris#neut#gen#sg
+latcommon.irregn25107c#lexent.n25107#itineri#neut#dat#sg
+latcommon.irregn25107d#lexent.n25107#iter#neut#acc#sg
+latcommon.irregn25107e#lexent.n25107#itinere#neut#abl#sg
+latcommon.irregn25107f#lexent.n25107#iter#neut#voc#sg
+latcommon.irregn25107g#lexent.n25107#itinera#neut#nom#pl
+latcommon.irregn25107h#lexent.n25107#itinerum#neut#gen#pl
+latcommon.irregn25107i#lexent.n25107#itineribus#neut#dat#pl
+latcommon.irregn25107j#lexent.n25107#itinera#neut#acc#pl
+latcommon.irregn25107k#lexent.n25107#itineribus#neut#abl#pl
+latcommon.irregn25107l#lexent.n25107#itinera#neut#voc#pl

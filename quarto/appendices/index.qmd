@@ -1,10 +1,18 @@
 # Appendices: automated paradigms
 
 
-::: {.callout-caution title="TBA"}
-TBA
+The appendices in this section of the site include automatically generated paradigms.
+
+::: {.callout-tip title="Generating paradigms with Tabulae.jl"}
+See [this tutorial](https://neelsmith.quarto.pub/tabulae/tutorials/utils.html) to learn how to use `Tabulae.jl` to generate paradigms formatted in Markdown.
 :::
 
 
-- Demonstrate utilities for pre-formatted displays
-- Demonstrate the coverage of core rule sets
+
+
+
+
+::: {.callout-caution title="In progress"}
+This section will be expanded as analytical types are implemented and data for inflectional types are added
+to the core datasets in the Tabulae github repository.
+:::

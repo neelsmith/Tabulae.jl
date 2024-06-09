@@ -44,6 +44,8 @@ function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; headi
     colcount = length(lexemelist) + 1
     separator = "|" * repeat(" --- |", colcount)
     push!(mdlines, separator)
+    sglabel = "| *singular* " * repeat(" | ", colcount - 1)
+    push!(mdlines, sglabel)
 
 
 
@@ -62,9 +64,20 @@ function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; headi
         push!(mdlines, "| **" * label * "** | " * join(row, " | ") * " |")
     end
     
-
+    push!(mdlines, "| *plural* " * repeat(" | ", colcount - 1))
+    # Plural forms:
     # loop cases and add column for each lexeme
+    for (i, label) in enumerate(caselabels())
+        row = []
+        for (j,lex) in enumerate(lexemelist)
+            gndr = genderlist[j]
+            frm = LMFNoun(gndr, lmpCase(i), lmpNumber(2))
+            token = join(CitableParserBuilder.tokens(generate(lex, frm, td)), ", ")
+            push!(row, token)
+        end
 
+        push!(mdlines, "| **" * label * "** | " * join(row, " | ") * " |")
+    end
 
     join(mdlines,"\n")
 end

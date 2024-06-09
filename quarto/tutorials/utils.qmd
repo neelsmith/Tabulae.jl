@@ -12,6 +12,12 @@ Tabulae includes utilities for formatting traditional paradigms in Markdown.
 
 You can create paradigms from a lexeme and a Tabulae data set. With a variable `repo`, we create a Tabulae dataset from sources in the project github repository's `datasets` directory.
 
+
+::: {.callout-note}
+The current version of Tabulae does not yet support generating paradigms from a lexeme + a parser, but that option is planned for a subsequent release.
+:::
+
+
 ```{julia}
 #| warning: false
 #| output: false
@@ -22,11 +28,14 @@ lat25dir = joinpath(repo, "datasets", "core-infl-lat25")
 ds = dataset([shareddir, lat25dir])
 ```
 
-::: {.callout-note}
-The current version of Tabulae does not yet support generating paradigms from a lexeme + a parser, but that option is planned for a subsequent release.
-:::
+
+
 
 ## Noun declensions
+
+::: {.callout-tip title="Displaying Markdown"}
+All the formatting functions documented here return strings of Markdown text. The code snippets use the `Markdown.parse` method to return a `Markdown.MD` object that quarto documentation formats appropriately. This works in other contexts such as Pluto notebooks and the Julia REPL.
+:::
 
 Format a paradigm for a single noun:
 

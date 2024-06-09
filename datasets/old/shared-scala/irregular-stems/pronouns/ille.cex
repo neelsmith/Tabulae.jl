@@ -1,36 +1,36 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
-latcommon.irregpron21494a|ls.n21494|ille|masc|nom|sg
-latcommon.irregpron21494b|ls.n21494|illius|masc|gen|sg
-latcommon.irregpron21494c|ls.n21494|illi|masc|dat|sg
-latcommon.irregpron21494d|ls.n21494|illum|masc|acc|sg
-latcommon.irregpron21494e|ls.n21494|illo|masc|abl|sg
+latcommon.irregpron21494a|ls.n21494|ille|masculine|nominative|singular
+latcommon.irregpron21494b|ls.n21494|illius|masculine|genitive|singular
+latcommon.irregpron21494c|ls.n21494|illi|masculine|dative|singular
+latcommon.irregpron21494d|ls.n21494|illum|masculine|accusative|singular
+latcommon.irregpron21494e|ls.n21494|illo|masculine|ablative|singular
 
-latcommon.irregpron21494f|ls.n21494|illi|masc|nom|pl
-latcommon.irregpron21494g|ls.n21494|illorum|masc|gen|pl
-latcommon.irregpron21494h|ls.n21494|illis|masc|dat|pl
-latcommon.irregpron21494i|ls.n21494|illos|masc|acc|pl
-latcommon.irregpron21494j|ls.n21494|illis|masc|abl|pl
+latcommon.irregpron21494f|ls.n21494|illi|masculine|nominative|plural
+latcommon.irregpron21494g|ls.n21494|illorum|masculine|genitive|plural
+latcommon.irregpron21494h|ls.n21494|illis|masculine|dative|plural
+latcommon.irregpron21494i|ls.n21494|illos|masculine|accusative|plural
+latcommon.irregpron21494j|ls.n21494|illis|masculine|ablative|plural
 
-latcommon.irregpron21494k|ls.n21494|illa|fem|nom|sg
-latcommon.irregpron21494l|ls.n21494|illius|fem|gen|sg
-latcommon.irregpron21494m|ls.n21494|illi|fem|dat|sg
-latcommon.irregpron21494n|ls.n21494|illam|fem|acc|sg
-latcommon.irregpron21494o|ls.n21494|illa|fem|abl|sg
+latcommon.irregpron21494k|ls.n21494|illa|feminine|nominative|singular
+latcommon.irregpron21494l|ls.n21494|illius|feminine|genitive|singular
+latcommon.irregpron21494m|ls.n21494|illi|feminine|dative|singular
+latcommon.irregpron21494n|ls.n21494|illam|feminine|accusative|singular
+latcommon.irregpron21494o|ls.n21494|illa|feminine|ablative|singular
 
-latcommon.irregpron21494p|ls.n21494|illae|fem|nom|pl
-latcommon.irregpron21494q|ls.n21494|illarum|fem|gen|pl
-latcommon.irregpron21494r|ls.n21494|illis|fem|dat|pl
-latcommon.irregpron21494s|ls.n21494|illas|fem|acc|pl
-latcommon.irregpron21494t|ls.n21494|illis|fem|abl|pl
+latcommon.irregpron21494p|ls.n21494|illae|feminine|nominative|plural
+latcommon.irregpron21494q|ls.n21494|illarum|feminine|genitive|plural
+latcommon.irregpron21494r|ls.n21494|illis|feminine|dative|plural
+latcommon.irregpron21494s|ls.n21494|illas|feminine|accusative|plural
+latcommon.irregpron21494t|ls.n21494|illis|feminine|ablative|plural
 
-latcommon.irregpron21494u|ls.n21494|illud|neut|nom|sg
-latcommon.irregpron21494v|ls.n21494|illius|neut|gen|sg
-latcommon.irregpron21494w|ls.n21494|illi|neut|dat|sg
-latcommon.irregpron21494x|ls.n21494|illud|neut|acc|sg
-latcommon.irregpron21494y|ls.n21494|illo|neut|abl|sg
+latcommon.irregpron21494u|ls.n21494|illud|neuter|nominative|singular
+latcommon.irregpron21494v|ls.n21494|illius|neuter|genitive|singular
+latcommon.irregpron21494w|ls.n21494|illi|neuter|dative|singular
+latcommon.irregpron21494x|ls.n21494|illud|neuter|accusative|singular
+latcommon.irregpron21494y|ls.n21494|illo|neuter|ablative|singular
 
-latcommon.irregpron21494z|ls.n21494|illa|neut|nom|pl
-latcommon.irregpron21494aa|ls.n21494|illorum|neut|gen|pl
-latcommon.irregpron21494ab|ls.n21494|illis|neut|dat|pl
-latcommon.irregpron21494ac|ls.n21494|illa|neut|acc|pl
-latcommon.irregpron21494ad|ls.n21494|illis|neut|abl|pl
+latcommon.irregpron21494z|ls.n21494|illa|neuter|nominative|plural
+latcommon.irregpron21494aa|ls.n21494|illorum|neuter|genitive|plural
+latcommon.irregpron21494ab|ls.n21494|illis|neuter|dative|plural
+latcommon.irregpron21494ac|ls.n21494|illa|neuter|accusative|plural
+latcommon.irregpron21494ad|ls.n21494|illis|neuter|ablative|plural
