@@ -60,11 +60,15 @@ token(generated[1])
 
 ## Generating forms using a Tabulae dataset
 
-
-Same:
+Using a dataset instead of a parser, we get the same results:
 
 ```{julia}
 dsgenerated = generate(lex, mform, ds)
-dsgenerated .|> latinForm .|> label
+dsgenerated .|> token
 ```
 
+With a dataset, you also have the option of generating analyses from the combination of a lexeme identifier plus a full Latin morphological form, such as the noun form we saved from a previous analysis:
+
+```{julia}
+generate(lex, form1, ds)
+```
