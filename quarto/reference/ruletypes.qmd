@@ -53,3 +53,16 @@ infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
 ```
 
 ## NounRule
+
+
+All inflectional types:
+
+```{julia}
+#| asis: true
+using Markdown
+stems = stemsarray(ds)
+nounstems = filter(s -> s isa TabulaeNounStem, stems)
+bullets = map(s -> "- " * inflectionType(s), nounstems) |> unique
+
+join(bullets, "\n") |> Markdown.parse
+```
