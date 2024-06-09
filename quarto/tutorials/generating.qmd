@@ -65,6 +65,6 @@ Same:
 
 ```{julia}
 dsgenerated = generate(lex, mform, ds)
-dsgenreated .|> latinForm .|> label
+dsgenerated .|> latinForm .|> label
 ```
 
