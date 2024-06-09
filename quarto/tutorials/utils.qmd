@@ -10,12 +10,14 @@ repo = pwd() |> dirname |> dirname
 
 Tabulae includes utilities for formatting traditional paradigms in Markdown.
 
-You can create paradigms from a lexeme and a Tabulae data set. With a variable `repo`, we create a Tabulae dataset from sources in the project github repository's `datasets` directory.
-
+You can create paradigms from a lexeme and a Tabulae data set.
 
 ::: {.callout-note}
 The current version of Tabulae does not yet support generating paradigms from a lexeme + a parser, but that option is planned for a subsequent release.
 :::
+
+
+ With a variable `repo`, we create a Tabulae dataset from sources in the project github repository's `datasets` directory.
 
 
 ```{julia}
@@ -57,3 +59,11 @@ md_declension([agricola, animus], ds; headings = ["1st decl.", "2nd decl."]) |> 
 
 
 ## Verb conjugations
+
+Format a verb paradigm in the indicative and subjunctive of a single tense for both active and passive voices.
+
+```{julia}
+amo = LexemeUrn("ls.n2280")
+impft = lmpTense("imperfect")
+md_tenseconjugation(impft, amo, ds) |> Markdown.parse
+```
