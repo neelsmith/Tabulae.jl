@@ -3,7 +3,7 @@
 """Compose markdown table with declension of a single lexeme.
 $(SIGNATURES)
 """
-function md_declension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
+function md_declension(lex::LexemeUrn, td::Tabulae.Dataset)
     mdlines = ["| | Singular | Plural |", "| --- | --- | --- |"]
     stemmatches = stemsforlexeme(td, lex)
     if isempty(stemmatches)
@@ -20,8 +20,8 @@ function md_declension(lex::LexemeUrn, td::Tabulae.Dataset; vocative = false)
 
         for (i,f) in enumerate(sing)
             caselabel = lmpCase(f) |> label
-            singtokenlist =  CitableParserBuilder.tokens(sing_analyses[i])
-            pltokenlist = CitableParserBuilder.tokens(pl_analyses[i])
+            singtokenlist =  join(CitableParserBuilder.tokens(sing_analyses[i]), ", ")
+            pltokenlist = join(CitableParserBuilder.tokens(pl_analyses[i]), ", ")
             push!(mdlines, string("| **", caselabel, "** | ", singtokenlist, " | ", pltokenlist, " |"))
         end
 
@@ -34,7 +34,7 @@ end
 """Compose markdown table with parallel declensions of a list of lexemes.
 $(SIGNATURES)
 """
-function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; vocative = false, headings = [])
+function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; headings = [])
     mdlines = []
     if length(headings) == length(lexemelist)
         push!(mdlines, "| | " * join(headings, " | ") * " |")   
@@ -55,11 +55,11 @@ function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; vocat
         for (j,lex) in enumerate(lexemelist)
             gndr = genderlist[j]
             frm = LMFNoun(gndr, lmpCase(i), lmpNumber(1))
-            token = generate(lex, frm, td) |> CitableParserBuilder.tokens
+            token = join(CitableParserBuilder.tokens(generate(lex, frm, td)), ", ")
             push!(row, token)
         end
 
-        push!(mdlines, "| *" * label * "* | " * join(row, " | ") * " |")
+        push!(mdlines, "| **" * label * "** | " * join(row, " | ") * " |")
     end
     
 

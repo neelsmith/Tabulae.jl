@@ -35,7 +35,7 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     # Indicative singular:
     for i in 1:3
         indic = tenseforms[i]
-        indicative = CitableParserBuilder.tokens( generate(lex,indic,td))
+        indicative = join(CitableParserBuilder.tokens(generate(lex,indic,td)), ", ")
         rowheader = join([label(lmpPerson(indic)), label(lmpNumber(indic)) ], " ")
 
         if hassubjunctive(t)

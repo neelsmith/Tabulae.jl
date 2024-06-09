@@ -1,7 +1,44 @@
 # Formatting utilities
 
-::: {.callout-caution}
-TBA
+```{julia}
+#| echo: false
+#| output: false
+#repo  = pwd()
+repo = pwd() |> dirname |> dirname
+```
+
+
+Tabulae includes utilities for formatting traditional paradigms in Markdown.
+
+You can create paradigms from a lexeme and a Tabulae data set. With a variable `repo`, we create a Tabulae dataset from sources in the project github repository's `datasets` directory.
+
+```{julia}
+#| warning: false
+#| output: false
+using Tabulae, CitableParserBuilder
+
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+ds = dataset([shareddir, lat25dir])
+```
+
+::: {.callout-note}
+The current version of Tabulae does not yet support generating paradigms from a lexeme + a parser, but that option is planned for a subsequent release.
 :::
 
-Formatting mardkwon and/or HTML for paradigms, etc.
+## Noun declensions
+
+```{julia}
+#| asis: true
+using Markdown
+animus = LexemeUrn("ls.n2636")
+md_declension(animus, ds) |> Markdown.parse
+```
+
+```{julia}
+agricola = LexemeUrn("ls.n1626")
+md_declension([animus, agricola], ds; headings = ["animus", "agricola"]) |> Markdown.parse
+```
+
+
+## Verb conjugations
