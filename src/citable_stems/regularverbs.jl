@@ -82,7 +82,7 @@ abbreviated URN.
 
 $(SIGNATURES)
 """
-function lexeme(vs::TabulaeVerbStem)
+function lexemeurn(vs::TabulaeVerbStem)
     vs.lexid
 end
 

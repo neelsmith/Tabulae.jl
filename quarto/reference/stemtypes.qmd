@@ -28,7 +28,7 @@ verbstem = Tabulae.readstemrow(verbio, verbrow)
 ```
 
 ```{julia}
-lexeme(verbstem)
+lexemeurn(verbstem)
 ```
 
 

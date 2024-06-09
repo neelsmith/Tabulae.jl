@@ -13,7 +13,7 @@
     @test ruleresults == [expected]
     
     frm = lmForm(rule)
-    lex = lexeme(stem)
+    lex = lexemeurn(stem)
     formresults  = generate(lex,frm,  tds)
     @test formresults == ruleresults
 end

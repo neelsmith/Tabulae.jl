@@ -133,7 +133,7 @@ function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule})
     for rule in classrules
         token = string(stemvalue(stem), ending(rule))
         
-        push!(generated, string(token, "|", lexeme(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
 
     end
     generated
@@ -147,7 +147,7 @@ function buildparseable(stem::Stem,  rules::Vector{Rule})
     for rule in classrules
         token = string(stemvalue(stem), ending(rule))
         
-        push!(generated, string(token, "|", lexeme(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
 
     end
     generated

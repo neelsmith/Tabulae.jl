@@ -9,6 +9,7 @@ import CitableParserBuilder: datasource
 import CitableParserBuilder: orthography
 import CitableParserBuilder: delimiter
 import CitableParserBuilder: generate
+import CitableParserBuilder: lexemeurn
 
 
 

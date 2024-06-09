@@ -86,7 +86,7 @@ abbreviated URN.
 
 $(SIGNATURES)
 """
-function lexeme(n::TabulaeNounStem)
+function lexemeurn(n::TabulaeNounStem)
     n.lexid
 end
 
