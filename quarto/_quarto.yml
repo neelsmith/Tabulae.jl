@@ -51,6 +51,7 @@ website:
         - tutorials/save-load.qmd
         - tutorials/editing.qmd
         - tutorials/utils.qmd
+        - tutorials/generating.qmd
         
 
 

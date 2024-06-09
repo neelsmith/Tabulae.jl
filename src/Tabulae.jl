@@ -8,6 +8,7 @@ import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, pa
 import CitableParserBuilder: datasource
 import CitableParserBuilder: orthography
 import CitableParserBuilder: delimiter
+import CitableParserBuilder: generate
 
 
 
@@ -63,9 +64,9 @@ export TabulaeVerbStem
 
 export TabulaeStringParser, tabulaeStringParser
 export analysis_line, analysis_lines
-export parsetoken
 
-export generate
+#export parsetoken, generate
+
 export md_declension
 export md_tenseconjugation
 
