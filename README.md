@@ -1,4 +1,3 @@
-![build](https://github.com/neelsmith/Tabulae.jl/actions/workflows/Documentation.yml/badge.svg)
 
 
 # Tabulae.jl
@@ -7,7 +6,7 @@ Build Latin morphological parsers from simple delimited-text tables.
 
 
 
-## Progress
+## Progress on ground-up rewrite: regular forms
 
 
 | Analytical type	| morphology | analyze | generate |
@@ -17,7 +16,7 @@ Build Latin morphological parsers from simple delimited-text tables.
 | pronoun | |||
 | adjective | |||
 | finite verb | ✅ |✅ | ✅ |
-| infinitive | |||
+| infinitive | ✅|✅||
 | participle | |||
 | gerund | |||
 | gerundive | |||
