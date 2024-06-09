@@ -1,0 +1,22 @@
+# First-declension nouns
+
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+repo = pwd() |> dirname |> dirname
+
+using Tabulae, CitableParserBuilder, Markdown
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+ds = dataset([shareddir, lat25dir])
+```
+
+```{julia}
+#| echo: false
+#| asis: true
+anima = LexemeUrn("ls.n2636")
+agricola = LexemeUrn("ls.n1626")
+md_declension([anima, agricola], ds; headings = ["anima (*f*)", "agricola (*m*)"]) |> Markdown.parse
+```

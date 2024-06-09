@@ -28,6 +28,9 @@ The current version of Tabulae does not yet support generating paradigms from a 
 
 ## Noun declensions
 
+One noun:
+
+
 ```{julia}
 #| asis: true
 using Markdown
@@ -35,9 +38,12 @@ animus = LexemeUrn("ls.n2636")
 md_declension(animus, ds) |> Markdown.parse
 ```
 
+A list of nouns:
+
+
 ```{julia}
 agricola = LexemeUrn("ls.n1626")
-md_declension([animus, agricola], ds; headings = ["animus", "agricola"]) |> Markdown.parse
+md_declension([agricola, animus], ds; headings = ["1st decl.", "2nd decl."]) |> Markdown.parse
 ```
 
 

@@ -53,7 +53,12 @@ website:
         - tutorials/utils.qmd
         - tutorials/generating.qmd
         
-
+    - title: "Appendices"
+      contents: 
+        - appendices/index.qmd
+        - appendices/nouns-1st.qmd
+        - appendices/nouns-2nd.qmd
+        - appendices/nouns-3rd.qmd                
 
         
     - title: "Guides"
