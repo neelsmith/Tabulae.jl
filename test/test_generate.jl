@@ -9,11 +9,11 @@
     expected = Analysis("donum", LexemeUrn("ls.n14736"), FormUrn("forms.2010003100"), StemUrn("latcommon.nounn14736"), RuleUrn("nouninfl.us_i13"))
 
 
-    ruleresults = generate(rule, stem, tds)
+    ruleresults = generate(stem, rule,  tds)
     @test ruleresults == [expected]
     
     frm = lmForm(rule)
     lex = lexeme(stem)
-    formresults  = generate(frm, lex, tds)
+    formresults  = generate(lex,frm,  tds)
     @test formresults == ruleresults
 end

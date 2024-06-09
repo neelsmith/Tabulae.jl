@@ -35,12 +35,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     # Indicative singular:
     for i in 1:3
         indic = tenseforms[i]
-        indicative = CitableParserBuilder.tokens( generate(indic,lex,td))
+        indicative = CitableParserBuilder.tokens( generate(lex,indic,td))
         rowheader = join([label(lmpPerson(indic)), label(lmpNumber(indic)) ], " ")
 
         if hassubjunctive(t)
             subj = tenseforms[i + 6]
-            subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))    
+            subjunctive = CitableParserBuilder.tokens( generate(lex,subj,td))    
             push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
         else
             push!(mdlines, "| **$(rowheader)** | $(indicative) | - | ")
@@ -51,12 +51,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     
     for i in 4:6
         indic = tenseforms[i]
-        indicative = CitableParserBuilder.tokens( generate(indic,lex,td))
+        indicative = CitableParserBuilder.tokens( generate(lex,indic,td))
         rowheader = join([label(lmpPerson(indic)), label(lmpNumber(indic)) ], " ")
 
         if hassubjunctive(t)
             subj = tenseforms[i + 6]
-            subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
+            subjunctive = CitableParserBuilder.tokens( generate(lex,subj,td))
             push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
         else
             push!(mdlines, "| **$(rowheader)** | $(indicative) | - | ")
@@ -76,12 +76,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
         push!(mdlines, "| --- | --- | --- |")
         for i in passive_origin:passive_origin+2
             ind = tenseforms[i]
-            indicative = CitableParserBuilder.tokens( generate(ind,lex,td))
+            indicative = CitableParserBuilder.tokens( generate(lex,ind,td))
             rowheader = join([label(lmpPerson(ind)), label(lmpNumber(ind)) ], " ")
 
             if hassubjunctive(t)
                 subj = tenseforms[i + offset]
-                subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
+                subjunctive = CitableParserBuilder.tokens( generate(lex,subj,td))
                 push!(mdlines, "| **$(rowheader)** | $(indicative) |  $(subjunctive) | ")
             else
                 push!(mdlines, "| **$(rowheader)** | $(indicative) |  - | ")
@@ -89,12 +89,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
         end
         for i in passive_origin+3:passive_origin+5
             ind = tenseforms[i]
-            indicative = CitableParserBuilder.tokens( generate(ind,lex,td))
+            indicative = CitableParserBuilder.tokens( generate(lex,ind,td))
             rowheader = join([label(lmpPerson(ind)), label(lmpNumber(ind)) ], " ")
 
             if hassubjunctive(t)
                 subj = tenseforms[i + offset]
-                subjunctive = CitableParserBuilder.tokens( generate(subj,lex,td))
+                subjunctive = CitableParserBuilder.tokens( generate(lex,subj,td))
                 push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
             else
                 push!(mdlines, "| **$(rowheader)** | $(indicative) |  - | ")
