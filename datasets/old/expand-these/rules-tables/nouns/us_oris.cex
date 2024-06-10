@@ -1,14 +1,14 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-latcommoninfl.us_oris1|us_oris|us|neut|nominative|sg
-latcommoninfl.us_oris2|us_oris|oris|neut|gen|sg
-latcommoninfl.us_oris3|us_oris|ori|neut|dat|sg
-latcommoninfl.us_oris4|us_oris|us|neut|acc|sg
-latcommoninfl.us_oris5|us_oris|ore|neut|abl|sg
-latcommoninfl.us_oris6|us_oris|ora|neut|nominative|pl
-latcommoninfl.us_oris7|us_oris|orum|neut|gen|pl
-latcommoninfl.us_oris8|us_oris|oribus|neut|dat|pl
-latcommoninfl.us_oris9|us_oris|ora|neut|acc|pl
-latcommoninfl.us_oris10|us_oris|oribus|neut|abl|pl
-latcommoninfl.us_oris11|us_oris|us|neut|voc|sg
-latcommoninfl.us_oris12|us_oris|ora|neut|voc|pl
+latcommoninfl.us_oris1|us_oris|us|neuter|nominative|sg
+latcommoninfl.us_oris2|us_oris|oris|neuter|genitive|sg
+latcommoninfl.us_oris3|us_oris|ori|neuter|dative|sg
+latcommoninfl.us_oris4|us_oris|us|neuter|accusative|sg
+latcommoninfl.us_oris5|us_oris|ore|neuter|ablative|sg
+latcommoninfl.us_oris6|us_oris|ora|neuter|nominative|pl
+latcommoninfl.us_oris7|us_oris|orum|neuter|genitive|pl
+latcommoninfl.us_oris8|us_oris|oribus|neuter|dative|pl
+latcommoninfl.us_oris9|us_oris|ora|neuter|accusative|pl
+latcommoninfl.us_oris10|us_oris|oribus|neuter|ablative|pl
+latcommoninfl.us_oris11|us_oris|us|neuter|voc|sg
+latcommoninfl.us_oris12|us_oris|ora|neuter|voc|pl

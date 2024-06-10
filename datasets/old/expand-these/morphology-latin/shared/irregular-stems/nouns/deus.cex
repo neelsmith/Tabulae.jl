@@ -2,20 +2,20 @@ StemUrn|LexicalEntity|String|Gender|Case|Number
 
 
 latcommon.irregn13573a|lexent.n13573|deus|masculine|nominative|sg
-latcommon.irregn13573b|lexent.n13573|dei|masculine|gen|sg
-latcommon.irregn13573c|lexent.n13573|deo|masculine|dat|sg
-latcommon.irregn13573d|lexent.n13573|deum|masculine|acc|sg
+latcommon.irregn13573b|lexent.n13573|dei|masculine|genitive|sg
+latcommon.irregn13573c|lexent.n13573|deo|masculine|dative|sg
+latcommon.irregn13573d|lexent.n13573|deum|masculine|accusative|sg
 latcommon.irregn13573f|lexent.n13573|deus|masculine|voc|sg
 
 
 latcommon.irregn13573g|lexent.n13573|dei|masculine|nominative|pl
 latcommon.irregn13573gbis|lexent.n13573|dii|masculine|nominative|pl
-latcommon.irregn13573h|lexent.n13573|deum|masculine|gen|pl
-latcommon.irregn13573hbis|lexent.n13573|deorum|masculine|gen|pl
-latcommon.irregn13573i|lexent.n13573|deis|masculine|dat|pl
-latcommon.irregn13573ibis|lexent.n13573|dis|masculine|dat|pl
-latcommon.irregn13573iter|lexent.n13573|diis|masculine|dat|pl
-latcommon.irregn13573j|lexent.n13573|deos|masculine|acc|pl
-latcommon.irregn13573k|lexent.n13573|deis|masculine|abl|pl
-latcommon.irregn13573kbis|lexent.n13573|dis|masculine|abl|pl
+latcommon.irregn13573h|lexent.n13573|deum|masculine|genitive|pl
+latcommon.irregn13573hbis|lexent.n13573|deorum|masculine|genitive|pl
+latcommon.irregn13573i|lexent.n13573|deis|masculine|dative|pl
+latcommon.irregn13573ibis|lexent.n13573|dis|masculine|dative|pl
+latcommon.irregn13573iter|lexent.n13573|diis|masculine|dative|pl
+latcommon.irregn13573j|lexent.n13573|deos|masculine|accusative|pl
+latcommon.irregn13573k|lexent.n13573|deis|masculine|ablative|pl
+latcommon.irregn13573kbis|lexent.n13573|dis|masculine|ablative|pl
 latcommon.irregn13573l|lexent.n13573|dii|masculine|voc|pl

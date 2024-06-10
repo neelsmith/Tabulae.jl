@@ -1,13 +1,13 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
 latcommon.irregpron49339a|ls.n49339|tu|masculine|nominative|sg
-latcommon.irregpron49339b|ls.n49339|tui|masculine|gen|sg
-latcommon.irregpron49339c|ls.n49339|tibi|masculine|dat|sg
-latcommon.irregpron49339d|ls.n49339|te|masculine|acc|sg
-latcommon.irregpron49339e|ls.n49339|te|masculine|abl|sg
+latcommon.irregpron49339b|ls.n49339|tui|masculine|genitive|sg
+latcommon.irregpron49339c|ls.n49339|tibi|masculine|dative|sg
+latcommon.irregpron49339d|ls.n49339|te|masculine|accusative|sg
+latcommon.irregpron49339e|ls.n49339|te|masculine|ablative|sg
 
 
-latcommon.irregpron49339f|ls.n49339|tu|fem|nominative|sg
-latcommon.irregpron49339g|ls.n49339|tui|fem|gen|sg
-latcommon.irregpron49339h|ls.n49339|tibi|fem|dat|sg
-latcommon.irregpron49339i|ls.n49339|te|fem|acc|sg
-latcommon.irregpron49339j|ls.n49339|te|fem|abl|sg
+latcommon.irregpron49339f|ls.n49339|tu|feminine|nominative|sg
+latcommon.irregpron49339g|ls.n49339|tui|feminine|genitive|sg
+latcommon.irregpron49339h|ls.n49339|tibi|feminine|dative|sg
+latcommon.irregpron49339i|ls.n49339|te|feminine|accusative|sg
+latcommon.irregpron49339j|ls.n49339|te|feminine|ablative|sg

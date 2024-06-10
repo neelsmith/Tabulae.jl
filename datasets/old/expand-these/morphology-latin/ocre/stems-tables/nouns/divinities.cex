@@ -2,10 +2,10 @@ StemUrn|LexicalEntity|Stem|Gender|InflClass
 
 
 ocremorph.n3063|ls.n3063|apoll|masculine|o_inis
-ocremorph.n7538|ls.n7538|cere|fem|s_ris
+ocremorph.n7538|ls.n7538|cere|feminine|s_ris
 ocremorph.n25256|ls.n25256|iov|masculine|is_is
 ocremorph.n28088|ls.n28088|mar|masculine|s_tis
 ocremorph.n30771|ls.n30771|neptvn|masculine|us_i
 ocremorph.n44583|ls.n44583|sol|masculine|0_is
-ocremorph.n50478|ls.n50478|ven|fem|us_eris
-ocremorph.n50714|ls.n50714|vest|fem|a_ae
+ocremorph.n50478|ls.n50478|ven|feminine|us_eris
+ocremorph.n50714|ls.n50714|vest|feminine|a_ae

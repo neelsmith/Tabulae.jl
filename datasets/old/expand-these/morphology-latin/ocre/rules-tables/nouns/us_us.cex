@@ -1,46 +1,46 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 ocremorph.us_us1|us_us|vs|masculine|nominative|sg
-ocremorph.us_us2|us_us|vs|masculine|gen|sg
-ocremorph.us_us3|us_us|vi|masculine|dat|sg
-ocremorph.us_us3b|us_us|v|masculine|dat|sg
-ocremorph.us_us4|us_us|vm|masculine|acc|sg
-ocremorph.us_us5|us_us|v|masculine|abl|sg
+ocremorph.us_us2|us_us|vs|masculine|genitive|sg
+ocremorph.us_us3|us_us|vi|masculine|dative|sg
+ocremorph.us_us3b|us_us|v|masculine|dative|sg
+ocremorph.us_us4|us_us|vm|masculine|accusative|sg
+ocremorph.us_us5|us_us|v|masculine|ablative|sg
 ocremorph.us_us6|us_us|v|masculine|nominative|pl
-ocremorph.us_us7|us_us|vvm|masculine|gen|pl
-ocremorph.us_us8|us_us|ibvs|masculine|dat|pl
-ocremorph.us_us8b|us_us|ubvs|masculine|dat|pl
-ocremorph.us_us9|us_us|vs|masculine|acc|pl
-ocremorph.us_us10|us_us|ibvs|masculine|abl|pl
-ocremorph.us_us10b|us_us|ubvs|masculine|abl|pl
+ocremorph.us_us7|us_us|vvm|masculine|genitive|pl
+ocremorph.us_us8|us_us|ibvs|masculine|dative|pl
+ocremorph.us_us8b|us_us|ubvs|masculine|dative|pl
+ocremorph.us_us9|us_us|vs|masculine|accusative|pl
+ocremorph.us_us10|us_us|ibvs|masculine|ablative|pl
+ocremorph.us_us10b|us_us|ubvs|masculine|ablative|pl
 
 
 
-ocremorph.us_us13|us_us|v|neut|nominative|sg
-ocremorph.us_us14|us_us|vs|neut|gen|sg
-ocremorph.us_us15|us_us|v|neut|dat|sg
-ocremorph.us_us16|us_us|v|neut|acc|sg
-ocremorph.us_us17|us_us|v|neut|abl|sg
-ocremorph.us_us18|us_us|va|neut|nominative|pl
-ocremorph.us_us19|us_us|vvm|neut|gen|pl
-ocremorph.us_us20|us_us|ibvs|neut|dat|pl
-ocremorph.us_us20b|us_us|vbvs|neut|dat|pl
-ocremorph.us_us21|us_us|va|neut|acc|pl
-ocremorph.us_us22|us_us|ibvs|neut|abl|pl
-ocremorph.us_us22b|us_us|vbvs|neut|abl|pl
+ocremorph.us_us13|us_us|v|neuter|nominative|sg
+ocremorph.us_us14|us_us|vs|neuter|genitive|sg
+ocremorph.us_us15|us_us|v|neuter|dative|sg
+ocremorph.us_us16|us_us|v|neuter|accusative|sg
+ocremorph.us_us17|us_us|v|neuter|ablative|sg
+ocremorph.us_us18|us_us|va|neuter|nominative|pl
+ocremorph.us_us19|us_us|vvm|neuter|genitive|pl
+ocremorph.us_us20|us_us|ibvs|neuter|dative|pl
+ocremorph.us_us20b|us_us|vbvs|neuter|dative|pl
+ocremorph.us_us21|us_us|va|neuter|accusative|pl
+ocremorph.us_us22|us_us|ibvs|neuter|ablative|pl
+ocremorph.us_us22b|us_us|vbvs|neuter|ablative|pl
 
 
 
-ocremorph.us_us25|us_us|vs|fem|nominative|sg
-ocremorph.us_us26|us_us|vs|fem|gen|sg
-ocremorph.us_us27|us_us|vi|fem|dat|sg
-ocremorph.us_us27b|us_us|v|fem|dat|sg
-ocremorph.us_us28|us_us|vm|fem|acc|sg
-ocremorph.us_us29|us_us|v|fem|abl|sg
-ocremorph.us_us30|us_us|vs|fem|nominative|pl
-ocremorph.us_us31|us_us|vvm|fem|gen|pl
-ocremorph.us_us32|us_us|ibvs|fem|dat|pl
-ocremorph.us_us32b|us_us|vbvs|fem|dat|pl
-ocremorph.us_us33|us_us|vs|fem|acc|pl
-ocremorph.us_us34|us_us|ibvs|fem|abl|pl
-ocremorph.us_us34b|us_us|vbvs|fem|abl|pl
+ocremorph.us_us25|us_us|vs|feminine|nominative|sg
+ocremorph.us_us26|us_us|vs|feminine|genitive|sg
+ocremorph.us_us27|us_us|vi|feminine|dative|sg
+ocremorph.us_us27b|us_us|v|feminine|dative|sg
+ocremorph.us_us28|us_us|vm|feminine|accusative|sg
+ocremorph.us_us29|us_us|v|feminine|ablative|sg
+ocremorph.us_us30|us_us|vs|feminine|nominative|pl
+ocremorph.us_us31|us_us|vvm|feminine|genitive|pl
+ocremorph.us_us32|us_us|ibvs|feminine|dative|pl
+ocremorph.us_us32b|us_us|vbvs|feminine|dative|pl
+ocremorph.us_us33|us_us|vs|feminine|accusative|pl
+ocremorph.us_us34|us_us|ibvs|feminine|ablative|pl
+ocremorph.us_us34b|us_us|vbvs|feminine|ablative|pl

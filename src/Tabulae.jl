@@ -53,7 +53,7 @@ export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
-export NounIO, VerbIO, InfinitiveIO
+export NounIO, VerbIO, InfinitiveIO, ParticipleIO
 
 export TabulaeRule, inflectionType
 export TabulaeNounRule
@@ -94,6 +94,7 @@ include("properties/uninflected.jl")
 include("citable_forms/noun.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
+include("citable_forms/participle.jl")
 
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")

@@ -1,39 +1,39 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-ocremorph.us_eris1|us_eris|vs|neut|nominative|sg
-ocremorph.us_eris2|us_eris|eris|neut|gen|sg
-ocremorph.us_eris3|us_eris|eri|neut|dat|sg
-ocremorph.us_eris4|us_eris|vs|neut|acc|sg
-ocremorph.us_eris5|us_eris|ere|neut|abl|sg
-ocremorph.us_eris6|us_eris|era|neut|nominative|pl
-ocremorph.us_eris7|us_eris|ervm|neut|gen|pl
-ocremorph.us_eris8|us_eris|eribvs|neut|dat|pl
-ocremorph.us_eris9|us_eris|era|neut|acc|pl
-ocremorph.us_eris10|us_eris|eribvs|neut|abl|pl
+ocremorph.us_eris1|us_eris|vs|neuter|nominative|sg
+ocremorph.us_eris2|us_eris|eris|neuter|genitive|sg
+ocremorph.us_eris3|us_eris|eri|neuter|dative|sg
+ocremorph.us_eris4|us_eris|vs|neuter|accusative|sg
+ocremorph.us_eris5|us_eris|ere|neuter|ablative|sg
+ocremorph.us_eris6|us_eris|era|neuter|nominative|pl
+ocremorph.us_eris7|us_eris|ervm|neuter|genitive|pl
+ocremorph.us_eris8|us_eris|eribvs|neuter|dative|pl
+ocremorph.us_eris9|us_eris|era|neuter|accusative|pl
+ocremorph.us_eris10|us_eris|eribvs|neuter|ablative|pl
 
 
 
 
 ocremorph.us_eris1|us_eris|vs|masculine|nominative|sg
-ocremorph.us_eris2|us_eris|eris|masculine|gen|sg
-ocremorph.us_eris3|us_eris|eri|masculine|dat|sg
-ocremorph.us_eris4|us_eris|vs|masculine|acc|sg
-ocremorph.us_eris5|us_eris|ere|masculine|abl|sg
+ocremorph.us_eris2|us_eris|eris|masculine|genitive|sg
+ocremorph.us_eris3|us_eris|eri|masculine|dative|sg
+ocremorph.us_eris4|us_eris|vs|masculine|accusative|sg
+ocremorph.us_eris5|us_eris|ere|masculine|ablative|sg
 ocremorph.us_eris6|us_eris|era|masculine|nominative|pl
-ocremorph.us_eris7|us_eris|ervm|masculine|gen|pl
-ocremorph.us_eris8|us_eris|eribvs|masculine|dat|pl
-ocremorph.us_eris9|us_eris|era|masculine|acc|pl
-ocremorph.us_eris10|us_eris|eribvs|masculine|abl|pl
+ocremorph.us_eris7|us_eris|ervm|masculine|genitive|pl
+ocremorph.us_eris8|us_eris|eribvs|masculine|dative|pl
+ocremorph.us_eris9|us_eris|era|masculine|accusative|pl
+ocremorph.us_eris10|us_eris|eribvs|masculine|ablative|pl
 
 
 
-ocremorph.us_eris1|us_eris|vs|fem|nominative|sg
-ocremorph.us_eris2|us_eris|eris|fem|gen|sg
-ocremorph.us_eris3|us_eris|eri|fem|dat|sg
-ocremorph.us_eris4|us_eris|vs|fem|acc|sg
-ocremorph.us_eris5|us_eris|ere|fem|abl|sg
-ocremorph.us_eris6|us_eris|era|fem|nominative|pl
-ocremorph.us_eris7|us_eris|ervm|fem|gen|pl
-ocremorph.us_eris8|us_eris|eribvs|fem|dat|pl
-ocremorph.us_eris9|us_eris|era|fem|acc|pl
-ocremorph.us_eris10|us_eris|eribvs|fem|abl|pl
+ocremorph.us_eris1|us_eris|vs|feminine|nominative|sg
+ocremorph.us_eris2|us_eris|eris|feminine|genitive|sg
+ocremorph.us_eris3|us_eris|eri|feminine|dative|sg
+ocremorph.us_eris4|us_eris|vs|feminine|accusative|sg
+ocremorph.us_eris5|us_eris|ere|feminine|ablative|sg
+ocremorph.us_eris6|us_eris|era|feminine|nominative|pl
+ocremorph.us_eris7|us_eris|ervm|feminine|genitive|pl
+ocremorph.us_eris8|us_eris|eribvs|feminine|dative|pl
+ocremorph.us_eris9|us_eris|era|feminine|accusative|pl
+ocremorph.us_eris10|us_eris|eribvs|feminine|ablative|pl

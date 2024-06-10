@@ -48,12 +48,19 @@ For finite forms
 ```{julia}
 infinitiveruletext = "latcommon.are_inf1|conj1|are|present|active"
 using Tabulae
-infinio = InfinitiveIO("infin. io")
+infinio = InfinitiveIO("infinitive io")
 infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
 ```
 
 
 ## ParticipleRule
+
+```{julia}
+ptcplruletext = "latcommoninfl.are_conj1presapl2|conj1|antis|masculine|gen|singular|present|active"
+
+ptpclio = ParticipleIO("participle io")
+infinrule = Tabulae.readrulerow(ptpclio, ptcplruletext)
+```
 
 
 ## NounRule

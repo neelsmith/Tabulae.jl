@@ -1,26 +1,26 @@
 RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
 ocremorph.0_is1|0_is||masculine|nominative|sg
-ocremorph.0_is2|0_is|is|masculine|gen|sg
-ocremorph.0_is3|0_is|i|masculine|dat|sg
-ocremorph.0_is4|0_is|em|masculine|acc|sg
-ocremorph.0_is5|0_is|e|masculine|abl|sg
+ocremorph.0_is2|0_is|is|masculine|genitive|sg
+ocremorph.0_is3|0_is|i|masculine|dative|sg
+ocremorph.0_is4|0_is|em|masculine|accusative|sg
+ocremorph.0_is5|0_is|e|masculine|ablative|sg
 ocremorph.0_is6|0_is|es|masculine|nominative|pl
-ocremorph.0_is7|0_is|vm|masculine|gen|pl
-ocremorph.0_is8|0_is|ibus|masculine|dat|pl
-ocremorph.0_is9|0_is|es|masculine|acc|pl
-ocremorph.0_is10|0_is|ibus|masculine|abl|pl
+ocremorph.0_is7|0_is|vm|masculine|genitive|pl
+ocremorph.0_is8|0_is|ibus|masculine|dative|pl
+ocremorph.0_is9|0_is|es|masculine|accusative|pl
+ocremorph.0_is10|0_is|ibus|masculine|ablative|pl
 
 
 
 
-ocremorph.0_is1|0_is||neut|nominative|sg
-ocremorph.0_is2|0_is|is|neut|gen|sg
-ocremorph.0_is3|0_is|i|neut|dat|sg
-ocremorph.0_is4|0_is||neut|acc|sg
-ocremorph.0_is5|0_is|e|neut|abl|sg
-ocremorph.0_is6|0_is|a|neut|nominative|pl
-ocremorph.0_is7|0_is|vm|neut|gen|pl
-ocremorph.0_is8|0_is|ibus|neut|dat|pl
-ocremorph.0_is9|0_is|a|neut|acc|pl
-ocremorph.0_is10|0_is|ibus|neut|abl|pl
+ocremorph.0_is1|0_is||neuter|nominative|sg
+ocremorph.0_is2|0_is|is|neuter|genitive|sg
+ocremorph.0_is3|0_is|i|neuter|dative|sg
+ocremorph.0_is4|0_is||neuter|accusative|sg
+ocremorph.0_is5|0_is|e|neuter|ablative|sg
+ocremorph.0_is6|0_is|a|neuter|nominative|pl
+ocremorph.0_is7|0_is|vm|neuter|genitive|pl
+ocremorph.0_is8|0_is|ibus|neuter|dative|pl
+ocremorph.0_is9|0_is|a|neuter|accusative|pl
+ocremorph.0_is10|0_is|ibus|neuter|ablative|pl

@@ -2,7 +2,7 @@ StemUrn|LexicalEntity|Stem|Gender|InflClass
 
 ocremorph.n1212|ls.n1212|aeli|masculine|us_i
 ocremorph.n1639|ls.n1639|agripp|masculine|a_ae
-ocremorph.n1640|ls.n1640|agrippin|fem|a_ae
+ocremorph.n1640|ls.n1640|agrippin|feminine|a_ae
 ocremorph.n1808|ls.n1808|alexand|masculine|er_ri
 ocremorph.n2926|ls.n2926|antonin|masculine|us_i
 ocremorph.n2928|ls.n2928|antoni|masculine|us_i
@@ -20,7 +20,7 @@ ocremorph.n12504|ls.n12504|deci|masculine|us_i
 ocremorph.n14050|ls.n14050|diocletian|masculine|us_i
 ocremorph.n14702|ls.n14702|domitian|masculine|us_i
 ocremorph.n14808|ls.n14808|drvs|masculine|us_i
-ocremorph.n17816|ls.n17816|favstin|fem|a_ae
+ocremorph.n17816|ls.n17816|favstin|feminine|a_ae
 ocremorph.n18349|ls.n18349|flavi|masculine|us_i
 ocremorph.n18407|ls.n18407|flor|masculine|us_i
 ocremorph.n19207|ls.n19207|galb|masculine|a_ae
@@ -28,7 +28,7 @@ ocremorph.n19275|ls.n19275|gall|masculine|us_i
 ocremorph.n19758|ls.n19758|gordian|masculine|us_i
 ocremorph.n19899|ls.n19899|gratian|masculine|us_i
 ocremorph.n25335a|ls.n25335|ivli|masculine|us_i
-ocremorph.n25335b|ls.n25335|ivli|fem|a_ae
+ocremorph.n25335b|ls.n25335|ivli|feminine|a_ae
 ocremorph.licini|ls.n26556|licini|masculine|us_i
 ocremorph.persn40|ls.n27496|postvm|masculine|us_i
 ocremorph.persn42|ls.n28057|mari|masculine|us_i

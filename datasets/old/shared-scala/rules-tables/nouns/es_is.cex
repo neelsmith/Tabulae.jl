@@ -1,9 +1,9 @@
 RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
 latcommoninfl.es_is1|es_is|es|masculine|nominative|sg
-latcommoninfl.es_is2|es_is|is|masculine|gen|sg
-latcommoninfl.es_is2bis|es_is|i|masculine|gen|sg
-latcommoninfl.es_is3|es_is|i|masculine|dat|sg
-latcommoninfl.es_is4|es_is|em|masculine|acc|sg
-latcommoninfl.es_is5|es_is|e|masculine|abl|sg
+latcommoninfl.es_is2|es_is|is|masculine|genitive|sg
+latcommoninfl.es_is2bis|es_is|i|masculine|genitive|sg
+latcommoninfl.es_is3|es_is|i|masculine|dative|sg
+latcommoninfl.es_is4|es_is|em|masculine|accusative|sg
+latcommoninfl.es_is5|es_is|e|masculine|ablative|sg
 latcommoninfl.es_is6|es_is|es|masculine|nominative|pl

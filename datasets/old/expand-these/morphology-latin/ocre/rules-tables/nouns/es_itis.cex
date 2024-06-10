@@ -1,12 +1,12 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 livymorph.es_itis1|es_itis|es|masculine|nominative|sg
-livymorph.es_itis2|es_itis|itis|masculine|gen|sg
-livymorph.es_itis3|es_itis|iti|masculine|dat|sg
-livymorph.es_itis4|es_itis|item|masculine|acc|sg
-livymorph.es_itis5|es_itis|ite|masculine|abl|sg
+livymorph.es_itis2|es_itis|itis|masculine|genitive|sg
+livymorph.es_itis3|es_itis|iti|masculine|dative|sg
+livymorph.es_itis4|es_itis|item|masculine|accusative|sg
+livymorph.es_itis5|es_itis|ite|masculine|ablative|sg
 livymorph.es_itis6|es_itis|ites|masculine|nominative|pl
-livymorph.es_itis7|es_itis|itvm|masculine|gen|pl
-livymorph.es_itis8|es_itis|itibvs|masculine|dat|pl
-livymorph.es_itis9|es_itis|ites|masculine|acc|pl
-livymorph.es_itis10|es_itis|itibvs|masculine|abl|pl
+livymorph.es_itis7|es_itis|itvm|masculine|genitive|pl
+livymorph.es_itis8|es_itis|itibvs|masculine|dative|pl
+livymorph.es_itis9|es_itis|ites|masculine|accusative|pl
+livymorph.es_itis10|es_itis|itibvs|masculine|ablative|pl

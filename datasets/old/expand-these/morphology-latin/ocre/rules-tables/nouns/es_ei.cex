@@ -1,29 +1,29 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 livymorph.es_ei1|es_ei|es|masculine|nominative|sg
-livymorph.es_ei2|es_ei|ei|masculine|gen|sg
-livymorph.es_ei2b|es_ei|e|masculine|gen|sg
-livymorph.es_ei3|es_ei|ei|masculine|dat|sg
-livymorph.es_ei3b|es_ei|e|masculine|dat|sg
-livymorph.es_ei4|es_ei|em|masculine|acc|sg
-livymorph.es_ei5|es_ei|e|masculine|abl|sg
+livymorph.es_ei2|es_ei|ei|masculine|genitive|sg
+livymorph.es_ei2b|es_ei|e|masculine|genitive|sg
+livymorph.es_ei3|es_ei|ei|masculine|dative|sg
+livymorph.es_ei3b|es_ei|e|masculine|dative|sg
+livymorph.es_ei4|es_ei|em|masculine|accusative|sg
+livymorph.es_ei5|es_ei|e|masculine|ablative|sg
 livymorph.es_ei6|es_ei|es|masculine|nominative|pl
-livymorph.es_ei7|es_ei|ervm|masculine|gen|pl
-livymorph.es_ei8|es_ei|ebvs|masculine|dat|pl
-livymorph.es_ei9|es_ei|es|masculine|acc|pl
-livymorph.es_ei10|es_ei|ebvs|masculine|abl|pl
+livymorph.es_ei7|es_ei|ervm|masculine|genitive|pl
+livymorph.es_ei8|es_ei|ebvs|masculine|dative|pl
+livymorph.es_ei9|es_ei|es|masculine|accusative|pl
+livymorph.es_ei10|es_ei|ebvs|masculine|ablative|pl
 
 
 
-livymorph.es_ei1|es_ei|es|fem|nominative|sg
-livymorph.es_ei2|es_ei|ei|fem|gen|sg
-livymorph.es_ei2b|es_ei|e|fem|gen|sg
-livymorph.es_ei3|es_ei|ei|fem|dat|sg
-livymorph.es_ei3b|es_ei|e|fem|dat|sg
-livymorph.es_ei4|es_ei|em|fem|acc|sg
-livymorph.es_ei5|es_ei|e|fem|abl|sg
-livymorph.es_ei6|es_ei|es|fem|nominative|pl
-livymorph.es_ei7|es_ei|ervm|fem|gen|pl
-livymorph.es_ei8|es_ei|ebvs|fem|dat|pl
-livymorph.es_ei9|es_ei|es|fem|acc|pl
-livymorph.es_ei10|es_ei|ebvs|fem|abl|pl
+livymorph.es_ei1|es_ei|es|feminine|nominative|sg
+livymorph.es_ei2|es_ei|ei|feminine|genitive|sg
+livymorph.es_ei2b|es_ei|e|feminine|genitive|sg
+livymorph.es_ei3|es_ei|ei|feminine|dative|sg
+livymorph.es_ei3b|es_ei|e|feminine|dative|sg
+livymorph.es_ei4|es_ei|em|feminine|accusative|sg
+livymorph.es_ei5|es_ei|e|feminine|ablative|sg
+livymorph.es_ei6|es_ei|es|feminine|nominative|pl
+livymorph.es_ei7|es_ei|ervm|feminine|genitive|pl
+livymorph.es_ei8|es_ei|ebvs|feminine|dative|pl
+livymorph.es_ei9|es_ei|es|feminine|accusative|pl
+livymorph.es_ei10|es_ei|ebvs|feminine|ablative|pl

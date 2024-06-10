@@ -1,5 +1,5 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
 
-lat24morph.irregpron40248a|ls.n40248|cuiusque|masculine|gen|sg
-lat24morph.irregpron40248b|ls.n40248|cuiusque|fem|gen|sg
-lat24morph.irregpron40248c|ls.n40248|cuiusque|neut|gen|sg
+lat24morph.irregpron40248a|ls.n40248|cuiusque|masculine|genitive|sg
+lat24morph.irregpron40248b|ls.n40248|cuiusque|feminine|genitive|sg
+lat24morph.irregpron40248c|ls.n40248|cuiusque|neuter|genitive|sg

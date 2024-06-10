@@ -1,30 +1,30 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 ocremorph.is_is1|is_is|is|masculine|nominative|sg
-ocremorph.is_is2|is_is|is|masculine|gen|sg
-ocremorph.is_is3|is_is|i|masculine|dat|sg
-ocremorph.is_is4|is_is|em|masculine|acc|sg
-ocremorph.is_is5|is_is|e|masculine|abl|sg
-ocremorph.is_is5b|is_is|i|masculine|abl|sg
+ocremorph.is_is2|is_is|is|masculine|genitive|sg
+ocremorph.is_is3|is_is|i|masculine|dative|sg
+ocremorph.is_is4|is_is|em|masculine|accusative|sg
+ocremorph.is_is5|is_is|e|masculine|ablative|sg
+ocremorph.is_is5b|is_is|i|masculine|ablative|sg
 ocremorph.is_is6|is_is|es|masculine|nominative|pl
-ocremorph.is_is7|is_is|ivm|masculine|gen|pl
-ocremorph.is_is8|is_is|ibvs|masculine|dat|pl
-ocremorph.is_is9|is_is|es|masculine|acc|pl
-ocremorph.is_is9b|is_is|is|masculine|acc|pl
-ocremorph.is_is10|is_is|ibvs|masculine|abl|pl
+ocremorph.is_is7|is_is|ivm|masculine|genitive|pl
+ocremorph.is_is8|is_is|ibvs|masculine|dative|pl
+ocremorph.is_is9|is_is|es|masculine|accusative|pl
+ocremorph.is_is9b|is_is|is|masculine|accusative|pl
+ocremorph.is_is10|is_is|ibvs|masculine|ablative|pl
 
 
 
-ocremorph.is_is13|is_is|is|fem|nominative|sg
-ocremorph.is_is14|is_is|is|fem|gen|sg
-ocremorph.is_is15|is_is|i|fem|dat|sg
-ocremorph.is_is16|is_is|em|fem|acc|sg
-ocremorph.is_is16b|is_is|im|fem|acc|sg
-ocremorph.is_is17|is_is|e|fem|abl|sg
-ocremorph.is_is17b|is_is|i|fem|abl|sg
-ocremorph.is_is18|is_is|es|fem|nominative|pl
-ocremorph.is_is19|is_is|ivm|fem|gen|pl
-ocremorph.is_is20|is_is|ibvs|fem|dat|pl
-ocremorph.is_is21|is_is|es|fem|acc|pl
-ocremorph.is_is21b|is_is|is|fem|acc|pl
-ocremorph.is_is22|is_is|ibvs|fem|abl|pl
+ocremorph.is_is13|is_is|is|feminine|nominative|sg
+ocremorph.is_is14|is_is|is|feminine|genitive|sg
+ocremorph.is_is15|is_is|i|feminine|dative|sg
+ocremorph.is_is16|is_is|em|feminine|accusative|sg
+ocremorph.is_is16b|is_is|im|feminine|accusative|sg
+ocremorph.is_is17|is_is|e|feminine|ablative|sg
+ocremorph.is_is17b|is_is|i|feminine|ablative|sg
+ocremorph.is_is18|is_is|es|feminine|nominative|pl
+ocremorph.is_is19|is_is|ivm|feminine|genitive|pl
+ocremorph.is_is20|is_is|ibvs|feminine|dative|pl
+ocremorph.is_is21|is_is|es|feminine|accusative|pl
+ocremorph.is_is21b|is_is|is|feminine|accusative|pl
+ocremorph.is_is22|is_is|ibvs|feminine|ablative|pl

@@ -1,14 +1,14 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 latcommoninfl.eps_ipis1|eps_ipis|eps|masculine|nominative|sg
-latcommoninfl.eps_ipis2|eps_ipis|ipis|masculine|gen|sg
-latcommoninfl.eps_ipis3|eps_ipis|ipi|masculine|dat|sg
-latcommoninfl.eps_ipis4|eps_ipis|ipem|masculine|acc|sg
-latcommoninfl.eps_ipis5|eps_ipis|ipe|masculine|abl|sg
+latcommoninfl.eps_ipis2|eps_ipis|ipis|masculine|genitive|sg
+latcommoninfl.eps_ipis3|eps_ipis|ipi|masculine|dative|sg
+latcommoninfl.eps_ipis4|eps_ipis|ipem|masculine|accusative|sg
+latcommoninfl.eps_ipis5|eps_ipis|ipe|masculine|ablative|sg
 latcommoninfl.eps_ipis6|eps_ipis|ipes|masculine|nominative|pl
-latcommoninfl.eps_ipis7|eps_ipis|ipium|masculine|gen|pl
-latcommoninfl.eps_ipis8|eps_ipis|ipibus|masculine|dat|pl
-latcommoninfl.eps_ipis9|eps_ipis|ipes|masculine|acc|pl
-latcommoninfl.eps_ipis10|eps_ipis|ipibus|masculine|abl|pl
+latcommoninfl.eps_ipis7|eps_ipis|ipium|masculine|genitive|pl
+latcommoninfl.eps_ipis8|eps_ipis|ipibus|masculine|dative|pl
+latcommoninfl.eps_ipis9|eps_ipis|ipes|masculine|accusative|pl
+latcommoninfl.eps_ipis10|eps_ipis|ipibus|masculine|ablative|pl
 latcommoninfl.eps_ipis11|eps_ipis|eps|masculine|voc|sg
 latcommoninfl.eps_ipis12|eps_ipis|ipes|masculine|voc|pl

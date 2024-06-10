@@ -1,36 +1,36 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number|Degree
 
 ocremorph.us_a_umpos1|us_a_um_pos|vs|masculine|nominative|singular|pos
-ocremorph.us_a_umpos2|us_a_um_pos|i|masculine|gen|singular|pos
-ocremorph.us_a_umpos3|us_a_um_pos|o|masculine|dat|singular|pos
-ocremorph.us_a_umpos4|us_a_um_pos|vm|masculine|acc|singular|pos
-ocremorph.us_a_umpos5|us_a_um_pos|o|masculine|abl|singular|pos
+ocremorph.us_a_umpos2|us_a_um_pos|i|masculine|genitive|singular|pos
+ocremorph.us_a_umpos3|us_a_um_pos|o|masculine|dative|singular|pos
+ocremorph.us_a_umpos4|us_a_um_pos|vm|masculine|accusative|singular|pos
+ocremorph.us_a_umpos5|us_a_um_pos|o|masculine|ablative|singular|pos
 ocremorph.us_a_umpos6|us_a_um_pos|i|masculine|nominative|pl|pos
-ocremorph.us_a_umpos7|us_a_um_pos|orvm|masculine|gen|pl|pos
-ocremorph.us_a_umpos8|us_a_um_pos|is|masculine|dat|pl|pos
-ocremorph.us_a_umpos9|us_a_um_pos|os|masculine|acc|pl|pos
-ocremorph.us_a_umpos10|us_a_um_pos|is|masculine|abl|pl|pos
+ocremorph.us_a_umpos7|us_a_um_pos|orvm|masculine|genitive|pl|pos
+ocremorph.us_a_umpos8|us_a_um_pos|is|masculine|dative|pl|pos
+ocremorph.us_a_umpos9|us_a_um_pos|os|masculine|accusative|pl|pos
+ocremorph.us_a_umpos10|us_a_um_pos|is|masculine|ablative|pl|pos
 
 
-ocremorph.us_a_umpos37|us_a_um_pos|a|fem|nominative|singular|pos
-ocremorph.us_a_umpos38|us_a_um_pos|ae|fem|gen|singular|pos
-ocremorph.us_a_umpos39|us_a_um_pos|ae|fem|dat|singular|pos
-ocremorph.us_a_umpos40|us_a_um_pos|am|fem|acc|singular|pos
-ocremorph.us_a_umpos41|us_a_um_pos|a|fem|abl|singular|pos
-ocremorph.us_a_umpos42|us_a_um_pos|ae|fem|nominative|pl|pos
-ocremorph.us_a_umpos43|us_a_um_pos|arvm|fem|gen|pl|pos
-ocremorph.us_a_umpos44|us_a_um_pos|is|fem|dat|pl|pos
-ocremorph.us_a_umpos45|us_a_um_pos|as|fem|acc|pl|pos
-ocremorph.us_a_umpos46|us_a_um_pos|is|fem|abl|pl|pos
+ocremorph.us_a_umpos37|us_a_um_pos|a|feminine|nominative|singular|pos
+ocremorph.us_a_umpos38|us_a_um_pos|ae|feminine|genitive|singular|pos
+ocremorph.us_a_umpos39|us_a_um_pos|ae|feminine|dative|singular|pos
+ocremorph.us_a_umpos40|us_a_um_pos|am|feminine|accusative|singular|pos
+ocremorph.us_a_umpos41|us_a_um_pos|a|feminine|ablative|singular|pos
+ocremorph.us_a_umpos42|us_a_um_pos|ae|feminine|nominative|pl|pos
+ocremorph.us_a_umpos43|us_a_um_pos|arvm|feminine|genitive|pl|pos
+ocremorph.us_a_umpos44|us_a_um_pos|is|feminine|dative|pl|pos
+ocremorph.us_a_umpos45|us_a_um_pos|as|feminine|accusative|pl|pos
+ocremorph.us_a_umpos46|us_a_um_pos|is|feminine|ablative|pl|pos
 
 
-ocremorph.us_a_umpos75|us_a_um_pos|uv|neut|nominative|singular|pos
-ocremorph.us_a_umpos76|us_a_um_pos|i|neut|gen|singular|pos
-ocremorph.us_a_umpos77|us_a_um_pos|o|neut|dat|singular|pos
-ocremorph.us_a_umpos78|us_a_um_pos|vm|neut|acc|singular|pos
-ocremorph.us_a_umpos79|us_a_um_pos|o|neut|abl|singular|pos
-ocremorph.us_a_umpos80|us_a_um_pos|a|neut|nominative|pl|pos
-ocremorph.us_a_umpos81|us_a_um_pos|orvm|neut|gen|pl|pos
-ocremorph.us_a_umpos82|us_a_um_pos|is|neut|dat|pl|pos
-ocremorph.us_a_umpos83|us_a_um_pos|a|neut|acc|pl|pos
-ocremorph.us_a_umpos84|us_a_um_pos|is|neut|abl|pl|pos
+ocremorph.us_a_umpos75|us_a_um_pos|uv|neuter|nominative|singular|pos
+ocremorph.us_a_umpos76|us_a_um_pos|i|neuter|genitive|singular|pos
+ocremorph.us_a_umpos77|us_a_um_pos|o|neuter|dative|singular|pos
+ocremorph.us_a_umpos78|us_a_um_pos|vm|neuter|accusative|singular|pos
+ocremorph.us_a_umpos79|us_a_um_pos|o|neuter|ablative|singular|pos
+ocremorph.us_a_umpos80|us_a_um_pos|a|neuter|nominative|pl|pos
+ocremorph.us_a_umpos81|us_a_um_pos|orvm|neuter|genitive|pl|pos
+ocremorph.us_a_umpos82|us_a_um_pos|is|neuter|dative|pl|pos
+ocremorph.us_a_umpos83|us_a_um_pos|a|neuter|accusative|pl|pos
+ocremorph.us_a_umpos84|us_a_um_pos|is|neuter|ablative|pl|pos

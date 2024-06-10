@@ -1,30 +1,30 @@
 RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
 latcommoninfl.s_nis1|s_nis|s|masculine|nominative|sg
-latcommoninfl.s_nis2|s_nis|nis|masculine|gen|sg
-latcommoninfl.s_nis3|s_nis|ni|masculine|dat|sg
-latcommoninfl.s_nis4|s_nis|nem|masculine|acc|sg
-latcommoninfl.s_nis5|s_nis|ne|masculine|abl|sg
+latcommoninfl.s_nis2|s_nis|nis|masculine|genitive|sg
+latcommoninfl.s_nis3|s_nis|ni|masculine|dative|sg
+latcommoninfl.s_nis4|s_nis|nem|masculine|accusative|sg
+latcommoninfl.s_nis5|s_nis|ne|masculine|ablative|sg
 latcommoninfl.s_nis6|s_nis|nes|masculine|nominative|pl
-latcommoninfl.s_nis7|s_nis|num|masculine|gen|pl
-latcommoninfl.s_nis8|s_nis|nibus|masculine|dat|pl
-latcommoninfl.s_nis9|s_nis|nes|masculine|acc|pl
-latcommoninfl.s_nis10|s_nis|nibus|masculine|abl|pl
+latcommoninfl.s_nis7|s_nis|num|masculine|genitive|pl
+latcommoninfl.s_nis8|s_nis|nibus|masculine|dative|pl
+latcommoninfl.s_nis9|s_nis|nes|masculine|accusative|pl
+latcommoninfl.s_nis10|s_nis|nibus|masculine|ablative|pl
 latcommoninfl.s_nis11|s_nis|s|masculine|voc|sg
 latcommoninfl.s_nis12|s_nis|nes|masculine|voc|pl
 
 
 
 
-latcommoninfl.s_nis1f|s_nis|s|fem|nominative|sg
-latcommoninfl.s_nis2f|s_nis|nis|fem|gen|sg
-latcommoninfl.s_nis3f|s_nis|ni|fem|dat|sg
-latcommoninfl.s_nis4f|s_nis|nem|fem|acc|sg
-latcommoninfl.s_nis5f|s_nis|ne|fem|abl|sg
-latcommoninfl.s_nis6f|s_nis|nes|fem|nominative|pl
-latcommoninfl.s_nis7f|s_nis|num|fem|gen|pl
-latcommoninfl.s_nis8f|s_nis|nibus|fem|dat|pl
-latcommoninfl.s_nis9f|s_nis|nes|fem|acc|pl
-latcommoninfl.s_nis10f|s_nis|nibus|fem|abl|pl
-latcommoninfl.s_nis11f|s_nis|s|fem|voc|sg
-latcommoninfl.s_nis12f|s_nis|nes|fem|voc|pl
+latcommoninfl.s_nis1f|s_nis|s|feminine|nominative|sg
+latcommoninfl.s_nis2f|s_nis|nis|feminine|genitive|sg
+latcommoninfl.s_nis3f|s_nis|ni|feminine|dative|sg
+latcommoninfl.s_nis4f|s_nis|nem|feminine|accusative|sg
+latcommoninfl.s_nis5f|s_nis|ne|feminine|ablative|sg
+latcommoninfl.s_nis6f|s_nis|nes|feminine|nominative|pl
+latcommoninfl.s_nis7f|s_nis|num|feminine|genitive|pl
+latcommoninfl.s_nis8f|s_nis|nibus|feminine|dative|pl
+latcommoninfl.s_nis9f|s_nis|nes|feminine|accusative|pl
+latcommoninfl.s_nis10f|s_nis|nibus|feminine|ablative|pl
+latcommoninfl.s_nis11f|s_nis|s|feminine|voc|sg
+latcommoninfl.s_nis12f|s_nis|nes|feminine|voc|pl

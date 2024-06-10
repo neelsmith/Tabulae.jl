@@ -1,30 +1,30 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 ocremorph.s_is1|s_is|s|masculine|nominative|sg
-ocremorph.s_is2|s_is|is|masculine|gen|sg
-ocremorph.s_is3|s_is|i|masculine|dat|sg
-ocremorph.s_is4|s_is|em|masculine|acc|sg
-ocremorph.s_is5|s_is|e|masculine|abl|sg
-ocremorph.s_is5b|s_is|i|masculine|abl|sg
+ocremorph.s_is2|s_is|is|masculine|genitive|sg
+ocremorph.s_is3|s_is|i|masculine|dative|sg
+ocremorph.s_is4|s_is|em|masculine|accusative|sg
+ocremorph.s_is5|s_is|e|masculine|ablative|sg
+ocremorph.s_is5b|s_is|i|masculine|ablative|sg
 ocremorph.s_is6|s_is|es|masculine|nominative|pl
-ocremorph.s_is7|s_is|ivm|masculine|gen|pl
-ocremorph.s_is8|s_is|ibvs|masculine|dat|pl
-ocremorph.s_is9|s_is|es|masculine|acc|pl
-ocremorph.s_is9b|s_is|is|masculine|acc|pl
-ocremorph.s_is10|s_is|ibvs|masculine|abl|pl
+ocremorph.s_is7|s_is|ivm|masculine|genitive|pl
+ocremorph.s_is8|s_is|ibvs|masculine|dative|pl
+ocremorph.s_is9|s_is|es|masculine|accusative|pl
+ocremorph.s_is9b|s_is|is|masculine|accusative|pl
+ocremorph.s_is10|s_is|ibvs|masculine|ablative|pl
 
 
 
-ocremorph.s_is13|s_is|s|fem|nominative|sg
-ocremorph.s_is14|s_is|is|fem|gen|sg
-ocremorph.s_is15|s_is|i|fem|dat|sg
-ocremorph.s_is16|s_is|em|fem|acc|sg
-ocremorph.s_is16b|s_is|im|fem|acc|sg
-ocremorph.s_is17|s_is|e|fem|abl|sg
-ocremorph.s_is17b|s_is|i|fem|abl|sg
-ocremorph.s_is18|s_is|es|fem|nominative|pl
-ocremorph.s_is19|s_is|ivm|fem|gen|pl
-ocremorph.s_is20|s_is|ibvs|fem|dat|pl
-ocremorph.s_is21|s_is|es|fem|acc|pl
-ocremorph.s_is21b|s_is|is|fem|acc|pl
-ocremorph.s_is22|s_is|ibvs|fem|abl|pl
+ocremorph.s_is13|s_is|s|feminine|nominative|sg
+ocremorph.s_is14|s_is|is|feminine|genitive|sg
+ocremorph.s_is15|s_is|i|feminine|dative|sg
+ocremorph.s_is16|s_is|em|feminine|accusative|sg
+ocremorph.s_is16b|s_is|im|feminine|accusative|sg
+ocremorph.s_is17|s_is|e|feminine|ablative|sg
+ocremorph.s_is17b|s_is|i|feminine|ablative|sg
+ocremorph.s_is18|s_is|es|feminine|nominative|pl
+ocremorph.s_is19|s_is|ivm|feminine|genitive|pl
+ocremorph.s_is20|s_is|ibvs|feminine|dative|pl
+ocremorph.s_is21|s_is|es|feminine|accusative|pl
+ocremorph.s_is21b|s_is|is|feminine|accusative|pl
+ocremorph.s_is22|s_is|ibvs|feminine|ablative|pl

@@ -1,25 +1,25 @@
 RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
 ocremorph.o_inis1|o_inis|o|masculine|nominative|sg
-ocremorph.o_inis2|o_inis|inis|masculine|gen|sg
-ocremorph.o_inis3|o_inis|ini|masculine|dat|sg
-ocremorph.o_inis4|o_inis|inem|masculine|acc|sg
-ocremorph.o_inis5|o_inis|ine|masculine|abl|sg
+ocremorph.o_inis2|o_inis|inis|masculine|genitive|sg
+ocremorph.o_inis3|o_inis|ini|masculine|dative|sg
+ocremorph.o_inis4|o_inis|inem|masculine|accusative|sg
+ocremorph.o_inis5|o_inis|ine|masculine|ablative|sg
 ocremorph.o_inis6|o_inis|ines|masculine|nominative|pl
-ocremorph.o_inis7|o_inis|invm|masculine|gen|pl
-ocremorph.o_inis8|o_inis|inibvs|masculine|dat|pl
-ocremorph.o_inis9|o_inis|ines|masculine|acc|pl
-ocremorph.o_inis10|o_inis|inibvs|masculine|abl|pl
+ocremorph.o_inis7|o_inis|invm|masculine|genitive|pl
+ocremorph.o_inis8|o_inis|inibvs|masculine|dative|pl
+ocremorph.o_inis9|o_inis|ines|masculine|accusative|pl
+ocremorph.o_inis10|o_inis|inibvs|masculine|ablative|pl
 
 
 
-ocremorph.o_inis13|o_inis|o|fem|nominative|sg
-ocremorph.o_inis14|o_inis|inis|fem|gen|sg
-ocremorph.o_inis15|o_inis|ini|fem|dat|sg
-ocremorph.o_inis16|o_inis|inem|fem|acc|sg
-ocremorph.o_inis17|o_inis|ine|fem|abl|sg
-ocremorph.o_inis18|o_inis|ines|fem|nominative|pl
-ocremorph.o_inis19|o_inis|invm|fem|gen|pl
-ocremorph.o_inis20|o_inis|inibvs|fem|dat|pl
-ocremorph.o_inis21|o_inis|ines|fem|acc|pl
-ocremorph.o_inis22|o_inis|inibvs|fem|abl|pl
+ocremorph.o_inis13|o_inis|o|feminine|nominative|sg
+ocremorph.o_inis14|o_inis|inis|feminine|genitive|sg
+ocremorph.o_inis15|o_inis|ini|feminine|dative|sg
+ocremorph.o_inis16|o_inis|inem|feminine|accusative|sg
+ocremorph.o_inis17|o_inis|ine|feminine|ablative|sg
+ocremorph.o_inis18|o_inis|ines|feminine|nominative|pl
+ocremorph.o_inis19|o_inis|invm|feminine|genitive|pl
+ocremorph.o_inis20|o_inis|inibvs|feminine|dative|pl
+ocremorph.o_inis21|o_inis|ines|feminine|accusative|pl
+ocremorph.o_inis22|o_inis|inibvs|feminine|ablative|pl

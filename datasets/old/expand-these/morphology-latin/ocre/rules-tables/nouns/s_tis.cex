@@ -1,39 +1,39 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 ocremorph.stis1|s_tis|s|masculine|nominative|sg
-ocremorph.stis2|s_tis|tis|masculine|gen|sg
-ocremorph.stis3|s_tis|ti|masculine|dat|sg
-ocremorph.stis4|s_tis|tem|masculine|acc|sg
-ocremorph.stis5|s_tis|te|masculine|abl|sg
+ocremorph.stis2|s_tis|tis|masculine|genitive|sg
+ocremorph.stis3|s_tis|ti|masculine|dative|sg
+ocremorph.stis4|s_tis|tem|masculine|accusative|sg
+ocremorph.stis5|s_tis|te|masculine|ablative|sg
 ocremorph.stis6|s_tis|tes|masculine|nominative|pl
-ocremorph.stis7|s_tis|tivm|masculine|gen|pl
-ocremorph.stis8|s_tis|tibvs|masculine|dat|pl
-ocremorph.stis9|s_tis|tes|masculine|acc|pl
-ocremorph.stis9b|s_tis|tis|masculine|acc|pl
-ocremorph.stis10|s_tis|tibvs|masculine|abl|pl
+ocremorph.stis7|s_tis|tivm|masculine|genitive|pl
+ocremorph.stis8|s_tis|tibvs|masculine|dative|pl
+ocremorph.stis9|s_tis|tes|masculine|accusative|pl
+ocremorph.stis9b|s_tis|tis|masculine|accusative|pl
+ocremorph.stis10|s_tis|tibvs|masculine|ablative|pl
 
 
 
-ocremorph.stis13|s_tis|s|fem|nominative|sg
-ocremorph.stis14|s_tis|tis|fem|gen|sg
-ocremorph.stis15|s_tis|ti|fem|dat|sg
-ocremorph.stis16|s_tis|tem|fem|acc|sg
-ocremorph.stis17|s_tis|te|fem|abl|sg
-ocremorph.stis18|s_tis|tes|fem|nominative|pl
-ocremorph.stis19|s_tis|tivm|fem|gen|pl
-ocremorph.stis20|s_tis|tibvs|fem|dat|pl
-ocremorph.stis21|s_tis|tes|fem|acc|pl
-ocremorph.stis21b|s_tis|tis|fem|acc|pl
-ocremorph.stis22|s_tis|tibvs|fem|abl|pl
+ocremorph.stis13|s_tis|s|feminine|nominative|sg
+ocremorph.stis14|s_tis|tis|feminine|genitive|sg
+ocremorph.stis15|s_tis|ti|feminine|dative|sg
+ocremorph.stis16|s_tis|tem|feminine|accusative|sg
+ocremorph.stis17|s_tis|te|feminine|ablative|sg
+ocremorph.stis18|s_tis|tes|feminine|nominative|pl
+ocremorph.stis19|s_tis|tivm|feminine|genitive|pl
+ocremorph.stis20|s_tis|tibvs|feminine|dative|pl
+ocremorph.stis21|s_tis|tes|feminine|accusative|pl
+ocremorph.stis21b|s_tis|tis|feminine|accusative|pl
+ocremorph.stis22|s_tis|tibvs|feminine|ablative|pl
 
 
 
-ocremorph.stis25|s_tis|s|neut|nominative|sg
-ocremorph.stis26|s_tis|tis|neut|gen|sg
-ocremorph.stis27|s_tis|ti|neut|dat|sg
-ocremorph.stis28|s_tis|s|neut|acc|sg
-ocremorph.stis29|s_tis|te|neut|abl|sg
-ocremorph.stis30|s_tis|tia|neut|nominative|pl
-ocremorph.stis31|s_tis|tivm|neut|gen|pl
-ocremorph.stis32|s_tis|tibvs|neut|dat|pl
-ocremorph.stis33|s_tis|tia|neut|acc|pl
-ocremorph.stis34|s_tis|tibvs|neut|abl|pl
+ocremorph.stis25|s_tis|s|neuter|nominative|sg
+ocremorph.stis26|s_tis|tis|neuter|genitive|sg
+ocremorph.stis27|s_tis|ti|neuter|dative|sg
+ocremorph.stis28|s_tis|s|neuter|accusative|sg
+ocremorph.stis29|s_tis|te|neuter|ablative|sg
+ocremorph.stis30|s_tis|tia|neuter|nominative|pl
+ocremorph.stis31|s_tis|tivm|neuter|genitive|pl
+ocremorph.stis32|s_tis|tibvs|neuter|dative|pl
+ocremorph.stis33|s_tis|tia|neuter|accusative|pl
+ocremorph.stis34|s_tis|tibvs|neuter|ablative|pl

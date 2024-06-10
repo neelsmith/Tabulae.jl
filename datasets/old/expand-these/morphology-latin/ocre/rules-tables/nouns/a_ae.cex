@@ -1,25 +1,25 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-ocremorph.a_ae1|a_ae|a|fem|nominative|sg
-ocremorph.a_ae2|a_ae|ae|fem|gen|sg
-ocremorph.a_ae3|a_ae|ae|fem|dat|sg
-ocremorph.a_ae4|a_ae|am|fem|acc|sg
-ocremorph.a_ae5|a_ae|a|fem|abl|sg
-ocremorph.a_ae6|a_ae|ae|fem|nominative|pl
-ocremorph.a_ae7|a_ae|arvm|fem|gen|pl
-ocremorph.a_ae8|a_ae|is|fem|dat|pl
-ocremorph.a_ae9|a_ae|as|fem|acc|pl
-ocremorph.a_ae10|a_ae|is|fem|abl|pl
+ocremorph.a_ae1|a_ae|a|feminine|nominative|sg
+ocremorph.a_ae2|a_ae|ae|feminine|genitive|sg
+ocremorph.a_ae3|a_ae|ae|feminine|dative|sg
+ocremorph.a_ae4|a_ae|am|feminine|accusative|sg
+ocremorph.a_ae5|a_ae|a|feminine|ablative|sg
+ocremorph.a_ae6|a_ae|ae|feminine|nominative|pl
+ocremorph.a_ae7|a_ae|arvm|feminine|genitive|pl
+ocremorph.a_ae8|a_ae|is|feminine|dative|pl
+ocremorph.a_ae9|a_ae|as|feminine|accusative|pl
+ocremorph.a_ae10|a_ae|is|feminine|ablative|pl
 
 
 
 ocremorph.a_ae1|a_ae|a|masculine|nominative|sg
-ocremorph.a_ae2|a_ae|ae|masculine|gen|sg
-ocremorph.a_ae3|a_ae|ae|masculine|dat|sg
-ocremorph.a_ae4|a_ae|am|masculine|acc|sg
-ocremorph.a_ae5|a_ae|a|masculine|abl|sg
+ocremorph.a_ae2|a_ae|ae|masculine|genitive|sg
+ocremorph.a_ae3|a_ae|ae|masculine|dative|sg
+ocremorph.a_ae4|a_ae|am|masculine|accusative|sg
+ocremorph.a_ae5|a_ae|a|masculine|ablative|sg
 ocremorph.a_ae6|a_ae|ae|masculine|nominative|pl
-ocremorph.a_ae7|a_ae|arvm|masculine|gen|pl
-ocremorph.a_ae8|a_ae|is|masculine|dat|pl
-ocremorph.a_ae9|a_ae|as|masculine|acc|pl
-ocremorph.a_ae10|a_ae|is|masculine|abl|pl
+ocremorph.a_ae7|a_ae|arvm|masculine|genitive|pl
+ocremorph.a_ae8|a_ae|is|masculine|dative|pl
+ocremorph.a_ae9|a_ae|as|masculine|accusative|pl
+ocremorph.a_ae10|a_ae|is|masculine|ablative|pl

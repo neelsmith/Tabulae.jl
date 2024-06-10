@@ -1,30 +1,30 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 ocremorph.ex_icis1|ex_icis|ex|masculine|nominative|sg
-ocremorph.ex_icis2|ex_icis|icis|masculine|gen|sg
-ocremorph.ex_icis3|ex_icis|ici|masculine|dat|sg
-ocremorph.ex_icis4|ex_icis|icem|masculine|acc|sg
-ocremorph.ex_icis5|ex_icis|ice|masculine|abl|sg
-ocremorph.ex_icis5b|ex_icis|ici|masculine|abl|sg
+ocremorph.ex_icis2|ex_icis|icis|masculine|genitive|sg
+ocremorph.ex_icis3|ex_icis|ici|masculine|dative|sg
+ocremorph.ex_icis4|ex_icis|icem|masculine|accusative|sg
+ocremorph.ex_icis5|ex_icis|ice|masculine|ablative|sg
+ocremorph.ex_icis5b|ex_icis|ici|masculine|ablative|sg
 ocremorph.ex_icis6|ex_icis|ices|masculine|nominative|pl
-ocremorph.ex_icis7|ex_icis|icivm|masculine|gen|pl
-ocremorph.ex_icis8|ex_icis|icibvs|masculine|dat|pl
-ocremorph.ex_icis9|ex_icis|ices|masculine|acc|pl
-ocremorph.ex_icis9b|ex_icis|icis|masculine|acc|pl
-ocremorph.ex_icis10|ex_icis|icibvs|masculine|abl|pl
+ocremorph.ex_icis7|ex_icis|icivm|masculine|genitive|pl
+ocremorph.ex_icis8|ex_icis|icibvs|masculine|dative|pl
+ocremorph.ex_icis9|ex_icis|ices|masculine|accusative|pl
+ocremorph.ex_icis9b|ex_icis|icis|masculine|accusative|pl
+ocremorph.ex_icis10|ex_icis|icibvs|masculine|ablative|pl
 
 
 
-ocremorph.ex_icis13|ex_icis|ex|fem|nominative|sg
-ocremorph.ex_icis14|ex_icis|icis|fem|gen|sg
-ocremorph.ex_icis15|ex_icis|ici|fem|dat|sg
-ocremorph.ex_icis16|ex_icis|icem|fem|acc|sg
-ocremorph.ex_icis16b|ex_icis|icim|fem|acc|sg
-ocremorph.ex_icis17|ex_icis|ice|fem|abl|sg
-ocremorph.ex_icis17b|ex_icis|ici|fem|abl|sg
-ocremorph.ex_icis18|ex_icis|ices|fem|nominative|pl
-ocremorph.ex_icis19|ex_icis|icivm|fem|gen|pl
-ocremorph.ex_icis20|ex_icis|icibvs|fem|dat|pl
-ocremorph.ex_icis21|ex_icis|ices|fem|acc|pl
-ocremorph.ex_icis21b|ex_icis|icis|fem|acc|pl
-ocremorph.ex_icis22|ex_icis|icibvs|fem|abl|pl
+ocremorph.ex_icis13|ex_icis|ex|feminine|nominative|sg
+ocremorph.ex_icis14|ex_icis|icis|feminine|genitive|sg
+ocremorph.ex_icis15|ex_icis|ici|feminine|dative|sg
+ocremorph.ex_icis16|ex_icis|icem|feminine|accusative|sg
+ocremorph.ex_icis16b|ex_icis|icim|feminine|accusative|sg
+ocremorph.ex_icis17|ex_icis|ice|feminine|ablative|sg
+ocremorph.ex_icis17b|ex_icis|ici|feminine|ablative|sg
+ocremorph.ex_icis18|ex_icis|ices|feminine|nominative|pl
+ocremorph.ex_icis19|ex_icis|icivm|feminine|genitive|pl
+ocremorph.ex_icis20|ex_icis|icibvs|feminine|dative|pl
+ocremorph.ex_icis21|ex_icis|ices|feminine|accusative|pl
+ocremorph.ex_icis21b|ex_icis|icis|feminine|accusative|pl
+ocremorph.ex_icis22|ex_icis|icibvs|feminine|ablative|pl

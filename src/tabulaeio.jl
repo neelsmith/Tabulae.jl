@@ -63,6 +63,15 @@ end
 
 
 
+"""
+TabulaeIO type for reading and writing data for participle rules only.
+
+$(SIGNATURES)
+
+"""
+struct ParticipleIO <: TabulaeIO
+    label::AbstractString
+end
 
 """
 Required function for TabulaeIO subtypes.

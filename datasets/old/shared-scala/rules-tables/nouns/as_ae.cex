@@ -1,9 +1,9 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
 latcommoninfl.as_ae1|as_ae|as|masculine|nominative|sg
-latcommoninfl.as_ae2|as_ae|ae|masculine|gen|sg
-latcommoninfl.as_ae3|as_ae|ae|masculine|dat|sg
-latcommoninfl.as_ae4|as_ae|am|masculine|acc|sg
-latcommoninfl.as_ae4b|as_ae|an|masculine|acc|sg
-latcommoninfl.as_ae5|as_ae|a|masculine|abl|sg
+latcommoninfl.as_ae2|as_ae|ae|masculine|genitive|sg
+latcommoninfl.as_ae3|as_ae|ae|masculine|dative|sg
+latcommoninfl.as_ae4|as_ae|am|masculine|accusative|sg
+latcommoninfl.as_ae4b|as_ae|an|masculine|accusative|sg
+latcommoninfl.as_ae5|as_ae|a|masculine|ablative|sg
 latcommoninfl.as_ae6|as_ae|a|masculine|voc|sg
