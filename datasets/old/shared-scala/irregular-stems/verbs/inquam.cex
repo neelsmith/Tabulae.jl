@@ -1,19 +1,19 @@
 StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-latcommon.irregverbn23674a|ls.n23674|inquam|1st|singular|pres|indic|act
-latcommon.irregverbn23674b|ls.n23674|inquis|2nd|singular|pres|indic|act
-latcommon.irregverbn23674c|ls.n23674|inquit|3rd|singular|pres|indic|act
-latcommon.irregverbn23674d|ls.n23674|inquimus|1st|pl|pres|indic|act
-latcommon.irregverbn23674e|ls.n23674|inquitis|2nd|pl|pres|indic|act
-latcommon.irregverbn23674f|ls.n23674|inquiunt|3rd|pl|pres|indic|act
+latcommon.irregverbn23674a|ls.n23674|inquam|1st|singular|present|indic|active
+latcommon.irregverbn23674b|ls.n23674|inquis|2nd|singular|present|indic|active
+latcommon.irregverbn23674c|ls.n23674|inquit|3rd|singular|present|indic|active
+latcommon.irregverbn23674d|ls.n23674|inquimus|1st|pl|present|indic|active
+latcommon.irregverbn23674e|ls.n23674|inquitis|2nd|pl|present|indic|active
+latcommon.irregverbn23674f|ls.n23674|inquiunt|3rd|pl|present|indic|active
 
-latcommon.irregverbn23674g|ls.n23674|inquiebat|3rd|singular|impft|indic|act
+latcommon.irregverbn23674g|ls.n23674|inquiebat|3rd|singular|impft|indic|active
 
-latcommon.irregverbn23674h|ls.n23674|inquies|2nd|singular|fut|indic|act
-latcommon.irregverbn23674i|ls.n23674|inquiet|3rd|singular|fut|indic|act
+latcommon.irregverbn23674h|ls.n23674|inquies|2nd|singular|fut|indic|active
+latcommon.irregverbn23674i|ls.n23674|inquiet|3rd|singular|fut|indic|active
 
-latcommon.irregverbn23674j|ls.n23674|inquii|1st|singular|perfect|indic|act
-latcommon.irregverbn23674k|ls.n23674|inquisti|2nd|singular|perfect|indic|act
+latcommon.irregverbn23674j|ls.n23674|inquii|1st|singular|perfect|indic|active
+latcommon.irregverbn23674k|ls.n23674|inquisti|2nd|singular|perfect|indic|active
 
-latcommon.irregverbn23674l|ls.n23674|inque|2nd|singular|pres|imptv|act
-latcommon.irregverbn23674m|ls.n23674|inquito|2nd|singular|fut|imptv|act
+latcommon.irregverbn23674l|ls.n23674|inque|2nd|singular|present|imptv|active
+latcommon.irregverbn23674m|ls.n23674|inquito|2nd|singular|fut|imptv|active

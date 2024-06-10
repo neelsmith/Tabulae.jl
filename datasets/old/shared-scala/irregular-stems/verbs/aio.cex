@@ -1,20 +1,20 @@
 StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-latcommon.irrverbn1659a|ls.n1659|aio|1st|singular|pres|indic|act
-latcommon.irrverbn1659b|ls.n1659|ais|second|singular|pres|indic|act
-latcommon.irrverbn1659c|ls.n1659|ait|3rd|singular|pres|indic|act
-latcommon.irrverbn1659d|ls.n1659|aiunt|3rd|pl|pres|indic|act
+latcommon.irrverbn1659a|ls.n1659|aio|1st|singular|present|indic|active
+latcommon.irrverbn1659b|ls.n1659|ais|second|singular|present|indic|active
+latcommon.irrverbn1659c|ls.n1659|ait|3rd|singular|present|indic|active
+latcommon.irrverbn1659d|ls.n1659|aiunt|3rd|pl|present|indic|active
 
 
-latcommon.irrverbn16593e|ls.n1659|aias|2nd|singular|pres|subj|act
-latcommon.irrverbn1659f|ls.n1659|aiat|3rd|singular|pres|subj|act
-latcommon.irrverbn1659g|ls.n1659|aiant|3rd|pl|pres|subj|act
+latcommon.irrverbn16593e|ls.n1659|aias|2nd|singular|present|subj|active
+latcommon.irrverbn1659f|ls.n1659|aiat|3rd|singular|present|subj|active
+latcommon.irrverbn1659g|ls.n1659|aiant|3rd|pl|present|subj|active
 
 
 
-latcommon.irrverbn1659h|ls.n1659|aiebam|1st|singular|pres|impft|act
-latcommon.irrverbn1659i|ls.n1659|aiebas|2nd|singular|pres|impft|act
-latcommon.irrverbn1659j|ls.n1659|aiebat|3rd|singular|pres|impft|act
-latcommon.irrverbn1659k|ls.n1659|aiebamus|1st|pl|pres|impft|act
-latcommon.irrverbn1659l|ls.n1659|aiebatis|2nd|pl|pres|impft|act
-latcommon.irrverbn1659m|ls.n1659|aiebant|3rd|pl|pres|impft|act
+latcommon.irrverbn1659h|ls.n1659|aiebam|1st|singular|present|impft|active
+latcommon.irrverbn1659i|ls.n1659|aiebas|2nd|singular|present|impft|active
+latcommon.irrverbn1659j|ls.n1659|aiebat|3rd|singular|present|impft|active
+latcommon.irrverbn1659k|ls.n1659|aiebamus|1st|pl|present|impft|active
+latcommon.irrverbn1659l|ls.n1659|aiebatis|2nd|pl|present|impft|active
+latcommon.irrverbn1659m|ls.n1659|aiebant|3rd|pl|present|impft|active
