@@ -1,0 +1,53 @@
+---
+title: Tutorials
+---
+
+Use these introductory tutorials to get started with `Tabulae.jl`.
+
+## Prerequisites
+
+You’ll need to [install Julia](https://julialang.org/downloads/) before you can use Tabulae.
+
+::: {.callout-important title="Note: tutorial data sets"}
+All code examples in these tutorials use the data sets in the [`datasets` directory](https://github.com/neelsmith/Tabulae.jl/tree/main/datasets) of the Tabulae github repository. Code examples assume that the path to the Tabulae github repository is in the variable `repo`.
+:::
+
+## Quickest start
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: false
+repo = pwd() |> dirname |> dirname
+```
+
+
+Build a Tabulae dataset from a directory of local files:
+
+```{julia}
+#| output: false
+#| warning: false
+using Tabulae, CitableParserBuilder
+srcdir = joinpath(repo, "datasets", "core-infl-shared") 
+tds = dataset([srcdir])
+
+```
+
+
+Compile a parser from the dataset, and parse Latin tokens:
+
+
+
+```{julia}
+#| warning: false
+parser = tabulaeStringParser(tds)
+parses = parsetoken("animo", parser)
+```
+
+Extract the morphological forms from the parses, and label them:
+
+```{julia}
+parses .|> latinForm .|> label
+```
+

@@ -1,52 +1,74 @@
 """A parser parsing tokens by looking them up in a precomputed dictionary of all recognized forms."""
-struct StringParser <: TabulaeParser
+struct TabulaeStringParser <: AbstractStringParser
     entries
+    ortho::LatinOrthographicSystem
+    delimiter::AbstractString
+
+    TabulaeStringParser(
+        entries, #::Vector{AbstractString}, 
+        ortho::LatinOrthographicSystem = latin24(), delim::AbstractString = "|") = new(entries, ortho, delim)
+end
+
+#function tofile(p::TabulaeStringParser, outfile)
+#    CitableParserBuilder.tofile(stringParser(p), outfile)
+#end
+
+function stringParser(p::TabulaeStringParser)
+    StringParser(p.entries, p.ortho, p.delimiter)
+end
+
+function datasource(p::TabulaeStringParser)
+    p.entries
+end
+
+
+function delimiter(p::TabulaeStringParser)
+    p.delimiter
+end
+
+
+function orthography(p::TabulaeStringParser)
+    p.ortho
 end
 
 """Write entries to file.
 $(SIGNATURES)
 """
-function tofile(p::StringParser, f)
+function tofile(p::TabulaeStringParser, f)
     open(f, "w") do io
         write(f, join(p.entries,"\n"))
     end
 end
 
-"""Parse a single token using `parser`.
+"""Instantiate a `TabulaeStringParser` for `td`.
 $(SIGNATURES)
 """
-function parsetoken(s::AbstractString, parser::StringParser; data = nothing)
-    ptrn = s * "|"
-    matches = filter(ln -> startswith(ln, ptrn), parser.entries)
-    map(ln -> fromline(ln), matches)
-end
-
-"""Instantiate a `StringParser` for `td`.
-$(SIGNATURES)
-"""
-function stringParser(td::Tabulae.Dataset)
-    #analysis_lines(td) |> StringParser
+function tabulaeStringParser(td::Tabulae.Dataset)
+    #analysis_lines(td) |> TabulaeStringParser
 
     analyses = []
     rules = rulesarray(td)
     for stem in stemsarray(td)
         append!(analyses, buildparseable(stem, rules))
     end
-    analyses
+    analyses |> TabulaeStringParser
 end
 
-"""Instantiate a `StringParser` from a set of analyses read from a local file.
+"""Instantiate a `TabulaeStringParser` from a set of analyses read from a local file.
 $(SIGNATURES)
 """
-function stringParser(f, freader::Type{FileReader})
-    StringParser(readlines(f))
+function tabulaeStringParser(f, freader::Type{FileReader})
+    TabulaeStringParser(readlines(f))
 end
 
-"""Instantiate a `StringParser` from a set of analyses read from a URL.
+"""Instantiate a `TabulaeStringParser` from a set of analyses read from a URL.
 $(SIGNATURES)
 """
-function stringParser(u, ureader::Type{UrlReader})
-    Downloads.download(u) |> readlines |> StringParser
+function tabulaeStringParser(u, ureader::Type{UrlReader})
+    tmpfile = Downloads.download(u) 
+    sp = readlines(tmpfile) |> TabulaeStringParser
+    rm(tmpfile)
+    sp
 end
 
 """Serialize a single analysis to delimited text.
@@ -77,7 +99,7 @@ function analysis_lines(td::Tabulae.Dataset)
     analyses(td) |> analysis_lines
 end
 
-
+#=
 """Create an `Analysis` from line of delimited text.
 $(SIGNATURES)
 """
@@ -91,21 +113,56 @@ function fromline(s::AbstractString; delimiter = "|")
         RuleUrn(pieces[5])
     )
 end
-
+=#
 
 
 """Generate all forms possible for `stem`.
 $(SIGNATURES)
 """
-function buildparseable(stem::Stem,  rules::Vector{Rule}) where {T <: LatinMorphologicalForm}
+function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}) 
+    generated = []        
+    classrules = filter(rules) do r
+        inflectionType(r) == inflectionType(stem) &&
+        lmpGender(r) == lmpGender(stem)
+    end
+    @info("$(stem) matches rules $(classrules)")
+    for rule in classrules
+        token = string(stemvalue(stem), ending(rule))
+        
+        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+
+    end
+    generated
+end
+
+
+function buildparseable(stem::Stem,  rules::Vector{Rule})
     generated = []        
     classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
     #@info("$(stem) matches rules $(classrules)")
     for rule in classrules
         token = string(stemvalue(stem), ending(rule))
         
-        push!(generated, string(token, "|", lexeme(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
 
     end
     generated
 end
+
+
+
+#=
+
+function buildparseable(stem::Stem,  rules::Vector{Rule})
+    generated = []        
+    classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
+    #@info("$(stem) matches rules $(classrules)")
+    for rule in classrules
+        token = string(stemvalue(stem), ending(rule))
+        
+        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+
+    end
+    generated
+end
+=#

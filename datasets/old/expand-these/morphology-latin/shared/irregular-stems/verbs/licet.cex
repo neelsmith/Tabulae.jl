@@ -1,0 +1,12 @@
+StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
+
+latcommon.irrvadn26547|ls.n26547|licet|3rd|singular|present|indic|active
+livymorph.irrvlicet9|ls.n26547|licebat|3rd|singular|impft|indic|active
+livymorph.irrvlicet15|ls.n26547|licebit|3rd|singular|future|indic|active
+livymorph.irrvlicet21|ls.n26547|licuit|3rd|singular|perfect|indic|active
+latcommon.irrvadn265473|ls.n26547|licuerat|3rd|singular|plupft|indic|active
+livymorph.irrvlicet45|ls.n26547|licuerit|3rd|singular|futpft|indic|active
+livymorph.irrvlicet57|ls.n26547|liceat|3rd|singular|present|subj|active
+livymorph.irrvlicet63|ls.n26547|liceret|3rd|singular|impft|subj|active
+livymorph.irrvlicet69|ls.n26547|licuerit|3rd|singular|perfect|subj|active
+livymorph.irrvlicet81|ls.n26547|licuisset|3rd|singular|plupft|subj|active

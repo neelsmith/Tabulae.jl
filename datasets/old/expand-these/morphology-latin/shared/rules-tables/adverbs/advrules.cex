@@ -1,0 +1,13 @@
+RuleUrn#InflectionClasses#Ending#Degree
+latcommoninfl.advinfl_us_a_um1#us_a_um#e#pos
+latcommoninfl.advinfl_us_a_um2#us_a_um#ius#pos
+latcommoninfl.advinfl_us_a_um3#us_a_um#issime#pos
+
+latcommoninfl.advinfl_ex_icis1#ex_icis#iciter#pos
+latcommoninfl.advinfl_ex_icis2#ex_icis#icius#pos
+latcommoninfl.advinfl_ex_icis3#ex_icis#icissime#pos
+
+latcommoninfl.advinfl_0_is1#0_is#iter#pos
+latcommoninfl.advinfl_0_is1#is_e#iter#pos
+
+latcommoninfl.advinfl_x_cis1#x_cis#citer#pos

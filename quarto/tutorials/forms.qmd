@@ -1,0 +1,130 @@
+
+# Working with analyzed forms
+
+```{julia}
+#| echo: false
+#| output: false
+#repo  = pwd()
+repo = pwd() |> dirname |> dirname
+
+```
+
+
+::: {.callout-tip collapse="true" title="Follow along"}
+
+To replicate all the steps in this tutorial:
+
+- [install Julia](https://julialang.org/downloads/) if you haven't already done so
+- download or clone the [Tabulae.jl repository](https://github.com/neelsmith/Tabulae.jl)
+- start a Julia REPL
+- assign to the variable `repo` the path to the cloned repository
+:::
+
+Start by repeating the steps from the [introductory tutorial](./parser.qmd) to compile a parser, and assign it to variable named `parser`:
+
+```{julia}
+#| code-fold: true
+#| code-summary: Compile a parser
+#| warning: false
+#| output: false
+using Tabulae
+
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+
+parser = dataset([shareddir, lat25dir]) |> tabulaeStringParser
+```
+
+
+## Analyses and forms
+
+When we parse at token, the result is a Vector of analyses, where each analysis assocates the token with four identifiers (as you can see in the parser output). If the form is unambiguous, the Vector will have only one element:
+
+```{julia}
+parses1 = parsetoken("amabatur", parser)
+```
+
+If the form is morphologically ambiguous, the results will include an analysis for each possibility.
+
+
+```{julia}
+parses2 = parsetoken("agricolae", parser)
+```
+
+
+
+
+
+## Looking at forms
+
+Use the `latinForm` function to construct a `LatinMorphologicalForm` from the identifier in the analysis. If you just want to display a readable label, you can apply the `label` function to any `LatinMorphologicalForm`.
+
+```{julia}
+parses1[1]  |> latinForm |> label
+```
+
+
+## Morphological forms and properties
+
+`LatinMorphologicalForm` is an abstract type, so the `latinForm` function actually creates an object belonging to a subtype of `LatinMorphologicalForm`.  The following cell, for example creates a `LMFNoun` from one of the results for our second parse. 
+
+
+```{julia}
+nounexample = parses2[1]  |> latinForm
+```
+
+
+
+
+You can see that a noun form has properties of type `LMPGender`, `LMPCase` and `LMPNumber`.
+
+The first token we parsed, however, is a `LMFFiniteVerb`, and has properties for `LMPPerson`, `LMPNumber`, `LMPTense`, `LMPMood` and `LMPVoice`.
+
+```{julia}
+verbexample = parses1[1]  |> latinForm
+```
+
+
+
+
+
+We can get at any property with a function having a parallel name with leading lower-case `lmp`. The result will belong to a subtype of the abstract `LatinMorphologicalProperty`.
+
+```{julia}
+lmpCase(nounexample)
+```
+
+The `label` function also works on `LatinMorphologicalProperty` objects.
+```{julia}
+lmpCase(nounexample) |> label
+```
+
+```{julia}
+lmpTense(verbexample) |> label
+```
+
+You can use the same `label` function to construct a value for a morphological property from a string.
+
+```{julia}
+lmpTense("perfect")
+```
+
+
+We can take advantage of this in normal Julia operations on collections of analyses. For instance, we could separate out all the *plural* analyses for the token *agricolae*:
+
+```{julia}
+plurals = filter(parse -> lmpNumber(latinForm(parse)) == lmpNumber("plural"), parses2)
+```
+
+
+
+```{julia}
+plurals .|> latinForm .|> label
+```
+
+
+::: {.callout-note title="⚠️ TBA"}
+Note that subtypes of `LatinMorphologicalForm* are *not* a traditional "part of speech." Rather, they are *analytical types*. Verbs have distinct analytical types for finite, infinitive and participle forms, for example.
+
+☛ Add contrasting example here with infinitive or other non-finite form of verb.
+:::

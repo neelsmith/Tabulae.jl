@@ -1,0 +1,38 @@
+---
+title: "Working with morphological properties"
+---
+
+```{julia}
+#| output: false
+#| echo: false
+using Tabulae
+```
+
+
+:::{.callout-tip}
+See the reference section for a list of all morphological properties in Tabulae.
+:::
+
+
+## Constructing objects for morphological properties
+
+Values for morphological properties are expressed with types that have names beginning with `LMP` (for "Latin Morphological Property").  Each type has a corresponding function beginning with lowercase `lmp` that can construct an instance of the type from either a numeric code or a string value.
+
+```{julia}
+nom = lmpCase("nominative")
+typeof(nom)
+```
+
+```{julia}
+lmpCase("nominative") == lmpCase(1)
+```
+
+For each morphological type, you can use the `code` and `label` functions to find its underlying numeric code and an English label.
+
+```{julia}
+code(nom)
+```
+
+```{julia}
+label(nom)
+```

@@ -1,10 +1,10 @@
 abstract type TabulaeStem <: Stem end
 
 
-"""Find lexeme recorded in `stem`.
+"""Find lexeme identifier recorded in `stem`.
 $(SIGNATURES)
 """
-function lexeme(stem::T) where {T <: TabulaeStem}
+function lexemeurn(stem::T) where {T <: TabulaeStem}
     @warn "Function lexeme not implemented for stems of type $(typeof(stem))."
     nothing
 end

@@ -1,0 +1,17 @@
+RuleUrn#InflectionClasses#Ending#Gender#Case#Number
+
+latcommoninfl.x_ctis13#x_ctis#x#fem#nom#sg
+latcommoninfl.x_ctis14#x_ctis#ctis#fem#gen#sg
+latcommoninfl.x_ctis15#x_ctis#cti#fem#dat#sg
+latcommoninfl.x_ctis16#x_ctis#ctem#fem#acc#sg
+latcommoninfl.x_ctis16b#x_ctis#ctim#fem#acc#sg
+latcommoninfl.x_ctis17#x_ctis#cte#fem#abl#sg
+latcommoninfl.x_ctis17b#x_ctis#cti#fem#abl#sg
+latcommoninfl.x_ctis18#x_ctis#ctes#fem#nom#pl
+latcommoninfl.x_ctis19#x_ctis#ctium#fem#gen#pl
+latcommoninfl.x_ctis20#x_ctis#ctibus#fem#dat#pl
+latcommoninfl.x_ctis21#x_ctis#ctes#fem#acc#pl
+latcommoninfl.x_ctis21b#x_ctis#ctis#fem#acc#pl
+latcommoninfl.x_ctis22#x_ctis#ctibus#fem#abl#pl
+latcommoninfl.x_ctis23#x_ctis#x#fem#voc#sg
+latcommoninfl.x_ctis24#x_ctis#ctes#fem#voc#pl

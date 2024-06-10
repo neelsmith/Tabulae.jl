@@ -1,0 +1,12 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+ocremorph.er_ri1|er_ri|er|masculine|nominative|sg
+ocremorph.er_ri2|er_ri|ri|masculine|genitive|sg
+ocremorph.er_ri3|er_ri|ro|masculine|dative|sg
+ocremorph.er_ri4|er_ri|rvm|masculine|accusative|sg
+ocremorph.er_ri|er_ri|ro|masculine|ablative|sg
+ocremorph.er_ri6|er_ri|ri|masculine|nominative|pl
+ocremorph.er_ri7|er_ri|rorvm|masculine|genitive|pl
+ocremorph.er_ri8|er_ri|ris|masculine|dative|pl
+ocremorph.er_ri9|er_ri|ros|masculine|accusative|pl
+ocremorph.er_ri10|er_ri|ris|masculine|ablative|pl

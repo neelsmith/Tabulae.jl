@@ -1,0 +1,53 @@
+# Editing a dataset
+
+::: {.callout-caution title="Page TBA"}
+Contents incomplete
+:::
+
+## Outline of notes to include
+
+### File layout
+
+- Datasets are local files in delimited text format
+
+The file system has directories for rules, stems, and a URN registry. Each has subdirectories, like this example:
+
+
+```
+        ├── rules-tables
+        │   ├── nouns
+        │   └── verbs
+dataset ├── stems-tables
+        │   ├── nouns
+        │   └── verbs-simplex
+        └── urnregistry
+            ├── lexemes
+            ├── rules
+            └── stems
+```
+
+In this example, we'll add new vocabulary entries in the stems section for a noun and for a verb.
+
+::: {.callout-tip title="For more information"}
+See a complete list of possible directories in a Tabulae files dataset, see [the reference section](../reference/file_layout.qmd) of this site.
+:::
+
+
+
+
+### File format
+
+- delimited text, with configurable delimiter
+- column structure depends on type of information included
+- required header
+- empty lines allowed
+
+Example of noun file:
+
+```
+StemUrn|LexicalEntity|Stem|Gender|InflClass
+latcommon.noun1626|ls.n1626|agricol|masculine|a_ae
+```
+
+- Note use of abbreviated URNs
+- English expression of this: "This stem entry, identified as `latcommon.noun1626`, is from the lexical entity `ls.n1626`. The string to use as its stem is `agricol`, and it is a masculine noun belonging to the inflectional class `a_ae`."

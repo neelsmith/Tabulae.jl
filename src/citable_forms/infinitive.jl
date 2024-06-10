@@ -8,6 +8,14 @@ end
 CitableTrait(::Type{LMFInfinitive}) = CitableByCite2Urn()
 
 
+function lmpTense(inf::LMFInfinitive)
+    inf.tense
+end
+
+function lmpVoice(inf::LMFInfinitive)
+    inf.voice
+end
+
 """Compose a label for a `LMFInfinitive`.
 
 $(SIGNATURES)

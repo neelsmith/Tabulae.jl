@@ -1,4 +1,4 @@
-@testset "Test utilities for building a StringParser" begin
+@testset "Test utilities for building a TabulaeStringParser" begin
 
     a = Analysis("donum", LexemeUrn("ls.n14736"), FormUrn("forms.2010003100"), StemUrn("latcommon.nounn14736"), RuleUrn("nouninfl.us_i13"))
     expected = "donum|ls.n14736|forms.2010003100|latcommon.nounn14736|nouninfl.us_i13"
@@ -17,21 +17,21 @@
     @test alist isa Vector{Analysis}
 
     u = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/dev/test/samplecex/analyses.cex"
-    parser1 = stringParser(u, UrlReader)
-    @test parser1 isa StringParser
+    parser1 = tabulaeStringParser(u, UrlReader)
+    @test parser1 isa TabulaeStringParser
 
     f = joinpath(pwd(), "samplecex", "analyses.cex")
-    parser2 = stringParser(f, FileReader)
-    @test parser2 isa StringParser
+    parser2 = tabulaeStringParser(f, FileReader)
+    @test parser2 isa TabulaeStringParser
     @test length(parser1.entries) == length(parser2.entries)
 end
 
-@testset "Test StringParser against core data set" begin
+@testset "Test TabulaeStringParser against core data set" begin
     repo = dirname(pwd())
     common = joinpath(repo, "datasets", "core-infl-shared") 
     lat25 = joinpath(repo, "datasets", "core-infl-lat25") 
     tds = dataset([common, lat25])
-    parser = stringParser(tds) 
+    parser = tabulaeStringParser(tds) 
 
-    #@test parsetoken("amo",p) |> CitableParserBuilder.tokens    
+    #   @test parsetoken("amo",p) # |> CitableParserBuilder.tokens    
 end

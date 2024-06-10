@@ -1,0 +1,121 @@
+project:
+  type: website
+jupyter: julia-1.10  
+theme: spacelab
+execute:
+  freeze: auto
+date: last-modified  
+margin-header: "Package version: `0.10.0`"
+
+format:
+  html: 
+    toc: true
+
+
+website:
+  title: "tabulae"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Tutorials"
+        file: tutorials/index.qmd          
+      - text: "Concepts"
+        file: concepts/index.qmd   
+      - text: "Guides"
+        file: guides/index.qmd           
+      - text: "Reference"
+        file: reference/index.qmd  
+      - text: "Appendices"
+        file: appendices/index.qmd         
+    right:   
+      - icon: github
+        href: https://github.com/neelsmith/Tabulae.jl
+        aria-label: GitHub
+      - icon: person-circle
+        menu:
+          - text: "About me"
+            href: https://neelsmith.quarto.pub
+          - text: "More of my digital scholarship"
+            href: https://neelsmith.quarto.pub/digschol/
+        aria-label: "More of my work"
+        
+  sidebar:
+    - title: "Tutorials"
+      contents: 
+        - tutorials/index.qmd
+        - tutorials/parser.qmd
+        - tutorials/forms.qmd
+        - tutorials/save-load.qmd
+        - tutorials/editing.qmd
+        - tutorials/utils.qmd
+        - tutorials/generating.qmd
+        
+    - title: "Appendices"
+      contents: 
+        - appendices/index.qmd
+        - text: "---"
+        - appendices/nouns-1st.qmd
+        - appendices/nouns-2nd.qmd
+        - appendices/nouns-3rd.qmd                
+        - appendices/nouns-4th.qmd                
+        - appendices/nouns-5th.qmd                
+        - text: "---"
+        - appendices/verbs-1st.qmd                
+        - appendices/verbs-2nd.qmd                
+        - appendices/verbs-3rd.qmd                
+        - appendices/verbs-3rd-io.qmd                
+        - appendices/verbs-4th.qmd                
+
+        
+    - title: "Guides"
+      contents:
+        - guides/index.qmd
+        - guides/properties-guide.qmd
+        - guides/forms-guide.qmd
+        - guides/urns.qmd
+        - guides/serializing-rules.qmd
+        
+    - title: "Reference"
+      contents: 
+        - reference/index.qmd
+        - text: "---"        
+        - text: "API documentation:"
+        - reference/properties.qmd
+        - reference/analytical_types.qmd  
+        - reference/ruletypes.qmd
+        - reference/stemtypes.qmd
+        - text: "---"
+        - text: "Tabulae datasets:"
+        - reference/file_layout.qmd
+        - reference/urnregistries.qmd
+        - text: "---"
+        - text: "Stems:"        
+        - reference/fileformat-verbs.qmd
+        - reference/fileformat-others.qmd
+        - reference/fileformat-irregulars.qmd        
+        - reference/inflclasses.qmd
+        - text: "---"
+        - text: "Rules:"           
+        - reference/fileformat-verbrules.qmd
+        - reference/fileformat-otherrules.qmd
+
+
+
+    - title: "Concepts"
+      contents: 
+        - concepts/index.qmd
+        - concepts/analysis.qmd
+        - concepts/datasets.qmd
+
+
+        
+
+    - title: "Home"
+      contents:
+        - index.qmd               
+ 
+
+           

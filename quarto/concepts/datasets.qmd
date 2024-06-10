@@ -1,0 +1,32 @@
+---
+title: Organization of datasets
+---
+
+:::{.callout-warning}
+These notes are highly incomplete
+:::
+
+A dataset is a set of delimited-text files in an explicitly defined orthography. 
+
+- stems tables
+- rules tables
+
+The file layout follows a set of conventions. (See reference section for full definition.)
+
+Read by IO objects
+
+
+## IO
+
+```{julia}
+#| output: false
+#| echo: false
+
+using Tabulae
+```
+
+```{julia}
+rdr = Tabulae.NounIO("noun")
+rcrd = "latcommon.noun1626|ls.n1626|agricol|masculine|a_ae"
+nounstem = Tabulae.readstemrow(rdr,rcrd)
+```

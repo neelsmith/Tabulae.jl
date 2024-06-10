@@ -1,0 +1,15 @@
+StemUrn|LexicalEntity|String|Gender|Case|Number
+
+lat25morph.irregn51113a|ls.n51113|vis|feminine|nominative|sg
+lat25morph.irregn51113b|ls.n51113|vis|feminine|genitive|sg
+lat25morph.irregn51113c|ls.n51113|vi|feminine|dative|sg
+lat25morph.irregn51113d|ls.n51113|vim|feminine|accusative|sg
+lat25morph.irregn51113e|ls.n51113|vi|feminine|ablative|sg
+lat25morph.irregn51113f|ls.n51113|vis|feminine|vocative|sg
+lat25morph.irregn51113g|ls.n51113|vires|feminine|nominative|pl
+lat25morph.irregn51113h|ls.n51113|virium|feminine|genitive|pl
+lat25morph.irregn51113i|ls.n51113|viribus|feminine|dative|pl
+lat25morph.irregn51113j|ls.n51113|vires|feminine|accusative|pl
+lat25morph.irregn51113k|ls.n51113|viris|feminine|accusative|pl
+lat25morph.irregn51113l|ls.n51113|viribus|feminine|ablative|pl
+lat25morph.irregn51113m|ls.n51113|vires|feminine|vocative|pl

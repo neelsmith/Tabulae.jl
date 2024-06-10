@@ -1,0 +1,8 @@
+# Delimited file format: irregular forms
+
+::: {.callout-caution title="TBA"}
+Documentation of file format for forms with irregular inflection will be here.
+:::
+
+- requires full specification of analysis
+- this implies format will be specific to analytical type

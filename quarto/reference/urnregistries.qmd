@@ -1,0 +1,7 @@
+# The URN registry
+
+
+
+::: {.callout-caution title="Contents TBA"}
+Documentation for the `urnregistry` section of a Tabulae files dataset will be added here.
+:::

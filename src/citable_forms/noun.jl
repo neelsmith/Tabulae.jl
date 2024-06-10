@@ -59,8 +59,7 @@ end
 $(SIGNATURES)
 """
 function urn(noun::LMFNoun)
-    # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, NOUN,"0",code(noun.nnumber),"000",code(noun.ngender),code(noun.ncase),"00"))
+    Cite2Urn(code(noun))
 end
 
 """Create a `GMFNoun` from a string value.
@@ -106,7 +105,8 @@ end
 $(SIGNATURES)
 """
 function code(noun::LMFNoun)
-    urn(noun) |> objectcomponent
+     # PosPNTMVGCDCat
+     string(BASE_MORPHOLOGY_URN, NOUN,"0",code(noun.nnumber),"000",code(noun.ngender),code(noun.ncase),"00")
 end
 
 
@@ -154,7 +154,7 @@ function nounanalyses(td::Tabulae.Dataset)::Vector{Analysis}
        
         # THEN generate for those forms
         for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())
-            generated = generate(f, lexeme(nounstem), td)
+            generated = generate(lexemeurn(nounstem), f,  td)
             for g in generated
                 push!(formlist, g)
             end

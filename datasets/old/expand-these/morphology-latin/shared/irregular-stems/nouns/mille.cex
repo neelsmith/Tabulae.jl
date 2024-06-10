@@ -1,0 +1,16 @@
+StemUrn|LexicalEntity|String|Gender|Case|Number
+
+latcommon.irregn29060a|ls.n29060|mille|neuter|nominative|sg
+latcommon.irregn29060b|ls.n29060|mille|neuter|genitive|sg
+latcommon.irregn29060c|ls.n29060|mille|neuter|dative|sg
+latcommon.irregn29060d|ls.n29060|mille|neuter|accusative|sg
+latcommon.irregn29060e|ls.n29060|mille|neuter|ablative|sg
+latcommon.irregn29060f|ls.n29060|mille|neuter|vocative|sg
+
+
+latcommon.irregn29060a|ls.n29060|milia|neuter|nominative|pl
+
+latcommon.irregn29060c|ls.n29060|milibus|neuter|dative|pl
+latcommon.irregn29060d|ls.n29060|milia|neuter|accusative|pl
+latcommon.irregn29060e|ls.n29060|milibus|neuter|ablative|pl
+latcommon.irregn29060f|ls.n29060|milia|neuter|vocative|pl

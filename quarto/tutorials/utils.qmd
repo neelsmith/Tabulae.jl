@@ -1,0 +1,69 @@
+# Formatting utilities
+
+```{julia}
+#| echo: false
+#| output: false
+#repo  = pwd()
+repo = pwd() |> dirname |> dirname
+```
+
+
+Tabulae includes utilities for formatting traditional paradigms in Markdown.
+
+You can create paradigms from a lexeme and a Tabulae data set.
+
+::: {.callout-note}
+The current version of Tabulae does not yet support generating paradigms from a lexeme + a parser, but that option is planned for a subsequent release.
+:::
+
+
+ With a variable `repo`, we create a Tabulae dataset from sources in the project github repository's `datasets` directory.
+
+
+```{julia}
+#| warning: false
+#| output: false
+using Tabulae, CitableParserBuilder
+
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+ds = dataset([shareddir, lat25dir])
+```
+
+
+
+
+## Noun declensions
+
+::: {.callout-tip title="Displaying Markdown"}
+All the formatting functions documented here return strings of Markdown text. The code snippets use the `Markdown.parse` method to return a `Markdown.MD` object that quarto documentation formats appropriately. This works in other contexts such as Pluto notebooks and the Julia REPL.
+:::
+
+Format a paradigm for a single noun:
+
+
+```{julia}
+#| asis: true
+using Markdown
+animus = LexemeUrn("ls.n2636")
+md_declension(animus, ds) |> Markdown.parse
+```
+
+Format a paradigm for a  list of nouns; optionally, include a list of headings to use for the column for each noun.
+
+
+```{julia}
+agricola = LexemeUrn("ls.n1626")
+md_declension([agricola, animus], ds; headings = ["1st decl.", "2nd decl."]) |> Markdown.parse
+```
+
+
+## Verb conjugations
+
+Format a verb paradigm in the indicative and subjunctive of a single tense for both active and passive voices.
+
+```{julia}
+amo = LexemeUrn("ls.n2280")
+impft = lmpTense("imperfect")
+md_tenseconjugation(impft, amo, ds) |> Markdown.parse
+```

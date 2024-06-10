@@ -1,0 +1,24 @@
+# Second-declension nouns
+
+
+
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+repo = pwd() |> dirname |> dirname
+
+using Tabulae, CitableParserBuilder, Markdown
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+ds = dataset([shareddir, lat25dir])
+```
+
+```{julia}
+#| echo: false
+#| asis: true
+animus = LexemeUrn("ls.n2636")
+donum = LexemeUrn("ls.n14736")
+md_declension([animus, donum], ds; headings = ["animus (*m*)", "donum (*n*)"]) |> Markdown.parse
+```

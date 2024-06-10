@@ -13,6 +13,43 @@ end
 #RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
+function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, v::LMFFiniteVerb)
+    TabulaeFiniteVerbRule(id, infltype, ending,
+    lmpPerson(v), lmpNumber(v), lmpTense(v), 
+    lmpMood(v), lmpVoice(v)
+    )
+end
+
+
+
+function lmfPerson(v::TabulaeFiniteVerbRule)
+    v.vperson
+end
+
+function lmfPerson(v::TabulaeFiniteVerbRule)
+    v.vperson
+end
+
+function lmfNumber(v::TabulaeFiniteVerbRule)
+    v.vnumber
+end
+
+function lmfTense(v::TabulaeFiniteVerbRule)
+    v.vtense
+end
+
+function lmfMoode(v::TabulaeFiniteVerbRule)
+    v.vmood
+end
+
+function lmfVoice(v::TabulaeFiniteVerbRule)
+    v.vvoice
+end
+
+function id(r::TabulaeFiniteVerbRule)
+    r.ruleid
+end
+
 """Create a `LMFFiniteVerb` from `rule`.
 $(SIGNATURES)
 """
@@ -67,7 +104,7 @@ CitableTrait(::Type{TabulaeFiniteVerbRule}) = CitableByCite2Urn()
 
 """Human-readlable label for a `TabulaeFiniteVerbRule`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function label(rule::TabulaeFiniteVerbRule)
@@ -79,7 +116,7 @@ end
 no registry is included, use abbreviated URN;
 otherwise, expand to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function urn(rule::TabulaeFiniteVerbRule; registry = nothing)
@@ -94,7 +131,7 @@ end
 If `registry` is nothing, use abbreivated URN;
 otherwise, expand identifier to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function cex(rule::TabulaeFiniteVerbRule; delimiter = "|", registry = nothing)

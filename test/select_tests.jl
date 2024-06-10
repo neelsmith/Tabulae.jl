@@ -7,7 +7,7 @@ using CitableBase
 using CitableObject, CitableParserBuilder
 using CitableCorpus, CitableText
 using Orthography, LatinOrthography
-using Compat.Test
+using Test
 using TestSetExtensions
 
 @testset "All the tests" begin

@@ -1,0 +1,14 @@
+RuleUrn#InflectionClasses#Ending#Gender#Case#Number
+
+latcommoninfl.us_eris1#us_eris#us#neut#nom#sg
+latcommoninfl.us_eris2#us_eris#eris#neut#gen#sg
+latcommoninfl.us_eris3#us_eris#eri#neut#dat#sg
+latcommoninfl.us_eris4#us_eris#us#neut#acc#sg
+latcommoninfl.us_eris5#us_eris#ere#neut#abl#sg
+latcommoninfl.us_eris6#us_eris#era#neut#nom#pl
+latcommoninfl.us_eris7#us_eris#erum#neut#gen#pl
+latcommoninfl.us_eris8#us_eris#eribus#neut#dat#pl
+latcommoninfl.us_eris9#us_eris#era#neut#acc#pl
+latcommoninfl.us_eris10#us_eris#eribus#neut#abl#pl
+latcommoninfl.us_eris11#us_eris#us#neut#voc#sg
+latcommoninfl.us_eris12#us_eris#era#neut#voc#pl

@@ -94,8 +94,8 @@ end
 Find all stems in `stems` for lexeme `lex`.
 $(SIGNATURES)
 """
-function stemsforlexeme(stems::Vector{Stem}, lex::LexemeUrn)
-    filter(s -> lexeme(s) == lex, stems)
+function stemsforlexemeurn(stems::Vector{Stem}, lex::LexemeUrn)
+    filter(s -> lexemeurn(s) == lex, stems)
 end
 
 
@@ -103,6 +103,6 @@ end
 Find all stems in `stems` for lexeme `lex`.
 $(SIGNATURES)
 """
-function stemsforlexeme(td::Tabulae.Dataset, lex::LexemeUrn)
-    filter(s -> lexeme(s) == lex, stemsarray(td))
+function stemsforlexemeurn(td::Tabulae.Dataset, lex::LexemeUrn)
+    filter(s -> lexemeurn(s) == lex, stemsarray(td))
 end

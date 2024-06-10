@@ -1,0 +1,16 @@
+StemUrn|LexicalEntity|Stem|Gender|InflClass
+
+
+ocremorph.n1511|ls.n1511|afric|feminine|a_ae
+ocremorph.n3915|ls.n3915|asi|feminine|a_ae
+ocremorph.n3674|ls.n3674|armeni|feminine|a_ae
+ocremorph.geo2|ocre.geo2|daci|feminine|a_ae
+ocremorph.geo3|ocre.geo3|germani|feminine|a_ae
+ocremorph.geo4|ocre.geo4|hispani|feminine|a_ae
+
+ocremorph.geo5|ocre.geo5|antiochi|feminine|a_ae
+
+ocremorph.n25276|ls.n25276|ivdae|feminine|a_ae
+ocremorph.n30971|ls.n30971|nil|masculine|us_i
+ocremorph.n10620|ls.n10620|constantinopol|feminine|is_is
+ocremorph.n41840|ls.n41840|rom|feminine|a_ae

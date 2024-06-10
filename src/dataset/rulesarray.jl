@@ -15,13 +15,15 @@ function rulesarray(dirlist; delimiter = "|")
         [
         "nouns" => NounIO("noun"),
         "verbs" => VerbIO("verb"),
-        "infinitives" => InfinitiveIO("infinitives")
+        "infinitives" => InfinitiveIO("infinitives"),
+        "participles" => ParticipleIO("infinitives")
         ]
     )
     rulesdirs = [
         "nouns",
         "verbs",
         "infinitives",
+        "participles"
         
     ]
     rulesarr = Rule[]

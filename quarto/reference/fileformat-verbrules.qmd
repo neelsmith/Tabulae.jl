@@ -1,0 +1,25 @@
+
+# Delimited file format: rules for verb forms
+
+::: {.callout-caution title="TBA"}
+Documentation of file format for rules for forms derived from verb stems.
+:::
+
+
+## Finite
+Looks like:
+
+```
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+latcommon.c1pftact_pft1|conj1|avi|first|singular|perfect|indicative|active
+```
+
+## Infinitive
+
+## Participle
+
+## Gerundive
+
+## Gerund
+
+## Supine

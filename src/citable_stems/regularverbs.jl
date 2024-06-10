@@ -6,6 +6,11 @@ struct TabulaeVerbStem <: TabulaeStem
     inflectionclass
 end
 
+function id(n::TabulaeVerbStem)
+    n.stemid
+end
+
+
 """
 Read one row of a stems table for noun tokens and create a `TabulaeNounStem`.
 
@@ -29,7 +34,7 @@ CitableTrait(::Type{TabulaeVerbStem}) = CitableByCite2Urn()
 
 """Human-readable label for a `TabulaeVerbStem`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function label(vs::TabulaeVerbStem)
@@ -41,7 +46,7 @@ end
 no registry is included, use abbreviated URN;
 otherwise, expand to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function urn(vs::TabulaeVerbStem; registry = nothing)
@@ -56,7 +61,7 @@ end
 If `registry` is nothing, use abbreviated URN;
 otherwise, expand identifier to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function cex(vs::TabulaeVerbStem; delimiter = "|", registry = nothing)
@@ -82,7 +87,7 @@ abbreviated URN.
 
 $(SIGNATURES)
 """
-function lexeme(vs::TabulaeVerbStem)
+function lexemeurn(vs::TabulaeVerbStem)
     vs.lexid
 end
 

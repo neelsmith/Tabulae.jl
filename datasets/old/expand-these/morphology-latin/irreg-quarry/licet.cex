@@ -1,0 +1,12 @@
+StemUrn#LexicalEntity#String#Person#Number#Tense#Mood#Voice
+
+livymorph.irrvlicet3#lexent.n26547#licet#3rd#sg#pres#indic#act
+livymorph.irrvlicet9#lexent.n26547#licebat#3rd#sg#impft#indic#act
+livymorph.irrvlicet15#lexent.n26547#licebit#3rd#sg#fut#indic#act
+livymorph.irrvlicet21#lexent.n26547#licuit#3rd#sg#pft#indic#act
+livymorph.irrvlicet33#lexent.n26547#licuerat#3rd#sg#plupft#indic#act
+livymorph.irrvlicet45#lexent.n26547#licuerit#3rd#sg#futpft#indic#act
+livymorph.irrvlicet57#lexent.n26547#liceat#3rd#sg#pres#subj#act
+livymorph.irrvlicet63#lexent.n26547#liceret#3rd#sg#impft#subj#act
+livymorph.irrvlicet69#lexent.n26547#licuerit#3rd#sg#pft#subj#act
+livymorph.irrvlicet81#lexent.n26547#licuisset#3rd#sg#plupft#subj#act

@@ -9,7 +9,18 @@ struct TabulaeNounRule <: TabulaeRule
     nnumber::LMPNumber
 end
 
-"""Create a `LMFNoun` from `rule`.
+function id(r::TabulaeNounRule)
+    r.ruleid
+end
+
+
+function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, noun::LMFNoun)
+    TabulaeNounRule(id, infltype, ending,
+    lmpGender(noun), lmpCase(noun), lmpNumber(noun)
+    )
+end
+
+"""Create a `LMFNoun` form from a rule.
 $(SIGNATURES)
 """
 function lmForm(rule::TabulaeNounRule)
@@ -55,13 +66,26 @@ function readrulerow(usp::NounIO, delimited::AbstractString; delimiter = "|")
     
 end
 
+
+function lmpGender(r::TabulaeNounRule)
+    r.ngender
+end
+
+function lmpCase(r::TabulaeNounRule)
+    r.ncase
+end
+
+function lmpNumber(r::TabulaeNounRule)
+    r.nnumber
+end
+
 """Noun rules are citable by Cite2Urn"""
 CitableTrait(::Type{TabulaeNounRule}) = CitableByCite2Urn()
 
 
 """Human-readlable label for a `TabulaeNounRule`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function label(nr::TabulaeNounRule)
@@ -73,7 +97,7 @@ end
 no registry is included, use abbreviated URN;
 otherwise, expand to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function urn(nr::TabulaeNounRule; registry = nothing)
@@ -88,7 +112,7 @@ end
 If `registry` is nothing, use abbreivated URN;
 otherwise, expand identifier to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function cex(nr::TabulaeNounRule; delimiter = "|", registry = nothing)

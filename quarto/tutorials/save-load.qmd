@@ -1,0 +1,14 @@
+# Saving and loading a compiled parser
+
+::: {.callout-caution}
+Page TBA
+:::
+
+
+## Example: loading a parser from a URL
+
+```{julia}
+using Tabulae, CitableBase
+url = "http://shot.holycross.edu/tabulae/coreparser-current.cex"
+p = tabulaeStringParser(url, UrlReader)
+```

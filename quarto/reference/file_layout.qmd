@@ -1,0 +1,21 @@
+---
+title: "Layout of directories in a Tabulae dataset"
+---
+
+::: {.callout-caution title="Incomplete: TBA"}
+A full list of possible directories in a Tabulae files dataset will be 
+added here.
+:::
+
+```
+├── rules-tables
+│   ├── nouns
+│   └── verbs
+├── stems-tables
+│   ├── nouns
+│   └── verbs-simplex
+└── urnregistry
+    ├── lexemes
+    ├── rules
+    └── stems
+```

@@ -4,13 +4,26 @@ using Glob, Unicode
 using DocStringExtensions, Documenter
 
 using CitableParserBuilder
-import CitableParserBuilder: parsetoken, parsewordlist,  parselistfromfile, parselistfromurl
+import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, parselistfromurl
+import CitableParserBuilder: datasource
+import CitableParserBuilder: orthography
+import CitableParserBuilder: delimiter
+import CitableParserBuilder: generate
+import CitableParserBuilder: lexemeurn
+import CitableParserBuilder: stringParser
+import CitableParserBuilder: tofile
+
+
 
 using CitableBase
 import CitableBase: CitableTrait
 import CitableBase: urn
 import CitableBase: label
+
 import CitableBase: cex
+
+
+
 
 using LatinOrthography
 using CitableObject
@@ -21,6 +34,7 @@ export ruleurn
 export dataset
 export rulesarray, stemsarray
 export rulesclasses, stemsclasses
+export ruleset
 export registry
 
 export label, code
@@ -40,22 +54,26 @@ export analyses
 export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFNoun, lmfNoun, nounformcodes, nounforms
+export latinForm
 
-export NounIO, VerbIO
+export NounIO, VerbIO, InfinitiveIO, ParticipleIO
 
-export TabulaeRule, inflectionType
+export TabulaeRule, inflectionType, ending, id
+export delimitedrule, fromdelimited, formrule
 export TabulaeNounRule
 export TabulaeFiniteVerbRule
+export TabulaeInfinitiveRule
+export TabulaeParticipleRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
 export TabulaeVerbStem
 
-export StringParser, stringParser
+export TabulaeStringParser, tabulaeStringParser
 export analysis_line, analysis_lines
-export parsetoken
 
-export generate
+#export parsetoken, generate
+
 export md_declension
 export md_tenseconjugation
 
@@ -82,6 +100,7 @@ include("properties/uninflected.jl")
 include("citable_forms/noun.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
+include("citable_forms/participle.jl")
 
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
@@ -90,14 +109,17 @@ include("citable_stems/regularverbs.jl")
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
 include("citable_rules/verbs.jl")
+include("citable_rules/infinitives.jl")
+include("citable_rules/participles.jl")
 
 include("generate/generate.jl")
 
-include("parser/parser.jl")
 include("parser/dictparser.jl")
 include("parser/stringparser.jl")
 
 include("for-apps/mddeclension.jl")
 include("for-apps/verbparadigms.jl")
+
+include("utils/coredata.jl")
 
 end # module

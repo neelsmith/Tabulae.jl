@@ -55,6 +55,5 @@ $(SIGNATURES)
 const moodcodedict = Dict(
     "indicative" => 1,
     "subjunctive" => 2,
-    "imperative" => 3,
-   
+    "imperative" => 3,  
 )

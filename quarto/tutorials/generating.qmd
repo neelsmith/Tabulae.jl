@@ -1,0 +1,73 @@
+# Generating forms
+
+```{julia}
+#| echo: false
+#| output: false
+#repo  = pwd()
+repo = pwd() |> dirname |> dirname
+```
+
+
+You can generate a complete analysis, including a string token,  for a givein lexeme and morphological form. Tabulae can generate forms using either a parser or a dataset.
+
+The following cell creates a Tabulae dataset from directories in the github repository's `datasets` directory, and builds a parser from it.
+
+
+```{julia}
+#| warning: false
+#| output: false
+using Tabulae, CitableParserBuilder
+
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+ds = dataset([shareddir, lat25dir])
+parser =  tabulaeStringParser(ds)
+```
+
+
+## Generating forms using a parser
+
+To illustrate generating forms with a parser, we'll first analyze a token.
+
+```{julia}
+parses = parsetoken("animo", parser)
+```
+
+*animo* is morphologically ambiguous: it has two possible analyses.  We'll use the `latinForm` function to see the morphological form of the first analysis.
+
+```{julia}
+form1 = latinForm(parses[1])
+label(form1)
+```
+
+We'll now try to generate the same form using identifying URNs for the form and the lexeme.
+
+```{julia}
+lex = lexemeurn(parses[1])
+mform = formurn(parses[1])
+
+generated = generate(lex, mform, parser)
+```
+
+The result is a vector of `Analysis` objects -- the same structure that  `parsetoken` returns, but we only have one possible result for this specific form of this lexeme.  The `token` function extracts the string value of the token from an analysis
+
+```{julia}
+token(generated[1])
+```
+
+
+
+## Generating forms using a Tabulae dataset
+
+Using a dataset instead of a parser, we get the same results:
+
+```{julia}
+dsgenerated = generate(lex, mform, ds)
+dsgenerated .|> token
+```
+
+With a dataset, you also have the option of generating analyses from the combination of a lexeme identifier plus a full Latin morphological form, such as the noun form we saved from a previous analysis:
+
+```{julia}
+generate(lex, form1, ds)
+```

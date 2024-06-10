@@ -1,0 +1,164 @@
+---
+title: "Analytical types and their properties"
+---
+
+
+Morphological forms are subtypes of the abstract `LatinMorphologicalForm`.
+
+
+## Concrete types of the `LatinMorphologicalForm`
+
+
+### Substantive types
+
+`LMFNoun`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+using Tabulae
+@doc LMFNoun
+```
+:::
+
+Not yet implemented:
+
+- Pronoun
+- Adjective
+- Adverb
+
+
+
+
+### Verbal types
+
+`LMFFiniteVerb`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMFFiniteVerb
+```
+:::
+
+
+Not yet implemented:
+
+- Infinitive
+- Participle
+- Supine
+- Gerund
+- Gerundive
+
+
+### Other types
+
+`LMPUninflectedType`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc LMPUninflectedType
+```
+:::
+
+
+
+## Retrieving morphological properties of forms
+
+- Properties of *noun*s are retreivable with the functions `lmpGender`, `lmpCase`, `lmpNumber`.
+- Properties of *finite verbs* are retreivable with the functions `lmpPerson`, `lmpNumber`, `lmpTense`, `lmpMood`, `lmpVoice`.
+
+`lmpGender`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpGender
+```
+:::
+
+
+
+`lmpCase`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpCase
+```
+:::
+
+
+`lmpNumber`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpGender
+```
+:::
+
+
+
+`lmpPerson`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpPerson
+```
+:::
+
+
+`lmpTense`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpTense
+```
+:::
+
+
+`lmpMood`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpMood
+```
+:::
+
+
+`lmpVoice`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+
+@doc lmpVoice
+```
+:::
+
+
+
+
