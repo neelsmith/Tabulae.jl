@@ -1,0 +1,17 @@
+# Serialized rule sets
+
+
+::: {.callout-caution}
+Content incomplete: TBA
+:::
+
+
+Tabulae rule sets can be serialized to a simple uniform structure with four an identifier for the rule, an inflectional type, a string value for an ending, and an identifier for a Latin morphological form.
+
+## Expanded vs. succinct serialization
+
+
+### Outline
+
+- forms can be expressed in succinct with a simple identifier
+- forms can be expressed with values for each property. In this expanded form 

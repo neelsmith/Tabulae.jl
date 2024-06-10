@@ -76,6 +76,7 @@ website:
         - guides/properties-guide.qmd
         - guides/forms-guide.qmd
         - guides/urns.qmd
+        - guides/serializing-rules.qmd
         
     - title: "Reference"
       contents: 

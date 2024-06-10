@@ -102,3 +102,19 @@ end
 function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, f::LatinMorphologicalForm)
     @warn("No implementation of formrule function for type $(typeof(f))")
 end
+
+
+
+"""Write entries to file.
+$(SIGNATURES)
+"""
+function tofile(v::Vector{Rule}, f; delimiter = "|")
+    @debug("Writing rules to file with delimiter $(delimiter)")
+    headings = ["Rule", "Inflectional type","Ending","Form"]
+    hdr = join(headings, delimiter)
+    data = delimitedrule.(v; delimiter = delimiter )
+    content = hdr * "\n" * join(data,"\n")
+    open(f, "w") do io
+        write(f, content)
+    end
+end
