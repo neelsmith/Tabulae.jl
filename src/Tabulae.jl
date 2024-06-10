@@ -115,4 +115,6 @@ include("parser/stringparser.jl")
 include("for-apps/mddeclension.jl")
 include("for-apps/verbparadigms.jl")
 
+include("utils/coredata.jl")
+
 end # module
