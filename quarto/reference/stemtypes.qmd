@@ -3,29 +3,28 @@
 
 
 ::: {.callout-caution title="Contents TBA"}
-TBA
+This page is being expanded as coverage of stem types is added to version 0.10.0 of Tabulae.
 :::
 
-## Outline
 
-- subtypes of `TabulaeStem`
-- implement `readstemrow` and `writestemrow` using a subtype of `TabulaeIO`
+## Reading and writing stem records
 
 
-## Common function
-- implement `lexeme`
-- implement `inflectiontype` and `stemvalue`
-- (nouns implement `lmpGender` since it is inherent to the stem)
-- implement functions for citability in CITE architecture (the stem itself is a citable object)
-
+Tabulae defines a subtype of the `TabulaeStem` abstraction for each kind of stem record that can be included in a Tabulae dataset.  Each of the types implements the `readstemrow` and `writestemrow` functions to instantiate a stem from a delimited-text string.  For each stem type, there is a corresponding subtype of the abstract `TabulaeIO` that is used to dispatch `readstemrow` and `writestemrow` to the correct methods. To read a verb stem, for example, `readstemrow` is invoked with an instance of the `VerbIO` type.
 
 ```{julia}
+#| warning: false
 using Tabulae
 verbrow = "latcommon.verbn2280|ls.n2280|am|conj1"
 
 verbio = VerbIO("verb reader")
 verbstem = Tabulae.readstemrow(verbio, verbrow)
 ```
+
+
+## Common functions
+
+All stem types identify a lexeme, an inflectional type, and a string value for the stem, that you can retrieve with the following functions from the `CitableParserBuider` and `Tabulae` packages:
 
 ```{julia}
 using CitableParserBuilder
@@ -38,24 +37,57 @@ stemvalue(verbstem)
 ```
 
 ```{julia}
-#inflectiontype(verbstem)
+inflectionType(verbstem)
 ```
 
-### Citable stuff
 
-```{julia}
-label(verbstem)
-```
+
+
+In addition, noun stems include an inherent gender which you can find with the `lmpGender` function (see below).
+
+
+
+### Citable stems
+
+Stems are citable objects in the CITE architecture interface, so you can also use these generic functions:
+
 
 ```{julia}
 urn(verbstem)
 ```
 
+:::{.callout-note}
+By default, the `urn` function will return a `StemUrn`; see documentation about expanding that value to a full `Cite2Urn`.
+:::
+
+```{julia}
+label(verbstem)
+```
+
+
+
 ```{julia}
 cex(verbstem)
 ```
 
-## Verb stems
+## Regular stems
+
+### Regular verb stems: simplex verbs
 
 - serve all analytical types made from verb stems!
 
+### Regular verb stems: compound verbs
+### Regular noun stems
+### Regular adjective stems
+### Indeclinable stems
+
+
+## Irregular stems
+
+
+### Irregular adjectives
+### Irregular adverbs
+### Irregular infinitives
+### Irregular nouns
+### Irregular pronouns
+### Irregular finite verbs

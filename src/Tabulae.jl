@@ -106,7 +106,6 @@ include("citable_rules/infinitives.jl")
 
 include("generate/generate.jl")
 
-include("parser/parser.jl")
 include("parser/dictparser.jl")
 include("parser/stringparser.jl")
 

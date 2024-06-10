@@ -63,7 +63,7 @@ CitableTrait(::Type{TabulaeInfinitiveRule}) = CitableByCite2Urn()
 
 """Human-readlable label for a `TabulaeInfinitiveRule`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function label(rule::TabulaeInfinitiveRule)
@@ -75,7 +75,7 @@ end
 no registry is included, use abbreviated URN;
 otherwise, expand to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function urn(rule::TabulaeInfinitiveRule; registry = nothing)
@@ -90,7 +90,7 @@ end
 If `registry` is nothing, use abbreivated URN;
 otherwise, expand identifier to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function cex(rule::TabulaeInfinitiveRule; delimiter = "|", registry = nothing)

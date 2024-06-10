@@ -1,11 +1,10 @@
 RuleUrn|InflectionClass|Ending|Tense|Voice
-latcommon.are_inf1|conj1|are|present|active
 
 
 latcommoninfl.are_inf1|conj1|are|present|active
 latcommoninfl.are_inf2|conj1|ari|present|passive
 
-latcommoninfl.are_inf3b|conj1|asse|present|active
+latcommoninfl.are_inf3b|conj1|asse|perfect|active
 latcommoninfl.are_inf4|c1pres|are|present|active
 latcommoninfl.are_inf5|c1pres|ari|present|passive
 

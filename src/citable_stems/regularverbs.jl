@@ -29,7 +29,7 @@ CitableTrait(::Type{TabulaeVerbStem}) = CitableByCite2Urn()
 
 """Human-readable label for a `TabulaeVerbStem`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function label(vs::TabulaeVerbStem)
@@ -41,7 +41,7 @@ end
 no registry is included, use abbreviated URN;
 otherwise, expand to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function urn(vs::TabulaeVerbStem; registry = nothing)
@@ -56,7 +56,7 @@ end
 If `registry` is nothing, use abbreviated URN;
 otherwise, expand identifier to full `Cite2Urn`.
 
-@(SIGNATURES)
+$(SIGNATURES)
 Required for `CitableTrait`.
 """
 function cex(vs::TabulaeVerbStem; delimiter = "|", registry = nothing)
