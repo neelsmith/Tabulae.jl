@@ -4,39 +4,39 @@ latcommoninfl.ere_conj3depperfppl2|conj3dep|ti|masculine|genitive|singular|pft|p
 latcommoninfl.ere_conj3depperfppl3|conj3dep|to|masculine|dative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl4|conj3dep|tum|masculine|accusative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl5|conj3dep|to|masculine|ablative|singular|pft|passive
-latcommoninfl.ere_conj3depperfppl6|conj3dep|te|masculine|voc|singular|pft|passive
+latcommoninfl.ere_conj3depperfppl6|conj3dep|te|masculine|vocative|singular|pft|passive
 
-latcommoninfl.ere_conj3depperfppl7|conj3dep|ti|masculine|nominative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl8|conj3dep|torum|masculine|genitive|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl9|conj3dep|tis|masculine|dative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl10|conj3dep|tos|masculine|accusative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl11|conj3dep|tis|masculine|ablative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl12|conj3dep|ti|masculine|voc|pl|pft|passive
+latcommoninfl.ere_conj3depperfppl7|conj3dep|ti|masculine|nominative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl8|conj3dep|torum|masculine|genitive|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl9|conj3dep|tis|masculine|dative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl10|conj3dep|tos|masculine|accusative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl11|conj3dep|tis|masculine|ablative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl12|conj3dep|ti|masculine|vocative|plural|pft|passive
 
 latcommoninfl.ere_conj3depperfppl13|conj3dep|ta|feminine|nominative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl14|conj3dep|tae|feminine|genitive|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl15|conj3dep|tae|feminine|dative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl16|conj3dep|tam|feminine|accusative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl17|conj3dep|ta|feminine|ablative|singular|pft|passive
-latcommoninfl.ere_conj3depperfppl18|conj3dep|ta|feminine|voc|singular|pft|passive
+latcommoninfl.ere_conj3depperfppl18|conj3dep|ta|feminine|vocative|singular|pft|passive
 
-latcommoninfl.ere_conj3depperfppl19|conj3dep|tae|feminine|nominative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl20|conj3dep|tarum|feminine|genitive|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl21|conj3dep|tis|feminine|dative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl22|conj3dep|tas|feminine|accusative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl23|conj3dep|tis|feminine|ablative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl24|conj3dep|tae|feminine|voc|pl|pft|passive
+latcommoninfl.ere_conj3depperfppl19|conj3dep|tae|feminine|nominative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl20|conj3dep|tarum|feminine|genitive|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl21|conj3dep|tis|feminine|dative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl22|conj3dep|tas|feminine|accusative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl23|conj3dep|tis|feminine|ablative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl24|conj3dep|tae|feminine|vocative|plural|pft|passive
 
 latcommoninfl.ere_conj3depperfppl25|conj3dep|tum|neuter|nominative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl26|conj3dep|ti|neuter|genitive|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl27|conj3dep|to|neuter|dative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl28|conj3dep|tum|neuter|accusative|singular|pft|passive
 latcommoninfl.ere_conj3depperfppl29|conj3dep|to|neuter|ablative|singular|pft|passive
-latcommoninfl.ere_conj3depperfppl30|conj3dep|tum|neuter|voc|singular|pft|passive
+latcommoninfl.ere_conj3depperfppl30|conj3dep|tum|neuter|vocative|singular|pft|passive
 
-latcommoninfl.ere_conj3depperfppl31|conj3dep|ta|neuter|nominative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl32|conj3dep|torum|neuter|genitive|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl33|conj3dep|tis|neuter|dative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl34|conj3dep|ta|neuter|accusative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl35|conj3dep|tis|neuter|ablative|pl|pft|passive
-latcommoninfl.ere_conj3depperfppl36|conj3dep|ta|neuter|voc|pl|pft|passive
+latcommoninfl.ere_conj3depperfppl31|conj3dep|ta|neuter|nominative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl32|conj3dep|torum|neuter|genitive|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl33|conj3dep|tis|neuter|dative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl34|conj3dep|ta|neuter|accusative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl35|conj3dep|tis|neuter|ablative|plural|pft|passive
+latcommoninfl.ere_conj3depperfppl36|conj3dep|ta|neuter|vocative|plural|pft|passive

@@ -4,39 +4,39 @@ latcommoninfl.pft_perfppl2|pftpass|i|masculine|genitive|singular|pft|passive
 latcommoninfl.pft_perfppl3|pftpass|o|masculine|dative|singular|pft|passive
 latcommoninfl.pft_perfppl4|pftpass|um|masculine|accusative|singular|pft|passive
 latcommoninfl.pft_perfppl5|pftpass|o|masculine|ablative|singular|pft|passive
-latcommoninfl.pft_perfppl6|pftpass|e|masculine|voc|singular|pft|passive
+latcommoninfl.pft_perfppl6|pftpass|e|masculine|vocative|singular|pft|passive
 
-latcommoninfl.pft_perfppl7|pftpass|i|masculine|nominative|pl|pft|passive
-latcommoninfl.pft_perfppl8|pftpass|orum|masculine|genitive|pl|pft|passive
-latcommoninfl.pft_perfppl9|pftpass|is|masculine|dative|pl|pft|passive
-latcommoninfl.pft_perfppl10|pftpass|os|masculine|accusative|pl|pft|passive
-latcommoninfl.pft_perfppl11|pftpass|is|masculine|ablative|pl|pft|passive
-latcommoninfl.pft_perfppl12|pftpass|i|masculine|voc|pl|pft|passive
+latcommoninfl.pft_perfppl7|pftpass|i|masculine|nominative|plural|pft|passive
+latcommoninfl.pft_perfppl8|pftpass|orum|masculine|genitive|plural|pft|passive
+latcommoninfl.pft_perfppl9|pftpass|is|masculine|dative|plural|pft|passive
+latcommoninfl.pft_perfppl10|pftpass|os|masculine|accusative|plural|pft|passive
+latcommoninfl.pft_perfppl11|pftpass|is|masculine|ablative|plural|pft|passive
+latcommoninfl.pft_perfppl12|pftpass|i|masculine|vocative|plural|pft|passive
 
 latcommoninfl.pft_perfppl13|pftpass|a|feminine|nominative|singular|pft|passive
 latcommoninfl.pft_perfppl14|pftpass|ae|feminine|genitive|singular|pft|passive
 latcommoninfl.pft_perfppl15|pftpass|ae|feminine|dative|singular|pft|passive
 latcommoninfl.pft_perfppl16|pftpass|am|feminine|accusative|singular|pft|passive
 latcommoninfl.pft_perfppl17|pftpass|a|feminine|ablative|singular|pft|passive
-latcommoninfl.pft_perfppl18|pftpass|a|feminine|voc|singular|pft|passive
+latcommoninfl.pft_perfppl18|pftpass|a|feminine|vocative|singular|pft|passive
 
-latcommoninfl.pft_perfppl19|pftpass|ae|feminine|nominative|pl|pft|passive
-latcommoninfl.pft_perfppl20|pftpass|arum|feminine|genitive|pl|pft|passive
-latcommoninfl.pft_perfppl21|pftpass|is|feminine|dative|pl|pft|passive
-latcommoninfl.pft_perfppl22|pftpass|as|feminine|accusative|pl|pft|passive
-latcommoninfl.pft_perfppl23|pftpass|is|feminine|ablative|pl|pft|passive
-latcommoninfl.pft_perfppl24|pftpass|ae|feminine|voc|pl|pft|passive
+latcommoninfl.pft_perfppl19|pftpass|ae|feminine|nominative|plural|pft|passive
+latcommoninfl.pft_perfppl20|pftpass|arum|feminine|genitive|plural|pft|passive
+latcommoninfl.pft_perfppl21|pftpass|is|feminine|dative|plural|pft|passive
+latcommoninfl.pft_perfppl22|pftpass|as|feminine|accusative|plural|pft|passive
+latcommoninfl.pft_perfppl23|pftpass|is|feminine|ablative|plural|pft|passive
+latcommoninfl.pft_perfppl24|pftpass|ae|feminine|vocative|plural|pft|passive
 
 latcommoninfl.pft_perfppl25|pftpass|um|neuter|nominative|singular|pft|passive
 latcommoninfl.pft_perfppl26|pftpass|i|neuter|genitive|singular|pft|passive
 latcommoninfl.pft_perfppl27|pftpass|o|neutc|dative|singular|pft|passive
 latcommoninfl.pft_perfppl28|pftpass|um|neutc|accusative|singular|pft|passive
 latcommoninfl.pft_perfppl29|pftpass|o|neuter|ablative|singular|pft|passive
-latcommoninfl.pft_perfppl30|pftpass|um|neuter|voc|singular|pft|passive
+latcommoninfl.pft_perfppl30|pftpass|um|neuter|vocative|singular|pft|passive
 
-latcommoninfl.pft_perfppl31|pftpass|a|neuter|nominative|pl|pft|passive
-latcommoninfl.pft_perfppl32|pftpass|orum|neuter|genitive|pl|pft|passive
-latcommoninfl.pft_perfppl33|pftpass|is|neuter|dative|pl|pft|passive
-latcommoninfl.pft_perfppl34|pftpass|a|neuter|accusative|pl|pft|passive
-latcommoninfl.pft_perfppl35|pftpass|is|neuter|ablative|pl|pft|passive
-latcommoninfl.pft_perfppl36|pftpass|a|neuter|voc|pl|pft|passive
+latcommoninfl.pft_perfppl31|pftpass|a|neuter|nominative|plural|pft|passive
+latcommoninfl.pft_perfppl32|pftpass|orum|neuter|genitive|plural|pft|passive
+latcommoninfl.pft_perfppl33|pftpass|is|neuter|dative|plural|pft|passive
+latcommoninfl.pft_perfppl34|pftpass|a|neuter|accusative|plural|pft|passive
+latcommoninfl.pft_perfppl35|pftpass|is|neuter|ablative|plural|pft|passive
+latcommoninfl.pft_perfppl36|pftpass|a|neuter|vocative|plural|pft|passive

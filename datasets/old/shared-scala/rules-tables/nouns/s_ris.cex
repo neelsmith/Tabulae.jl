@@ -12,8 +12,8 @@ latcommoninfl.s_ris8|s_ris|ribus|masculine|dative|pl
 latcommoninfl.s_ris9|s_ris|res|masculine|accusative|pl
 latcommoninfl.s_ris9b|s_ris|ris|masculine|accusative|pl
 latcommoninfl.s_ris10|s_ris|ribus|masculine|ablative|pl
-latcommoninfl.s_ris11|s_ris|s|masculine|voc|sg
-latcommoninfl.s_ris12|s_ris|res|masculine|voc|pl
+latcommoninfl.s_ris11|s_ris|s|masculine|vocative|sg
+latcommoninfl.s_ris12|s_ris|res|masculine|vocative|pl
 
 latcommoninfl.s_ris13|s_ris|s|feminine|nominative|sg
 latcommoninfl.s_ris14|s_ris|ris|feminine|genitive|sg
@@ -28,8 +28,8 @@ latcommoninfl.s_ris20|s_ris|ribus|feminine|dative|pl
 latcommoninfl.s_ris21|s_ris|res|feminine|accusative|pl
 latcommoninfl.s_ris21b|s_ris|ris|feminine|accusative|pl
 latcommoninfl.s_ris22|s_ris|ribus|feminine|ablative|pl
-latcommoninfl.s_ris23|s_ris|s|feminine|voc|sg
-latcommoninfl.s_ris24|s_ris|res|feminine|voc|pl
+latcommoninfl.s_ris23|s_ris|s|feminine|vocative|sg
+latcommoninfl.s_ris24|s_ris|res|feminine|vocative|pl
 
 latcommoninfl.s_ris25|s_ris|s|neuter|nominative|sg
 latcommoninfl.s_ris26|s_ris|ris|neuter|genitive|sg
@@ -43,5 +43,5 @@ latcommoninfl.s_ris32|s_ris|ribus|neuter|dative|pl
 latcommoninfl.s_ris33|s_ris|ra|neuter|accusative|pl
 latcommoninfl.s_ris34b|s_ris|ris|neuter|accusative|pl
 latcommoninfl.s_ris35|s_ris|ribus|neuter|ablative|pl
-latcommoninfl.s_ris36|s_ris|s|neuter|voc|sg
-latcommoninfl.s_ris37|s_ris|ra|neuter|voc|pl
+latcommoninfl.s_ris36|s_ris|s|neuter|vocative|sg
+latcommoninfl.s_ris37|s_ris|ra|neuter|vocative|pl

@@ -5,11 +5,11 @@ ocremorph.us_a_um2|us_a_um|i|masculine|genitive|singular|pos
 ocremorph.us_a_um3|us_a_um|o|masculine|dative|singular|pos
 ocremorph.us_a_um4|us_a_um|vm|masculine|accusative|singular|pos
 ocremorph.us_a_um5|us_a_um|o|masculine|ablative|singular|pos
-ocremorph.us_a_um6|us_a_um|i|masculine|nominative|pl|pos
-ocremorph.us_a_um7|us_a_um|orvm|masculine|genitive|pl|pos
-ocremorph.us_a_um8|us_a_um|is|masculine|dative|pl|pos
-ocremorph.us_a_um9|us_a_um|os|masculine|accusative|pl|pos
-ocremorph.us_a_um10|us_a_um|is|masculine|ablative|pl|pos
+ocremorph.us_a_um6|us_a_um|i|masculine|nominative|plural|pos
+ocremorph.us_a_um7|us_a_um|orvm|masculine|genitive|plural|pos
+ocremorph.us_a_um8|us_a_um|is|masculine|dative|plural|pos
+ocremorph.us_a_um9|us_a_um|os|masculine|accusative|plural|pos
+ocremorph.us_a_um10|us_a_um|is|masculine|ablative|plural|pos
 
 
 
@@ -19,12 +19,12 @@ ocremorph.us_a_um15|us_a_um|iori|masculine|dative|singular|comp
 ocremorph.us_a_um16|us_a_um|iorem|masculine|accusative|singular|comp
 ocremorph.us_a_um17|us_a_um|iore|masculine|ablative|singular|comp
 ocremorph.us_a_um17b|us_a_um|iori|masculine|ablative|singular|comp
-ocremorph.us_a_um18|us_a_um|iores|masculine|nominative|pl|comp
-ocremorph.us_a_um19|us_a_um|iorvm|masculine|genitive|pl|comp
-ocremorph.us_a_um20|us_a_um|ioribus|masculine|dative|pl|comp
-ocremorph.us_a_um21|us_a_um|iores|masculine|accusative|pl|comp
-ocremorph.us_a_um21b|us_a_um|ioris|masculine|accusative|pl|comp
-ocremorph.us_a_um22|us_a_um|ioribus|masculine|ablative|pl|comp
+ocremorph.us_a_um18|us_a_um|iores|masculine|nominative|plural|comp
+ocremorph.us_a_um19|us_a_um|iorvm|masculine|genitive|plural|comp
+ocremorph.us_a_um20|us_a_um|ioribus|masculine|dative|plural|comp
+ocremorph.us_a_um21|us_a_um|iores|masculine|accusative|plural|comp
+ocremorph.us_a_um21b|us_a_um|ioris|masculine|accusative|plural|comp
+ocremorph.us_a_um22|us_a_um|ioribus|masculine|ablative|plural|comp
 
 
 
@@ -33,11 +33,11 @@ ocremorph.us_a_um26|us_a_um|issimi|masculine|genitive|singular|superl
 ocremorph.us_a_um27|us_a_um|issimo|masculine|dative|singular|superl
 ocremorph.us_a_um28|us_a_um|issimvm|masculine|accusative|singular|superl
 ocremorph.us_a_um29|us_a_um|issimo|masculine|ablative|singular|superl
-ocremorph.us_a_um30|us_a_um|issimi|masculine|nominative|pl|superl
-ocremorph.us_a_um31|us_a_um|issimorvm|masculine|genitive|pl|superl
-ocremorph.us_a_um32|us_a_um|issimis|masculine|dative|pl|superl
-ocremorph.us_a_um33|us_a_um|issimos|masculine|accusative|pl|superl
-ocremorph.us_a_um34|us_a_um|issimis|masculine|ablative|pl|superl
+ocremorph.us_a_um30|us_a_um|issimi|masculine|nominative|plural|superl
+ocremorph.us_a_um31|us_a_um|issimorvm|masculine|genitive|plural|superl
+ocremorph.us_a_um32|us_a_um|issimis|masculine|dative|plural|superl
+ocremorph.us_a_um33|us_a_um|issimos|masculine|accusative|plural|superl
+ocremorph.us_a_um34|us_a_um|issimis|masculine|ablative|plural|superl
 
 
 
@@ -46,11 +46,11 @@ ocremorph.us_a_um38|us_a_um|ae|feminine|genitive|singular|pos
 ocremorph.us_a_um39|us_a_um|ae|feminine|dative|singular|pos
 ocremorph.us_a_um40|us_a_um|am|feminine|accusative|singular|pos
 ocremorph.us_a_um41|us_a_um|a|feminine|ablative|singular|pos
-ocremorph.us_a_um42|us_a_um|ae|feminine|nominative|pl|pos
-ocremorph.us_a_um43|us_a_um|arvm|feminine|genitive|pl|pos
-ocremorph.us_a_um44|us_a_um|is|feminine|dative|pl|pos
-ocremorph.us_a_um45|us_a_um|as|feminine|accusative|pl|pos
-ocremorph.us_a_um46|us_a_um|is|feminine|ablative|pl|pos
+ocremorph.us_a_um42|us_a_um|ae|feminine|nominative|plural|pos
+ocremorph.us_a_um43|us_a_um|arvm|feminine|genitive|plural|pos
+ocremorph.us_a_um44|us_a_um|is|feminine|dative|plural|pos
+ocremorph.us_a_um45|us_a_um|as|feminine|accusative|plural|pos
+ocremorph.us_a_um46|us_a_um|is|feminine|ablative|plural|pos
 
 
 
@@ -60,12 +60,12 @@ ocremorph.us_a_um51|us_a_um|iori|feminine|dative|singular|comp
 ocremorph.us_a_um52|us_a_um|iorem|feminine|accusative|singular|comp
 ocremorph.us_a_um53|us_a_um|iore|feminine|ablative|singular|comp
 ocremorph.us_a_um53b|us_a_um|iori|feminine|ablative|singular|comp
-ocremorph.us_a_um54|us_a_um|iores|feminine|nominative|pl|comp
-ocremorph.us_a_um55|us_a_um|iorvm|feminine|genitive|pl|comp
-ocremorph.us_a_um56|us_a_um|ioribus|feminine|dative|pl|comp
-ocremorph.us_a_um57|us_a_um|iores|feminine|accusative|pl|comp
-ocremorph.us_a_um58|us_a_um|ioris|feminine|accusative|pl|comp
-ocremorph.us_a_um59|us_a_um|ioribus|feminine|ablative|pl|comp
+ocremorph.us_a_um54|us_a_um|iores|feminine|nominative|plural|comp
+ocremorph.us_a_um55|us_a_um|iorvm|feminine|genitive|plural|comp
+ocremorph.us_a_um56|us_a_um|ioribus|feminine|dative|plural|comp
+ocremorph.us_a_um57|us_a_um|iores|feminine|accusative|plural|comp
+ocremorph.us_a_um58|us_a_um|ioris|feminine|accusative|plural|comp
+ocremorph.us_a_um59|us_a_um|ioribus|feminine|ablative|plural|comp
 
 
 
@@ -74,11 +74,11 @@ ocremorph.us_a_um64|us_a_um|issimae|feminine|genitive|singular|superl
 ocremorph.us_a_um65|us_a_um|issimae|feminine|dative|singular|superl
 ocremorph.us_a_um66|us_a_um|issimam|feminine|accusative|singular|superl
 ocremorph.us_a_um67|us_a_um|issima|feminine|ablative|singular|superl
-ocremorph.us_a_um68|us_a_um|issimae|feminine|nominative|pl|superl
-ocremorph.us_a_um69|us_a_um|issimarvm|feminine|genitive|pl|superl
-ocremorph.us_a_um70|us_a_um|issimis|feminine|dative|pl|superl
-ocremorph.us_a_um71|us_a_um|issimas|feminine|accusative|pl|superl
-ocremorph.us_a_um72|us_a_um|issimis|feminine|ablative|pl|superl
+ocremorph.us_a_um68|us_a_um|issimae|feminine|nominative|plural|superl
+ocremorph.us_a_um69|us_a_um|issimarvm|feminine|genitive|plural|superl
+ocremorph.us_a_um70|us_a_um|issimis|feminine|dative|plural|superl
+ocremorph.us_a_um71|us_a_um|issimas|feminine|accusative|plural|superl
+ocremorph.us_a_um72|us_a_um|issimis|feminine|ablative|plural|superl
 
 
 
@@ -87,11 +87,11 @@ ocremorph.us_a_um76|us_a_um|i|neuter|genitive|singular|pos
 ocremorph.us_a_um77|us_a_um|o|neuter|dative|singular|pos
 ocremorph.us_a_um78|us_a_um|vm|neuter|accusative|singular|pos
 ocremorph.us_a_um79|us_a_um|o|neuter|ablative|singular|pos
-ocremorph.us_a_um80|us_a_um|a|neuter|nominative|pl|pos
-ocremorph.us_a_um81|us_a_um|orvm|neuter|genitive|pl|pos
-ocremorph.us_a_um82|us_a_um|is|neuter|dative|pl|pos
-ocremorph.us_a_um83|us_a_um|a|neuter|accusative|pl|pos
-ocremorph.us_a_um84|us_a_um|is|neuter|ablative|pl|pos
+ocremorph.us_a_um80|us_a_um|a|neuter|nominative|plural|pos
+ocremorph.us_a_um81|us_a_um|orvm|neuter|genitive|plural|pos
+ocremorph.us_a_um82|us_a_um|is|neuter|dative|plural|pos
+ocremorph.us_a_um83|us_a_um|a|neuter|accusative|plural|pos
+ocremorph.us_a_um84|us_a_um|is|neuter|ablative|plural|pos
 
 
 
@@ -101,11 +101,11 @@ ocremorph.us_a_um89|us_a_um|iori|neuter|dative|singular|comp
 ocremorph.us_a_um90|us_a_um|ivs|neuter|accusative|singular|comp
 ocremorph.us_a_um91|us_a_um|iore|neuter|ablative|singular|comp
 ocremorph.us_a_um91b|us_a_um|iori|neuter|ablative|singular|comp
-ocremorph.us_a_um92|us_a_um|iora|neuter|nominative|pl|comp
-ocremorph.us_a_um93|us_a_um|iorvm|neuter|genitive|pl|comp
-ocremorph.us_a_um94|us_a_um|ioribvs|neuter|dative|pl|comp
-ocremorph.us_a_um95|us_a_um|iora|neuter|accusative|pl|comp
-ocremorph.us_a_um96|us_a_um|ioribuv|neuter|ablative|pl|comp
+ocremorph.us_a_um92|us_a_um|iora|neuter|nominative|plural|comp
+ocremorph.us_a_um93|us_a_um|iorvm|neuter|genitive|plural|comp
+ocremorph.us_a_um94|us_a_um|ioribvs|neuter|dative|plural|comp
+ocremorph.us_a_um95|us_a_um|iora|neuter|accusative|plural|comp
+ocremorph.us_a_um96|us_a_um|ioribuv|neuter|ablative|plural|comp
 
 
 
@@ -114,8 +114,8 @@ ocremorph.us_a_um100|us_a_um|issimi|neuter|genitive|singular|superl
 ocremorph.us_a_um101|us_a_um|issimo|neuter|dative|singular|superl
 ocremorph.us_a_um102|us_a_um|issimvm|neuter|accusative|singular|superl
 ocremorph.us_a_um103|us_a_um|issimo|neuter|ablative|singular|superl
-ocremorph.us_a_um104|us_a_um|issima|neuter|nominative|pl|superl
-ocremorph.us_a_um105|us_a_um|issimorvm|neuter|genitive|pl|superl
-ocremorph.us_a_um106|us_a_um|issimis|neuter|dative|pl|superl
-ocremorph.us_a_um107|us_a_um|issima|neuter|accusative|pl|superl
-ocremorph.us_a_um108|us_a_um|issimis|neuter|ablative|pl|superl
+ocremorph.us_a_um104|us_a_um|issima|neuter|nominative|plural|superl
+ocremorph.us_a_um105|us_a_um|issimorvm|neuter|genitive|plural|superl
+ocremorph.us_a_um106|us_a_um|issimis|neuter|dative|plural|superl
+ocremorph.us_a_um107|us_a_um|issima|neuter|accusative|plural|superl
+ocremorph.us_a_um108|us_a_um|issimis|neuter|ablative|plural|superl

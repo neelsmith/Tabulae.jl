@@ -81,6 +81,6 @@ end
 
 $(SIGNATURES)
 """
-function formurn(ptcpl::LMFParticiple)
-    FormUrn(string("forms.", PARTICIPLE,"0", code(p.pnumber),code(p.tense),"0", code(p.voice),code(p.gender),code(p.case),"00"))
+function formurn(p::LMFParticiple)
+    FormUrn(string("forms.", PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
 end

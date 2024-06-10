@@ -32,7 +32,7 @@ lat25morph.verbn14559b|ls.n14559|divis|pftact
 lat25morph.verbn14559c|ls.n14559|divis|pftpass
 lat25morph.verbn15868b1|ls.n15868|i|pftact
 lat25morph.verbn15868b2|ls.n15868|iv|pftact
-lat25morph.verbn16922a|ls.n16922|pl|c2pres
+lat25morph.verbn16922a|ls.n16922|plural|c2pres
 lat25morph.verbn16922b|ls.n16922|plev|pftact
 lat25morph.verbn16922c|ls.n16922|plet|pftpass
 lat25morph.verbn21321a|ls.n21321|ic|c3iopres
@@ -114,5 +114,5 @@ lat25morph.verbnverb118|ls.n50968|vinc|c3pres
 lat25morph.verbnverb119|ls.n50968|vic|pftact
 lat25morph.verbnverb120|ls.n50968|vict|pftpass
 lat25morph.verbn50990|ls.n50990|vindic|conj1
-lat25morph.verbn51266|ls.n51266|voc|conj1
+lat25morph.verbn51266|ls.n51266|vocative|conj1
 lat25morph.verbn51418|ls.n51418|vulg|conj1

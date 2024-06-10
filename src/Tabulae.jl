@@ -58,6 +58,7 @@ export NounIO, VerbIO, InfinitiveIO, ParticipleIO
 export TabulaeRule, inflectionType
 export TabulaeNounRule
 export TabulaeFiniteVerbRule
+export TabulaeParticipleRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem

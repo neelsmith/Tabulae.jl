@@ -12,8 +12,8 @@ latcommoninfl.es_ei7|es_ei|erum|masculine|genitive|pl
 latcommoninfl.es_ei8|es_ei|ebus|masculine|dative|pl
 latcommoninfl.es_ei9|es_ei|es|masculine|accusative|pl
 latcommoninfl.es_ei10|es_ei|ebus|masculine|ablative|pl
-latcommoninfl.es_ei11|es_ei|es|masculine|voc|sg
-latcommoninfl.es_ei12|es_ei|es|masculine|voc|pl
+latcommoninfl.es_ei11|es_ei|es|masculine|vocative|sg
+latcommoninfl.es_ei12|es_ei|es|masculine|vocative|pl
 
 latcommoninfl.es_ei1|es_ei|es|feminine|nominative|sg
 latcommoninfl.es_ei2|es_ei|ei|feminine|genitive|sg
@@ -27,5 +27,5 @@ latcommoninfl.es_ei7|es_ei|erum|feminine|genitive|pl
 latcommoninfl.es_ei8|es_ei|ebus|feminine|dative|pl
 latcommoninfl.es_ei9|es_ei|es|feminine|accusative|pl
 latcommoninfl.es_ei10|es_ei|ebus|feminine|ablative|pl
-latcommoninfl.es_ei11|es_ei|es|feminine|voc|sg
-latcommoninfl.es_ei12|es_ei|es|feminine|voc|pl
+latcommoninfl.es_ei11|es_ei|es|feminine|vocative|sg
+latcommoninfl.es_ei12|es_ei|es|feminine|vocative|pl

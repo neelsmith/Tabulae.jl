@@ -10,8 +10,8 @@ latcommoninfl.o_onis7|o_onis|onum|feminine|genitive|pl
 latcommoninfl.o_onis8|o_onis|onibus|feminine|dative|pl
 latcommoninfl.o_onis9|o_onis|ones|feminine|accusative|pl
 latcommoninfl.o_onis10|o_onis|onibus|feminine|ablative|pl
-latcommoninfl.o_onis11|o_onis|o|feminine|voc|sg
-latcommoninfl.o_onis12|o_onis|ones|feminine|voc|pl
+latcommoninfl.o_onis11|o_onis|o|feminine|vocative|sg
+latcommoninfl.o_onis12|o_onis|ones|feminine|vocative|pl
 
 latcommoninfl.o_onis13|o_onis|o|masculine|nominative|sg
 latcommoninfl.o_onis14|o_onis|onis|masculine|genitive|sg
@@ -23,5 +23,5 @@ latcommoninfl.o_onis19|o_onis|onum|masculine|genitive|pl
 latcommoninfl.o_onis20|o_onis|onibus|masculine|dative|pl
 latcommoninfl.o_onis21|o_onis|ones|masculine|accusative|pl
 latcommoninfl.o_onis22|o_onis|onibus|masculine|ablative|pl
-latcommoninfl.o_onis23|o_onis|o|masculine|voc|sg
-latcommoninfl.o_onis24|o_onis|ones|masculine|voc|pl
+latcommoninfl.o_onis23|o_onis|o|masculine|vocative|sg
+latcommoninfl.o_onis24|o_onis|ones|masculine|vocative|pl

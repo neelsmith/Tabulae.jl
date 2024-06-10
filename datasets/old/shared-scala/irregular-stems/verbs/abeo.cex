@@ -3,48 +3,48 @@ StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 latcommon.irrverbn651|ls.n65|abeo|1st|singular|present|indic|active
 latcommon.irrverbn652|ls.n65|abis|2nd|singular|present|indic|active
 latcommon.irrverbn653|ls.n65|abit|3rd|singular|present|indic|active
-latcommon.irrverbn654|ls.n65|abimus|1st|pl|present|indic|active
-latcommon.irrverbn655|ls.n65|abitis|2nd|pl|present|indic|active
-latcommon.irrverbn656|ls.n65|abeunt|3rd|pl|present|indic|active
+latcommon.irrverbn654|ls.n65|abimus|1st|plural|present|indic|active
+latcommon.irrverbn655|ls.n65|abitis|2nd|plural|present|indic|active
+latcommon.irrverbn656|ls.n65|abeunt|3rd|plural|present|indic|active
 
 latcommon.irrverbn657|ls.n65|abibam|1st|singular|impft|indic|active
 latcommon.irrverbn658|ls.n65|abibas|2nd|singular|impft|indic|active
 latcommon.irrverbn659|ls.n65|abibat|3rd|singular|impft|indic|active
-latcommon.irrverbn6510|ls.n65|abibamus|1st|pl|impft|indic|active
-latcommon.irrverbn6511|ls.n65|abibatis|2nd|pl|impft|indic|active
-latcommon.irrverbn6512|ls.n65|abibant|3rd|pl|impft|indic|active
+latcommon.irrverbn6510|ls.n65|abibamus|1st|plural|impft|indic|active
+latcommon.irrverbn6511|ls.n65|abibatis|2nd|plural|impft|indic|active
+latcommon.irrverbn6512|ls.n65|abibant|3rd|plural|impft|indic|active
 
 latcommon.irrverbn6513|ls.n65|abibo|1st|singular|fut|indic|active
 latcommon.irrverbn6514|ls.n65|abibis|2nd|singular|fut|indic|active
 latcommon.irrverbn6515|ls.n65|abibit|3rd|singular|fut|indic|active
-latcommon.irrverbn6516|ls.n65|abibimus|1st|pl|fut|indic|active
-latcommon.irrverbn6517|ls.n65|abibitis|2nd|pl|fut|indic|active
-latcommon.irrverbn6518|ls.n65|abibunt|3rd|pl|fut|indic|active
+latcommon.irrverbn6516|ls.n65|abibimus|1st|plural|fut|indic|active
+latcommon.irrverbn6517|ls.n65|abibitis|2nd|plural|fut|indic|active
+latcommon.irrverbn6518|ls.n65|abibunt|3rd|plural|fut|indic|active
 
 latcommon.irrverbn6555|ls.n65|abeam|1st|singular|present|subj|active
 latcommon.irrverbn6556|ls.n65|abeas|2nd|singular|present|subj|active
 latcommon.irrverbn6557|ls.n65|abeat|3rd|singular|present|subj|active
-latcommon.irrverbn6558|ls.n65|abeamus|1st|pl|present|subj|active
-latcommon.irrverbn6559|ls.n65|abeatis|2nd|pl|present|subj|active
-latcommon.irrverbn6560|ls.n65|abeant|3rd|pl|present|subj|active
+latcommon.irrverbn6558|ls.n65|abeamus|1st|plural|present|subj|active
+latcommon.irrverbn6559|ls.n65|abeatis|2nd|plural|present|subj|active
+latcommon.irrverbn6560|ls.n65|abeant|3rd|plural|present|subj|active
 
 latcommon.irrverbn6561|ls.n65|abirem|1st|singular|impft|subj|active
 latcommon.irrverbn6562|ls.n65|abires|2nd|singular|impft|subj|active
 latcommon.irrverbn6563|ls.n65|abiret|3rd|singular|impft|subj|active
-latcommon.irrverbn6564|ls.n65|abiremus|1st|pl|impft|subj|active
-latcommon.irrverbn6565|ls.n65|abiretis|2nd|pl|impft|subj|active
-latcommon.irrverbn6566|ls.n65|abirent|3rd|pl|impft|subj|active
+latcommon.irrverbn6564|ls.n65|abiremus|1st|plural|impft|subj|active
+latcommon.irrverbn6565|ls.n65|abiretis|2nd|plural|impft|subj|active
+latcommon.irrverbn6566|ls.n65|abirent|3rd|plural|impft|subj|active
 
 latcommon.irrverbn6579|ls.n65|abissem|1st|singular|pluperfect|subj|active
 latcommon.irrverbn6580|ls.n65|abisses|2nd|singular|pluperfect|subj|active
 latcommon.irrverbn6581|ls.n65|abisset|3rd|singular|pluperfect|subj|active
-latcommon.irrverbn6582|ls.n65|abissemus|1st|pl|pluperfect|subj|active
-latcommon.irrverbn6583|ls.n65|abissetis|2nd|pl|pluperfect|subj|active
-latcommon.irrverbn6584|ls.n65|abissent|3rd|pl|pluperfect|subj|active
+latcommon.irrverbn6582|ls.n65|abissemus|1st|plural|pluperfect|subj|active
+latcommon.irrverbn6583|ls.n65|abissetis|2nd|plural|pluperfect|subj|active
+latcommon.irrverbn6584|ls.n65|abissent|3rd|plural|pluperfect|subj|active
 
 latcommon.irrverbn6591|ls.n65|abi|2nd|singular|present|imptv|active
-latcommon.irrverbn6592|ls.n65|abite|2nd|pl|present|imptv|active
+latcommon.irrverbn6592|ls.n65|abite|2nd|plural|present|imptv|active
 latcommon.irrverbn6593|ls.n65|abito|2nd|singular|fut|imptv|active
-latcommon.irrverbn6594|ls.n65|abitote|2nd|pl|fut|imptv|active
+latcommon.irrverbn6594|ls.n65|abitote|2nd|plural|fut|imptv|active
 latcommon.irrverbn6595|ls.n65|abito|3rd|singular|fut|imptv|active
-latcommon.irrverbn6596|ls.n65|abeunto|3rd|pl|fut|imptv|active
+latcommon.irrverbn6596|ls.n65|abeunto|3rd|plural|fut|imptv|active

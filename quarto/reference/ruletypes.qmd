@@ -56,7 +56,7 @@ infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
 ## ParticipleRule
 
 ```{julia}
-ptcplruletext = "latcommoninfl.are_conj1presapl2|conj1|antis|masculine|gen|singular|present|active"
+ptcplruletext = "latcommoninfl.are_conj1presapl2|conj1|antis|masculine|genitive|singular|present|active"
 
 ptpclio = ParticipleIO("participle io")
 infinrule = Tabulae.readrulerow(ptpclio, ptcplruletext)

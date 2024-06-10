@@ -7,12 +7,12 @@ ocremorph.is_is15|or_oris_comp|ori|masculine|dative|singular|comp
 ocremorph.is_is16|or_oris_comp|orem|masculine|accusative|singular|comp
 ocremorph.is_is17|or_oris_comp|ore|masculine|ablative|singular|comp
 ocremorph.is_is17b|or_oris_comp|ori|masculine|ablative|singular|comp
-ocremorph.is_is18|or_oris_comp|ores|masculine|nominative|pl|comp
-ocremorph.is_is19|or_oris_comp|orvm|masculine|genitive|pl|comp
-ocremorph.is_is20|or_oris_comp|oribvs|masculine|dative|pl|comp
-ocremorph.is_is21|or_oris_comp|ores|masculine|accusative|pl|comp
-ocremorph.is_is21b|or_oris_comp|oris|masculine|accusative|pl|comp
-ocremorph.is_is22|or_oris_comp|oribvs|masculine|ablative|pl|comp
+ocremorph.is_is18|or_oris_comp|ores|masculine|nominative|plural|comp
+ocremorph.is_is19|or_oris_comp|orvm|masculine|genitive|plural|comp
+ocremorph.is_is20|or_oris_comp|oribvs|masculine|dative|plural|comp
+ocremorph.is_is21|or_oris_comp|ores|masculine|accusative|plural|comp
+ocremorph.is_is21b|or_oris_comp|oris|masculine|accusative|plural|comp
+ocremorph.is_is22|or_oris_comp|oribvs|masculine|ablative|plural|comp
 
 
 
@@ -24,12 +24,12 @@ ocremorph.is_is51|or_oris_comp|ori|feminine|dative|singular|comp
 ocremorph.is_is52|or_oris_comp|orem|feminine|accusative|singular|comp
 ocremorph.is_is53|or_oris_comp|ore|feminine|ablative|singular|comp
 ocremorph.is_is53b|or_oris_comp|ori|feminine|ablative|singular|comp
-ocremorph.is_is54|or_oris_comp|ores|feminine|nominative|pl|comp
-ocremorph.is_is55|or_oris_comp|orum|feminine|genitive|pl|comp
-ocremorph.is_is56|or_oris_comp|oribus|feminine|dative|pl|comp
-ocremorph.is_is57|or_oris_comp|ores|feminine|accusative|pl|comp
-ocremorph.is_is58|or_oris_comp|oris|feminine|accusative|pl|comp
-ocremorph.is_is59|or_oris_comp|oribus|feminine|ablative|pl|comp
+ocremorph.is_is54|or_oris_comp|ores|feminine|nominative|plural|comp
+ocremorph.is_is55|or_oris_comp|orum|feminine|genitive|plural|comp
+ocremorph.is_is56|or_oris_comp|oribus|feminine|dative|plural|comp
+ocremorph.is_is57|or_oris_comp|ores|feminine|accusative|plural|comp
+ocremorph.is_is58|or_oris_comp|oris|feminine|accusative|plural|comp
+ocremorph.is_is59|or_oris_comp|oribus|feminine|ablative|plural|comp
 
 
 
@@ -40,8 +40,8 @@ ocremorph.is_is89|or_oris_comp|ori|neuter|dative|singular|comp
 ocremorph.is_is90|or_oris_comp|ivs|neuter|accusative|singular|comp
 ocremorph.is_is91|or_oris_comp|ore|neuter|ablative|singular|comp
 ocremorph.is_is91b|or_oris_comp|ori|neuter|ablative|singular|comp
-ocremorph.is_is92|or_oris_comp|ora|neuter|nominative|pl|comp
-ocremorph.is_is93|or_oris_comp|orvm|neuter|genitive|pl|comp
-ocremorph.is_is94|or_oris_comp|oribvs|neuter|dative|pl|comp
-ocremorph.is_is95|or_oris_comp|ora|neuter|accusative|pl|comp
-ocremorph.is_is96|or_oris_comp|oribvs|neuter|ablative|pl|comp
+ocremorph.is_is92|or_oris_comp|ora|neuter|nominative|plural|comp
+ocremorph.is_is93|or_oris_comp|orvm|neuter|genitive|plural|comp
+ocremorph.is_is94|or_oris_comp|oribvs|neuter|dative|plural|comp
+ocremorph.is_is95|or_oris_comp|ora|neuter|accusative|plural|comp
+ocremorph.is_is96|or_oris_comp|oribvs|neuter|ablative|plural|comp

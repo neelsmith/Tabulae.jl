@@ -3,48 +3,48 @@ StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 latcommon.irrvadn158681|ls.n15868|eo|1st|singular|present|indic|active
 latcommon.irrvadn158682|ls.n15868|is|2nd|singular|present|indic|active
 latcommon.irrvadn158683|ls.n15868|it|3rd|singular|present|indic|active
-latcommon.irrvadn158684|ls.n15868|imus|1st|pl|present|indic|active
-latcommon.irrvadn158685|ls.n15868|itis|2nd|pl|present|indic|active
-latcommon.irrvadn158686|ls.n15868|eunt|3rd|pl|present|indic|active
+latcommon.irrvadn158684|ls.n15868|imus|1st|plural|present|indic|active
+latcommon.irrvadn158685|ls.n15868|itis|2nd|plural|present|indic|active
+latcommon.irrvadn158686|ls.n15868|eunt|3rd|plural|present|indic|active
 
 latcommon.irrvadn158687|ls.n15868|ibam|1st|singular|impft|indic|active
 latcommon.irrvadn158688|ls.n15868|ibas|2nd|singular|impft|indic|active
 latcommon.irrvadn158689|ls.n15868|ibat|3rd|singular|impft|indic|active
-latcommon.irrvadn1586810|ls.n15868|ibamus|1st|pl|impft|indic|active
-latcommon.irrvadn1586811|ls.n15868|ibatis|2nd|pl|impft|indic|active
-latcommon.irrvadn1586812|ls.n15868|ibant|3rd|pl|impft|indic|active
+latcommon.irrvadn1586810|ls.n15868|ibamus|1st|plural|impft|indic|active
+latcommon.irrvadn1586811|ls.n15868|ibatis|2nd|plural|impft|indic|active
+latcommon.irrvadn1586812|ls.n15868|ibant|3rd|plural|impft|indic|active
 
 latcommon.irrvadn1586813|ls.n15868|ibo|1st|singular|fut|indic|active
 latcommon.irrvadn1586814|ls.n15868|ibis|2nd|singular|fut|indic|active
 latcommon.irrvadn1586815|ls.n15868|ibit|3rd|singular|fut|indic|active
-latcommon.irrvadn1586816|ls.n15868|ibimus|1st|pl|fut|indic|active
-latcommon.irrvadn1586817|ls.n15868|ibitis|2nd|pl|fut|indic|active
-latcommon.irrvadn1586818|ls.n15868|ibunt|3rd|pl|fut|indic|active
+latcommon.irrvadn1586816|ls.n15868|ibimus|1st|plural|fut|indic|active
+latcommon.irrvadn1586817|ls.n15868|ibitis|2nd|plural|fut|indic|active
+latcommon.irrvadn1586818|ls.n15868|ibunt|3rd|plural|fut|indic|active
 
 latcommon.irrvadn1586855|ls.n15868|eam|1st|singular|present|subj|active
 latcommon.irrvadn1586856|ls.n15868|eas|2nd|singular|present|subj|active
 latcommon.irrvadn1586857|ls.n15868|eat|3rd|singular|present|subj|active
-latcommon.irrvadn1586858|ls.n15868|eamus|1st|pl|present|subj|active
-latcommon.irrvadn1586859|ls.n15868|eatis|2nd|pl|present|subj|active
-latcommon.irrvadn1586860|ls.n15868|eant|3rd|pl|present|subj|active
+latcommon.irrvadn1586858|ls.n15868|eamus|1st|plural|present|subj|active
+latcommon.irrvadn1586859|ls.n15868|eatis|2nd|plural|present|subj|active
+latcommon.irrvadn1586860|ls.n15868|eant|3rd|plural|present|subj|active
 
 latcommon.irrvadn1586861|ls.n15868|irem|1st|singular|impft|subj|active
 latcommon.irrvadn1586862|ls.n15868|ires|2nd|singular|impft|subj|active
 latcommon.irrvadn1586863|ls.n15868|iret|3rd|singular|impft|subj|active
-latcommon.irrvadn1586864|ls.n15868|iremus|1st|pl|impft|subj|active
-latcommon.irrvadn1586865|ls.n15868|iretis|2nd|pl|impft|subj|active
-latcommon.irrvadn1586866|ls.n15868|irent|3rd|pl|impft|subj|active
+latcommon.irrvadn1586864|ls.n15868|iremus|1st|plural|impft|subj|active
+latcommon.irrvadn1586865|ls.n15868|iretis|2nd|plural|impft|subj|active
+latcommon.irrvadn1586866|ls.n15868|irent|3rd|plural|impft|subj|active
 
 latcommon.irrvadn1586879|ls.n15868|issem|1st|singular|plupft|subj|active
 latcommon.irrvadn1586880|ls.n15868|isses|2nd|singular|plupft|subj|active
 latcommon.irrvadn1586881|ls.n15868|isset|3rd|singular|plupft|subj|active
-latcommon.irrvadn1586882|ls.n15868|issemus|1st|pl|plupft|subj|active
-latcommon.irrvadn1586883|ls.n15868|issetis|2nd|pl|plupft|subj|active
-latcommon.irrvadn1586884|ls.n15868|issent|3rd|pl|plupft|subj|active
+latcommon.irrvadn1586882|ls.n15868|issemus|1st|plural|plupft|subj|active
+latcommon.irrvadn1586883|ls.n15868|issetis|2nd|plural|plupft|subj|active
+latcommon.irrvadn1586884|ls.n15868|issent|3rd|plural|plupft|subj|active
 
 latcommon.irrvadn1586891|ls.n15868|i|2nd|singular|present|imptv|active
-latcommon.irrvadn1586892|ls.n15868|ite|2nd|pl|present|imptv|active
+latcommon.irrvadn1586892|ls.n15868|ite|2nd|plural|present|imptv|active
 latcommon.irrvadn1586893|ls.n15868|ito|2nd|singular|fut|imptv|active
-latcommon.irrvadn1586894|ls.n15868|itote|2nd|pl|fut|imptv|active
+latcommon.irrvadn1586894|ls.n15868|itote|2nd|plural|fut|imptv|active
 latcommon.irrvadn1586895|ls.n15868|ito|3rd|singular|fut|imptv|active
-latcommon.irrvadn1586896|ls.n15868|eunto|3rd|pl|fut|imptv|active
+latcommon.irrvadn1586896|ls.n15868|eunto|3rd|plural|fut|imptv|active

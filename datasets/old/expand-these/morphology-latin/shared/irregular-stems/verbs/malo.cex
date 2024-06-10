@@ -3,70 +3,70 @@ StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 latcommon.irrvadn277611|ls.n27761|malo|1st|singular|present|indic|active
 latcommon.irrvadn277612|ls.n27761|mauis|2nd|singular|present|indic|active
 latcommon.irrvadn277613|ls.n27761|mauult|3rd|singular|present|indic|active
-latcommon.irrvadn277614|ls.n27761|malumus|1st|pl|present|indic|active
-latcommon.irrvadn277615|ls.n27761|mauultis|2nd|pl|present|indic|active
-latcommon.irrvadn277616|ls.n27761|malunt|3rd|pl|present|indic|active
+latcommon.irrvadn277614|ls.n27761|malumus|1st|plural|present|indic|active
+latcommon.irrvadn277615|ls.n27761|mauultis|2nd|plural|present|indic|active
+latcommon.irrvadn277616|ls.n27761|malunt|3rd|plural|present|indic|active
 
 latcommon.irrvadn277617|ls.n27761|malebam|1st|singular|impft|indic|active
 latcommon.irrvadn277618|ls.n27761|malebas|2nd|singular|impft|indic|active
 latcommon.irrvadn277619|ls.n27761|malebat|3rd|singular|impft|indic|active
-latcommon.irrvadn2776110|ls.n27761|malebamus|1st|pl|impft|indic|active
-latcommon.irrvadn2776111|ls.n27761|malebatis|2nd|pl|impft|indic|active
-latcommon.irrvadn2776112|ls.n27761|malebant|3rd|pl|impft|indic|active
+latcommon.irrvadn2776110|ls.n27761|malebamus|1st|plural|impft|indic|active
+latcommon.irrvadn2776111|ls.n27761|malebatis|2nd|plural|impft|indic|active
+latcommon.irrvadn2776112|ls.n27761|malebant|3rd|plural|impft|indic|active
 
 latcommon.irrvadn2776113|ls.n27761|malam|1st|singular|fut|indic|active
 latcommon.irrvadn2776114|ls.n27761|males|2nd|singular|fut|indic|active
 latcommon.irrvadn2776115|ls.n27761|malet|3rd|singular|fut|indic|active
-latcommon.irrvadn2776116|ls.n27761|malemus|1st|pl|fut|indic|active
-latcommon.irrvadn2776117|ls.n27761|maletis|2nd|pl|fut|indic|active
-latcommon.irrvadn2776118|ls.n27761|malent|3rd|pl|fut|indic|active
+latcommon.irrvadn2776116|ls.n27761|malemus|1st|plural|fut|indic|active
+latcommon.irrvadn2776117|ls.n27761|maletis|2nd|plural|fut|indic|active
+latcommon.irrvadn2776118|ls.n27761|malent|3rd|plural|fut|indic|active
 
 latcommon.irrvadn2776119|ls.n27761|malui|1st|singular|pft|indic|active
 latcommon.irrvadn2776120|ls.n27761|maluisti|2nd|singular|pft|indic|active
 latcommon.irrvadn2776121|ls.n27761|maluit|3rd|singular|pft|indic|active
-latcommon.irrvadn2776122|ls.n27761|maluimus|1st|pl|pft|indic|active
-latcommon.irrvadn2776123|ls.n27761|maluistis|2nd|pl|pft|indic|active
-latcommon.irrvadn2776124|ls.n27761|maluerunt|3rd|pl|pft|indic|active
-latcommon.irrvadn2776124b|ls.n27761|maluere|3rd|pl|pft|indic|active
+latcommon.irrvadn2776122|ls.n27761|maluimus|1st|plural|pft|indic|active
+latcommon.irrvadn2776123|ls.n27761|maluistis|2nd|plural|pft|indic|active
+latcommon.irrvadn2776124|ls.n27761|maluerunt|3rd|plural|pft|indic|active
+latcommon.irrvadn2776124b|ls.n27761|maluere|3rd|plural|pft|indic|active
 
 latcommon.irrvadn2776125|ls.n27761|malueram|1st|singular|plupft|indic|active
 latcommon.irrvadn2776126|ls.n27761|malueras|2nd|singular|plupft|indic|active
 latcommon.irrvadn2776127|ls.n27761|maluerat|3rd|singular|plupft|indic|active
-latcommon.irrvadn2776128|ls.n27761|malueramus|1st|pl|plupft|indic|active
-latcommon.irrvadn2776129|ls.n27761|malueratis|2nd|pl|plupft|indic|active
-latcommon.irrvadn2776130|ls.n27761|maluerant|3rd|pl|plupft|indic|active
+latcommon.irrvadn2776128|ls.n27761|malueramus|1st|plural|plupft|indic|active
+latcommon.irrvadn2776129|ls.n27761|malueratis|2nd|plural|plupft|indic|active
+latcommon.irrvadn2776130|ls.n27761|maluerant|3rd|plural|plupft|indic|active
 
 latcommon.irrvadn2776131|ls.n27761|maluero|1st|singular|futpft|indic|active
 latcommon.irrvadn2776132|ls.n27761|malueris|2nd|singular|futpft|indic|active
 latcommon.irrvadn2776133|ls.n27761|maluerit|3rd|singular|futpft|indic|active
-latcommon.irrvadn2776134|ls.n27761|maluerimus|1st|pl|futpft|indic|active
-latcommon.irrvadn2776135|ls.n27761|malueritis|2nd|pl|futpft|indic|active
-latcommon.irrvadn2776136|ls.n27761|maluerint|3rd|pl|futpft|indic|active
+latcommon.irrvadn2776134|ls.n27761|maluerimus|1st|plural|futpft|indic|active
+latcommon.irrvadn2776135|ls.n27761|malueritis|2nd|plural|futpft|indic|active
+latcommon.irrvadn2776136|ls.n27761|maluerint|3rd|plural|futpft|indic|active
 
 latcommon.irrvadn2776137|ls.n27761|malim|1st|singular|present|subj|active
 latcommon.irrvadn2776138|ls.n27761|malis|2nd|singular|present|subj|active
 latcommon.irrvadn2776139|ls.n27761|malit|3rd|singular|present|subj|active
-latcommon.irrvadn2776140|ls.n27761|malimus|1st|pl|present|subj|active
-latcommon.irrvadn2776141|ls.n27761|malitis|2nd|pl|present|subj|active
-latcommon.irrvadn2776142|ls.n27761|malint|3rd|pl|present|subj|active
+latcommon.irrvadn2776140|ls.n27761|malimus|1st|plural|present|subj|active
+latcommon.irrvadn2776141|ls.n27761|malitis|2nd|plural|present|subj|active
+latcommon.irrvadn2776142|ls.n27761|malint|3rd|plural|present|subj|active
 
 latcommon.irrvadn2776143|ls.n27761|mallem|1st|singular|impft|subj|active
 latcommon.irrvadn2776144|ls.n27761|malles|2nd|singular|impft|subj|active
 latcommon.irrvadn2776145|ls.n27761|mallet|3rd|singular|impft|subj|active
-latcommon.irrvadn2776146|ls.n27761|mallemus|1st|pl|impft|subj|active
-latcommon.irrvadn2776147|ls.n27761|malletis|2nd|pl|impft|subj|active
-latcommon.irrvadn2776148|ls.n27761|mallent|3rd|pl|impft|subj|active
+latcommon.irrvadn2776146|ls.n27761|mallemus|1st|plural|impft|subj|active
+latcommon.irrvadn2776147|ls.n27761|malletis|2nd|plural|impft|subj|active
+latcommon.irrvadn2776148|ls.n27761|mallent|3rd|plural|impft|subj|active
 
 latcommon.irrvadn2776149|ls.n27761|maluerim|1st|singular|pft|subj|active
 latcommon.irrvadn2776150|ls.n27761|malueris|2nd|singular|pft|subj|active
 latcommon.irrvadn2776151|ls.n27761|maluerit|3rd|singular|pft|subj|active
-latcommon.irrvadn2776152|ls.n27761|maluerimus|1st|pl|pft|subj|active
-latcommon.irrvadn2776153|ls.n27761|malueritis|2nd|pl|pft|subj|active
-latcommon.irrvadn2776154|ls.n27761|maluerint|3rd|pl|pft|subj|active
+latcommon.irrvadn2776152|ls.n27761|maluerimus|1st|plural|pft|subj|active
+latcommon.irrvadn2776153|ls.n27761|malueritis|2nd|plural|pft|subj|active
+latcommon.irrvadn2776154|ls.n27761|maluerint|3rd|plural|pft|subj|active
 
 latcommon.irrvadn2776155|ls.n27761|maluissem|1st|singular|plupft|subj|active
 latcommon.irrvadn2776156|ls.n27761|maluisses|2nd|singular|plupft|subj|active
 latcommon.irrvadn2776157|ls.n27761|maluisset|3rd|singular|plupft|subj|active
-latcommon.irrvadn2776158|ls.n27761|maluissemus|1st|pl|plupft|subj|active
-latcommon.irrvadn2776159|ls.n27761|maluissetis|2nd|pl|plupft|subj|active
-latcommon.irrvadn2776160|ls.n27761|maluissent|3rd|pl|plupft|subj|active
+latcommon.irrvadn2776158|ls.n27761|maluissemus|1st|plural|plupft|subj|active
+latcommon.irrvadn2776159|ls.n27761|maluissetis|2nd|plural|plupft|subj|active
+latcommon.irrvadn2776160|ls.n27761|maluissent|3rd|plural|plupft|subj|active

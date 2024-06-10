@@ -13,8 +13,8 @@ latcommoninfl.i_is_is8|i_is_is|ibus|masculine|dative|pl
 latcommoninfl.i_is_is9|i_is_is|es|masculine|accusative|pl
 latcommoninfl.i_is_is9b|i_is_is|is|masculine|accusative|pl
 latcommoninfl.i_is_is10|i_is_is|ibus|masculine|ablative|pl
-latcommoninfl.i_is_is11|i_is_is|is|masculine|voc|sg
-latcommoninfl.i_is_is12|i_is_is|es|masculine|voc|pl
+latcommoninfl.i_is_is11|i_is_is|is|masculine|vocative|sg
+latcommoninfl.i_is_is12|i_is_is|es|masculine|vocative|pl
 
 latcommoninfl.i_is_is13|i_is_is|is|feminine|nominative|sg
 latcommoninfl.i_is_is14|i_is_is|is|feminine|genitive|sg
@@ -29,8 +29,8 @@ latcommoninfl.i_is_is20|i_is_is|ibus|feminine|dative|pl
 latcommoninfl.i_is_is21|i_is_is|es|feminine|accusative|pl
 latcommoninfl.i_is_is21b|i_is_is|is|feminine|accusative|pl
 latcommoninfl.i_is_is22|i_is_is|ibus|feminine|ablative|pl
-latcommoninfl.i_is_is23|i_is_is|is|feminine|voc|sg
-latcommoninfl.i_is_is24|i_is_is|es|feminine|voc|pl
+latcommoninfl.i_is_is23|i_is_is|is|feminine|vocative|sg
+latcommoninfl.i_is_is24|i_is_is|es|feminine|vocative|pl
 
 latcommoninfl.i_is_is25|i_is_is|e|neuter|nominative|sg
 latcommoninfl.i_is_is26|i_is_is|is|neuter|genitive|sg
@@ -42,5 +42,5 @@ latcommoninfl.i_is_is31|i_is_is|ium|neuter|genitive|pl
 latcommoninfl.i_is_is32|i_is_is|ibus|neuter|dative|pl
 latcommoninfl.i_is_is33|i_is_is|ia|neuter|accusative|pl
 latcommoninfl.i_is_is34|i_is_is|ibus|neuter|ablative|pl
-latcommoninfl.i_is_is35|i_is_is|e|neuter|voc|sg
-latcommoninfl.i_is_is36|i_is_is|ia|neuter|voc|pl
+latcommoninfl.i_is_is35|i_is_is|e|neuter|vocative|sg
+latcommoninfl.i_is_is36|i_is_is|ia|neuter|vocative|pl

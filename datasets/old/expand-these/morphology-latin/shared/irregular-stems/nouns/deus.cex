@@ -5,7 +5,7 @@ latcommon.irregn13573a|lexent.n13573|deus|masculine|nominative|sg
 latcommon.irregn13573b|lexent.n13573|dei|masculine|genitive|sg
 latcommon.irregn13573c|lexent.n13573|deo|masculine|dative|sg
 latcommon.irregn13573d|lexent.n13573|deum|masculine|accusative|sg
-latcommon.irregn13573f|lexent.n13573|deus|masculine|voc|sg
+latcommon.irregn13573f|lexent.n13573|deus|masculine|vocative|sg
 
 
 latcommon.irregn13573g|lexent.n13573|dei|masculine|nominative|pl
@@ -18,4 +18,4 @@ latcommon.irregn13573iter|lexent.n13573|diis|masculine|dative|pl
 latcommon.irregn13573j|lexent.n13573|deos|masculine|accusative|pl
 latcommon.irregn13573k|lexent.n13573|deis|masculine|ablative|pl
 latcommon.irregn13573kbis|lexent.n13573|dis|masculine|ablative|pl
-latcommon.irregn13573l|lexent.n13573|dii|masculine|voc|pl
+latcommon.irregn13573l|lexent.n13573|dii|masculine|vocative|pl

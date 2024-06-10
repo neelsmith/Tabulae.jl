@@ -13,8 +13,8 @@ latcommoninfl.x_gis8|x_gis|gibus|masculine|dative|pl
 latcommoninfl.x_gis9|x_gis|ges|masculine|accusative|pl
 latcommoninfl.x_gis9b|x_gis|gis|masculine|accusative|pl
 latcommoninfl.x_gis10|x_gis|gibus|masculine|ablative|pl
-latcommoninfl.x_gis11|x_gis|x|masculine|voc|sg
-latcommoninfl.x_gis12|x_gis|ges|masculine|voc|pl
+latcommoninfl.x_gis11|x_gis|x|masculine|vocative|sg
+latcommoninfl.x_gis12|x_gis|ges|masculine|vocative|pl
 
 latcommoninfl.x_gis13|x_gis|x|feminine|nominative|sg
 latcommoninfl.x_gis14|x_gis|gis|feminine|genitive|sg
@@ -29,5 +29,5 @@ latcommoninfl.x_gis20|x_gis|gibus|feminine|dative|pl
 latcommoninfl.x_gis21|x_gis|ges|feminine|accusative|pl
 latcommoninfl.x_gis21b|x_gis|gis|feminine|accusative|pl
 latcommoninfl.x_gis22|x_gis|gibus|feminine|ablative|pl
-latcommoninfl.x_gis23|x_gis|x|feminine|voc|sg
-latcommoninfl.x_gis24|x_gis|ges|feminine|voc|pl
+latcommoninfl.x_gis23|x_gis|x|feminine|vocative|sg
+latcommoninfl.x_gis24|x_gis|ges|feminine|vocative|pl

@@ -10,8 +10,8 @@ latcommoninfl.s_tis8|s_tis|tibus|masculine|dative|pl
 latcommoninfl.s_tis9|s_tis|tes|masculine|accusative|pl
 latcommoninfl.s_tis9b|s_tis|tis|masculine|accusative|pl
 latcommoninfl.s_tis10|s_tis|tibus|masculine|ablative|pl
-latcommoninfl.s_tis11|s_tis|s|masculine|voc|sg
-latcommoninfl.s_tis12|s_tis|tes|masculine|voc|pl
+latcommoninfl.s_tis11|s_tis|s|masculine|vocative|sg
+latcommoninfl.s_tis12|s_tis|tes|masculine|vocative|pl
 
 latcommoninfl.s_tis13|s_tis|s|feminine|nominative|sg
 latcommoninfl.s_tis14|s_tis|tis|feminine|genitive|sg
@@ -24,8 +24,8 @@ latcommoninfl.s_tis20|s_tis|tibus|feminine|dative|pl
 latcommoninfl.s_tis21|s_tis|tes|feminine|accusative|pl
 latcommoninfl.s_tis21b|s_tis|tis|feminine|accusative|pl
 latcommoninfl.s_tis22|s_tis|tibus|feminine|ablative|pl
-latcommoninfl.s_tis23|s_tis|s|feminine|voc|sg
-latcommoninfl.s_tis24|s_tis|tes|feminine|voc|pl
+latcommoninfl.s_tis23|s_tis|s|feminine|vocative|sg
+latcommoninfl.s_tis24|s_tis|tes|feminine|vocative|pl
 
 latcommoninfl.s_tis25|s_tis|s|neuter|nominative|sg
 latcommoninfl.s_tis26|s_tis|tis|neuter|genitive|sg
@@ -37,5 +37,5 @@ latcommoninfl.s_tis31|s_tis|tum|neuter|genitive|pl
 latcommoninfl.s_tis32|s_tis|tibus|neuter|dative|pl
 latcommoninfl.s_tis33|s_tis|tia|neuter|accusative|pl
 latcommoninfl.s_tis34|s_tis|tibus|neuter|ablative|pl
-latcommoninfl.s_tis35|s_tis|s|neuter|voc|sg
-latcommoninfl.s_tis36|s_tis|tes|neuter|voc|pl
+latcommoninfl.s_tis35|s_tis|s|neuter|vocative|sg
+latcommoninfl.s_tis36|s_tis|tes|neuter|vocative|pl

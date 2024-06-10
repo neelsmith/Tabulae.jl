@@ -1,24 +1,24 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number|Degree
 
-latcommon.irradjn48969a|ls.n48969|tres|masculine|nominative|pl|pos
-latcommon.irradjn48969b|ls.n48969|trium|masculine|genitive|pl|pos
-latcommon.irradjn48969c|ls.n48969|tribus|masculine|dative|pl|pos
-latcommon.irradjn48969d|ls.n48969|tres|masculine|accusative|pl|pos
-latcommon.irradjn48969e|ls.n48969|tris|masculine|accusative|pl|pos
-latcommon.irradjn48969f|ls.n48969|tribus|masculine|ablative|pl|pos
-latcommon.irradjn48969g|ls.n48969|tres|masculine|vocative|pl|pos
+latcommon.irradjn48969a|ls.n48969|tres|masculine|nominative|plural|pos
+latcommon.irradjn48969b|ls.n48969|trium|masculine|genitive|plural|pos
+latcommon.irradjn48969c|ls.n48969|tribus|masculine|dative|plural|pos
+latcommon.irradjn48969d|ls.n48969|tres|masculine|accusative|plural|pos
+latcommon.irradjn48969e|ls.n48969|tris|masculine|accusative|plural|pos
+latcommon.irradjn48969f|ls.n48969|tribus|masculine|ablative|plural|pos
+latcommon.irradjn48969g|ls.n48969|tres|masculine|vocative|plural|pos
 
-latcommon.irradjn48969h|ls.n48969|tres|feminine|nominative|pl|pos
-latcommon.irradjn48969i|ls.n48969|trium|feminine|genitive|pl|pos
-latcommon.irradjn48969j|ls.n48969|tribus|feminine|dative|pl|pos
-latcommon.irradjn48969k|ls.n48969|tres|feminine|accusative|pl|pos
-latcommon.irradjn48969l|ls.n48969|tris|feminine|accusative|pl|pos
-latcommon.irradjn48969m|ls.n48969|tribus|feminine|ablative|pl|pos
-latcommon.irradjn48969n|ls.n48969|tres|feminine|vocative|pl|pos
+latcommon.irradjn48969h|ls.n48969|tres|feminine|nominative|plural|pos
+latcommon.irradjn48969i|ls.n48969|trium|feminine|genitive|plural|pos
+latcommon.irradjn48969j|ls.n48969|tribus|feminine|dative|plural|pos
+latcommon.irradjn48969k|ls.n48969|tres|feminine|accusative|plural|pos
+latcommon.irradjn48969l|ls.n48969|tris|feminine|accusative|plural|pos
+latcommon.irradjn48969m|ls.n48969|tribus|feminine|ablative|plural|pos
+latcommon.irradjn48969n|ls.n48969|tres|feminine|vocative|plural|pos
 
-latcommon.irradjn48969o|ls.n48969|tria|neuter|nominative|pl|pos
-latcommon.irradjn48969p|ls.n48969|trium|neuter|genitive|pl|pos
-latcommon.irradjn48969q|ls.n48969|tribus|neuter|dative|pl|pos
-latcommon.irradjn48969r|ls.n48969|tria|neuter|accusative|pl|pos
-latcommon.irradjn48969s|ls.n48969|tribus|neuter|ablative|pl|pos
-latcommon.irradjn48969t|ls.n48969|tria|neuter|vocative|pl|pos
+latcommon.irradjn48969o|ls.n48969|tria|neuter|nominative|plural|pos
+latcommon.irradjn48969p|ls.n48969|trium|neuter|genitive|plural|pos
+latcommon.irradjn48969q|ls.n48969|tribus|neuter|dative|plural|pos
+latcommon.irradjn48969r|ls.n48969|tria|neuter|accusative|plural|pos
+latcommon.irradjn48969s|ls.n48969|tribus|neuter|ablative|plural|pos
+latcommon.irradjn48969t|ls.n48969|tria|neuter|vocative|plural|pos

@@ -7,13 +7,13 @@ latcommoninfl.ere3_conj4deppresapl5|conj4dep|iente|masculine|ablative|singular|p
 latcommoninfl.ere3_conj4deppresapl5b|conj4dep|ienti|masculine|ablative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl6|conj4dep|iens|masculine|vocative|singular|present|active
 
-latcommoninfl.ere3_conj4deppresapl7|conj4dep|ientes|masculine|nominative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl8|conj4dep|ientium|masculine|genitive|pl|present|active
-latcommoninfl.ere3_conj4deppresapl9|conj4dep|ientibus|masculine|dative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl10|conj4dep|ientes|masculine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl10b|conj4dep|ientis|masculine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl11|conj4dep|ientibus|masculine|ablative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl12|conj4dep|ientes|masculine|vocative|pl|present|active
+latcommoninfl.ere3_conj4deppresapl7|conj4dep|ientes|masculine|nominative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl8|conj4dep|ientium|masculine|genitive|plural|present|active
+latcommoninfl.ere3_conj4deppresapl9|conj4dep|ientibus|masculine|dative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl10|conj4dep|ientes|masculine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl10b|conj4dep|ientis|masculine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl11|conj4dep|ientibus|masculine|ablative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl12|conj4dep|ientes|masculine|vocative|plural|present|active
 
 latcommoninfl.ere3_conj4deppresapl13|conj4dep|iens|feminine|nominative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl14|conj4dep|ientis|feminine|genitive|singular|present|active
@@ -23,13 +23,13 @@ latcommoninfl.ere3_conj4deppresapl17|conj4dep|iente|feminine|ablative|singular|p
 latcommoninfl.ere3_conj4deppresapl17b|conj4dep|ienti|feminine|ablative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl18|conj4dep|iens|feminine|vocative|singular|present|active
 
-latcommoninfl.ere3_conj4deppresapl19|conj4dep|ientes|feminine|nominative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl20|conj4dep|ientium|feminine|genitive|pl|present|active
-latcommoninfl.ere3_conj4deppresapl21|conj4dep|ientibus|feminine|dative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl22|conj4dep|ientes|feminine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl22b|conj4dep|ientis|feminine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl23|conj4dep|ientibus|feminine|vocative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl24|conj4dep|ientes|feminine|vocative|pl|present|active
+latcommoninfl.ere3_conj4deppresapl19|conj4dep|ientes|feminine|nominative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl20|conj4dep|ientium|feminine|genitive|plural|present|active
+latcommoninfl.ere3_conj4deppresapl21|conj4dep|ientibus|feminine|dative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl22|conj4dep|ientes|feminine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl22b|conj4dep|ientis|feminine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl23|conj4dep|ientibus|feminine|vocative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl24|conj4dep|ientes|feminine|vocative|plural|present|active
 
 latcommoninfl.ere3_conj4deppresapl25|conj4dep|iens|neuter|nominative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl26|conj4dep|ientis|neuter|genitive|singular|present|active
@@ -39,12 +39,12 @@ latcommoninfl.ere3_conj4deppresapl29|conj4dep|iente|neuter|ablative|singular|pre
 latcommoninfl.ere3_conj4deppresapl29b|conj4dep|ienti|neuter|ablative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl30|conj4dep|iens|neuter|nominative|singular|present|active
 
-latcommoninfl.ere3_conj4deppresapl31|conj4dep|ientia|neuter|nominative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl32|conj4dep|ientium|neuter|genitive|pl|present|active
-latcommoninfl.ere3_conj4deppresapl33|conj4dep|ientibus|neuter|dative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl34|conj4dep|ientia|neuter|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl35|conj4dep|ientibus|neuter|ablative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl36|conj4dep|ientia|neuter|vocative|pl|present|active
+latcommoninfl.ere3_conj4deppresapl31|conj4dep|ientia|neuter|nominative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl32|conj4dep|ientium|neuter|genitive|plural|present|active
+latcommoninfl.ere3_conj4deppresapl33|conj4dep|ientibus|neuter|dative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl34|conj4dep|ientia|neuter|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl35|conj4dep|ientibus|neuter|ablative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl36|conj4dep|ientia|neuter|vocative|plural|present|active
 
 latcommoninfl.ere3_conj4deppresapl37|c4presdep|iens|masculine|nominative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl38|c4presdep|ientis|masculine|genitive|singular|present|active
@@ -54,13 +54,13 @@ latcommoninfl.ere3_conj4deppresapl41|c4presdep|iente|masculine|ablative|singular
 latcommoninfl.ere3_conj4deppresapl41b|c4presdep|ienti|masculine|ablative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl42|c4presdep|iens|masculine|vocative|singular|present|active
 
-latcommoninfl.ere3_conj4deppresapl43|c4presdep|ientes|masculine|nominative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl44|c4presdep|ientium|masculine|genitive|pl|present|active
-latcommoninfl.ere3_conj4deppresapl45|c4presdep|ientibus|masculine|dative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl46|c4presdep|ientes|masculine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl46b|c4presdep|ientis|masculine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl47|c4presdep|ientibus|masculine|ablative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl48|c4presdep|ientes|masculine|vocative|pl|present|active
+latcommoninfl.ere3_conj4deppresapl43|c4presdep|ientes|masculine|nominative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl44|c4presdep|ientium|masculine|genitive|plural|present|active
+latcommoninfl.ere3_conj4deppresapl45|c4presdep|ientibus|masculine|dative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl46|c4presdep|ientes|masculine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl46b|c4presdep|ientis|masculine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl47|c4presdep|ientibus|masculine|ablative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl48|c4presdep|ientes|masculine|vocative|plural|present|active
 
 latcommoninfl.ere3_conj4deppresapl49|c4presdep|iens|feminine|nominative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl50|c4presdep|ientis|feminine|genitive|singular|present|active
@@ -70,13 +70,13 @@ latcommoninfl.ere3_conj4deppresapl53|c4presdep|iente|feminine|ablative|singular|
 latcommoninfl.ere3_conj4deppresapl53b|c4presdep|ienti|feminine|ablative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl54|c4presdep|iens|feminine|vocative|singular|present|active
 
-latcommoninfl.ere3_conj4deppresapl55|c4presdep|ientes|feminine|nominative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl56|c4presdep|ientium|feminine|genitive|pl|present|active
-latcommoninfl.ere3_conj4deppresapl57|c4presdep|ientibus|feminine|dative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl58|c4presdep|ientes|feminine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl58b|c4presdep|ientis|feminine|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl59|c4presdep|ientibus|feminine|vocative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl60|c4presdep|ientes|feminine|vocative|pl|present|active
+latcommoninfl.ere3_conj4deppresapl55|c4presdep|ientes|feminine|nominative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl56|c4presdep|ientium|feminine|genitive|plural|present|active
+latcommoninfl.ere3_conj4deppresapl57|c4presdep|ientibus|feminine|dative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl58|c4presdep|ientes|feminine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl58b|c4presdep|ientis|feminine|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl59|c4presdep|ientibus|feminine|vocative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl60|c4presdep|ientes|feminine|vocative|plural|present|active
 
 latcommoninfl.ere3_conj4deppresapl61|c4presdep|iens|neuter|nominative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl62|c4presdep|ientis|neuter|genitive|singular|present|active
@@ -86,9 +86,9 @@ latcommoninfl.ere3_conj4deppresapl65|c4presdep|iente|neuter|ablative|singular|pr
 latcommoninfl.ere3_conj4deppresapl65b|c4presdep|ienti|neuter|ablative|singular|present|active
 latcommoninfl.ere3_conj4deppresapl66|c4presdep|iens|neuter|nominative|singular|present|active
 
-latcommoninfl.ere3_conj4deppresapl67|c4presdep|ientia|neuter|nominative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl68|c4presdep|ientium|neuter|genitive|pl|present|active
-latcommoninfl.ere3_conj4deppresapl69|c4presdep|ientibus|neuter|dative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl70|c4presdep|ientia|neuter|accusative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl71|c4presdep|ientibus|neuter|ablative|pl|present|active
-latcommoninfl.ere3_conj4deppresapl72|c4presdep|ientia|neuter|vocative|pl|present|active
+latcommoninfl.ere3_conj4deppresapl67|c4presdep|ientia|neuter|nominative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl68|c4presdep|ientium|neuter|genitive|plural|present|active
+latcommoninfl.ere3_conj4deppresapl69|c4presdep|ientibus|neuter|dative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl70|c4presdep|ientia|neuter|accusative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl71|c4presdep|ientibus|neuter|ablative|plural|present|active
+latcommoninfl.ere3_conj4deppresapl72|c4presdep|ientia|neuter|vocative|plural|present|active

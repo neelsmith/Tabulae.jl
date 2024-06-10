@@ -3,78 +3,78 @@ StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 latcommon.irrverbn2541|ls.n254|absum|1st|singular|present|indic|active
 latcommon.irrverbn2542|ls.n254|abes|2nd|singular|present|indic|active
 latcommon.irrverbn2543|ls.n254|abest|3rd|singular|present|indic|active
-latcommon.irrverbn2544|ls.n254|absumus|1st|pl|present|indic|active
-latcommon.irrverbn2545|ls.n254|abestis|2nd|pl|present|indic|active
-latcommon.irrverbn2546|ls.n254|absunt|3rd|pl|present|indic|active
+latcommon.irrverbn2544|ls.n254|absumus|1st|plural|present|indic|active
+latcommon.irrverbn2545|ls.n254|abestis|2nd|plural|present|indic|active
+latcommon.irrverbn2546|ls.n254|absunt|3rd|plural|present|indic|active
 
 latcommon.irrverbn2547|ls.n254|aberam|1st|singular|impft|indic|active
 latcommon.irrverbn2548|ls.n254|aberas|2nd|singular|impft|indic|active
 latcommon.irrverbn2549|ls.n254|aberat|3rd|singular|impft|indic|active
 latcommon.irrverbn2549b|ls.n254|abera|3rd|singular|impft|indic|active
-latcommon.irrverbn25410|ls.n254|aberamus|1st|pl|impft|indic|active
-latcommon.irrverbn25411|ls.n254|aberatis|2nd|pl|impft|indic|active
-latcommon.irrverbn25412|ls.n254|aberant|3rd|pl|impft|indic|active
+latcommon.irrverbn25410|ls.n254|aberamus|1st|plural|impft|indic|active
+latcommon.irrverbn25411|ls.n254|aberatis|2nd|plural|impft|indic|active
+latcommon.irrverbn25412|ls.n254|aberant|3rd|plural|impft|indic|active
 
 latcommon.irrverbn25413|ls.n254|abero|1st|singular|fut|indic|active
 latcommon.irrverbn25414|ls.n254|aberis|2nd|singular|fut|indic|active
 latcommon.irrverbn25415|ls.n254|aberit|3rd|singular|fut|indic|active
-latcommon.irrverbn25416|ls.n254|aberimus|1st|pl|fut|indic|active
-latcommon.irrverbn25417|ls.n254|aberitis|2nd|pl|fut|indic|active
-latcommon.irrverbn25418|ls.n254|aberunt|3rd|pl|fut|indic|active
+latcommon.irrverbn25416|ls.n254|aberimus|1st|plural|fut|indic|active
+latcommon.irrverbn25417|ls.n254|aberitis|2nd|plural|fut|indic|active
+latcommon.irrverbn25418|ls.n254|aberunt|3rd|plural|fut|indic|active
 
 latcommon.irrverbn25419|ls.n254|afui|1st|singular|perfect|indic|active
 latcommon.irrverbn25420|ls.n254|afuisti|2nd|singular|perfect|indic|active
 latcommon.irrverbn25421|ls.n254|afuit|3rd|singular|perfect|indic|active
-latcommon.irrverbn25422|ls.n254|afuimus|1st|pl|perfect|indic|active
-latcommon.irrverbn25423|ls.n254|afuistis|2nd|pl|perfect|indic|active
-latcommon.irrverbn25424|ls.n254|afuerunt|3rd|pl|perfect|indic|active
-latcommon.irrverbn25424b|ls.n254|afuere|3rd|pl|perfect|indic|active
+latcommon.irrverbn25422|ls.n254|afuimus|1st|plural|perfect|indic|active
+latcommon.irrverbn25423|ls.n254|afuistis|2nd|plural|perfect|indic|active
+latcommon.irrverbn25424|ls.n254|afuerunt|3rd|plural|perfect|indic|active
+latcommon.irrverbn25424b|ls.n254|afuere|3rd|plural|perfect|indic|active
 
 latcommon.irrverbn25425|ls.n254|afueram|1st|singular|pluperfect|indic|active
 latcommon.irrverbn25426|ls.n254|afueras|2nd|singular|pluperfect|indic|active
 latcommon.irrverbn25427|ls.n254|afuerat|3rd|singular|pluperfect|indic|active
-latcommon.irrverbn25428|ls.n254|afueramus|1st|pl|pluperfect|indic|active
-latcommon.irrverbn25429|ablexent.n254|afueratis|2nd|pl|pluperfect|indic|active
-latcommon.irrverbn25430|ls.n254|afuerant|3rd|pl|pluperfect|indic|active
+latcommon.irrverbn25428|ls.n254|afueramus|1st|plural|pluperfect|indic|active
+latcommon.irrverbn25429|ablexent.n254|afueratis|2nd|plural|pluperfect|indic|active
+latcommon.irrverbn25430|ls.n254|afuerant|3rd|plural|pluperfect|indic|active
 
 latcommon.irrverbn25431|ls.n254|afuero|1st|singular|future_perfect|indic|active
 latcommon.irrverbn25432|ls.n254|afueris|2nd|singular|future_perfect|indic|active
 latcommon.irrverbn25433|ls.n254|afuerit|3rd|singular|future_perfect|indic|active
-latcommon.irrverbn25434|ls.n254|afuerimus|1st|pl|future_perfect|indic|active
-latcommon.irrverbn25435|ls.n254|afueritis|2nd|pl|future_perfect|indic|active
-latcommon.irrverbn25436|ls.n254|afuerint|3rd|pl|future_perfect|indic|active
+latcommon.irrverbn25434|ls.n254|afuerimus|1st|plural|future_perfect|indic|active
+latcommon.irrverbn25435|ls.n254|afueritis|2nd|plural|future_perfect|indic|active
+latcommon.irrverbn25436|ls.n254|afuerint|3rd|plural|future_perfect|indic|active
 
 latcommon.irrverbn25437|ls.n254|absim|1st|singular|present|subj|active
 latcommon.irrverbn25438|ls.n254|absis|2nd|singular|present|subj|active
 latcommon.irrverbn25439|ls.n254|absit|3rd|singular|present|subj|active
-latcommon.irrverbn25440|ls.n254|absimus|1st|pl|present|subj|active
-latcommon.irrverbn25441|ls.n254|absitis|2nd|pl|present|subj|active
-latcommon.irrverbn25442|ls.n254|absint|3rd|pl|present|subj|active
+latcommon.irrverbn25440|ls.n254|absimus|1st|plural|present|subj|active
+latcommon.irrverbn25441|ls.n254|absitis|2nd|plural|present|subj|active
+latcommon.irrverbn25442|ls.n254|absint|3rd|plural|present|subj|active
 
 latcommon.irrverbn25443|ls.n254|abessem|1st|singular|impft|subj|active
 latcommon.irrverbn25444|ls.n254|abesses|2nd|singular|impft|subj|active
 latcommon.irrverbn25445|ls.n254|abesset|3rd|singular|impft|subj|active
-latcommon.irrverbn25446|ls.n254|abessemus|1st|pl|impft|subj|active
-latcommon.irrverbn25447|ls.n254|abessetis|2nd|pl|impft|subj|active
-latcommon.irrverbn25448|ls.n254|abessent|3rd|pl|impft|subj|active
+latcommon.irrverbn25446|ls.n254|abessemus|1st|plural|impft|subj|active
+latcommon.irrverbn25447|ls.n254|abessetis|2nd|plural|impft|subj|active
+latcommon.irrverbn25448|ls.n254|abessent|3rd|plural|impft|subj|active
 
 latcommon.irrverbn25449|ls.n254|afuerim|1st|singular|perfect|subj|active
 latcommon.irrverbn25450|ls.n254|afueris|2nd|singular|perfect|subj|active
 latcommon.irrverbn25451|ls.n254|afuerit|3rd|singular|perfect|subj|active
-latcommon.irrverbn25452|ls.n254|afuerimus|1st|pl|perfect|subj|active
-latcommon.irrverbn25453|ls.n254|afueritis|2nd|pl|perfect|subj|active
-latcommon.irrverbn25454|ls.n254|afuerint|3rd|pl|perfect|subj|active
+latcommon.irrverbn25452|ls.n254|afuerimus|1st|plural|perfect|subj|active
+latcommon.irrverbn25453|ls.n254|afueritis|2nd|plural|perfect|subj|active
+latcommon.irrverbn25454|ls.n254|afuerint|3rd|plural|perfect|subj|active
 
 latcommon.irrverbn25455|ls.n254|afuissem|1st|singular|pluperfect|subj|active
 latcommon.irrverbn25456|ls.n254|afuisses|2nd|singular|pluperfect|subj|active
 latcommon.irrverbn25457|ls.n254|afuisset|3rd|singular|pluperfect|subj|active
-latcommon.irrverbn25458|ls.n254|afuissemus|1st|pl|pluperfect|subj|active
-latcommon.irrverbn25459|ls.n254|afuissetis|2nd|pl|pluperfect|subj|active
-latcommon.irrverbn25460|ls.n254|afuissent|3rd|pl|pluperfect|subj|active
+latcommon.irrverbn25458|ls.n254|afuissemus|1st|plural|pluperfect|subj|active
+latcommon.irrverbn25459|ls.n254|afuissetis|2nd|plural|pluperfect|subj|active
+latcommon.irrverbn25460|ls.n254|afuissent|3rd|plural|pluperfect|subj|active
 
 latcommon.irrverbn254133|ls.n254|abes|2nd|singular|present|imptv|active
-latcommon.irrverbn254134|ls.n254|abeste|2nd|pl|present|imptv|active
+latcommon.irrverbn254134|ls.n254|abeste|2nd|plural|present|imptv|active
 latcommon.irrverbn254135|ls.n254|abesto|2nd|singular|fut|imptv|active
-latcommon.irrverbn254136|ls.n254|abestote|2nd|pl|fut|imptv|active
+latcommon.irrverbn254136|ls.n254|abestote|2nd|plural|fut|imptv|active
 latcommon.irrverbn254137|ls.n254|abesto|3rd|singular|fut|imptv|active
-latcommon.irrverbn254138|ls.n254|absunto|3rd|pl|fut|imptv|active
+latcommon.irrverbn254138|ls.n254|absunto|3rd|plural|fut|imptv|active

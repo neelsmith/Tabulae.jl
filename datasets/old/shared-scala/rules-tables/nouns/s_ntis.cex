@@ -10,8 +10,8 @@ latcommoninfl.s_ntis7|s_ntis|ntum|masculine|genitive|pl
 latcommoninfl.s_ntis8|s_ntis|ntibus|masculine|dative|pl
 latcommoninfl.s_ntis9|s_ntis|ntes|masculine|accusative|pl
 latcommoninfl.s_ntis10|s_ntis|ntibus|masculine|ablative|pl
-latcommoninfl.s_ntis11|s_ntis|s|masculine|voc|sg
-latcommoninfl.s_ntis12|s_ntis|ntes|masculine|voc|pl
+latcommoninfl.s_ntis11|s_ntis|s|masculine|vocative|sg
+latcommoninfl.s_ntis12|s_ntis|ntes|masculine|vocative|pl
 
 
 
@@ -26,5 +26,5 @@ latcommoninfl.s_ntis7f|s_ntis|ntum|feminine|genitive|pl
 latcommoninfl.s_ntis8f|s_ntis|ntibus|feminine|dative|pl
 latcommoninfl.s_ntis9f|s_ntis|ntes|feminine|accusative|pl
 latcommoninfl.s_ntis10f|s_ntis|ntibus|feminine|ablative|pl
-latcommoninfl.s_ntis11f|s_ntis|s|feminine|voc|sg
-latcommoninfl.s_ntis12f|s_ntis|ntes|feminine|voc|pl
+latcommoninfl.s_ntis11f|s_ntis|s|feminine|vocative|sg
+latcommoninfl.s_ntis12f|s_ntis|ntes|feminine|vocative|pl

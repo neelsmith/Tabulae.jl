@@ -19,7 +19,7 @@ end
 $(SIGNATURES)
 """
 function lmForm(rule::TabulaeParticipleRule)
-    LMFParticiple(rule.pgender, rule.pcase, rule.pnumber, rule.ptense, rule.vpoice)
+    LMFParticiple(rule.pgender, rule.pcase, rule.pnumber, rule.ptense, rule.pvoice)
 end
 
 
@@ -30,7 +30,7 @@ function inflectionType(rule::TabulaeParticipleRule)
     rule.inflectionclass
 end
 
-"""Identify ending for infinitive `rule`.
+"""Identify ending for a participle `rule`.
 $(SIGNATURES)
 """
 function ending(rule::TabulaeParticipleRule)
@@ -49,6 +49,7 @@ function readrulerow(usp::ParticipleIO, delimited::AbstractString; delimiter = "
         msg = "Invalid syntax for participle verb rule: too few components in $(delimited)"
         throw(ArgumentError(msg))
     else
+        @debug("readrulerow: here are the parts: $(parts)")
         ruleid = RuleUrn(parts[1])
         inflclass = parts[2]
         ending = parts[3]
@@ -60,16 +61,16 @@ function readrulerow(usp::ParticipleIO, delimited::AbstractString; delimiter = "
       
         v = lmpVoice(parts[8])
  
-        TabulaeInfinitiveRule(ruleid, inflclass, ending, g, c, n, t, v)
+        TabulaeParticipleRule(ruleid, inflclass, ending, g, c, n, t, v)
     end
     
 end
 
-"""Infinitive rules are citable by Cite2Urn"""
+"""Participle rules are citable by Cite2Urn"""
 CitableTrait(::Type{TabulaeParticipleRule}) = CitableByCite2Urn()
 
 
-"""Human-readlable label for a `TabulaeInfinitiveRule`.
+"""Human-readlable label for a `TabulaeParticipleRule`.
 
 $(SIGNATURES)
 Required for `CitableTrait`.
@@ -119,12 +120,11 @@ function id(rule::TabulaeParticipleRule)
     rule.ruleid
 end
 
-"""Compose an abbreviated URN for a rule from a `TabulaeInfinitiveRule`.
+"""Compose an abbreviated URN for a rule from a `TabulaeParticipleRule`.
 
 $(SIGNATURES)
 """
 function ruleurn(rule::TabulaeParticipleRule)
     # PosPNTMVGCDCat
-    #RuleUrn(string("tabulaeforms.", INFINITIVE,"00",code(rule.vtense), "0", code(rule.vvoice) ,"0000"))
     RuleUrn(string("forms.", PARTICIPLE,"0", code(p.pnumber),code(p.tense),"0", code(p.voice),code(p.gender),code(p.case),"00"))
 end

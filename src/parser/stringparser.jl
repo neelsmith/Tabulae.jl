@@ -32,18 +32,6 @@ function tofile(p::TabulaeStringParser, f)
     end
 end
 
-#
-#=
-"""Parse a single token using `parser`.
-$(SIGNATURES)
-"""
-function parsetoken(s::AbstractString, parser::TabulaeStringParser; data = nothing)
-    ptrn = s * "|"
-    @debug("Looking for $(s) in parser data")
-    matches = filter(ln -> startswith(ln, ptrn), parser.entries)
-    map(ln -> fromline(ln), matches)
-end
-=#
 """Instantiate a `TabulaeStringParser` for `td`.
 $(SIGNATURES)
 """
@@ -152,3 +140,21 @@ function buildparseable(stem::Stem,  rules::Vector{Rule})
     end
     generated
 end
+
+
+
+#=
+
+function buildparseable(stem::Stem,  rules::Vector{Rule})
+    generated = []        
+    classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
+    #@info("$(stem) matches rules $(classrules)")
+    for rule in classrules
+        token = string(stemvalue(stem), ending(rule))
+        
+        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+
+    end
+    generated
+end
+=#

@@ -1,23 +1,23 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number|Degree
 
-latcommon.irregadjn14914a|ls.n14914|duo|masculine|nominative|pl|pos
-latcommon.irregadjn14914b|ls.n14914|duorum|masculine|genitive|pl|pos
-latcommon.irregadjn14914c|ls.n14914|duobus|masculine|dative|pl|pos
-latcommon.irregadjn14914d|ls.n14914|duos|masculine|accusative|pl|pos
-latcommon.irregadjn14914e|ls.n14914|duos|masculine|accusative|pl|pos
-latcommon.irregadjn14914f|ls.n14914|duobus|masculine|ablative|pl|pos
-latcommon.irregadjn14914g|ls.n14914|duo|masculine|vocative|pl|pos
+latcommon.irregadjn14914a|ls.n14914|duo|masculine|nominative|plural|pos
+latcommon.irregadjn14914b|ls.n14914|duorum|masculine|genitive|plural|pos
+latcommon.irregadjn14914c|ls.n14914|duobus|masculine|dative|plural|pos
+latcommon.irregadjn14914d|ls.n14914|duos|masculine|accusative|plural|pos
+latcommon.irregadjn14914e|ls.n14914|duos|masculine|accusative|plural|pos
+latcommon.irregadjn14914f|ls.n14914|duobus|masculine|ablative|plural|pos
+latcommon.irregadjn14914g|ls.n14914|duo|masculine|vocative|plural|pos
 
-latcommon.irregadjn14914h|ls.n14914|duae|feminine|nominative|pl|pos
-latcommon.irregadjn14914i|ls.n14914|unarum|feminine|genitive|pl|pos
-latcommon.irregadjn14914j|ls.n14914|duabus|feminine|dative|pl|pos
-latcommon.irregadjn14914k|ls.n14914|duas|feminine|accusative|pl|pos
-latcommon.irregadjn14914l|ls.n14914|duabus|feminine|ablative|pl|pos
-latcommon.irregadjn14914m|ls.n14914|duae|feminine|vocative|pl|pos
+latcommon.irregadjn14914h|ls.n14914|duae|feminine|nominative|plural|pos
+latcommon.irregadjn14914i|ls.n14914|unarum|feminine|genitive|plural|pos
+latcommon.irregadjn14914j|ls.n14914|duabus|feminine|dative|plural|pos
+latcommon.irregadjn14914k|ls.n14914|duas|feminine|accusative|plural|pos
+latcommon.irregadjn14914l|ls.n14914|duabus|feminine|ablative|plural|pos
+latcommon.irregadjn14914m|ls.n14914|duae|feminine|vocative|plural|pos
 
-latcommon.irregadjn14914n|ls.n14914|duo|neuter|nominative|pl|pos
-latcommon.irregadjn14914o|ls.n14914|unorum|neuter|genitive|pl|pos
-latcommon.irregadjn14914p|ls.n14914|duobus|neuter|dative|pl|pos
-latcommon.irregadjn14914q|ls.n14914|duo|neuter|accusative|pl|pos
-latcommon.irregadjn14914r|ls.n14914|duobus|neuter|ablative|pl|pos
-latcommon.irregadjn14914s|ls.n14914|duo|neuter|vocative|pl|pos
+latcommon.irregadjn14914n|ls.n14914|duo|neuter|nominative|plural|pos
+latcommon.irregadjn14914o|ls.n14914|unorum|neuter|genitive|plural|pos
+latcommon.irregadjn14914p|ls.n14914|duobus|neuter|dative|plural|pos
+latcommon.irregadjn14914q|ls.n14914|duo|neuter|accusative|plural|pos
+latcommon.irregadjn14914r|ls.n14914|duobus|neuter|ablative|plural|pos
+latcommon.irregadjn14914s|ls.n14914|duo|neuter|vocative|plural|pos

@@ -10,8 +10,8 @@ latcommoninfl.0_dis7|0_dis|dum|masculine|genitive|pl
 latcommoninfl.0_dis8|0_dis|dibus|masculine|dative|pl
 latcommoninfl.0_dis9|0_dis|des|masculine|accusative|pl
 latcommoninfl.0_dis10|0_dis|dibus|masculine|ablative|pl
-latcommoninfl.0_dis11|0_dis||masculine|voc|sg
-latcommoninfl.0_dis12|0_dis|des|masculine|voc|pl
+latcommoninfl.0_dis11|0_dis||masculine|vocative|sg
+latcommoninfl.0_dis12|0_dis|des|masculine|vocative|pl
 
 
 latcommoninfl.0_dis1n|0_dis||neuter|nominative|sg
@@ -24,8 +24,8 @@ latcommoninfl.0_dis7n|0_dis|dum|neuter|genitive|pl
 latcommoninfl.0_dis8n|0_dis|dibus|neuter|dative|pl
 latcommoninfl.0_dis9|n0_dis|da|neuter|accusative|pl
 latcommoninfl.0_dis10n|0_dis|dibus|neuter|ablative|pl
-latcommoninfl.0_dis11n|0_dis||neuter|voc|sg
-latcommoninfl.0_dis12n|0_dis|da|neuter|voc|pl
+latcommoninfl.0_dis11n|0_dis||neuter|vocative|sg
+latcommoninfl.0_dis12n|0_dis|da|neuter|vocative|pl
 
 
 latcommoninfl.0_dis1f|0_dis||feminine|nominative|sg
@@ -38,5 +38,5 @@ latcommoninfl.0_dis7f|0_dis|um|feminine|genitive|pl
 latcommoninfl.0_dis8f|0_dis|ibus|feminine|dative|pl
 latcommoninfl.0_dis9f|0_dis|es|feminine|accusative|pl
 latcommoninfl.0_dis10f|0_dis|ibus|feminine|ablative|pl
-latcommoninfl.0_dis11f|0_dis||feminine|voc|sg
-latcommoninfl.0_dis12f|0_dis|es|feminine|voc|pl
+latcommoninfl.0_dis11f|0_dis||feminine|vocative|sg
+latcommoninfl.0_dis12f|0_dis|es|feminine|vocative|pl

@@ -19,7 +19,7 @@ Version 0.10.0 is a complete rewrite of the package built on a new type hierarch
 | adjective | |||
 | finite verb | ✅ |✅ | ✅ |
 | infinitive | ✅|✅|✅|
-| participle | |||
+| participle | ✅ | ✅| ✅ |
 | gerund | |||
 | gerundive | |||
 | supine | |||

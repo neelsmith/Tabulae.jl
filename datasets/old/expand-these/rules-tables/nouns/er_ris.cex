@@ -10,8 +10,8 @@ latcommoninfl.er_ris7|er_ris|rum|masculine|genitive|pl
 latcommoninfl.er_ris8|er_ris|ribus|masculine|dative|pl
 latcommoninfl.er_ris9|er_ris|res|masculine|accusative|pl
 latcommoninfl.er_ris10|er_ris|ribus|masculine|ablative|pl
-latcommoninfl.er_ris11|er_ris|er|masculine|voc|sg
-latcommoninfl.er_ris12|er_ris|res|masculine|voc|pl
+latcommoninfl.er_ris11|er_ris|er|masculine|vocative|sg
+latcommoninfl.er_ris12|er_ris|res|masculine|vocative|pl
 
 
 
@@ -25,5 +25,5 @@ latcommoninfl.er_ris7|er_ris|rum|feminine|genitive|pl
 latcommoninfl.er_ris8|er_ris|ribus|feminine|dative|pl
 latcommoninfl.er_ris9|er_ris|res|feminine|accusative|pl
 latcommoninfl.er_ris10|er_ris|ribus|feminine|ablative|pl
-latcommoninfl.er_ris11|er_ris|er|feminine|voc|sg
-latcommoninfl.er_ris12|er_ris|res|feminine|voc|pl
+latcommoninfl.er_ris11|er_ris|er|feminine|vocative|sg
+latcommoninfl.er_ris12|er_ris|res|feminine|vocative|pl

@@ -4,81 +4,81 @@ latcommoninfl.ere_conj2futapl2|conj2|ituri|masculine|genitive|singular|fut|activ
 latcommoninfl.ere_conj2futapl3|conj2|ituro|masculine|dative|singular|fut|active
 latcommoninfl.ere_conj2futapl4|conj2|iturum|masculine|accusative|singular|fut|active
 latcommoninfl.ere_conj2futapl5|conj2|ituro|masculine|ablative|singular|fut|active
-latcommoninfl.ere_conj2futapl6|conj2|iture|masculine|voc|singular|fut|active
+latcommoninfl.ere_conj2futapl6|conj2|iture|masculine|vocative|singular|fut|active
 
-latcommoninfl.ere_conj2futapl7|conj2|ituri|masculine|nominative|pl|fut|active
-latcommoninfl.ere_conj2futapl8|conj2|iturorum|masculine|genitive|pl|fut|active
-latcommoninfl.ere_conj2futapl9|conj2|ituris|masculine|dative|pl|fut|active
-latcommoninfl.ere_conj2futapl10|conj2|ituros|masculine|accusative|pl|fut|active
-latcommoninfl.ere_conj2futapl11|conj2|ituris|masculine|ablative|pl|fut|active
-latcommoninfl.ere_conj2futapl12|conj2|ituri|masculine|voc|pl|fut|active
+latcommoninfl.ere_conj2futapl7|conj2|ituri|masculine|nominative|plural|fut|active
+latcommoninfl.ere_conj2futapl8|conj2|iturorum|masculine|genitive|plural|fut|active
+latcommoninfl.ere_conj2futapl9|conj2|ituris|masculine|dative|plural|fut|active
+latcommoninfl.ere_conj2futapl10|conj2|ituros|masculine|accusative|plural|fut|active
+latcommoninfl.ere_conj2futapl11|conj2|ituris|masculine|ablative|plural|fut|active
+latcommoninfl.ere_conj2futapl12|conj2|ituri|masculine|vocative|plural|fut|active
 
 latcommoninfl.ere_conj2futapl13|conj2|itura|feminine|nominative|singular|fut|active
 latcommoninfl.ere_conj2futapl14|conj2|iturae|feminine|genitive|singular|fut|active
 latcommoninfl.ere_conj2futapl15|conj2|iturae|feminine|dative|singular|fut|active
 latcommoninfl.ere_conj2futapl16|conj2|ituram|feminine|accusative|singular|fut|active
 latcommoninfl.ere_conj2futapl17|conj2|itura|feminine|ablative|singular|fut|active
-latcommoninfl.ere_conj2futapl18|conj2|itura|feminine|voc|singular|fut|active
+latcommoninfl.ere_conj2futapl18|conj2|itura|feminine|vocative|singular|fut|active
 
-latcommoninfl.ere_conj2futapl19|conj2|iturae|feminine|nominative|pl|fut|active
-latcommoninfl.ere_conj2futapl20|conj2|iturarum|feminine|genitive|pl|fut|active
-latcommoninfl.ere_conj2futapl21|conj2|ituris|feminine|dative|pl|fut|active
-latcommoninfl.ere_conj2futapl22|conj2|ituras|feminine|accusative|pl|fut|active
-latcommoninfl.ere_conj2futapl23|conj2|ituris|feminine|ablative|pl|fut|active
-latcommoninfl.ere_conj2futapl24|conj2|iturae|feminine|voc|pl|fut|active
+latcommoninfl.ere_conj2futapl19|conj2|iturae|feminine|nominative|plural|fut|active
+latcommoninfl.ere_conj2futapl20|conj2|iturarum|feminine|genitive|plural|fut|active
+latcommoninfl.ere_conj2futapl21|conj2|ituris|feminine|dative|plural|fut|active
+latcommoninfl.ere_conj2futapl22|conj2|ituras|feminine|accusative|plural|fut|active
+latcommoninfl.ere_conj2futapl23|conj2|ituris|feminine|ablative|plural|fut|active
+latcommoninfl.ere_conj2futapl24|conj2|iturae|feminine|vocative|plural|fut|active
 
 latcommoninfl.ere_conj2futapl25|conj2|iturum|neuter|nominative|singular|fut|active
 latcommoninfl.ere_conj2futapl26|conj2|ituri|neuter|genitive|singular|fut|active
 latcommoninfl.ere_conj2futapl27|conj2|ituro|neuter|dative|singular|fut|active
 latcommoninfl.ere_conj2futapl28|conj2|iturum|neuter|accusative|singular|fut|active
 latcommoninfl.ere_conj2futapl29|conj2|ituro|neuter|ablative|singular|fut|active
-latcommoninfl.ere_conj2futapl30|conj2|iturum|neuter|voc|singular|fut|active
+latcommoninfl.ere_conj2futapl30|conj2|iturum|neuter|vocative|singular|fut|active
 
-latcommoninfl.ere_conj2futapl31|conj2|itura|neuter|nominative|pl|fut|active
-latcommoninfl.ere_conj2futapl32|conj2|iturorum|neuter|genitive|pl|fut|active
-latcommoninfl.ere_conj2futapl33|conj2|ituris|neuter|dative|pl|fut|active
-latcommoninfl.ere_conj2futapl34|conj2|itura|neuter|accusative|pl|fut|active
-latcommoninfl.ere_conj2futapl35|conj2|ituris|neuter|ablative|pl|fut|active
-latcommoninfl.ere_conj2futapl36|conj2|itura|neuter|voc|pl|fut|active
+latcommoninfl.ere_conj2futapl31|conj2|itura|neuter|nominative|plural|fut|active
+latcommoninfl.ere_conj2futapl32|conj2|iturorum|neuter|genitive|plural|fut|active
+latcommoninfl.ere_conj2futapl33|conj2|ituris|neuter|dative|plural|fut|active
+latcommoninfl.ere_conj2futapl34|conj2|itura|neuter|accusative|plural|fut|active
+latcommoninfl.ere_conj2futapl35|conj2|ituris|neuter|ablative|plural|fut|active
+latcommoninfl.ere_conj2futapl36|conj2|itura|neuter|vocative|plural|fut|active
 
 latcommoninfl.ere_conj2futapl37||conj2|iturus|masculine|nominative|singular|fut|active
 latcommoninfl.ere_conj2futapl38||conj2|ituri|masculine|genitive|singular|fut|active
 latcommoninfl.ere_conj2futapl39||conj2|ituro|masculine|dative|singular|fut|active
 latcommoninfl.ere_conj2futapl40||conj2|iturum|masculine|accusative|singular|fut|active
 latcommoninfl.ere_conj2futapl41||conj2|ituro|masculine|ablative|singular|fut|active
-latcommoninfl.ere_conj2futapl42||conj2|iture|masculine|voc|singular|fut|active
+latcommoninfl.ere_conj2futapl42||conj2|iture|masculine|vocative|singular|fut|active
 
-latcommoninfl.ere_conj2futapl43||conj2|ituri|masculine|nominative|pl|fut|active
-latcommoninfl.ere_conj2futapl44||conj2|iturorum|masculine|genitive|pl|fut|active
-latcommoninfl.ere_conj2futapl45||conj2|ituris|masculine|dative|pl|fut|active
-latcommoninfl.ere_conj2futapl46||conj2|ituros|masculine|accusative|pl|fut|active
-latcommoninfl.ere_conj2futapl47||conj2|ituris|masculine|ablative|pl|fut|active
-latcommoninfl.ere_conj2futapl48||conj2|ituri|masculine|voc|pl|fut|active
+latcommoninfl.ere_conj2futapl43||conj2|ituri|masculine|nominative|plural|fut|active
+latcommoninfl.ere_conj2futapl44||conj2|iturorum|masculine|genitive|plural|fut|active
+latcommoninfl.ere_conj2futapl45||conj2|ituris|masculine|dative|plural|fut|active
+latcommoninfl.ere_conj2futapl46||conj2|ituros|masculine|accusative|plural|fut|active
+latcommoninfl.ere_conj2futapl47||conj2|ituris|masculine|ablative|plural|fut|active
+latcommoninfl.ere_conj2futapl48||conj2|ituri|masculine|vocative|plural|fut|active
 
 latcommoninfl.ere_conj2futapl49||conj2|itura|feminine|nominative|singular|fut|active
 latcommoninfl.ere_conj2futapl50||conj2|iturae|feminine|genitive|singular|fut|active
 latcommoninfl.ere_conj2futapl51||conj2|iturae|feminine|dative|singular|fut|active
 latcommoninfl.ere_conj2futapl52||conj2|ituram|feminine|accusative|singular|fut|active
 latcommoninfl.ere_conj2futapl53||conj2|itura|feminine|ablative|singular|fut|active
-latcommoninfl.ere_conj2futapl54||conj2|itura|feminine|voc|singular|fut|active
+latcommoninfl.ere_conj2futapl54||conj2|itura|feminine|vocative|singular|fut|active
 
-latcommoninfl.ere_conj2futapl55||conj2|iturae|feminine|nominative|pl|fut|active
-latcommoninfl.ere_conj2futapl56||conj2|iturarum|feminine|genitive|pl|fut|active
-latcommoninfl.ere_conj2futapl57||conj2|ituris|feminine|dative|pl|fut|active
-latcommoninfl.ere_conj2futapl58||conj2|ituras|feminine|accusative|pl|fut|active
-latcommoninfl.ere_conj2futapl59||conj2|ituris|feminine|ablative|pl|fut|active
-latcommoninfl.ere_conj2futapl60||conj2|iturae|feminine|voc|pl|fut|active
+latcommoninfl.ere_conj2futapl55||conj2|iturae|feminine|nominative|plural|fut|active
+latcommoninfl.ere_conj2futapl56||conj2|iturarum|feminine|genitive|plural|fut|active
+latcommoninfl.ere_conj2futapl57||conj2|ituris|feminine|dative|plural|fut|active
+latcommoninfl.ere_conj2futapl58||conj2|ituras|feminine|accusative|plural|fut|active
+latcommoninfl.ere_conj2futapl59||conj2|ituris|feminine|ablative|plural|fut|active
+latcommoninfl.ere_conj2futapl60||conj2|iturae|feminine|vocative|plural|fut|active
 
 latcommoninfl.ere_conj2futapl61||conj2|iturum|neuter|nominative|singular|fut|active
 latcommoninfl.ere_conj2futapl62||conj2|ituri|neuter|genitive|singular|fut|active
 latcommoninfl.ere_conj2futapl63||conj2|ituro|neuter|dative|singular|fut|active
 latcommoninfl.ere_conj2futapl64||conj2|iturum|neuter|accusative|singular|fut|active
 latcommoninfl.ere_conj2futapl65||conj2|ituro|neuter|ablative|singular|fut|active
-latcommoninfl.ere_conj2futapl66||conj2|iturum|neuter|voc|singular|fut|active
+latcommoninfl.ere_conj2futapl66||conj2|iturum|neuter|vocative|singular|fut|active
 
-latcommoninfl.ere_conj2futapl67||conj2|itura|neuter|nominative|pl|fut|active
-latcommoninfl.ere_conj2futapl68||conj2|iturorum|neuter|genitive|pl|fut|active
-latcommoninfl.ere_conj2futapl69||conj2|ituris|neuter|dative|pl|fut|active
-latcommoninfl.ere_conj2futapl70||conj2|itura|neuter|accusative|pl|fut|active
-latcommoninfl.ere_conj2futapl71||conj2|ituris|neuter|ablative|pl|fut|active
-latcommoninfl.ere_conj2futapl72||conj2|itura|neuter|voc|pl|fut|active
+latcommoninfl.ere_conj2futapl67||conj2|itura|neuter|nominative|plural|fut|active
+latcommoninfl.ere_conj2futapl68||conj2|iturorum|neuter|genitive|plural|fut|active
+latcommoninfl.ere_conj2futapl69||conj2|ituris|neuter|dative|plural|fut|active
+latcommoninfl.ere_conj2futapl70||conj2|itura|neuter|accusative|plural|fut|active
+latcommoninfl.ere_conj2futapl71||conj2|ituris|neuter|ablative|plural|fut|active
+latcommoninfl.ere_conj2futapl72||conj2|itura|neuter|vocative|plural|fut|active

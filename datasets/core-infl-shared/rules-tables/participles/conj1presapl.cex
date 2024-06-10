@@ -5,15 +5,15 @@ latcommoninfl.are_conj1presapl3|conj1|anti|masculine|dative|singular|present|act
 latcommoninfl.are_conj1presapl4|conj1|antem|masculine|accusative|singular|present|active
 latcommoninfl.are_conj1presapl5|conj1|ante|masculine|ablative|singular|present|active
 latcommoninfl.are_conj1presapl5b|conj1|anti|masculine|ablative|singular|present|active
-latcommoninfl.are_conj1presapl6|conj1|ans|masculine|voc|singular|present|active
+latcommoninfl.are_conj1presapl6|conj1|ans|masculine|vocative|singular|present|active
 
-latcommoninfl.are_conj1presapl7|conj1|antes|masculine|nominative|pl|present|active
-latcommoninfl.are_conj1presapl8|conj1|antium|masculine|genitive|pl|present|active
-latcommoninfl.are_conj1presapl9|conj1|antibus|masculine|dative|pl|present|active
-latcommoninfl.are_conj1presapl10|conj1|antes|masculine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl10b|conj1|antis|masculine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl11|conj1|antibus|masculine|ablative|pl|present|active
-latcommoninfl.are_conj1presapl12|conj1|antes|masculine|voc|pl|present|active
+latcommoninfl.are_conj1presapl7|conj1|antes|masculine|nominative|plural|present|active
+latcommoninfl.are_conj1presapl8|conj1|antium|masculine|genitive|plural|present|active
+latcommoninfl.are_conj1presapl9|conj1|antibus|masculine|dative|plural|present|active
+latcommoninfl.are_conj1presapl10|conj1|antes|masculine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl10b|conj1|antis|masculine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl11|conj1|antibus|masculine|ablative|plural|present|active
+latcommoninfl.are_conj1presapl12|conj1|antes|masculine|vocative|plural|present|active
 
 latcommoninfl.are_conj1presapl13|conj1|ans|feminine|nominative|singular|present|active
 latcommoninfl.are_conj1presapl14|conj1|antis|feminine|genitive|singular|present|active
@@ -21,15 +21,15 @@ latcommoninfl.are_conj1presapl15|conj1|anti|feminine|dative|singular|present|act
 latcommoninfl.are_conj1presapl16|conj1|antem|feminine|accusative|singular|present|active
 latcommoninfl.are_conj1presapl17|conj1|ante|feminine|ablative|singular|present|active
 latcommoninfl.are_conj1presapl17b|conj1|anti|feminine|ablative|singular|present|active
-latcommoninfl.are_conj1presapl18|conj1|ans|feminine|voc|singular|present|active
+latcommoninfl.are_conj1presapl18|conj1|ans|feminine|vocative|singular|present|active
 
-latcommoninfl.are_conj1presapl19|conj1|antes|feminine|nominative|pl|present|active
-latcommoninfl.are_conj1presapl20|conj1|antium|feminine|genitive|pl|present|active
-latcommoninfl.are_conj1presapl21|conj1|antibus|feminine|dative|pl|present|active
-latcommoninfl.are_conj1presapl22|conj1|antes|feminine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl22b|conj1|antis|feminine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl23|conj1|antibus|feminine|voc|pl|present|active
-latcommoninfl.are_conj1presapl24|conj1|antes|feminine|voc|pl|present|active
+latcommoninfl.are_conj1presapl19|conj1|antes|feminine|nominative|plural|present|active
+latcommoninfl.are_conj1presapl20|conj1|antium|feminine|genitive|plural|present|active
+latcommoninfl.are_conj1presapl21|conj1|antibus|feminine|dative|plural|present|active
+latcommoninfl.are_conj1presapl22|conj1|antes|feminine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl22b|conj1|antis|feminine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl23|conj1|antibus|feminine|vocative|plural|present|active
+latcommoninfl.are_conj1presapl24|conj1|antes|feminine|vocative|plural|present|active
 
 latcommoninfl.are_conj1presapl25|conj1|ans|neuter|nominative|singular|present|active
 latcommoninfl.are_conj1presapl26|conj1|antis|neuter|genitive|singular|present|active
@@ -39,12 +39,12 @@ latcommoninfl.are_conj1presapl29|conj1|ante|neuter|ablative|singular|present|act
 latcommoninfl.are_conj1presapl29b|conj1|anti|neuter|ablative|singular|present|active
 latcommoninfl.are_conj1presapl30|conj1|ans|neuter|nominative|singular|present|active
 
-latcommoninfl.are_conj1presapl31|conj1|antia|neuter|nominative|pl|present|active
-latcommoninfl.are_conj1presapl32|conj1|antium|neuter|genitive|pl|present|active
-latcommoninfl.are_conj1presapl33|conj1|antibus|neuter|dative|pl|present|active
-latcommoninfl.are_conj1presapl34|conj1|antia|neuter|accusative|pl|present|active
-latcommoninfl.are_conj1presapl35|conj1|antibus|neuter|ablative|pl|present|active
-latcommoninfl.are_conj1presapl36|conj1|antia|neuter|voc|pl|present|active
+latcommoninfl.are_conj1presapl31|conj1|antia|neuter|nominative|plural|present|active
+latcommoninfl.are_conj1presapl32|conj1|antium|neuter|genitive|plural|present|active
+latcommoninfl.are_conj1presapl33|conj1|antibus|neuter|dative|plural|present|active
+latcommoninfl.are_conj1presapl34|conj1|antia|neuter|accusative|plural|present|active
+latcommoninfl.are_conj1presapl35|conj1|antibus|neuter|ablative|plural|present|active
+latcommoninfl.are_conj1presapl36|conj1|antia|neuter|vocative|plural|present|active
 
 latcommoninfl.are_conj1presapl37|c1pres|ans|masculine|nominative|singular|present|active
 latcommoninfl.are_conj1presapl38|c1pres|antis|masculine|genitive|singular|present|active
@@ -52,15 +52,15 @@ latcommoninfl.are_conj1presapl39|c1pres|anti|masculine|dative|singular|present|a
 latcommoninfl.are_conj1presapl40|c1pres|antem|masculine|accusative|singular|present|active
 latcommoninfl.are_conj1presapl41|c1pres|ante|masculine|ablative|singular|present|active
 latcommoninfl.are_conj1presapl41b|c1pres|anti|masculine|ablative|singular|present|active
-latcommoninfl.are_conj1presapl42|c1pres|ans|masculine|voc|singular|present|active
+latcommoninfl.are_conj1presapl42|c1pres|ans|masculine|vocative|singular|present|active
 
-latcommoninfl.are_conj1presapl43|c1pres|antes|masculine|nominative|pl|present|active
-latcommoninfl.are_conj1presapl44|c1pres|antium|masculine|genitive|pl|present|active
-latcommoninfl.are_conj1presapl45|c1pres|antibus|masculine|dative|pl|present|active
-latcommoninfl.are_conj1presapl46|c1pres|antes|masculine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl46b|c1pres|antis|masculine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl47|c1pres|antibus|masculine|ablative|pl|present|active
-latcommoninfl.are_conj1presapl48|c1pres|antes|masculine|voc|pl|present|active
+latcommoninfl.are_conj1presapl43|c1pres|antes|masculine|nominative|plural|present|active
+latcommoninfl.are_conj1presapl44|c1pres|antium|masculine|genitive|plural|present|active
+latcommoninfl.are_conj1presapl45|c1pres|antibus|masculine|dative|plural|present|active
+latcommoninfl.are_conj1presapl46|c1pres|antes|masculine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl46b|c1pres|antis|masculine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl47|c1pres|antibus|masculine|ablative|plural|present|active
+latcommoninfl.are_conj1presapl48|c1pres|antes|masculine|vocative|plural|present|active
 
 latcommoninfl.are_conj1presapl49|c1pres|ans|feminine|nominative|singular|present|active
 latcommoninfl.are_conj1presapl50|c1pres|antis|feminine|genitive|singular|present|active
@@ -68,15 +68,15 @@ latcommoninfl.are_conj1presapl51|c1pres|anti|feminine|dative|singular|present|ac
 latcommoninfl.are_conj1presapl52|c1pres|antem|feminine|accusative|singular|present|active
 latcommoninfl.are_conj1presapl53|c1pres|ante|feminine|ablative|singular|present|active
 latcommoninfl.are_conj1presapl53b|c1pres|anti|feminine|ablative|singular|present|active
-latcommoninfl.are_conj1presapl54|c1pres|ans|feminine|voc|singular|present|active
+latcommoninfl.are_conj1presapl54|c1pres|ans|feminine|vocative|singular|present|active
 
-latcommoninfl.are_conj1presapl55|c1pres|antes|feminine|nominative|pl|present|active
-latcommoninfl.are_conj1presapl56|c1pres|antium|feminine|genitive|pl|present|active
-latcommoninfl.are_conj1presapl57|c1pres|antibus|feminine|dative|pl|present|active
-latcommoninfl.are_conj1presapl58|c1pres|antes|feminine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl58b|c1pres|antis|feminine|accusative|pl|present|active
-latcommoninfl.are_conj1presapl59|c1pres|antibus|feminine|voc|pl|present|active
-latcommoninfl.are_conj1presapl60|c1pres|antes|feminine|voc|pl|present|active
+latcommoninfl.are_conj1presapl55|c1pres|antes|feminine|nominative|plural|present|active
+latcommoninfl.are_conj1presapl56|c1pres|antium|feminine|genitive|plural|present|active
+latcommoninfl.are_conj1presapl57|c1pres|antibus|feminine|dative|plural|present|active
+latcommoninfl.are_conj1presapl58|c1pres|antes|feminine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl58b|c1pres|antis|feminine|accusative|plural|present|active
+latcommoninfl.are_conj1presapl59|c1pres|antibus|feminine|vocative|plural|present|active
+latcommoninfl.are_conj1presapl60|c1pres|antes|feminine|vocative|plural|present|active
 
 latcommoninfl.are_conj1presapl61|c1pres|ans|neuter|nominative|singular|present|active
 latcommoninfl.are_conj1presapl62|c1pres|antis|neuter|genitive|singular|present|active
@@ -86,9 +86,9 @@ latcommoninfl.are_conj1presapl65|c1pres|ante|neuter|ablative|singular|present|ac
 latcommoninfl.are_conj1presapl65b|c1pres|anti|neuter|ablative|singular|present|active
 latcommoninfl.are_conj1presapl66|c1pres|ans|neuter|nominative|singular|present|active
 
-latcommoninfl.are_conj1presapl67|c1pres|antia|neuter|nominative|pl|present|active
-latcommoninfl.are_conj1presapl68|c1pres|antium|neuter|genitive|pl|present|active
-latcommoninfl.are_conj1presapl69|c1pres|antibus|neuter|dative|pl|present|active
-latcommoninfl.are_conj1presapl70|c1pres|antia|neuter|accusative|pl|present|active
-latcommoninfl.are_conj1presapl71|c1pres|antibus|neuter|ablative|pl|present|active
-latcommoninfl.are_conj1presapl72|c1pres|antia|neuter|voc|pl|present|active
+latcommoninfl.are_conj1presapl67|c1pres|antia|neuter|nominative|plural|present|active
+latcommoninfl.are_conj1presapl68|c1pres|antium|neuter|genitive|plural|present|active
+latcommoninfl.are_conj1presapl69|c1pres|antibus|neuter|dative|plural|present|active
+latcommoninfl.are_conj1presapl70|c1pres|antia|neuter|accusative|plural|present|active
+latcommoninfl.are_conj1presapl71|c1pres|antibus|neuter|ablative|plural|present|active
+latcommoninfl.are_conj1presapl72|c1pres|antia|neuter|vocative|plural|present|active
