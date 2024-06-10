@@ -78,3 +78,27 @@ end
 function latinForm(r::T) where {T <: TabulaeRule}
     formurn(r) |> latinForm
 end
+
+function delimitedrule(r::T; delimiter = "|") where {T <: TabulaeRule}
+    data = [
+        id(r),
+        inflectionType(r),
+        ending(r),
+        abbreviate(urn(lmForm(r)))
+    ]
+    join(data, delimiter)
+end
+
+function fromdelimited(row::AbstractString; delimiter = "|")
+    cols = split(row, delimiter)
+    if length(cols) < 4
+        throw(DomainError("Too few columns in $(row)"))
+    end
+
+    frm = cols[4] |> FormUrn |> latinForm
+    formrule(cols[1], cols[2], cols[3], frm)
+end
+
+function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, f::LatinMorphologicalForm)
+    @warn("No implementation of formrule function for type $(typeof(f))")
+end

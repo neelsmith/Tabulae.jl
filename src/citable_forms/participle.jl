@@ -7,6 +7,26 @@ struct LMFParticiple <: LatinMorphologicalForm
     pvoice::LMPVoice
 end
 
+function lmpGender(p::LMFParticiple)
+    p.pgender
+end
+
+function lmpCase(p::LMFParticiple)
+    p.pcase
+end
+
+function lmpNumber(p::LMFParticiple)
+    p.pnumber
+end
+
+function lmpTense(p::LMFParticiple)
+    p.ptense
+end
+
+function lmpVoice(p::LMFParticiple)
+    p.pvoice
+end
+
 
 """Participle forms are citable by Cite2Urn"""
 CitableTrait(::Type{LMFParticiple}) = CitableByCite2Urn()
@@ -33,7 +53,7 @@ $(SIGNATURES)
 """
 function urn(p::LMFParticiple)
     # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, PARTICIPLE,"0", code(p.pnumber),code(p.tense),"0", code(p.voice),code(p.gender),code(p.case),"00"))
+    Cite2Urn(string(BASE_MORPHOLOGY_URN, PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
 end
 
 

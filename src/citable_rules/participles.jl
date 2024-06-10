@@ -13,7 +13,36 @@ end
 
 #RuleUrn|InflectionClasses|Ending|Gender|Case|Number|Tense|Voice
 
+function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, p::LMFParticiple)
+    TabulaeParticipleRule(id, infltype, ending,
+    lmpGender(p), lmpCase(p), lmpNumber(p),
+    lmpTense(p), lmpVoice(p)
+    )
+end
 
+function lmpGender(p::TabulaeParticipleRule)
+    p.pgender
+end
+
+function lmpCase(p::TabulaeParticipleRule)
+    p.pcase
+end
+
+function lmpNumber(p::TabulaeParticipleRule)
+    p.pnumber
+end
+
+function lmpTense(p::TabulaeParticipleRule)
+    p.ptense
+end
+
+function lmpVoice(p::TabulaeParticipleRule)
+    p.pvoice
+end
+
+function id(r::TabulaeParticipleRule)
+    r.ruleid
+end
 
 """Create a `LMFParticiple` from `rule`.
 $(SIGNATURES)

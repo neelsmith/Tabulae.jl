@@ -6,6 +6,11 @@ struct TabulaeVerbStem <: TabulaeStem
     inflectionclass
 end
 
+function id(n::TabulaeVerbStem)
+    n.stemid
+end
+
+
 """
 Read one row of a stems table for noun tokens and create a `TabulaeNounStem`.
 

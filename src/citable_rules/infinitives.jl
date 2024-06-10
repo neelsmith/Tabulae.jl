@@ -10,6 +10,18 @@ end
 #RuleUrn|InflectionClasses|Ending|Tense|Voice
 
 
+function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, inf::LMFInfinitive)
+    @debug("INFINITIVE: $(inf)")
+    TabulaeInfinitiveRule(id, infltype, ending,
+    lmpTense(inf), lmpVoice(inf)
+    )
+end
+
+function id(r::TabulaeInfinitiveRule)
+    r.ruleid
+end
+
+
 """Create a `LMFInfinitive` from `rule`.
 $(SIGNATURES)
 """

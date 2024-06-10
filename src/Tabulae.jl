@@ -10,6 +10,8 @@ import CitableParserBuilder: orthography
 import CitableParserBuilder: delimiter
 import CitableParserBuilder: generate
 import CitableParserBuilder: lexemeurn
+import CitableParserBuilder: stringParser
+import CitableParserBuilder: tofile
 
 
 
@@ -55,9 +57,11 @@ export latinForm
 
 export NounIO, VerbIO, InfinitiveIO, ParticipleIO
 
-export TabulaeRule, inflectionType, ending
+export TabulaeRule, inflectionType, ending, id
+export delimitedrule, fromdelimited, formrule
 export TabulaeNounRule
 export TabulaeFiniteVerbRule
+export TabulaeInfinitiveRule
 export TabulaeParticipleRule
 
 export TabulaeStem, lexeme, stemvalue

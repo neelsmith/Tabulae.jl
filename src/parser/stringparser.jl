@@ -9,6 +9,14 @@ struct TabulaeStringParser <: AbstractStringParser
         ortho::LatinOrthographicSystem = latin24(), delim::AbstractString = "|") = new(entries, ortho, delim)
 end
 
+#function tofile(p::TabulaeStringParser, outfile)
+#    CitableParserBuilder.tofile(stringParser(p), outfile)
+#end
+
+function stringParser(p::TabulaeStringParser)
+    StringParser(p.entries, p.ortho, p.delimiter)
+end
+
 function datasource(p::TabulaeStringParser)
     p.entries
 end

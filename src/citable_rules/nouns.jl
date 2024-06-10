@@ -9,6 +9,17 @@ struct TabulaeNounRule <: TabulaeRule
     nnumber::LMPNumber
 end
 
+function id(r::TabulaeNounRule)
+    r.ruleid
+end
+
+
+function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, noun::LMFNoun)
+    TabulaeNounRule(id, infltype, ending,
+    lmpGender(noun), lmpCase(noun), lmpNumber(noun)
+    )
+end
+
 """Create a `LMFNoun` form from a rule.
 $(SIGNATURES)
 """

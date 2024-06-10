@@ -13,6 +13,11 @@ end
 #RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
+
+function id(r::TabulaeFiniteVerbRule)
+    r.ruleid
+end
+
 """Create a `LMFFiniteVerb` from `rule`.
 $(SIGNATURES)
 """
