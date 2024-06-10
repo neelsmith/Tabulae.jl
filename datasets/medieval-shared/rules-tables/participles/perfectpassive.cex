@@ -1,0 +1,10 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number|Tense|Voice
+
+
+medievalinfl.pft_perfppl14|pftpass|e|feminine|genitive|singular|perfect|passive
+medievalinfl.pft_perfppl15|pftpass|e|feminine|dative|singular|perfect|passive
+
+medievalinfl.pft_perfppl19|pftpass|e|feminine|nominative|plural|perfect|passive
+
+medievalinfl.pft_perfppl24|pftpass|e|feminine|vocative|plural|perfect|passive
+
