@@ -14,20 +14,20 @@ livymorph.irrv10|lexent.n37193|poteramus|1st|plural|impft|indic|active
 livymorph.irrv11|lexent.n37193|poteratis|2nd|plural|impft|indic|active
 livymorph.irrv12|lexent.n37193|poterant|3rd|plural|impft|indic|active
 
-livymorph.irrv13|lexent.n37193|potero|1st|singular|fut|indic|active
-livymorph.irrv14|lexent.n37193|poteris|2nd|singular|fut|indic|active
-livymorph.irrv15|lexent.n37193|poterit|3rd|singular|fut|indic|active
-livymorph.irrv16|lexent.n37193|poterimus|1st|plural|fut|indic|active
-livymorph.irrv17|lexent.n37193|poteritis|2nd|plural|fut|indic|active
-livymorph.irrv18|lexent.n37193|poterunt|3rd|plural|fut|indic|active
+livymorph.irrv13|lexent.n37193|potero|1st|singular|future|indic|active
+livymorph.irrv14|lexent.n37193|poteris|2nd|singular|future|indic|active
+livymorph.irrv15|lexent.n37193|poterit|3rd|singular|future|indic|active
+livymorph.irrv16|lexent.n37193|poterimus|1st|plural|future|indic|active
+livymorph.irrv17|lexent.n37193|poteritis|2nd|plural|future|indic|active
+livymorph.irrv18|lexent.n37193|poterunt|3rd|plural|future|indic|active
 
-livymorph.irrv19|lexent.n37193|potui|1st|singular|pft|indic|active
-livymorph.irrv20|lexent.n37193|potuisti|2nd|singular|pft|indic|active
-livymorph.irrv21|lexent.n37193|potuit|3rd|singular|pft|indic|active
-livymorph.irrv22|lexent.n37193|potuimus|1st|plural|pft|indic|active
-livymorph.irrv23|lexent.n37193|potuistis|2nd|plural|pft|indic|active
-livymorph.irrv24|lexent.n37193|potuerunt|3rd|plural|pft|indic|active
-livymorph.irrv24b|lexent.n37193|potuere|3rd|plural|pft|indic|active
+livymorph.irrv19|lexent.n37193|potui|1st|singular|perfect|indic|active
+livymorph.irrv20|lexent.n37193|potuisti|2nd|singular|perfect|indic|active
+livymorph.irrv21|lexent.n37193|potuit|3rd|singular|perfect|indic|active
+livymorph.irrv22|lexent.n37193|potuimus|1st|plural|perfect|indic|active
+livymorph.irrv23|lexent.n37193|potuistis|2nd|plural|perfect|indic|active
+livymorph.irrv24|lexent.n37193|potuerunt|3rd|plural|perfect|indic|active
+livymorph.irrv24b|lexent.n37193|potuere|3rd|plural|perfect|indic|active
 
 livymorph.irrv25|lexent.n37193|potueram|1st|singular|plupft|indic|active
 livymorph.irrv26|lexent.n37193|potueras|2nd|singular|plupft|indic|active
@@ -57,12 +57,12 @@ livymorph.irrv46|lexent.n37193|possemus|1st|plural|impft|subj|active
 livymorph.irrv47|lexent.n37193|possetis|2nd|plural|impft|subj|active
 livymorph.irrv48|lexent.n37193|possent|3rd|plural|impft|subj|active
 
-livymorph.irrv49|lexent.n37193|potuerim|1st|singular|pft|subj|active
-livymorph.irrv50|lexent.n37193|potueris|2nd|singular|pft|subj|active
-livymorph.irrv51|lexent.n37193|potuerit|3rd|singular|pft|subj|active
-livymorph.irrv52|lexent.n37193|potuerimus|1st|plural|pft|subj|active
-livymorph.irrv53|lexent.n37193|potueritis|2nd|plural|pft|subj|active
-livymorph.irrv54|lexent.n37193|potuerint|3rd|plural|pft|subj|active
+livymorph.irrv49|lexent.n37193|potuerim|1st|singular|perfect|subj|active
+livymorph.irrv50|lexent.n37193|potueris|2nd|singular|perfect|subj|active
+livymorph.irrv51|lexent.n37193|potuerit|3rd|singular|perfect|subj|active
+livymorph.irrv52|lexent.n37193|potuerimus|1st|plural|perfect|subj|active
+livymorph.irrv53|lexent.n37193|potueritis|2nd|plural|perfect|subj|active
+livymorph.irrv54|lexent.n37193|potuerint|3rd|plural|perfect|subj|active
 
 livymorph.irrv55|lexent.n37193|potuissem|1st|singular|plupft|subj|active
 livymorph.irrv56|lexent.n37193|potuisses|2nd|singular|plupft|subj|active

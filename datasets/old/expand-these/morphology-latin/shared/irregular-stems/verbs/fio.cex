@@ -14,12 +14,12 @@ latcommon.n18209|ls.n18209|fiebamus|1st|plural|impft|indic|passive
 latcommon.n18209|ls.n18209|fiebatis|2nd|plural|impft|indic|passive
 latcommon.n18209|ls.n18209|fiebant|3rd|plural|impft|indic|passive
 
-latcommon.n18209|ls.n18209|fiam|1st|singular|fut|indic|passive
-latcommon.n18209|ls.n18209|fies|2nd|singular|fut|indic|passive
-latcommon.n18209|ls.n18209|fiet|3rd|singular|fut|indic|passive
-latcommon.n18209|ls.n18209|fiemus|1st|plural|fut|indic|passive
-latcommon.n18209|ls.n18209|fietis|2nd|plural|fut|indic|passive
-latcommon.n18209|ls.n18209|fient|3rd|plural|fut|indic|passive
+latcommon.n18209|ls.n18209|fiam|1st|singular|future|indic|passive
+latcommon.n18209|ls.n18209|fies|2nd|singular|future|indic|passive
+latcommon.n18209|ls.n18209|fiet|3rd|singular|future|indic|passive
+latcommon.n18209|ls.n18209|fiemus|1st|plural|future|indic|passive
+latcommon.n18209|ls.n18209|fietis|2nd|plural|future|indic|passive
+latcommon.n18209|ls.n18209|fient|3rd|plural|future|indic|passive
 
 latcommon.n18209|ls.n18209|fiam|1st|singular|present|subj|passive
 latcommon.n18209|ls.n18209|fias|2nd|singular|present|subj|passive
@@ -37,4 +37,4 @@ latcommon.n18209|ls.n18209|fierent|3rd|plural|impft|subj|passive
 
 latcommon.n18209|ls.n18209|fi|2nd|singular|present|imptv|passive
 latcommon.n18209|ls.n18209|fite|2nd|plural|present|imptv|passive
-latcommon.n18209|ls.n18209|fito|2nd|singular|fut|imptv|passive
+latcommon.n18209|ls.n18209|fito|2nd|singular|future|imptv|passive

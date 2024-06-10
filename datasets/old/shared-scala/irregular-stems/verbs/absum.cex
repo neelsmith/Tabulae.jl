@@ -15,12 +15,12 @@ latcommon.irrverbn25410|ls.n254|aberamus|1st|plural|impft|indic|active
 latcommon.irrverbn25411|ls.n254|aberatis|2nd|plural|impft|indic|active
 latcommon.irrverbn25412|ls.n254|aberant|3rd|plural|impft|indic|active
 
-latcommon.irrverbn25413|ls.n254|abero|1st|singular|fut|indic|active
-latcommon.irrverbn25414|ls.n254|aberis|2nd|singular|fut|indic|active
-latcommon.irrverbn25415|ls.n254|aberit|3rd|singular|fut|indic|active
-latcommon.irrverbn25416|ls.n254|aberimus|1st|plural|fut|indic|active
-latcommon.irrverbn25417|ls.n254|aberitis|2nd|plural|fut|indic|active
-latcommon.irrverbn25418|ls.n254|aberunt|3rd|plural|fut|indic|active
+latcommon.irrverbn25413|ls.n254|abero|1st|singular|future|indic|active
+latcommon.irrverbn25414|ls.n254|aberis|2nd|singular|future|indic|active
+latcommon.irrverbn25415|ls.n254|aberit|3rd|singular|future|indic|active
+latcommon.irrverbn25416|ls.n254|aberimus|1st|plural|future|indic|active
+latcommon.irrverbn25417|ls.n254|aberitis|2nd|plural|future|indic|active
+latcommon.irrverbn25418|ls.n254|aberunt|3rd|plural|future|indic|active
 
 latcommon.irrverbn25419|ls.n254|afui|1st|singular|perfect|indic|active
 latcommon.irrverbn25420|ls.n254|afuisti|2nd|singular|perfect|indic|active
@@ -74,7 +74,7 @@ latcommon.irrverbn25460|ls.n254|afuissent|3rd|plural|pluperfect|subj|active
 
 latcommon.irrverbn254133|ls.n254|abes|2nd|singular|present|imptv|active
 latcommon.irrverbn254134|ls.n254|abeste|2nd|plural|present|imptv|active
-latcommon.irrverbn254135|ls.n254|abesto|2nd|singular|fut|imptv|active
-latcommon.irrverbn254136|ls.n254|abestote|2nd|plural|fut|imptv|active
-latcommon.irrverbn254137|ls.n254|abesto|3rd|singular|fut|imptv|active
-latcommon.irrverbn254138|ls.n254|absunto|3rd|plural|fut|imptv|active
+latcommon.irrverbn254135|ls.n254|abesto|2nd|singular|future|imptv|active
+latcommon.irrverbn254136|ls.n254|abestote|2nd|plural|future|imptv|active
+latcommon.irrverbn254137|ls.n254|abesto|3rd|singular|future|imptv|active
+latcommon.irrverbn254138|ls.n254|absunto|3rd|plural|future|imptv|active

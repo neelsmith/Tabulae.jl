@@ -14,12 +14,12 @@ latcommon.irrvadn1586810|ls.n15868|ibamus|1st|plural|impft|indic|active
 latcommon.irrvadn1586811|ls.n15868|ibatis|2nd|plural|impft|indic|active
 latcommon.irrvadn1586812|ls.n15868|ibant|3rd|plural|impft|indic|active
 
-latcommon.irrvadn1586813|ls.n15868|ibo|1st|singular|fut|indic|active
-latcommon.irrvadn1586814|ls.n15868|ibis|2nd|singular|fut|indic|active
-latcommon.irrvadn1586815|ls.n15868|ibit|3rd|singular|fut|indic|active
-latcommon.irrvadn1586816|ls.n15868|ibimus|1st|plural|fut|indic|active
-latcommon.irrvadn1586817|ls.n15868|ibitis|2nd|plural|fut|indic|active
-latcommon.irrvadn1586818|ls.n15868|ibunt|3rd|plural|fut|indic|active
+latcommon.irrvadn1586813|ls.n15868|ibo|1st|singular|future|indic|active
+latcommon.irrvadn1586814|ls.n15868|ibis|2nd|singular|future|indic|active
+latcommon.irrvadn1586815|ls.n15868|ibit|3rd|singular|future|indic|active
+latcommon.irrvadn1586816|ls.n15868|ibimus|1st|plural|future|indic|active
+latcommon.irrvadn1586817|ls.n15868|ibitis|2nd|plural|future|indic|active
+latcommon.irrvadn1586818|ls.n15868|ibunt|3rd|plural|future|indic|active
 
 latcommon.irrvadn1586855|ls.n15868|eam|1st|singular|present|subj|active
 latcommon.irrvadn1586856|ls.n15868|eas|2nd|singular|present|subj|active
@@ -44,7 +44,7 @@ latcommon.irrvadn1586884|ls.n15868|issent|3rd|plural|plupft|subj|active
 
 latcommon.irrvadn1586891|ls.n15868|i|2nd|singular|present|imptv|active
 latcommon.irrvadn1586892|ls.n15868|ite|2nd|plural|present|imptv|active
-latcommon.irrvadn1586893|ls.n15868|ito|2nd|singular|fut|imptv|active
-latcommon.irrvadn1586894|ls.n15868|itote|2nd|plural|fut|imptv|active
-latcommon.irrvadn1586895|ls.n15868|ito|3rd|singular|fut|imptv|active
-latcommon.irrvadn1586896|ls.n15868|eunto|3rd|plural|fut|imptv|active
+latcommon.irrvadn1586893|ls.n15868|ito|2nd|singular|future|imptv|active
+latcommon.irrvadn1586894|ls.n15868|itote|2nd|plural|future|imptv|active
+latcommon.irrvadn1586895|ls.n15868|ito|3rd|singular|future|imptv|active
+latcommon.irrvadn1586896|ls.n15868|eunto|3rd|plural|future|imptv|active

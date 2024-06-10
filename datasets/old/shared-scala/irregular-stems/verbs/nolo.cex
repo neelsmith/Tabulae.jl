@@ -12,12 +12,12 @@ latcommon.irrvadn3112410|ls.n31124|nolebamus|1st|plural|impft|indic|active
 latcommon.irrvadn3112411|ls.n31124|nolebatis|2nd|plural|impft|indic|active
 latcommon.irrvadn3112412|ls.n31124|nolebant|3rd|plural|impft|indic|active
 
-latcommon.irrvadn3112413|ls.n31124|nolam|1st|singular|fut|indic|active
-latcommon.irrvadn3112414|ls.n31124|noles|2nd|singular|fut|indic|active
-latcommon.irrvadn3112415|ls.n31124|nolet|3rd|singular|fut|indic|active
-latcommon.irrvadn3112416|ls.n31124|nolemus|1st|plural|fut|indic|active
-latcommon.irrvadn3112417|ls.n31124|noletis|2nd|plural|fut|indic|active
-latcommon.irrvadn3112418|ls.n31124|nolent|3rd|plural|fut|indic|active
+latcommon.irrvadn3112413|ls.n31124|nolam|1st|singular|future|indic|active
+latcommon.irrvadn3112414|ls.n31124|noles|2nd|singular|future|indic|active
+latcommon.irrvadn3112415|ls.n31124|nolet|3rd|singular|future|indic|active
+latcommon.irrvadn3112416|ls.n31124|nolemus|1st|plural|future|indic|active
+latcommon.irrvadn3112417|ls.n31124|noletis|2nd|plural|future|indic|active
+latcommon.irrvadn3112418|ls.n31124|nolent|3rd|plural|future|indic|active
 
 latcommon.irrvadn3112419|ls.n31124|nolui|1st|singular|perfect|indic|active
 latcommon.irrvadn3112420|ls.n31124|noluisti|2nd|singular|perfect|indic|active

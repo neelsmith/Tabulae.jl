@@ -14,12 +14,12 @@ latcommon.irrvadn2776110|ls.n27761|malebamus|1st|plural|impft|indic|active
 latcommon.irrvadn2776111|ls.n27761|malebatis|2nd|plural|impft|indic|active
 latcommon.irrvadn2776112|ls.n27761|malebant|3rd|plural|impft|indic|active
 
-latcommon.irrvadn2776113|ls.n27761|malam|1st|singular|fut|indic|active
-latcommon.irrvadn2776114|ls.n27761|males|2nd|singular|fut|indic|active
-latcommon.irrvadn2776115|ls.n27761|malet|3rd|singular|fut|indic|active
-latcommon.irrvadn2776116|ls.n27761|malemus|1st|plural|fut|indic|active
-latcommon.irrvadn2776117|ls.n27761|maletis|2nd|plural|fut|indic|active
-latcommon.irrvadn2776118|ls.n27761|malent|3rd|plural|fut|indic|active
+latcommon.irrvadn2776113|ls.n27761|malam|1st|singular|future|indic|active
+latcommon.irrvadn2776114|ls.n27761|males|2nd|singular|future|indic|active
+latcommon.irrvadn2776115|ls.n27761|malet|3rd|singular|future|indic|active
+latcommon.irrvadn2776116|ls.n27761|malemus|1st|plural|future|indic|active
+latcommon.irrvadn2776117|ls.n27761|maletis|2nd|plural|future|indic|active
+latcommon.irrvadn2776118|ls.n27761|malent|3rd|plural|future|indic|active
 
 latcommon.irrvadn2776119|ls.n27761|malui|1st|singular|perfect|indic|active
 latcommon.irrvadn2776120|ls.n27761|maluisti|2nd|singular|perfect|indic|active

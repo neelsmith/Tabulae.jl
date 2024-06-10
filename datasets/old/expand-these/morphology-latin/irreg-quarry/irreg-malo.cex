@@ -13,20 +13,20 @@ plinymorph.irrvmalo10|lexent.n27761|malebamus|1st|plural|impft|indic|active
 plinymorph.irrvmalo11|lexent.n27761|malebatis|2nd|plural|impft|indic|active
 plinymorph.irrvmalo12|lexent.n27761|malebant|3rd|plural|impft|indic|active
 
-plinymorph.irrvmalo13|lexent.n27761|malam|1st|singular|fut|indic|active
-plinymorph.irrvmalo14|lexent.n27761|males|2nd|singular|fut|indic|active
-plinymorph.irrvmalo15|lexent.n27761|malet|3rd|singular|fut|indic|active
-plinymorph.irrvmalo16|lexent.n27761|malemus|1st|plural|fut|indic|active
-plinymorph.irrvmalo17|lexent.n27761|maletis|2nd|plural|fut|indic|active
-plinymorph.irrvmalo18|lexent.n27761|malent|3rd|plural|fut|indic|active
+plinymorph.irrvmalo13|lexent.n27761|malam|1st|singular|future|indic|active
+plinymorph.irrvmalo14|lexent.n27761|males|2nd|singular|future|indic|active
+plinymorph.irrvmalo15|lexent.n27761|malet|3rd|singular|future|indic|active
+plinymorph.irrvmalo16|lexent.n27761|malemus|1st|plural|future|indic|active
+plinymorph.irrvmalo17|lexent.n27761|maletis|2nd|plural|future|indic|active
+plinymorph.irrvmalo18|lexent.n27761|malent|3rd|plural|future|indic|active
 
-plinymorph.irrvmalo19|lexent.n27761|malui|1st|singular|pft|indic|active
-plinymorph.irrvmalo20|lexent.n27761|maluisti|2nd|singular|pft|indic|active
-plinymorph.irrvmalo21|lexent.n27761|maluit|3rd|singular|pft|indic|active
-plinymorph.irrvmalo22|lexent.n27761|maluimus|1st|plural|pft|indic|active
-plinymorph.irrvmalo23|lexent.n27761|maluistis|2nd|plural|pft|indic|active
-plinymorph.irrvmalo24|lexent.n27761|maluerunt|3rd|plural|pft|indic|active
-plinymorph.irrvmalo24b|lexent.n27761|maluere|3rd|plural|pft|indic|active
+plinymorph.irrvmalo19|lexent.n27761|malui|1st|singular|perfect|indic|active
+plinymorph.irrvmalo20|lexent.n27761|maluisti|2nd|singular|perfect|indic|active
+plinymorph.irrvmalo21|lexent.n27761|maluit|3rd|singular|perfect|indic|active
+plinymorph.irrvmalo22|lexent.n27761|maluimus|1st|plural|perfect|indic|active
+plinymorph.irrvmalo23|lexent.n27761|maluistis|2nd|plural|perfect|indic|active
+plinymorph.irrvmalo24|lexent.n27761|maluerunt|3rd|plural|perfect|indic|active
+plinymorph.irrvmalo24b|lexent.n27761|maluere|3rd|plural|perfect|indic|active
 
 plinymorph.irrvmalo25|lexent.n27761|malueram|1st|singular|plupft|indic|active
 plinymorph.irrvmalo26|lexent.n27761|malueras|2nd|singular|plupft|indic|active
@@ -56,12 +56,12 @@ plinymorph.irrvmalo46|lexent.n27761|mallemus|1st|plural|impft|subj|active
 plinymorph.irrvmalo47|lexent.n27761|malletis|2nd|plural|impft|subj|active
 plinymorph.irrvmalo48|lexent.n27761|mallent|3rd|plural|impft|subj|active
 
-plinymorph.irrvmalo49|lexent.n27761|maluerim|1st|singular|pft|subj|active
-plinymorph.irrvmalo50|lexent.n27761|malueris|2nd|singular|pft|subj|active
-plinymorph.irrvmalo51|lexent.n27761|maluerit|3rd|singular|pft|subj|active
-plinymorph.irrvmalo52|lexent.n27761|maluerimus|1st|plural|pft|subj|active
-plinymorph.irrvmalo53|lexent.n27761|malueritis|2nd|plural|pft|subj|active
-plinymorph.irrvmalo54|lexent.n27761|maluerint|3rd|plural|pft|subj|active
+plinymorph.irrvmalo49|lexent.n27761|maluerim|1st|singular|perfect|subj|active
+plinymorph.irrvmalo50|lexent.n27761|malueris|2nd|singular|perfect|subj|active
+plinymorph.irrvmalo51|lexent.n27761|maluerit|3rd|singular|perfect|subj|active
+plinymorph.irrvmalo52|lexent.n27761|maluerimus|1st|plural|perfect|subj|active
+plinymorph.irrvmalo53|lexent.n27761|malueritis|2nd|plural|perfect|subj|active
+plinymorph.irrvmalo54|lexent.n27761|maluerint|3rd|plural|perfect|subj|active
 
 plinymorph.irrvmalo55|lexent.n27761|maluissem|1st|singular|plupft|subj|active
 plinymorph.irrvmalo56|lexent.n27761|maluisses|2nd|singular|plupft|subj|active

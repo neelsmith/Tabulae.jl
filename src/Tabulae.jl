@@ -55,7 +55,7 @@ export latinForm
 
 export NounIO, VerbIO, InfinitiveIO, ParticipleIO
 
-export TabulaeRule, inflectionType
+export TabulaeRule, inflectionType, ending
 export TabulaeNounRule
 export TabulaeFiniteVerbRule
 export TabulaeParticipleRule

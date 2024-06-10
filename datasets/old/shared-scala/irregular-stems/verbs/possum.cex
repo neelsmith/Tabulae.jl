@@ -14,12 +14,12 @@ latcommon.n37193k|ls.n37193|poteramus|1st|plural|impft|indic|active
 latcommon.n37193l|ls.n37193|poteratis|2nd|plural|impft|indic|active
 latcommon.n37193m|ls.n37193|poterant|3rd|plural|impft|indic|active
 
-latcommon.n37193n|ls.n37193|potero|1st|singular|fut|indic|active
-latcommon.n37193o|ls.n37193|poteris|2nd|singular|fut|indic|active
-latcommon.n37193p|ls.n37193|poterit|3rd|singular|fut|indic|active
-latcommon.n37193q|ls.n37193|poterimus|1st|plural|fut|indic|active
-latcommon.n37193r|ls.n37193|poteritis|2nd|plural|fut|indic|active
-latcommon.n37193s|ls.n37193|poterunt|3rd|plural|fut|indic|active
+latcommon.n37193n|ls.n37193|potero|1st|singular|future|indic|active
+latcommon.n37193o|ls.n37193|poteris|2nd|singular|future|indic|active
+latcommon.n37193p|ls.n37193|poterit|3rd|singular|future|indic|active
+latcommon.n37193q|ls.n37193|poterimus|1st|plural|future|indic|active
+latcommon.n37193r|ls.n37193|poteritis|2nd|plural|future|indic|active
+latcommon.n37193s|ls.n37193|poterunt|3rd|plural|future|indic|active
 
 latcommon.n37193t|ls.n37193|potui|1st|singular|perfect|indic|active
 latcommon.n37193u|ls.n37193|potuisti|2nd|singular|perfect|indic|active

@@ -15,12 +15,12 @@ latcommon.irrvadn101010|ls.n1010|aderamus|1st|plural|impft|indic|active
 latcommon.irrvadn101011|ls.n1010|aderatis|2nd|plural|impft|indic|active
 latcommon.irrvadn101012|ls.n1010|aderant|3rd|plural|impft|indic|active
 
-latcommon.irrvadn101013|ls.n1010|adero|1st|singular|fut|indic|active
-latcommon.irrvadn101014|ls.n1010|aderis|2nd|singular|fut|indic|active
-latcommon.irrvadn101015|ls.n1010|aderit|3rd|singular|fut|indic|active
-latcommon.irrvadn101016|ls.n1010|aderimus|1st|plural|fut|indic|active
-latcommon.irrvadn101017|ls.n1010|aderitis|2nd|plural|fut|indic|active
-latcommon.irrvadn101018|ls.n1010|aderunt|3rd|plural|fut|indic|active
+latcommon.irrvadn101013|ls.n1010|adero|1st|singular|future|indic|active
+latcommon.irrvadn101014|ls.n1010|aderis|2nd|singular|future|indic|active
+latcommon.irrvadn101015|ls.n1010|aderit|3rd|singular|future|indic|active
+latcommon.irrvadn101016|ls.n1010|aderimus|1st|plural|future|indic|active
+latcommon.irrvadn101017|ls.n1010|aderitis|2nd|plural|future|indic|active
+latcommon.irrvadn101018|ls.n1010|aderunt|3rd|plural|future|indic|active
 
 latcommon.irrvadn101019|ls.n1010|adfui|1st|singular|perfect|indic|active
 latcommon.irrvadn101020|ls.n1010|adfuisti|2nd|singular|perfect|indic|active
@@ -74,7 +74,7 @@ latcommon.irrvadn101060|ls.n1010|adfuissent|3rd|plural|pluperfect|subj|active
 
 latcommon.irrvadn1010133|ls.n1010|ades|2nd|singular|present|imptv|active
 latcommon.irrvadn1010134|ls.n1010|adeste|2nd|plural|present|imptv|active
-latcommon.irrvadn1010135|ls.n1010|adesto|2nd|singular|fut|imptv|active
-latcommon.irrvadn1010136|ls.n1010|adestote|2nd|plural|fut|imptv|active
-latcommon.irrvadn1010137|ls.n1010|adesto|3rd|singular|fut|imptv|active
-latcommon.irrvadn1010138|ls.n1010|adsunto|3rd|plural|fut|imptv|active
+latcommon.irrvadn1010135|ls.n1010|adesto|2nd|singular|future|imptv|active
+latcommon.irrvadn1010136|ls.n1010|adestote|2nd|plural|future|imptv|active
+latcommon.irrvadn1010137|ls.n1010|adesto|3rd|singular|future|imptv|active
+latcommon.irrvadn1010138|ls.n1010|adsunto|3rd|plural|future|imptv|active

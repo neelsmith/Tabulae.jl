@@ -16,20 +16,20 @@ lat23morph.irregverbn51298l|ls.n51298|uolebamus|1st|plural|impft|indic|active
 lat23morph.irregverbn51298m|ls.n51298|uolebatis|2nd|plural|impft|indic|active
 lat23morph.irregverbn51298n|ls.n51298|uolebant|3rd|plural|impft|indic|active
 
-lat23morph.irregverbn51298o|ls.n51298|uolam|1st|singular|fut|indic|active
-lat23morph.irregverbn51298p|ls.n51298|uoles|2nd|singular|fut|indic|active
-lat23morph.irregverbn51298q|ls.n51298|uolet|3rd|singular|fut|indic|active
-lat23morph.irregverbn51298r|ls.n51298|uolemus|1st|plural|fut|indic|active
-lat23morph.irregverbn51298s|ls.n51298|uoletis|2nd|plural|fut|indic|active
-lat23morph.irregverbn51298t|ls.n51298|uolent|3rd|plural|fut|indic|active
+lat23morph.irregverbn51298o|ls.n51298|uolam|1st|singular|future|indic|active
+lat23morph.irregverbn51298p|ls.n51298|uoles|2nd|singular|future|indic|active
+lat23morph.irregverbn51298q|ls.n51298|uolet|3rd|singular|future|indic|active
+lat23morph.irregverbn51298r|ls.n51298|uolemus|1st|plural|future|indic|active
+lat23morph.irregverbn51298s|ls.n51298|uoletis|2nd|plural|future|indic|active
+lat23morph.irregverbn51298t|ls.n51298|uolent|3rd|plural|future|indic|active
 
-lat23morph.irregverbn51298u|ls.n51298|uolui|1st|singular|pft|indic|active
-lat23morph.irregverbn51298v|ls.n51298|uoluisti|2nd|singular|pft|indic|active
-lat23morph.irregverbn51298w|ls.n51298|uoluit|3rd|singular|pft|indic|active
-lat23morph.irregverbn51298x|ls.n51298|uoluimus|1st|plural|pft|indic|active
-lat23morph.irregverbn51298y|ls.n51298|uoluistis|2nd|plural|pft|indic|active
-lat23morph.irregverbn51298z|ls.n51298|uoluerunt|3rd|plural|pft|indic|active
-lat23morph.irregverbn51298aa|ls.n51298|uoluere|3rd|plural|pft|indic|active
+lat23morph.irregverbn51298u|ls.n51298|uolui|1st|singular|perfect|indic|active
+lat23morph.irregverbn51298v|ls.n51298|uoluisti|2nd|singular|perfect|indic|active
+lat23morph.irregverbn51298w|ls.n51298|uoluit|3rd|singular|perfect|indic|active
+lat23morph.irregverbn51298x|ls.n51298|uoluimus|1st|plural|perfect|indic|active
+lat23morph.irregverbn51298y|ls.n51298|uoluistis|2nd|plural|perfect|indic|active
+lat23morph.irregverbn51298z|ls.n51298|uoluerunt|3rd|plural|perfect|indic|active
+lat23morph.irregverbn51298aa|ls.n51298|uoluere|3rd|plural|perfect|indic|active
 
 lat23morph.irregverbn51298ab|ls.n51298|uolueram|1st|singular|plupft|indic|active
 lat23morph.irregverbn51298ac|ls.n51298|uolueras|2nd|singular|plupft|indic|active
@@ -59,12 +59,12 @@ lat23morph.irregverbn51298aw|ls.n51298|uellemus|1st|plural|impft|subj|active
 lat23morph.irregverbn51298ax|ls.n51298|uelletis|2nd|plural|impft|subj|active
 lat23morph.irregverbn51298ay|ls.n51298|uellent|3rd|plural|impft|subj|active
 
-lat23morph.irregverbn51298az|ls.n51298|uoluerim|1st|singular|pft|subj|active
-lat23morph.irregverbn51298ba|ls.n51298|uolueris|2nd|singular|pft|subj|active
-lat23morph.irregverbn51298bb|ls.n51298|uoluerit|3rd|singular|pft|subj|active
-lat23morph.irregverbn51298bc|ls.n51298|uoluerimus|1st|plural|pft|subj|active
-lat23morph.irregverbn51298bd|ls.n51298|uolueritis|2nd|plural|pft|subj|active
-lat23morph.irregverbn51298be|ls.n51298|uoluerint|3rd|plural|pft|subj|active
+lat23morph.irregverbn51298az|ls.n51298|uoluerim|1st|singular|perfect|subj|active
+lat23morph.irregverbn51298ba|ls.n51298|uolueris|2nd|singular|perfect|subj|active
+lat23morph.irregverbn51298bb|ls.n51298|uoluerit|3rd|singular|perfect|subj|active
+lat23morph.irregverbn51298bc|ls.n51298|uoluerimus|1st|plural|perfect|subj|active
+lat23morph.irregverbn51298bd|ls.n51298|uolueritis|2nd|plural|perfect|subj|active
+lat23morph.irregverbn51298be|ls.n51298|uoluerint|3rd|plural|perfect|subj|active
 
 lat23morph.irregverbn51298bf|ls.n51298|uoluissem|1st|singular|plupft|subj|active
 lat23morph.irregverbn51298bg|ls.n51298|uoluisses|2nd|singular|plupft|subj|active

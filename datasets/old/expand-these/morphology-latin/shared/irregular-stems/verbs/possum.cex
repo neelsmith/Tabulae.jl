@@ -14,20 +14,20 @@ latcommon.n37193k|ls.n37193|poteramus|1st|plural|impft|indic|active
 latcommon.n37193l|ls.n37193|poteratis|2nd|plural|impft|indic|active
 latcommon.n37193m|ls.n37193|poterant|3rd|plural|impft|indic|active
 
-latcommon.n37193n|ls.n37193|potero|1st|singular|fut|indic|active
-latcommon.n37193o|ls.n37193|poteris|2nd|singular|fut|indic|active
-latcommon.n37193p|ls.n37193|poterit|3rd|singular|fut|indic|active
-latcommon.n37193q|ls.n37193|poterimus|1st|plural|fut|indic|active
-latcommon.n37193r|ls.n37193|poteritis|2nd|plural|fut|indic|active
-latcommon.n37193s|ls.n37193|poterunt|3rd|plural|fut|indic|active
+latcommon.n37193n|ls.n37193|potero|1st|singular|future|indic|active
+latcommon.n37193o|ls.n37193|poteris|2nd|singular|future|indic|active
+latcommon.n37193p|ls.n37193|poterit|3rd|singular|future|indic|active
+latcommon.n37193q|ls.n37193|poterimus|1st|plural|future|indic|active
+latcommon.n37193r|ls.n37193|poteritis|2nd|plural|future|indic|active
+latcommon.n37193s|ls.n37193|poterunt|3rd|plural|future|indic|active
 
-latcommon.n37193t|ls.n37193|potui|1st|singular|pft|indic|active
-latcommon.n37193u|ls.n37193|potuisti|2nd|singular|pft|indic|active
-latcommon.n37193v|ls.n37193|potuit|3rd|singular|pft|indic|active
-latcommon.n37193w|ls.n37193|potuimus|1st|plural|pft|indic|active
-latcommon.n37193x|ls.n37193|potuistis|2nd|plural|pft|indic|active
-latcommon.n37193y|ls.n37193|potuerunt|3rd|plural|pft|indic|active
-latcommon.n37193z|ls.n37193|potuere|3rd|plural|pft|indic|active
+latcommon.n37193t|ls.n37193|potui|1st|singular|perfect|indic|active
+latcommon.n37193u|ls.n37193|potuisti|2nd|singular|perfect|indic|active
+latcommon.n37193v|ls.n37193|potuit|3rd|singular|perfect|indic|active
+latcommon.n37193w|ls.n37193|potuimus|1st|plural|perfect|indic|active
+latcommon.n37193x|ls.n37193|potuistis|2nd|plural|perfect|indic|active
+latcommon.n37193y|ls.n37193|potuerunt|3rd|plural|perfect|indic|active
+latcommon.n37193z|ls.n37193|potuere|3rd|plural|perfect|indic|active
 
 latcommon.n37193aa|ls.n37193|potueram|1st|singular|plupft|indic|active
 latcommon.n37193ab|ls.n37193|potueras|2nd|singular|plupft|indic|active
@@ -57,12 +57,12 @@ latcommon.n37193av|ls.n37193|possemus|1st|plural|impft|subj|active
 latcommon.n37193aw|ls.n37193|possetis|2nd|plural|impft|subj|active
 latcommon.n37193ax|ls.n37193|possent|3rd|plural|impft|subj|active
 
-latcommon.n37193ay|ls.n37193|potuerim|1st|singular|pft|subj|active
-latcommon.n37193az|ls.n37193|potueris|2nd|singular|pft|subj|active
-latcommon.n37193ba|ls.n37193|potuerit|3rd|singular|pft|subj|active
-latcommon.n37193bb|ls.n37193|potuerimus|1st|plural|pft|subj|active
-latcommon.n37193bc|ls.n37193|potueritis|2nd|plural|pft|subj|active
-latcommon.n37193bd|ls.n37193|potuerint|3rd|plural|pft|subj|active
+latcommon.n37193ay|ls.n37193|potuerim|1st|singular|perfect|subj|active
+latcommon.n37193az|ls.n37193|potueris|2nd|singular|perfect|subj|active
+latcommon.n37193ba|ls.n37193|potuerit|3rd|singular|perfect|subj|active
+latcommon.n37193bb|ls.n37193|potuerimus|1st|plural|perfect|subj|active
+latcommon.n37193bc|ls.n37193|potueritis|2nd|plural|perfect|subj|active
+latcommon.n37193bd|ls.n37193|potuerint|3rd|plural|perfect|subj|active
 
 latcommon.n37193be|ls.n37193|potuissem|1st|singular|plupft|subj|active
 latcommon.n37193bf|ls.n37193|potuisses|2nd|singular|plupft|subj|active

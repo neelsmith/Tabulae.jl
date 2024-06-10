@@ -14,20 +14,20 @@ ocremorph.irrv10|lexent.n46529|eramvs|1st|plural|impft|indic|active
 ocremorph.irrv11|lexent.n46529|eratis|2nd|plural|impft|indic|active
 ocremorph.irrv12|lexent.n46529|erant|3rd|plural|impft|indic|active
 
-ocremorph.irrv13|lexent.n46529|ero|1st|singular|fut|indic|active
-ocremorph.irrv14|lexent.n46529|eris|2nd|singular|fut|indic|active
-ocremorph.irrv15|lexent.n46529|erit|3rd|singular|fut|indic|active
-ocremorph.irrv16|lexent.n46529|erimvs|1st|plural|fut|indic|active
-ocremorph.irrv17|lexent.n46529|eritis|2nd|plural|fut|indic|active
-ocremorph.irrv18|lexent.n46529|ervnt|3rd|plural|fut|indic|active
+ocremorph.irrv13|lexent.n46529|ero|1st|singular|future|indic|active
+ocremorph.irrv14|lexent.n46529|eris|2nd|singular|future|indic|active
+ocremorph.irrv15|lexent.n46529|erit|3rd|singular|future|indic|active
+ocremorph.irrv16|lexent.n46529|erimvs|1st|plural|future|indic|active
+ocremorph.irrv17|lexent.n46529|eritis|2nd|plural|future|indic|active
+ocremorph.irrv18|lexent.n46529|ervnt|3rd|plural|future|indic|active
 
-ocremorph.irrv19|lexent.n46529|fvi|1st|singular|pft|indic|active
-ocremorph.irrv20|lexent.n46529|fvisti|2nd|singular|pft|indic|active
-ocremorph.irrv21|lexent.n46529|fvit|3rd|singular|pft|indic|active
-ocremorph.irrv22|lexent.n46529|fvimvs|1st|plural|pft|indic|active
-ocremorph.irrv23|lexent.n46529|fvistis|2nd|plural|pft|indic|active
-ocremorph.irrv24|lexent.n46529|fvervnt|3rd|plural|pft|indic|active
-ocremorph.irrv24b|lexent.n46529|fvere|3rd|plural|pft|indic|active
+ocremorph.irrv19|lexent.n46529|fvi|1st|singular|perfect|indic|active
+ocremorph.irrv20|lexent.n46529|fvisti|2nd|singular|perfect|indic|active
+ocremorph.irrv21|lexent.n46529|fvit|3rd|singular|perfect|indic|active
+ocremorph.irrv22|lexent.n46529|fvimvs|1st|plural|perfect|indic|active
+ocremorph.irrv23|lexent.n46529|fvistis|2nd|plural|perfect|indic|active
+ocremorph.irrv24|lexent.n46529|fvervnt|3rd|plural|perfect|indic|active
+ocremorph.irrv24b|lexent.n46529|fvere|3rd|plural|perfect|indic|active
 
 ocremorph.irrv25|lexent.n46529|fveram|1st|singular|plupft|indic|active
 ocremorph.irrv26|lexent.n46529|fveras|2nd|singular|plupft|indic|active
@@ -57,12 +57,12 @@ ocremorph.irrv46|lexent.n46529|essemvs|1st|plural|impft|subj|active
 ocremorph.irrv47|lexent.n46529|essetis|2nd|plural|impft|subj|active
 ocremorph.irrv48|lexent.n46529|essent|3rd|plural|impft|subj|active
 
-ocremorph.irrv49|lexent.n46529|fverim|1st|singular|pft|subj|active
-ocremorph.irrv50|lexent.n46529|fveris|2nd|singular|pft|subj|active
-ocremorph.irrv51|lexent.n46529|fverit|3rd|singular|pft|subj|active
-ocremorph.irrv52|lexent.n46529|fverimvs|1st|plural|pft|subj|active
-ocremorph.irrv53|lexent.n46529|fveritis|2nd|plural|pft|subj|active
-ocremorph.irrv54|lexent.n46529|fverint|3rd|plural|pft|subj|active
+ocremorph.irrv49|lexent.n46529|fverim|1st|singular|perfect|subj|active
+ocremorph.irrv50|lexent.n46529|fveris|2nd|singular|perfect|subj|active
+ocremorph.irrv51|lexent.n46529|fverit|3rd|singular|perfect|subj|active
+ocremorph.irrv52|lexent.n46529|fverimvs|1st|plural|perfect|subj|active
+ocremorph.irrv53|lexent.n46529|fveritis|2nd|plural|perfect|subj|active
+ocremorph.irrv54|lexent.n46529|fverint|3rd|plural|perfect|subj|active
 
 ocremorph.irrv55|lexent.n46529|fvissem|1st|singular|plupft|subj|active
 ocremorph.irrv56|lexent.n46529|fvisses|2nd|singular|plupft|subj|active
@@ -73,7 +73,7 @@ ocremorph.irrv60|lexent.n46529|fvissent|3rd|plural|plupft|subj|active
 
 ocremorph.irrv133|lexent.n46529|es|2nd|singular|present|imptv|active
 ocremorph.irrv134|lexent.n46529|este|2nd|plural|present|imptv|active
-ocremorph.irrv135|lexent.n46529|esto|2nd|singular|fut|imptv|active
-ocremorph.irrv136|lexent.n46529|estote|2nd|plural|fut|imptv|active
-ocremorph.irrv137|lexent.n46529|esto|3rd|singular|fut|imptv|active
-ocremorph.irrv138|lexent.n46529|svnto|3rd|plural|fut|imptv|active
+ocremorph.irrv135|lexent.n46529|esto|2nd|singular|future|imptv|active
+ocremorph.irrv136|lexent.n46529|estote|2nd|plural|future|imptv|active
+ocremorph.irrv137|lexent.n46529|esto|3rd|singular|future|imptv|active
+ocremorph.irrv138|lexent.n46529|svnto|3rd|plural|future|imptv|active

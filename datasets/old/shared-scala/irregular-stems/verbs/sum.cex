@@ -14,12 +14,12 @@ latcommon.irregverbn46529k|ls.n46529|eramus|1st|plural|impft|indic|active
 latcommon.irregverbn46529l|ls.n46529|eratis|2nd|plural|impft|indic|active
 latcommon.irregverbn46529m|ls.n46529|erant|3rd|plural|impft|indic|active
 
-latcommon.irregverbn46529n|ls.n46529|ero|1st|singular|fut|indic|active
-latcommon.irregverbn46529o|ls.n46529|eris|2nd|singular|fut|indic|active
-latcommon.irregverbn46529p|ls.n46529|erit|3rd|singular|fut|indic|active
-latcommon.irregverbn46529q|ls.n46529|erimus|1st|plural|fut|indic|active
-latcommon.irregverbn46529r|ls.n46529|eritis|2nd|plural|fut|indic|active
-latcommon.irregverbn46529s|ls.n46529|erunt|3rd|plural|fut|indic|active
+latcommon.irregverbn46529n|ls.n46529|ero|1st|singular|future|indic|active
+latcommon.irregverbn46529o|ls.n46529|eris|2nd|singular|future|indic|active
+latcommon.irregverbn46529p|ls.n46529|erit|3rd|singular|future|indic|active
+latcommon.irregverbn46529q|ls.n46529|erimus|1st|plural|future|indic|active
+latcommon.irregverbn46529r|ls.n46529|eritis|2nd|plural|future|indic|active
+latcommon.irregverbn46529s|ls.n46529|erunt|3rd|plural|future|indic|active
 
 latcommon.irregverbn46529t|ls.n46529|fui|1st|singular|perfect|indic|active
 latcommon.irregverbn46529u|ls.n46529|fuisti|2nd|singular|perfect|indic|active
@@ -82,7 +82,7 @@ latcommon.irregverbn46529bp|ls.n46529|fuissent|3rd|plural|pluperfect|subj|active
 
 latcommon.irregverbn46529bq|ls.n46529|es|2nd|singular|present|imptv|active
 latcommon.irregverbn46529br|ls.n46529|este|2nd|plural|present|imptv|active
-latcommon.irregverbn46529bs|ls.n46529|esto|2nd|singular|fut|imptv|active
-latcommon.irregverbn46529bt|ls.n46529|estote|2nd|plural|fut|imptv|active
-latcommon.irregverbn46529bu|ls.n46529|esto|3rd|singular|fut|imptv|active
-latcommon.irregverbn46529bv|ls.n46529|sunto|3rd|plural|fut|imptv|active
+latcommon.irregverbn46529bs|ls.n46529|esto|2nd|singular|future|imptv|active
+latcommon.irregverbn46529bt|ls.n46529|estote|2nd|plural|future|imptv|active
+latcommon.irregverbn46529bu|ls.n46529|esto|3rd|singular|future|imptv|active
+latcommon.irregverbn46529bv|ls.n46529|sunto|3rd|plural|future|imptv|active

@@ -1,41 +1,41 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number|Tense|Voice
-ocremorph.pft_perfppl1|pftpass|vs|masculine|nominative|singular|pft|passive
-ocremorph.pft_perfppl2|pftpass|i|masculine|genitive|singular|pft|passive
-ocremorph.pft_perfppl3|pftpass|o|masculine|dative|singular|pft|passive
-ocremorph.pft_perfppl4|pftpass|vm|masculine|accusative|singular|pft|passive
-ocremorph.pft_perfppl5|pftpass|o|masculine|ablative|singular|pft|passive
+ocremorph.pft_perfppl1|pftpass|vs|masculine|nominative|singular|perfect|passive
+ocremorph.pft_perfppl2|pftpass|i|masculine|genitive|singular|perfect|passive
+ocremorph.pft_perfppl3|pftpass|o|masculine|dative|singular|perfect|passive
+ocremorph.pft_perfppl4|pftpass|vm|masculine|accusative|singular|perfect|passive
+ocremorph.pft_perfppl5|pftpass|o|masculine|ablative|singular|perfect|passive
 
 
-ocremorph.pft_perfppl7|pftpass|i|masculine|nominative|plural|pft|passive
-ocremorph.pft_perfppl8|pftpass|orvm|masculine|genitive|plural|pft|passive
-ocremorph.pft_perfppl9|pftpass|is|masculine|dative|plural|pft|passive
-ocremorph.pft_perfppl10|pftpass|os|masculine|accusative|plural|pft|passive
-ocremorph.pft_perfppl11|pftpass|is|masculine|ablative|plural|pft|passive
+ocremorph.pft_perfppl7|pftpass|i|masculine|nominative|plural|perfect|passive
+ocremorph.pft_perfppl8|pftpass|orvm|masculine|genitive|plural|perfect|passive
+ocremorph.pft_perfppl9|pftpass|is|masculine|dative|plural|perfect|passive
+ocremorph.pft_perfppl10|pftpass|os|masculine|accusative|plural|perfect|passive
+ocremorph.pft_perfppl11|pftpass|is|masculine|ablative|plural|perfect|passive
 
 
-ocremorph.pft_perfppl13|pftpass|a|feminine|nominative|singular|pft|passive
-ocremorph.pft_perfppl14|pftpass|ae|feminine|genitive|singular|pft|passive
-ocremorph.pft_perfppl15|pftpass|ae|feminine|dative|singular|pft|passive
-ocremorph.pft_perfppl16|pftpass|am|feminine|accusative|singular|pft|passive
-ocremorph.pft_perfppl17|pftpass|a|feminine|ablative|singular|pft|passive
+ocremorph.pft_perfppl13|pftpass|a|feminine|nominative|singular|perfect|passive
+ocremorph.pft_perfppl14|pftpass|ae|feminine|genitive|singular|perfect|passive
+ocremorph.pft_perfppl15|pftpass|ae|feminine|dative|singular|perfect|passive
+ocremorph.pft_perfppl16|pftpass|am|feminine|accusative|singular|perfect|passive
+ocremorph.pft_perfppl17|pftpass|a|feminine|ablative|singular|perfect|passive
 
 
-ocremorph.pft_perfppl19|pftpass|ae|feminine|nominative|plural|pft|passive
-ocremorph.pft_perfppl20|pftpass|arvm|feminine|genitive|plural|pft|passive
-ocremorph.pft_perfppl21|pftpass|is|feminine|dative|plural|pft|passive
-ocremorph.pft_perfppl22|pftpass|as|feminine|accusative|plural|pft|passive
-ocremorph.pft_perfppl23|pftpass|is|feminine|ablative|plural|pft|passive
+ocremorph.pft_perfppl19|pftpass|ae|feminine|nominative|plural|perfect|passive
+ocremorph.pft_perfppl20|pftpass|arvm|feminine|genitive|plural|perfect|passive
+ocremorph.pft_perfppl21|pftpass|is|feminine|dative|plural|perfect|passive
+ocremorph.pft_perfppl22|pftpass|as|feminine|accusative|plural|perfect|passive
+ocremorph.pft_perfppl23|pftpass|is|feminine|ablative|plural|perfect|passive
 
 
-ocremorph.pft_perfppl25|pftpass|vm|neuter|nominative|singular|pft|passive
-ocremorph.pft_perfppl26|pftpass|i|neuter|genitive|singular|pft|passive
-ocremorph.pft_perfppl27|pftpass|o|neutc|dative|singular|pft|passive
-ocremorph.pft_perfppl28|pftpass|vm|neutc|accusative|singular|pft|passive
-ocremorph.pft_perfppl29|pftpass|o|neuter|ablative|singular|pft|passive
+ocremorph.pft_perfppl25|pftpass|vm|neuter|nominative|singular|perfect|passive
+ocremorph.pft_perfppl26|pftpass|i|neuter|genitive|singular|perfect|passive
+ocremorph.pft_perfppl27|pftpass|o|neuter|dative|singular|perfect|passive
+ocremorph.pft_perfppl28|pftpass|vm|neuter|accusative|singular|perfect|passive
+ocremorph.pft_perfppl29|pftpass|o|neuter|ablative|singular|perfect|passive
 
 
-ocremorph.pft_perfppl31|pftpass|a|neuter|nominative|plural|pft|passive
-ocremorph.pft_perfppl32|pftpass|oruv|neuter|genitive|plural|pft|passive
-ocremorph.pft_perfppl33|pftpass|is|neuter|dative|plural|pft|passive
-ocremorph.pft_perfppl34|pftpass|a|neuter|accusative|plural|pft|passive
-ocremorph.pft_perfppl35|pftpass|is|neuter|ablative|plural|pft|passive
+ocremorph.pft_perfppl31|pftpass|a|neuter|nominative|plural|perfect|passive
+ocremorph.pft_perfppl32|pftpass|oruv|neuter|genitive|plural|perfect|passive
+ocremorph.pft_perfppl33|pftpass|is|neuter|dative|plural|perfect|passive
+ocremorph.pft_perfppl34|pftpass|a|neuter|accusative|plural|perfect|passive
+ocremorph.pft_perfppl35|pftpass|is|neuter|ablative|plural|perfect|passive

@@ -2,7 +2,7 @@ StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
 latcommon.irrvadn126071|ls.n12607|dedecet|3rd|singular|present|indic|active
 latcommon.irrvadn126072|ls.n12607|dedecebat|3rd|singular|impft|indic|active
-latcommon.irrvadn126073|ls.n12607|dedecet|3rd|singular|fut|indic|active
+latcommon.irrvadn126073|ls.n12607|dedecet|3rd|singular|future|indic|active
 latcommon.irrvadn126074|ls.n12607|dedecuit|3rd|singular|perfect|indic|active
 latcommon.irrvadn126075|ls.n12607|dedecuerat|3rd|singular|pluperfect|indic|active
 latcommon.irrvadn126076|ls.n12607|dedecuerit|3rd|singular|future_perfect|indic|active

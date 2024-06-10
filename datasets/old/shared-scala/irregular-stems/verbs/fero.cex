@@ -13,12 +13,12 @@ latcommon.irregverbn17964j|ls.n17964|ferebamus|1st|plural|impft|indic|active
 latcommon.irregverbn17964k|ls.n17964|ferebatis|2nd|plural|impft|indic|active
 latcommon.irregverbn17964l|ls.n17964|ferebant|3rd|plural|impft|indic|active
 
-latcommon.irregverbn17964m|ls.n17964|feram|1st|singular|fut|indic|active
-latcommon.irregverbn17964n|ls.n17964|feres|2nd|singular|fut|indic|active
-latcommon.irregverbn17964o|ls.n17964|feret|3rd|singular|fut|indic|active
-latcommon.irregverbn17964p|ls.n17964|feremus|1st|plural|fut|indic|active
-latcommon.irregverbn17964q|ls.n17964|feretis|2nd|plural|fut|indic|active
-latcommon.irregverbn17964r|ls.n17964|ferent|3rd|plural|fut|indic|active
+latcommon.irregverbn17964m|ls.n17964|feram|1st|singular|future|indic|active
+latcommon.irregverbn17964n|ls.n17964|feres|2nd|singular|future|indic|active
+latcommon.irregverbn17964o|ls.n17964|feret|3rd|singular|future|indic|active
+latcommon.irregverbn17964p|ls.n17964|feremus|1st|plural|future|indic|active
+latcommon.irregverbn17964q|ls.n17964|feretis|2nd|plural|future|indic|active
+latcommon.irregverbn17964r|ls.n17964|ferent|3rd|plural|future|indic|active
 
 latcommon.irregverbn17964s|ls.n17964|feram|1st|singular|present|subj|active
 latcommon.irregverbn17964t|ls.n17964|feras|2nd|singular|present|subj|active
@@ -36,10 +36,10 @@ latcommon.irregverbn17964ad|ls.n17964|ferrent|3rd|plural|impft|subj|active
 
 latcommon.irregverbn17964ae|ls.n17964|fer|2nd|singular|present|imptv|active
 latcommon.irregverbn17964af|ls.n17964|ferte|2nd|plural|present|imptv|active
-latcommon.irregverbn17964ag|ls.n17964|ferto|2nd|singular|fut|imptv|active
-latcommon.irregverbn17964ah|ls.n17964|fertote|2nd|plural|fut|imptv|active
-latcommon.irregverbn17964ai|ls.n17964|ferto|3rd|singular|fut|imptv|active
-latcommon.irregverbn17964aj|ls.n17964|ferunto|3rd|plural|fut|imptv|active
+latcommon.irregverbn17964ag|ls.n17964|ferto|2nd|singular|future|imptv|active
+latcommon.irregverbn17964ah|ls.n17964|fertote|2nd|plural|future|imptv|active
+latcommon.irregverbn17964ai|ls.n17964|ferto|3rd|singular|future|imptv|active
+latcommon.irregverbn17964aj|ls.n17964|ferunto|3rd|plural|future|imptv|active
 
 latcommon.irregverbn17964ak|ls.n17964|feror|1st|singular|present|indic|passive
 latcommon.irregverbn17964al|ls.n17964|ferris|2nd|singular|present|indic|passive
@@ -57,13 +57,13 @@ latcommon.irregverbn17964av|ls.n17964|ferebamur|1st|plural|impft|indic|passive
 latcommon.irregverbn17964aw|ls.n17964|ferebamini|2nd|plural|impft|indic|passive
 latcommon.irregverbn17964ax|ls.n17964|ferebantur|3rd|plural|impft|indic|passive
 
-latcommon.irregverbn17964ay|ls.n17964|ferar|1st|singular|fut|indic|active
-latcommon.irregverbn17964az|ls.n17964|fereris|2nd|singular|fut|indic|active
-latcommon.irregverbn17964aaa|ls.n17964|ferere|2nd|singular|fut|indic|active
-latcommon.irregverbn17964ba|ls.n17964|feretur|3rd|singular|fut|indic|active
-latcommon.irregverbn17964bc|ls.n17964|feremur|1st|plural|fut|indic|active
-latcommon.irregverbn17964bd|ls.n17964|feremini|2nd|plural|fut|indic|active
-latcommon.irregverbn17964be|ls.n17964|ferentur|3rd|plural|fut|indic|active
+latcommon.irregverbn17964ay|ls.n17964|ferar|1st|singular|future|indic|active
+latcommon.irregverbn17964az|ls.n17964|fereris|2nd|singular|future|indic|active
+latcommon.irregverbn17964aaa|ls.n17964|ferere|2nd|singular|future|indic|active
+latcommon.irregverbn17964ba|ls.n17964|feretur|3rd|singular|future|indic|active
+latcommon.irregverbn17964bc|ls.n17964|feremur|1st|plural|future|indic|active
+latcommon.irregverbn17964bd|ls.n17964|feremini|2nd|plural|future|indic|active
+latcommon.irregverbn17964be|ls.n17964|ferentur|3rd|plural|future|indic|active
 
 latcommon.irregverbn17964bf|ls.n17964|ferar|1st|singular|present|subj|passive
 latcommon.irregverbn17964bg|ls.n17964|feraris|2nd|singular|present|subj|passive
@@ -83,6 +83,6 @@ latcommon.irregverbn17964bs|ls.n17964|ferrentur|3rd|plural|impft|subj|passive
 
 latcommon.irregverbn17964bt|ls.n17964|ferre|2nd|singular|present|imptv|passive
 latcommon.irregverbn17964bu|ls.n17964|ferimini|2nd|plural|present|imptv|passive
-latcommon.irregverbn17964bv|ls.n17964|fertor|2nd|singular|fut|imptv|passive
-latcommon.irregverbn17964bw|ls.n17964|fertor|3rd|singular|fut|imptv|passive
-latcommon.irregverbn17964bx|ls.n17964|feruntor|3rd|plural|fut|imptv|passive
+latcommon.irregverbn17964bv|ls.n17964|fertor|2nd|singular|future|imptv|passive
+latcommon.irregverbn17964bw|ls.n17964|fertor|3rd|singular|future|imptv|passive
+latcommon.irregverbn17964bx|ls.n17964|feruntor|3rd|plural|future|imptv|passive

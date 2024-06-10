@@ -14,12 +14,12 @@ latcommon.irrverbn6510|ls.n65|abibamus|1st|plural|impft|indic|active
 latcommon.irrverbn6511|ls.n65|abibatis|2nd|plural|impft|indic|active
 latcommon.irrverbn6512|ls.n65|abibant|3rd|plural|impft|indic|active
 
-latcommon.irrverbn6513|ls.n65|abibo|1st|singular|fut|indic|active
-latcommon.irrverbn6514|ls.n65|abibis|2nd|singular|fut|indic|active
-latcommon.irrverbn6515|ls.n65|abibit|3rd|singular|fut|indic|active
-latcommon.irrverbn6516|ls.n65|abibimus|1st|plural|fut|indic|active
-latcommon.irrverbn6517|ls.n65|abibitis|2nd|plural|fut|indic|active
-latcommon.irrverbn6518|ls.n65|abibunt|3rd|plural|fut|indic|active
+latcommon.irrverbn6513|ls.n65|abibo|1st|singular|future|indic|active
+latcommon.irrverbn6514|ls.n65|abibis|2nd|singular|future|indic|active
+latcommon.irrverbn6515|ls.n65|abibit|3rd|singular|future|indic|active
+latcommon.irrverbn6516|ls.n65|abibimus|1st|plural|future|indic|active
+latcommon.irrverbn6517|ls.n65|abibitis|2nd|plural|future|indic|active
+latcommon.irrverbn6518|ls.n65|abibunt|3rd|plural|future|indic|active
 
 latcommon.irrverbn6555|ls.n65|abeam|1st|singular|present|subj|active
 latcommon.irrverbn6556|ls.n65|abeas|2nd|singular|present|subj|active
@@ -44,7 +44,7 @@ latcommon.irrverbn6584|ls.n65|abissent|3rd|plural|plupft|subj|active
 
 latcommon.irrverbn6591|ls.n65|abi|2nd|singular|present|imptv|active
 latcommon.irrverbn6592|ls.n65|abite|2nd|plural|present|imptv|active
-latcommon.irrverbn6593|ls.n65|abito|2nd|singular|fut|imptv|active
-latcommon.irrverbn6594|ls.n65|abitote|2nd|plural|fut|imptv|active
-latcommon.irrverbn6595|ls.n65|abito|3rd|singular|fut|imptv|active
-latcommon.irrverbn6596|ls.n65|abeunto|3rd|plural|fut|imptv|active
+latcommon.irrverbn6593|ls.n65|abito|2nd|singular|future|imptv|active
+latcommon.irrverbn6594|ls.n65|abitote|2nd|plural|future|imptv|active
+latcommon.irrverbn6595|ls.n65|abito|3rd|singular|future|imptv|active
+latcommon.irrverbn6596|ls.n65|abeunto|3rd|plural|future|imptv|active

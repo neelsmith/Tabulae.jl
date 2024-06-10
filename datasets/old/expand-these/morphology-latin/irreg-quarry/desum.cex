@@ -14,20 +14,20 @@ livymorph.irrvabsum10|lexent.n13492|deeramus|1st|plural|impft|indic|active
 livymorph.irrvabsum11|lexent.n13492|deeratis|2nd|plural|impft|indic|active
 livymorph.irrvabsum12|lexent.n13492|deerant|3rd|plural|impft|indic|active
 
-livymorph.irrvabsum13|lexent.n13492|deero|1st|singular|fut|indic|active
-livymorph.irrvabsum14|lexent.n13492|deeris|2nd|singular|fut|indic|active
-livymorph.irrvabsum15|lexent.n13492|deerit|3rd|singular|fut|indic|active
-livymorph.irrvabsum16|lexent.n13492|deerimus|1st|plural|fut|indic|active
-livymorph.irrvabsum17|lexent.n13492|deeritis|2nd|plural|fut|indic|active
-livymorph.irrvabsum18|lexent.n13492|deerunt|3rd|plural|fut|indic|active
+livymorph.irrvabsum13|lexent.n13492|deero|1st|singular|future|indic|active
+livymorph.irrvabsum14|lexent.n13492|deeris|2nd|singular|future|indic|active
+livymorph.irrvabsum15|lexent.n13492|deerit|3rd|singular|future|indic|active
+livymorph.irrvabsum16|lexent.n13492|deerimus|1st|plural|future|indic|active
+livymorph.irrvabsum17|lexent.n13492|deeritis|2nd|plural|future|indic|active
+livymorph.irrvabsum18|lexent.n13492|deerunt|3rd|plural|future|indic|active
 
-livymorph.irrvabsum19|lexent.n13492|defui|1st|singular|pft|indic|active
-livymorph.irrvabsum20|lexent.n13492|defuisti|2nd|singular|pft|indic|active
-livymorph.irrvabsum21|lexent.n13492|defuit|3rd|singular|pft|indic|active
-livymorph.irrvabsum22|lexent.n13492|defuimus|1st|plural|pft|indic|active
-livymorph.irrvabsum23|lexent.n13492|defuistis|2nd|plural|pft|indic|active
-livymorph.irrvabsum24|lexent.n13492|defuerunt|3rd|plural|pft|indic|active
-livymorph.irrvabsum24b|lexent.n13492|defuere|3rd|plural|pft|indic|active
+livymorph.irrvabsum19|lexent.n13492|defui|1st|singular|perfect|indic|active
+livymorph.irrvabsum20|lexent.n13492|defuisti|2nd|singular|perfect|indic|active
+livymorph.irrvabsum21|lexent.n13492|defuit|3rd|singular|perfect|indic|active
+livymorph.irrvabsum22|lexent.n13492|defuimus|1st|plural|perfect|indic|active
+livymorph.irrvabsum23|lexent.n13492|defuistis|2nd|plural|perfect|indic|active
+livymorph.irrvabsum24|lexent.n13492|defuerunt|3rd|plural|perfect|indic|active
+livymorph.irrvabsum24b|lexent.n13492|defuere|3rd|plural|perfect|indic|active
 
 livymorph.irrvabsum25|lexent.n13492|defueram|1st|singular|plupft|indic|active
 livymorph.irrvabsum26|lexent.n13492|defueras|2nd|singular|plupft|indic|active
@@ -57,12 +57,12 @@ livymorph.irrvabsum46|lexent.n13492|deessemus|1st|plural|impft|subj|active
 livymorph.irrvabsum47|lexent.n13492|deessetis|2nd|plural|impft|subj|active
 livymorph.irrvabsum48|lexent.n13492|deessent|3rd|plural|impft|subj|active
 
-livymorph.irrvabsum49|lexent.n13492|defuerim|1st|singular|pft|subj|active
-livymorph.irrvabsum50|lexent.n13492|defueris|2nd|singular|pft|subj|active
-livymorph.irrvabsum51|lexent.n13492|defuerit|3rd|singular|pft|subj|active
-livymorph.irrvabsum52|lexent.n13492|defuerimus|1st|plural|pft|subj|active
-livymorph.irrvabsum53|lexent.n13492|defueritis|2nd|plural|pft|subj|active
-livymorph.irrvabsum54|lexent.n13492|defuerint|3rd|plural|pft|subj|active
+livymorph.irrvabsum49|lexent.n13492|defuerim|1st|singular|perfect|subj|active
+livymorph.irrvabsum50|lexent.n13492|defueris|2nd|singular|perfect|subj|active
+livymorph.irrvabsum51|lexent.n13492|defuerit|3rd|singular|perfect|subj|active
+livymorph.irrvabsum52|lexent.n13492|defuerimus|1st|plural|perfect|subj|active
+livymorph.irrvabsum53|lexent.n13492|defueritis|2nd|plural|perfect|subj|active
+livymorph.irrvabsum54|lexent.n13492|defuerint|3rd|plural|perfect|subj|active
 
 livymorph.irrvabsum55|lexent.n13492|defuissem|1st|singular|plupft|subj|active
 livymorph.irrvabsum56|lexent.n13492|defuisses|2nd|singular|plupft|subj|active
@@ -73,7 +73,7 @@ livymorph.irrvabsum60|lexent.n13492|defuissent|3rd|plural|plupft|subj|active
 
 livymorph.irrvabsum133|lexent.n13492|dees|2nd|singular|present|imptv|active
 livymorph.irrvabsum134|lexent.n13492|deeste|2nd|plural|present|imptv|active
-livymorph.irrvabsum135|lexent.n13492|deesto|2nd|singular|fut|imptv|active
-livymorph.irrvabsum136|lexent.n13492|deestote|2nd|plural|fut|imptv|active
-livymorph.irrvabsum137|lexent.n13492|deesto|3rd|singular|fut|imptv|active
-livymorph.irrvabsum138|lexent.n13492|desunto|3rd|plural|fut|imptv|active
+livymorph.irrvabsum135|lexent.n13492|deesto|2nd|singular|future|imptv|active
+livymorph.irrvabsum136|lexent.n13492|deestote|2nd|plural|future|imptv|active
+livymorph.irrvabsum137|lexent.n13492|deesto|3rd|singular|future|imptv|active
+livymorph.irrvabsum138|lexent.n13492|desunto|3rd|plural|future|imptv|active
