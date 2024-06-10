@@ -1,29 +1,29 @@
-RuleUrn#InflectionClasses#Ending#Gender#Case#Number
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-livymorph.es_ei1#es_ei#es#masc#nom#sg
-livymorph.es_ei2#es_ei#ei#masc#gen#sg
-livymorph.es_ei2b#es_ei#e#masc#gen#sg
-livymorph.es_ei3#es_ei#ei#masc#dat#sg
-livymorph.es_ei3b#es_ei#e#masc#dat#sg
-livymorph.es_ei4#es_ei#em#masc#acc#sg
-livymorph.es_ei5#es_ei#e#masc#abl#sg
-livymorph.es_ei6#es_ei#es#masc#nom#pl
-livymorph.es_ei7#es_ei#ervm#masc#gen#pl
-livymorph.es_ei8#es_ei#ebvs#masc#dat#pl
-livymorph.es_ei9#es_ei#es#masc#acc#pl
-livymorph.es_ei10#es_ei#ebvs#masc#abl#pl
+livymorph.es_ei1|es_ei|es|masculine|nominative|sg
+livymorph.es_ei2|es_ei|ei|masculine|gen|sg
+livymorph.es_ei2b|es_ei|e|masculine|gen|sg
+livymorph.es_ei3|es_ei|ei|masculine|dat|sg
+livymorph.es_ei3b|es_ei|e|masculine|dat|sg
+livymorph.es_ei4|es_ei|em|masculine|acc|sg
+livymorph.es_ei5|es_ei|e|masculine|abl|sg
+livymorph.es_ei6|es_ei|es|masculine|nominative|pl
+livymorph.es_ei7|es_ei|ervm|masculine|gen|pl
+livymorph.es_ei8|es_ei|ebvs|masculine|dat|pl
+livymorph.es_ei9|es_ei|es|masculine|acc|pl
+livymorph.es_ei10|es_ei|ebvs|masculine|abl|pl
 
 
 
-livymorph.es_ei1#es_ei#es#fem#nom#sg
-livymorph.es_ei2#es_ei#ei#fem#gen#sg
-livymorph.es_ei2b#es_ei#e#fem#gen#sg
-livymorph.es_ei3#es_ei#ei#fem#dat#sg
-livymorph.es_ei3b#es_ei#e#fem#dat#sg
-livymorph.es_ei4#es_ei#em#fem#acc#sg
-livymorph.es_ei5#es_ei#e#fem#abl#sg
-livymorph.es_ei6#es_ei#es#fem#nom#pl
-livymorph.es_ei7#es_ei#ervm#fem#gen#pl
-livymorph.es_ei8#es_ei#ebvs#fem#dat#pl
-livymorph.es_ei9#es_ei#es#fem#acc#pl
-livymorph.es_ei10#es_ei#ebvs#fem#abl#pl
+livymorph.es_ei1|es_ei|es|fem|nominative|sg
+livymorph.es_ei2|es_ei|ei|fem|gen|sg
+livymorph.es_ei2b|es_ei|e|fem|gen|sg
+livymorph.es_ei3|es_ei|ei|fem|dat|sg
+livymorph.es_ei3b|es_ei|e|fem|dat|sg
+livymorph.es_ei4|es_ei|em|fem|acc|sg
+livymorph.es_ei5|es_ei|e|fem|abl|sg
+livymorph.es_ei6|es_ei|es|fem|nominative|pl
+livymorph.es_ei7|es_ei|ervm|fem|gen|pl
+livymorph.es_ei8|es_ei|ebvs|fem|dat|pl
+livymorph.es_ei9|es_ei|es|fem|acc|pl
+livymorph.es_ei10|es_ei|ebvs|fem|abl|pl

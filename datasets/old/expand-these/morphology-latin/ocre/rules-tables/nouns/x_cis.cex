@@ -1,25 +1,25 @@
-RuleUrn#InflectionClasses#Ending#gender#Case#Number
+RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
-ocremorph.x_cis1#x_cis#x#masc#nom#sg
-ocremorph.x_cis2#x_cis#cis#masc#gen#sg
-ocremorph.x_cis3#x_cis#ci#masc#dat#sg
-ocremorph.x_cis4#x_cis#cem#masc#acc#sg
-ocremorph.x_cis5#x_cis#ce#masc#abl#sg
-ocremorph.x_cis6#x_cis#ces#masc#nom#pl
-ocremorph.x_cis7#x_cis#cvm#masc#gen#pl
-ocremorph.x_cis8#x_cis#cibvs#masc#dat#pl
-ocremorph.x_cis9#x_cis#ces#masc#acc#pl
-ocremorph.x_cis10#x_cis#cibvs#masc#abl#pl
+ocremorph.x_cis1|x_cis|x|masculine|nominative|sg
+ocremorph.x_cis2|x_cis|cis|masculine|gen|sg
+ocremorph.x_cis3|x_cis|ci|masculine|dat|sg
+ocremorph.x_cis4|x_cis|cem|masculine|acc|sg
+ocremorph.x_cis5|x_cis|ce|masculine|abl|sg
+ocremorph.x_cis6|x_cis|ces|masculine|nominative|pl
+ocremorph.x_cis7|x_cis|cvm|masculine|gen|pl
+ocremorph.x_cis8|x_cis|cibvs|masculine|dat|pl
+ocremorph.x_cis9|x_cis|ces|masculine|acc|pl
+ocremorph.x_cis10|x_cis|cibvs|masculine|abl|pl
 
 
 
-ocremorph.x_cis1#x_cis#x#fem#nom#sg
-ocremorph.x_cis2#x_cis#cis#fem#gen#sg
-ocremorph.x_cis3#x_cis#ci#fem#dat#sg
-ocremorph.x_cis4#x_cis#cem#fem#acc#sg
-ocremorph.x_cis5#x_cis#ce#fem#abl#sg
-ocremorph.x_cis6#x_cis#ces#fem#nom#pl
-ocremorph.x_cis7#x_cis#cum#fem#gen#pl
-ocremorph.x_cis8#x_cis#cibvs#fem#dat#pl
-ocremorph.x_cis9#x_cis#ces#fem#acc#pl
-ocremorph.x_cis10#x_cis#cibvs#fem#abl#pl
+ocremorph.x_cis1|x_cis|x|fem|nominative|sg
+ocremorph.x_cis2|x_cis|cis|fem|gen|sg
+ocremorph.x_cis3|x_cis|ci|fem|dat|sg
+ocremorph.x_cis4|x_cis|cem|fem|acc|sg
+ocremorph.x_cis5|x_cis|ce|fem|abl|sg
+ocremorph.x_cis6|x_cis|ces|fem|nominative|pl
+ocremorph.x_cis7|x_cis|cum|fem|gen|pl
+ocremorph.x_cis8|x_cis|cibvs|fem|dat|pl
+ocremorph.x_cis9|x_cis|ces|fem|acc|pl
+ocremorph.x_cis10|x_cis|cibvs|fem|abl|pl

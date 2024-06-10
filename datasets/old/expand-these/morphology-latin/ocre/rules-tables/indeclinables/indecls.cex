@@ -1,4 +1,4 @@
-RuleUrn#PartOfSpeech
-ocremorph.indeclinfl1#prep
-ocremorph.indeclinfl2#conj
-ocremorph.indeclinfl3#adv
+RuleUrn|PartOfSpeech
+ocremorph.indeclinfl1|prep
+ocremorph.indeclinfl2|conj
+ocremorph.indeclinfl3|adv

@@ -1,12 +1,12 @@
-RuleUrn#InflectionClasses#Ending#Gender#Case#Number
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-livymorph.es_itis1#es_itis#es#masc#nom#sg
-livymorph.es_itis2#es_itis#itis#masc#gen#sg
-livymorph.es_itis3#es_itis#iti#masc#dat#sg
-livymorph.es_itis4#es_itis#item#masc#acc#sg
-livymorph.es_itis5#es_itis#ite#masc#abl#sg
-livymorph.es_itis6#es_itis#ites#masc#nom#pl
-livymorph.es_itis7#es_itis#itvm#masc#gen#pl
-livymorph.es_itis8#es_itis#itibvs#masc#dat#pl
-livymorph.es_itis9#es_itis#ites#masc#acc#pl
-livymorph.es_itis10#es_itis#itibvs#masc#abl#pl
+livymorph.es_itis1|es_itis|es|masculine|nominative|sg
+livymorph.es_itis2|es_itis|itis|masculine|gen|sg
+livymorph.es_itis3|es_itis|iti|masculine|dat|sg
+livymorph.es_itis4|es_itis|item|masculine|acc|sg
+livymorph.es_itis5|es_itis|ite|masculine|abl|sg
+livymorph.es_itis6|es_itis|ites|masculine|nominative|pl
+livymorph.es_itis7|es_itis|itvm|masculine|gen|pl
+livymorph.es_itis8|es_itis|itibvs|masculine|dat|pl
+livymorph.es_itis9|es_itis|ites|masculine|acc|pl
+livymorph.es_itis10|es_itis|itibvs|masculine|abl|pl

@@ -52,6 +52,10 @@ infinio = InfinitiveIO("infin. io")
 infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
 ```
 
+
+## ParticipleRule
+
+
 ## NounRule
 
 

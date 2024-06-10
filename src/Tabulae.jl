@@ -103,6 +103,7 @@ include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
+include("citable_rules/participles.jl")
 
 include("generate/generate.jl")
 

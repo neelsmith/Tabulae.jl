@@ -1,12 +1,12 @@
-RuleUrn#InflectionClasses#Ending#Gender#Case#Number
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-ocremorph.er_ri1#er_ri#er#masc#nom#sg
-ocremorph.er_ri2#er_ri#ri#masc#gen#sg
-ocremorph.er_ri3#er_ri#ro#masc#dat#sg
-ocremorph.er_ri4#er_ri#rvm#masc#acc#sg
-ocremorph.er_ri#er_ri#ro#masc#abl#sg
-ocremorph.er_ri6#er_ri#ri#masc#nom#pl
-ocremorph.er_ri7#er_ri#rorvm#masc#gen#pl
-ocremorph.er_ri8#er_ri#ris#masc#dat#pl
-ocremorph.er_ri9#er_ri#ros#masc#acc#pl
-ocremorph.er_ri10#er_ri#ris#masc#abl#pl
+ocremorph.er_ri1|er_ri|er|masculine|nominative|sg
+ocremorph.er_ri2|er_ri|ri|masculine|gen|sg
+ocremorph.er_ri3|er_ri|ro|masculine|dat|sg
+ocremorph.er_ri4|er_ri|rvm|masculine|acc|sg
+ocremorph.er_ri|er_ri|ro|masculine|abl|sg
+ocremorph.er_ri6|er_ri|ri|masculine|nominative|pl
+ocremorph.er_ri7|er_ri|rorvm|masculine|gen|pl
+ocremorph.er_ri8|er_ri|ris|masculine|dat|pl
+ocremorph.er_ri9|er_ri|ros|masculine|acc|pl
+ocremorph.er_ri10|er_ri|ris|masculine|abl|pl

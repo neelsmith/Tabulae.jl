@@ -1,25 +1,25 @@
-RuleUrn#InflectionClasses#Ending#gender#Case#Number
+RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
-ocremorph.o_onis1#o_onis#o#fem#nom#sg
-ocremorph.o_onis2#o_onis#onis#fem#gen#sg
-ocremorph.o_onis3#o_onis#oni#fem#dat#sg
-ocremorph.o_onis4#o_onis#onem#fem#acc#sg
-ocremorph.o_onis5#o_onis#one#fem#abl#sg
-ocremorph.o_onis6#o_onis#ones#fem#nom#pl
-ocremorph.o_onis7#o_onis#onvm#fem#gen#pl
-ocremorph.o_onis8#o_onis#onibvs#fem#dat#pl
-ocremorph.o_onis9#o_onis#ones#fem#acc#pl
-ocremorph.o_onis10#o_onis#onibvs#fem#abl#pl
+ocremorph.o_onis1|o_onis|o|fem|nominative|sg
+ocremorph.o_onis2|o_onis|onis|fem|gen|sg
+ocremorph.o_onis3|o_onis|oni|fem|dat|sg
+ocremorph.o_onis4|o_onis|onem|fem|acc|sg
+ocremorph.o_onis5|o_onis|one|fem|abl|sg
+ocremorph.o_onis6|o_onis|ones|fem|nominative|pl
+ocremorph.o_onis7|o_onis|onvm|fem|gen|pl
+ocremorph.o_onis8|o_onis|onibvs|fem|dat|pl
+ocremorph.o_onis9|o_onis|ones|fem|acc|pl
+ocremorph.o_onis10|o_onis|onibvs|fem|abl|pl
 
 
 
-ocremorph.o_onis13#o_onis#o#masc#nom#sg
-ocremorph.o_onis14#o_onis#onis#masc#gen#sg
-ocremorph.o_onis15#o_onis#oni#masc#dat#sg
-ocremorph.o_onis16#o_onis#onem#masc#acc#sg
-ocremorph.o_onis17#o_onis#one#masc#abl#sg
-ocremorph.o_onis18#o_onis#ones#masc#nom#pl
-ocremorph.o_onis19#o_onis#onvm#masc#gen#pl
-ocremorph.o_onis20#o_onis#onibvs#masc#dat#pl
-ocremorph.o_onis21#o_onis#ones#masc#acc#pl
-ocremorph.o_onis22#o_onis#onibvs#masc#abl#pl
+ocremorph.o_onis13|o_onis|o|masculine|nominative|sg
+ocremorph.o_onis14|o_onis|onis|masculine|gen|sg
+ocremorph.o_onis15|o_onis|oni|masculine|dat|sg
+ocremorph.o_onis16|o_onis|onem|masculine|acc|sg
+ocremorph.o_onis17|o_onis|one|masculine|abl|sg
+ocremorph.o_onis18|o_onis|ones|masculine|nominative|pl
+ocremorph.o_onis19|o_onis|onvm|masculine|gen|pl
+ocremorph.o_onis20|o_onis|onibvs|masculine|dat|pl
+ocremorph.o_onis21|o_onis|ones|masculine|acc|pl
+ocremorph.o_onis22|o_onis|onibvs|masculine|abl|pl
