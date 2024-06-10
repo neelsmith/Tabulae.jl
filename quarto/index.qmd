@@ -6,9 +6,9 @@ jupyter: julia-1.10
 > ☛ *Build customized Latin morphological parsers*
 
 
-`Tabulae.jl` is a Julia package for building Latin morphological parsers. In the spring/summer of 2024, the previously released `Tabulae.jl` package is being rewritten from the ground up in order to implement a common conceptual model with `Tabulae.jl`, a Julia package for building Greek morphological parsers, and benefit from implementation strategies developed for Tabulae.[^scala] 
+`Tabulae.jl` is a Julia package for building Latin morphological parsers. In the summer of 2024, the previously released `Tabulae.jl` package is being rewritten from the ground up in order to implement a common conceptual model in the `CitableParserBuilder` package, and to benefit from implementation strategies developed for `Kanones.jl`, a Julia package for building Greek morphological parsers.[^scala] 
 
-[^scala]: The Tabulae system was previously implemented in Scala ([github](https://github.com/neelsmith/tabulae)).
+[^scala]: The Tabulae system was previously implemented in Scala ([here on github](https://github.com/neelsmith/tabulae)).
 
 
 ## Documentation

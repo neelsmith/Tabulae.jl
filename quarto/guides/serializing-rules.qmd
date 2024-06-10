@@ -15,3 +15,14 @@ Tabulae rule sets can be serialized to a simple uniform structure with four an i
 
 - forms can be expressed in succinct with a simple identifier
 - forms can be expressed with values for each property. In this expanded form 
+
+
+### Example: serializing from web
+
+```{julia}
+#| warning: false
+#| output: false
+using Tabulae, CitableBase
+url = "http://shot.holycross.edu/tabulae/rules-current.cex"
+rules = ruleset(url, UrlReader)
+```

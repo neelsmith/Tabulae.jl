@@ -105,7 +105,7 @@ end
 
 
 
-"""Write entries to file.
+"""Write a Vector of rules to a delimited-text file in uniform (succinct) format.
 $(SIGNATURES)
 """
 function tofile(v::Vector{Rule}, f; delimiter = "|")
@@ -117,4 +117,35 @@ function tofile(v::Vector{Rule}, f; delimiter = "|")
     open(f, "w") do io
         write(f, content)
     end
+end
+
+
+
+"""Read a set of Tabulae Rules from delimited text in succinct format.
+$(SIGNATURES)
+"""
+function ruleset(s, freader::Type{StringReader};  delim = "|")
+    data = filter(row -> !isempty(row),split(s,"\n"))[2:end]
+    fromdelimited.(data; delimiter = delim)
+end
+
+
+
+"""Read a set of Tabulae Rules from delimited-text file in succinct format.
+$(SIGNATURES)
+"""
+function ruleset(f, freader::Type{FileReader};  delim = "|")  
+    ruleset(read(f, String), StringReader; delim = delim)
+end
+
+
+
+"""Read a set of Tabulae Rules from delimited-text source succinct format on the internet.
+$(SIGNATURES)
+"""
+function ruleset(u, freader::Type{UrlReader};  delim = "|")  
+    tmp = Downloads.download(u)
+    data = read(tmp, String)
+    rm(tmp)
+    ruleset(data, StringReader; delim = delim)
 end

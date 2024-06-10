@@ -34,6 +34,7 @@ export ruleurn
 export dataset
 export rulesarray, stemsarray
 export rulesclasses, stemsclasses
+export ruleset
 export registry
 
 export label, code
