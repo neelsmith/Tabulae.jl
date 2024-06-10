@@ -1,12 +1,12 @@
-StemUrn#LexicalEntity#String#Person#Number#Tense#Mood#Voice
+StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-livymorph.irrvlicet3#lexent.n26547#licet#3rd#sg#pres#indic#act
-livymorph.irrvlicet9#lexent.n26547#licebat#3rd#sg#impft#indic#act
-livymorph.irrvlicet15#lexent.n26547#licebit#3rd#sg#fut#indic#act
-livymorph.irrvlicet21#lexent.n26547#licuit#3rd#sg#pft#indic#act
-livymorph.irrvlicet33#lexent.n26547#licuerat#3rd#sg#plupft#indic#act
-livymorph.irrvlicet45#lexent.n26547#licuerit#3rd#sg#futpft#indic#act
-livymorph.irrvlicet57#lexent.n26547#liceat#3rd#sg#pres#subj#act
-livymorph.irrvlicet63#lexent.n26547#liceret#3rd#sg#impft#subj#act
-livymorph.irrvlicet69#lexent.n26547#licuerit#3rd#sg#pft#subj#act
-livymorph.irrvlicet81#lexent.n26547#licuisset#3rd#sg#plupft#subj#act
+livymorph.irrvlicet3|lexent.n26547|licet|third|singular|present|indicative|active
+livymorph.irrvlicet9|lexent.n26547|licebat|third|singular|imperfect|indicative|active
+livymorph.irrvlicet15|lexent.n26547|licebit|third|singular|future|indicative|active
+livymorph.irrvlicet21|lexent.n26547|licuit|third|singular|perfect|indicative|active
+livymorph.irrvlicet33|lexent.n26547|licuerat|third|singular|plupft|indicative|active
+livymorph.irrvlicet45|lexent.n26547|licuerit|third|singular|futpft|indicative|active
+livymorph.irrvlicet57|lexent.n26547|liceat|third|singular|present|subjunctive|active
+livymorph.irrvlicet63|lexent.n26547|liceret|third|singular|imperfect|subjunctive|active
+livymorph.irrvlicet69|lexent.n26547|licuerit|third|singular|perfect|subjunctive|active
+livymorph.irrvlicet81|lexent.n26547|licuisset|third|singular|plupft|subjunctive|active

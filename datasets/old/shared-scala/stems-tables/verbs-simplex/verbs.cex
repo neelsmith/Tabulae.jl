@@ -243,7 +243,7 @@ latcommon.verbn22350b|ls.n22350|incep|pftact
 latcommon.verbn22350c|ls.n22350|incept|pftpass
 latcommon.verbn22372|ls.n22372|incit|conj1
 latcommon.verbn22609|ls.n22609|increp|conj1
-latcommon.verbn22781|ls.n22781|indic|conj1
+latcommon.verbn22781|ls.n22781|indicative|conj1
 latcommon.verbn23757a|ls.n23757|insulp|c3pres
 latcommon.verbn23757b|ls.n23757|inscups|pftact
 latcommon.verbn23757c|ls.n23757|insculpt|pftpass
@@ -382,7 +382,7 @@ latcommon.verbn33879a|ls.n33879|pari|c3iopres
 latcommon.verbn33902|ls.n33902|par|conj1
 latcommon.verbn34095|ls.n34095|pat|conj2
 latcommon.verbn34121a|ls.n34121|pat|c3iopresdep
-latcommon.verbn34121b|ls.n34121|pass|pftpass
+latcommon.verbn34121b|ls.n34121|passive|pftpass
 latcommon.verbn34449a|ls.n34449|pell|c3pres
 latcommon.verbn34449b|ls.n34449|pepul|pftact
 latcommon.verbn34449c|ls.n34449|puls|pftpass

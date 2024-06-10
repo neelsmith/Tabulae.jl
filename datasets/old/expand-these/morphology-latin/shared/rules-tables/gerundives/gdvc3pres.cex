@@ -32,9 +32,9 @@ latcommoninfl.c3pres_27|c3pres|endo|neuter|dative|sg
 latcommoninfl.c3pres_28|c3pres|endum|neuter|accusative|sg
 latcommoninfl.c3pres_29|c3pres|endo|neuter|ablative|sg
 latcommoninfl.c3pres_30|c3pres|enda|neuter|nominative|pl
-latcommoninfl.c3pres_31#c3pres#endorum#neut#gen#pl
-latcommoninfl.c3pres_32#c3pres#endis#neut#dat#pl
-latcommoninfl.c3pres_33#c3pres#enda#neut#acc#pl
-latcommoninfl.c3pres_34#c3pres#endis#neut#abl#pl
-latcommoninfl.c3pres_35#c3pres#endum#neut#nom#sg
-latcommoninfl.c3pres_36#c3pres#enda#neut#nom#pl
+latcommoninfl.c3pres_31|c3pres|endorum|neut|gen|pl
+latcommoninfl.c3pres_32|c3pres|endis|neut|dat|pl
+latcommoninfl.c3pres_33|c3pres|enda|neut|acc|pl
+latcommoninfl.c3pres_34|c3pres|endis|neut|abl|pl
+latcommoninfl.c3pres_35|c3pres|endum|neut|nom|sg
+latcommoninfl.c3pres_36|c3pres|enda|neut|nom|pl

@@ -1,20 +1,20 @@
 StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-latcommon.irrverbn1659a|ls.n1659|aio|1st|singular|present|indic|active
-latcommon.irrverbn1659b|ls.n1659|ais|second|singular|present|indic|active
-latcommon.irrverbn1659c|ls.n1659|ait|3rd|singular|present|indic|active
-latcommon.irrverbn1659d|ls.n1659|aiunt|3rd|plural|present|indic|active
+latcommon.irrverbn1659a|ls.n1659|aio|first|singular|present|indicative|active
+latcommon.irrverbn1659b|ls.n1659|ais|second|singular|present|indicative|active
+latcommon.irrverbn1659c|ls.n1659|ait|third|singular|present|indicative|active
+latcommon.irrverbn1659d|ls.n1659|aiunt|third|plural|present|indicative|active
 
 
-latcommon.irrverbn16593e|ls.n1659|aias|2nd|singular|present|subj|active
-latcommon.irrverbn1659f|ls.n1659|aiat|3rd|singular|present|subj|active
-latcommon.irrverbn1659g|ls.n1659|aiant|3rd|plural|present|subj|active
+latcommon.irrverbn16593e|ls.n1659|aias|second|singular|present|subjunctive|active
+latcommon.irrverbn1659f|ls.n1659|aiat|third|singular|present|subjunctive|active
+latcommon.irrverbn1659g|ls.n1659|aiant|third|plural|present|subjunctive|active
 
 
 
-latcommon.irrverbn1659h|ls.n1659|aiebam|1st|singular|present|impft|active
-latcommon.irrverbn1659i|ls.n1659|aiebas|2nd|singular|present|impft|active
-latcommon.irrverbn1659j|ls.n1659|aiebat|3rd|singular|present|impft|active
-latcommon.irrverbn1659k|ls.n1659|aiebamus|1st|plural|present|impft|active
-latcommon.irrverbn1659l|ls.n1659|aiebatis|2nd|plural|present|impft|active
-latcommon.irrverbn1659m|ls.n1659|aiebant|3rd|plural|present|impft|active
+latcommon.irrverbn1659h|ls.n1659|aiebam|first|singular|present|imperfect|active
+latcommon.irrverbn1659i|ls.n1659|aiebas|second|singular|present|imperfect|active
+latcommon.irrverbn1659j|ls.n1659|aiebat|third|singular|present|imperfect|active
+latcommon.irrverbn1659k|ls.n1659|aiebamus|first|plural|present|imperfect|active
+latcommon.irrverbn1659l|ls.n1659|aiebatis|second|plural|present|imperfect|active
+latcommon.irrverbn1659m|ls.n1659|aiebant|third|plural|present|imperfect|active

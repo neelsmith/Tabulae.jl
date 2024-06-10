@@ -1,33 +1,33 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-lat25morph.are_pft1|conj1|avi|1st|singular|perfect|indic|active
-lat25morph.are_pft2|conj1|avisti|2nd|singular|perfect|indic|active
-lat25morph.are_pft3|conj1|avit|3rd|singular|perfect|indic|active
-lat25morph.are_pft4|conj1|avimus|1st|plural|perfect|indic|active
-lat25morph.are_pft5|conj1|avistis|2nd|plural|perfect|indic|active
-lat25morph.are_pft6|conj1|averunt|3rd|plural|perfect|indic|active
+lat25morph.are_pft1|conj1|avi|first|singular|perfect|indicative|active
+lat25morph.are_pft2|conj1|avisti|second|singular|perfect|indicative|active
+lat25morph.are_pft3|conj1|avit|third|singular|perfect|indicative|active
+lat25morph.are_pft4|conj1|avimus|first|plural|perfect|indicative|active
+lat25morph.are_pft5|conj1|avistis|second|plural|perfect|indicative|active
+lat25morph.are_pft6|conj1|averunt|third|plural|perfect|indicative|active
 
-lat25morph.are_pft7|conj1|averim|1st|singular|perfect|subj|active
-lat25morph.are_pft8|conj1|averis|2nd|singular|perfect|subj|active
-lat25morph.are_pft8b|conj1|avere|2nd|singular|perfect|subj|active
-lat25morph.are_pft9|conj1|averit|3rd|singular|perfect|subj|active
-lat25morph.are_pft10|conj1|averimus|1st|plural|perfect|subj|active
-lat25morph.are_pft11|conj1|averitis|2nd|plural|perfect|subj|active
-lat25morph.are_pft12|conj1|averint|3rd|plural|perfect|subj|active
+lat25morph.are_pft7|conj1|averim|first|singular|perfect|subjunctive|active
+lat25morph.are_pft8|conj1|averis|second|singular|perfect|subjunctive|active
+lat25morph.are_pft8b|conj1|avere|second|singular|perfect|subjunctive|active
+lat25morph.are_pft9|conj1|averit|third|singular|perfect|subjunctive|active
+lat25morph.are_pft10|conj1|averimus|first|plural|perfect|subjunctive|active
+lat25morph.are_pft11|conj1|averitis|second|plural|perfect|subjunctive|active
+lat25morph.are_pft12|conj1|averint|third|plural|perfect|subjunctive|active
 
-lat25morph.ire_pft1|conj4|ivi|1st|singular|perfect|indic|active
-lat25morph.ire_pft2|conj4|ivisti|2nd|singular|perfect|indic|active
-lat25morph.ire_pft3|conj4|ivit|3rd|singular|perfect|indic|active
-lat25morph.ire_pft4|conj4|ivimus|1st|plural|perfect|indic|active
-lat25morph.ire_pft5|conj4|ivistis|2nd|plural|perfect|indic|active
-lat25morph.ire_pft6|conj4|iverunt|3rd|plural|perfect|indic|active
-lat25morph.ire_pft6|conj4|ivere|3rd|plural|perfect|indic|active
+lat25morph.ire_pft1|conj4|ivi|first|singular|perfect|indicative|active
+lat25morph.ire_pft2|conj4|ivisti|second|singular|perfect|indicative|active
+lat25morph.ire_pft3|conj4|ivit|third|singular|perfect|indicative|active
+lat25morph.ire_pft4|conj4|ivimus|first|plural|perfect|indicative|active
+lat25morph.ire_pft5|conj4|ivistis|second|plural|perfect|indicative|active
+lat25morph.ire_pft6|conj4|iverunt|third|plural|perfect|indicative|active
+lat25morph.ire_pft6|conj4|ivere|third|plural|perfect|indicative|active
 
-lat25morph.ire_pft7|conj4|iverim|1st|singular|perfect|subj|active
-lat25morph.ire_pft8|conj4|iveris|2nd|singular|perfect|subj|active
-lat25morph.ire_pft8b|conj4|ivere|2nd|singular|perfect|subj|active
-lat25morph.ire_pft9|conj4|iverit|3rd|singular|perfect|subj|active
-lat25morph.ire_pft10|conj4|iverimus|1st|plural|perfect|subj|active
-lat25morph.ire_pft11|conj4|iveritis|2nd|plural|perfect|subj|active
-lat25morph.ire_pft12|conj4|iverint|3rd|plural|perfect|subj|active
+lat25morph.ire_pft7|conj4|iverim|first|singular|perfect|subjunctive|active
+lat25morph.ire_pft8|conj4|iveris|second|singular|perfect|subjunctive|active
+lat25morph.ire_pft8b|conj4|ivere|second|singular|perfect|subjunctive|active
+lat25morph.ire_pft9|conj4|iverit|third|singular|perfect|subjunctive|active
+lat25morph.ire_pft10|conj4|iverimus|first|plural|perfect|subjunctive|active
+lat25morph.ire_pft11|conj4|iveritis|second|plural|perfect|subjunctive|active
+lat25morph.ire_pft12|conj4|iverint|third|plural|perfect|subjunctive|active

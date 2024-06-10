@@ -1,12 +1,12 @@
-StemUrn#LexicalEntity#String#Person#Number#Tense#Mood#Voice
+StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-livymorph.irrvdedecet1#ls.n12607#dedecet#3rd#sg#pres#indic#act
-livymorph.irrvdedecet2#ls.n12607#dedecebat#3rd#sg#impft#indic#act
-livymorph.irrvdedecet3#ls.n12607#dedecet#3rd#sg#fut#indic#act
-livymorph.irrvdedecet4#ls.n12607#dedecuit#3rd#sg#pft#indic#act
-livymorph.irrvdedecet5#ls.n12607#dedecuerat#3rd#sg#plupft#indic#act
-livymorph.irrvdedecet6#ls.n12607#dedecuerit#3rd#sg#futpft#indic#act
-livymorph.irrvdedecet7#ls.n12607#dedeceat#3rd#sg#pres#subj#act
-livymorph.irrvdedecet8#ls.n12607#dedeceret#3rd#sg#impft#subj#act
-livymorph.irrvdedecet9#ls.n12607#dedecuerit#3rd#sg#pft#subj#act
-livymorph.irrvdedecet10#ls.n12607#dedecuisset#3rd#sg#plupft#subj#act
+livymorph.irrvdedecet1|ls.n12607|dedecet|third|singular|present|indicative|active
+livymorph.irrvdedecet2|ls.n12607|dedecebat|third|singular|imperfect|indicative|active
+livymorph.irrvdedecet3|ls.n12607|dedecet|third|singular|future|indicative|active
+livymorph.irrvdedecet4|ls.n12607|dedecuit|third|singular|perfect|indicative|active
+livymorph.irrvdedecet5|ls.n12607|dedecuerat|third|singular|plupft|indicative|active
+livymorph.irrvdedecet6|ls.n12607|dedecuerit|third|singular|futpft|indicative|active
+livymorph.irrvdedecet7|ls.n12607|dedeceat|third|singular|present|subjunctive|active
+livymorph.irrvdedecet8|ls.n12607|dedeceret|third|singular|imperfect|subjunctive|active
+livymorph.irrvdedecet9|ls.n12607|dedecuerit|third|singular|perfect|subjunctive|active
+livymorph.irrvdedecet10|ls.n12607|dedecuisset|third|singular|plupft|subjunctive|active

@@ -1,33 +1,33 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-lat23morph.are_pft1|conj1|aui|1st|singular|perfect|indic|active
-lat23morph.are_pft2|conj1|auisti|2nd|singular|perfect|indic|active
-lat23morph.are_pft3|conj1|auit|3rd|singular|perfect|indic|active
-lat23morph.are_pft4|conj1|auimus|1st|plural|perfect|indic|active
-lat23morph.are_pft5|conj1|auistis|2nd|plural|perfect|indic|active
-lat23morph.are_pft6|conj1|auerunt|3rd|plural|perfect|indic|active
+lat23morph.are_pft1|conj1|aui|first|singular|perfect|indicative|active
+lat23morph.are_pft2|conj1|auisti|second|singular|perfect|indicative|active
+lat23morph.are_pft3|conj1|auit|third|singular|perfect|indicative|active
+lat23morph.are_pft4|conj1|auimus|first|plural|perfect|indicative|active
+lat23morph.are_pft5|conj1|auistis|second|plural|perfect|indicative|active
+lat23morph.are_pft6|conj1|auerunt|third|plural|perfect|indicative|active
 
-lat23morph.are_pft7|conj1|auerim|1st|singular|perfect|subj|active
-lat23morph.are_pft8|conj1|aueris|2nd|singular|perfect|subj|active
-lat23morph.are_pft8b|conj1|auere|2nd|singular|perfect|subj|active
-lat23morph.are_pft9|conj1|auerit|3rd|singular|perfect|subj|active
-lat23morph.are_pft10|conj1|auerimus|1st|plural|perfect|subj|active
-lat23morph.are_pft11|conj1|aueritis|2nd|plural|perfect|subj|active
-lat23morph.are_pft12|conj1|auerint|3rd|plural|perfect|subj|active
+lat23morph.are_pft7|conj1|auerim|first|singular|perfect|subjunctive|active
+lat23morph.are_pft8|conj1|aueris|second|singular|perfect|subjunctive|active
+lat23morph.are_pft8b|conj1|auere|second|singular|perfect|subjunctive|active
+lat23morph.are_pft9|conj1|auerit|third|singular|perfect|subjunctive|active
+lat23morph.are_pft10|conj1|auerimus|first|plural|perfect|subjunctive|active
+lat23morph.are_pft11|conj1|aueritis|second|plural|perfect|subjunctive|active
+lat23morph.are_pft12|conj1|auerint|third|plural|perfect|subjunctive|active
 
-lat23morph.ire_pft1|conj4|iui|1st|singular|perfect|indic|active
-lat23morph.ire_pft2|conj4|iuisti|2nd|singular|perfect|indic|active
-lat23morph.ire_pft3|conj4|iuit|3rd|singular|perfect|indic|active
-lat23morph.ire_pft4|conj4|iuimus|1st|plural|perfect|indic|active
-lat23morph.ire_pft5|conj4|iuistis|2nd|plural|perfect|indic|active
-lat23morph.ire_pft6|conj4|iuerunt|3rd|plural|perfect|indic|active
-lat23morph.ire_pft6|conj4|iuere|3rd|plural|perfect|indic|active
+lat23morph.ire_pft1|conj4|iui|first|singular|perfect|indicative|active
+lat23morph.ire_pft2|conj4|iuisti|second|singular|perfect|indicative|active
+lat23morph.ire_pft3|conj4|iuit|third|singular|perfect|indicative|active
+lat23morph.ire_pft4|conj4|iuimus|first|plural|perfect|indicative|active
+lat23morph.ire_pft5|conj4|iuistis|second|plural|perfect|indicative|active
+lat23morph.ire_pft6|conj4|iuerunt|third|plural|perfect|indicative|active
+lat23morph.ire_pft6|conj4|iuere|third|plural|perfect|indicative|active
 
-lat23morph.ire_pft7|conj4|iuerim|1st|singular|perfect|subj|active
-lat23morph.ire_pft8|conj4|iueris|2nd|singular|perfect|subj|active
-lat23morph.ire_pft8b|conj4|iuere|2nd|singular|perfect|subj|active
-lat23morph.ire_pft9|conj4|iuerit|3rd|singular|perfect|subj|active
-lat23morph.ire_pft10|conj4|iuerimus|1st|plural|perfect|subj|active
-lat23morph.ire_pft11|conj4|iueritis|2nd|plural|perfect|subj|active
-lat23morph.ire_pft12|conj4|iuerint|3rd|plural|perfect|subj|active
+lat23morph.ire_pft7|conj4|iuerim|first|singular|perfect|subjunctive|active
+lat23morph.ire_pft8|conj4|iueris|second|singular|perfect|subjunctive|active
+lat23morph.ire_pft8b|conj4|iuere|second|singular|perfect|subjunctive|active
+lat23morph.ire_pft9|conj4|iuerit|third|singular|perfect|subjunctive|active
+lat23morph.ire_pft10|conj4|iuerimus|first|plural|perfect|subjunctive|active
+lat23morph.ire_pft11|conj4|iueritis|second|plural|perfect|subjunctive|active
+lat23morph.ire_pft12|conj4|iuerint|third|plural|perfect|subjunctive|active
