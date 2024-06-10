@@ -2,10 +2,6 @@ StemUrn|LexicalEntity|StemString|MorphologicalClass
 
 
 
-
-latcommon.verbn18962a|ls.n18962|fulg|c2pres
-latcommon.verbn18962b|ls.n18962|fuls|pftact
-
 latcommon.verbn18307|ls.n18307|form|conj1
 latcommon.verbn363a|ls.n363|accip|c3iopres
 latcommon.verbn363b|ls.n363|accep|pftact
@@ -18,7 +14,6 @@ latcommon.verbn1605a|ls.n1605|ag|c3pres
 latcommon.verbn1605b|ls.n1605|eg|pftact
 latcommon.verbn1605c|ls.n1605|act|pftpass
 latcommon.verbn1947|ls.n1947|allig|conj1
-latcommon.verbn2280|ls.n2280|am|conj1
 latcommon.verbn2980a|ls.n2980|aper|c4pres
 latcommon.verbn2980b|ls.n2980|aperu|pftact
 latcommon.verbn2980c|ls.n2980|apert|pftpass
@@ -36,8 +31,6 @@ latcommon.verbn3749c|ls.n3749|arrept|pftpass
 latcommon.verbn4364|ls.n4364|attin|conj2
 latcommon.verbn4450a|ls.n4450|aud|c2pres
 latcommon.verbn4450c|ls.n4450|aus|pftpass
-latcommon.verbn4453|ls.n4453|aud|conj4
-latcommon.verbn4453b|ls.n4453|aud|pftact
 latcommon.verbn4470a|ls.n4470|aug|c2pres
 latcommon.verbn4470b|ls.n4470|aux|pftact
 latcommon.verbn4470c|ls.n4470|auct|pftpass
@@ -46,9 +39,6 @@ latcommon.verbn6011a|ls.n6011|caed|c3pres
 latcommon.verbn6011b|ls.n6011|cecid|pftact
 latcommon.verbn6011c|ls.n6011|caes|pftpass
 latcommon.verbn6571|ls.n6571|cant|conj1
-latcommon.verbn6614a|ls.n6614|cap|c3iopres
-latcommon.verbn6614b|ls.n6614|cep|pftact
-latcommon.verbn6614c|ls.n6614|capt|pftpass
 latcommon.verbn7275a|ls.n7275|ced|c3pres
 latcommon.verbn7275b|ls.n7275|cess|pftact
 latcommon.verbn7275c|ls.n7275|cess|pftpass
@@ -90,14 +80,12 @@ latcommon.verbn10770b|ls.n10770|contend|pftact
 latcommon.verbn10770c|ls.n10770|content|pftpass
 latcommon.verbn11069a|ls.n11069|coor|c4pres
 latcommon.verbn11069c|ls.n11069|coort|pftpass
-latcommon.verbn11525a|ls.n11525|cred|conj3
 latcommon.verbn11543|ls.n11543|cre|conj1
 latcommon.verbn11607|ls.n11607|crimin|conj1
 latcommon.verbn12030a|ls.n12030|curr|c3pres
 latcommon.verbn12030b|ls.n12030|cuccur|pftact
 latcommon.verbn12030c|ls.n12030|curs|pftpass
 latcommon.verbn12301|ls.n12301|damn|conj1
-latcommon.verbn12387|ls.n12387|deb|conj2
 latcommon.verbn12628a|ls.n12628|ded|c3pres
 latcommon.verbn12628b|ls.n12628|dedid|pftact
 latcommon.verbn12628c|ls.n12628|dedit|pftpass
@@ -175,7 +163,10 @@ latcommon.verbn18704c|ls.n18704|fract|pftpass
 latcommon.verbn18726|ls.n18726|fraud|conj1
 latcommon.verbn18943|ls.n18943|fug|conj3io
 latcommon.verbn18949|ls.n18949|fug|conj1
+latcommon.verbn18962a|ls.n18962|fulg|c2pres
+latcommon.verbn18962b|ls.n18962|fuls|pftact
 latcommon.verbn19048a|ls.n19048|fund|c3pres
+
 latcommon.verbn19048b|ls.n19048|fud|pftact
 latcommon.verbn19048c|ls.n19048|fus|pftpass
 latcommon.verbn19512a|ls.n19512|ger|c3pres
