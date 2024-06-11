@@ -1,5 +1,6 @@
 
 
+
 # Tabulae.jl
 
 Build Latin morphological parsers from simple delimited-text tables.
@@ -10,12 +11,12 @@ Build Latin morphological parsers from simple delimited-text tables.
 
 Version 0.10.0 is a complete rewrite of the package built on a new type hierarchy in the `CitableParserBuilder` package. Documentation of current work on version 0.10.0 is available on [quarto.pub](https://neelsmith.quarto.pub/tabulae/); you can follow progress on [this milestone](https://github.com/neelsmith/Tabulae.jl/issues?q=is%3Aopen+is%3Aissue+milestone%3A%220.10+release%22) in the project's github issue tracker.
 
+### Regular forms
 
 | Analytical type	| morphology | analyze | generate |
 | --- | --- | --- | --- |
 | uninflected token | |||
 | noun | ✅ |  ✅ |  ✅ |
-| pronoun | |||
 | adjective | |||
 | finite verb | ✅ |✅ | ✅ |
 | infinitive | ✅|✅|✅|
@@ -25,7 +26,15 @@ Version 0.10.0 is a complete rewrite of the package built on a new type hierarch
 | supine | |||
 | adverb | |||
 
+### Irregular forms
 
+| Analytical type	| morphology | analyze | generate |
+| --- | --- | --- | --- |
+| finite verb |  | |  |
+| infinitive | |||
+| noun | |||
+| pronoun | |||
+| adverb | |||
 
 
 ## Unit tests
