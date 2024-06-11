@@ -101,6 +101,10 @@ website:
         - text: "Rules:"           
         - reference/fileformat-verbrules.qmd
         - reference/fileformat-otherrules.qmd
+        - text: "---"
+        - text: "System architecture:"
+        - reference/architecture/rules-stems-pipeline.qmd
+
 
 
 

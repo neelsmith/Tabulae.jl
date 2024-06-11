@@ -68,3 +68,8 @@ See detailed reference information including APIs about Tabulae's model of Latin
 :::
 
 ::::
+
+
+## Architecture and implementation
+
+[Rules and stems pipeline](./architecture/rules-stems-pipeline.qmd)
