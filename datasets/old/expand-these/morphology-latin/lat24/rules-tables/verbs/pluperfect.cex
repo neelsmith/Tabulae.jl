@@ -1,31 +1,31 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
 
-lat24morph.are_plupft1|conj1|averam|first|singular|plupft|indicative|active
-lat24morph.are_plupft2|conj1|averas|second|singular|plupft|indicative|active
-lat24morph.are_plupft3|conj1|averat|third|singular|plupft|indicative|active
-lat24morph.are_plupft4|conj1|averamus|first|plural|plupft|indicative|active
-lat24morph.are_plupft5|conj1|averatis|second|plural|plupft|indicative|active
-lat24morph.are_plupft6|conj1|averant|third|plural|plupft|indicative|active
+lat24morph.are_plupft1|conj1|averam|first|singular|pluperfect|indicative|active
+lat24morph.are_plupft2|conj1|averas|second|singular|pluperfect|indicative|active
+lat24morph.are_plupft3|conj1|averat|third|singular|pluperfect|indicative|active
+lat24morph.are_plupft4|conj1|averamus|first|plural|pluperfect|indicative|active
+lat24morph.are_plupft5|conj1|averatis|second|plural|pluperfect|indicative|active
+lat24morph.are_plupft6|conj1|averant|third|plural|pluperfect|indicative|active
 
-lat24morph.are_plupft7|conj1|avissem|first|singular|plupft|subjunctive|active
-lat24morph.are_plupft8|conj1|avisses|second|singular|plupft|subjunctive|active
-lat24morph.are_plupft9|conj1|avisset|third|singular|plupft|subjunctive|active
-lat24morph.are_plupft10|conj1|avissemus|first|plural|plupft|subjunctive|active
-lat24morph.are_plupft11|conj1|avissetis|second|plural|plupft|subjunctive|active
-lat24morph.are_plupft12|conj1|avissent|third|plural|plupft|subjunctive|active
+lat24morph.are_plupft7|conj1|avissem|first|singular|pluperfect|subjunctive|active
+lat24morph.are_plupft8|conj1|avisses|second|singular|pluperfect|subjunctive|active
+lat24morph.are_plupft9|conj1|avisset|third|singular|pluperfect|subjunctive|active
+lat24morph.are_plupft10|conj1|avissemus|first|plural|pluperfect|subjunctive|active
+lat24morph.are_plupft11|conj1|avissetis|second|plural|pluperfect|subjunctive|active
+lat24morph.are_plupft12|conj1|avissent|third|plural|pluperfect|subjunctive|active
 
 
-lat24morph.ire_plupft1|conj4|iveram|first|singular|plupft|indicative|active
-lat24morph.ire_plupft2|conj4|iveras|second|singular|plupft|indicative|active
-lat24morph.ire_plupft3|conj4|iverat|third|singular|plupft|indicative|active
-lat24morph.ire_plupft4|conj4|iveramus|first|plural|plupft|indicative|active
-lat24morph.ire_plupft5|conj4|iveratis|second|plural|plupft|indicative|active
-lat24morph.ire_plupft6|conj4|iverant|third|plural|plupft|indicative|active
+lat24morph.ire_plupft1|conj4|iveram|first|singular|pluperfect|indicative|active
+lat24morph.ire_plupft2|conj4|iveras|second|singular|pluperfect|indicative|active
+lat24morph.ire_plupft3|conj4|iverat|third|singular|pluperfect|indicative|active
+lat24morph.ire_plupft4|conj4|iveramus|first|plural|pluperfect|indicative|active
+lat24morph.ire_plupft5|conj4|iveratis|second|plural|pluperfect|indicative|active
+lat24morph.ire_plupft6|conj4|iverant|third|plural|pluperfect|indicative|active
 
-lat24morph.ire_plupft7|conj4|ivissem|first|singular|plupft|subjunctive|active
-lat24morph.ire_plupft8|conj4|ivisses|second|singular|plupft|subjunctive|active
-lat24morph.ire_plupft9|conj4|ivisset|third|singular|plupft|subjunctive|active
-lat24morph.ire_plupft10|conj4|ivissemus|first|plural|plupft|subjunctive|active
-lat24morph.ire_plupft11|conj4|ivissetis|second|plural|plupft|subjunctive|active
-lat24morph.ire_plupft12|conj4|ivissent|third|plural|plupft|subjunctive|active
+lat24morph.ire_plupft7|conj4|ivissem|first|singular|pluperfect|subjunctive|active
+lat24morph.ire_plupft8|conj4|ivisses|second|singular|pluperfect|subjunctive|active
+lat24morph.ire_plupft9|conj4|ivisset|third|singular|pluperfect|subjunctive|active
+lat24morph.ire_plupft10|conj4|ivissemus|first|plural|pluperfect|subjunctive|active
+lat24morph.ire_plupft11|conj4|ivissetis|second|plural|pluperfect|subjunctive|active
+lat24morph.ire_plupft12|conj4|ivissent|third|plural|pluperfect|subjunctive|active

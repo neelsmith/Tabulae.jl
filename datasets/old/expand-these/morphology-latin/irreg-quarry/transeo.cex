@@ -14,12 +14,12 @@ livymorph.irrtranseo10|lexent.n48771|transibamus|first|plural|imperfect|indicati
 livymorph.irrtranseo11|lexent.n48771|transibatis|second|plural|imperfect|indicative|active
 livymorph.irrtranseo12|lexent.n48771|transibant|third|plural|imperfect|indicative|active
 
-livymorph.irrtranseo7|lexent.n48771|transieram|first|singular|plupft|indicative|active
-livymorph.irrtranseo8|lexent.n48771|transieras|second|singular|plupft|indicative|active
-livymorph.irrtranseo9|lexent.n48771|transierat|third|singular|plupft|indicative|active
-livymorph.irrtranseo10|lexent.n48771|transieramus|first|plural|plupft|indicative|active
-livymorph.irrtranseo11|lexent.n48771|transieratis|second|plural|plupft|indicative|active
-livymorph.irrtranseo12|lexent.n48771|transierant|third|plural|plupft|indicative|active
+livymorph.irrtranseo7|lexent.n48771|transieram|first|singular|pluperfect|indicative|active
+livymorph.irrtranseo8|lexent.n48771|transieras|second|singular|pluperfect|indicative|active
+livymorph.irrtranseo9|lexent.n48771|transierat|third|singular|pluperfect|indicative|active
+livymorph.irrtranseo10|lexent.n48771|transieramus|first|plural|pluperfect|indicative|active
+livymorph.irrtranseo11|lexent.n48771|transieratis|second|plural|pluperfect|indicative|active
+livymorph.irrtranseo12|lexent.n48771|transierant|third|plural|pluperfect|indicative|active
 
 
 livymorph.irrtranseo13|lexent.n48771|transibo|first|singular|future|indicative|active
@@ -37,12 +37,12 @@ livymorph.irrtranseo64|lexent.n48771|transiremus|first|plural|imperfect|subjunct
 livymorph.irrtranseo65|lexent.n48771|transiretis|second|plural|imperfect|subjunctive|active
 livymorph.irrtranseo66|lexent.n48771|transirent|third|plural|imperfect|subjunctive|active
 
-livymorph.irrtranseo79|lexent.n48771|transissem|first|singular|plupft|subjunctive|active
-livymorph.irrtranseo80|lexent.n48771|transisses|second|singular|plupft|subjunctive|active
-livymorph.irrtranseo81|lexent.n48771|transisset|third|singular|plupft|subjunctive|active
-livymorph.irrtranseo82|lexent.n48771|transissemus|first|plural|plupft|subjunctive|active
-livymorph.irrtranseo83|lexent.n48771|transissetis|second|plural|plupft|subjunctive|active
-livymorph.irrtranseo84|lexent.n48771|transissent|third|plural|plupft|subjunctive|active
+livymorph.irrtranseo79|lexent.n48771|transissem|first|singular|pluperfect|subjunctive|active
+livymorph.irrtranseo80|lexent.n48771|transisses|second|singular|pluperfect|subjunctive|active
+livymorph.irrtranseo81|lexent.n48771|transisset|third|singular|pluperfect|subjunctive|active
+livymorph.irrtranseo82|lexent.n48771|transissemus|first|plural|pluperfect|subjunctive|active
+livymorph.irrtranseo83|lexent.n48771|transissetis|second|plural|pluperfect|subjunctive|active
+livymorph.irrtranseo84|lexent.n48771|transissent|third|plural|pluperfect|subjunctive|active
 
 livymorph.irrtranseo91|lexent.n48771|transi|second|singular|present|imperative|active
 livymorph.irrtranseo92|lexent.n48771|transite|second|plural|present|imperative|active

@@ -29,19 +29,19 @@ ocremorph.irrv23|lexent.n46529|fvistis|second|plural|perfect|indicative|active
 ocremorph.irrv24|lexent.n46529|fvervnt|third|plural|perfect|indicative|active
 ocremorph.irrv24b|lexent.n46529|fvere|third|plural|perfect|indicative|active
 
-ocremorph.irrv25|lexent.n46529|fveram|first|singular|plupft|indicative|active
-ocremorph.irrv26|lexent.n46529|fveras|second|singular|plupft|indicative|active
-ocremorph.irrv27|lexent.n46529|fverat|third|singular|plupft|indicative|active
-ocremorph.irrv28|lexent.n46529|fveramvs|first|plural|plupft|indicative|active
-ocremorph.irrv29|lexent.n46529|fveratis|second|plural|plupft|indicative|active
-ocremorph.irrv30|lexent.n46529|fverant|third|plural|plupft|indicative|active
+ocremorph.irrv25|lexent.n46529|fveram|first|singular|pluperfect|indicative|active
+ocremorph.irrv26|lexent.n46529|fveras|second|singular|pluperfect|indicative|active
+ocremorph.irrv27|lexent.n46529|fverat|third|singular|pluperfect|indicative|active
+ocremorph.irrv28|lexent.n46529|fveramvs|first|plural|pluperfect|indicative|active
+ocremorph.irrv29|lexent.n46529|fveratis|second|plural|pluperfect|indicative|active
+ocremorph.irrv30|lexent.n46529|fverant|third|plural|pluperfect|indicative|active
 
-ocremorph.irrv31|lexent.n46529|fvero|first|singular|futpft|indicative|active
-ocremorph.irrv32|lexent.n46529|fveris|second|singular|futpft|indicative|active
-ocremorph.irrv33|lexent.n46529|fverit|third|singular|futpft|indicative|active
-ocremorph.irrv34|lexent.n46529|fverimvs|first|plural|futpft|indicative|active
-ocremorph.irrv35|lexent.n46529|fveritis|second|plural|futpft|indicative|active
-ocremorph.irrv36|lexent.n46529|fverint|third|plural|futpft|indicative|active
+ocremorph.irrv31|lexent.n46529|fvero|first|singular|future_perfect|indicative|active
+ocremorph.irrv32|lexent.n46529|fveris|second|singular|future_perfect|indicative|active
+ocremorph.irrv33|lexent.n46529|fverit|third|singular|future_perfect|indicative|active
+ocremorph.irrv34|lexent.n46529|fverimvs|first|plural|future_perfect|indicative|active
+ocremorph.irrv35|lexent.n46529|fveritis|second|plural|future_perfect|indicative|active
+ocremorph.irrv36|lexent.n46529|fverint|third|plural|future_perfect|indicative|active
 
 ocremorph.irrv37|lexent.n46529|sim|first|singular|present|subjunctive|active
 ocremorph.irrv38|lexent.n46529|sis|second|singular|present|subjunctive|active
@@ -64,12 +64,12 @@ ocremorph.irrv52|lexent.n46529|fverimvs|first|plural|perfect|subjunctive|active
 ocremorph.irrv53|lexent.n46529|fveritis|second|plural|perfect|subjunctive|active
 ocremorph.irrv54|lexent.n46529|fverint|third|plural|perfect|subjunctive|active
 
-ocremorph.irrv55|lexent.n46529|fvissem|first|singular|plupft|subjunctive|active
-ocremorph.irrv56|lexent.n46529|fvisses|second|singular|plupft|subjunctive|active
-ocremorph.irrv57|lexent.n46529|fvisset|third|singular|plupft|subjunctive|active
-ocremorph.irrv58|lexent.n46529|fvissemvs|first|plural|plupft|subjunctive|active
-ocremorph.irrv59|lexent.n46529|fvissetis|second|plural|plupft|subjunctive|active
-ocremorph.irrv60|lexent.n46529|fvissent|third|plural|plupft|subjunctive|active
+ocremorph.irrv55|lexent.n46529|fvissem|first|singular|pluperfect|subjunctive|active
+ocremorph.irrv56|lexent.n46529|fvisses|second|singular|pluperfect|subjunctive|active
+ocremorph.irrv57|lexent.n46529|fvisset|third|singular|pluperfect|subjunctive|active
+ocremorph.irrv58|lexent.n46529|fvissemvs|first|plural|pluperfect|subjunctive|active
+ocremorph.irrv59|lexent.n46529|fvissetis|second|plural|pluperfect|subjunctive|active
+ocremorph.irrv60|lexent.n46529|fvissent|third|plural|pluperfect|subjunctive|active
 
 ocremorph.irrv133|lexent.n46529|es|second|singular|present|imperative|active
 ocremorph.irrv134|lexent.n46529|este|second|plural|present|imperative|active

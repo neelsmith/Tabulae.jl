@@ -29,19 +29,19 @@ livymorph.irrvabsum23|lexent.n13492|defuistis|second|plural|perfect|indicative|a
 livymorph.irrvabsum24|lexent.n13492|defuerunt|third|plural|perfect|indicative|active
 livymorph.irrvabsum24b|lexent.n13492|defuere|third|plural|perfect|indicative|active
 
-livymorph.irrvabsum25|lexent.n13492|defueram|first|singular|plupft|indicative|active
-livymorph.irrvabsum26|lexent.n13492|defueras|second|singular|plupft|indicative|active
-livymorph.irrvabsum27|lexent.n13492|defuerat|third|singular|plupft|indicative|active
-livymorph.irrvabsum28|lexent.n13492|defueramus|first|plural|plupft|indicative|active
-livymorph.irrvabsum29|ablexent.n13492|defueratis|second|plural|plupft|indicative|active
-livymorph.irrvabsum30|lexent.n13492|defuerant|third|plural|plupft|indicative|active
+livymorph.irrvabsum25|lexent.n13492|defueram|first|singular|pluperfect|indicative|active
+livymorph.irrvabsum26|lexent.n13492|defueras|second|singular|pluperfect|indicative|active
+livymorph.irrvabsum27|lexent.n13492|defuerat|third|singular|pluperfect|indicative|active
+livymorph.irrvabsum28|lexent.n13492|defueramus|first|plural|pluperfect|indicative|active
+livymorph.irrvabsum29|ablexent.n13492|defueratis|second|plural|pluperfect|indicative|active
+livymorph.irrvabsum30|lexent.n13492|defuerant|third|plural|pluperfect|indicative|active
 
-livymorph.irrvabsum31|lexent.n13492|defuero|first|singular|futpft|indicative|active
-livymorph.irrvabsum32|lexent.n13492|defueris|second|singular|futpft|indicative|active
-livymorph.irrvabsum33|lexent.n13492|defuerit|third|singular|futpft|indicative|active
-livymorph.irrvabsum34|lexent.n13492|defuerimus|first|plural|futpft|indicative|active
-livymorph.irrvabsum35|lexent.n13492|defueritis|second|plural|futpft|indicative|active
-livymorph.irrvabsum36|lexent.n13492|defuerint|third|plural|futpft|indicative|active
+livymorph.irrvabsum31|lexent.n13492|defuero|first|singular|future_perfect|indicative|active
+livymorph.irrvabsum32|lexent.n13492|defueris|second|singular|future_perfect|indicative|active
+livymorph.irrvabsum33|lexent.n13492|defuerit|third|singular|future_perfect|indicative|active
+livymorph.irrvabsum34|lexent.n13492|defuerimus|first|plural|future_perfect|indicative|active
+livymorph.irrvabsum35|lexent.n13492|defueritis|second|plural|future_perfect|indicative|active
+livymorph.irrvabsum36|lexent.n13492|defuerint|third|plural|future_perfect|indicative|active
 
 livymorph.irrvabsum37|lexent.n13492|desim|first|singular|present|subjunctive|active
 livymorph.irrvabsum38|lexent.n13492|desis|second|singular|present|subjunctive|active
@@ -64,12 +64,12 @@ livymorph.irrvabsum52|lexent.n13492|defuerimus|first|plural|perfect|subjunctive|
 livymorph.irrvabsum53|lexent.n13492|defueritis|second|plural|perfect|subjunctive|active
 livymorph.irrvabsum54|lexent.n13492|defuerint|third|plural|perfect|subjunctive|active
 
-livymorph.irrvabsum55|lexent.n13492|defuissem|first|singular|plupft|subjunctive|active
-livymorph.irrvabsum56|lexent.n13492|defuisses|second|singular|plupft|subjunctive|active
-livymorph.irrvabsum57|lexent.n13492|defuisset|third|singular|plupft|subjunctive|active
-livymorph.irrvabsum58|lexent.n13492|defuissemus|first|plural|plupft|subjunctive|active
-livymorph.irrvabsum59|lexent.n13492|defuissetis|second|plural|plupft|subjunctive|active
-livymorph.irrvabsum60|lexent.n13492|defuissent|third|plural|plupft|subjunctive|active
+livymorph.irrvabsum55|lexent.n13492|defuissem|first|singular|pluperfect|subjunctive|active
+livymorph.irrvabsum56|lexent.n13492|defuisses|second|singular|pluperfect|subjunctive|active
+livymorph.irrvabsum57|lexent.n13492|defuisset|third|singular|pluperfect|subjunctive|active
+livymorph.irrvabsum58|lexent.n13492|defuissemus|first|plural|pluperfect|subjunctive|active
+livymorph.irrvabsum59|lexent.n13492|defuissetis|second|plural|pluperfect|subjunctive|active
+livymorph.irrvabsum60|lexent.n13492|defuissent|third|plural|pluperfect|subjunctive|active
 
 livymorph.irrvabsum133|lexent.n13492|dees|second|singular|present|imperative|active
 livymorph.irrvabsum134|lexent.n13492|deeste|second|plural|present|imperative|active

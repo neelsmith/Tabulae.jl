@@ -30,19 +30,19 @@ livymorph.irrvvolo23|lexent.n51298|voluistis|second|plural|perfect|indicative|ac
 livymorph.irrvvolo24|lexent.n51298|voluerunt|third|plural|perfect|indicative|active
 livymorph.irrvvolo24b|lexent.n51298|voluere|third|plural|perfect|indicative|active
 
-livymorph.irrvvolo25|lexent.n51298|volueram|first|singular|plupft|indicative|active
-livymorph.irrvvolo26|lexent.n51298|volueras|second|singular|plupft|indicative|active
-livymorph.irrvvolo27|lexent.n51298|voluerat|third|singular|plupft|indicative|active
-livymorph.irrvvolo28|lexent.n51298|volueramus|first|plural|plupft|indicative|active
-livymorph.irrvvolo29|lexent.n51298|volueratis|second|plural|plupft|indicative|active
-livymorph.irrvvolo30|lexent.n51298|voluerant|third|plural|plupft|indicative|active
+livymorph.irrvvolo25|lexent.n51298|volueram|first|singular|pluperfect|indicative|active
+livymorph.irrvvolo26|lexent.n51298|volueras|second|singular|pluperfect|indicative|active
+livymorph.irrvvolo27|lexent.n51298|voluerat|third|singular|pluperfect|indicative|active
+livymorph.irrvvolo28|lexent.n51298|volueramus|first|plural|pluperfect|indicative|active
+livymorph.irrvvolo29|lexent.n51298|volueratis|second|plural|pluperfect|indicative|active
+livymorph.irrvvolo30|lexent.n51298|voluerant|third|plural|pluperfect|indicative|active
 
-livymorph.irrvvolo31|lexent.n51298|voluero|first|singular|futpft|indicative|active
-livymorph.irrvvolo32|lexent.n51298|volueris|second|singular|futpft|indicative|active
-livymorph.irrvvolo33|lexent.n51298|voluerit|third|singular|futpft|indicative|active
-livymorph.irrvvolo34|lexent.n51298|voluerimus|first|plural|futpft|indicative|active
-livymorph.irrvvolo35|lexent.n51298|volueritis|second|plural|futpft|indicative|active
-livymorph.irrvvolo36|lexent.n51298|voluerint|third|plural|futpft|indicative|active
+livymorph.irrvvolo31|lexent.n51298|voluero|first|singular|future_perfect|indicative|active
+livymorph.irrvvolo32|lexent.n51298|volueris|second|singular|future_perfect|indicative|active
+livymorph.irrvvolo33|lexent.n51298|voluerit|third|singular|future_perfect|indicative|active
+livymorph.irrvvolo34|lexent.n51298|voluerimus|first|plural|future_perfect|indicative|active
+livymorph.irrvvolo35|lexent.n51298|volueritis|second|plural|future_perfect|indicative|active
+livymorph.irrvvolo36|lexent.n51298|voluerint|third|plural|future_perfect|indicative|active
 
 livymorph.irrvvolo37|lexent.n51298|velim|first|singular|present|subjunctive|active
 livymorph.irrvvolo38|lexent.n51298|velis|second|singular|present|subjunctive|active
@@ -65,9 +65,9 @@ livymorph.irrvvolo52|lexent.n51298|voluerimus|first|plural|perfect|subjunctive|a
 livymorph.irrvvolo53|lexent.n51298|volueritis|second|plural|perfect|subjunctive|active
 livymorph.irrvvolo54|lexent.n51298|voluerint|third|plural|perfect|subjunctive|active
 
-livymorph.irrvvolo55|lexent.n51298|voluissem|first|singular|plupft|subjunctive|active
-livymorph.irrvvolo56|lexent.n51298|voluisses|second|singular|plupft|subjunctive|active
-livymorph.irrvvolo57|lexent.n51298|voluisset|third|singular|plupft|subjunctive|active
-livymorph.irrvvolo58|lexent.n51298|voluissemus|first|plural|plupft|subjunctive|active
-livymorph.irrvvolo59|lexent.n51298|voluissetis|second|plural|plupft|subjunctive|active
-livymorph.irrvvolo60|lexent.n51298|voluissent|third|plural|plupft|subjunctive|active
+livymorph.irrvvolo55|lexent.n51298|voluissem|first|singular|pluperfect|subjunctive|active
+livymorph.irrvvolo56|lexent.n51298|voluisses|second|singular|pluperfect|subjunctive|active
+livymorph.irrvvolo57|lexent.n51298|voluisset|third|singular|pluperfect|subjunctive|active
+livymorph.irrvvolo58|lexent.n51298|voluissemus|first|plural|pluperfect|subjunctive|active
+livymorph.irrvvolo59|lexent.n51298|voluissetis|second|plural|pluperfect|subjunctive|active
+livymorph.irrvvolo60|lexent.n51298|voluissent|third|plural|pluperfect|subjunctive|active

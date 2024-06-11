@@ -91,3 +91,9 @@ cex(verbstem)
 ### Irregular nouns
 ### Irregular pronouns
 ### Irregular finite verbs
+
+```{julia}
+irregverbrow = "latcommon.irregverbn46529a|ls.n46529|sum|first|singular|present|indicative|active"
+irregverbio = IrregularVerbIO("irregular verb reader")
+irregentry = Tabulae.readstemrow(irregverbio, irregverbrow)
+```

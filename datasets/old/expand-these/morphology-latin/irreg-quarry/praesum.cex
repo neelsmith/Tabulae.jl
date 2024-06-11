@@ -29,19 +29,19 @@ livymorph.irrvpraesum23|lexent.n38036|praefuistis|second|plural|perfect|indicati
 livymorph.irrvpraesum24|lexent.n38036|praefuerunt|third|plural|perfect|indicative|active
 livymorph.irrvpraesum24b|lexent.n38036|praefuere|third|plural|perfect|indicative|active
 
-livymorph.irrvpraesum25|lexent.n38036|praefueram|first|singular|plupft|indicative|active
-livymorph.irrvpraesum26|lexent.n38036|praefueras|second|singular|plupft|indicative|active
-livymorph.irrvpraesum27|lexent.n38036|praefuerat|third|singular|plupft|indicative|active
-livymorph.irrvpraesum28|lexent.n38036|praefueramus|first|plural|plupft|indicative|active
-livymorph.irrvpraesum29|praelexent.n38036|praefueratis|second|plural|plupft|indicative|active
-livymorph.irrvpraesum30|lexent.n38036|praefuerant|third|plural|plupft|indicative|active
+livymorph.irrvpraesum25|lexent.n38036|praefueram|first|singular|pluperfect|indicative|active
+livymorph.irrvpraesum26|lexent.n38036|praefueras|second|singular|pluperfect|indicative|active
+livymorph.irrvpraesum27|lexent.n38036|praefuerat|third|singular|pluperfect|indicative|active
+livymorph.irrvpraesum28|lexent.n38036|praefueramus|first|plural|pluperfect|indicative|active
+livymorph.irrvpraesum29|praelexent.n38036|praefueratis|second|plural|pluperfect|indicative|active
+livymorph.irrvpraesum30|lexent.n38036|praefuerant|third|plural|pluperfect|indicative|active
 
-livymorph.irrvpraesum31|lexent.n38036|praefuero|first|singular|futpft|indicative|active
-livymorph.irrvpraesum32|lexent.n38036|praefueris|second|singular|futpft|indicative|active
-livymorph.irrvpraesum33|lexent.n38036|praefuerit|third|singular|futpft|indicative|active
-livymorph.irrvpraesum34|lexent.n38036|praefuerimus|first|plural|futpft|indicative|active
-livymorph.irrvpraesum35|lexent.n38036|praefueritis|second|plural|futpft|indicative|active
-livymorph.irrvpraesum36|lexent.n38036|praefuerint|third|plural|futpft|indicative|active
+livymorph.irrvpraesum31|lexent.n38036|praefuero|first|singular|future_perfect|indicative|active
+livymorph.irrvpraesum32|lexent.n38036|praefueris|second|singular|future_perfect|indicative|active
+livymorph.irrvpraesum33|lexent.n38036|praefuerit|third|singular|future_perfect|indicative|active
+livymorph.irrvpraesum34|lexent.n38036|praefuerimus|first|plural|future_perfect|indicative|active
+livymorph.irrvpraesum35|lexent.n38036|praefueritis|second|plural|future_perfect|indicative|active
+livymorph.irrvpraesum36|lexent.n38036|praefuerint|third|plural|future_perfect|indicative|active
 
 livymorph.irrvpraesum37|lexent.n38036|praesim|first|singular|present|subjunctive|active
 livymorph.irrvpraesum38|lexent.n38036|praesis|second|singular|present|subjunctive|active
@@ -64,12 +64,12 @@ livymorph.irrvpraesum52|lexent.n38036|praefuerimus|first|plural|perfect|subjunct
 livymorph.irrvpraesum53|lexent.n38036|praefueritis|second|plural|perfect|subjunctive|active
 livymorph.irrvpraesum54|lexent.n38036|praefuerint|third|plural|perfect|subjunctive|active
 
-livymorph.irrvpraesum55|lexent.n38036|praefuissem|first|singular|plupft|subjunctive|active
-livymorph.irrvpraesum56|lexent.n38036|praefuisses|second|singular|plupft|subjunctive|active
-livymorph.irrvpraesum57|lexent.n38036|praefuisset|third|singular|plupft|subjunctive|active
-livymorph.irrvpraesum58|lexent.n38036|praefuissemus|first|plural|plupft|subjunctive|active
-livymorph.irrvpraesum59|lexent.n38036|praefuissetis|second|plural|plupft|subjunctive|active
-livymorph.irrvpraesum60|lexent.n38036|praefuissent|third|plural|plupft|subjunctive|active
+livymorph.irrvpraesum55|lexent.n38036|praefuissem|first|singular|pluperfect|subjunctive|active
+livymorph.irrvpraesum56|lexent.n38036|praefuisses|second|singular|pluperfect|subjunctive|active
+livymorph.irrvpraesum57|lexent.n38036|praefuisset|third|singular|pluperfect|subjunctive|active
+livymorph.irrvpraesum58|lexent.n38036|praefuissemus|first|plural|pluperfect|subjunctive|active
+livymorph.irrvpraesum59|lexent.n38036|praefuissetis|second|plural|pluperfect|subjunctive|active
+livymorph.irrvpraesum60|lexent.n38036|praefuissent|third|plural|pluperfect|subjunctive|active
 
 livymorph.irrvpraesum133|lexent.n38036|praees|second|singular|present|imperative|active
 livymorph.irrvpraesum134|lexent.n38036|praeeste|second|plural|present|imperative|active

@@ -57,15 +57,15 @@ function stemsarray(dirlist; delimiter = "|")
     irregiodict = Dict(
         [
         #"uninflected" => UninflectedIO("uninflected"),
-        "nouns" => IrregularNounIO("noun"),
-        #"verbs" => IrregularVerbIO("finite verb"),
+        #"nouns" => IrregularNounIO("noun"),
+        "verbs" => IrregularVerbIO("finite verb"),
         #"infinitives" => IrregularInfinitiveIO("infinitive"),
         #"adjectives" => IrregularAdjectiveIO("adjectives")
         ]
     )
     irregstemdirs = [
-        "nouns",
-        #"verbs",
+        #"nouns",
+        "verbs",
         #"infinitives",
         #"adjectives"
     ]

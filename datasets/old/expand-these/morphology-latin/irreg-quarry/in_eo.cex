@@ -14,12 +14,12 @@ livymorph.irrineo10|lexent.n23008|inibamus|first|plural|imperfect|indicative|act
 livymorph.irrineo11|lexent.n23008|inibatis|second|plural|imperfect|indicative|active
 livymorph.irrineo12|lexent.n23008|inibant|third|plural|imperfect|indicative|active
 
-livymorph.irrineo7|lexent.n23008|inieram|first|singular|plupft|indicative|active
-livymorph.irrineo8|lexent.n23008|inieras|second|singular|plupft|indicative|active
-livymorph.irrineo9|lexent.n23008|inierat|third|singular|plupft|indicative|active
-livymorph.irrineo10|lexent.n23008|inieramus|first|plural|plupft|indicative|active
-livymorph.irrineo11|lexent.n23008|inieratis|second|plural|plupft|indicative|active
-livymorph.irrineo12|lexent.n23008|inierant|third|plural|plupft|indicative|active
+livymorph.irrineo7|lexent.n23008|inieram|first|singular|pluperfect|indicative|active
+livymorph.irrineo8|lexent.n23008|inieras|second|singular|pluperfect|indicative|active
+livymorph.irrineo9|lexent.n23008|inierat|third|singular|pluperfect|indicative|active
+livymorph.irrineo10|lexent.n23008|inieramus|first|plural|pluperfect|indicative|active
+livymorph.irrineo11|lexent.n23008|inieratis|second|plural|pluperfect|indicative|active
+livymorph.irrineo12|lexent.n23008|inierant|third|plural|pluperfect|indicative|active
 
 
 livymorph.irrineo13|lexent.n23008|inibo|first|singular|future|indicative|active
@@ -43,12 +43,12 @@ livymorph.irrineo64|lexent.n23008|iniremus|first|plural|imperfect|subjunctive|ac
 livymorph.irrineo65|lexent.n23008|iniretis|second|plural|imperfect|subjunctive|active
 livymorph.irrineo66|lexent.n23008|inirent|third|plural|imperfect|subjunctive|active
 
-livymorph.irrineo79|lexent.n23008|inissem|first|singular|plupft|subjunctive|active
-livymorph.irrineo80|lexent.n23008|inisses|second|singular|plupft|subjunctive|active
-livymorph.irrineo81|lexent.n23008|inisset|third|singular|plupft|subjunctive|active
-livymorph.irrineo82|lexent.n23008|inissemus|first|plural|plupft|subjunctive|active
-livymorph.irrineo83|lexent.n23008|inissetis|second|plural|plupft|subjunctive|active
-livymorph.irrineo84|lexent.n23008|inissent|third|plural|plupft|subjunctive|active
+livymorph.irrineo79|lexent.n23008|inissem|first|singular|pluperfect|subjunctive|active
+livymorph.irrineo80|lexent.n23008|inisses|second|singular|pluperfect|subjunctive|active
+livymorph.irrineo81|lexent.n23008|inisset|third|singular|pluperfect|subjunctive|active
+livymorph.irrineo82|lexent.n23008|inissemus|first|plural|pluperfect|subjunctive|active
+livymorph.irrineo83|lexent.n23008|inissetis|second|plural|pluperfect|subjunctive|active
+livymorph.irrineo84|lexent.n23008|inissent|third|plural|pluperfect|subjunctive|active
 
 livymorph.irrineo91|lexent.n23008|ini|second|singular|present|imperative|active
 livymorph.irrineo92|lexent.n23008|inite|second|plural|present|imperative|active

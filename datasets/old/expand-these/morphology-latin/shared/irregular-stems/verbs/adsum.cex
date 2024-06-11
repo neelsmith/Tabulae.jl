@@ -30,19 +30,19 @@ latcommon.irrvadn101023|ls.n1010|adfuistis|second|plural|perfect|indicative|acti
 latcommon.irrvadn101024|ls.n1010|adfuerunt|third|plural|perfect|indicative|active
 latcommon.irrvadn101024b|ls.n1010|adfuere|third|plural|perfect|indicative|active
 
-latcommon.irrvadn101025|ls.n1010|adfueram|first|singular|plupft|indicative|active
-latcommon.irrvadn101026|ls.n1010|adfueras|second|singular|plupft|indicative|active
-latcommon.irrvadn101027|ls.n1010|adfuerat|third|singular|plupft|indicative|active
-latcommon.irrvadn101028|ls.n1010|adfueramus|first|plural|plupft|indicative|active
-latcommon.irrvadn101029|adlexent.n1010|adfueratis|second|plural|plupft|indicative|active
-latcommon.irrvadn101030|ls.n1010|adfuerant|third|plural|plupft|indicative|active
+latcommon.irrvadn101025|ls.n1010|adfueram|first|singular|pluperfect|indicative|active
+latcommon.irrvadn101026|ls.n1010|adfueras|second|singular|pluperfect|indicative|active
+latcommon.irrvadn101027|ls.n1010|adfuerat|third|singular|pluperfect|indicative|active
+latcommon.irrvadn101028|ls.n1010|adfueramus|first|plural|pluperfect|indicative|active
+latcommon.irrvadn101029|adlexent.n1010|adfueratis|second|plural|pluperfect|indicative|active
+latcommon.irrvadn101030|ls.n1010|adfuerant|third|plural|pluperfect|indicative|active
 
-latcommon.irrvadn101031|ls.n1010|adfuero|first|singular|futpft|indicative|active
-latcommon.irrvadn101032|ls.n1010|adfueris|second|singular|futpft|indicative|active
-latcommon.irrvadn101033|ls.n1010|adfuerit|third|singular|futpft|indicative|active
-latcommon.irrvadn101034|ls.n1010|adfuerimus|first|plural|futpft|indicative|active
-latcommon.irrvadn101035|ls.n1010|adfueritis|second|plural|futpft|indicative|active
-latcommon.irrvadn101036|ls.n1010|adfuerint|third|plural|futpft|indicative|active
+latcommon.irrvadn101031|ls.n1010|adfuero|first|singular|future_perfect|indicative|active
+latcommon.irrvadn101032|ls.n1010|adfueris|second|singular|future_perfect|indicative|active
+latcommon.irrvadn101033|ls.n1010|adfuerit|third|singular|future_perfect|indicative|active
+latcommon.irrvadn101034|ls.n1010|adfuerimus|first|plural|future_perfect|indicative|active
+latcommon.irrvadn101035|ls.n1010|adfueritis|second|plural|future_perfect|indicative|active
+latcommon.irrvadn101036|ls.n1010|adfuerint|third|plural|future_perfect|indicative|active
 
 latcommon.irrvadn101037|ls.n1010|adsim|first|singular|present|subjunctive|active
 latcommon.irrvadn101038|ls.n1010|adsis|second|singular|present|subjunctive|active
@@ -65,12 +65,12 @@ latcommon.irrvadn101052|ls.n1010|adfuerimus|first|plural|perfect|subjunctive|act
 latcommon.irrvadn101053|ls.n1010|adfueritis|second|plural|perfect|subjunctive|active
 latcommon.irrvadn101054|ls.n1010|adfuerint|third|plural|perfect|subjunctive|active
 
-latcommon.irrvadn101055|ls.n1010|adfuissem|first|singular|plupft|subjunctive|active
-latcommon.irrvadn101056|ls.n1010|adfuisses|second|singular|plupft|subjunctive|active
-latcommon.irrvadn101057|ls.n1010|adfuisset|third|singular|plupft|subjunctive|active
-latcommon.irrvadn101058|ls.n1010|adfuissemus|first|plural|plupft|subjunctive|active
-latcommon.irrvadn101059|ls.n1010|adfuissetis|second|plural|plupft|subjunctive|active
-latcommon.irrvadn101060|ls.n1010|adfuissent|third|plural|plupft|subjunctive|active
+latcommon.irrvadn101055|ls.n1010|adfuissem|first|singular|pluperfect|subjunctive|active
+latcommon.irrvadn101056|ls.n1010|adfuisses|second|singular|pluperfect|subjunctive|active
+latcommon.irrvadn101057|ls.n1010|adfuisset|third|singular|pluperfect|subjunctive|active
+latcommon.irrvadn101058|ls.n1010|adfuissemus|first|plural|pluperfect|subjunctive|active
+latcommon.irrvadn101059|ls.n1010|adfuissetis|second|plural|pluperfect|subjunctive|active
+latcommon.irrvadn101060|ls.n1010|adfuissent|third|plural|pluperfect|subjunctive|active
 
 latcommon.irrvadn1010133|ls.n1010|ades|second|singular|present|imperative|active
 latcommon.irrvadn1010134|ls.n1010|adeste|second|plural|present|imperative|active

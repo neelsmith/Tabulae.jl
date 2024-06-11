@@ -29,19 +29,19 @@ latcommon.n37193x|ls.n37193|potuistis|second|plural|perfect|indicative|active
 latcommon.n37193y|ls.n37193|potuerunt|third|plural|perfect|indicative|active
 latcommon.n37193z|ls.n37193|potuere|third|plural|perfect|indicative|active
 
-latcommon.n37193aa|ls.n37193|potueram|first|singular|plupft|indicative|active
-latcommon.n37193ab|ls.n37193|potueras|second|singular|plupft|indicative|active
-latcommon.n37193ac|ls.n37193|potuerat|third|singular|plupft|indicative|active
-latcommon.n37193ad|ls.n37193|potueramus|first|plural|plupft|indicative|active
-latcommon.n37193ae|ls.n37193|potueratis|second|plural|plupft|indicative|active
-latcommon.n37193af|ls.n37193|potuerant|third|plural|plupft|indicative|active
+latcommon.n37193aa|ls.n37193|potueram|first|singular|pluperfect|indicative|active
+latcommon.n37193ab|ls.n37193|potueras|second|singular|pluperfect|indicative|active
+latcommon.n37193ac|ls.n37193|potuerat|third|singular|pluperfect|indicative|active
+latcommon.n37193ad|ls.n37193|potueramus|first|plural|pluperfect|indicative|active
+latcommon.n37193ae|ls.n37193|potueratis|second|plural|pluperfect|indicative|active
+latcommon.n37193af|ls.n37193|potuerant|third|plural|pluperfect|indicative|active
 
-latcommon.n37193ag|ls.n37193|potuero|first|singular|futpft|indicative|active
-latcommon.n37193ah|ls.n37193|potueris|second|singular|futpft|indicative|active
-latcommon.n37193ai|ls.n37193|potuerit|third|singular|futpft|indicative|active
-latcommon.n37193aj|ls.n37193|potuerimus|first|plural|futpft|indicative|active
-latcommon.n37193ak|ls.n37193|potueritis|second|plural|futpft|indicative|active
-latcommon.n37193al|ls.n37193|potuerint|third|plural|futpft|indicative|active
+latcommon.n37193ag|ls.n37193|potuero|first|singular|future_perfect|indicative|active
+latcommon.n37193ah|ls.n37193|potueris|second|singular|future_perfect|indicative|active
+latcommon.n37193ai|ls.n37193|potuerit|third|singular|future_perfect|indicative|active
+latcommon.n37193aj|ls.n37193|potuerimus|first|plural|future_perfect|indicative|active
+latcommon.n37193ak|ls.n37193|potueritis|second|plural|future_perfect|indicative|active
+latcommon.n37193al|ls.n37193|potuerint|third|plural|future_perfect|indicative|active
 
 latcommon.n37193am|ls.n37193|possim|first|singular|present|subjunctive|active
 latcommon.n37193an|ls.n37193|possis|second|singular|present|subjunctive|active
@@ -64,9 +64,9 @@ latcommon.n37193bb|ls.n37193|potuerimus|first|plural|perfect|subjunctive|active
 latcommon.n37193bc|ls.n37193|potueritis|second|plural|perfect|subjunctive|active
 latcommon.n37193bd|ls.n37193|potuerint|third|plural|perfect|subjunctive|active
 
-latcommon.n37193be|ls.n37193|potuissem|first|singular|plupft|subjunctive|active
-latcommon.n37193bf|ls.n37193|potuisses|second|singular|plupft|subjunctive|active
-latcommon.n37193bg|ls.n37193|potuisset|third|singular|plupft|subjunctive|active
-latcommon.n37193bh|ls.n37193|potuissemus|first|plural|plupft|subjunctive|active
-latcommon.n37193bi|ls.n37193|potuissetis|second|plural|plupft|subjunctive|active
-latcommon.n37193bj|ls.n37193|potuissent|third|plural|plupft|subjunctive|active
+latcommon.n37193be|ls.n37193|potuissem|first|singular|pluperfect|subjunctive|active
+latcommon.n37193bf|ls.n37193|potuisses|second|singular|pluperfect|subjunctive|active
+latcommon.n37193bg|ls.n37193|potuisset|third|singular|pluperfect|subjunctive|active
+latcommon.n37193bh|ls.n37193|potuissemus|first|plural|pluperfect|subjunctive|active
+latcommon.n37193bi|ls.n37193|potuissetis|second|plural|pluperfect|subjunctive|active
+latcommon.n37193bj|ls.n37193|potuissent|third|plural|pluperfect|subjunctive|active

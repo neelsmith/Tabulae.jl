@@ -1,5 +1,5 @@
 abstract type TabulaeStem <: Stem end
-
+abstract type TabulaeIrregularStem <: TabulaeStem end
 
 """Find lexeme identifier recorded in `stem`.
 $(SIGNATURES)

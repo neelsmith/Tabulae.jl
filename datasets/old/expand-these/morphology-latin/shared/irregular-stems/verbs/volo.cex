@@ -30,19 +30,19 @@ latcommon.irrvadn5129823|ls.n51298|voluistis|second|plural|perfect|indicative|ac
 latcommon.irrvadn5129824|ls.n51298|voluerunt|third|plural|perfect|indicative|active
 latcommon.irrvadn5129824b|ls.n51298|voluere|third|plural|perfect|indicative|active
 
-latcommon.irrvadn5129825|ls.n51298|volueram|first|singular|plupft|indicative|active
-latcommon.irrvadn5129826|ls.n51298|volueras|second|singular|plupft|indicative|active
-latcommon.irrvadn5129827|ls.n51298|voluerat|third|singular|plupft|indicative|active
-latcommon.irrvadn5129828|ls.n51298|volueramus|first|plural|plupft|indicative|active
-latcommon.irrvadn5129829|ls.n51298|volueratis|second|plural|plupft|indicative|active
-latcommon.irrvadn5129830|ls.n51298|voluerant|third|plural|plupft|indicative|active
+latcommon.irrvadn5129825|ls.n51298|volueram|first|singular|pluperfect|indicative|active
+latcommon.irrvadn5129826|ls.n51298|volueras|second|singular|pluperfect|indicative|active
+latcommon.irrvadn5129827|ls.n51298|voluerat|third|singular|pluperfect|indicative|active
+latcommon.irrvadn5129828|ls.n51298|volueramus|first|plural|pluperfect|indicative|active
+latcommon.irrvadn5129829|ls.n51298|volueratis|second|plural|pluperfect|indicative|active
+latcommon.irrvadn5129830|ls.n51298|voluerant|third|plural|pluperfect|indicative|active
 
-latcommon.irrvadn5129831|ls.n51298|voluero|first|singular|futpft|indicative|active
-latcommon.irrvadn5129832|ls.n51298|volueris|second|singular|futpft|indicative|active
-latcommon.irrvadn5129833|ls.n51298|voluerit|third|singular|futpft|indicative|active
-latcommon.irrvadn5129834|ls.n51298|voluerimus|first|plural|futpft|indicative|active
-latcommon.irrvadn5129835|ls.n51298|volueritis|second|plural|futpft|indicative|active
-latcommon.irrvadn5129836|ls.n51298|voluerint|third|plural|futpft|indicative|active
+latcommon.irrvadn5129831|ls.n51298|voluero|first|singular|future_perfect|indicative|active
+latcommon.irrvadn5129832|ls.n51298|volueris|second|singular|future_perfect|indicative|active
+latcommon.irrvadn5129833|ls.n51298|voluerit|third|singular|future_perfect|indicative|active
+latcommon.irrvadn5129834|ls.n51298|voluerimus|first|plural|future_perfect|indicative|active
+latcommon.irrvadn5129835|ls.n51298|volueritis|second|plural|future_perfect|indicative|active
+latcommon.irrvadn5129836|ls.n51298|voluerint|third|plural|future_perfect|indicative|active
 
 latcommon.irrvadn5129837|ls.n51298|velim|first|singular|present|subjunctive|active
 latcommon.irrvadn5129838|ls.n51298|velis|second|singular|present|subjunctive|active
@@ -65,9 +65,9 @@ latcommon.irrvadn5129852|ls.n51298|voluerimus|first|plural|perfect|subjunctive|a
 latcommon.irrvadn5129853|ls.n51298|volueritis|second|plural|perfect|subjunctive|active
 latcommon.irrvadn5129854|ls.n51298|voluerint|third|plural|perfect|subjunctive|active
 
-latcommon.irrvadn5129855|ls.n51298|voluissem|first|singular|plupft|subjunctive|active
-latcommon.irrvadn5129856|ls.n51298|voluisses|second|singular|plupft|subjunctive|active
-latcommon.irrvadn5129857|ls.n51298|voluisset|third|singular|plupft|subjunctive|active
-latcommon.irrvadn5129858|ls.n51298|voluissemus|first|plural|plupft|subjunctive|active
-latcommon.irrvadn5129859|ls.n51298|voluissetis|second|plural|plupft|subjunctive|active
-latcommon.irrvadn5129860|ls.n51298|voluissent|third|plural|plupft|subjunctive|active
+latcommon.irrvadn5129855|ls.n51298|voluissem|first|singular|pluperfect|subjunctive|active
+latcommon.irrvadn5129856|ls.n51298|voluisses|second|singular|pluperfect|subjunctive|active
+latcommon.irrvadn5129857|ls.n51298|voluisset|third|singular|pluperfect|subjunctive|active
+latcommon.irrvadn5129858|ls.n51298|voluissemus|first|plural|pluperfect|subjunctive|active
+latcommon.irrvadn5129859|ls.n51298|voluissetis|second|plural|pluperfect|subjunctive|active
+latcommon.irrvadn5129860|ls.n51298|voluissent|third|plural|pluperfect|subjunctive|active

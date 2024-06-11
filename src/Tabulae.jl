@@ -57,6 +57,7 @@ export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
 export NounIO, VerbIO, InfinitiveIO, ParticipleIO
+export IrregularVerbIO
 
 export TabulaeRule, inflectionType, ending, id
 export delimitedrule, fromdelimited, formrule
@@ -105,6 +106,7 @@ include("citable_forms/participle.jl")
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
 include("citable_stems/regularverbs.jl")
+include("citable_stems/irregularfiniteverbs.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
