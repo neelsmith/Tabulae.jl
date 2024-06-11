@@ -1,6 +1,5 @@
 
 
-
 # Tabulae.jl
 
 Build Latin morphological parsers from simple delimited-text tables.
@@ -30,7 +29,7 @@ Version 0.10.0 is a complete rewrite of the package built on a new type hierarch
 
 | Analytical type	| morphology | analyze | generate |
 | --- | --- | --- | --- |
-| finite verb |  | |  |
+| finite verb | ✅  |✅  | ✅ |
 | infinitive | |||
 | noun | |||
 | pronoun | |||
