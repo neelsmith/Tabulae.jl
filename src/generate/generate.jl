@@ -76,5 +76,3 @@ $(SIGNATURES)
 function generate(stem::TStem, rule::TRule, td::Tabulae.Dataset)::Vector{Analysis} where {TRule <: TabulaeRule, TStem <: TabulaeStem}
     generate(lmForm(rule), lexemeurn(stem), td)
 end 
-
-

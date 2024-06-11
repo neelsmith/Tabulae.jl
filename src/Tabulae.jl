@@ -57,7 +57,7 @@ export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
 export NounIO, VerbIO, InfinitiveIO, ParticipleIO
-export IrregularVerbIO
+export IrregularReaderIO, IrregularVerbIO
 
 export TabulaeRule, inflectionType, ending, id
 export delimitedrule, fromdelimited, formrule
@@ -68,12 +68,11 @@ export TabulaeParticipleRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
-export TabulaeVerbStem
+export TabulaeVerbStem, TabulaeIrregularVerb
 
 export TabulaeStringParser, tabulaeStringParser
 export analysis_line, analysis_lines
 
-#export parsetoken, generate
 
 export md_declension
 export md_tenseconjugation
@@ -113,6 +112,7 @@ include("citable_rules/nouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
 include("citable_rules/participles.jl")
+include("citable_rules/irregulars.jl")
 
 include("generate/generate.jl")
 

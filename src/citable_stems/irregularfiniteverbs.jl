@@ -20,6 +20,20 @@ end
 =#
 
 
+function tokenvalue(irrv::TabulaeIrregularVerb)
+    irrv.form
+end
+
+function lmForm(irrv::TabulaeIrregularVerb)
+    LMFFiniteVerb(
+        lmpPerson(irrv),
+        lmpNumber(irrv),
+        lmpTense(irrv),
+        lmpMood(irrv),
+        lmpVoice(irrv)
+    )
+end
+
 """Identify person of `verb`.
 $(SIGNATURES)
 """
@@ -58,7 +72,6 @@ function lmpVoice(verb::TabulaeIrregularVerb)
 end
 
 
-
 """
 Read one row of a stems table for irregular finite verb tokens and create an `TabulaeIrregularVerb`.
 
@@ -87,7 +100,6 @@ function readstemrow(usp::IrregularVerbIO, delimited::AbstractString; delimiter 
 
     TabulaeIrregularVerb(stemid,lexid,stem,p,n,t,m,v, inflclass)
 end
-
 
 
 """Irregular verb stems are citable by Cite2Urn"""

@@ -161,7 +161,7 @@ function verbanalyses(td::Tabulae.Dataset)::Vector{Analysis}
     stems = stemsarray(td)
     verbstems = filter(s -> s isa TabulaeVerbStem, stems)
     for (i, verbstem) in enumerate(verbstems)
-        @info("Analyzing verb $(i)/$(length(verbstems))")
+        @debug("Analyzing verb $(i)/$(length(verbstems))")
         for f in finiteverbforms()
             generated = generate(lexemeurn(verbstem), f, td)
             for g in generated
@@ -243,7 +243,7 @@ function verbanalyses(verbstems::Vector{Stem}, rules::Vector{Rule})::Vector{Anal
     analysislist = []
 
     for (i, verbstem) in enumerate(verbstems)
-        @info("Analyzing verb $(i)/$(length(verbstems))")
+        @debug("Analyzing verb $(i)/$(length(verbstems))")
         for f in finiteverbforms()
             generated = generate(lexemeurn(verbstem),  f, rules)
             for g in generated
