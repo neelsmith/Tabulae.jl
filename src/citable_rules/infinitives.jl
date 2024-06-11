@@ -17,9 +17,6 @@ function formrule(id::AbstractString, infltype::AbstractString, ending::Abstract
     )
 end
 
-function id(r::TabulaeInfinitiveRule)
-    r.ruleid
-end
 
 
 """Create a `LMFInfinitive` from `rule`.
