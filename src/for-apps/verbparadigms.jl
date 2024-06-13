@@ -110,9 +110,9 @@ end
 by LexemeUrn.
 $(SIGNATURES)
 """
-function verb_conjugation_md(lexu::LexemeUrn, td::Tabulae.Dataset)
+function md_verb_conjugation(lexu::LexemeUrn, td::Tabulae.Dataset)
     sections = [   
-        presentsystem_md(lexu, td),
+        md_presentsystem(lexu, td),
         #futuretense_md(lexu, kd),
         #aoristtense_md(lexu, kd),
         #perfectsystem_md(lexu, kd),
@@ -168,7 +168,7 @@ end
 """Compose markdown for conjugation in the present system of the verb identified by LexemeUrn.
 $(SIGNATURES)
 """
-function presentsystem_md(lexu::LexemeUrn, td::Tabulae.Dataset)
+function md_presentsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
  
     inf_act = LMFInfinitive(
         lmpTense("present"), lmpVoice("active")

@@ -75,7 +75,7 @@ export analysis_line, analysis_lines
 
 
 export md_declension
-export md_tenseconjugation
+export md_tenseconjugation, md_verb_conjugation
 
 include("tabulaeio.jl")
 include("dataset/dataset.jl")
