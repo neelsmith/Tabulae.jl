@@ -53,6 +53,8 @@ export LatinMorphologicalForm, lmForm, code
 export analyses
 export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
+export LMFParticiple, lmfParticiple
+
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
