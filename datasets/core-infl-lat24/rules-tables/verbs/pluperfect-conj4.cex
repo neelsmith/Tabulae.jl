@@ -1,15 +1,15 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
-latcommon.ere_plupft1|conj4|veram|first|singular|pluperfect|indicative|active
-latcommon.ere_plupft2|conj4|veras|second|singular|pluperfect|indicative|active
-latcommon.ere_plupft3|conj4|verat|third|singular|pluperfect|indicative|active
-latcommon.ere_plupft4|conj4|veramus|first|plural|pluperfect|indicative|active
-latcommon.ere_plupft5|conj4|veratis|second|plural|pluperfect|indicative|active
-latcommon.ere_plupft6|conj4|verant|third|plural|pluperfect|indicative|active
+lat24.ere_plupft1|conj4|veram|first|singular|pluperfect|indicative|active
+lat24.ere_plupft2|conj4|veras|second|singular|pluperfect|indicative|active
+lat24.ere_plupft3|conj4|verat|third|singular|pluperfect|indicative|active
+lat24.ere_plupft4|conj4|veramus|first|plural|pluperfect|indicative|active
+lat24.ere_plupft5|conj4|veratis|second|plural|pluperfect|indicative|active
+lat24.ere_plupft6|conj4|verant|third|plural|pluperfect|indicative|active
 
-latcommon.ere_plupft7|conj4|vissem|first|singular|pluperfect|subjunctive|active
-latcommon.ere_plupft8|conj4|visses|second|singular|pluperfect|subjunctive|active
-latcommon.ere_plupft9|conj4|visset|third|singular|pluperfect|subjunctive|active
-latcommon.ere_plupft10|conj4|vissemus|first|plural|pluperfect|subjunctive|active
-latcommon.ere_plupft11|conj4|vissetis|second|plural|pluperfect|subjunctive|active
-latcommon.ere_plupft12|conj4|vissent|third|plural|pluperfect|subjunctive|active
+lat24.ere_plupft7|conj4|vissem|first|singular|pluperfect|subjunctive|active
+lat24.ere_plupft8|conj4|visses|second|singular|pluperfect|subjunctive|active
+lat24.ere_plupft9|conj4|visset|third|singular|pluperfect|subjunctive|active
+lat24.ere_plupft10|conj4|vissemus|first|plural|pluperfect|subjunctive|active
+lat24.ere_plupft11|conj4|vissetis|second|plural|pluperfect|subjunctive|active
+lat24.ere_plupft12|conj4|vissent|third|plural|pluperfect|subjunctive|active

@@ -1,8 +1,8 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
-latcommon.ire_futpft1|conj4|vero|first|singular|future_perfect|indicative|active
-latcommon.ire_futpft2|conj4|veris|second|singular|future_perfect|indicative|active
-latcommon.ire_futpft3|conj4|verit|third|singular|future_perfect|indicative|active
-latcommon.ire_futpft4|conj4|verimus|first|plural|future_perfect|indicative|active
-latcommon.ire_futpft5|conj4|veritis|second|plural|future_perfect|indicative|active
-latcommon.ire_futpft6|conj4|verint|third|plural|future_perfect|indicative|active
+lat24.ire_futpft1|conj4|vero|first|singular|future_perfect|indicative|active
+lat24.ire_futpft2|conj4|veris|second|singular|future_perfect|indicative|active
+lat24.ire_futpft3|conj4|verit|third|singular|future_perfect|indicative|active
+lat24.ire_futpft4|conj4|verimus|first|plural|future_perfect|indicative|active
+lat24.ire_futpft5|conj4|veritis|second|plural|future_perfect|indicative|active
+lat24.ire_futpft6|conj4|verint|third|plural|future_perfect|indicative|active

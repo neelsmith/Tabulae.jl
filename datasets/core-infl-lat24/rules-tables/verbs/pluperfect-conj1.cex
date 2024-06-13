@@ -1,15 +1,15 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
 
-latcommon.ere_plupft1|conj1|averam|first|singular|pluperfect|indicative|active
-latcommon.ere_plupft2|conj1|averas|second|singular|pluperfect|indicative|active
-latcommon.ere_plupft3|conj1|averat|third|singular|pluperfect|indicative|active
-latcommon.ere_plupft4|conj1|averamus|first|plural|pluperfect|indicative|active
-latcommon.ere_plupft5|conj1|averatis|second|plural|pluperfect|indicative|active
-latcommon.ere_plupft6|conj1|averant|third|plural|pluperfect|indicative|active
+lat24.ere_plupft1|conj1|averam|first|singular|pluperfect|indicative|active
+lat24.ere_plupft2|conj1|averas|second|singular|pluperfect|indicative|active
+lat24.ere_plupft3|conj1|averat|third|singular|pluperfect|indicative|active
+lat24.ere_plupft4|conj1|averamus|first|plural|pluperfect|indicative|active
+lat24.ere_plupft5|conj1|averatis|second|plural|pluperfect|indicative|active
+lat24.ere_plupft6|conj1|averant|third|plural|pluperfect|indicative|active
 
-latcommon.ere_plupft7|conj1|avissem|first|singular|pluperfect|subjunctive|active
-latcommon.ere_plupft8|conj1|avisses|second|singular|pluperfect|subjunctive|active
-latcommon.ere_plupft9|conj1|avisset|third|singular|pluperfect|subjunctive|active
-latcommon.ere_plupft10|conj1|avissemus|first|plural|pluperfect|subjunctive|active
-latcommon.ere_plupft11|conj1|avissetis|second|plural|pluperfect|subjunctive|active
-latcommon.ere_plupft12|conj1|avissent|third|plural|pluperfect|subjunctive|active
+lat24.ere_plupft7|conj1|avissem|first|singular|pluperfect|subjunctive|active
+lat24.ere_plupft8|conj1|avisses|second|singular|pluperfect|subjunctive|active
+lat24.ere_plupft9|conj1|avisset|third|singular|pluperfect|subjunctive|active
+lat24.ere_plupft10|conj1|avissemus|first|plural|pluperfect|subjunctive|active
+lat24.ere_plupft11|conj1|avissetis|second|plural|pluperfect|subjunctive|active
+lat24.ere_plupft12|conj1|avissent|third|plural|pluperfect|subjunctive|active

@@ -1,7 +1,7 @@
 RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
-latcommon.pftact_futpft1|conj1|avero|first|singular|future_perfect|indicative|active
-latcommon.pftact_futpft2|conj1|averis|second|singular|future_perfect|indicative|active
-latcommon.pftact_futpft3|conj1|averit|third|singular|future_perfect|indicative|active
-latcommon.pftact_futpft4|conj1|averimus|first|plural|future_perfect|indicative|active
-latcommon.pftact_futpft5|conj1|averitis|second|plural|future_perfect|indicative|active
-latcommon.pftact_futpft6|conj1|averint|third|plural|future_perfect|indicative|active
+lat25.pftact_futpft1|conj1|avero|first|singular|future_perfect|indicative|active
+lat25.pftact_futpft2|conj1|averis|second|singular|future_perfect|indicative|active
+lat25.pftact_futpft3|conj1|averit|third|singular|future_perfect|indicative|active
+lat25.pftact_futpft4|conj1|averimus|first|plural|future_perfect|indicative|active
+lat25.pftact_futpft5|conj1|averitis|second|plural|future_perfect|indicative|active
+lat25.pftact_futpft6|conj1|averint|third|plural|future_perfect|indicative|active
