@@ -1,5 +1,28 @@
 # Third-conjugation verbs
 
-::: {.callout-caution}
-TBA
-:::
+
+```{julia}
+#| warning: false
+#| output: false
+#| echo: false
+
+
+repo = pwd() |> dirname |> dirname
+
+using Tabulae, CitableParserBuilder
+using  Markdown
+
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+ds = dataset([shareddir, lat25dir])
+```
+
+`ds` is a core data set:
+
+
+```{julia}
+#| warning: false
+#| asis: true
+credo = LexemeUrn("ls.n11525")
+md_verb_conjugation(credo,ds) |> Markdown.parse
+```

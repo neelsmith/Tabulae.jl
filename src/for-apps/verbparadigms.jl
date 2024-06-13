@@ -113,14 +113,22 @@ $(SIGNATURES)
 function md_verb_conjugation(lexu::LexemeUrn, td::Tabulae.Dataset)
     sections = [   
         md_presentsystem(lexu, td),
-        #futuretense_md(lexu, kd),
-        #aoristtense_md(lexu, kd),
-        #perfectsystem_md(lexu, kd),
+        md_futuresystem(lexu, td),
+        md_perfectsystem(lexu, td),
     ]
     join(sections, "\n\n")
 end
 
 
+function md_futuresystem(lexu::LexemeUrn, td::Tabulae.Dataset)
+    "## TBA: future system"
+end
+
+
+
+function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
+    "## TBA: perfect system"
+end
 
 """Compose markdown table with imperative conjugation of `lex`.
 $(SIGNATURES)
@@ -203,15 +211,15 @@ function md_presentsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
 
     "### Infinitives","",
 
-    "**active**: " * inf_actforms,"",
-    "**passive**: " * inf_passforms,"",
+    "*active*: " * inf_actforms,"",
+    "*passive*: " * inf_passforms,"",
 
     
 
 
     "### Participles","",
 
-    "**active**: " * actptcpl,
+    "*active*: " * actptcpl,
 
 
 

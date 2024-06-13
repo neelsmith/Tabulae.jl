@@ -9,6 +9,7 @@
 repo = pwd() |> dirname |> dirname
 
 using Tabulae, CitableParserBuilder
+using  Markdown
 
 shareddir = joinpath(repo, "datasets", "core-infl-shared") 
 lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
@@ -21,7 +22,6 @@ ds = dataset([shareddir, lat25dir])
 ```{julia}
 #| warning: false
 #| asis: true
-using  Markdown
 amo = LexemeUrn("ls.n2280")
 md_verb_conjugation(amo,ds) |> Markdown.parse
 ```
