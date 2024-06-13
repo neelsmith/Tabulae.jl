@@ -1,36 +1,36 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
-latcommon.irregpron24872a|ls.n24872|ipse|masculine|nominative|sg
-latcommon.irregpron24872b|ls.n24872|ipsius|masculine|genitive|sg
-latcommon.irregpron24872c|ls.n24872|ipsi|masculine|dative|sg
-latcommon.irregpron24872d|ls.n24872|ipsum|masculine|accusative|sg
-latcommon.irregpron24872e|ls.n24872|ipso|masculine|ablative|sg
+latcommon.irregpron24872a|ls.n24872|ipse|masculine|nominative|singular
+latcommon.irregpron24872b|ls.n24872|ipsius|masculine|genitive|singular
+latcommon.irregpron24872c|ls.n24872|ipsi|masculine|dative|singular
+latcommon.irregpron24872d|ls.n24872|ipsum|masculine|accusative|singular
+latcommon.irregpron24872e|ls.n24872|ipso|masculine|ablative|singular
 
-latcommon.irregpron24872f|ls.n24872|ipsi|masculine|nominative|pl
-latcommon.irregpron24872g|ls.n24872|ipsorum|masculine|genitive|pl
-latcommon.irregpron24872h|ls.n24872|ipsis|masculine|dative|pl
-latcommon.irregpron24872i|ls.n24872|ipsos|masculine|accusative|pl
-latcommon.irregpron24872j|ls.n24872|ipsis|masculine|ablative|pl
+latcommon.irregpron24872f|ls.n24872|ipsi|masculine|nominative|plural
+latcommon.irregpron24872g|ls.n24872|ipsorum|masculine|genitive|plural
+latcommon.irregpron24872h|ls.n24872|ipsis|masculine|dative|plural
+latcommon.irregpron24872i|ls.n24872|ipsos|masculine|accusative|plural
+latcommon.irregpron24872j|ls.n24872|ipsis|masculine|ablative|plural
 
-latcommon.irregpron24872k|ls.n24872|ipsa|feminine|nominative|sg
-latcommon.irregpron24872l|ls.n24872|ipsius|feminine|genitive|sg
-latcommon.irregpron24872m|ls.n24872|ipsi|feminine|dative|sg
-latcommon.irregpron24872n|ls.n24872|ipsam|feminine|accusative|sg
-latcommon.irregpron24872o|ls.n24872|ipsa|feminine|ablative|sg
+latcommon.irregpron24872k|ls.n24872|ipsa|feminine|nominative|singular
+latcommon.irregpron24872l|ls.n24872|ipsius|feminine|genitive|singular
+latcommon.irregpron24872m|ls.n24872|ipsi|feminine|dative|singular
+latcommon.irregpron24872n|ls.n24872|ipsam|feminine|accusative|singular
+latcommon.irregpron24872o|ls.n24872|ipsa|feminine|ablative|singular
 
-latcommon.irregpron24872p|ls.n24872|ipsae|feminine|nominative|pl
-latcommon.irregpron24872q|ls.n24872|ipsarum|feminine|genitive|pl
-latcommon.irregpron24872r|ls.n24872|ipsis|feminine|dative|pl
-latcommon.irregpron24872s|ls.n24872|ipsas|feminine|accusative|pl
-latcommon.irregpron24872t|ls.n24872|ipsis|feminine|ablative|pl
+latcommon.irregpron24872p|ls.n24872|ipsae|feminine|nominative|plural
+latcommon.irregpron24872q|ls.n24872|ipsarum|feminine|genitive|plural
+latcommon.irregpron24872r|ls.n24872|ipsis|feminine|dative|plural
+latcommon.irregpron24872s|ls.n24872|ipsas|feminine|accusative|plural
+latcommon.irregpron24872t|ls.n24872|ipsis|feminine|ablative|plural
 
-latcommon.irregpron24872u|ls.n24872|ipsum|neuter|nominative|sg
-latcommon.irregpron24872v|ls.n24872|ipsius|neuter|genitive|sg
-latcommon.irregpron24872w|ls.n24872|ipsi|neuter|dative|sg
-latcommon.irregpron24872x|ls.n24872|ipsum|neuter|accusative|sg
-latcommon.irregpron24872y|ls.n24872|ipso|neuter|ablative|sg
+latcommon.irregpron24872u|ls.n24872|ipsum|neuter|nominative|singular
+latcommon.irregpron24872v|ls.n24872|ipsius|neuter|genitive|singular
+latcommon.irregpron24872w|ls.n24872|ipsi|neuter|dative|singular
+latcommon.irregpron24872x|ls.n24872|ipsum|neuter|accusative|singular
+latcommon.irregpron24872y|ls.n24872|ipso|neuter|ablative|singular
 
-latcommon.irregpron24872z|ls.n24872|ipsa|neuter|nominative|pl
-latcommon.irregpron24872aa|ls.n24872|ipsorum|neuter|genitive|pl
-latcommon.irregpron24872ab|ls.n24872|ipsis|neuter|dative|pl
-latcommon.irregpron24872ac|ls.n24872|ipsa|neuter|accusative|pl
-latcommon.irregpron24872ad|ls.n24872|ipsis|neuter|ablative|pl
+latcommon.irregpron24872z|ls.n24872|ipsa|neuter|nominative|plural
+latcommon.irregpron24872aa|ls.n24872|ipsorum|neuter|genitive|plural
+latcommon.irregpron24872ab|ls.n24872|ipsis|neuter|dative|plural
+latcommon.irregpron24872ac|ls.n24872|ipsa|neuter|accusative|plural
+latcommon.irregpron24872ad|ls.n24872|ipsis|neuter|ablative|plural

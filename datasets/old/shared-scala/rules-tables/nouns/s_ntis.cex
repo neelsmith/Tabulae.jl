@@ -1,30 +1,30 @@
 RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
-latcommoninfl.s_ntis1|s_ntis|s|masculine|nominative|sg
-latcommoninfl.s_ntis2|s_ntis|ntis|masculine|genitive|sg
-latcommoninfl.s_ntis3|s_ntis|nti|masculine|dative|sg
-latcommoninfl.s_ntis4|s_ntis|ntem|masculine|accusative|sg
-latcommoninfl.s_ntis5|s_ntis|nte|masculine|ablative|sg
-latcommoninfl.s_ntis6|s_ntis|ntes|masculine|nominative|pl
-latcommoninfl.s_ntis7|s_ntis|ntum|masculine|genitive|pl
-latcommoninfl.s_ntis8|s_ntis|ntibus|masculine|dative|pl
-latcommoninfl.s_ntis9|s_ntis|ntes|masculine|accusative|pl
-latcommoninfl.s_ntis10|s_ntis|ntibus|masculine|ablative|pl
-latcommoninfl.s_ntis11|s_ntis|s|masculine|vocative|sg
-latcommoninfl.s_ntis12|s_ntis|ntes|masculine|vocative|pl
+latcommoninfl.s_ntis1|s_ntis|s|masculine|nominative|singular
+latcommoninfl.s_ntis2|s_ntis|ntis|masculine|genitive|singular
+latcommoninfl.s_ntis3|s_ntis|nti|masculine|dative|singular
+latcommoninfl.s_ntis4|s_ntis|ntem|masculine|accusative|singular
+latcommoninfl.s_ntis5|s_ntis|nte|masculine|ablative|singular
+latcommoninfl.s_ntis6|s_ntis|ntes|masculine|nominative|plural
+latcommoninfl.s_ntis7|s_ntis|ntum|masculine|genitive|plural
+latcommoninfl.s_ntis8|s_ntis|ntibus|masculine|dative|plural
+latcommoninfl.s_ntis9|s_ntis|ntes|masculine|accusative|plural
+latcommoninfl.s_ntis10|s_ntis|ntibus|masculine|ablative|plural
+latcommoninfl.s_ntis11|s_ntis|s|masculine|vocative|singular
+latcommoninfl.s_ntis12|s_ntis|ntes|masculine|vocative|plural
 
 
 
 
-latcommoninfl.s_ntis1f|s_ntis|s|feminine|nominative|sg
-latcommoninfl.s_ntis2f|s_ntis|ntis|feminine|genitive|sg
-latcommoninfl.s_ntis3f|s_ntis|nti|feminine|dative|sg
-latcommoninfl.s_ntis4f|s_ntis|ntem|feminine|accusative|sg
-latcommoninfl.s_ntis5f|s_ntis|nte|feminine|ablative|sg
-latcommoninfl.s_ntis6f|s_ntis|ntes|feminine|nominative|pl
-latcommoninfl.s_ntis7f|s_ntis|ntum|feminine|genitive|pl
-latcommoninfl.s_ntis8f|s_ntis|ntibus|feminine|dative|pl
-latcommoninfl.s_ntis9f|s_ntis|ntes|feminine|accusative|pl
-latcommoninfl.s_ntis10f|s_ntis|ntibus|feminine|ablative|pl
-latcommoninfl.s_ntis11f|s_ntis|s|feminine|vocative|sg
-latcommoninfl.s_ntis12f|s_ntis|ntes|feminine|vocative|pl
+latcommoninfl.s_ntis1f|s_ntis|s|feminine|nominative|singular
+latcommoninfl.s_ntis2f|s_ntis|ntis|feminine|genitive|singular
+latcommoninfl.s_ntis3f|s_ntis|nti|feminine|dative|singular
+latcommoninfl.s_ntis4f|s_ntis|ntem|feminine|accusative|singular
+latcommoninfl.s_ntis5f|s_ntis|nte|feminine|ablative|singular
+latcommoninfl.s_ntis6f|s_ntis|ntes|feminine|nominative|plural
+latcommoninfl.s_ntis7f|s_ntis|ntum|feminine|genitive|plural
+latcommoninfl.s_ntis8f|s_ntis|ntibus|feminine|dative|plural
+latcommoninfl.s_ntis9f|s_ntis|ntes|feminine|accusative|plural
+latcommoninfl.s_ntis10f|s_ntis|ntibus|feminine|ablative|plural
+latcommoninfl.s_ntis11f|s_ntis|s|feminine|vocative|singular
+latcommoninfl.s_ntis12f|s_ntis|ntes|feminine|vocative|plural

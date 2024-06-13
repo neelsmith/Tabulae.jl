@@ -1,25 +1,25 @@
 RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
-ocremorph.x_cis1|x_cis|x|masculine|nominative|sg
-ocremorph.x_cis2|x_cis|cis|masculine|genitive|sg
-ocremorph.x_cis3|x_cis|ci|masculine|dative|sg
-ocremorph.x_cis4|x_cis|cem|masculine|accusative|sg
-ocremorph.x_cis5|x_cis|ce|masculine|ablative|sg
-ocremorph.x_cis6|x_cis|ces|masculine|nominative|pl
-ocremorph.x_cis7|x_cis|cvm|masculine|genitive|pl
-ocremorph.x_cis8|x_cis|cibvs|masculine|dative|pl
-ocremorph.x_cis9|x_cis|ces|masculine|accusative|pl
-ocremorph.x_cis10|x_cis|cibvs|masculine|ablative|pl
+ocremorph.x_cis1|x_cis|x|masculine|nominative|singular
+ocremorph.x_cis2|x_cis|cis|masculine|genitive|singular
+ocremorph.x_cis3|x_cis|ci|masculine|dative|singular
+ocremorph.x_cis4|x_cis|cem|masculine|accusative|singular
+ocremorph.x_cis5|x_cis|ce|masculine|ablative|singular
+ocremorph.x_cis6|x_cis|ces|masculine|nominative|plural
+ocremorph.x_cis7|x_cis|cvm|masculine|genitive|plural
+ocremorph.x_cis8|x_cis|cibvs|masculine|dative|plural
+ocremorph.x_cis9|x_cis|ces|masculine|accusative|plural
+ocremorph.x_cis10|x_cis|cibvs|masculine|ablative|plural
 
 
 
-ocremorph.x_cis1|x_cis|x|feminine|nominative|sg
-ocremorph.x_cis2|x_cis|cis|feminine|genitive|sg
-ocremorph.x_cis3|x_cis|ci|feminine|dative|sg
-ocremorph.x_cis4|x_cis|cem|feminine|accusative|sg
-ocremorph.x_cis5|x_cis|ce|feminine|ablative|sg
-ocremorph.x_cis6|x_cis|ces|feminine|nominative|pl
-ocremorph.x_cis7|x_cis|cum|feminine|genitive|pl
-ocremorph.x_cis8|x_cis|cibvs|feminine|dative|pl
-ocremorph.x_cis9|x_cis|ces|feminine|accusative|pl
-ocremorph.x_cis10|x_cis|cibvs|feminine|ablative|pl
+ocremorph.x_cis1|x_cis|x|feminine|nominative|singular
+ocremorph.x_cis2|x_cis|cis|feminine|genitive|singular
+ocremorph.x_cis3|x_cis|ci|feminine|dative|singular
+ocremorph.x_cis4|x_cis|cem|feminine|accusative|singular
+ocremorph.x_cis5|x_cis|ce|feminine|ablative|singular
+ocremorph.x_cis6|x_cis|ces|feminine|nominative|plural
+ocremorph.x_cis7|x_cis|cum|feminine|genitive|plural
+ocremorph.x_cis8|x_cis|cibvs|feminine|dative|plural
+ocremorph.x_cis9|x_cis|ces|feminine|accusative|plural
+ocremorph.x_cis10|x_cis|cibvs|feminine|ablative|plural

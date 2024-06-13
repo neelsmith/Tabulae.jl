@@ -1,12 +1,12 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-ocremorph.eps_ipis1|eps_ipis|eps|masculine|nominative|sg
-ocremorph.eps_ipis2|eps_ipis|ipis|masculine|genitive|sg
-ocremorph.eps_ipis3|eps_ipis|ipi|masculine|dative|sg
-ocremorph.eps_ipis4|eps_ipis|ipem|masculine|accusative|sg
-ocremorph.eps_ipis5|eps_ipis|ipe|masculine|ablative|sg
-ocremorph.eps_ipis6|eps_ipis|ipes|masculine|nominative|pl
-ocremorph.eps_ipis7|eps_ipis|ipivm|masculine|genitive|pl
-ocremorph.eps_ipis8|eps_ipis|ipibvs|masculine|dative|pl
-ocremorph.eps_ipis9|eps_ipis|ipes|masculine|accusative|pl
-ocremorph.eps_ipis10|eps_ipis|ipibvs|masculine|ablative|pl
+ocremorph.eps_ipis1|eps_ipis|eps|masculine|nominative|singular
+ocremorph.eps_ipis2|eps_ipis|ipis|masculine|genitive|singular
+ocremorph.eps_ipis3|eps_ipis|ipi|masculine|dative|singular
+ocremorph.eps_ipis4|eps_ipis|ipem|masculine|accusative|singular
+ocremorph.eps_ipis5|eps_ipis|ipe|masculine|ablative|singular
+ocremorph.eps_ipis6|eps_ipis|ipes|masculine|nominative|plural
+ocremorph.eps_ipis7|eps_ipis|ipivm|masculine|genitive|plural
+ocremorph.eps_ipis8|eps_ipis|ipibvs|masculine|dative|plural
+ocremorph.eps_ipis9|eps_ipis|ipes|masculine|accusative|plural
+ocremorph.eps_ipis10|eps_ipis|ipibvs|masculine|ablative|plural
