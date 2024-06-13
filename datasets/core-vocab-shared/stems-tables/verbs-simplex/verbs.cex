@@ -192,7 +192,8 @@ latcommon.verbn22350a|ls.n22350|incip|c3iopres
 latcommon.verbn22350b|ls.n22350|incep|pftact
 latcommon.verbn22350c|ls.n22350|incept|pftpass
 latcommon.verbn22609|ls.n22609|increp|conj1
-latcommon.verbn22781|ls.n22781|indicative|conj1
+latcommon.verbn22781|ls.n22781|indic|conj1
+latcommon.verbn24039|ls.n24039|insuffl|conj1
 latcommon.verbn23757a|ls.n23757|insulp|c3pres
 latcommon.verbn23757b|ls.n23757|inscups|pftact
 latcommon.verbn23757c|ls.n23757|insculpt|pftpass
