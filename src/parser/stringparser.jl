@@ -136,16 +136,16 @@ function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule})
 end
 
 function buildparseable(stem::T,  rules::Vector{Rule}) where {T <: TabulaeIrregularStem}
-    @info("BUILD FOR AN IRREGULAR: stem $(stem) with infl type $(inflectionType(stem))")
+    @debug("BUILD FOR AN IRREGULAR: stem $(stem) with infl type $(inflectionType(stem))")
     
     generated = []        
     classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
-    @info("Rules $(classrules)")
+    @debug("Rules $(classrules)")
     for rule in classrules
-        @info("Process rule $(rule) with infl type $(inflectionType(rule))")
+        @debug("Process rule $(rule) with infl type $(inflectionType(rule))")
         token = tokenvalue(stem)
         push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(stem)), "|", urn(stem), "|", urn(rule)))
-        @info("Pushed $(token)")
+        @debug("Pushed $(token)")
     end
     generated
 end

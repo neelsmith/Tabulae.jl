@@ -1,0 +1,15 @@
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+
+latcommon.ere_plupft1|conj1|aueram|first|singular|pluperfect|indicative|active
+latcommon.ere_plupft2|conj1|aueras|second|singular|pluperfect|indicative|active
+latcommon.ere_plupft3|conj1|auerat|third|singular|pluperfect|indicative|active
+latcommon.ere_plupft4|conj1|aueramus|first|plural|pluperfect|indicative|active
+latcommon.ere_plupft5|conj1|aueratis|second|plural|pluperfect|indicative|active
+latcommon.ere_plupft6|conj1|auerant|third|plural|pluperfect|indicative|active
+
+latcommon.ere_plupft7|conj1|auissem|first|singular|pluperfect|subjunctive|active
+latcommon.ere_plupft8|conj1|auisses|second|singular|pluperfect|subjunctive|active
+latcommon.ere_plupft9|conj1|auisset|third|singular|pluperfect|subjunctive|active
+latcommon.ere_plupft10|conj1|auissemus|first|plural|pluperfect|subjunctive|active
+latcommon.ere_plupft11|conj1|auissetis|second|plural|pluperfect|subjunctive|active
+latcommon.ere_plupft12|conj1|auissent|third|plural|pluperfect|subjunctive|active

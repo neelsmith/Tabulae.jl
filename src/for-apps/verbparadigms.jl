@@ -229,11 +229,7 @@ function md_presentsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
     #"*Active voice*:","",
     md_tenseconjugation(lmpTense("imperfect"), lexu, td),
     "",
-
-    ##"*Middle and passive voices* (identical forms):","",
-    #conjugation_md(lmpTense("imperfect"), lmpVoice("passive"), lexu, kd),
     ]
-
     join(mdoutput, "\n")
 end
 
