@@ -43,6 +43,7 @@ rulesout23 = joinpath(repo, "scratch", "rules-lat23-$(datestr).cex")
 rulesout24 = joinpath(repo, "scratch", "rules-lat24-$(datestr).cex")
 rulesout25 = joinpath(repo, "scratch", "rules-lat25-$(datestr).cex")
 
-tofile(rules23, rulesout23)
-tofile(rules24, rulesout24)
-tofile(rules25, rulesout25)
+# Borken: can't get id() on irregular rule
+#tofile(rules23, rulesout23)
+#tofile(rules24, rulesout24)
+#tofile(rules25, rulesout25)
