@@ -5,8 +5,6 @@
 #| warning: false
 #| output: false
 #| echo: false
-
-
 repo = pwd() |> dirname |> dirname
 
 using Tabulae, CitableParserBuilder
@@ -17,7 +15,7 @@ lat25dir = joinpath(repo, "datasets", "core-infl-lat25")
 ds = dataset([shareddir, lat25dir])
 ```
 
-`ds` is a core data set:
+`ds` is a dataset using a Latin orthography with 25 alphabetic characters, distinguishing vocalic "i" and "u" from consonontal or semivocalic "j" and "v."
 
 
 ```{julia}

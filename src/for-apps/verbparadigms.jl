@@ -68,7 +68,7 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     
     offset = perfectsystem(t) ? 3 : 6
     if perfectsystem(t)
-        push!(mdlines, "Passive voice of $(label(t)): TBA")
+        #push!(mdlines, "Passive voice of $(label(t)): TBA")
     else
         push!(mdlines,"Passive voice")
         push!(mdlines, "")
@@ -124,10 +124,7 @@ function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
         lmpTense("perfect"), lmpVoice("active")
     )
     inf_actforms = join(token.(generate(lexu, formurn(inf_act), td)), ", ")
-    #inf_pass = LMFInfinitive(
-    #    lmpTense("perfect"), lmpVoice("passive")
-    #)
-    #inf_passforms = join(token.(generate(lexu, formurn(inf_pass), td)), ", ")
+
 
     passptcpl = participleslashline(lexu, lmpTense("perfect"), lmpVoice("passive"), td)   
     
@@ -136,7 +133,7 @@ function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
     "## Perfect system","",
     "### Perfect tense","",
 
-    md_tenseconjugation(lmpTense("present"), lexu, td),
+    md_tenseconjugation(lmpTense("perfect"), lexu, td),
     "",
   
 
@@ -149,10 +146,14 @@ function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
 
     "### Participles","",
 
-    "*active*: " * passptcpl,
+    "*passive*: " * passptcpl,
 
 
 
+    "### Pluperfect tense","",
+    #"*Active voice*:","",
+    md_tenseconjugation(lmpTense("pluperfect"), lexu, td),
+    "",
 
 
     "### Future perfect tense","",
@@ -160,10 +161,6 @@ function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
     "",
 
 
-    "### Pluperfect tense","",
-    #"*Active voice*:","",
-    md_tenseconjugation(lmpTense("pluperfect"), lexu, td),
-    "",
    
 
 
