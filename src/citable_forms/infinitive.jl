@@ -88,6 +88,10 @@ function formurn(infinitive::LMFInfinitive)
 end
 
 
+
+
+#=
+
 """Compose URN for infinitive verb form from FST representation of analytical data.
 
 $(SIGNATURES)
@@ -107,3 +111,29 @@ function infinitivefromfst(fstdata)
         LMFInfinitive(lmpTense(t),lmpVoice(v))    
     end
 end
+=#
+
+
+
+
+"""Generate list of codes for all noun forms.
+$(SIGNATURES)
+"""
+function infinitiveformcodes()
+
+    formlist = []
+
+    v = lmpVoice("active") |> code
+    act_tenses = [lmpTense("present"), lmpTense("future"),lmpTense("perfect")]
+    for t in code.(act_tenses)
+        push!(formlist, "$(INFINITIVE)00$(t)0$(v)0000")
+    end
+    
+    v = lmpVoice("passive") |> code
+    t = lmpTense("present") |> code
+    push!(formlist, "$(INFINITIVE)00$(t)0$(v)0000")
+
+    formlist
+end
+
+

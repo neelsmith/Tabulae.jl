@@ -114,6 +114,7 @@ include("citable_rules/infinitives.jl")
 include("citable_rules/participles.jl")
 include("citable_rules/irregulars.jl")
 
+include("generate/validverbs.jl")
 include("generate/generate.jl")
 
 include("parser/dictparser.jl")

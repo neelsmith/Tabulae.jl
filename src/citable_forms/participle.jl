@@ -104,3 +104,63 @@ $(SIGNATURES)
 function formurn(p::LMFParticiple)
     FormUrn(string("forms.", PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
 end
+
+
+function participleformcodes()
+    genderints = keys(genderlabeldict) |> collect |> sort
+    caseints = keys(caselabeldict) |> collect |> sort
+    numints = keys(numberlabeldict) |> collect |> sort
+
+
+    formlist = []
+    t = lmpTense("present") |> code
+    v = lmpVoice("active") |> code
+    for n in numints
+        for g in genderints
+            for c in caseints
+                push!(formlist, "$(PARTICIPLE)0$(n)$(t)0$(v)$(g)$(c)00")
+            end
+        end
+    end
+
+    t = lmpTense("future") |> code
+    for n in numints
+        for g in genderints
+            for c in caseints
+                push!(formlist, "$(PARTICIPLE)0$(n)$(t)0$(v)$(g)$(c)00")
+            end
+        end
+    end
+
+    t = lmpTense("perfect") |> code
+    v = lmpVoice("passive") |> code
+    for n in numints
+        for g in genderints
+            for c in caseints
+                push!(formlist, "$(PARTICIPLE)0$(n)$(t)0$(v)$(g)$(c)00")
+            end
+        end
+    end
+
+
+
+    #=for t in tenseints
+        for v in voiceints
+            
+            for n in numints
+                for g in genderints
+                    for c in caseints
+                        push!(formlist, "$(PARTICIPLE)0$(n)$(t)0$(v)$(g)$(c)00")
+                    end
+                end
+            end
+           
+        end
+    end
+    =#
+    formlist
+end
+
+function participleforms()
+    participleformcodes() .|> latinForm
+end

@@ -1,5 +1,5 @@
 StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
-livymorph.irrv1|lexent.n37193|posum|first|singular|present|indicative|active
+livymorph.irrv1|lexent.n37193|possum|first|singular|present|indicative|active
 livymorph.irrv2|lexent.n37193|potes|second|singular|present|indicative|active
 livymorph.irrv3|lexent.n37193|potest|third|singular|present|indicative|active
 livymorph.irrv4|lexent.n37193|possumus|first|plural|present|indicative|active
