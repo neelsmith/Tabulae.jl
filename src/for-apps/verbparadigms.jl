@@ -113,21 +113,63 @@ $(SIGNATURES)
 function md_verb_conjugation(lexu::LexemeUrn, td::Tabulae.Dataset)
     sections = [   
         md_presentsystem(lexu, td),
-        md_futuresystem(lexu, td),
         md_perfectsystem(lexu, td),
     ]
     join(sections, "\n\n")
 end
 
-
-function md_futuresystem(lexu::LexemeUrn, td::Tabulae.Dataset)
-    "## TBA: future system"
-end
-
-
-
 function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
-    "## TBA: perfect system"
+   
+    inf_act = LMFInfinitive(
+        lmpTense("perfect"), lmpVoice("active")
+    )
+    inf_actforms = join(token.(generate(lexu, formurn(inf_act), td)), ", ")
+    #inf_pass = LMFInfinitive(
+    #    lmpTense("perfect"), lmpVoice("passive")
+    #)
+    #inf_passforms = join(token.(generate(lexu, formurn(inf_pass), td)), ", ")
+
+    passptcpl = participleslashline(lexu, lmpTense("perfect"), lmpVoice("passive"), td)   
+    
+    
+    mdoutput = [
+    "## Perfect system","",
+    "### Perfect tense","",
+
+    md_tenseconjugation(lmpTense("present"), lexu, td),
+    "",
+  
+
+    "### Infinitives","",
+
+    "*active*: " * inf_actforms,"",
+
+    
+
+
+    "### Participles","",
+
+    "*active*: " * passptcpl,
+
+
+
+
+
+    "### Future perfect tense","",
+    md_tenseconjugation(lmpTense("future_perfect"), lexu, td),
+    "",
+
+
+    "### Pluperfect tense","",
+    #"*Active voice*:","",
+    md_tenseconjugation(lmpTense("pluperfect"), lexu, td),
+    "",
+   
+
+
+
+    ]
+    join(mdoutput, "\n")
 end
 
 """Compose markdown table with imperative conjugation of `lex`.
@@ -201,7 +243,7 @@ function md_presentsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
     "",
     
    # "*Passive voice*:","",
-   # verb_conjugation_md(lmpTense("present"), lmpVoice("passive"), lexu, kd),
+   # md_verb_conjugation(lmpTense("present"), lmpVoice("passive"), lexu, kd),
    # "",
 
 
@@ -229,6 +271,23 @@ function md_presentsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
     #"*Active voice*:","",
     md_tenseconjugation(lmpTense("imperfect"), lexu, td),
     "",
+   
+
+
+
+    "### Future tense","",
+
+
+    md_tenseconjugation(lmpTense("future"), lexu, td),
+    "",
+    
+    "### Participles","",
+
+    "*active*: " * participleslashline(lexu, lmpTense("future"), lmpVoice("active"), td),
+
+
+   
+
     ]
     join(mdoutput, "\n")
 end
