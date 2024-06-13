@@ -3,7 +3,7 @@
 
 The appendices in this section of the site include automatically generated paradigms.
 
-They are generated from a parser using a Latin orthography with 25 alphabetic characters, distinguish vocalic "i" and "u" from consonontal or semivocalic "j" and "v."
+Verb paradigms are presented in two orthographies, one with 25 alphabetic characters, distinguishing vocalic "i" and "u" from consonontal or semivocalic "j" and "v," and one  with 23 alphabetic characters using "i" and "u" for both vocalic and consonantal sounds.
 
 ::: {.callout-tip title="Generating paradigms with Tabulae.jl"}
 See [this tutorial](https://neelsmith.quarto.pub/tabulae/tutorials/utils.html) to learn how to use `Tabulae.jl` to generate paradigms formatted in Markdown.
