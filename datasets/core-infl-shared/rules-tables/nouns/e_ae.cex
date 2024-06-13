@@ -1,0 +1,15 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+latcommoninfl.e_ae1|e_ae|e|feminine|nominative|singular
+latcommoninfl.e_ae2|e_ae|ae|feminine|genitive|singular
+latcommoninfl.e_ae3|e_ae|ae|feminine|dative|singular
+latcommoninfl.e_ae4|e_ae|am|feminine|accusative|singular
+latcommoninfl.e_ae4b|e_ae|en|feminine|accusative|singular
+latcommoninfl.e_ae5|e_ae|a|feminine|ablative|singular
+latcommoninfl.e_ae6|e_ae|ae|feminine|nominative|plural
+latcommoninfl.e_ae7|e_ae|arum|feminine|genitive|plural
+latcommoninfl.e_ae8|e_ae|is|feminine|dative|plural
+latcommoninfl.e_ae9|e_ae|as|feminine|accusative|plural
+latcommoninfl.e_ae10|e_ae|is|feminine|ablative|plural
+latcommoninfl.e_ae11|e_ae|a|feminine|vocative|singular
+latcommoninfl.e_ae12|e_ae|ae|feminine|vocative|plural

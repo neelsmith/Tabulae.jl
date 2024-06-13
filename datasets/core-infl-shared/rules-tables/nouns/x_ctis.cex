@@ -1,0 +1,17 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+latcommoninfl.x_ctis13|x_ctis|x|feminine|nominative|singular
+latcommoninfl.x_ctis14|x_ctis|ctis|feminine|genitive|singular
+latcommoninfl.x_ctis15|x_ctis|cti|feminine|dative|singular
+latcommoninfl.x_ctis16|x_ctis|ctem|feminine|accusative|singular
+latcommoninfl.x_ctis16b|x_ctis|ctim|feminine|accusative|singular
+latcommoninfl.x_ctis17|x_ctis|cte|feminine|ablative|singular
+latcommoninfl.x_ctis17b|x_ctis|cti|feminine|ablative|singular
+latcommoninfl.x_ctis18|x_ctis|ctes|feminine|nominative|plural
+latcommoninfl.x_ctis19|x_ctis|ctium|feminine|genitive|plural
+latcommoninfl.x_ctis20|x_ctis|ctibus|feminine|dative|plural
+latcommoninfl.x_ctis21|x_ctis|ctes|feminine|accusative|plural
+latcommoninfl.x_ctis21b|x_ctis|ctis|feminine|accusative|plural
+latcommoninfl.x_ctis22|x_ctis|ctibus|feminine|ablative|plural
+latcommoninfl.x_ctis23|x_ctis|x|feminine|vocative|singular
+latcommoninfl.x_ctis24|x_ctis|ctes|feminine|vocative|plural

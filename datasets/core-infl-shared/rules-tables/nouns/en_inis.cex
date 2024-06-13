@@ -1,0 +1,14 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+latcommoninfl.en_inis1|en_inis|en|neuter|nominative|singular
+latcommoninfl.en_inis2|en_inis|inis|neuter|genitive|singular
+latcommoninfl.en_inis3|en_inis|ini|neuter|dative|singular
+latcommoninfl.en_inis4|en_inis|en|neuter|accusative|singular
+latcommoninfl.en_inis5|en_inis|ine|neuter|ablative|singular
+latcommoninfl.en_inis6|en_inis|ina|neuter|nominative|plural
+latcommoninfl.en_inis7|en_inis|inum|neuter|genitive|plural
+latcommoninfl.en_inis8|en_inis|inibus|neuter|dative|plural
+latcommoninfl.en_inis9|en_inis|ina|neuter|accusative|plural
+latcommoninfl.en_inis10|en_inis|inibus|neuter|ablative|plural
+latcommoninfl.en_inis11|en_inis|en|neuter|vocative|singular
+latcommoninfl.en_inis12|en_inis|ina|neuter|vocative|plural

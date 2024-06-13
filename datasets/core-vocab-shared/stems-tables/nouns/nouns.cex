@@ -84,7 +84,6 @@ latcommon.nounn6836|ls.n6836|carnif|masculine|ex_icis
 latcommon.nounn6859|ls.n6859|carpent|neuter|us_i
 latcommon.nounn6965|ls.n6965|cassi|masculine|us_i
 latcommon.nounn7012|ls.n7012|castr|neuter|us_i
-latcommon.nounn7021|ls.n7021|cas|masculine|us_us
 latcommon.nounn7093|ls.n7093|caten|feminine|a_ae
 latcommon.nounn7197|ls.n7197|caus|feminine|a_ae
 latcommon.nounn7381|ls.n7381|censor|masculine|0_is
@@ -245,9 +244,9 @@ latcommon.nounn19075|ls.n19075|fun|neuter|us_eris
 latcommon.nounn19099|ls.n19099|furi|feminine|a_ae
 latcommon.nounn19124|ls.n19124|furor|masculine|0_is
 latcommon.nounn19336|ls.n19336|gaudi|neuter|us_i
-latcommon.nounn19461|ls.n19461|gen|feminine|s_tis
-latcommon.nounn19471|ls.n19471|gen|neuter|us_us
-latcommon.nounn19477|ls.n19477|gen|neuter|us_eris
+latcommon.nounn19461|ls.n19461|genitive|feminine|s_tis
+latcommon.nounn19471|ls.n19471|genitive|neuter|us_us
+latcommon.nounn19477|ls.n19477|genitive|neuter|us_eris
 latcommon.nounn19607|ls.n19607|gladi|masculine|us_i
 latcommon.nounn19662|ls.n19662|glob|masculine|us_i
 latcommon.nounn19675|ls.n19675|glori|feminine|a_ae
@@ -389,7 +388,7 @@ latcommon.nounn30693|ls.n30693|negoti|neuter|us_i
 latcommon.nounn30714|ls.n30714|nem|masculine|o_inis
 latcommon.nounn30752|ls.n30752|nepo|masculine|s_tis
 latcommon.nounn30872|ls.n30872|ne|feminine|x_cis
-latcommon.nounn31131|ls.n31131|nom|neuter|en_inis
+latcommon.nounn31131|ls.n31131|nominative|neuter|en_inis
 latcommon.nounn31309|ls.n31309|no|feminine|x_ctis
 latcommon.nounn31321|ls.n31321|nub|feminine|es_is
 latcommon.nounn31401|ls.n31401|num|neuter|en_inis

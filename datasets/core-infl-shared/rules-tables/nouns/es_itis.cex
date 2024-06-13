@@ -1,0 +1,14 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+latcommoninfl.es_itis1|es_itis|es|masculine|nominative|singular
+latcommoninfl.es_itis2|es_itis|itis|masculine|genitive|singular
+latcommoninfl.es_itis3|es_itis|iti|masculine|dative|singular
+latcommoninfl.es_itis4|es_itis|item|masculine|accusative|singular
+latcommoninfl.es_itis5|es_itis|ite|masculine|ablative|singular
+latcommoninfl.es_itis6|es_itis|ites|masculine|nominative|plural
+latcommoninfl.es_itis7|es_itis|itum|masculine|genitive|plural
+latcommoninfl.es_itis8|es_itis|itibus|masculine|dative|plural
+latcommoninfl.es_itis9|es_itis|ites|masculine|accusative|plural
+latcommoninfl.es_itis10|es_itis|itibus|masculine|ablative|plural
+latcommoninfl.es_itis11|es_itis|es|masculine|vocative|singular
+latcommoninfl.es_itis12|es_itis|ites|masculine|vocative|plural
