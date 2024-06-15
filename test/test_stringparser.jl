@@ -13,8 +13,9 @@
     @test length(donum) == 3 # nom, acc, voc sing
 
 
-    alist = map(ln -> Tabulae.fromline(ln), donum)
-    @test alist isa Vector{Analysis}
+    # THIS IS NOT A THING:
+    #alist = map(ln -> Tabulae.fromline(ln), donum)
+    #@test alist isa Vector{Analysis}
 
     u = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/dev/test/samplecex/analyses.cex"
     parser1 = tabulaeStringParser(u, UrlReader)
