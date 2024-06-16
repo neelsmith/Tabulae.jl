@@ -17,10 +17,11 @@ import CitableParserBuilder: analyses
 
 
 using CitableBase
-import CitableBase: CitableTrait
+import CitableBase: citabletrait
 import CitableBase: urn
 import CitableBase: label
 
+import CitableBase: cextrait
 import CitableBase: cex
 import CitableBase: fromcex
 

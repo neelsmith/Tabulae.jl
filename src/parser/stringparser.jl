@@ -9,18 +9,35 @@ struct TabulaeStringParser <: AbstractStringParser
         ortho::LatinOrthographicSystem = latin24(), delim::AbstractString = "|") = new(entries, ortho, delim)
 end
 
+
+"""Instantiate a generic `StringParser` (from the `CitableParserBuilder` package) from a `TabulaeStringParser`.
+$(SIGNATURES)
+"""
 function stringParser(p::TabulaeStringParser)
     StringParser(p.entries, p.ortho, p.delimiter)
 end
 
+
+"""Get data source for parser.
+$(SIGNATURES)
+"""
 function datasource(p::TabulaeStringParser)
     p.entries
 end
 
+
+
+"""Get delimiter used in parser.
+$(SIGNATURES)
+"""
 function delimiter(p::TabulaeStringParser)
     p.delimiter
 end
 
+
+"""Get orthography for parser.
+$(SIGNATURES)
+"""
 function orthography(p::TabulaeStringParser)
     p.ortho
 end
@@ -30,7 +47,7 @@ $(SIGNATURES)
 """
 function tofile(p::TabulaeStringParser, f)
     open(f, "w") do io
-        write(f, join(p.entries,"\n"))
+        write(f, cex(p))
     end
 end
 
@@ -153,9 +170,31 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
 end
 
 
+"""Value for CexTrait on TabulaeStringParser."""
 struct TabulaeStringParserCex <: CexTrait end
+"""Identify CEX trait for TabulaeStringParser type.
+$(SIGNATURES)
+"""
 function cextrait(::Type{TabulaeStringParser})
     TabulaeStringParserCex()
 end
 
 
+"""Export parser to delimited-text format.
+$(SIGNATURES)
+"""
+function cex(tsp::TabulaeStringParser; delimiter = "|")
+    join(tsp.entries,"\n")
+end
+
+"""Instantiate a parser from delimited-text format.
+Optionally identify orthographic system for parser in
+parameter `configuration`.
+$(SIGNATURES)
+"""
+function fromcex(trait::TabulaeStringParserCex, cexsrc::AbstractString, T; 
+    delimiter = "|", configuration = nothing, strict = true)
+    ortho = isnothing(configuration) ? latin25() : configuration
+    entries = split(cexsrc, "\n")
+    TabulaeStringParser(entries, ortho, delimiter)
+end
