@@ -1,6 +1,7 @@
 abstract type TabulaeRule <: Rule end
 
 
+
 """Instantiate `LatinMorphologicalForm` identified by `rule`.
 $(SIGNATURES)
 """

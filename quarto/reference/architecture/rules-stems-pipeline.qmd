@@ -1,0 +1,29 @@
+# Rules and stems pipeline
+
+
+
+::: {.callout-caution title="TBA"}
+Documentation incomplete.
+:::
+
+
+## Overview
+
+All forms are built from the combination of a rule and a stem.
+
+Stems are matched with all rules sharing the same inflectional class. (Noun forms additionally must have matching gender for both stem and rule.)
+
+### Regular forms
+
+*Regular* forms are built by combining a stem string with an ending string. (Depending on the inflectional class, other phonetic or morphological changes might be automatically applied to the stem string. For regular first-conjugation verbs, for
+
+
+- rule record has type-specific morphological properties for the form
+
+To form an analysis, we compute the value of the token string, get the lexeme from the stem record, the form from the rules record, and note the identifiers for stem and rule.
+
+### Irregular forms
+
+- entire form stored in stem record, along with type-specific morphological properties
+
+To form an analysis, we get both the token string and the form from the stem record.

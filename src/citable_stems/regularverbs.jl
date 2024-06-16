@@ -6,9 +6,6 @@ struct TabulaeVerbStem <: TabulaeStem
     inflectionclass
 end
 
-function id(n::TabulaeVerbStem)
-    n.stemid
-end
 
 
 """

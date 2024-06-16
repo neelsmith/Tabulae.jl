@@ -1,0 +1,16 @@
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+
+lat23.c1pftact_pft1|conj1|aui|first|singular|perfect|indicative|active
+lat23.c1pftact_pft2|conj1|auisti|second|singular|perfect|indicative|active
+lat23.c1pftact_pft3|conj1|auit|third|singular|perfect|indicative|active
+lat23.c1pftact_pft4|conj1|auimus|first|plural|perfect|indicative|active
+lat23.c1pftact_pft5|conj1|auistis|second|plural|perfect|indicative|active
+lat23.c1pftact_pft6|conj1|auerunt|third|plural|perfect|indicative|active
+lat23.c1pftact_pft6b|conj1|auere|third|plural|perfect|indicative|active
+
+lat23.c1pftact_pft7|conj1|auerim|first|singular|perfect|subjunctive|active
+lat23.c1pftact_pft8|conj1|aueris|second|singular|perfect|subjunctive|active
+lat23.c1pftact_pft9|conj1|auerit|third|singular|perfect|subjunctive|active
+lat23.c1pftact_pft10|conj1|auerimus|first|plural|perfect|subjunctive|active
+lat23.c1pftact_pft11|conj1|aueristis|second|plural|perfect|subjunctive|active
+lat23.c1pftact_pft12|conj1|auerint|third|plural|perfect|subjunctive|active

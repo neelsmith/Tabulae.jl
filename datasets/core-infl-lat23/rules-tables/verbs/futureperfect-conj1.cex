@@ -1,0 +1,7 @@
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+lat23.pftact_futpft1|conj1|auero|first|singular|future_perfect|indicative|active
+lat23.pftact_futpft2|conj1|aueris|second|singular|future_perfect|indicative|active
+lat23.pftact_futpft3|conj1|auerit|third|singular|future_perfect|indicative|active
+lat23.pftact_futpft4|conj1|auerimus|first|plural|future_perfect|indicative|active
+lat23.pftact_futpft5|conj1|aueritis|second|plural|future_perfect|indicative|active
+lat23.pftact_futpft6|conj1|auerint|third|plural|future_perfect|indicative|active

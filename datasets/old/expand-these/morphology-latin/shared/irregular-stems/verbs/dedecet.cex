@@ -1,12 +1,12 @@
 StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-latcommon.irrvadn126071|ls.n12607|dedecet|3rd|singular|present|indic|active
-latcommon.irrvadn126072|ls.n12607|dedecebat|3rd|singular|impft|indic|active
-latcommon.irrvadn126073|ls.n12607|dedecet|3rd|singular|future|indic|active
-latcommon.irrvadn126074|ls.n12607|dedecuit|3rd|singular|perfect|indic|active
-latcommon.irrvadn126075|ls.n12607|dedecuerat|3rd|singular|plupft|indic|active
-latcommon.irrvadn126076|ls.n12607|dedecuerit|3rd|singular|futpft|indic|active
-latcommon.irrvadn126077|ls.n12607|dedeceat|3rd|singular|present|subj|active
-latcommon.irrvadn126078|ls.n12607|dedeceret|3rd|singular|impft|subj|active
-latcommon.irrvadn126079|ls.n12607|dedecuerit|3rd|singular|perfect|subj|active
-latcommon.irrvadn1260710|ls.n12607|dedecuisset|3rd|singular|plupft|subj|active
+latcommon.irrvadn126071|ls.n12607|dedecet|third|singular|present|indicative|active
+latcommon.irrvadn126072|ls.n12607|dedecebat|third|singular|imperfect|indicative|active
+latcommon.irrvadn126073|ls.n12607|dedecet|third|singular|future|indicative|active
+latcommon.irrvadn126074|ls.n12607|dedecuit|third|singular|perfect|indicative|active
+latcommon.irrvadn126075|ls.n12607|dedecuerat|third|singular|pluperfect|indicative|active
+latcommon.irrvadn126076|ls.n12607|dedecuerit|third|singular|future_perfect|indicative|active
+latcommon.irrvadn126077|ls.n12607|dedeceat|third|singular|present|subjunctive|active
+latcommon.irrvadn126078|ls.n12607|dedeceret|third|singular|imperfect|subjunctive|active
+latcommon.irrvadn126079|ls.n12607|dedecuerit|third|singular|perfect|subjunctive|active
+latcommon.irrvadn1260710|ls.n12607|dedecuisset|third|singular|pluperfect|subjunctive|active

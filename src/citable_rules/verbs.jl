@@ -26,9 +26,7 @@ function lmfPerson(v::TabulaeFiniteVerbRule)
     v.vperson
 end
 
-function lmfPerson(v::TabulaeFiniteVerbRule)
-    v.vperson
-end
+
 
 function lmfNumber(v::TabulaeFiniteVerbRule)
     v.vnumber
@@ -46,9 +44,6 @@ function lmfVoice(v::TabulaeFiniteVerbRule)
     v.vvoice
 end
 
-function id(r::TabulaeFiniteVerbRule)
-    r.ruleid
-end
 
 """Create a `LMFFiniteVerb` from `rule`.
 $(SIGNATURES)

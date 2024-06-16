@@ -14,6 +14,11 @@ struct NounIO <: TabulaeIO
     label::AbstractString
 end
 
+
+struct IrregularReaderIO <: TabulaeIO
+    label::AbstractString
+end
+
 """
 TabulaeIO type for reading and writing data for irregular noun forms.
 
@@ -78,9 +83,20 @@ Required function for TabulaeIO subtypes.
 
 $(SIGNATURES)
 """
-function readrulerow(io::T, s::AbstractString) where {T <: TabulaeIO}
-    throws(DomainError("readrulerow function has not been implemented for type $(typeof(io))"))
+function readrulerow(io::T, s::AbstractString; delimiter = "|") where {T <: TabulaeIO}
+   # DomainError("readrulerow function has not been implemented for type $(typeof(io))")
+   parts = split(s, delimiter)
+    if length(parts) < 2
+        msg = "Invalid syntax for irregular rule: too few components in $(delimited)"
+        throw(ArgumentError(msg))
+    else
+        ruleid = RuleUrn(parts[1])
+        inflectionaltype = parts[2]
+        TabulaeIrregularRule(ruleid, inflectionaltype)
+    end
 end
+
+
 
 """
 Required function for TabulaeIO subtypes.
@@ -88,5 +104,5 @@ Required function for TabulaeIO subtypes.
 $(SIGNATURES)
 """
 function readstremrow(io::T, s::AbstractString) where {T <: TabulaeIO}
-    throws(DomainError("readstremrow function has not been implemented for type $(typeof(io))"))
+    DomainError("readstremrow function has not been implemented for type $(typeof(io))")
 end

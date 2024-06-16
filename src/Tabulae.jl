@@ -11,24 +11,26 @@ import CitableParserBuilder: delimiter
 import CitableParserBuilder: generate
 import CitableParserBuilder: lexemeurn
 import CitableParserBuilder: stringParser
-import CitableParserBuilder: tofile
+#import CitableParserBuilder: tofile
+import CitableParserBuilder: analyses
 
 
 
 using CitableBase
-import CitableBase: CitableTrait
+import CitableBase: citabletrait
 import CitableBase: urn
 import CitableBase: label
 
+import CitableBase: cextrait
 import CitableBase: cex
-
+import CitableBase: fromcex
 
 
 
 using LatinOrthography
 using CitableObject
 
-export urn, label, cex
+#export urn, label, cex
 export ruleurn
 
 export dataset
@@ -53,10 +55,13 @@ export LatinMorphologicalForm, lmForm, code
 export analyses
 export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
+export LMFParticiple, lmfParticiple
+
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
 export NounIO, VerbIO, InfinitiveIO, ParticipleIO
+export IrregularReaderIO, IrregularVerbIO
 
 export TabulaeRule, inflectionType, ending, id
 export delimitedrule, fromdelimited, formrule
@@ -67,15 +72,13 @@ export TabulaeParticipleRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
-export TabulaeVerbStem
+export TabulaeVerbStem, TabulaeIrregularVerb
 
 export TabulaeStringParser, tabulaeStringParser
-export analysis_line, analysis_lines
-
-#export parsetoken, generate
+export orthography
 
 export md_declension
-export md_tenseconjugation
+export md_tenseconjugation, md_verb_conjugation
 
 include("tabulaeio.jl")
 include("dataset/dataset.jl")
@@ -105,16 +108,18 @@ include("citable_forms/participle.jl")
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
 include("citable_stems/regularverbs.jl")
+include("citable_stems/irregularfiniteverbs.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
 include("citable_rules/participles.jl")
+include("citable_rules/irregulars.jl")
 
+include("generate/validverbs.jl")
 include("generate/generate.jl")
 
-include("parser/dictparser.jl")
 include("parser/stringparser.jl")
 
 include("for-apps/mddeclension.jl")

@@ -1,0 +1,16 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+medievalinfl.a_ae2|a_ae|e|feminine|genitive|singular
+medievalinfl.a_ae3|a_ae|e|feminine|dative|singular
+
+medievalinfl.a_ae6|a_ae|e|feminine|nominative|plural
+
+medievalinfl.a_ae12|a_ae|e|feminine|vocative|plural
+
+medievalinfl.a_ae14|a_ae|e|masculine|genitive|singular
+medievalinfl.a_ae15|a_ae|e|masculine|dative|singular
+
+medievalinfl.a_ae18|a_ae|e|masculine|nominative|plural
+
+
+medievalinfl.a_ae24|a_ae|e|masculine|vocative|plural

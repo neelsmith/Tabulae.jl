@@ -67,3 +67,9 @@ amo = LexemeUrn("ls.n2280")
 impft = lmpTense("imperfect")
 md_tenseconjugation(impft, amo, ds) |> Markdown.parse
 ```
+
+An entire verb:
+
+```{julia}
+md_verb_conjugation(amo, ds) |> Markdown.parse
+```

@@ -1,29 +1,29 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-latcommoninfl.er_ris1|er_ris|er|masculine|nominative|sg
-latcommoninfl.er_ris2|er_ris|ris|masculine|genitive|sg
-latcommoninfl.er_ris3|er_ris|ri|masculine|dative|sg
-latcommoninfl.er_ris4|er_ris|rem|masculine|accusative|sg
-latcommoninfl.er_ris|er_ris|re|masculine|ablative|sg
-latcommoninfl.er_ris6|er_ris|res|masculine|nominative|pl
-latcommoninfl.er_ris7|er_ris|rum|masculine|genitive|pl
-latcommoninfl.er_ris8|er_ris|ribus|masculine|dative|pl
-latcommoninfl.er_ris9|er_ris|res|masculine|accusative|pl
-latcommoninfl.er_ris10|er_ris|ribus|masculine|ablative|pl
-latcommoninfl.er_ris11|er_ris|er|masculine|vocative|sg
-latcommoninfl.er_ris12|er_ris|res|masculine|vocative|pl
+latcommoninfl.er_ris1|er_ris|er|masculine|nominative|singular
+latcommoninfl.er_ris2|er_ris|ris|masculine|genitive|singular
+latcommoninfl.er_ris3|er_ris|ri|masculine|dative|singular
+latcommoninfl.er_ris4|er_ris|rem|masculine|accusative|singular
+latcommoninfl.er_ris|er_ris|re|masculine|ablative|singular
+latcommoninfl.er_ris6|er_ris|res|masculine|nominative|plural
+latcommoninfl.er_ris7|er_ris|rum|masculine|genitive|plural
+latcommoninfl.er_ris8|er_ris|ribus|masculine|dative|plural
+latcommoninfl.er_ris9|er_ris|res|masculine|accusative|plural
+latcommoninfl.er_ris10|er_ris|ribus|masculine|ablative|plural
+latcommoninfl.er_ris11|er_ris|er|masculine|vocative|singular
+latcommoninfl.er_ris12|er_ris|res|masculine|vocative|plural
 
 
 
-latcommoninfl.er_ris1|er_ris|er|feminine|nominative|sg
-latcommoninfl.er_ris2|er_ris|ris|feminine|genitive|sg
-latcommoninfl.er_ris3|er_ris|ri|feminine|dative|sg
-latcommoninfl.er_ris4|er_ris|rem|feminine|accusative|sg
-latcommoninfl.er_ris|er_ris|re|feminine|ablative|sg
-latcommoninfl.er_ris6|er_ris|res|feminine|nominative|pl
-latcommoninfl.er_ris7|er_ris|rum|feminine|genitive|pl
-latcommoninfl.er_ris8|er_ris|ribus|feminine|dative|pl
-latcommoninfl.er_ris9|er_ris|res|feminine|accusative|pl
-latcommoninfl.er_ris10|er_ris|ribus|feminine|ablative|pl
-latcommoninfl.er_ris11|er_ris|er|feminine|vocative|sg
-latcommoninfl.er_ris12|er_ris|res|feminine|vocative|pl
+latcommoninfl.er_ris1|er_ris|er|feminine|nominative|singular
+latcommoninfl.er_ris2|er_ris|ris|feminine|genitive|singular
+latcommoninfl.er_ris3|er_ris|ri|feminine|dative|singular
+latcommoninfl.er_ris4|er_ris|rem|feminine|accusative|singular
+latcommoninfl.er_ris|er_ris|re|feminine|ablative|singular
+latcommoninfl.er_ris6|er_ris|res|feminine|nominative|plural
+latcommoninfl.er_ris7|er_ris|rum|feminine|genitive|plural
+latcommoninfl.er_ris8|er_ris|ribus|feminine|dative|plural
+latcommoninfl.er_ris9|er_ris|res|feminine|accusative|plural
+latcommoninfl.er_ris10|er_ris|ribus|feminine|ablative|plural
+latcommoninfl.er_ris11|er_ris|er|feminine|vocative|singular
+latcommoninfl.er_ris12|er_ris|res|feminine|vocative|plural

@@ -5,7 +5,7 @@ theme: spacelab
 execute:
   freeze: auto
 date: last-modified  
-margin-header: "Package version: `0.10.0`"
+margin-header: "Package version: `0.11.0`"
 
 format:
   html: 
@@ -77,6 +77,7 @@ website:
         - guides/forms-guide.qmd
         - guides/urns.qmd
         - guides/serializing-rules.qmd
+        - guides/multiortho.qmd
         
     - title: "Reference"
       contents: 
@@ -101,6 +102,10 @@ website:
         - text: "Rules:"           
         - reference/fileformat-verbrules.qmd
         - reference/fileformat-otherrules.qmd
+        - text: "---"
+        - text: "System architecture:"
+        - reference/architecture/rules-stems-pipeline.qmd
+
 
 
 

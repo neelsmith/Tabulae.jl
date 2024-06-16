@@ -1,41 +1,41 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
 
-latcommon.irrpron20640a|ls.n20640|hic|masculine|nominative|sg
+latcommon.irrpron20640a|ls.n20640|hic|masculine|nominative|singular
 
-latcommon.irrpron20640c|ls.n20640|huic|masculine|dative|sg
-latcommon.irrpron20640d|ls.n20640|hunc|masculine|accusative|sg
-latcommon.irrpron20640e|ls.n20640|hoc|masculine|ablative|sg
+latcommon.irrpron20640c|ls.n20640|huic|masculine|dative|singular
+latcommon.irrpron20640d|ls.n20640|hunc|masculine|accusative|singular
+latcommon.irrpron20640e|ls.n20640|hoc|masculine|ablative|singular
 
-latcommon.irrpron20640f|ls.n20640|hi|masculine|nominative|pl
-latcommon.irrpron20640g|ls.n20640|horum|masculine|genitive|pl
-latcommon.irrpron20640h|ls.n20640|his|masculine|dative|pl
-latcommon.irrpron20640i|ls.n20640|his|masculine|dative|pl
-latcommon.irrpron20640j|ls.n20640|hos|masculine|accusative|pl
-latcommon.irrpron20640k|ls.n20640|his|masculine|ablative|pl
-latcommon.irrpron20640l|ls.n20640|hiis|masculine|ablative|pl
+latcommon.irrpron20640f|ls.n20640|hi|masculine|nominative|plural
+latcommon.irrpron20640g|ls.n20640|horum|masculine|genitive|plural
+latcommon.irrpron20640h|ls.n20640|his|masculine|dative|plural
+latcommon.irrpron20640i|ls.n20640|his|masculine|dative|plural
+latcommon.irrpron20640j|ls.n20640|hos|masculine|accusative|plural
+latcommon.irrpron20640k|ls.n20640|his|masculine|ablative|plural
+latcommon.irrpron20640l|ls.n20640|hiis|masculine|ablative|plural
 
-latcommon.irrpron20640m|ls.n20640|haec|feminine|nominative|sg
-latcommon.irrpron20640o|ls.n20640|huic|feminine|dative|sg
-latcommon.irrpron20640p|ls.n20640|hanc|feminine|accusative|sg
-latcommon.irrpron20640q|ls.n20640|hac|feminine|ablative|sg
+latcommon.irrpron20640m|ls.n20640|haec|feminine|nominative|singular
+latcommon.irrpron20640o|ls.n20640|huic|feminine|dative|singular
+latcommon.irrpron20640p|ls.n20640|hanc|feminine|accusative|singular
+latcommon.irrpron20640q|ls.n20640|hac|feminine|ablative|singular
 
-latcommon.irrpron20640r|ls.n20640|hae|feminine|nominative|pl
-latcommon.irrpron20640s|ls.n20640|harum|feminine|genitive|pl
-latcommon.irrpron20640t|ls.n20640|his|feminine|dative|pl
-latcommon.irrpron20640u|ls.n20640|his|feminine|dative|pl
-latcommon.irrpron20640v|ls.n20640|has|feminine|accusative|pl
-latcommon.irrpron20640w|ls.n20640|his|feminine|ablative|pl
-latcommon.irrpron20640x|ls.n20640|hiis|feminine|ablative|pl
+latcommon.irrpron20640r|ls.n20640|hae|feminine|nominative|plural
+latcommon.irrpron20640s|ls.n20640|harum|feminine|genitive|plural
+latcommon.irrpron20640t|ls.n20640|his|feminine|dative|plural
+latcommon.irrpron20640u|ls.n20640|his|feminine|dative|plural
+latcommon.irrpron20640v|ls.n20640|has|feminine|accusative|plural
+latcommon.irrpron20640w|ls.n20640|his|feminine|ablative|plural
+latcommon.irrpron20640x|ls.n20640|hiis|feminine|ablative|plural
 
-latcommon.irrpron20640y|ls.n20640|hoc|neuter|nominative|sg
-latcommon.irrpron20640aa|ls.n20640|huic|neuter|dative|sg
-latcommon.irrpron20640ab|ls.n20640|hoc|neuter|accusative|sg
-latcommon.irrpron20640ac|ls.n20640|hoc|neuter|ablative|sg
+latcommon.irrpron20640y|ls.n20640|hoc|neuter|nominative|singular
+latcommon.irrpron20640aa|ls.n20640|huic|neuter|dative|singular
+latcommon.irrpron20640ab|ls.n20640|hoc|neuter|accusative|singular
+latcommon.irrpron20640ac|ls.n20640|hoc|neuter|ablative|singular
 
-latcommon.irrpron20640ad|ls.n20640|haec|neuter|nominative|pl
-latcommon.irrpron20640ae|ls.n20640|horum|neuter|genitive|pl
-latcommon.irrpron20640af|ls.n20640|his|neuter|dative|pl
-latcommon.irrpron20640ag|ls.n20640|his|neuter|dative|pl
-latcommon.irrpron20640ah|ls.n20640|haec|neuter|accusative|pl
-latcommon.irrpron20640ai|ls.n20640|his|neuter|ablative|pl
-latcommon.irrpron20640aj|ls.n20640|his|neuter|ablative|pl
+latcommon.irrpron20640ad|ls.n20640|haec|neuter|nominative|plural
+latcommon.irrpron20640ae|ls.n20640|horum|neuter|genitive|plural
+latcommon.irrpron20640af|ls.n20640|his|neuter|dative|plural
+latcommon.irrpron20640ag|ls.n20640|his|neuter|dative|plural
+latcommon.irrpron20640ah|ls.n20640|haec|neuter|accusative|plural
+latcommon.irrpron20640ai|ls.n20640|his|neuter|ablative|plural
+latcommon.irrpron20640aj|ls.n20640|his|neuter|ablative|plural

@@ -68,7 +68,7 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     
     offset = perfectsystem(t) ? 3 : 6
     if perfectsystem(t)
-        push!(mdlines, "Passive voice of $(label(t)): TBA")
+        #push!(mdlines, "Passive voice of $(label(t)): TBA")
     else
         push!(mdlines,"Passive voice")
         push!(mdlines, "")
@@ -103,3 +103,230 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     end
     join(mdlines, "\n")
 end
+
+
+
+"""Compose markdown for full conjugation of verb identified
+by LexemeUrn.
+$(SIGNATURES)
+"""
+function md_verb_conjugation(lexu::LexemeUrn, td::Tabulae.Dataset)
+    sections = [   
+        md_presentsystem(lexu, td),
+        md_perfectsystem(lexu, td),
+    ]
+    join(sections, "\n\n")
+end
+
+function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
+   
+    inf_act = LMFInfinitive(
+        lmpTense("perfect"), lmpVoice("active")
+    )
+    inf_actforms = join(token.(generate(lexu, formurn(inf_act), td)), ", ")
+
+
+    passptcpl = participleslashline(lexu, lmpTense("perfect"), lmpVoice("passive"), td)   
+    
+    
+    mdoutput = [
+    "## Perfect system","",
+    "### Perfect tense","",
+
+    md_tenseconjugation(lmpTense("perfect"), lexu, td),
+    "",
+  
+
+    "### Infinitives","",
+
+    "*active*: " * inf_actforms,"",
+
+    
+
+
+    "### Participles","",
+
+    "*passive*: " * passptcpl,
+
+
+
+    "### Pluperfect tense","",
+    #"*Active voice*:","",
+    md_tenseconjugation(lmpTense("pluperfect"), lexu, td),
+    "",
+
+
+    "### Future perfect tense","",
+    md_tenseconjugation(lmpTense("future_perfect"), lexu, td),
+    "",
+
+
+   
+
+
+
+    ]
+    join(mdoutput, "\n")
+end
+
+"""Compose markdown table with imperative conjugation of `lex`.
+$(SIGNATURES)
+"""
+function imperativeconjugation_md(lex::LexemeUrn, td::Tabulae.Dataset)
+    p = lmpPerson("second")
+    t = lmpTense("present")
+    m = lmpMood("imperative")
+
+    mdlines = ["| | Singular | Plural|",   
+    "| --- | --- | --- |"]
+
+    act = lmpVoice("active")
+    pass = lmpVoice("passive")
+
+    sing = lmpNumber("singular")
+    pl = lmpNumber("plural")
+
+    singforms = [
+        LMFFiniteVerb(p,sing,t,m, act),
+        LMFFiniteVerb(p,sing,t,m, pass),
+    ]
+    generatedsing = []
+    for f in singforms
+        frmstring = join(generate(lex, formurn(f), td) .|> token,", ")
+        push!(generatedsing, frmstring)
+    end
+    plforms = [
+        LMFFiniteVerb(p,pl,t,m, act),
+        LMFFiniteVerb(p,pl,t,m, pass),
+    ]
+    generatedpl = []
+    for f in plforms
+        frmstring = join(generate(lex, formurn(f),td) .|> token,", ")
+        push!(generatedpl,frmstring)
+    end
+    for i in 1:2
+        push!(mdlines, "| **$(voicelabeldict[i])** | $(generatedsing[i] ) | $(generatedpl[i] )  |")
+    end
+    join(mdlines,"\n")
+
+end
+
+
+"""Compose markdown for conjugation in the present system of the verb identified by LexemeUrn.
+$(SIGNATURES)
+"""
+function md_presentsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
+ 
+    inf_act = LMFInfinitive(
+        lmpTense("present"), lmpVoice("active")
+    )
+    inf_actforms = join(token.(generate(lexu, formurn(inf_act), td)), ", ")
+    inf_pass = LMFInfinitive(
+        lmpTense("present"), lmpVoice("passive")
+    )
+    inf_passforms = join(token.(generate(lexu, formurn(inf_pass), td)), ", ")
+    actptcpl = participleslashline(lexu, lmpTense("present"), lmpVoice("active"), td)   
+    #passptcpl = participleslashline(lexu, lmpTense("present"), lmpVoice("passive"), td)
+    
+    mdoutput = [
+    "## Present system","",
+    "### Present tense","",
+
+
+
+    #"*Active voice*:","",
+
+    md_tenseconjugation(lmpTense("present"), lexu, td),
+    "",
+    
+   # "*Passive voice*:","",
+   # md_verb_conjugation(lmpTense("present"), lmpVoice("passive"), lexu, kd),
+   # "",
+
+
+    "### Imperative","",
+    imperativeconjugation_md(lexu, td), 
+
+
+    "### Infinitives","",
+
+    "*active*: " * inf_actforms,"",
+    "*passive*: " * inf_passforms,"",
+
+    
+
+
+    "### Participles","",
+
+    "*active*: " * actptcpl,
+
+
+
+
+
+    "### Imperfect tense","",
+    #"*Active voice*:","",
+    md_tenseconjugation(lmpTense("imperfect"), lexu, td),
+    "",
+   
+
+
+
+    "### Future tense","",
+
+
+    md_tenseconjugation(lmpTense("future"), lexu, td),
+    "",
+    
+    "### Participles","",
+
+    "*active*: " * participleslashline(lexu, lmpTense("future"), lmpVoice("active"), td),
+
+
+   
+
+    ]
+    join(mdoutput, "\n")
+end
+
+
+
+"""Compose a string with masculine, feminine, neuter nominative singular of a given particple for `lexeme`.
+$(SIGNATURES)
+"""
+function participleslashline(
+    lex::LexemeUrn,  
+    tense::LMPTense, voice::LMPVoice, 
+    td::Tabulae.Dataset;
+    examplecase = lmpCase("nominative")
+    )::String
+
+    formslist = filter(f -> f isa LMFParticiple && lmpTense(f) == tense && lmpVoice(f) == voice && lmpNumber(f) == lmpNumber(1) && lmpCase(f) == examplecase, allforms())
+
+    generated = map(f -> token.(generate(lex, formurn(f), td)),  formslist)
+    join(map(v -> isempty(v) ? "" : v[1], generated), ", ")
+end
+
+
+"""Compile list of all possible form codes.
+$(SIGNATURES)
+"""
+function allformcodes()
+    vcat(
+        #nounformcodes(), 
+        #adjectiveformcodes(),
+        finiteverbcodes(),
+        infinitiveformcodes(),
+        participleformcodes(),
+        ##pronounformcodes(),
+        #uninflectedformcodes()
+    )
+end
+
+"""Generate list of all possible form objects.
+$(SIGNATURES)
+"""
+function allforms()
+    allformcodes() .|> latinForm
+end
+

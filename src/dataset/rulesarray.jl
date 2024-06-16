@@ -16,14 +16,16 @@ function rulesarray(dirlist; delimiter = "|")
         "nouns" => NounIO("noun"),
         "verbs" => VerbIO("verb"),
         "infinitives" => InfinitiveIO("infinitives"),
-        "participles" => ParticipleIO("infinitives")
+        "participles" => ParticipleIO("participles"),
+        "irregulars" => IrregularVerbIO("irregular finite verb forms")
         ]
     )
     rulesdirs = [
         "nouns",
         "verbs",
         "infinitives",
-        "participles"
+        "participles",
+        "irregulars"
         
     ]
     rulesarr = Rule[]
@@ -40,9 +42,16 @@ function rulesarray(dirlist; delimiter = "|")
                 raw = readlines(f)
                 lines = filter(s -> ! isempty(s), raw)
                 for i in 2:length(lines)
-                    #@info("LINE IS ", lines[i])
+                    if delimitedreader isa IrregularInfinitiveIO
+                        @info("LINE IS ", lines[i])
+                    end
                     rule = readrulerow(delimitedreader, lines[i], delimiter = delimiter)
-                    push!(rulesarr,rule)
+                    if rule isa DomainError
+                        @warn("Erred on $(lines[i])")
+                        @warn(rule)
+                    else
+                        push!(rulesarr,rule)
+                    end
                 end
             end
         end

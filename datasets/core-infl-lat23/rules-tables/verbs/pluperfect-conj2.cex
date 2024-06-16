@@ -1,0 +1,15 @@
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+
+lat23.ere_plupft1|conj2|ueram|first|singular|pluperfect|indicative|active
+lat23.ere_plupft2|conj2|ueras|second|singular|pluperfect|indicative|active
+lat23.ere_plupft3|conj2|uerat|third|singular|pluperfect|indicative|active
+lat23.ere_plupft4|conj2|ueramus|first|plural|pluperfect|indicative|active
+lat23.ere_plupft5|conj2|ueratis|second|plural|pluperfect|indicative|active
+lat23.ere_plupft6|conj2|uerant|third|plural|pluperfect|indicative|active
+
+lat23.ere_plupft7|conj2|uissem|first|singular|pluperfect|subjunctive|active
+lat23.ere_plupft8|conj2|uisses|second|singular|pluperfect|subjunctive|active
+lat23.ere_plupft9|conj2|uisset|third|singular|pluperfect|subjunctive|active
+lat23.ere_plupft10|conj2|uissemus|first|plural|pluperfect|subjunctive|active
+lat23.ere_plupft11|conj2|uissetis|second|plural|pluperfect|subjunctive|active
+lat23.ere_plupft12|conj2|uissent|third|plural|pluperfect|subjunctive|active

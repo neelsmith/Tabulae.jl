@@ -1,12 +1,12 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-ocremorph.0_i1|0_i||masculine|nominative|sg
-ocremorph.0_i2|0_i|i|masculine|genitive|sg
-ocremorph.0_i3|0_i|o|masculine|dative|sg
-ocremorph.0_i4|0_i|vm|masculine|accusative|sg
-ocremorph.0_i5|0_i|o|masculine|ablative|sg
-ocremorph.0_i6|0_i|i|masculine|nominative|pl
-ocremorph.0_i7|0_i|orvm|masculine|genitive|pl
-ocremorph.0_i8|0_i|is|masculine|dative|pl
-ocremorph.0_i9|0_i|os|masculine|accusative|pl
-ocremorph.0_i10|0_i|is|masculine|ablative|pl
+ocremorph.0_i1|0_i||masculine|nominative|singular
+ocremorph.0_i2|0_i|i|masculine|genitive|singular
+ocremorph.0_i3|0_i|o|masculine|dative|singular
+ocremorph.0_i4|0_i|vm|masculine|accusative|singular
+ocremorph.0_i5|0_i|o|masculine|ablative|singular
+ocremorph.0_i6|0_i|i|masculine|nominative|plural
+ocremorph.0_i7|0_i|orvm|masculine|genitive|plural
+ocremorph.0_i8|0_i|is|masculine|dative|plural
+ocremorph.0_i9|0_i|os|masculine|accusative|plural
+ocremorph.0_i10|0_i|is|masculine|ablative|plural

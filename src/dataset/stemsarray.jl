@@ -57,29 +57,34 @@ function stemsarray(dirlist; delimiter = "|")
     irregiodict = Dict(
         [
         #"uninflected" => UninflectedIO("uninflected"),
-        "nouns" => IrregularNounIO("noun"),
-        #"verbs" => IrregularVerbIO("finite verb"),
+        #"nouns" => IrregularNounIO("noun"),
+        "verbs" => IrregularVerbIO("finite verb"),
         #"infinitives" => IrregularInfinitiveIO("infinitive"),
         #"adjectives" => IrregularAdjectiveIO("adjectives")
         ]
     )
     irregstemdirs = [
-        "nouns",
-        #"verbs",
+        #"nouns",
+        "verbs",
         #"infinitives",
         #"adjectives"
     ]
     #@info("Getting irregular stems for $dirlist")
     for datasrc in dirlist
         for dirname in irregstemdirs 
+            @debug("Collecting irregular stems from dir $(dirname) in src $(datasrc).")
             dir = joinpath(datasrc, "irregular-stems", dirname)
             cexfiles = glob("*.cex", dir)
+            if ! isempty(cexfiles)
+                @debug("Found these files for irregulars: $(cexfiles)")
+            end
             delimitedreader = (irregiodict[dirname])
             for f in cexfiles
                 raw = readlines(f)
                 lines = filter(s -> ! isempty(s), raw)
                 for i in 2:length(lines)
                     stem = readstemrow(delimitedreader, lines[i]; delimiter = delimiter)
+                    @debug("row $(lines[i]) yielded $(stem)")
                     push!(stemsarr,stem)
                 end
             end

@@ -52,7 +52,7 @@ $(SIGNATURES)
 """
 function analyses(td::Tabulae.Dataset)::Vector{Analysis}
     formlist = Analysis[]
-    @info("Analyzing all noun forms in dataset...")
+    @debug("Analyzing all noun forms in dataset...")
     formlist = append!(formlist, nounanalyses(td)) 
     formlist = append!(formlist, verbanalyses(td)) 
 end

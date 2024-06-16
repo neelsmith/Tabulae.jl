@@ -1,0 +1,70 @@
+# Managing data in multiple orthographies
+
+
+```{julia}
+#| echo: false
+#| output: false
+#repo  = pwd()
+repo = pwd() |> dirname |> dirname
+
+```
+
+
+:::{.callout-warning}
+## Incomplete
+
+TBA
+:::
+
+## Overview
+
+This is a strength of Tabulae's design.
+
+- example of ortho2[345] correspondences with appropriate distinctions of i/j, u/v (or not)
+- pair with `common` dir where no need to replicate
+
+
+We'll use three directories: a common directory, and specialized directories for a 23-character and a 25-character orthography.
+
+```{julia}
+#| output: false
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+lat23dir = joinpath(repo, "datasets", "core-infl-lat23") 
+```
+
+
+We'll make two datasets by combining each specialized directory with the common one, and build two parsers from them
+
+```{julia}
+#| warning: false 
+using Tabulae, CitableParserBuilder
+ds23 = dataset([shareddir, lat23dir])
+ds25 = dataset([shareddir, lat25dir])
+
+p23 = tabulaeStringParser(ds23)
+p25 = tabulaeStringParser(ds25)
+```
+
+
+```{julia}
+results25 = parsetoken("amavissem", p25)
+```
+
+
+
+```{julia}
+results23 = parsetoken("amauissem", p23)
+```
+
+
+We can computationally verify that "amavissem" in 25-letter orthography in fact is identical to "amauissem" in 23-letter orthography, because they have identical lexemes and forms.
+
+```{julia}
+lexemeurn(results23[1]) == lexemeurn(results25[1])
+```
+
+```{julia}
+formurn(results23[1]) == formurn(results25[1])
+```
+

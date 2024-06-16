@@ -40,9 +40,6 @@ function lmpVoice(p::TabulaeParticipleRule)
     p.pvoice
 end
 
-function id(r::TabulaeParticipleRule)
-    r.ruleid
-end
 
 """Create a `LMFParticiple` from `rule`.
 $(SIGNATURES)

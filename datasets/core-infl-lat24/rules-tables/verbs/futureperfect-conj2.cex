@@ -1,0 +1,8 @@
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+
+lat24.ere_futpft1|conj2|uero|first|singular|future_perfect|indicative|active
+lat24.ere_futpft2|conj2|ueris|second|singular|future_perfect|indicative|active
+lat24.ere_futpft3|conj2|uerit|third|singular|future_perfect|indicative|active
+lat24.ere_futpft4|conj2|uerimus|first|plural|future_perfect|indicative|active
+lat24.ere_futpft5|conj2|ueritis|second|plural|future_perfect|indicative|active
+lat24.ere_futpft6|conj2|uerint|third|plural|future_perfect|indicative|active

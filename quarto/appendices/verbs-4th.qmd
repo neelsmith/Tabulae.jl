@@ -1,5 +1,43 @@
 # Fourth-conjugation verbs
 
-::: {.callout-caution}
-TBA
-:::
+```{julia}
+#| warning: false
+#| output: false
+#| echo: false
+repo = pwd() |> dirname |> dirname
+
+using Tabulae, CitableParserBuilder
+using  Markdown
+
+shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
+lat23dir = joinpath(repo, "datasets", "core-infl-lat23") 
+ds25 = dataset([shareddir, lat25dir])
+ds23 = dataset([shareddir, lat23dir])
+```
+
+## Conjugation in a 25-character alphabet
+
+`ds25` is a dataset using a Latin orthography with 25 alphabetic characters, distinguishing vocalic "i" and "u" from consonontal or semivocalic "j" and "v."
+
+```{julia}
+#| warning: false
+#| asis: true
+audio = LexemeUrn("ls.n4453")
+md_verb_conjugation(audio,ds25) |> Markdown.parse
+```
+
+
+
+## Conjugation in a 23-character alphabet
+
+
+
+`d23` is a dataset using a Latin orthography with 23 alphabetic characters, using "i" and "u" for both vocalic and consonantal sounds.
+
+
+```{julia}
+#| warning: false
+#| asis: true
+md_verb_conjugation(audio,ds23) |> Markdown.parse
+```

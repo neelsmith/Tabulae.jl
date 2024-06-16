@@ -150,7 +150,7 @@ function nounanalyses(td::Tabulae.Dataset)::Vector{Analysis}
     nounstems = filter(s -> s isa TabulaeNounStem, stems)
     for (i, nounstem) in enumerate(nounstems)
         # Filter nounforms() for matching gender.
-        @info("Analyzing noun $(i)/$(length(nounstems))")
+        @debug("Analyzing noun $(i)/$(length(nounstems))")
        
         # THEN generate for those forms
         for f in filter(nf -> lmpGender(nf) == lmpGender(nounstem),  nounforms())

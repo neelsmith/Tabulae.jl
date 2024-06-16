@@ -1,39 +1,39 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-ocremorph.us_eris1|us_eris|vs|neuter|nominative|sg
-ocremorph.us_eris2|us_eris|eris|neuter|genitive|sg
-ocremorph.us_eris3|us_eris|eri|neuter|dative|sg
-ocremorph.us_eris4|us_eris|vs|neuter|accusative|sg
-ocremorph.us_eris5|us_eris|ere|neuter|ablative|sg
-ocremorph.us_eris6|us_eris|era|neuter|nominative|pl
-ocremorph.us_eris7|us_eris|ervm|neuter|genitive|pl
-ocremorph.us_eris8|us_eris|eribvs|neuter|dative|pl
-ocremorph.us_eris9|us_eris|era|neuter|accusative|pl
-ocremorph.us_eris10|us_eris|eribvs|neuter|ablative|pl
+ocremorph.us_eris1|us_eris|vs|neuter|nominative|singular
+ocremorph.us_eris2|us_eris|eris|neuter|genitive|singular
+ocremorph.us_eris3|us_eris|eri|neuter|dative|singular
+ocremorph.us_eris4|us_eris|vs|neuter|accusative|singular
+ocremorph.us_eris5|us_eris|ere|neuter|ablative|singular
+ocremorph.us_eris6|us_eris|era|neuter|nominative|plural
+ocremorph.us_eris7|us_eris|ervm|neuter|genitive|plural
+ocremorph.us_eris8|us_eris|eribvs|neuter|dative|plural
+ocremorph.us_eris9|us_eris|era|neuter|accusative|plural
+ocremorph.us_eris10|us_eris|eribvs|neuter|ablative|plural
 
 
 
 
-ocremorph.us_eris1|us_eris|vs|masculine|nominative|sg
-ocremorph.us_eris2|us_eris|eris|masculine|genitive|sg
-ocremorph.us_eris3|us_eris|eri|masculine|dative|sg
-ocremorph.us_eris4|us_eris|vs|masculine|accusative|sg
-ocremorph.us_eris5|us_eris|ere|masculine|ablative|sg
-ocremorph.us_eris6|us_eris|era|masculine|nominative|pl
-ocremorph.us_eris7|us_eris|ervm|masculine|genitive|pl
-ocremorph.us_eris8|us_eris|eribvs|masculine|dative|pl
-ocremorph.us_eris9|us_eris|era|masculine|accusative|pl
-ocremorph.us_eris10|us_eris|eribvs|masculine|ablative|pl
+ocremorph.us_eris1|us_eris|vs|masculine|nominative|singular
+ocremorph.us_eris2|us_eris|eris|masculine|genitive|singular
+ocremorph.us_eris3|us_eris|eri|masculine|dative|singular
+ocremorph.us_eris4|us_eris|vs|masculine|accusative|singular
+ocremorph.us_eris5|us_eris|ere|masculine|ablative|singular
+ocremorph.us_eris6|us_eris|era|masculine|nominative|plural
+ocremorph.us_eris7|us_eris|ervm|masculine|genitive|plural
+ocremorph.us_eris8|us_eris|eribvs|masculine|dative|plural
+ocremorph.us_eris9|us_eris|era|masculine|accusative|plural
+ocremorph.us_eris10|us_eris|eribvs|masculine|ablative|plural
 
 
 
-ocremorph.us_eris1|us_eris|vs|feminine|nominative|sg
-ocremorph.us_eris2|us_eris|eris|feminine|genitive|sg
-ocremorph.us_eris3|us_eris|eri|feminine|dative|sg
-ocremorph.us_eris4|us_eris|vs|feminine|accusative|sg
-ocremorph.us_eris5|us_eris|ere|feminine|ablative|sg
-ocremorph.us_eris6|us_eris|era|feminine|nominative|pl
-ocremorph.us_eris7|us_eris|ervm|feminine|genitive|pl
-ocremorph.us_eris8|us_eris|eribvs|feminine|dative|pl
-ocremorph.us_eris9|us_eris|era|feminine|accusative|pl
-ocremorph.us_eris10|us_eris|eribvs|feminine|ablative|pl
+ocremorph.us_eris1|us_eris|vs|feminine|nominative|singular
+ocremorph.us_eris2|us_eris|eris|feminine|genitive|singular
+ocremorph.us_eris3|us_eris|eri|feminine|dative|singular
+ocremorph.us_eris4|us_eris|vs|feminine|accusative|singular
+ocremorph.us_eris5|us_eris|ere|feminine|ablative|singular
+ocremorph.us_eris6|us_eris|era|feminine|nominative|plural
+ocremorph.us_eris7|us_eris|ervm|feminine|genitive|plural
+ocremorph.us_eris8|us_eris|eribvs|feminine|dative|plural
+ocremorph.us_eris9|us_eris|era|feminine|accusative|plural
+ocremorph.us_eris10|us_eris|eribvs|feminine|ablative|plural
