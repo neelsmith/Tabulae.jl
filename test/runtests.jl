@@ -4,6 +4,9 @@ using CitableCorpus, CitableText
 using CitableBase
 using Test
 
+
+
+#include("test_io.jl")
 include("test_dataset.jl")
 include("test_registry.jl")
 include("test_stringparser.jl")

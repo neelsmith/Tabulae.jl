@@ -12,6 +12,7 @@ import CitableParserBuilder: generate
 import CitableParserBuilder: lexemeurn
 import CitableParserBuilder: stringParser
 import CitableParserBuilder: tofile
+import CitableParserBuilder: analyses
 
 
 
@@ -73,7 +74,7 @@ export TabulaeNounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
 
 export TabulaeStringParser, tabulaeStringParser
-export analysis_line, analysis_lines
+#export analysis_line, analysis_lines
 
 
 export md_declension

@@ -71,6 +71,7 @@ function tabulaeStringParser(u, ureader::Type{UrlReader})
     sp
 end
 
+#=
 """Serialize a single analysis to delimited text.
 $(SIGNATURES)
 """
@@ -85,6 +86,7 @@ function analysis_line(a::Analysis; delimiter = "|")
     join(pieces, delimiter)
 end
 
+
 """Map `Analysis` objects to string values.
 $(SIGNATURES)
 """
@@ -98,22 +100,8 @@ $(SIGNATURES)
 function analysis_lines(td::Tabulae.Dataset)
     analyses(td) |> analysis_lines
 end
-
-#=
-"""Create an `Analysis` from line of delimited text.
-$(SIGNATURES)
-"""
-function fromline(s::AbstractString; delimiter = "|")
-    pieces = split(s,delimiter)
-    Analysis(
-        pieces[1], 
-        LexemeUrn(pieces[2]),
-        FormUrn(pieces[3]),
-        StemUrn(pieces[4]),
-        RuleUrn(pieces[5])
-    )
-end
 =#
+
 
 
 """Generate all forms possible for `stem`.

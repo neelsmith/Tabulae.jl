@@ -23,7 +23,7 @@ function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vec
                         if targetgender == rulegender
                             token = string(stemvalue(stem), ending(rule))
                             @debug("Matching, created $(token) for infl type $(inflectionType(rule)) and form $(lmForm(rule))")
-                            push!(generated, Analysis(token, lexemeurn(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule)))
+                            push!(generated, Analysis(token, lexemeurn(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
                         end
                     end
                 end
@@ -55,7 +55,7 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
             for rule in classrules
                 token = string(stemvalue(stem), ending(rule))
                 @debug("Matching, created $(token) for infl type $(inflectionType(rule)) and form $(lmForm(rule))")
-                push!(generated, Analysis(token, lexemeurn(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule)))
+                push!(generated, Analysis(token, lexemeurn(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
             end
             
         end
