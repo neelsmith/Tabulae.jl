@@ -1,25 +1,25 @@
 RuleUrn|InflectionClasses|Ending|Gender|Case|Number
 
-ocremorph.a_ae1|a_ae|a|feminine|nominative|sg
-ocremorph.a_ae2|a_ae|ae|feminine|genitive|sg
-ocremorph.a_ae3|a_ae|ae|feminine|dative|sg
-ocremorph.a_ae4|a_ae|am|feminine|accusative|sg
-ocremorph.a_ae5|a_ae|a|feminine|ablative|sg
-ocremorph.a_ae6|a_ae|ae|feminine|nominative|pl
-ocremorph.a_ae7|a_ae|arvm|feminine|genitive|pl
-ocremorph.a_ae8|a_ae|is|feminine|dative|pl
-ocremorph.a_ae9|a_ae|as|feminine|accusative|pl
-ocremorph.a_ae10|a_ae|is|feminine|ablative|pl
+ocremorph.a_ae1|a_ae|a|feminine|nominative|singular
+ocremorph.a_ae2|a_ae|ae|feminine|genitive|singular
+ocremorph.a_ae3|a_ae|ae|feminine|dative|singular
+ocremorph.a_ae4|a_ae|am|feminine|accusative|singular
+ocremorph.a_ae5|a_ae|a|feminine|ablative|singular
+ocremorph.a_ae6|a_ae|ae|feminine|nominative|plural
+ocremorph.a_ae7|a_ae|arvm|feminine|genitive|plural
+ocremorph.a_ae8|a_ae|is|feminine|dative|plural
+ocremorph.a_ae9|a_ae|as|feminine|accusative|plural
+ocremorph.a_ae10|a_ae|is|feminine|ablative|plural
 
 
 
-ocremorph.a_ae1|a_ae|a|masculine|nominative|sg
-ocremorph.a_ae2|a_ae|ae|masculine|genitive|sg
-ocremorph.a_ae3|a_ae|ae|masculine|dative|sg
-ocremorph.a_ae4|a_ae|am|masculine|accusative|sg
-ocremorph.a_ae5|a_ae|a|masculine|ablative|sg
-ocremorph.a_ae6|a_ae|ae|masculine|nominative|pl
-ocremorph.a_ae7|a_ae|arvm|masculine|genitive|pl
-ocremorph.a_ae8|a_ae|is|masculine|dative|pl
-ocremorph.a_ae9|a_ae|as|masculine|accusative|pl
-ocremorph.a_ae10|a_ae|is|masculine|ablative|pl
+ocremorph.a_ae1|a_ae|a|masculine|nominative|singular
+ocremorph.a_ae2|a_ae|ae|masculine|genitive|singular
+ocremorph.a_ae3|a_ae|ae|masculine|dative|singular
+ocremorph.a_ae4|a_ae|am|masculine|accusative|singular
+ocremorph.a_ae5|a_ae|a|masculine|ablative|singular
+ocremorph.a_ae6|a_ae|ae|masculine|nominative|plural
+ocremorph.a_ae7|a_ae|arvm|masculine|genitive|plural
+ocremorph.a_ae8|a_ae|is|masculine|dative|plural
+ocremorph.a_ae9|a_ae|as|masculine|accusative|plural
+ocremorph.a_ae10|a_ae|is|masculine|ablative|plural

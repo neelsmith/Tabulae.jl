@@ -1,33 +1,33 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
-livymorph.irrpqui1|ls.n40103|qui|masculine|nominative|sg
-livymorph.irrpqui3|ls.n40103|cui|masculine|dative|sg
-livymorph.irrpqui4|ls.n40103|quem|masculine|accusative|sg
-livymorph.irrpqui5|ls.n40103|quo|masculine|ablative|sg
+livymorph.irrpqui1|ls.n40103|qui|masculine|nominative|singular
+livymorph.irrpqui3|ls.n40103|cui|masculine|dative|singular
+livymorph.irrpqui4|ls.n40103|quem|masculine|accusative|singular
+livymorph.irrpqui5|ls.n40103|quo|masculine|ablative|singular
 
-livymorph.irrpqui6|ls.n40103|qui|masculine|nominative|pl
-livymorph.irrpqui7|ls.n40103|quorum|masculine|genitive|pl
-livymorph.irrpqui8|ls.n40103|quibus|masculine|dative|pl
-livymorph.irrpqui9|ls.n40103|quos|masculine|accusative|pl
-livymorph.irrpqui10|ls.n40103|quibus|masculine|ablative|pl
+livymorph.irrpqui6|ls.n40103|qui|masculine|nominative|plural
+livymorph.irrpqui7|ls.n40103|quorum|masculine|genitive|plural
+livymorph.irrpqui8|ls.n40103|quibus|masculine|dative|plural
+livymorph.irrpqui9|ls.n40103|quos|masculine|accusative|plural
+livymorph.irrpqui10|ls.n40103|quibus|masculine|ablative|plural
 
-livymorph.irrpqui11|ls.n40103|quae|feminine|nominative|sg
-livymorph.irrpqui13|ls.n40103|cui|feminine|dative|sg
-livymorph.irrpqui14|ls.n40103|quam|feminine|accusative|sg
-livymorph.irrpqui15|ls.n40103|qua|feminine|ablative|sg
+livymorph.irrpqui11|ls.n40103|quae|feminine|nominative|singular
+livymorph.irrpqui13|ls.n40103|cui|feminine|dative|singular
+livymorph.irrpqui14|ls.n40103|quam|feminine|accusative|singular
+livymorph.irrpqui15|ls.n40103|qua|feminine|ablative|singular
 
-livymorph.irrpqui16|ls.n40103|quae|feminine|nominative|pl
-livymorph.irrpqui17|ls.n40103|quarum|feminine|genitive|pl
-livymorph.irrpqui18|ls.n40103|quibus|feminine|dative|pl
-livymorph.irrpqui19|ls.n40103|quas|feminine|accusative|pl
-livymorph.irrpqui20|ls.n40103|quibus|feminine|ablative|pl
+livymorph.irrpqui16|ls.n40103|quae|feminine|nominative|plural
+livymorph.irrpqui17|ls.n40103|quarum|feminine|genitive|plural
+livymorph.irrpqui18|ls.n40103|quibus|feminine|dative|plural
+livymorph.irrpqui19|ls.n40103|quas|feminine|accusative|plural
+livymorph.irrpqui20|ls.n40103|quibus|feminine|ablative|plural
 
-livymorph.irrpqui21|ls.n40103|quod|neuter|nominative|sg
-livymorph.irrpqui23|ls.n40103|cui|neuter|dative|sg
-livymorph.irrpqui24|ls.n40103|quod|neuter|accusative|sg
-livymorph.irrpqui25|ls.n40103|quo|neuter|ablative|sg
+livymorph.irrpqui21|ls.n40103|quod|neuter|nominative|singular
+livymorph.irrpqui23|ls.n40103|cui|neuter|dative|singular
+livymorph.irrpqui24|ls.n40103|quod|neuter|accusative|singular
+livymorph.irrpqui25|ls.n40103|quo|neuter|ablative|singular
 
-livymorph.irrpqui26|ls.n40103|quae|neuter|nominative|pl
-livymorph.irrpqui27|ls.n40103|quorum|neuter|genitive|pl
-livymorph.irrpqui28|ls.n40103|quibus|neuter|dative|pl
-livymorph.irrpqui29|ls.n40103|quae|neuter|accusative|pl
-livymorph.irrpqui30|ls.n40103|quibus|neuter|ablative|pl
+livymorph.irrpqui26|ls.n40103|quae|neuter|nominative|plural
+livymorph.irrpqui27|ls.n40103|quorum|neuter|genitive|plural
+livymorph.irrpqui28|ls.n40103|quibus|neuter|dative|plural
+livymorph.irrpqui29|ls.n40103|quae|neuter|accusative|plural
+livymorph.irrpqui30|ls.n40103|quibus|neuter|ablative|plural

@@ -13,6 +13,12 @@ out23 = joinpath(repo, "scratch", "core-lat23-$(datestr).cex")
 out24 = joinpath(repo, "scratch", "core-lat24-$(datestr).cex")
 out25 = joinpath(repo, "scratch", "core-lat25-$(datestr).cex")
 
+
+
+curr23 = joinpath(repo, "scratch", "core-lat23-current.cex")
+curr24 = joinpath(repo, "scratch", "core-lat24-current.cex")
+curr25 = joinpath(repo, "scratch", "core-lat25-current.cex")
+
 shareddir = joinpath(repo, "datasets", "core-infl-shared") 
 sharedvocab = joinpath(repo, "datasets", "core-vocab-shared") 
 
@@ -35,14 +41,24 @@ p24 = tabulaeStringParser(ds24)
 p25 = tabulaeStringParser(ds25)
 
 tofile(p23, out23)
-tofile(p24, out24)
-tofile(p25, out25)
+tofile(p23, curr23)
 
+tofile(p24, out24)
+tofile(p24, curr24)
+
+tofile(p25, out25)
+tofile(p25, curr25)
 
 
 rules23 = rulesarray(ds23)
 rules24 = rulesarray(ds24)
 rules25 = rulesarray(ds25)
+
+
+
+
+
+
 
 
 rulesout23 = joinpath(repo, "scratch", "rules-lat23-$(datestr).cex")

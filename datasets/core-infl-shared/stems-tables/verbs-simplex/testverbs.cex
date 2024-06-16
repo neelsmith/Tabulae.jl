@@ -3,7 +3,9 @@ latcommon.verbn2280|ls.n2280|am|conj1
 
 latcommon.verbn12387|ls.n12387|deb|conj2
 
-latcommon.verbn11525a|ls.n11525|cred|conj3
+latcommon.verbn11525a|ls.n11525|cred|c3pres
+latcommon.verbn11525b|ls.n11525|credid|pftact
+latcommon.verbn11525c|ls.n11525|credit|pftpass
 
 latcommon.verbn6614a|ls.n6614|cap|c3iopres
 latcommon.verbn6614b|ls.n6614|cep|pftact

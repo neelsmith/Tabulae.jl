@@ -223,6 +223,8 @@ latcommon.verbn26721b|ls.n26721|liqu|pftact
 latcommon.verbn26721c|ls.n26721|lict|pftpass
 latcommon.verbn26988a|ls.n26988|loqu|c3pres
 latcommon.verbn26988c|ls.n26988|locut|pftpass
+
+
 latcommon.verbn27841|ls.n27841|mand|conj1
 latcommon.verbn27858a|ls.n27858|man|c2pres
 latcommon.verbn27858b|ls.n27858|mans|pftact
@@ -244,7 +246,9 @@ latcommon.verbn29616|ls.n29616|monstr|conj1
 latcommon.verbn29707a|ls.n29707|mor|c3iopresdep
 latcommon.verbn29707c|ls.n29707|mortu|pftpass
 latcommon.verbn29751|ls.n29751|mor|conj1
+latcommon.verbn29751|ls.n29924|multiplic|conj1
 latcommon.verbn30179|ls.n30179|mut|conj1
+
 latcommon.verbn30357a|ls.n30357|nancisc|c3presdep
 latcommon.verbn30357b|ls.n30357|nact|pftpass
 latcommon.verbn30423a|ls.n30423|nasc|c3presdep

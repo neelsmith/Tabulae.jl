@@ -1,25 +1,25 @@
 RuleUrn|InflectionClasses|Ending|gender|Case|Number
 
-ocremorph.o_onis1|o_onis|o|feminine|nominative|sg
-ocremorph.o_onis2|o_onis|onis|feminine|genitive|sg
-ocremorph.o_onis3|o_onis|oni|feminine|dative|sg
-ocremorph.o_onis4|o_onis|onem|feminine|accusative|sg
-ocremorph.o_onis5|o_onis|one|feminine|ablative|sg
-ocremorph.o_onis6|o_onis|ones|feminine|nominative|pl
-ocremorph.o_onis7|o_onis|onvm|feminine|genitive|pl
-ocremorph.o_onis8|o_onis|onibvs|feminine|dative|pl
-ocremorph.o_onis9|o_onis|ones|feminine|accusative|pl
-ocremorph.o_onis10|o_onis|onibvs|feminine|ablative|pl
+ocremorph.o_onis1|o_onis|o|feminine|nominative|singular
+ocremorph.o_onis2|o_onis|onis|feminine|genitive|singular
+ocremorph.o_onis3|o_onis|oni|feminine|dative|singular
+ocremorph.o_onis4|o_onis|onem|feminine|accusative|singular
+ocremorph.o_onis5|o_onis|one|feminine|ablative|singular
+ocremorph.o_onis6|o_onis|ones|feminine|nominative|plural
+ocremorph.o_onis7|o_onis|onvm|feminine|genitive|plural
+ocremorph.o_onis8|o_onis|onibvs|feminine|dative|plural
+ocremorph.o_onis9|o_onis|ones|feminine|accusative|plural
+ocremorph.o_onis10|o_onis|onibvs|feminine|ablative|plural
 
 
 
-ocremorph.o_onis13|o_onis|o|masculine|nominative|sg
-ocremorph.o_onis14|o_onis|onis|masculine|genitive|sg
-ocremorph.o_onis15|o_onis|oni|masculine|dative|sg
-ocremorph.o_onis16|o_onis|onem|masculine|accusative|sg
-ocremorph.o_onis17|o_onis|one|masculine|ablative|sg
-ocremorph.o_onis18|o_onis|ones|masculine|nominative|pl
-ocremorph.o_onis19|o_onis|onvm|masculine|genitive|pl
-ocremorph.o_onis20|o_onis|onibvs|masculine|dative|pl
-ocremorph.o_onis21|o_onis|ones|masculine|accusative|pl
-ocremorph.o_onis22|o_onis|onibvs|masculine|ablative|pl
+ocremorph.o_onis13|o_onis|o|masculine|nominative|singular
+ocremorph.o_onis14|o_onis|onis|masculine|genitive|singular
+ocremorph.o_onis15|o_onis|oni|masculine|dative|singular
+ocremorph.o_onis16|o_onis|onem|masculine|accusative|singular
+ocremorph.o_onis17|o_onis|one|masculine|ablative|singular
+ocremorph.o_onis18|o_onis|ones|masculine|nominative|plural
+ocremorph.o_onis19|o_onis|onvm|masculine|genitive|plural
+ocremorph.o_onis20|o_onis|onibvs|masculine|dative|plural
+ocremorph.o_onis21|o_onis|ones|masculine|accusative|plural
+ocremorph.o_onis22|o_onis|onibvs|masculine|ablative|plural

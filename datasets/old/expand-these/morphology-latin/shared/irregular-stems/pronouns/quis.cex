@@ -1,33 +1,33 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
-latcommon.irregpron40242a|ls.n40242|quis|masculine|nominative|sg
-latcommon.irregpron40242b|ls.n40242|cui|masculine|dative|sg
-latcommon.irregpron40242c|ls.n40242|quem|masculine|accusative|sg
-latcommon.irregpron40242d|ls.n40242|quo|masculine|ablative|sg
+latcommon.irregpron40242a|ls.n40242|quis|masculine|nominative|singular
+latcommon.irregpron40242b|ls.n40242|cui|masculine|dative|singular
+latcommon.irregpron40242c|ls.n40242|quem|masculine|accusative|singular
+latcommon.irregpron40242d|ls.n40242|quo|masculine|ablative|singular
 
-latcommon.irregpron40242d|ls.n40242|qui|masculine|nominative|pl
-latcommon.irregpron40242e|ls.n40242|quorum|masculine|genitive|pl
-latcommon.irregpron40242f|ls.n40242|quibus|masculine|dative|pl
-latcommon.irregpron40242g|ls.n40242|quos|masculine|accusative|pl
-latcommon.irregpron40242h|ls.n40242|quibus|masculine|ablative|pl
+latcommon.irregpron40242d|ls.n40242|qui|masculine|nominative|plural
+latcommon.irregpron40242e|ls.n40242|quorum|masculine|genitive|plural
+latcommon.irregpron40242f|ls.n40242|quibus|masculine|dative|plural
+latcommon.irregpron40242g|ls.n40242|quos|masculine|accusative|plural
+latcommon.irregpron40242h|ls.n40242|quibus|masculine|ablative|plural
 
-latcommon.irregpron40242i|ls.n40242|quis|feminine|nominative|sg
-latcommon.irregpron40242j|ls.n40242|cui|feminine|dative|sg
-latcommon.irregpron40242k|ls.n40242|quem|feminine|accusative|sg
-latcommon.irregpron40242l|ls.n40242|quo|feminine|ablative|sg
+latcommon.irregpron40242i|ls.n40242|quis|feminine|nominative|singular
+latcommon.irregpron40242j|ls.n40242|cui|feminine|dative|singular
+latcommon.irregpron40242k|ls.n40242|quem|feminine|accusative|singular
+latcommon.irregpron40242l|ls.n40242|quo|feminine|ablative|singular
 
-latcommon.irregpron40242m|ls.n40242|quae|feminine|nominative|pl
-latcommon.irregpron40242n|ls.n40242|quarum|feminine|genitive|pl
-latcommon.irregpron40242o|ls.n40242|quibus|feminine|dative|pl
-latcommon.irregpron40242p|ls.n40242|quas|feminine|accusative|pl
-latcommon.irregpron40242q|ls.n40242|quibus|feminine|ablative|pl
+latcommon.irregpron40242m|ls.n40242|quae|feminine|nominative|plural
+latcommon.irregpron40242n|ls.n40242|quarum|feminine|genitive|plural
+latcommon.irregpron40242o|ls.n40242|quibus|feminine|dative|plural
+latcommon.irregpron40242p|ls.n40242|quas|feminine|accusative|plural
+latcommon.irregpron40242q|ls.n40242|quibus|feminine|ablative|plural
 
-latcommon.irregpron40242r|ls.n40242|quid|neuter|nominative|sg
-latcommon.irregpron40242s|ls.n40242|cui|neuter|dative|sg
-latcommon.irregpron40242t|ls.n40242|quid|neuter|accusative|sg
-latcommon.irregpron40242u|ls.n40242|quo|neuter|ablative|sg
+latcommon.irregpron40242r|ls.n40242|quid|neuter|nominative|singular
+latcommon.irregpron40242s|ls.n40242|cui|neuter|dative|singular
+latcommon.irregpron40242t|ls.n40242|quid|neuter|accusative|singular
+latcommon.irregpron40242u|ls.n40242|quo|neuter|ablative|singular
 
-latcommon.irregpron40242v|ls.n40242|quae|neuter|nominative|pl
-latcommon.irregpron40242w|ls.n40242|quorum|neuter|genitive|pl
-latcommon.irregpron40242x|ls.n40242|quibus|neuter|dative|pl
-latcommon.irregpron40242y|ls.n40242|quae|neuter|accusative|pl
-latcommon.irregpron40242z|ls.n40242|quibus|neuter|ablative|pl
+latcommon.irregpron40242v|ls.n40242|quae|neuter|nominative|plural
+latcommon.irregpron40242w|ls.n40242|quorum|neuter|genitive|plural
+latcommon.irregpron40242x|ls.n40242|quibus|neuter|dative|plural
+latcommon.irregpron40242y|ls.n40242|quae|neuter|accusative|plural
+latcommon.irregpron40242z|ls.n40242|quibus|neuter|ablative|plural

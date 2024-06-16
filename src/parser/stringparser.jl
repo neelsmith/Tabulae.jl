@@ -9,10 +9,6 @@ struct TabulaeStringParser <: AbstractStringParser
         ortho::LatinOrthographicSystem = latin24(), delim::AbstractString = "|") = new(entries, ortho, delim)
 end
 
-#function tofile(p::TabulaeStringParser, outfile)
-#    CitableParserBuilder.tofile(stringParser(p), outfile)
-#end
-
 function stringParser(p::TabulaeStringParser)
     StringParser(p.entries, p.ortho, p.delimiter)
 end
@@ -21,11 +17,9 @@ function datasource(p::TabulaeStringParser)
     p.entries
 end
 
-
 function delimiter(p::TabulaeStringParser)
     p.delimiter
 end
-
 
 function orthography(p::TabulaeStringParser)
     p.ortho
@@ -44,8 +38,6 @@ end
 $(SIGNATURES)
 """
 function tabulaeStringParser(td::Tabulae.Dataset)
-    #analysis_lines(td) |> TabulaeStringParser
-
     analyses = []
     rules = rulesarray(td)
     for stem in stemsarray(td)
@@ -71,55 +63,10 @@ function tabulaeStringParser(u, ureader::Type{UrlReader})
     sp
 end
 
-"""Serialize a single analysis to delimited text.
-$(SIGNATURES)
-"""
-function analysis_line(a::Analysis; delimiter = "|")
-    pieces = [
-        a.token,
-        string(a.lexeme),
-        string(a.form),
-        string(a.stem),
-        string(a.rule)
-    ]
-    join(pieces, delimiter)
-end
-
-"""Map `Analysis` objects to string values.
-$(SIGNATURES)
-"""
-function analysis_lines(v::Vector{Analysis})
-    map(a -> analysis_line(a), v)
-end
-
-"""Map all analyses in `td` to string values.
-$(SIGNATURES)
-"""
-function analysis_lines(td::Tabulae.Dataset)
-    analyses(td) |> analysis_lines
-end
-
-#=
-"""Create an `Analysis` from line of delimited text.
-$(SIGNATURES)
-"""
-function fromline(s::AbstractString; delimiter = "|")
-    pieces = split(s,delimiter)
-    Analysis(
-        pieces[1], 
-        LexemeUrn(pieces[2]),
-        FormUrn(pieces[3]),
-        StemUrn(pieces[4]),
-        RuleUrn(pieces[5])
-    )
-end
-=#
-
-
 """Generate all forms possible for `stem`.
 $(SIGNATURES)
 """
-function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}) 
+function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}; delimiter = "|") 
     generated = []        
     classrules = filter(rules) do r
         inflectionType(r) == inflectionType(stem) &&
@@ -129,13 +76,13 @@ function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule})
     for rule in classrules
         token = string(stemvalue(stem), ending(rule))
         
-        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+        push!(generated, string(token, delimiter, lexemeurn(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token))
 
     end
     generated
 end
 
-function buildparseable(stem::T,  rules::Vector{Rule}) where {T <: TabulaeIrregularStem}
+function buildparseable(stem::T,  rules::Vector{Rule}; delimiter = "|") where {T <: TabulaeIrregularStem}
     @debug("BUILD FOR AN IRREGULAR: stem $(stem) with infl type $(inflectionType(stem))")
     
     generated = []        
@@ -144,39 +91,71 @@ function buildparseable(stem::T,  rules::Vector{Rule}) where {T <: TabulaeIrregu
     for rule in classrules
         @debug("Process rule $(rule) with infl type $(inflectionType(rule))")
         token = tokenvalue(stem)
-        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(stem)), "|", urn(stem), "|", urn(rule)))
+        push!(generated, string(token, delimiter, lexemeurn(stem), delimiter, formurn(lmForm(stem)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token))
         @debug("Pushed $(token)")
     end
     generated
 end
 
-function buildparseable(stem::Stem,  rules::Vector{Rule})
+function buildparseable(stem::Stem,  rules::Vector{Rule}; delimiter = "|")
     generated = []        
     classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
     #@info("$(stem) matches rules $(classrules)")
     for rule in classrules
         token = string(stemvalue(stem), ending(rule))
         
-        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
+        push!(generated, string(token, delimiter, lexemeurn(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule), delimiter, token))
 
     end
     generated
 end
 
 
+enclitics = ["que", "ve", "ne", "cum", "met"]
 
-#=
 
-function buildparseable(stem::Stem,  rules::Vector{Rule})
-    generated = []        
-    classrules = filter(r -> inflectionType(r) == inflectionType(stem), rules)
-    #@info("$(stem) matches rules $(classrules)")
-    for rule in classrules
-        token = string(stemvalue(stem), ending(rule))
+"""Parse a Latin token, checking for possibility of enclitics.
+$(SIGNATURES)
+"""
+function parsetoken(s::AbstractString, parser::TabulaeStringParser)
+    ptrn = s * delimiter(parser)
+    @debug("Looking for $(s) in parser data")
+    matches = filter(ln -> startswith(ln, ptrn), datasource(parser))
+
+    if isempty(matches)
+        # Try again for enclitics if result is empty!    
+        results = Analysis[]
+        endings = orthography(parser) isa Latin23 ? map(enc -> replace(enc, "v" => "u"), enclitics) : enclitics
+        for e in endings
+            @debug("CHeck for enclitic $(e) in string $(s)")
+            if endswith(s,e) && ! isequal(s,e)
+                @debug("Found  possible  enclitic")
+                rng = findlast(e, s)
+                lastch = rng[1] - 1
+                tkn = s[1:lastch]
+                @debug("Tokens: $(tkn) + $(e)")
+                for a in parsetoken(tkn, parser)
+                    push!(results,a)
+                end
+                for a in parsetoken(e, parser)
+                   push!(results,a)
+                end
+            end
+        end
+        results
         
-        push!(generated, string(token, "|", lexemeurn(stem), "|", Tabulae.formurn(lmForm(rule)), "|", urn(stem), "|", urn(rule)))
-
+    else
+        @debug("Found results $(matches)")
+        map(ln -> fromcex(ln, Analysis), matches)
     end
-    generated
+
+    
 end
-=#
+
+
+struct TabulaeStringParserCex <: CexTrait end
+function cextrait(::Type{TabulaeStringParser})
+    TabulaeStringParserCex()
+end
+
+
