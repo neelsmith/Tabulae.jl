@@ -127,7 +127,16 @@ function buildparseable(stem::Stem,  rules::Vector{Rule}; delimiter = "|")
     generated
 end
 
-
+function setotoken(a::Analysis, orthotoken::AbstractString)
+    Analysis(
+        orthotoken,
+        lexemeurn(a),
+        CitableParserBuilder.formurn(a),
+        stemurn(a),
+        CitableParserBuilder.ruleurn(a),
+        mtoken(a)
+    )
+end
 enclitics = ["que", "ve", "ne", "cum", "met"]
 
 
@@ -147,16 +156,19 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
             @debug("CHeck for enclitic $(e) in string $(s)")
             if endswith(s,e) && ! isequal(s,e)
                 @debug("Found  possible  enclitic")
+                
                 rng = findlast(e, s)
                 lastch = rng[1] - 1
-                tkn = s[1:lastch]
+                mtkn = s[1:lastch]
+                otkn = s
                 @debug("Tokens: $(tkn) + $(e)")
-                for a in parsetoken(tkn, parser)
-                    push!(results,a)
+                for prs in parsetoken(mtkn, parser)
+                    push!(results, setotoken(prs, otkn))
                 end
-                for a in parsetoken(e, parser)
-                   push!(results,a)
+                for prs in parsetoken(e, parser)
+                    push!(results, setotoken(prs, otkn))
                 end
+                  
             end
         end
         results
