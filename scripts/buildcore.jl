@@ -14,6 +14,7 @@ out24 = joinpath(repo, "scratch", "core-lat24-$(datestr).cex")
 out25 = joinpath(repo, "scratch", "core-lat25-$(datestr).cex")
 
 shareddir = joinpath(repo, "datasets", "core-infl-shared") 
+sharedvocab = joinpath(repo, "datasets", "core-vocab-shared") 
 
 lat23dir = joinpath(repo, "datasets", "core-infl-lat23")
 lat24dir = joinpath(repo, "datasets", "core-infl-lat24") 
@@ -25,9 +26,9 @@ lat24vocab = joinpath(repo, "datasets", "core-vocab-lat24")
 lat25vocab = joinpath(repo, "datasets", "core-vocab-lat25")
 
 using Tabulae, CitableParserBuilder
-ds23 = dataset([shareddir, lat23dir, lat23vocab])
-ds24 = dataset([shareddir, lat24dir, lat24vocab])
-ds25 = dataset([shareddir, lat25dir, lat25vocab])
+ds23 = dataset([shareddir, sharedvocab, lat23dir, lat23vocab])
+ds24 = dataset([shareddir, sharedvocab, lat24dir, lat24vocab])
+ds25 = dataset([shareddir, sharedvocab, lat25dir, lat25vocab])
 
 p23 = tabulaeStringParser(ds23)
 p24 = tabulaeStringParser(ds24)
