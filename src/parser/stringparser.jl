@@ -144,7 +144,7 @@ enclitics = ["que", "ve", "ne", "cum", "met"]
 $(SIGNATURES)
 """
 function parsetoken(s::AbstractString, parser::TabulaeStringParser)
-    ptrn = s * delimiter(parser)
+    ptrn = lowercase(s) * delimiter(parser)
     @debug("Looking for $(s) in parser data")
     matches = filter(ln -> startswith(ln, ptrn), datasource(parser))
 
