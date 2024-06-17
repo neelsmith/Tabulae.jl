@@ -1,7 +1,7 @@
 name = "Tabulae"
 uuid = "a03c184b-2b42-4641-ae65-f14a9f5424c6"
 authors = ["Neel Smith <dnsmith.neel@gmail.com>"]
-version = "0.11.0"
+version = "0.11.1"
 
 [deps]
 CitableBase = "d6f014bd-995c-41bd-9893-703339864534"
