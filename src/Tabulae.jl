@@ -1,10 +1,12 @@
 module Tabulae
+
 using Downloads
 using Glob, Unicode
 using DocStringExtensions, Documenter
 
 using CitableParserBuilder
 import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, parselistfromurl
+import CitableParserBuilder: tofile
 import CitableParserBuilder: datasource
 import CitableParserBuilder: orthography
 import CitableParserBuilder: delimiter
