@@ -33,7 +33,9 @@ latcommon.verbn4450c|ls.n4450|aus|pftpass
 latcommon.verbn4470a|ls.n4470|aug|c2pres
 latcommon.verbn4470b|ls.n4470|aux|pftact
 latcommon.verbn4470c|ls.n4470|auct|pftpass
+
 latcommon.verbn5275|ls.n5275|bib|conj3
+
 latcommon.verbn6011a|ls.n6011|caed|c3pres
 latcommon.verbn6011b|ls.n6011|cecid|pftact
 latcommon.verbn6011c|ls.n6011|caes|pftpass
@@ -45,6 +47,8 @@ latcommon.verbn7300|ls.n7300|celebr|conj1
 latcommon.verbn7375|ls.n7375|cens|c2pres
 latcommon.verbn7375a|ls.n7375|censu|pftact
 latcommon.verbn7375c|ls.n7375|cens|pftpass
+latcommon.verbn7622|ls.n7622|cess|conj1
+
 latcommon.verbn8443|ls.n8443|cit|conj1
 latcommon.verbn8535a|ls.n8535|claud|c3pres
 latcommon.verbn8535b|ls.n8535|claus|pftact
@@ -446,6 +450,8 @@ latcommon.verbn42201|ls.n42201|sacr|conj1
 latcommon.verbn42219a|ls.n42219|saep|c4pres
 latcommon.verbn42219b|ls.n42219|saeps|pftact
 latcommon.verbn42428|ls.n42428|salut|conj1
+
+latcommon.verbn42490|ls.n42490|sanctific|conj1
 latcommon.verbn42910|ls.n42910|consceler|conj1
 latcommon.verbn42969a|ls.n42969|scind|c3pres
 latcommon.verbn42969b|ls.n42969|scid|pftact
