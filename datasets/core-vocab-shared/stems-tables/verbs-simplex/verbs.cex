@@ -16,6 +16,7 @@ latcommon.verbn1947|ls.n1947|allig|conj1
 latcommon.verbn2980a|ls.n2980|aper|c4pres
 latcommon.verbn2980b|ls.n2980|aperu|pftact
 latcommon.verbn2980c|ls.n2980|apert|pftpass
+latcommon.verbn3120|ls.n3120|appar|conj2
 latcommon.verbn3134|ls.n3134|appell|conj1
 latcommon.verbn3134|ls.n3134|appella|pftactelided
 latcommon.verbn3369|ls.n3369|arbitr|conj1
@@ -71,6 +72,10 @@ latcommon.verbn9689c|ls.n9689|compress|pftpass
 latcommon.verbn9942a|ls.n9942|concumb|conj3pres
 latcommon.verbn9942b|ls.n9942|concubu|pftact
 latcommon.verbn9942c|ls.n9942|concubit|pftpass
+
+latcommon.verbn10292|ls.n10292|congreg|conj1
+
+
 latcommon.verbn10304|ls.n10304|congru|conj3
 latcommon.verbn10379|ls.n10379|con|conj1
 latcommon.verbn10628|ls.n10628|constern|conj1
