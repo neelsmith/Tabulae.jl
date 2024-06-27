@@ -1,21 +1,21 @@
 StemUrn|LexicalEntity|String|Gender|Case|Number
 
 
-latcommon.irregn13573a|lexent.n13573|deus|masculine|nominative|singular
-latcommon.irregn13573b|lexent.n13573|dei|masculine|genitive|singular
-latcommon.irregn13573c|lexent.n13573|deo|masculine|dative|singular
-latcommon.irregn13573d|lexent.n13573|deum|masculine|accusative|singular
-latcommon.irregn13573f|lexent.n13573|deus|masculine|vocative|singular
+latcommon.irregn13573a|ls.n13573|deus|masculine|nominative|singular
+latcommon.irregn13573b|ls.n13573|dei|masculine|genitive|singular
+latcommon.irregn13573c|ls.n13573|deo|masculine|dative|singular
+latcommon.irregn13573d|ls.n13573|deum|masculine|accusative|singular
+latcommon.irregn13573f|ls.n13573|deus|masculine|vocative|singular
 
 
-latcommon.irregn13573g|lexent.n13573|dei|masculine|nominative|plural
-latcommon.irregn13573gbis|lexent.n13573|dii|masculine|nominative|plural
-latcommon.irregn13573h|lexent.n13573|deum|masculine|genitive|plural
-latcommon.irregn13573hbis|lexent.n13573|deorum|masculine|genitive|plural
-latcommon.irregn13573i|lexent.n13573|deis|masculine|dative|plural
-latcommon.irregn13573ibis|lexent.n13573|dis|masculine|dative|plural
-latcommon.irregn13573iter|lexent.n13573|diis|masculine|dative|plural
-latcommon.irregn13573j|lexent.n13573|deos|masculine|accusative|plural
-latcommon.irregn13573k|lexent.n13573|deis|masculine|ablative|plural
-latcommon.irregn13573kbis|lexent.n13573|dis|masculine|ablative|plural
-latcommon.irregn13573l|lexent.n13573|dii|masculine|vocative|plural
+latcommon.irregn13573g|ls.n13573|dei|masculine|nominative|plural
+latcommon.irregn13573gbis|ls.n13573|dii|masculine|nominative|plural
+latcommon.irregn13573h|ls.n13573|deum|masculine|genitive|plural
+latcommon.irregn13573hbis|ls.n13573|deorum|masculine|genitive|plural
+latcommon.irregn13573i|ls.n13573|deis|masculine|dative|plural
+latcommon.irregn13573ibis|ls.n13573|dis|masculine|dative|plural
+latcommon.irregn13573iter|ls.n13573|diis|masculine|dative|plural
+latcommon.irregn13573j|ls.n13573|deos|masculine|accusative|plural
+latcommon.irregn13573k|ls.n13573|deis|masculine|ablative|plural
+latcommon.irregn13573kbis|ls.n13573|dis|masculine|ablative|plural
+latcommon.irregn13573l|ls.n13573|dii|masculine|vocative|plural
