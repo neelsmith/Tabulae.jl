@@ -25,6 +25,17 @@ function label(verb::LMFFiniteVerb)
         ], " ")
 end
 
+
+"""Compose a Cite2Urn for a `LMFFiniteVerb`.
+
+$(SIGNATURES)
+"""
+function urn(verb::LMFFiniteVerb)
+    # PosPNTMVGCDCat
+    Cite2Urn(string(BASE_MORPHOLOGY_URN, FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000"))
+end
+
+
 """Construct a `LMFNoun` from string values.
 $(SIGNATURES)
 """
@@ -37,15 +48,6 @@ function lmfFiniteVerb(p::AbstractString, n::AbstractString, t::AbstractString, 
         voicecodedict[v] |> LMPVoice
 
     )
-end
-
-"""Compose a Cite2Urn for a `LMFFiniteVerb`.
-
-$(SIGNATURES)
-"""
-function urn(verb::LMFFiniteVerb)
-    # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000"))
 end
 
 
