@@ -429,6 +429,11 @@ latcommon.verbn40575|ls.n40575|recuper|conj1
 latcommon.verbn40575|ls.n40575|reciper|conj1
 latcommon.verbn41137a|ls.n41137|r|c2presdep
 latcommon.verbn41137b|ls.n41137|rat|pftpass
+
+latcommon.verbn41195a|ls.n41195|repl|c3pres
+latcommon.verbn41195c|ls.n41195|replet|pftpass
+
+
 latcommon.n41252|ls.n41252|rept|conj1
 latcommon.verbn41256|ls.n41256|repudi|conj1
 
