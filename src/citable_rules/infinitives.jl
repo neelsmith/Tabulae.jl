@@ -106,10 +106,17 @@ function fromcex(traitvalue::TabulaeInfinitiveRuleCex, cexsrc::AbstractString, T
 end
 
 
+"""Find tense value for infintive rule.
+$(SIGNATURES)
+"""
 function lmpTense(r::TabulaeInfinitiveRule)
     r.vtense
 end
 
+
+"""Find voice value for infintive rule.
+$(SIGNATURES)
+"""
 function lmpVoice(r::TabulaeInfinitiveRule)
     r.vvoice
 end
