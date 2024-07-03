@@ -12,8 +12,8 @@ end
 """Identify inflection type for `stem`.
 $(SIGNATURES)
 """
-function inflectionType(stem::T) where {T <: TabulaeStem}
-    @warn "Function inflectionType not implemented for stems of type $(typeof(stem))."
+function inflectionclass(stem::T) where {T <: TabulaeStem}
+    @warn "Function inflectionclass not implemented for stems of type $(typeof(stem))."
     nothing
 end
 

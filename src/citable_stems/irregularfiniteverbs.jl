@@ -169,7 +169,7 @@ end
 """Identify inflection class for `verb`.
 $(SIGNATURES)
 """
-function inflectionType(verb::TabulaeIrregularVerb)
+function inflectionclass(verb::TabulaeIrregularVerb)
     verb.inflectionclass
 end
 

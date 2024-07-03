@@ -12,7 +12,7 @@ end
 """Identify inflectional class for `irreg`.
 $(SIGNATURES)
 """
-function inflectionType(irreg::TabulaeIrregularRule)
+function inflectionclass(irreg::TabulaeIrregularRule)
     irreg.inflectionclass
 end
 

@@ -4,6 +4,11 @@ using Downloads
 using Glob, Unicode
 using DocStringExtensions, Documenter
 
+
+import Base: show
+import Base: ==
+
+
 using CitableParserBuilder
 import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, parselistfromurl
 import CitableParserBuilder: tofile
@@ -64,7 +69,7 @@ export latinForm
 export NounIO, VerbIO, InfinitiveIO, ParticipleIO
 export IrregularReaderIO, IrregularVerbIO
 
-export TabulaeRule, inflectionType, ending, id
+export TabulaeRule, inflectionclass, ending, id
 export delimitedrule, fromdelimited, formrule
 export TabulaeNounRule
 export TabulaeFiniteVerbRule
@@ -110,6 +115,7 @@ include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
 include("citable_stems/regularverbs.jl")
 include("citable_stems/irregularfiniteverbs.jl")
+include("citable_stems/compoundverbs.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")

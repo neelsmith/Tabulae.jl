@@ -27,7 +27,7 @@ end
 """Identify inflection type for `rule`.
 $(SIGNATURES)
 """
-function inflectionType(rule::TabulaeNounRule)
+function inflectionclass(rule::TabulaeNounRule)
     rule.inflectionclass
 end
 

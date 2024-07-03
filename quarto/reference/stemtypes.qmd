@@ -37,7 +37,7 @@ stemvalue(verbstem)
 ```
 
 ```{julia}
-inflectionType(verbstem)
+inflectionclass(verbstem)
 ```
 
 

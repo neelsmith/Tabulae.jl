@@ -100,7 +100,7 @@ end
 """Identify inflection type for `noun`.
 $(SIGNATURES)
 """
-function inflectionType(noun::TabulaeNounStem)
+function inflectionclass(noun::TabulaeNounStem)
     noun.inflectionclass
 end
 

@@ -10,8 +10,8 @@ repo = joinpath(pwd() |> dirname |> dirname)
 
 
 
-::: {.callout-caution title="Contents TBA"}
-This page is being expanded as coverage of rule types is added to version 0.10.0 of Tabulae.
+::: {.callout-warning title="Invalid content"}
+This page is out of date and needs to be updated.
 :::
 
 
@@ -54,7 +54,7 @@ lmForm(infinrule) |> label
 ```
 
 ```{julia}
-inflectionType(infinrule)
+inflectionclass(infinrule)
 ```
 
 ```{julia}
@@ -77,7 +77,7 @@ Inflectional types appearing in core dataset's participle rules:
 using Markdown
 rules = rulesarray(ds)
 vrules = filter(s -> s isa TabulaeFiniteVerbRule, rules)
-vbullets = map(s -> "1. " * inflectionType(s), vrules) |> unique |> sort
+vbullets = map(s -> "1. " * inflectionclass(s), vrules) |> unique |> sort
 
 join(vbullets, "\n") |> Markdown.parse
 ```
@@ -116,7 +116,7 @@ Inflectional types appearing in the core dataset's participle rules:
 #| asis: true
 #| echo: false
 prules = filter(s -> s isa TabulaeParticipleRule, rules)
-pbullets = map(s -> "1. " * inflectionType(s), prules) |> unique |> sort
+pbullets = map(s -> "1. " * inflectionclass(s), prules) |> unique |> sort
 
 join(pbullets, "\n") |> Markdown.parse
 ```
@@ -145,7 +145,7 @@ Inflectional types appearing in the core dataset's noun rules:
 #| asis: true
 #| echo: false
 nounrules = filter(s -> s isa TabulaeNounRule, rules)
-bullets = map(s -> "1. " * inflectionType(s), nounrules) |> unique |> sort
+bullets = map(s -> "1. " * inflectionclass(s), nounrules) |> unique |> sort
 
 join(bullets, "\n") |> Markdown.parse
 ```

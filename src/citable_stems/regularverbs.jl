@@ -91,7 +91,7 @@ end
 """Identify inflection type for `noun`.
 $(SIGNATURES)
 """
-function inflectionType(vs::TabulaeVerbStem)
+function inflectionclass(vs::TabulaeVerbStem)
     vs.inflectionclass
 end
 

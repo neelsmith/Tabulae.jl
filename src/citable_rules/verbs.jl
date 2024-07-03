@@ -56,7 +56,7 @@ end
 """Identify inflection type for `rule`.
 $(SIGNATURES)
 """
-function inflectionType(rule::TabulaeFiniteVerbRule)
+function inflectionclass(rule::TabulaeFiniteVerbRule)
     rule.inflectionclass
 end
 

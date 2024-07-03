@@ -14,8 +14,8 @@ end
 """Find inflection class identified by `rule`.
 $(SIGNATURES)
 """
-function inflectionType(rule::T) where {T <: TabulaeRule}
-    @warn "Function inflectionType not implemented for rules of type $(typeof(rule))."
+function inflectionclass(rule::T) where {T <: TabulaeRule}
+    @warn "Function inflectionclass not implemented for rules of type $(typeof(rule))."
     nothing
 end
 
@@ -83,7 +83,7 @@ end
 function delimitedrule(r::T; delimiter = "|") where {T <: TabulaeRule}
     data = [
         id(r),
-        inflectionType(r),
+        inflectionclass(r),
         ending(r),
         abbreviate(urn(lmForm(r)))
     ]

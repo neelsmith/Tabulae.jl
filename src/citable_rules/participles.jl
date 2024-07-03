@@ -52,7 +52,7 @@ end
 """Identify inflection type for participle `rule`.
 $(SIGNATURES)
 """
-function inflectionType(rule::TabulaeParticipleRule)
+function inflectionclass(rule::TabulaeParticipleRule)
     rule.inflectionclass
 end
 

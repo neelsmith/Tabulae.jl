@@ -58,12 +58,12 @@ end
 $(SIGNATURES)
 """
 function ruleclasses(td::Tabulae.Dataset)
-    map(v -> inflectionType(v), rulesarray(td)) |> unique |> sort
+    map(v -> inflectionclass(v), rulesarray(td)) |> unique |> sort
 end
 
 """List inflectional types appearing in dataset's stem lists.
 $(SIGNATURES)
 """
 function stemclasses(td::Tabulae.Dataset)
-    map(v -> inflectionType(v), stemsarray(td)) |> unique |> sort
+    map(v -> inflectionclass(v), stemsarray(td)) |> unique |> sort
 end
