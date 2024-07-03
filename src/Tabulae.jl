@@ -13,7 +13,6 @@ import CitableParserBuilder: delimiter
 import CitableParserBuilder: generate
 import CitableParserBuilder: lexemeurn
 import CitableParserBuilder: stringParser
-#import CitableParserBuilder: tofile
 import CitableParserBuilder: analyses
 
 
