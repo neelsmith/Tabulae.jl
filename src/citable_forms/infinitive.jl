@@ -4,25 +4,64 @@ struct LMFInfinitive <: LatinMorphologicalForm
     voice::LMPVoice
 end
 
-"""Infinitive forms are citable by Cite2Urn"""
-CitableTrait(::Type{LMFInfinitive}) = CitableByCite2Urn()
 
-
-function lmpTense(inf::LMFInfinitive)
-    inf.tense
+"""Override Base.show for a infinitive form.
+$(SIGNATURES)
+"""
+function show(io::IO, vb::LMFInfinitive)
+    print(io, label(vb))
 end
 
-function lmpVoice(inf::LMFInfinitive)
-    inf.voice
+"""Override Base.== for a finite verb form.
+$(SIGNATURES)
+"""
+function ==(vb1::LMFInfinitive, vb2::LMFInfinitive)
+    lmpTense(vb1)  == lmpTense(vb2) &&
+    lmpVoice(vb1)  == lmpVoice(vb2) 
+end
+
+
+CitableTrait(::Type{LMFInfinitive}) = CitableByCite2Urn()
+"""Infinitive forms are citable by Cite2Urn
+$(SIGNATURES)
+"""
+function citabletrait(::Type{LMFInfinitive})
+    CitableByCite2Urn()
+end
+
+"""Compose a Cite2Urn for a `LMFInfinitive`.
+$(SIGNATURES)
+"""
+function urn(inf::LMFInfinitive)
+    # PosPNTMVGCDCat
+    Cite2Urn(string(BASE_MORPHOLOGY_URN, INFINITIVE,"00",code(inf.tense),"0", code(inf.voice),"0000"))
 end
 
 """Compose a label for a `LMFInfinitive`.
-
 $(SIGNATURES)
 """
 function label(inf::LMFInfinitive)
     join([label(inf.tense), label(inf.voice), "infinitive"]," ")
 end
+
+
+
+
+"""Find tense value for an infinitive.
+$(SIGNATURES)
+"""
+function lmpTense(inf::LMFInfinitive)
+    inf.tense
+end
+
+"""Find tense voice for an infinitive.
+$(SIGNATURES)
+"""
+function lmpVoice(inf::LMFInfinitive)
+    inf.voice
+end
+
+
 
 """Sequence of digits encoding form `verb`
 $(SIGNATURES)
@@ -31,14 +70,7 @@ function code(verb::LMFFiniteVerb)
     urn(verb) |> objectcomponent
 end
 
-"""Compose a Cite2Urn for a `LMFInfinitive`.
 
-$(SIGNATURES)
-"""
-function urn(inf::LMFInfinitive)
-    # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, INFINITIVE,"00",code(inf.tense),"0", code(inf.voice),"0000"))
-end
 
 
 """Create an `LMFInfinitive` from a string value.
@@ -86,34 +118,6 @@ function formurn(infinitive::LMFInfinitive)
     FormUrn(string("forms.", INFINITIVE, "00" ,
     code(infinitive.tense), "0", code(infinitive.voice), "0000"))
 end
-
-
-
-
-#=
-
-"""Compose URN for infinitive verb form from FST representation of analytical data.
-
-$(SIGNATURES)
-"""
-function infinitivefromfst(fstdata)
-    # The fst parameter shoud look like
-    # <present><active>
-    # Extract TV from a string like the example:
-    infinitiverulere = r"<([^<]+)><([^<]+)>"
-    matchedup = collect(eachmatch(infinitiverulere, fstdata))
-
-    if isempty(matchedup)
-        @warn("Unable to parse FST analysis \"" * fstdata * "\" as verb form.")
-        nothing
-    else
-        (t, v) = matchedup[1].captures
-        LMFInfinitive(lmpTense(t),lmpVoice(v))    
-    end
-end
-=#
-
-
 
 
 """Generate list of codes for all noun forms.

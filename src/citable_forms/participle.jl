@@ -7,29 +7,43 @@ struct LMFParticiple <: LatinMorphologicalForm
     pvoice::LMPVoice
 end
 
-function lmpGender(p::LMFParticiple)
-    p.pgender
+
+"""Override Base.show for a participle form.
+$(SIGNATURES)
+"""
+function show(io::IO, p::LMFParticiple)
+    print(io, label(p))
 end
 
-function lmpCase(p::LMFParticiple)
-    p.pcase
-end
-
-function lmpNumber(p::LMFParticiple)
-    p.pnumber
-end
-
-function lmpTense(p::LMFParticiple)
-    p.ptense
-end
-
-function lmpVoice(p::LMFParticiple)
-    p.pvoice
+"""Override Base.== for a participle form.
+$(SIGNATURES)
+"""
+function ==(p1::LMFParticiple, p2::LMFParticiple)
+    lmpGender(vb1)  == lmpGender(vb2) &&
+    lmpCase(vb1)  == lmpCase(vb2) &&
+    lmpNumber(vb1)  == lmpNumber(vb2) &&
+    lmpTense(vb1)  == lmpTense(vb2) &&
+    lmpVoice(vb1)  == lmpVoice(vb2) 
 end
 
 
-"""Participle forms are citable by Cite2Urn"""
 CitableTrait(::Type{LMFParticiple}) = CitableByCite2Urn()
+"""Participle forms are citable by Cite2Urn
+$(SIGNATURES)
+"""
+function citabletrait(::Type{LMFParticiple})
+    CitableByCite2Urn()
+end
+
+
+"""Compose a Cite2Urn for a `LMFParticiple`.
+
+$(SIGNATURES)
+"""
+function urn(p::LMFParticiple)
+    # PosPNTMVGCDCat
+    Cite2Urn(string(BASE_MORPHOLOGY_URN, PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
+end
 
 
 """Compose a label for a `LMFParticiple`.
@@ -47,14 +61,47 @@ function code(verb::LMFParticiple)
     urn(verb) |> objectcomponent
 end
 
-"""Compose a Cite2Urn for a `LMFParticiple`.
 
+"""Gender value for a participle form.
 $(SIGNATURES)
 """
-function urn(p::LMFParticiple)
-    # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
+function lmpGender(p::LMFParticiple)
+    p.pgender
 end
+
+
+"""Case value for a participle form.
+$(SIGNATURES)
+"""
+function lmpCase(p::LMFParticiple)
+    p.pcase
+end
+
+
+"""Number value for a participle form.
+$(SIGNATURES)
+"""
+function lmpNumber(p::LMFParticiple)
+    p.pnumber
+end
+
+
+"""Tense value for a participle form.
+$(SIGNATURES)
+"""
+function lmpTense(p::LMFParticiple)
+    p.ptense
+end
+
+
+
+"""Voice value for a participle form.
+$(SIGNATURES)
+"""
+function lmpVoice(p::LMFParticiple)
+    p.pvoice
+end
+
 
 
 """Create an `LMFParticiple` from a string value.

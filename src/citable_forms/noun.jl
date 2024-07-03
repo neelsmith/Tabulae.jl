@@ -5,6 +5,48 @@ struct LMFNoun <: LatinMorphologicalForm
     nnumber::LMPNumber
 end
 
+
+
+"""Override Base.show for a noun form.
+$(SIGNATURES)
+"""
+function show(io::IO, noun::LMFNoun)
+    print(io, label(noun))
+end
+
+"""Override Base.== for a noun form.
+$(SIGNATURES)
+"""
+function ==(vb1::LMFNoun, vb2::LMFNoun)
+    lmpGender(vb1)  == lmpGender(vb2) &&
+    lmpCase(vb1)  == lmpCase(vb2) &&
+    lmpNumber(vb1)  == lmpNumber(vb2) 
+end
+
+
+CitableTrait(::Type{LMFNoun}) = CitableByCite2Urn()
+"""Noun forms are citable by Cite2Urn
+$(SIGNATURES)
+"""
+function citabletrait(::Type{LMFNoun})
+    CitableByCite2Urn()
+end
+
+"""Compose a label for a `LMFNoun`
+$(SIGNATURES)
+"""
+function label(noun::LMFNoun)    
+    join([ label(noun.ngender), label(noun.ncase), label(noun.nnumber)], " ")
+end
+
+"""Compose a Cite2Urn for a `LMFNoun`.
+$(SIGNATURES)
+"""
+function urn(noun::LMFNoun)
+    Cite2Urn(code(noun))
+end
+
+
 """Construct a `LMFNoun` from string values.
 $(SIGNATURES)
 """
@@ -42,25 +84,6 @@ function nounforms()
     nounformcodes() .|> lmfNoun
 end
 
-"""Noun forms are citable by Cite2Urn"""
-CitableTrait(::Type{LMFNoun}) = CitableByCite2Urn()
-
-"""Compose a label for a `LMFNoun`
-
-$(SIGNATURES)
-"""
-function label(noun::LMFNoun)    
-    join([ label(noun.ngender), label(noun.ncase), label(noun.nnumber)], " ")
-end
-
-
-"""Compose a Cite2Urn for a `LMFNoun`.
-
-$(SIGNATURES)
-"""
-function urn(noun::LMFNoun)
-    Cite2Urn(code(noun))
-end
 
 """Create a `GMFNoun` from a string value.
 
@@ -134,10 +157,6 @@ $(SIGNATURES)
 function lmpNumber(noun::LMFNoun)
     noun.nnumber
 end
-
-
-
-
 
 """Generate a complete list of all possible noun forms.
 $(SIGNATURES)

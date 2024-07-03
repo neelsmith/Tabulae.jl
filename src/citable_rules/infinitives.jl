@@ -1,5 +1,4 @@
-
-"Inflectional rule for a noun rule."
+"Inflectional rule for an infinitive form."
 struct TabulaeInfinitiveRule <: TabulaeRule
     ruleid::RuleUrn
     inflectionclass::AbstractString

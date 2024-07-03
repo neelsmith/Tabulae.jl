@@ -7,11 +7,37 @@ struct LMFFiniteVerb <: LatinMorphologicalForm
     vvoice::LMPVoice
 end
 
-"""Finite verb forms are citable by Cite2Urn"""
+
+
+"""Override Base.show for a finite verb form.
+$(SIGNATURES)
+"""
+function show(io::IO, vb::LMFFiniteVerb)
+    print(io, label(vb))
+end
+
+"""Override Base.== for a finite verb form.
+$(SIGNATURES)
+"""
+function ==(vb1::LMFFiniteVerb, vb2::LMFFiniteVerb)
+    lmpPerson(vb1)  == lmpPerson(vb2) &&
+    lmpNumber(vb1)  == lmpNumber(vb2) &&
+    lmpTense(vb1)  == lmpTense(vb2) &&
+    lmpMood(vb1)  == lmpMood(vb2) &&
+    lmpVoice(vb1)  == lmpVoice(vb2) 
+end
+
+
 CitableTrait(::Type{LMFFiniteVerb}) = CitableByCite2Urn()
+"""Finite verb forms are citable by Cite2Urn
+$(SIGNATURES)
+"""
+function citabletrait(::Type{LMFFiniteVerb})
+    CitableByCite2Urn()
+end
+
 
 """Compose a label for a `LMFFiniteVerb`
-
 $(SIGNATURES)
 """
 function label(verb::LMFFiniteVerb)
@@ -25,15 +51,16 @@ function label(verb::LMFFiniteVerb)
         ], " ")
 end
 
-
 """Compose a Cite2Urn for a `LMFFiniteVerb`.
-
 $(SIGNATURES)
 """
 function urn(verb::LMFFiniteVerb)
     # PosPNTMVGCDCat
     Cite2Urn(string(BASE_MORPHOLOGY_URN, FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000"))
 end
+
+
+
 
 
 """Construct a `LMFNoun` from string values.
@@ -235,9 +262,6 @@ $(SIGNATURES)
 function hassubjunctive(tns::LMPTense)
     ! (tns == lmpTense("future")) && ! (tns == lmpTense("future_perfect"))
 end
-
-
-
 
 
 
