@@ -7,8 +7,6 @@ struct LMFFiniteVerb <: LatinMorphologicalForm
     vvoice::LMPVoice
 end
 
-
-
 """Override Base.show for a finite verb form.
 $(SIGNATURES)
 """
@@ -58,9 +56,6 @@ function urn(verb::LMFFiniteVerb)
     # PosPNTMVGCDCat
     Cite2Urn(string(BASE_MORPHOLOGY_URN, FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000"))
 end
-
-
-
 
 
 """Construct a `LMFNoun` from string values.
