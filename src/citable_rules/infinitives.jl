@@ -56,7 +56,7 @@ function urn(rule::TabulaeInfinitiveRule; registry = nothing)
 end
 
 struct TabulaeInfinitiveRuleCex <: CexTrait end
-"""Infinitive rules are citable by Cite2Urn.
+"""Infinitive rules are are CEX serializable.
 $(SIGNATURES)
 """
 function cextrait(::Type{TabulaeInfinitiveRule})  
@@ -119,6 +119,10 @@ function lmpVoice(r::TabulaeInfinitiveRule)
     r.vvoice
 end
 
+
+"""Instantiate a TabulaeInfinitiveRule from an infinitive form and related information.
+$(SIGNATURES)
+"""
 function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, inf::LMFInfinitive)
     @debug("INFINITIVE: $(inf)")
     TabulaeInfinitiveRule(id, infltype, ending,
@@ -132,7 +136,6 @@ $(SIGNATURES)
 function lmForm(rule::TabulaeInfinitiveRule)
     LMFInfinitive(rule.vtense, rule.vvoice)
 end
-
 
 """Identify inflection type for infinitive `rule`.
 $(SIGNATURES)
@@ -157,6 +160,8 @@ function id(rule::TabulaeInfinitiveRule)
     rule.ruleid
 end
 
+
+#=
 """Compose an abbreviated URN for a rule from a `TabulaeInfinitiveRule`.
 
 $(SIGNATURES)
@@ -165,3 +170,4 @@ function ruleurn(rule::TabulaeInfinitiveRule)
     # PosPNTMVGCDCat
     RuleUrn(string("tabulaeforms.", INFINITIVE,"00",code(rule.vtense), "0", code(rule.vvoice) ,"0000"))
 end
+=#
