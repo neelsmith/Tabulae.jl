@@ -67,7 +67,7 @@ export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
 export NounIO, VerbIO, InfinitiveIO, ParticipleIO
-export IrregularReaderIO, IrregularVerbIO
+export IrregularReaderIO, IrregcularVerbIO
 
 export TabulaeRule, inflectionclass, ending, id
 export delimitedrule, fromdelimited, formrule
@@ -75,6 +75,7 @@ export TabulaeNounRule
 export TabulaeFiniteVerbRule
 export TabulaeInfinitiveRule
 export TabulaeParticipleRule
+export TabulaeIrregularRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem

@@ -1,32 +1,39 @@
 
 # Single rule pattern for all irregular forms.
 
-
-"Inflectional rule for irregular form."
+"Inflectional rule for an irregular form."
 struct TabulaeIrregularRule <: TabulaeRule
     ruleid::AbbreviatedUrn
-    inflectionclass
+    inflectionclass::AbstractString
 end
 
 
-"""Identify inflectional class for `irreg`.
+"""Override Base.show for infinitive rule type.
 $(SIGNATURES)
 """
-function inflectionclass(irreg::TabulaeIrregularRule)
-    irreg.inflectionclass
+function show(io::IO, irr::TabulaeIrregularRule)
+    print(io, label(irr))
 end
 
-function ending(irreg::TabulaeIrregularRule)
-    ""
+"""Override Base.== for infinitive rule type.
+$(SIGNATURES)
+"""
+function ==(irr1::TabulaeIrregularRule, irr2::TabulaeIrregularRule)
+    irr1.ruleid == irr2.ruleid &&
+    irr1.inflectionclass == irr2.inflectionclass
 end
 
 
-"""Irregular rules are citable by Cite2Urn"""
 CitableTrait(::Type{TabulaeIrregularRule}) = CitableByCite2Urn()
+"""Rules for irregular forms are citable by Cite2Urn.
+$(SIGNATURES)
+"""
+function citabletrait(::Type{TabulaeIrregularRule})
+    CitableByCite2Urn()
+end
 
 
 """Human-readlable label for an `TabulaeIrregularRule`.
-
 $(SIGNATURES)
 Required for `CitableTrait`.
 """
@@ -49,21 +56,35 @@ function urn(irreg::TabulaeIrregularRule; registry = nothing)
     end
 end
 
-"""Instantiate `LatinMorphologicalForm` identified by `rule`.
+
+struct TabulaeIrregularRuleCex <: CexTrait end
+"""Rules for irregular forms are CEX serializable.
 $(SIGNATURES)
 """
-function lmForm(rule::TabulaeIrregularRule) 
-    nothing
+function cextrait(::Type{TabulaeIrregularRule})  
+    TabulaeIrregularRuleCex()
 end
 
-#Don't need type-specific reader: just generic Irregular 
-
-"""Implementation of reading one row of a rules table for irregular tokens.
-
-$(SIGNATURES) 
+"""Compose CEX text for a `TabulaeIrregularRule`.
+If `registry` is nothing, use abbreviated URN;
+otherwise, expand identifier to full `Cite2Urn`.
+$(SIGNATURES)
 """
-function readrulerow(ruleparser::IrregularReaderIO, delimited::AbstractString; delimiter = "|")
-    parts = split(delimited, delimiter)
+function cex(irreg::TabulaeIrregularRule; delimiter = "|", registry = nothing)
+    if isnothing(registry)
+        join([irreg.ruleid, inflectionclass(irreg)], delimiter)
+    else
+        c2urn = expand(ur.ruleid, registry)
+        join([c2urn, inflectionclass(irreg)], delimiter)
+    end
+end
+
+"""Instantiate an infinitive rule from delimited-text source.
+$(SIGNATURES)
+"""
+function fromcex(traitvalue::TabulaeIrregularRuleCex, cexsrc::AbstractString, T;      
+    delimiter = "|", configuration = nothing, strict = true)
+    parts = split(cexsrc, delimiter)
     if length(parts) < 2
         msg = "Invalid syntax for irregular rule: too few components in $(delimited)"
         throw(ArgumentError(msg))
@@ -74,27 +95,34 @@ function readrulerow(ruleparser::IrregularReaderIO, delimited::AbstractString; d
     end
 end
 
-
-"""Compose CEX text for an `TabulaeIrregularRule`.
-If `registry` is nothing, use abbreviated URN;
-otherwise, expand identifier to full `Cite2Urn`.
-
+"""Identify inflectional class for `irreg`.
 $(SIGNATURES)
-Required for `CitableTrait`.
 """
-function cex(irreg::TabulaeIrregularRule; delimiter = "|", registry = nothing)
-    if isnothing(registry)
-        join([irreg.ruleid, label(irreg), inflectionclass(irreg)], delimiter)
-    else
-        c2urn = expand(ur.ruleid, registry)
-        join([c2urn, label(irreg), inflectionclass(irreg)], delimiter)
-    end
+function inflectionclass(irreg::TabulaeIrregularRule)
+    irreg.inflectionclass
 end
 
+function ending(irreg::TabulaeIrregularRule)
+    ""
+end
+
+"""Instantiate `LatinMorphologicalForm` identified by `rule`.
+$(SIGNATURES)
+"""
+function lmForm(rule::TabulaeIrregularRule) 
+    nothing
+end
+
+
+function id(rule::TabulaeIrregularRule)
+    rule.id
+end
+
+#=
 function ruleurn(irreg::TabulaeIrregularRule)
     irreg.ruleid
 end
-
+=#
 
 
 #=
