@@ -26,7 +26,6 @@ function ==(inf1::TabulaeInfinitiveRule, inf2::TabulaeInfinitiveRule)
 end
 
 
-
 CitableTrait(::Type{TabulaeInfinitiveRule}) = CitableByCite2Urn()
 """Infinitive rules are citable by Cite2Urn.
 $(SIGNATURES)
