@@ -66,9 +66,6 @@ export LMFParticiple, lmfParticiple
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
-export NounIO, VerbIO, InfinitiveIO, ParticipleIO
-export IrregularReaderIO, IrregcularVerbIO
-
 export TabulaeRule, inflectionclass, ending, id
 export delimitedrule, fromdelimited, formrule
 export TabulaeNounRule
@@ -87,7 +84,7 @@ export orthography
 export md_declension
 export md_tenseconjugation, md_verb_conjugation
 
-include("tabulaeio.jl")
+
 include("dataset/dataset.jl")
 include("dataset/rulesarray.jl")
 include("dataset/stemsarray.jl")

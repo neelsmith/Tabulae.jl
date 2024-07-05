@@ -8,11 +8,124 @@ struct TabulaeIrregularVerb <: TabulaeIrregularStem
     vtense::LMPTense
     vmood::LMPMood
     vvoice::LMPVoice
-    inflectionclass
+    inflectionclass::AbstractString
 end
 
 #latcommon.irregverbn46529a|ls.n46529|sum|first|singular|present|indicative|active
 
+
+"""Override Base.show for irregular verb stem type.
+$(SIGNATURES)
+"""
+function show(io::IO, vb::TabulaeIrregularVerb)
+    print(io, label(vb))
+end
+
+"""Override Base.== for irregular verb stem type.
+$(SIGNATURES)
+"""
+function ==(s1::TabulaeIrregularVerb, s2::TabulaeIrregularVerb)
+    id(s1) == id(s2) &&
+    lexeme(s1) == lexeme(s2) &&
+    tokenvalue(s1) == tokenvalue(s2)  &&
+
+    lmpPerson(s1) == lmpPerson(s2)  &&
+    lmpNumber(s1) == lmpNumber(s2)  &&
+    lmpTense(s1) == lmpTense(s2)  &&
+    lmpMood(s1) == lmpMood(s2)  &&
+    lmpVoice(s1) == lmpVoice(s2)  &&
+
+    inflectionclass(s1) == inflectionclass(s2)
+end
+
+CitableTrait(::Type{TabulaeIrregularVerb}) = CitableByCite2Urn()
+"""Irregular verb stems are citable by Cite2Urn.
+$(SIGNATURES)
+"""
+function citabletrait(::Type{TabulaeIrregularVerb})
+    CitableByCite2Urn()
+end
+
+"""Human-readable label for an `TabulaeIrregularVerb`.
+$(SIGNATURES)
+Required for `CitableTrait`.
+"""
+function label(verb::TabulaeIrregularVerb)
+    string("Irregular verb form ", verb.form, " (", label(verb.vperson), " ", label(verb.vnumber), " ", label(verb.vtense)," ", label(verb.vmood), " ", label(verb.vvoice), ")")
+end
+
+"""Identifying URN for an `TabulaeIrregularVerb`.  If
+no registry is included, use abbreviated URN;
+otherwise, expand to full `Cite2Urn`.
+$(SIGNATURES)
+Required for `CitableTrait`.
+"""
+function urn(verb::TabulaeIrregularVerb; registry = nothing)
+    if isnothing(registry)
+        verb.stemid
+    else
+        expand(verb.stemid, registry)
+    end
+end
+
+
+
+struct TabulaeIrregularVerbCex <: CexTrait end
+"""Irregular verb stems are CEX serializable.
+$(SIGNATURES)
+"""
+function cextrait(::Type{TabulaeIrregularVerb})  
+    TabulaeIrregularVerbCex()
+end
+
+"""Compose CEX text for an `TabulaeIrregularVerb`.
+If `registry` is nothing, use abbreivated URN;
+otherwise, expand identifier to full `Cite2Urn`.
+
+$(SIGNATURES)
+Required for `CitableTrait`.
+"""
+function cex(verb::TabulaeIrregularVerb; delimiter = "|", registry = nothing)
+    if isnothing(registry)
+        join([
+            id(verb), lexeme(verb), tokenvalue(verb),
+            
+            label(verb.vperson), label(verb.vnumber), label(verb.vtense), label(verb.vmood), label(verb.vvoice),
+            inflectionclass(verb)
+        ], delimiter)
+    else
+        c2urn = expand(verb.stemid, registry)
+        join([c2urn,  lexeme(verb), tokenvalue(verb),
+            
+        label(verb.vperson), label(verb.vnumber), label(verb.vtense), label(verb.vmood), label(verb.vvoice),
+        inflectionclass(verb) ], delimiter)
+    end
+end
+
+"""Instantiate an irregular verb stem from delimited-text source.
+$(SIGNATURES)
+"""
+function fromcex(traitvalue::TabulaeIrregularVerbCex, cexsrc::AbstractString, T;      
+    delimiter = "|", configuration = nothing, strict = true)
+    parts = split(cexsrc, delimiter)
+    if length(parts) < 9
+        msg = "Too few parts in $delimited."
+        @warn msg
+        throw(ArgumentError(msg))
+    end
+    
+    stemid = StemUrn(parts[1])
+    lexid = LexemeUrn(parts[2])
+    stem = parts[3]
+    p = lmpPerson(parts[4])
+    n = lmpNumber(parts[5])
+    t = lmpTense(parts[6])
+    m = lmpMood(parts[7])
+    v = lmpVoice(parts[8])
+    inflclass = parts[9]
+
+    TabulaeIrregularVerb(stemid,lexid,stem,p,n,t,m,v, inflclass)
+end
 #=
 function pos(vb::TabulaeIrregularVerb)
     :verb
@@ -72,86 +185,6 @@ function lmpVoice(verb::TabulaeIrregularVerb)
 end
 
 
-"""
-Read one row of a stems table for irregular finite verb tokens and create an `TabulaeIrregularVerb`.
-
-$(SIGNATURES)    
-"""
-function readstemrow(usp::IrregularVerbIO, delimited::AbstractString; delimiter = "|")
-    parts = split(delimited, delimiter)
-    # Example:
-    #latcommon.irregverbn46529a|ls.n46529|sum|first|singular|present|indicative|active
-
-    if length(parts) < 8
-        msg = "Too few parts in $delimited."
-        @warn msg
-        throw(ArgumentError(msg))
-    end
-    
-    stemid = StemUrn(parts[1])
-    lexid = LexemeUrn(parts[2])
-    stem = parts[3]
-    p = lmpPerson(parts[4])
-    n = lmpNumber(parts[5])
-    t = lmpTense(parts[6])
-    m = lmpMood(parts[7])
-    v = lmpVoice(parts[8])
-    inflclass = "irregularfiniteverb"
-
-    TabulaeIrregularVerb(stemid,lexid,stem,p,n,t,m,v, inflclass)
-end
-
-
-"""Irregular verb stems are citable by Cite2Urn"""
-
-CitableTrait(::Type{TabulaeIrregularVerb}) = CitableByCite2Urn()
-"""Human-readlable label for an `TabulaeIrregularVerb`.
-
-$(SIGNATURES)
-Required for `CitableTrait`.
-"""
-function label(verb::TabulaeIrregularVerb)
-    string("Irregular verb form ", verb.form, " (", label(verb.vperson), " ", label(verb.vnumber), " ", label(verb.vtense)," ", label(verb.vmood), " ", label(verb.vvoice), ")")
-end
-
-"""Identifying URN for an `TabulaeIrregularVerb`.  If
-no registry is included, use abbreviated URN;
-otherwise, expand to full `Cite2Urn`.
-
-$(SIGNATURES)
-Required for `CitableTrait`.
-"""
-function urn(verb::TabulaeIrregularVerb; registry = nothing)
-    if isnothing(registry)
-        verb.stemid
-    else
-        expand(verb.stemid, registry)
-    end
-end
-
-
-
-"""Compose CEX text for an `TabulaeIrregularVerb`.
-If `registry` is nothing, use abbreivated URN;
-otherwise, expand identifier to full `Cite2Urn`.
-
-$(SIGNATURES)
-Required for `CitableTrait`.
-"""
-function cex(verb::TabulaeIrregularVerb; delimiter = "|", registry = nothing)
-    if isnothing(registry)
-        join([verb.stemid, label(verb), stemstring(verb), lexeme(verb), inflectionclass(verb), label(verb.vperson), label(verb.vnumber), label(verb.vtense), label(verb.vmood), label(verb.vvoice) ], delimiter)
-    else
-        c2urn = expand(verb.stemid, registry)
-        join([c2urn, label(verb), stemstring(verb), lexeme(verb), inflectionclass(verb), label(verb.vperson), label(verb.vnumber), label(verb.vtense), label(verb.vmood), label(verb.vvoice) ], delimiter)
-    end
-end
-
-
-
-
-
-
 """Identify value of stem string for `verb`.
 $(SIGNATURES)
 """
@@ -162,7 +195,7 @@ end
 """Identify lexeme for `verb`.
 $(SIGNATURES)
 """
-function lexemeurn(verb::TabulaeIrregularVerb)
+function lexeme(verb::TabulaeIrregularVerb)
     verb.lexid
 end
 

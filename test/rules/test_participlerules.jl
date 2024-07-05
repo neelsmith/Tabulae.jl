@@ -10,3 +10,6 @@
     @test cex(ptcpl) == src
     @test fromcex(cex(ptcpl), TabulaeParticipleRule) == ptcpl
 end
+
+@testset "Test accessors for participle rules" begin
+end

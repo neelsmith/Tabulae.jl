@@ -63,7 +63,7 @@ end
 
 
 struct TabulaeNounRuleCex <: CexTrait end
-"""Infinitive rules are are CEX serializable.
+"""Noun rules are are CEX serializable.
 $(SIGNATURES)
 """
 function cextrait(::Type{TabulaeNounRule})  

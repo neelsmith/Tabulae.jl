@@ -181,39 +181,6 @@ function ending(rule::TabulaeParticipleRule)
     rule.ending
 end
 
-#=
-"""Read one row of a rules table for verb tokens,
-and create a `TabulaeParticipleRule`.
-
-$(SIGNATURES) 
-"""
-function readrulerow(usp::ParticipleIO, delimited::AbstractString; delimiter = "|")
-    parts = split(delimited, delimiter)
-    
-    if length(parts) < 8
-        msg = "Invalid syntax for participle verb rule: too few components in $(delimited)"
-        throw(ArgumentError(msg))
-    else
-        @debug("readrulerow: here are the parts: $(parts)")
-        ruleid = RuleUrn(parts[1])
-        inflclass = parts[2]
-        ending = parts[3]
-        g = lmpGender(parts[4])
-        c = lmpCase(parts[5])
-        n = lmpNumber(parts[6])
-
-        t = lmpTense(parts[7])
-      
-        v = lmpVoice(parts[8])
- 
-        TabulaeParticipleRule(ruleid, inflclass, ending, g, c, n, t, v)
-    end
-    
-end
-=#
-
-
-
 
 """Identifier for a  `TabulaeParticipleRule`, as an
 abbreviated URN.
