@@ -13,14 +13,14 @@ end
 $(SIGNATURES)
 """
 function stemsarray(dirlist; delimiter = "|")
-    #@info("Getting regular stems for $dirlist")
     iodict = Dict(
         [
         #"adjectives" => AdjectiveIO("adjective"),
         "nouns" => TabulaeNounStem,
         #"pronouns" => PronounIO("pronoun"),
         #"uninflected" => UninflectedIO("uninflected"),
-        "verbs-simplex" => TabulaeVerbStem
+        "verbs-simplex" => TabulaeVerbStem,
+        "verbs-compound" => TabulaeCompoundVerbStem,
         ]
     )
     stemdirs = [
@@ -29,10 +29,11 @@ function stemsarray(dirlist; delimiter = "|")
         #"pronouns",
         #"uninflected",
         "verbs-simplex",
+        #"verbs-compound",
         
     ]
 
-    stemsarr = Stem[]
+    stemsarr = Union{TabulaeStem, TabulaeIrregularStem}[]
     for datasrc in dirlist
         for dirname in stemdirs 
             #@info("Read stems from dir ", dirname)
@@ -54,6 +55,28 @@ function stemsarray(dirlist; delimiter = "|")
         end
     end
 
+    # Add compounds of regular verbs:
+    for datasrc in dirlist
+        dirname = "verbs-compound"
+        dir = joinpath(datasrc, "stems-tables", dirname)
+        delimitedtype = iodict[dirname]
+
+        cexfiles = glob("*.cex", dir)
+        for f in cexfiles
+            raw = readlines(f)
+            # Trim lines first:
+            lines = filter(s -> ! isempty(s), raw)
+            for ln in lines[2:end]
+                stem = fromcex(ln, delimitedtype)
+                for newstem in stems(stem, stemsarr)
+                    @debug("Add stem $(newstem)")
+                    push!(stemsarr,newstem)
+                end
+            end
+        end
+    end
+
+
 
     irregiodict = Dict(
         [
@@ -71,17 +94,15 @@ function stemsarray(dirlist; delimiter = "|")
         #"adjectives"
     ]
     irreginfltypes = Dict(
-        "verbs" => "irregularfiniteverb"
+        # "nouns" => "irregularnoun",
+        # "adjectives" => "irregularadjective",
+        "verbs" => "irregularfiniteverb",
+        # "infinitives" => "irregularinfinitive",
     )
-#=  
-irreginfl.irregular1|irregularnoun
-irreginfl.irregular2|irregularfiniteverb
-irreginfl.irregular3|irregularinfinitive
-irreginfl.irregular4|irregularadjective
-irreginfl.irregular5|irregularparticiple
-        =#
+
   
-    #@info("Getting irregular stems for $dirlist")
+    @info("Getting irregular stems for $dirlist")
+    irregulars = []
     for datasrc in dirlist
         for dirname in irregstemdirs 
             @debug("Collecting irregular stems from dir $(dirname) in src $(datasrc).")
@@ -100,12 +121,38 @@ irreginfl.irregular5|irregularparticiple
                     data = join([ln,infltype], delimiter)
                     stem = fromcex(data, delimitedtype)
                     @debug("row $(ln) yielded $(stem)")
-                    push!(stemsarr,stem)
+                    push!(irregulars,stem)
+                    
                 end
             end
         end
     end
-    unique(stemsarr)
+
+
+    # Add compounds of irregular verbs:
+    for datasrc in dirlist
+        dirname = "verbs-compound"
+        dir = joinpath(datasrc, "stems-tables", dirname)
+        delimitedtype = iodict[dirname]
+
+        cexfiles = glob("*.cex", dir)
+        for f in cexfiles
+            raw = readlines(f)
+            # Trim lines first:
+            lines = filter(s -> ! isempty(s), raw)
+            for ln in lines[2:end]
+                stem = fromcex(ln, delimitedtype)
+                @info("Handle stem $(stem)")
+                for newstem in irregularstems(stem, irregulars)
+                    @debug("Add stem $(newstem)")
+                    push!(stemsarr,newstem)
+                end
+            end
+        end
+    end
+
+
+   vcat(irregulars, stemsarr) |> unique
 end
 
 

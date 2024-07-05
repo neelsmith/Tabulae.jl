@@ -42,7 +42,7 @@ $(SIGNATURES)
 Required for `CitableTrait`.
 """
 function label(vs::TabulaeVerbStem)
-    string("Verb stem ", vs.form, "-")
+    string("Verb stem ", vs.form, "- (", lexeme(vs), ")")
 end
 
 

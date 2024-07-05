@@ -89,16 +89,16 @@ $(SIGNATURES)
 function fromcex(traitvalue::TabulaeCompoundVerbStemCex, cexsrc::AbstractString, T;      
     delimiter = "|", configuration = nothing, strict = true)
     cols = split(cexsrc, delimiter)
-    if length(cols) < 6
-        throw(ArgumentError("Cannot form compound verb stem: too few columns in $(s)"))
+    @debug("Making compound stem from $(cols)")
+    if length(cols) < 5
+        throw(ArgumentError("Cannot form compound verb stem: too few columns in $(cols)"))
     end
     TabulaeCompoundVerbStem(
         StemUrn(cols[1]),
         LexemeUrn(cols[2]),
-        knormal(cols[3]),
+        cols[3],
         LexemeUrn(cols[4]),
-        knormal(cols[5]),
-        lowercase(cols[6]) == "true" || lowercase(cols[6]) == "t"
+        cols[5]
     )
 end
 
@@ -146,27 +146,92 @@ function notes(compound::TabulaeCompoundVerbStem)
     compound.notes
 end
 
-#=
+
 """Compose a vector of `VerbStem`s for `compound` by adding `compound`'s prefix
 to each `Stem` in `stemlist` for `compound`'s simplex identifier.
 $(SIGNATURES)
 """
-function stems(compound::TabulaeCompoundVerbStem, stemlist::Vector{Stem}, ortho = literaryGreek())
-    @debug("Make compounds for $(compound)...")
+function stems(compound::TabulaeCompoundVerbStem, stemlist, ortho = latin25())
+    @debug("Make compounds for $(compound) using $(stemlist)...")
+
     compounded = []
     for s in filter(s -> lexeme(s) == simplex(compound),  stemlist)
-        catted = string(prefix(compound), "#", stemstring(s))
+        catted = string(prefix(compound), stemvalue(s))
         @debug(catted)
-        newstem = VerbStem(
+        newstem = TabulaeVerbStem(
             stemid(compound),
             lexeme(compound),
             catted,
-            inflectionclass(s),
-            compound.augmented
+            inflectionclass(s)
         )
         push!(compounded, newstem)
     end
     compounded
 end
 
-=#
+
+"""Compose a vector of `VerbStem`s for `compound` by adding `compound`'s prefix
+to each `Stem` in `stemlist`.
+$(SIGNATURES)
+"""
+function irregularstems(compound::TabulaeCompoundVerbStem, stemlist, ortho = latin25())
+    
+    results = Stem[]
+    simplexstems = filter(s -> lexeme(s) == simplex(compound),  stemlist)
+    @debug("Compounding/stem count", compound, length(simplexstems))
+    irrverbs = filter(s -> s isa TabulaeIrregularVerb, simplexstems)
+    finiteresults = irregularverbstems(compound, irrverbs, ortho)
+
+   # irrinfins = filter(s -> s isa IrregularInfinitiveStem, simplexstems)
+    infinitiveresults = []# irregularinfinitivestems(compound, irrinfins, ortho)
+    # Add:
+    # Participle
+    # Verbal adjective
+    results = vcat(finiteresults, infinitiveresults)
+end
+
+
+
+function irregularverbstems(compound::TabulaeCompoundVerbStem, stemlist, ortho = literaryGreek())
+    @info("Now make finite verb forms")
+    compounds = TabulaeIrregularVerb[]
+    for s in stemlist
+        catted = string(prefix(compound), stemvalue(s))
+        newstem = TabulaeIrregularVerb(
+            stemid(compound),
+            lexeme(compound),
+            catted,
+            lmpPerson(s),
+            lmpNumber(s),
+            lmpTense(s),
+            lmpMood(s),
+            lmpVoice(s),
+            "irregularfiniteverb"
+        )
+        push!(compounds, newstem)
+    end
+    compounds
+end
+
+
+function irregularinfinitivestems(compound::TabulaeCompoundVerbStem, stemlist, ortho = literaryGreek())
+    @debug("Now make irregular infinitive verb forms")
+    #=
+    compounds = TabulaeIrregularInfinitiveStem[]
+    for s in stemlist
+        catted = string(prefix(compound), "#", stemstring(s))
+        newstem = IrregularInfinitiveStem(
+            stemid(compound),
+            lexeme(compound),
+            catted,
+            lmpTense(s),
+            lmpVoice(s),
+            "irregularinfinitive"
+        )
+        push!(compounds, newstem)
+    end
+    compounds
+    =#
+    []
+end
+
