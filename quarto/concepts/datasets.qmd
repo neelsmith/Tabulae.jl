@@ -13,20 +13,38 @@ A dataset is a set of delimited-text files in an explicitly defined orthography.
 
 The file layout follows a set of conventions. (See reference section for full definition.)
 
-Read by IO objects
 
+- format of delimited text representation specific to type, but all use generic serialization from `CitableBase` package (`cex` and `fromcex` functions)
 
-## IO
+## Example of a noun stem
 
 ```{julia}
-#| output: false
-#| echo: false
+#| warning: false
+#| 
+using Tabulae, CitableBase
 
-using Tabulae
+stemdelimited = "latcommon.noun1626|ls.n1626|agricol|masculine|a_ae"
+nounstem = fromcex(stemdelimited, TabulaeNounStem)
 ```
 
 ```{julia}
-rdr = Tabulae.NounIO("noun")
-rcrd = "latcommon.noun1626|ls.n1626|agricol|masculine|a_ae"
-nounstem = Tabulae.readstemrow(rdr,rcrd)
+cex(nounstem)
+```
+
+These can always be round tripped:
+
+```{julia}
+fromcex(delimited, TabulaeNounStem) |> cex == stemdelimited
+```
+
+## Example of a noun rule
+
+- stem and rule always joined by inflectional type
+- for nouns, also by gender
+
+
+
+```{julia}
+ruledelimited = "latcommoninfl.a_ae16|a_ae|am|masculine|accusative|singular"
+nounrule = fromcex(ruledelimited, TabulaeNounRule)
 ```
