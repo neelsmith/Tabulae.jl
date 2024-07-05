@@ -1,9 +1,9 @@
 
 "Inflectional rule for a noun rule."
 struct TabulaeFiniteVerbRule <: TabulaeRule
-    ruleid
-    inflectionclass
-    ending
+    ruleid::RuleUrn
+    inflectionclass::AbstractString
+    ending::AbstractString
     vperson::LMPPerson
     vnumber::LMPNumber
     vtense::LMPTense
