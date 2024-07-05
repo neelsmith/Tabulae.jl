@@ -41,6 +41,7 @@ parser = dataset([shareddir, lat25dir]) |> tabulaeStringParser
 When we parse at token, the result is a Vector of analyses, where each analysis assocates the token with four identifiers (as you can see in the parser output). If the form is unambiguous, the Vector will have only one element:
 
 ```{julia}
+using CitableParserBuilder
 parses1 = parsetoken("amabatur", parser)
 ```
 
@@ -124,7 +125,12 @@ plurals .|> latinForm .|> label
 
 
 ::: {.callout-note title="⚠️ TBA"}
-Note that subtypes of `LatinMorphologicalForm* are *not* a traditional "part of speech." Rather, they are *analytical types*. Verbs have distinct analytical types for finite, infinitive and participle forms, for example.
+Note that subtypes of `LatinMorphologicalForm` are *not* a traditional "part of speech." Rather, they are *analytical types*. Verbs have distinct analytical types for finite, infinitive and participle forms, for example.
 
 ☛ Add contrasting example here with infinitive or other non-finite form of verb.
 :::
+
+
+```{julia}
+infparses = parsetoken("amare", parser)
+```
