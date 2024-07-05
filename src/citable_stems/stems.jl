@@ -5,15 +5,15 @@ abstract type TabulaeIrregularStem <: TabulaeStem end
 $(SIGNATURES)
 """
 function lexemeurn(stem::T) where {T <: TabulaeStem}
-    @warn "Function lexeme not implemented for stems of type $(typeof(stem))."
+    @warn "Function lexemeurn not implemented for stems of type $(typeof(stem))."
     nothing
 end
 
 """Identify inflection type for `stem`.
 $(SIGNATURES)
 """
-function inflectionType(stem::T) where {T <: TabulaeStem}
-    @warn "Function inflectionType not implemented for stems of type $(typeof(stem))."
+function inflectionclass(stem::T) where {T <: TabulaeStem}
+    @warn "Function inflectionclass not implemented for stems of type $(typeof(stem))."
     nothing
 end
 

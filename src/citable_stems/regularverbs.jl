@@ -7,30 +7,37 @@ struct TabulaeVerbStem <: TabulaeStem
 end
 
 
-
+"""Override Base.show for verb stem type.
+$(SIGNATURES)
 """
-Read one row of a stems table for noun tokens and create a `TabulaeNounStem`.
-
-$(SIGNATURES)    
-"""
-function readstemrow(usp::VerbIO, delimited::AbstractString; delimiter = "|")
-    parts = split(delimited, delimiter)
-    if length(parts) < 4
-        throw(DomainError("Too few parts in $(delimited)"))
-    else
-        stemid = StemUrn(parts[1])
-        lexid = LexemeUrn(parts[2])
-        stem = parts[3]
-        inflclass = parts[4]
-        TabulaeVerbStem(stemid,lexid,stem,inflclass)
-    end
+function show(io::IO, vb::TabulaeVerbStem)
+    print(io, label(vb))
 end
 
-"""Verb stems are citable by Cite2Urn"""
+"""Override Base.== for verb stem type.
+$(SIGNATURES)
+"""
+function ==(s1::TabulaeVerbStem, s2::TabulaeVerbStem)
+    id(s1) == id(s2) &&
+    lexeme(s1) == lexeme(s2) &&
+    stemvalue(s1) == stemvalue(s2)  &&
+
+    inflectionclass(s1) == inflectionclass(s2)
+end
+
+
+
+
 CitableTrait(::Type{TabulaeVerbStem}) = CitableByCite2Urn()
+"""Verb stems are citable by Cite2Urn.
+$(SIGNATURES)
+"""
+function citabletrait(::Type{TabulaeVerbStem})
+    CitableByCite2Urn()
+end
+
 
 """Human-readable label for a `TabulaeVerbStem`.
-
 $(SIGNATURES)
 Required for `CitableTrait`.
 """
@@ -42,7 +49,6 @@ end
 """Identifying URN for a `TabulaeVerbStem`.  If
 no registry is included, use abbreviated URN;
 otherwise, expand to full `Cite2Urn`.
-
 $(SIGNATURES)
 Required for `CitableTrait`.
 """
@@ -54,6 +60,16 @@ function urn(vs::TabulaeVerbStem; registry = nothing)
     end
 end
 
+
+struct TabulaeVerbStemCex <: CexTrait end
+"""Verb stems are are CEX serializable.
+$(SIGNATURES)
+"""
+function cextrait(::Type{TabulaeVerbStem})  
+    TabulaeVerbStemCex()
+end
+
+
 """Compose CEX text for a `TabulaeVerbStem`.
 If `registry` is nothing, use abbreviated URN;
 otherwise, expand identifier to full `Cite2Urn`.
@@ -61,14 +77,37 @@ otherwise, expand identifier to full `Cite2Urn`.
 $(SIGNATURES)
 Required for `CitableTrait`.
 """
-function cex(vs::TabulaeVerbStem; delimiter = "|", registry = nothing)
+function cex(s::TabulaeVerbStem; delimiter = "|", registry = nothing)
     if isnothing(registry)
-        join([vs.stemid, label(vs) ], delimiter)
+        join([id(s), lexeme(s), stemvalue(s),
+        inflectionclass(s)
+        ], delimiter)
     else
-        c2urn = expand(vs.stemid, registry)
-        join([c2urn, label(vs)], delimiter)
+        c2urn = expand(id(s), registry)
+        join([c2urn, lexeme(s), stemvalue(s),
+        inflectionclass(s)], delimiter)
     end
 end
+
+
+
+"""Instantiate a verb stem from delimited-text source.
+$(SIGNATURES)
+"""
+function fromcex(traitvalue::TabulaeVerbStemCex, cexsrc::AbstractString, T;      
+    delimiter = "|", configuration = nothing, strict = true)
+    parts = split(cexsrc, delimiter)
+    if length(parts) < 4
+        throw(DomainError("Too few parts in $(delimited)"))
+    else
+        stemid = StemUrn(parts[1])
+        lexid = LexemeUrn(parts[2])
+        stem = parts[3]
+        inflclass = parts[4]
+        TabulaeVerbStem(stemid,lexid,stem,inflclass)
+    end
+end
+
 
 """Identifier for a `TabulaeVerbStem`, as an
 abbreviated URN.
@@ -79,23 +118,23 @@ function id(vs::TabulaeVerbStem)
     vs.stemid
 end
 
-"""Lexeme for a `TabulaeNounStem`, as an 
+"""Lexeme for a `TabulaeVerbStem`, as an 
 abbreviated URN.
 
 $(SIGNATURES)
 """
-function lexemeurn(vs::TabulaeVerbStem)
+function lexeme(vs::TabulaeVerbStem)
     vs.lexid
 end
 
-"""Identify inflection type for `noun`.
+"""Identify inflection type for `verb`.
 $(SIGNATURES)
 """
-function inflectionType(vs::TabulaeVerbStem)
+function inflectionclass(vs::TabulaeVerbStem)
     vs.inflectionclass
 end
 
-"""Identify stem string for `noun`.
+"""Identify stem string for `verb`.
 $(SIGNATURES)
 """
 function stemvalue(vs::TabulaeVerbStem)

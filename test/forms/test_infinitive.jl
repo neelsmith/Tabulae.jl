@@ -11,7 +11,12 @@
     frm = FormUrn("forms.4001010000")
     @test lmfInfinitive(frm) == infinitive
     @test Tabulae.formurn(infinitive) == frm
-    
-    fst = "<present><active>"
-    @test infinitive == Tabulae.infinitivefromfst(fst)
+
+end
+
+@testset "Test citable interface on infinitives" begin
+    infinitive = LMFInfinitive(lmpTense("present"), lmpVoice("active"))
+    @test citable(infinitive)    
+    @test label(infinitive) == "present active infinitive"
+    @test urn(infinitive) == Cite2Urn("urn:cite2:tabulae:forms.v1:4001010000")
 end

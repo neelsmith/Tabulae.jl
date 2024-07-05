@@ -81,6 +81,11 @@ lat23morph.verbn39941a|ls.n39941|quaer|c3pres
 lat23morph.verbn39941b|ls.n39941|quaes|pftact
 lat23morph.verbn39941b2|ls.n39941|quaesiu|pftact
 lat23morph.verbn39941c|ls.n39941|quaesit|pftpass
+
+lat23morph.verbn41195c|ls.n41195|repleu|pftact
+lat23morph.verbn41284c|ls.n41284|requieu|pftact
+
+
 lat23morph.verbn42976a|ls.n42976|sc|c4pres
 lat23morph.verbn42976b|ls.n42976|sciu|pftact
 lat23morph.verbn42976c|ls.n42976|scit|pftact
@@ -138,6 +143,7 @@ lat23morph.verbnverb118|ls.n50968|uinc|c3pres
 lat23morph.verbnverb119|ls.n50968|uic|pftact
 lat23morph.verbnverb120|ls.n50968|uict|pftpass
 lat23morph.verbn50990|ls.n50990|uindic|conj1
+lat23morph.verbn51044|ls.n51044|uir|conj2
 lat23morph.verbn51191|ls.n51191|uit|conj1
 lat23morph.verbn51238a|ls.n51238|uiu|c3pres
 lat23morph.verbn51238b|ls.n51238|uix|pftact

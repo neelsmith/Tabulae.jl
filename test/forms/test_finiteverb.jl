@@ -14,3 +14,12 @@
     frm = FormUrn("forms.3314110000")
     @test Tabulae.formurn(fromcode) == frm
 end
+
+@testset "Test CITE interfaces on finite verb forms" begin
+    verb = LMFFiniteVerb(LMPPerson(3), LMPNumber(1), LMPTense(4), LMPMood(1), LMPVoice(1))
+
+    @test citable(verb)
+    @test urn(verb) == Cite2Urn("urn:cite2:tabulae:forms.v1:3314110000")
+    @test label(verb)  == "perfect indicative active third singular"
+    
+end

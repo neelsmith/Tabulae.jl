@@ -1,17 +1,23 @@
 module Tabulae
+
 using Downloads
 using Glob, Unicode
 using DocStringExtensions, Documenter
 
+
+import Base: show
+import Base: ==
+
+
 using CitableParserBuilder
 import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, parselistfromurl
+import CitableParserBuilder: tofile
 import CitableParserBuilder: datasource
 import CitableParserBuilder: orthography
 import CitableParserBuilder: delimiter
 import CitableParserBuilder: generate
-import CitableParserBuilder: lexemeurn
+import CitableParserBuilder: lexemeurn, lexeme
 import CitableParserBuilder: stringParser
-#import CitableParserBuilder: tofile
 import CitableParserBuilder: analyses
 
 
@@ -60,15 +66,13 @@ export LMFParticiple, lmfParticiple
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export latinForm
 
-export NounIO, VerbIO, InfinitiveIO, ParticipleIO
-export IrregularReaderIO, IrregularVerbIO
-
-export TabulaeRule, inflectionType, ending, id
+export TabulaeRule, inflectionclass, ending, id
 export delimitedrule, fromdelimited, formrule
 export TabulaeNounRule
 export TabulaeFiniteVerbRule
 export TabulaeInfinitiveRule
 export TabulaeParticipleRule
+export TabulaeIrregularRule
 
 export TabulaeStem, lexeme, stemvalue
 export TabulaeNounStem
@@ -80,11 +84,9 @@ export orthography
 export md_declension
 export md_tenseconjugation, md_verb_conjugation
 
-include("tabulaeio.jl")
+
+
 include("dataset/dataset.jl")
-include("dataset/rulesarray.jl")
-include("dataset/stemsarray.jl")
-include("urnregistry/registry.jl")
 
 include("citable_forms/forms.jl")
 include("formvalues.jl")
@@ -109,6 +111,10 @@ include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
 include("citable_stems/regularverbs.jl")
 include("citable_stems/irregularfiniteverbs.jl")
+include("citable_stems/compoundverbs.jl")
+
+
+
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
@@ -116,6 +122,13 @@ include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
 include("citable_rules/participles.jl")
 include("citable_rules/irregulars.jl")
+
+
+
+include("dataset/rulesarray.jl")
+include("dataset/stemsarray.jl")
+include("urnregistry/registry.jl")
+
 
 include("generate/validverbs.jl")
 include("generate/generate.jl")

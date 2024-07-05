@@ -19,7 +19,11 @@
     @test lmpCase(noun) == lmpCase("accusative")
     @test lmpNumber(noun) == lmpNumber("singular")
 
-    #fst = "<masculine><accusative><singular>"
-    #@test noun == Tabulae.nounfromfst(fst)
 end
 
+@testset "Test CITE interface on nouns" begin
+    noun = LMFNoun(lmpGender("masculine"), lmpCase("accusative"), lmpNumber("singular")) 
+    @test citable(noun)
+    @test label(noun) == "masculine accusative singular"
+    @test urn(noun) == Cite2Urn("urn:cite2:tabulae:forms.v1:2010001400")
+end

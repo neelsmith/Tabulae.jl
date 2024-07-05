@@ -17,10 +17,10 @@ function stemsarray(dirlist; delimiter = "|")
     iodict = Dict(
         [
         #"adjectives" => AdjectiveIO("adjective"),
-        "nouns" => NounIO("noun"),
+        "nouns" => TabulaeNounStem,
         #"pronouns" => PronounIO("pronoun"),
         #"uninflected" => UninflectedIO("uninflected"),
-        "verbs-simplex" => VerbIO("verb")
+        "verbs-simplex" => TabulaeVerbStem
         ]
     )
     stemdirs = [
@@ -39,14 +39,15 @@ function stemsarray(dirlist; delimiter = "|")
             dir = joinpath(datasrc, "stems-tables", dirname)
             #@info("dir = ", dir)
             cexfiles = glob("*.cex", dir)
-            delimitedreader = (iodict[dirname])
+            delimitedtype = iodict[dirname]
             for f in cexfiles
                 raw = readlines(f)
                 #@info("reading steam from raw ", raw)
                 # Trim lines first:
                 lines = filter(s -> ! isempty(s), raw)
-                for i in 2:length(lines)
-                    stem = readstemrow(delimitedreader, lines[i]; delimiter = delimiter)
+                for ln in lines[2:end]
+                    #stem = readstemrow(delimitedreader, lines[i]; delimiter = delimiter)
+                    stem = fromcex(ln, delimitedtype)
                     push!(stemsarr,stem)
                 end
             end
@@ -58,7 +59,7 @@ function stemsarray(dirlist; delimiter = "|")
         [
         #"uninflected" => UninflectedIO("uninflected"),
         #"nouns" => IrregularNounIO("noun"),
-        "verbs" => IrregularVerbIO("finite verb"),
+        "verbs" => TabulaeIrregularVerb,
         #"infinitives" => IrregularInfinitiveIO("infinitive"),
         #"adjectives" => IrregularAdjectiveIO("adjectives")
         ]
@@ -69,6 +70,17 @@ function stemsarray(dirlist; delimiter = "|")
         #"infinitives",
         #"adjectives"
     ]
+    irreginfltypes = Dict(
+        "verbs" => "irregularfiniteverb"
+    )
+#=  
+irreginfl.irregular1|irregularnoun
+irreginfl.irregular2|irregularfiniteverb
+irreginfl.irregular3|irregularinfinitive
+irreginfl.irregular4|irregularadjective
+irreginfl.irregular5|irregularparticiple
+        =#
+  
     #@info("Getting irregular stems for $dirlist")
     for datasrc in dirlist
         for dirname in irregstemdirs 
@@ -78,13 +90,16 @@ function stemsarray(dirlist; delimiter = "|")
             if ! isempty(cexfiles)
                 @debug("Found these files for irregulars: $(cexfiles)")
             end
-            delimitedreader = (irregiodict[dirname])
+            delimitedtype = irregiodict[dirname]
+            infltype = irreginfltypes[dirname]
             for f in cexfiles
                 raw = readlines(f)
                 lines = filter(s -> ! isempty(s), raw)
-                for i in 2:length(lines)
-                    stem = readstemrow(delimitedreader, lines[i]; delimiter = delimiter)
-                    @debug("row $(lines[i]) yielded $(stem)")
+                for ln in lines[2:end]
+                    #stem = readstemrow(delimitedreader, lines[i]; delimiter = delimiter)
+                    data = join([ln,infltype], delimiter)
+                    stem = fromcex(data, delimitedtype)
+                    @debug("row $(ln) yielded $(stem)")
                     push!(stemsarr,stem)
                 end
             end
@@ -99,8 +114,8 @@ end
 Find all stems in `stems` for lexeme `lex`.
 $(SIGNATURES)
 """
-function stemsforlexemeurn(stems::Vector{Stem}, lex::LexemeUrn)
-    filter(s -> lexemeurn(s) == lex, stems)
+function stemsforlexeme(stems::Vector{Stem}, lex::LexemeUrn)
+    filter(s -> lexeme(s) == lex, stems)
 end
 
 
@@ -108,6 +123,6 @@ end
 Find all stems in `stems` for lexeme `lex`.
 $(SIGNATURES)
 """
-function stemsforlexemeurn(td::Tabulae.Dataset, lex::LexemeUrn)
-    filter(s -> lexemeurn(s) == lex, stemsarray(td))
+function stemsforlexeme(td::Tabulae.Dataset, lex::LexemeUrn)
+    filter(s -> lexeme(s) == lex, stemsarray(td))
 end

@@ -1,58 +1,58 @@
 008|ininiStemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-livymorph.irrineo1|lexent.n23008|inineo|first|singular|present|indicative|active
-livymorph.irrineo2|lexent.n23008|inis|second|singular|present|indicative|active
-livymorph.irrineo3|lexent.n23008|init|third|singular|present|indicative|active
-livymorph.irrineo4|lexent.n23008|inimus|first|plural|present|indicative|active
-livymorph.irrineo5|lexent.n23008|initis|second|plural|present|indicative|active
-livymorph.irrineo6|lexent.n23008|eunt|third|plural|present|indicative|active
+livymorph.irrineo1|ls.n23008|inineo|first|singular|present|indicative|active
+livymorph.irrineo2|ls.n23008|inis|second|singular|present|indicative|active
+livymorph.irrineo3|ls.n23008|init|third|singular|present|indicative|active
+livymorph.irrineo4|ls.n23008|inimus|first|plural|present|indicative|active
+livymorph.irrineo5|ls.n23008|initis|second|plural|present|indicative|active
+livymorph.irrineo6|ls.n23008|eunt|third|plural|present|indicative|active
 
-livymorph.irrineo7|lexent.n23008|inibam|first|singular|imperfect|indicative|active
-livymorph.irrineo8|lexent.n23008|inibas|second|singular|imperfect|indicative|active
-livymorph.irrineo9|lexent.n23008|inibat|third|singular|imperfect|indicative|active
-livymorph.irrineo10|lexent.n23008|inibamus|first|plural|imperfect|indicative|active
-livymorph.irrineo11|lexent.n23008|inibatis|second|plural|imperfect|indicative|active
-livymorph.irrineo12|lexent.n23008|inibant|third|plural|imperfect|indicative|active
+livymorph.irrineo7|ls.n23008|inibam|first|singular|imperfect|indicative|active
+livymorph.irrineo8|ls.n23008|inibas|second|singular|imperfect|indicative|active
+livymorph.irrineo9|ls.n23008|inibat|third|singular|imperfect|indicative|active
+livymorph.irrineo10|ls.n23008|inibamus|first|plural|imperfect|indicative|active
+livymorph.irrineo11|ls.n23008|inibatis|second|plural|imperfect|indicative|active
+livymorph.irrineo12|ls.n23008|inibant|third|plural|imperfect|indicative|active
 
-livymorph.irrineo7|lexent.n23008|inieram|first|singular|pluperfect|indicative|active
-livymorph.irrineo8|lexent.n23008|inieras|second|singular|pluperfect|indicative|active
-livymorph.irrineo9|lexent.n23008|inierat|third|singular|pluperfect|indicative|active
-livymorph.irrineo10|lexent.n23008|inieramus|first|plural|pluperfect|indicative|active
-livymorph.irrineo11|lexent.n23008|inieratis|second|plural|pluperfect|indicative|active
-livymorph.irrineo12|lexent.n23008|inierant|third|plural|pluperfect|indicative|active
+livymorph.irrineo7|ls.n23008|inieram|first|singular|pluperfect|indicative|active
+livymorph.irrineo8|ls.n23008|inieras|second|singular|pluperfect|indicative|active
+livymorph.irrineo9|ls.n23008|inierat|third|singular|pluperfect|indicative|active
+livymorph.irrineo10|ls.n23008|inieramus|first|plural|pluperfect|indicative|active
+livymorph.irrineo11|ls.n23008|inieratis|second|plural|pluperfect|indicative|active
+livymorph.irrineo12|ls.n23008|inierant|third|plural|pluperfect|indicative|active
 
 
-livymorph.irrineo13|lexent.n23008|inibo|first|singular|future|indicative|active
-livymorph.irrineo14|lexent.n23008|inibis|second|singular|future|indicative|active
-livymorph.irrineo15|lexent.n23008|inibit|third|singular|future|indicative|active
-livymorph.irrineo16|lexent.n23008|inibimus|first|plural|future|indicative|active
-livymorph.irrineo17|lexent.n23008|inibitis|second|plural|future|indicative|active
-livymorph.irrineo18|lexent.n23008|inibunt|third|plural|future|indicative|active
+livymorph.irrineo13|ls.n23008|inibo|first|singular|future|indicative|active
+livymorph.irrineo14|ls.n23008|inibis|second|singular|future|indicative|active
+livymorph.irrineo15|ls.n23008|inibit|third|singular|future|indicative|active
+livymorph.irrineo16|ls.n23008|inibimus|first|plural|future|indicative|active
+livymorph.irrineo17|ls.n23008|inibitis|second|plural|future|indicative|active
+livymorph.irrineo18|ls.n23008|inibunt|third|plural|future|indicative|active
 
-livymorph.irrineo55|lexent.n23008|eam|first|singular|present|subjunctive|active
-livymorph.irrineo56|lexent.n23008|eas|second|singular|present|subjunctive|active
-livymorph.irrineo57|lexent.n23008|eat|third|singular|present|subjunctive|active
-livymorph.irrineo58|lexent.n23008|eamus|first|plural|present|subjunctive|active
-livymorph.irrineo59|lexent.n23008|eatis|second|plural|present|subjunctive|active
-livymorph.irrineo60|lexent.n23008|eant|third|plural|present|subjunctive|active
+livymorph.irrineo55|ls.n23008|eam|first|singular|present|subjunctive|active
+livymorph.irrineo56|ls.n23008|eas|second|singular|present|subjunctive|active
+livymorph.irrineo57|ls.n23008|eat|third|singular|present|subjunctive|active
+livymorph.irrineo58|ls.n23008|eamus|first|plural|present|subjunctive|active
+livymorph.irrineo59|ls.n23008|eatis|second|plural|present|subjunctive|active
+livymorph.irrineo60|ls.n23008|eant|third|plural|present|subjunctive|active
 
-livymorph.irrineo61|lexent.n23008|inirem|first|singular|imperfect|subjunctive|active
-livymorph.irrineo62|lexent.n23008|inires|second|singular|imperfect|subjunctive|active
-livymorph.irrineo63|lexent.n23008|iniret|third|singular|imperfect|subjunctive|active
-livymorph.irrineo64|lexent.n23008|iniremus|first|plural|imperfect|subjunctive|active
-livymorph.irrineo65|lexent.n23008|iniretis|second|plural|imperfect|subjunctive|active
-livymorph.irrineo66|lexent.n23008|inirent|third|plural|imperfect|subjunctive|active
+livymorph.irrineo61|ls.n23008|inirem|first|singular|imperfect|subjunctive|active
+livymorph.irrineo62|ls.n23008|inires|second|singular|imperfect|subjunctive|active
+livymorph.irrineo63|ls.n23008|iniret|third|singular|imperfect|subjunctive|active
+livymorph.irrineo64|ls.n23008|iniremus|first|plural|imperfect|subjunctive|active
+livymorph.irrineo65|ls.n23008|iniretis|second|plural|imperfect|subjunctive|active
+livymorph.irrineo66|ls.n23008|inirent|third|plural|imperfect|subjunctive|active
 
-livymorph.irrineo79|lexent.n23008|inissem|first|singular|pluperfect|subjunctive|active
-livymorph.irrineo80|lexent.n23008|inisses|second|singular|pluperfect|subjunctive|active
-livymorph.irrineo81|lexent.n23008|inisset|third|singular|pluperfect|subjunctive|active
-livymorph.irrineo82|lexent.n23008|inissemus|first|plural|pluperfect|subjunctive|active
-livymorph.irrineo83|lexent.n23008|inissetis|second|plural|pluperfect|subjunctive|active
-livymorph.irrineo84|lexent.n23008|inissent|third|plural|pluperfect|subjunctive|active
+livymorph.irrineo79|ls.n23008|inissem|first|singular|pluperfect|subjunctive|active
+livymorph.irrineo80|ls.n23008|inisses|second|singular|pluperfect|subjunctive|active
+livymorph.irrineo81|ls.n23008|inisset|third|singular|pluperfect|subjunctive|active
+livymorph.irrineo82|ls.n23008|inissemus|first|plural|pluperfect|subjunctive|active
+livymorph.irrineo83|ls.n23008|inissetis|second|plural|pluperfect|subjunctive|active
+livymorph.irrineo84|ls.n23008|inissent|third|plural|pluperfect|subjunctive|active
 
-livymorph.irrineo91|lexent.n23008|ini|second|singular|present|imperative|active
-livymorph.irrineo92|lexent.n23008|inite|second|plural|present|imperative|active
-livymorph.irrineo93|lexent.n23008|inito|second|singular|future|imperative|active
-livymorph.irrineo94|lexent.n23008|initote|second|plural|future|imperative|active
-livymorph.irrineo95|lexent.n23008|ito|third|singular|future|imperative|active
-livymorph.irrineo96|lexent.n23008|eunto|third|plural|future|imperative|active
+livymorph.irrineo91|ls.n23008|ini|second|singular|present|imperative|active
+livymorph.irrineo92|ls.n23008|inite|second|plural|present|imperative|active
+livymorph.irrineo93|ls.n23008|inito|second|singular|future|imperative|active
+livymorph.irrineo94|ls.n23008|initote|second|plural|future|imperative|active
+livymorph.irrineo95|ls.n23008|ito|third|singular|future|imperative|active
+livymorph.irrineo96|ls.n23008|eunto|third|plural|future|imperative|active
