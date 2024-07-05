@@ -13,11 +13,11 @@ $(SIGNATURES)
 function rulesarray(dirlist; delimiter = "|")
     iodict = Dict(
         [
-        "nouns" => NounIO("noun"),
-        "verbs" => VerbIO("verb"),
-        "infinitives" => InfinitiveIO("infinitives"),
-        "participles" => ParticipleIO("participles"),
-        "irregulars" => IrregularVerbIO("irregular finite verb forms")
+        "nouns" => TabulaeNounRule,
+        "verbs" => TabulaeFiniteVerbRule,
+        "infinitives" => TabulaeInfinitiveRule,
+        "participles" => TabulaeParticipleRule,
+        "irregulars" => TabulaeIrregularRule
         ]
     )
     rulesdirs = [
@@ -36,18 +36,20 @@ function rulesarray(dirlist; delimiter = "|")
             fullpath = joinpath(datasrc, "rules-tables", dir)
             cexfiles = glob("*.cex", fullpath)
 
-            delimitedreader = (iodict[dir])
+            delimitedtype = (iodict[dir])
             for f in cexfiles
                 #@info("PROCESS FILE ", f)
                 raw = readlines(f)
                 lines = filter(s -> ! isempty(s), raw)
-                for i in 2:length(lines)
-                    if delimitedreader isa IrregularInfinitiveIO
-                        @info("LINE IS ", lines[i])
+                for ln in lines[2:end]
+                    if delimitedtype isa TabulaeIrregularRule
+                        @debug("LINE IS ", ln)
                     end
-                    rule = readrulerow(delimitedreader, lines[i], delimiter = delimiter)
+                    #rule = readrulerow(delimitedreader, lines[i], delimiter = delimiter)
+                    @debug("Try to read this line as $(delimitedtype) : $(ln)")
+                    rule = fromcex(ln, delimitedtype)
                     if rule isa DomainError
-                        @warn("Erred on $(lines[i])")
+                        @warn("Erred on $(ln)")
                         @warn(rule)
                     else
                         push!(rulesarr,rule)

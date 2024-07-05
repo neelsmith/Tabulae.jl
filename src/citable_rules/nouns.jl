@@ -98,7 +98,7 @@ function fromcex(traitvalue::TabulaeNounRuleCex, cexsrc::AbstractString, T;
     delimiter = "|", configuration = nothing, strict = true)
     parts = split(cexsrc, delimiter)
     if length(parts) < 6
-        msg = "Invalid syntax for noun rule: too few components in $(delimited)"
+        msg = "Invalid syntax for noun rule: too few components in $(cexsrc)"
         throw(ArgumentError(msg))
     else
         ruleid = RuleUrn(parts[1])

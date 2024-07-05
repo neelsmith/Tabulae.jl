@@ -68,8 +68,6 @@ function urn(verb::TabulaeIrregularVerb; registry = nothing)
     end
 end
 
-
-
 struct TabulaeIrregularVerbCex <: CexTrait end
 """Irregular verb stems are CEX serializable.
 $(SIGNATURES)
@@ -109,7 +107,7 @@ function fromcex(traitvalue::TabulaeIrregularVerbCex, cexsrc::AbstractString, T;
     delimiter = "|", configuration = nothing, strict = true)
     parts = split(cexsrc, delimiter)
     if length(parts) < 9
-        msg = "Too few parts in $delimited."
+        msg = "Irregular verb stem: too few parts in $(cexsrc)."
         @warn msg
         throw(ArgumentError(msg))
     end

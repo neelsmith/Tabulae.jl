@@ -5,7 +5,7 @@ abstract type TabulaeIrregularStem <: TabulaeStem end
 $(SIGNATURES)
 """
 function lexemeurn(stem::T) where {T <: TabulaeStem}
-    @warn "Function lexeme not implemented for stems of type $(typeof(stem))."
+    @warn "Function lexemeurn not implemented for stems of type $(typeof(stem))."
     nothing
 end
 

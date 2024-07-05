@@ -6,7 +6,7 @@ function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vec
     generated = Analysis[]   
     targetgender = lmpGender(nounform) 
     stems = stemsarray(td)
-    stemlist = filter(s -> lexemeurn(s) == lex && s isa TabulaeNounStem, stems)
+    stemlist = filter(s -> lexeme(s) == lex && s isa TabulaeNounStem, stems)
 
     if isempty(stemlist)
         @warn("No stems matched lexeme $(lex)")   
@@ -23,7 +23,7 @@ function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vec
                         if targetgender == rulegender
                             token = string(stemvalue(stem), ending(rule))
                             @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(lmForm(rule))")
-                            push!(generated, Analysis(token, lexemeurn(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
+                            push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
                         end
                     end
                 end
@@ -43,7 +43,7 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
 
     generated = Analysis[]
     stems = stemsarray(td)
-    stemlist = filter(s -> lexemeurn(s) == lex, stems)
+    stemlist = filter(s -> lexeme(s) == lex, stems)
     if isempty(stemlist)
         @warn("No stems matched lexeme $(lex)")
         
@@ -55,7 +55,7 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
             for rule in classrules
                 token = string(stemvalue(stem), ending(rule))
                 @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(lmForm(rule))")
-                push!(generated, Analysis(token, lexemeurn(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
+                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
             end
             
         end
@@ -74,5 +74,5 @@ end
 $(SIGNATURES)
 """
 function generate(stem::TStem, rule::TRule, td::Tabulae.Dataset)::Vector{Analysis} where {TRule <: TabulaeRule, TStem <: TabulaeStem}
-    generate(lexemeurn(stem),lmForm(rule),  td)
+    generate(lexeme(stem),lmForm(rule),  td)
 end 

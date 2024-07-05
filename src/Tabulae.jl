@@ -16,7 +16,7 @@ import CitableParserBuilder: datasource
 import CitableParserBuilder: orthography
 import CitableParserBuilder: delimiter
 import CitableParserBuilder: generate
-import CitableParserBuilder: lexemeurn
+import CitableParserBuilder: lexemeurn, lexeme
 import CitableParserBuilder: stringParser
 import CitableParserBuilder: analyses
 
@@ -85,10 +85,8 @@ export md_declension
 export md_tenseconjugation, md_verb_conjugation
 
 
+
 include("dataset/dataset.jl")
-include("dataset/rulesarray.jl")
-include("dataset/stemsarray.jl")
-include("urnregistry/registry.jl")
 
 include("citable_forms/forms.jl")
 include("formvalues.jl")
@@ -115,12 +113,22 @@ include("citable_stems/regularverbs.jl")
 include("citable_stems/irregularfiniteverbs.jl")
 include("citable_stems/compoundverbs.jl")
 
+
+
+
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
 include("citable_rules/participles.jl")
 include("citable_rules/irregulars.jl")
+
+
+
+include("dataset/rulesarray.jl")
+include("dataset/stemsarray.jl")
+include("urnregistry/registry.jl")
+
 
 include("generate/validverbs.jl")
 include("generate/generate.jl")

@@ -114,7 +114,6 @@ function fromcex(traitvalue::TabulaeParticipleRuleCex, cexsrc::AbstractString, T
         msg = "Invalid syntax for participle verb rule: too few components in $(delimited)"
         throw(ArgumentError(msg))
     else
-        @debug("readrulerow: here are the parts: $(parts)")
         ruleid = RuleUrn(parts[1])
         inflclass = parts[2]
         ending = parts[3]

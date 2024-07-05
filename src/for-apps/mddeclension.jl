@@ -5,7 +5,7 @@ $(SIGNATURES)
 """
 function md_declension(lex::LexemeUrn, td::Tabulae.Dataset)
     mdlines = ["| | Singular | Plural |", "| --- | --- | --- |"]
-    stemmatches = stemsforlexemeurn(td, lex)
+    stemmatches = stemsforlexeme(td, lex)
     if isempty(stemmatches)
         @warn("No matches in data set for lexeme $(lex).")
         nothing
@@ -50,7 +50,7 @@ function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; headi
 
 
 
-    genderlist = map(l -> Tabulae.stemsforlexemeurn(td, l)[1] |> lmpGender, lexemelist)
+    genderlist = map(l -> Tabulae.stemsforlexeme(td, l)[1] |> lmpGender, lexemelist)
     # Singular forms:
     for (i, label) in enumerate(caselabels())
         row = []
