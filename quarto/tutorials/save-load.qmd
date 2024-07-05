@@ -8,7 +8,8 @@ Page TBA
 ## Example: loading a parser from a URL
 
 ```{julia}
+#| warning: false
 using Tabulae, CitableBase
-url = "http://shot.holycross.edu/tabulae/coreparser-current.cex"
+url = "http://shot.holycross.edu/tabulae/core-lat25-current.cex"
 p = tabulaeStringParser(url, UrlReader)
 ```

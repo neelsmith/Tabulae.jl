@@ -23,9 +23,9 @@ This section explains what makes Tabulae different from other approaches to Lati
 
 ### Datasets
 
-- datasets: datamainted in stem and rules directories 
+- datasets: data can be maintained in directories of delimited-text files for stem and rules tables
 - rule types and stem types
-- IO readers for reading/writing datasets
+- reading/writing datasets uses `fromcex` and `cex` functions of the `CitableBase` package
 
 ### Building parser
 

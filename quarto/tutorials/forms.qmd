@@ -36,95 +36,117 @@ parser = dataset([shareddir, lat25dir]) |> tabulaeStringParser
 ```
 
 
-## Analyses and forms
+## Morphological analyses
 
-When we parse at token, the result is a Vector of analyses, where each analysis assocates the token with four identifiers (as you can see in the parser output). If the form is unambiguous, the Vector will have only one element:
+When we parse a token, the result is a Vector of *analyses*. Each analysis assocates the token with four identifiers (as you can see in the parser output). If the form is unambiguous, the Vector will have only one element:
 
 ```{julia}
-parses1 = parsetoken("amabatur", parser)
+using CitableParserBuilder
+verbparses = parsetoken("amabatur", parser)
 ```
 
 If the form is morphologically ambiguous, the results will include an analysis for each possibility.
 
 
 ```{julia}
-parses2 = parsetoken("agricolae", parser)
+nounparses = parsetoken("agricolae", parser)
 ```
 
 
-
-
-
-## Looking at forms
-
-Use the `latinForm` function to construct a `LatinMorphologicalForm` from the identifier in the analysis. If you just want to display a readable label, you can apply the `label` function to any `LatinMorphologicalForm`.
-
-```{julia}
-parses1[1]  |> latinForm |> label
-```
 
 
 ## Morphological forms and properties
 
-`LatinMorphologicalForm` is an abstract type, so the `latinForm` function actually creates an object belonging to a subtype of `LatinMorphologicalForm`.  The following cell, for example creates a `LMFNoun` from one of the results for our second parse. 
 
+Use the `latinForm` function to construct a Latin morphological *form*  from the identifier in a morphological analysis. Morpological forms belong to subtypes of the abstract `LatinMorphologicalForm` type.  The following cells, for example create `LMFNoun` and `LMFFiniteVerb` forms from our previous analyses. 
 
 ```{julia}
-nounexample = parses2[1]  |> latinForm
+nounexample = latinForm(nounparses[1])
+typeof(nounexample)
 ```
 
 
 
+```{julia}
+verbexample = latinForm(verbparses[1])
+typeof(verbexample)
+```
 
-You can see that a noun form has properties of type `LMPGender`, `LMPCase` and `LMPNumber`.
-
-The first token we parsed, however, is a `LMFFiniteVerb`, and has properties for `LMPPerson`, `LMPNumber`, `LMPTense`, `LMPMood` and `LMPVoice`.
+These different types of form have different properties, as the default display suggests.  Noun forms have properties for gender, case and number, while finite verb forms have properties for tense, mood, voice, person and number.
 
 ```{julia}
-verbexample = parses1[1]  |> latinForm
+nounexample
 ```
 
 
-
-
-
-We can get at any property with a function having a parallel name with leading lower-case `lmp`. The result will belong to a subtype of the abstract `LatinMorphologicalProperty`.
-
 ```{julia}
-lmpCase(nounexample)
+verbexample
 ```
 
-The `label` function also works on `LatinMorphologicalProperty` objects.
-```{julia}
-lmpCase(nounexample) |> label
-```
+
+We can get at any property of a Latin form with a function having a name beginning with lower-case `lmp` followed by the property name. For example, the `lmpCase` function gets the morphological property of case, and `lmpTense` gets the tense property.
 
 ```{julia}
-lmpTense(verbexample) |> label
+casevalue =  lmpCase(nounexample)
 ```
 
-You can use the same `label` function to construct a value for a morphological property from a string.
+
+```{julia}
+tensevalue = lmpTense(verbexample)
+```
+
+::: {.callout-tip title="Labelling morphological properties" collapse="true" }
+
+As with morphological forms, morphological properties are *not* string values, so you need a string label for a property value, use the same `label` you used with morphological forms:
+
+```{julia}
+label(casevalue)
+```
+:::
+
+
+The same functions that retrieve a property from a form can also be used  to construct a property from a string value.  For example, you can use `lmpTense` to construct a property for tense.
+
 
 ```{julia}
 lmpTense("perfect")
 ```
 
-
-We can take advantage of this in normal Julia operations on collections of analyses. For instance, we could separate out all the *plural* analyses for the token *agricolae*:
-
-```{julia}
-plurals = filter(parse -> lmpNumber(latinForm(parse)) == lmpNumber("plural"), parses2)
-```
-
-
+We can take advantage of this in normal Julia operations on collections of analyses. For instance, in the following cell we separate out all the analyses for the token *agricolae* with *plural* forms, and extract the form object from them:
 
 ```{julia}
-plurals .|> latinForm .|> label
+pluralvalue = lmpNumber("plural")
+pluralnouns = filter(parse -> lmpNumber(latinForm(parse)) == pluralvalue, nounparses)
+latinForm.(pluralnouns)
 ```
 
+## Morphological forms and "parts of speech"
 
-::: {.callout-note title="⚠️ TBA"}
-Note that subtypes of `LatinMorphologicalForm* are *not* a traditional "part of speech." Rather, they are *analytical types*. Verbs have distinct analytical types for finite, infinitive and participle forms, for example.
 
-☛ Add contrasting example here with infinitive or other non-finite form of verb.
-:::
+Note that the various types of `LatinMorphologicalForm` are *not* equivalent to a traditional "part of speech." Rather, they are *analytical types* defined by their unique set of properties. "Verbs" as a category for part of speech include multiple types of morphological forms: finite verbs like the example above, but also infinitives, participles, and other forms.
+
+Consider the ambiguity of the token *amare*, for example.
+
+```{julia}
+multiparses = parsetoken("amare", parser)
+multiforms = latinForm.(multiparses)
+```
+
+One of the forms is an infinitive, with only two morphological properties, for tense and voice.  Compare the types of the forms.
+
+```{julia}
+typeof.(multiforms)
+```
+
+We can meaningfully look at tense properties for all of the forms.
+
+```{julia}
+lmpTense.(multiforms)
+```
+
+but if we apply the `lmpPerson` function to an infinitive, we get a warning, and resulting value of `nothing`.
+
+```{julia}
+#| warning: false
+ lmpPerson.(multiforms)
+```

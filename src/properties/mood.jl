@@ -6,6 +6,17 @@ struct LMPMood <: LatinMorphologicalProperty
     end
 end
 
+
+
+"""Override Base.show for a mood property.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPMood)
+    print(io, label(prop))
+end
+
+
+
 """Create `LMPMood` from descriptive string.
 
 $(SIGNATURES)

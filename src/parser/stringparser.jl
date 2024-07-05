@@ -10,6 +10,15 @@ struct TabulaeStringParser <: AbstractStringParser
 end
 
 
+"""Override Base.show for parse.
+$(SIGNATURES)
+"""
+function show(io::IO, p::TabulaeStringParser)
+    msg = string("Latin parser covering $(length(p.entries)) analyses.")
+    print(io, msg)
+end
+
+
 """Instantiate a generic `StringParser` (from the `CitableParserBuilder` package) from a `TabulaeStringParser`.
 $(SIGNATURES)
 """
