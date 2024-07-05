@@ -6,6 +6,14 @@ struct LMPCase <: LatinMorphologicalProperty
     end
 end
 
+"""Override Base.show for a case property.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPCase)
+    print(io, label(prop))
+end
+
+
 """Create `LMPGender` from descriptive string.
 
 $(SIGNATURES)

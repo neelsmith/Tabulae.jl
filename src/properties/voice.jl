@@ -6,6 +6,15 @@ struct LMPVoice <: LatinMorphologicalProperty
     end
 end
 
+
+"""Override Base.show for a voice property.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPVoice)
+    print(io, label(prop))
+end
+
+
 """Create `LMPVoice` from descriptive string.
 
 $(SIGNATURES)

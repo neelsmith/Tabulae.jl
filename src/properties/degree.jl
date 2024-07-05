@@ -6,6 +6,14 @@ struct LMPDegree <: LatinMorphologicalProperty
     end
 end
 
+"""Override Base.show for a degree property.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPDegree)
+    print(io, label(prop))
+end
+
+
 """Create `LMPPerson` from descriptive string.
 
 $(SIGNATURES)

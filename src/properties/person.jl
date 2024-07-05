@@ -6,6 +6,15 @@ struct LMPPerson <: LatinMorphologicalProperty
     end
 end
 
+
+"""Override Base.show for a person property.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPPerson)
+    print(io, label(prop))
+end
+
+
 """Create `LMPPerson` from descriptive string.
 
 $(SIGNATURES)

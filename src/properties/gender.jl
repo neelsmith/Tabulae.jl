@@ -6,6 +6,16 @@ struct LMPGender <: LatinMorphologicalProperty
     end
 end
 
+
+
+"""Override Base.show for a gender property.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPGender)
+    print(io, label(prop))
+end
+
+
 """Create `LMPGender` from descriptive string.
 
 $(SIGNATURES)

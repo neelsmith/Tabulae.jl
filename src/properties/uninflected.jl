@@ -6,6 +6,16 @@ struct LMPUninflectedType <: LatinMorphologicalProperty
     end
 end
 
+
+"""Override Base.show for a property of uninflected type.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPUninflectedType)
+    print(io, label(prop))
+end
+
+
+
 """Create `LMPGender` from descriptive string.
 
 $(SIGNATURES)

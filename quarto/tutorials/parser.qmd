@@ -61,10 +61,11 @@ p = tabulaeStringParser(ds)
 
 ### Interactive parsing
 
-Use the `parsetoken` function to parse a string with a parser.
+Use the `parsetoken` function (from the `CitableParserBuilder` package) to parse a string with a parser.
 
 
 ```{julia}
+using CitableParserBuilder
 s = "agricolae"
 parses = parsetoken(s, p)
 ```
@@ -77,14 +78,22 @@ The result is a Vector of analyses. Each `Analysis` includes identifiers for a  
 
 ```{julia}
 using CitableParserBuilder
-parses[1] |> lexemeurn
+lexemeurn(parses[1])
 ```
 
-Tabulae's `latinForm` function extracts the form identifier from an analysis, and creates a `LatinMorphologicalForm`from it.  You can use the `label` function to compose a human-readable string value for a Latin form. We'll take advantages of Julia's `.` broadcasting to label all analyses in the results.
+
+Tabulae's `latinForm` function extracts the form identifier from an analysis, and creates a `LatinMorphologicalForm`from it. 
 
 ```{julia}
-parses .|> latinForm .|> label
+forms = latinForm.(parses)
 ```
+
+Note that morphological forms are *not* string values. If you want a string label for a form, use the aptly named `label` function.
+
+```{julia}
+label.(forms)
+```
+
 
 
 See the following tutorial on [working with morphological forms](./forms.qmd)

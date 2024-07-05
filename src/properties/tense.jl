@@ -6,6 +6,16 @@ struct LMPTense <: LatinMorphologicalProperty
     end
 end
 
+
+
+"""Override Base.show for a tense property.
+$(SIGNATURES)
+"""
+function show(io::IO, prop::LMPTense)
+    print(io, label(prop))
+end
+
+
 """Create `LMPTense` from descriptive string.
 
 $(SIGNATURES)
