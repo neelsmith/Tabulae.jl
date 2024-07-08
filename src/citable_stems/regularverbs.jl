@@ -45,7 +45,6 @@ function label(vs::TabulaeVerbStem)
     string("Verb stem ", vs.form, "- (", lexeme(vs), ")")
 end
 
-
 """Identifying URN for a `TabulaeVerbStem`.  If
 no registry is included, use abbreviated URN;
 otherwise, expand to full `Cite2Urn`.
