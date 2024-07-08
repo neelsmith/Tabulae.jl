@@ -4,7 +4,6 @@ struct LMFInfinitive <: LatinMorphologicalForm
     voice::LMPVoice
 end
 
-
 """Override Base.show for a infinitive form.
 $(SIGNATURES)
 """

@@ -58,7 +58,7 @@ function urn(verb::LMFFiniteVerb)
 end
 
 
-"""Construct a `LMFNoun` from string values.
+"""Construct a `LMFFiniteVerb` from string values.
 $(SIGNATURES)
 """
 function lmfFiniteVerb(p::AbstractString, n::AbstractString, t::AbstractString, m::AbstractString, v::AbstractString)
