@@ -73,9 +73,10 @@ website:
     - title: "Guides"
       contents:
         - guides/index.qmd
+        - text: "---"
+        - guides/urns.qmd
         - guides/properties-guide.qmd
         - guides/forms-guide.qmd
-        - guides/urns.qmd
         - guides/serializing-rules.qmd
         - guides/multiortho.qmd
         

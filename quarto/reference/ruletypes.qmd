@@ -5,42 +5,31 @@
 #| warning: false
 #| echo: false
 
+
+# Define a dataset to use in listing all occurrences of
+# inflectional types:
 repo = joinpath(pwd() |> dirname |> dirname)
-```
-
-
-
-::: {.callout-warning title="Invalid content"}
-This page is out of date and needs to be updated.
-:::
-
-
-## Reading and writing rule records
-
-
-Tabulae defines a subtype of the `TabulaeRule` abstraction for each kind of rule record that can be included in a Tabulae dataset.  Each of the types implements the `readrulerow` and `writerulerow` functions to instantiate a stem from a delimited-text string.  For each stem type, there is a corresponding subtype of the abstract `TabulaeIO` that is used to dispatch `readrulerow` and `writerulerow` to the correct methods. To read an infinitive rule, for example, `readrulerow` is invoked with an instance of the `VerbIO` type.
-
-We'll work with a dataset and a parser from the `datasets` directory of the Tabulae github repository (defined in the following cell).
-
-```{julia}
-#| warning: false
-#| output: false
-#| code-fold: true
-#| code-summary: Define dataset and parser
 shareddir = joinpath(repo, "datasets", "core-infl-shared") 
 lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
 
 
 using Tabulae
 ds = dataset([shareddir, lat25dir])
-p = tabulaeStringParser(ds)
 ```
 
 
-```
+## Reading and writing rule records
+
+
+Tabulae defines a concrete subtype of the `TabulaeRule` abstraction for each kind of rule record that can be included in a Tabulae dataset.
+
+ Each type implements the `fromcex` and `cex` functions from the `CitableBase` package.
+
+
+```{julia}
+using CitableBase
 infinitiveruletext = "latcommon.are_inf1|conj1|are|present|active"
-infinio = InfinitiveIO("infinitive io")
-infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
+infinrule = fromcex(infinitiveruletext, TabulaeInfinitiveRule)
 ```
 
 
@@ -49,29 +38,32 @@ infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
 
 All rule types identify a morphological form, an inflectional type, and a string value for the stem, that you can retrieve with the following functions:
 
-```
-lmForm(infinrule) |> label
+```{julia}
+lmForm(infinrule)
 ```
 
-```
+```{julia}
 inflectionclass(infinrule)
 ```
 
-```
+```{julia}
 ending(infinrule)
 ```
 
+## Examples of each rule type
 
+### Finite verb form rules
 
-## Finite verb form rules
+The `TabulaeFiniteVerbRule` type:
 
-For finite forms
-
-
-Inflectional types appearing in core dataset's participle rules:
-
-
+```{julia}
+finiteverbtext = "latcommon.are_conj1fut7|conj1dep|abor|first|singular|future|indicative|passive"
+finiteverbrule = fromcex(finiteverbtext, TabulaeFiniteVerbRule)
 ```
+
+
+::: {.callout-note collapse="true" title="See all inflectional types for `TabulaeFiniteVerbRule`s"}
+```{julia}
 #| asis: true
 #| echo: false
 using Markdown
@@ -81,38 +73,44 @@ vbullets = map(s -> "1. " * inflectionclass(s), vrules) |> unique |> sort
 
 join(vbullets, "\n") |> Markdown.parse
 ```
+:::
 
 
+### Infinitive rules
 
-## Infinitive rules
+The `TabulaeInfinitiveRule` type:
 
-
-- use an `InfinitiveIO` object to read delimited text. The result is an `TabulaeInfinitiveRule`.
-
-```
+```{julia}
 infinitiveruletext = "latcommon.are_inf1|conj1|are|present|active"
-infinio = InfinitiveIO("infinitive io")
-infinrule = Tabulae.readrulerow(infinio, infinitiveruletext)
+infinrule = fromcex(infinitiveruletext, TabulaeInfinitiveRule)
 ```
 
-## Participle rules
 
+::: {.callout-note collapse="true" title="See all inflectional types for `TabulaeInfinitiveRule`s"}
+```{julia}
+#| asis: true
+#| echo: false
+prules = filter(s -> s isa TabulaeInfinitiveRule, rules)
+pbullets = map(s -> "1. " * inflectionclass(s), prules) |> unique |> sort
 
-
-- use a `ParticipleIO` object to read delimited text. The result is an `TabulaeParticipleRule`.
-
+join(pbullets, "\n") |> Markdown.parse
 ```
+:::
+
+
+### Participle rules
+
+
+The `TabulaeParticipleRule` type:
+
+```{julia}
 ptcplruletext = "latcommoninfl.are_conj1presapl2|conj1|antis|masculine|genitive|singular|present|active"
-
-ptpclio = ParticipleIO("participle io")
-infinrule = Tabulae.readrulerow(ptpclio, ptcplruletext)
+ptcplrule = fromcex(ptcplruletext, TabulaeParticipleRule)
 ```
 
 
-Inflectional types appearing in the core dataset's participle rules:
-
-
-```
+::: {.callout-note collapse="true" title="See all inflectional types for `TabulaeParticipleRule`s"}
+```{julia}
 #| asis: true
 #| echo: false
 prules = filter(s -> s isa TabulaeParticipleRule, rules)
@@ -120,32 +118,34 @@ pbullets = map(s -> "1. " * inflectionclass(s), prules) |> unique |> sort
 
 join(pbullets, "\n") |> Markdown.parse
 ```
+:::
 
 
 
-## NounRule
 
 
+### Noun rules
 
-- use a `NounIO` object to read delimited text. The result is a `TabulaeNounRule`.
+`TabulaeNounRule`.
 
 
-```
+```{julia}
 nounruletext = "latcommoninfl.0_is2|0_is|is|masculine|genitive|singular"
-
-nounio = NounIO("noun io")
-nounrule = Tabulae.readrulerow(nounio, nounruletext)
+nounrule = fromcex(nounruletext, TabulaeNounRule)
 ```
 
 
 
-Inflectional types appearing in the core dataset's noun rules:
-
-```
+::: {.callout-note collapse="true" title="See all inflectional types for `TabulaeNounRule`s"}
+```{julia}
 #| asis: true
 #| echo: false
+
 nounrules = filter(s -> s isa TabulaeNounRule, rules)
 bullets = map(s -> "1. " * inflectionclass(s), nounrules) |> unique |> sort
 
 join(bullets, "\n") |> Markdown.parse
 ```
+:::
+
+
