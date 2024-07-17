@@ -57,7 +57,7 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
                 token = string(stemvalue(stem), ending(rule))
                 tokenid = "A"
                 @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(lmForm(rule))")
-                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token, "A"))
+                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token, tokenid))
             end
             
         end
