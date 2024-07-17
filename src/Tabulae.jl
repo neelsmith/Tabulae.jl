@@ -74,10 +74,9 @@ export TabulaeInfinitiveRule
 export TabulaeParticipleRule
 export TabulaeIrregularRule
 
-export TabulaeStem, lexeme, stemvalue
+export TabulaeStem, TabulaeIrregularStem, lexeme, stemvalue
 export TabulaeNounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
-
 export TabulaeStringParser, tabulaeStringParser
 export orthography
 

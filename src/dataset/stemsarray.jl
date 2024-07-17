@@ -13,6 +13,7 @@ end
 $(SIGNATURES)
 """
 function stemsarray(dirlist; delimiter = "|")
+    finalarr = []
     iodict = Dict(
         [
         #"adjectives" => AdjectiveIO("adjective"),
@@ -33,7 +34,9 @@ function stemsarray(dirlist; delimiter = "|")
         
     ]
 
-    stemsarr = Union{TabulaeStem, TabulaeIrregularStem}[]
+    #stemsarr = Union{TabulaeStem, TabulaeIrregularStem}[]
+    stemsarr = Stem[]
+    #stemsarr = Vector{<: Stem}()
     for datasrc in dirlist
         for dirname in stemdirs 
             #@info("Read stems from dir ", dirname)
@@ -102,7 +105,7 @@ function stemsarray(dirlist; delimiter = "|")
 
   
     @info("Getting irregular stems for $dirlist")
-    irregulars = []
+    irregulars = Union{TabulaeStem, TabulaeIrregularStem}[]
     for datasrc in dirlist
         for dirname in irregstemdirs 
             @debug("Collecting irregular stems from dir $(dirname) in src $(datasrc).")

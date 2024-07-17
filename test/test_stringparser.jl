@@ -1,7 +1,7 @@
 @testset "Test utilities for building a TabulaeStringParser" begin
 
-    a = Analysis("donum", LexemeUrn("ls.n14736"), FormUrn("forms.2010003100"), StemUrn("latcommon.nounn14736"), RuleUrn("nouninfl.us_i13"), "donum")
-    expected = "donum|ls.n14736|forms.2010003100|latcommon.nounn14736|nouninfl.us_i13|donum"
+    a = Analysis("donum", LexemeUrn("ls.n14736"), FormUrn("forms.2010003100"), StemUrn("latcommon.nounn14736"), RuleUrn("nouninfl.us_i13"), "donum", "A")
+    expected = "donum|ls.n14736|forms.2010003100|latcommon.nounn14736|nouninfl.us_i13|donum|A"
     @test cex(a) == expected
 
 
