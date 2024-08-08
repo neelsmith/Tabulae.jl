@@ -1,0 +1,16 @@
+StemUrn|LexicalEntity|String|Gender|Case|Number|PronounClass
+
+
+latcommon.49449a|latcommon.n49339|tu|masculine|nominative|singular|personal
+latcommon.49449b|latcommon.n30657|tui|masculine|genitive|singular|personal
+latcommon.49449c|latcommon.n30657|tibi|masculine|dative|singular|personal
+latcommon.49449d|latcommon.n30657|te|masculine|accusative|singular|personal
+latcommon.49449e|latcommon.n30657|tibi|masculine|ablative|singular|personal
+
+
+
+latcommon.49449f|latcommon.n30657|tu|feminine|nominative|singular|personal
+latcommon.49449g|latcommon.n30657|tui|feminine|genitive|singular|personal
+latcommon.49449h|latcommon.n30657|tibi|feminine|dative|singular|personal
+latcommon.49449i|latcommon.n30657|te|feminine|accusative|singular|personal
+latcommon.49449j|latcommon.n30657|tibi|feminine|ablative|singular|personal
