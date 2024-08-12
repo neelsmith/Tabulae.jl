@@ -24,5 +24,5 @@ Tabulae rule sets can be serialized to a simple uniform structure with four an i
 #| output: false
 using Tabulae, CitableBase
 url = "http://shot.holycross.edu/tabulae/rules-current.cex"
-rules = ruleset(url, UrlReader)
+# rules = ruleset(url, UrlReader)
 ```

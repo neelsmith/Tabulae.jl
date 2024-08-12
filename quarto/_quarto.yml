@@ -77,6 +77,7 @@ website:
         - guides/urns.qmd
         - guides/properties-guide.qmd
         - guides/forms-guide.qmd
+        - guides/io.qmd
         - guides/serializing-rules.qmd
         - guides/multiortho.qmd
         

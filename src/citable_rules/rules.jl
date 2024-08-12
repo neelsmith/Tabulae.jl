@@ -90,6 +90,7 @@ function delimitedrule(r::T; delimiter = "|") where {T <: TabulaeRule}
     join(data, delimiter)
 end
 
+
 function fromdelimited(row::AbstractString; delimiter = "|")
     cols = split(row, delimiter)
     if length(cols) < 4
@@ -97,11 +98,17 @@ function fromdelimited(row::AbstractString; delimiter = "|")
     end
 
     frm = cols[4] |> FormUrn |> latinForm
-    formrule(cols[1], cols[2], cols[3], frm)
+    rule = RuleUrn(cols[1])
+    @debug("Type to create is $(typeof(frm))")
+    @debug("Creating rule for form $(frm)")
+    formrule(rule, cols[2], cols[3], frm)
 end
 
-function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, f::LatinMorphologicalForm)
-    @warn("No implementation of formrule function for type $(typeof(f))")
+
+
+
+function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, f::LatinMorphologicalForm)
+    @debug("No implementation of formrule function for type $(typeof(f))")
 end
 
 
@@ -127,7 +134,12 @@ $(SIGNATURES)
 """
 function ruleset(s, freader::Type{StringReader};  delim = "|")
     data = filter(row -> !isempty(row),split(s,"\n"))[2:end]
-    fromdelimited.(data; delimiter = delim)
+
+    map(data) do row
+        @debug("Mapping row $(row)")
+        fromdelimited(row; delimiter = delim)
+    end
+    #fromdelimited.(data; delimiter = delim)
 end
 
 
@@ -145,8 +157,10 @@ end
 $(SIGNATURES)
 """
 function ruleset(u, freader::Type{UrlReader};  delim = "|")  
+    @info("Read a rules set from a URL source")
     tmp = Downloads.download(u)
     data = read(tmp, String)
     rm(tmp)
+    #@info("Data for rules set: $(data)")
     ruleset(data, StringReader; delim = delim)
 end

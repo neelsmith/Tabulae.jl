@@ -100,10 +100,17 @@ function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}; delimiter =
     end
     @debug("$(stem) matches rules $(classrules)")
     for rule in classrules
-        token = string(stemvalue(stem), ending(rule))
+        mtoken = string(stemvalue(stem), ending(rule))
+        mtokenid = "a"
         
-        push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token))
-
+        if buildfromrule(rule)
+            #push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token, delimiter, mtoken))
+            record = string(join([token, lexeme(stem), Tabulae.formurn(lmForm(rule)), urn(stem), urn(rule), mtoken, mtokenid], delimiter)
+            push!(generated, record)
+        else
+            record = string(join([token, lexeme(stem), Tabulae.formurn(lmForm(stem)), urn(stem), urn(rule), mtoken, mtokenid], delimiter)
+            push!(generated, record)
+        end
     end
     generated
 end
@@ -117,7 +124,8 @@ function buildparseable(stem::T,  rules::Vector{Rule}; delimiter = "|") where {T
     for rule in classrules
         @debug("Process rule $(rule) with infl type $(inflectionclass(rule))")
         token = tokenvalue(stem)
-        push!(generated, string(token, delimiter, lexeme(stem), delimiter, formurn(lmForm(stem)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token))
+        mtoken = "a"
+        push!(generated, string(token, delimiter, lexeme(stem), delimiter, formurn(lmForm(stem)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token,delimiter,mtoken))
         @debug("Pushed $(token)")
     end
     generated
@@ -129,8 +137,8 @@ function buildparseable(stem::Stem,  rules::Vector{Rule}; delimiter = "|")
     #@info("$(stem) matches rules $(classrules)")
     for rule in classrules
         token = string(stemvalue(stem), ending(rule))
-        
-        push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule), delimiter, token))
+        mtoken = "a"
+        push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule), delimiter, token, delimiter, mtoken))
 
     end
     generated
@@ -143,7 +151,9 @@ function setotoken(a::Analysis, orthotoken::AbstractString)
         CitableParserBuilder.formurn(a),
         stemurn(a),
         CitableParserBuilder.ruleurn(a),
-        mtoken(a)
+        mtoken(a),
+        a.mtokenid
+
     )
 end
 enclitics = ["que", "ve", "ne", "cum", "met"]
@@ -154,9 +164,9 @@ $(SIGNATURES)
 """
 function parsetoken(s::AbstractString, parser::TabulaeStringParser)
     ptrn = lowercase(s) * delimiter(parser)
-    @debug("Looking for $(s) in parser data")
+    @info("Looking for $(s) in parser data")
     matches = filter(ln -> startswith(ln, ptrn), datasource(parser))
-
+    @info("Got $(matches)")
     if isempty(matches)
         # Try again for enclitics if result is empty!    
         results = Analysis[]

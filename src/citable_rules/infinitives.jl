@@ -123,7 +123,7 @@ end
 """Instantiate a TabulaeInfinitiveRule from an infinitive form and related information.
 $(SIGNATURES)
 """
-function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, inf::LMFInfinitive)
+function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, inf::LMFInfinitive)
     @debug("INFINITIVE: $(inf)")
     TabulaeInfinitiveRule(id, infltype, ending,
     lmpTense(inf), lmpVoice(inf)

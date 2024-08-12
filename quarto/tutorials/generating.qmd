@@ -37,7 +37,6 @@ parses = parsetoken("animo", parser)
 
 ```{julia}
 form1 = latinForm(parses[1])
-label(form1)
 ```
 
 We'll now try to generate the same form using identifying URNs for the form and the lexeme.

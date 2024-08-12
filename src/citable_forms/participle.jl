@@ -19,11 +19,11 @@ end
 $(SIGNATURES)
 """
 function ==(p1::LMFParticiple, p2::LMFParticiple)
-    lmpGender(vb1)  == lmpGender(vb2) &&
-    lmpCase(vb1)  == lmpCase(vb2) &&
-    lmpNumber(vb1)  == lmpNumber(vb2) &&
-    lmpTense(vb1)  == lmpTense(vb2) &&
-    lmpVoice(vb1)  == lmpVoice(vb2) 
+    lmpGender(p1)  == lmpGender(p2) &&
+    lmpCase(p1)  == lmpCase(p2) &&
+    lmpNumber(p1)  == lmpNumber(p2) &&
+    lmpTense(p1)  == lmpTense(p2) &&
+    lmpVoice(p1)  == lmpVoice(p2) 
 end
 
 

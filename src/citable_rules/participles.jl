@@ -131,7 +131,7 @@ function fromcex(traitvalue::TabulaeParticipleRuleCex, cexsrc::AbstractString, T
 end
 
 
-function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, p::LMFParticiple)
+function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, p::LMFParticiple)
     TabulaeParticipleRule(id, infltype, ending,
     lmpGender(p), lmpCase(p), lmpNumber(p),
     lmpTense(p), lmpVoice(p)

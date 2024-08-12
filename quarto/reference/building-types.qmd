@@ -1,0 +1,27 @@
+# Overview of the intfrastructure for an analytical type ("part of speech")
+
+## Forms
+
+- citable form `<: LatinMorphologicalForm`: compile list of needed or required functions. e.g. `LMFPronoun` (note name convention)
+
+## Building forms
+
+Dataset with table for rules, stems
+
+- citable rules object: eg `TabulaePronounRule`
+- citable stems object: eg `TabulaePronounStem`
+
+
+
+## Testing
+
+Conventions in unit tests:
+
+
+
+## Documentation
+
+conventions in quarto reference section
+
+
+## Questions

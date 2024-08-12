@@ -115,8 +115,10 @@ end
 """Instantiate a noun rule from a noun form and associated information.
 $(SIGNATURES)
 """
-function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, noun::LMFNoun)
-    TabulaeNounRule(id, infltype, ending,
+function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, noun::LMFNoun)
+
+    @debug("Create noun form!")
+    TabulaeNounRule(RuleUrn(id), infltype, ending,
     lmpGender(noun), lmpCase(noun), lmpNumber(noun)
     )
 end

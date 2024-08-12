@@ -104,7 +104,7 @@ function stemsarray(dirlist; delimiter = "|")
     )
 
   
-    @info("Getting irregular stems for $dirlist")
+    @debug("Getting irregular stems for $dirlist")
     irregulars = Union{TabulaeStem, TabulaeIrregularStem}[]
     for datasrc in dirlist
         for dirname in irregstemdirs 
@@ -145,7 +145,7 @@ function stemsarray(dirlist; delimiter = "|")
             lines = filter(s -> ! isempty(s), raw)
             for ln in lines[2:end]
                 stem = fromcex(ln, delimitedtype)
-                @info("Handle stem $(stem)")
+                @debug("Handle stem $(stem)")
                 for newstem in irregularstems(stem, irregulars)
                     @debug("Add stem $(newstem)")
                     push!(stemsarr,newstem)

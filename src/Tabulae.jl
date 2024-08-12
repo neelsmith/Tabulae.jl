@@ -64,11 +64,14 @@ export LMFInfinitive, lmfInfinitive
 export LMFParticiple, lmfParticiple
 
 export LMFNoun, lmfNoun, nounformcodes, nounforms
+export LMFPronoun, lmfPronoun, pronounformcodes, pronounforms
 export latinForm
 
 export TabulaeRule, inflectionclass, ending, id
-export delimitedrule, fromdelimited, formrule
+export delimitedrule #, fromdelimited, 
+export formrule
 export TabulaeNounRule
+export TabulaePronounRule
 export TabulaeFiniteVerbRule
 export TabulaeInfinitiveRule
 export TabulaeParticipleRule
@@ -76,6 +79,7 @@ export TabulaeIrregularRule
 
 export TabulaeStem, TabulaeIrregularStem, lexeme, stemvalue
 export TabulaeNounStem
+export TabulaePronounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
 export TabulaeStringParser, tabulaeStringParser
 export orthography
@@ -102,12 +106,14 @@ include("properties/degree.jl")
 include("properties/uninflected.jl")
 
 include("citable_forms/noun.jl")
+include("citable_forms/pronoun.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
 include("citable_forms/participle.jl")
 
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
+include("citable_stems/pronouns.jl")
 include("citable_stems/regularverbs.jl")
 include("citable_stems/irregularfiniteverbs.jl")
 include("citable_stems/compoundverbs.jl")
@@ -117,6 +123,7 @@ include("citable_stems/compoundverbs.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
+include("citable_rules/pronouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
 include("citable_rules/participles.jl")

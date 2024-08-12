@@ -135,7 +135,7 @@ function fromcex(traitvalue::TabulaeFiniteVerbRuleCex, cexsrc::AbstractString, T
 end
 
 
-function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, v::LMFFiniteVerb)
+function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, v::LMFFiniteVerb)
     TabulaeFiniteVerbRule(id, infltype, ending,
     lmpPerson(v), lmpNumber(v), lmpTense(v), 
     lmpMood(v), lmpVoice(v)

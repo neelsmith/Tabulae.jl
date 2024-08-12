@@ -3,6 +3,7 @@
 $(SIGNATURES)
 """
 function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vector{Analysis}
+    @debug("generate noun $(lex) from form urn $(frmUrn) from a dataset")
     generated = Analysis[]   
     targetgender = lmpGender(nounform) 
     stems = stemsarray(td)
@@ -41,7 +42,7 @@ end
 $(SIGNATURES)
 """
 function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
-
+    @debug("generate $(lex) in form $(frm) from a dataset")
     generated = Analysis[]
     stems = stemsarray(td)
     stemlist = filter(s -> lexeme(s) == lex, stems)
@@ -53,6 +54,7 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
         rules = rulesarray(td)
         for stem in stemlist
             classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmForm(r) == frm, rules)
+            @debug("Filtered rules and got $(length(classrules)) for $(inflectionclass(stem))")
             for rule in classrules
                 token = string(stemvalue(stem), ending(rule))
                 tokenid = "A"
@@ -67,6 +69,7 @@ end
 
 
 function generate(lex::LexemeUrn, frmUrn::FormUrn,  td::Tabulae.Dataset)::Vector{Analysis} 
+    @debug("generate $(lex) from form urn $(frmUrn) from a dataset")
     generate(lex, latinForm(frmUrn), td)
 end
 
@@ -76,5 +79,6 @@ end
 $(SIGNATURES)
 """
 function generate(stem::TStem, rule::TRule, td::Tabulae.Dataset)::Vector{Analysis} where {TRule <: TabulaeRule, TStem <: TabulaeStem}
+    @debug("generate from stem/rule $(stem) / $(rule) from a dataset")
     generate(lexeme(stem),lmForm(rule),  td)
 end 
