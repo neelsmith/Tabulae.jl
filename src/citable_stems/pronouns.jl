@@ -87,10 +87,10 @@ function cex(pns::TabulaePronounStem; delimiter = "|", registry = nothing)
             label(lmpGender(pns)),label(lmpCase(pns)),label(lmpNumber(pns)),
             inflectionclass(pns)
         ]
-        @info("No registry: basic data $(data)")
+        @debug("No registry: basic data $(data)")
         txt  = join(data, delimiter)
 
-        @info("Result is $(txt)")
+        @debug("Result is $(txt)")
         txt
     else
         c2urn = expand(id(pns), registry)
@@ -194,7 +194,7 @@ $(SIGNATURES)
 """
 function code(pns::TabulaePronounStem)
       # PosPNTMVGCDCat
-     string( PRONOUN,"0",code(pns.pnumber),"000",code(pns.pgender),code(pns.pcase),"00")
+     string( PRONOUN,"0",code(pns.number),"000",code(pns.gender),code(pns.case),"00")
 end
 
 

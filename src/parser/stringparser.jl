@@ -117,6 +117,7 @@ function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}; delimiter =
         
         if buildfromrule(rule)
             #push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token, delimiter, mtoken))
+            #pieces = [token, lexeme(stem), Tabulae.formurn(lmForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
             pieces = [token, lexeme(stem), Tabulae.formurn(lmForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
             record = join(pieces, delimiter)
             push!(generated, record)
