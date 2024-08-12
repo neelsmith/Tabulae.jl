@@ -89,6 +89,18 @@ function tabulaeStringParser(u, ureader::Type{UrlReader})
     sp
 end
 
+
+"""True if form IDs are build from the `Rule` of a
+stem-rule pair.
+$(SIGNATURES)
+"""
+function buildfromrule(r::T) where {T <: TabulaeRule}
+    isa(r, TabulaePronounRule) == false  &&
+    isa(r, TabulaeUninflectedRule)  ==  false &&    
+    (r isa TabulaeIrregularRule) == false
+end
+
+
 """Generate all forms possible for `stem`.
 $(SIGNATURES)
 """
@@ -105,10 +117,12 @@ function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}; delimiter =
         
         if buildfromrule(rule)
             #push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token, delimiter, mtoken))
-            record = string(join([token, lexeme(stem), Tabulae.formurn(lmForm(rule)), urn(stem), urn(rule), mtoken, mtokenid], delimiter)
+            pieces = [token, lexeme(stem), Tabulae.formurn(lmForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
+            record = join(pieces, delimiter)
             push!(generated, record)
         else
-            record = string(join([token, lexeme(stem), Tabulae.formurn(lmForm(stem)), urn(stem), urn(rule), mtoken, mtokenid], delimiter)
+            pieces = [token, lexeme(stem), Tabulae.formurn(lmForm(stem)), urn(stem), urn(rule), mtoken, mtokenid]
+            record = join(pieces, delimiter) 
             push!(generated, record)
         end
     end

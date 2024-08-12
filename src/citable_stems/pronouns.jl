@@ -4,7 +4,9 @@ struct TabulaePronounStem <: TabulaeStem
     lexid::LexemeUrn
     form::AbstractString
     gender::LMPGender
-    inflectionclass::AbstractString
+    case::LMPCase
+    number::LMPNumber
+    inflectionclass::AbstractString 
 end
 
 """Override Base.show for noun stem type.
@@ -22,6 +24,8 @@ function ==(pn1::TabulaePronounStem, pn2::TabulaePronounStem)
     lexeme(pn1) == lexeme(pn2) &&
     stemvalue(pn1) == stemvalue(pn2)  &&
     lmpGender(pn1) == lmpGender(pn2) &&
+    lmpCase(pn1) == lmpCase(pn2) &&
+    lmpNumber(pn1) == lmpNumber(pn2) &&
 
     inflectionclass(pn1) == inflectionclass(pn2)
 
@@ -78,15 +82,25 @@ $(SIGNATURES)
 """
 function cex(pns::TabulaePronounStem; delimiter = "|", registry = nothing)
     if isnothing(registry)
-        join([id(pns), lexeme(pns), stemvalue(pns),
-        label(lmpGender(pns)),
-        inflectionclass(pns)
-        ], delimiter)
+        data = [
+            id(pns), lexeme(pns), stemvalue(pns),
+            label(lmpGender(pns)),label(lmpCase(pns)),label(lmpNumber(pns)),
+            inflectionclass(pns)
+        ]
+        @info("No registry: basic data $(data)")
+        txt  = join(data, delimiter)
+
+        @info("Result is $(txt)")
+        txt
     else
         c2urn = expand(id(pns), registry)
-        join([c2urn,  lexeme(pns), stemvalue(pns),
-        label(lmpGender(pns)),
-        inflectionclass(pns)], delimiter)
+        lexurn = expand(lexeme(pns), registry)
+
+        data = [c2urn, lexurn, stemvalue(pns),
+            label(lmpGender(pns)),label(lmpCase(pns)),label(lmpNumber(pns)),
+            inflectionclass(pns)
+        ]
+        join(data, delimiter)
     end
 end
 
@@ -99,19 +113,22 @@ function fromcex(traitvalue::TabulaePronounStemCex, cexsrc::AbstractString, T;
     delimiter = "|", configuration = nothing, strict = true)
     parts = split(cexsrc, delimiter)
 
-    @debug("Parts: $(parts)")
-    if length(parts) < 5
+    @info("$(length(parts)) parts: $(parts)")
+    if length(parts) < 7
         throw(DomainError("Too few parts in $(delimited)"))
     else
+        
         stemid = StemUrn(parts[1])
         lexid = LexemeUrn(parts[2])
         stem = parts[3]
         @debug("Look at parts4 $(parts[4])")
         gender = lmpGender(parts[4])
-        inflclass = parts[5]
+        case = lmpCase(parts[5])
+        number = lmpNumber(parts[6])
+        inflclass = parts[7]
 
         @debug("Made gender object $(gender)")
-        TabulaePronounStem(stemid,lexid,stem,gender,inflclass)
+        TabulaePronounStem(stemid,lexid,stem,gender,case, number, inflclass)
     end
 end
 
@@ -140,6 +157,22 @@ function lmpGender(pn::TabulaePronounStem)
     pn.gender
 end
 
+
+"""Case for a `TabulaePronounStem`
+$(SIGNATURES)
+"""
+function lmpCase(pn::TabulaePronounStem)
+    pn.case
+end
+
+"""Number for a `TabulaePronounStem`
+$(SIGNATURES)
+"""
+function lmpNumber(pn::TabulaePronounStem)
+    pn.number
+end
+
+
 """Identify inflection type for `noun`.
 $(SIGNATURES)
 """
@@ -153,3 +186,24 @@ $(SIGNATURES)
 function stemvalue(pronoun::TabulaePronounStem)
     pronoun.form
 end
+
+
+
+"""Compose a digital code string for a pronoun form.
+$(SIGNATURES)
+"""
+function code(pns::TabulaePronounStem)
+      # PosPNTMVGCDCat
+     string( PRONOUN,"0",code(pns.pnumber),"000",code(pns.pgender),code(pns.pcase),"00")
+end
+
+
+#=
+"""Compose an abbreviated URN for a rule from a `PronounStem`.
+
+$(SIGNATURES)
+"""
+function formurn(pns::PronounStem)
+    FormUrn("$(COLLECTION_ID)." * code(pns))
+end
+=#

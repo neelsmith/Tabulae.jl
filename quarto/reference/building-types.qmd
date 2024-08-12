@@ -1,4 +1,4 @@
-# Overview of the intfrastructure for an analytical type ("part of speech")
+# Overview of the infrastructure for an analytical type ("part of speech")
 
 ## Forms
 
@@ -11,17 +11,40 @@ Dataset with table for rules, stems
 - citable rules object: eg `TabulaePronounRule`
 - citable stems object: eg `TabulaePronounStem`
 
+## Parsing
+
+Parsing will work automatically once the following functions are implemented:
+
+on stem:
+
+- `inflectionclass`
+- `stemvalue`
+- `lexeme`
+- `formurn` unless the type is "build from rule"
+- `urn`
+
+on rule:
+
+- `inflectionclass`
+- `ending`
+- `formurn` if the type is "build from rule" (irregulars, uninflected, pronouns)
+- `urn`
+
+
 
 
 ## Testing
 
-Conventions in unit tests:
+::: {.callout-caution title="TBA"}
+Document conventions in unit tests for each type.
+:::
 
 
 
 ## Documentation
 
-conventions in quarto reference section
 
+::: {.callout-caution title="TBA"}
+Document conventions in quarto web site's reference section for each type.
+:::
 
-## Questions
