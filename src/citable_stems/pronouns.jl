@@ -113,7 +113,7 @@ function fromcex(traitvalue::TabulaePronounStemCex, cexsrc::AbstractString, T;
     delimiter = "|", configuration = nothing, strict = true)
     parts = split(cexsrc, delimiter)
 
-    @info("$(length(parts)) parts: $(parts)")
+    @debug("$(length(parts)) parts: $(parts)")
     if length(parts) < 7
         throw(DomainError("Too few parts in $(delimited)"))
     else
@@ -198,12 +198,11 @@ function code(pns::TabulaePronounStem)
 end
 
 
-#=
+
 """Compose an abbreviated URN for a rule from a `PronounStem`.
 
 $(SIGNATURES)
 """
-function formurn(pns::PronounStem)
-    FormUrn("$(COLLECTION_ID)." * code(pns))
+function formurn(pns::TabulaePronounStem; cite2urn = false)
+    cite2urn ? Cite2Urn("$(BASE_MORPHOLOGY_URN)." * code(pns) ) :  FormUrn("latinforms." * code(pns))
 end
-=#

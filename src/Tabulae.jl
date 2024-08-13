@@ -19,6 +19,7 @@ import CitableParserBuilder: generate
 import CitableParserBuilder: lexemeurn, lexeme
 import CitableParserBuilder: stringParser
 import CitableParserBuilder: analyses
+import CitableParserBuilder: formurn
 
 
 
@@ -69,7 +70,7 @@ export latinForm
 
 export TabulaeRule, inflectionclass, ending, id
 export delimitedrule #, fromdelimited, 
-export formrule
+export formrule, formurn
 export TabulaeNounRule
 export TabulaePronounRule
 export TabulaeFiniteVerbRule

@@ -1,15 +1,55 @@
 # Overview of the infrastructure for an analytical type ("part of speech")
 
+This page outlines the types and functions required by a given analytical type ("part of speech").  
+
 ## Forms
 
-- citable form `<: LatinMorphologicalForm`: compile list of needed or required functions. e.g. `LMFPronoun` (note name convention)
+Each analytical type is represented by a citable form: that is, a concrete subtype of the abstract `LatinMorphologicalForm`.  The type will have members for a number of morphological properties that are specific to that form; each property belongs to a subtype of the abstract `LatinMorphologicalProperty`.
 
-## Building forms
+The names of the types for forms begin with `LMF` (for Latin Morphological Form) followed by a traditional name for the type.
 
-Dataset with table for rules, stems
 
-- citable rules object: eg `TabulaePronounRule`
-- citable stems object: eg `TabulaePronounStem`
+::: {.callout-tip title="Example: pronouns"}
+
+The name of the type for a pronouns form is `LMFPronoun`.  It has properties for gender, case, number, that are of the types `LMPGender`, `LMPCase` and `LMPNumber`.
+
+:::
+
+
+## Stems, rules and building a parser
+
+When you compile a parser with `Tabulae`, you create all possible forms for a given set of stems and rules.  For each analytical type, there is therefore a corresponding subtype of the abstract `TabulaeStem` and `TabulaeRule`.  The names of these types are patterned as `Tabulae_TYPE_Stem` and `Tabulae_TYPE_Rule` where `_TYPE_` is the same name used in the name of the form.
+ 
+::: {.callout-tip title="Example: pronoun stems and rules"}
+
+The names of stem and rule types for pronouns are `TabulaePronounStem` and `TabulaePronounRule`
+:::
+
+Forms and stems are citable objects. They implement both the citable trait and the CEX serializable trait of the `CitableBase` package.
+
+**ADD LINK TO QUARTO DOCS FOR BASE**
+
+
+
+
+In addition, they implement the following functions that enable `Tabulae` to build a parser by combining stems and rules.
+
+- `inflectionclass`. Both stems and rules implement this function: rules and stems are only combined if they share the same inflection class.
+- `stemvalue` and `ending`. The `stemvalue` function is implemented by citable stems, and yields a string value for the stem; the `ending` function is implemented by citable rules, and yields a string value for the ending. Tokens are created by concatenating stem values and endings.
+- `lexeme`. The stem type implements this function which identifies the lexical item the stem belongs to
+- `formurn`.  The `formurn` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `formurn` function is implemented for the rule type.
+
+
+
+::: {.callout-tip title="Example: combining pronoun stems and rules"}
+
+`Tabulae` builds a parser entry for the pronoun *tu* by combining a pronoun stem cited as `latcommon.pron49339a` and a pronoun rule cited as `proninfl.pronouns4`.  For both stem and rule, `inflectionclass` produces the value `personal`.  The `stemvalue` function produces the string `"tu"` and the `ending` yields the empty string; the resulting token is `"tu" * ""` -- that is, `"tu"`.
+
+
+Because this is a pronoun type, we apply `formurn` to the stem.
+
+:::
+
 
 ## Parsing
 
@@ -17,18 +57,18 @@ Parsing will work automatically once the following functions are implemented:
 
 on stem:
 
-- `inflectionclass`
-- `stemvalue`
+
 - `lexeme`
 - `formurn` unless the type is "build from rule"
-- `urn`
+
+
 
 on rule:
 
-- `inflectionclass`
-- `ending`
+
 - `formurn` if the type is "build from rule" (irregulars, uninflected, pronouns)
-- `urn`
+
+
 
 
 

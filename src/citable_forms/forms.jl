@@ -1,13 +1,13 @@
 """Abstract type of a morphological form."""
 abstract type LatinMorphologicalForm end
 
-const BASE_MORPHOLOGY_URN = "urn:cite2:tabulae:forms.v1:"
+const BASE_MORPHOLOGY_URN = "urn:cite2:tabulae:latinforms.v1:"
 
 
 """Latin morphological forms are citable by Cite2Urn"""
 CitableTrait(::T) where {T <: LatinMorphologicalForm} = CitableByCite2Urn()
 
-"""Return Tabi;ae code for analytical type
+"""Return Tabulae code for analytical type
 encoded in first digit of `codestring`.
 $(SIGNATURES)
 """
