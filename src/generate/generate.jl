@@ -69,7 +69,7 @@ end
 
 
 function generate(lex::LexemeUrn, frmUrn::FormUrn,  td::Tabulae.Dataset)::Vector{Analysis} 
-    @debug("generate $(lex) from form urn $(frmUrn) from a dataset")
+    @info("generate $(lex) from form urn $(frmUrn) from a dataset")
     generate(lex, latinForm(frmUrn), td)
 end
 

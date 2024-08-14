@@ -70,7 +70,15 @@ on rule:
 
 
 
+## TBA
 
+What are:
+
+- `lmForm`
+- `latinForm`
+
+
+- `formurn`: from CPB package, gets a URN value for the ofrm of an Analysis
 
 
 ## Testing

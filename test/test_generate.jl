@@ -1,4 +1,4 @@
-@testset "Test generating forms" begin
+@testset "Test generating noun forms" begin
     repo = dirname(pwd())
     srcdir = joinpath(repo, "datasets", "core-infl-shared") 
     tds = dataset([srcdir])
@@ -15,4 +15,18 @@
     lex = lexeme(stem)
     formresults  = generate(lex,frm,  tds)
     @test formresults == ruleresults
+end
+
+@testset "Test generating pronoun forms" begin
+    repo = dirname(pwd())
+    srcdir = joinpath(repo, "datasets", "core-infl-shared") 
+    tds = dataset([srcdir])
+
+    rulecex = "proninfl.pronouns4|personal"
+    rule = fromcex(rulecex, TabulaePronounRule)
+
+    stemcex = "latcommon.pron49339a|ls.n49339|tu|masculine|nominative|singular|personal"
+    stem = fromcex(stemcex, TabulaePronounStem)
+
+
 end

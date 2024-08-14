@@ -119,7 +119,7 @@ end
 
 $(SIGNATURES)
 """
-function formurn(pronoun::LMFPronoun)
+function lmForm(pronoun::LMFPronoun)
     FormUrn(string("forms.", PRONOUN,"0",code(pronoun.pnnumber),"000", code(pronoun.pngender), code(pronoun.pncase), "00"))
 end
 
