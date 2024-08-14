@@ -126,7 +126,7 @@ end
 """Create a `LMFNoun` form from a rule.
 $(SIGNATURES)
 """
-function lmForm(rule::TabulaeNounRule)
+function latinForm(rule::TabulaeNounRule)
     LMFNoun(rule.ngender, rule.ncase, rule.nnumber)
 end
 

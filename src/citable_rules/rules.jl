@@ -5,8 +5,8 @@ abstract type TabulaeRule <: Rule end
 """Instantiate `LatinMorphologicalForm` identified by `rule`.
 $(SIGNATURES)
 """
-function lmForm(rule::T) where {T <: TabulaeRule}
-    @warn "Function lmForm not implemented for rules of type $(typeof(rule))."
+function latinForm(rule::T) where {T <: TabulaeRule}
+    @warn "Function latinForm not implemented for rules of type $(typeof(rule))."
     nothing
 end
 
@@ -75,17 +75,19 @@ function lmpUninflected(rule::T) where {T <: TabulaeRule}
 end
 
 
-
+#=
 function latinForm(r::T) where {T <: TabulaeRule}
     formurn(r) |> latinForm
 end
+=#
+
 
 function delimitedrule(r::T; delimiter = "|") where {T <: TabulaeRule}
     data = [
         id(r),
         inflectionclass(r),
         ending(r),
-        abbreviate(urn(lmForm(r)))
+        abbreviate(urn(latinForm(r)))
     ]
     join(data, delimiter)
 end

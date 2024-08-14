@@ -161,7 +161,7 @@ end
 """Create a `LMFParticiple` from `rule`.
 $(SIGNATURES)
 """
-function lmForm(rule::TabulaeParticipleRule)
+function latinForm(rule::TabulaeParticipleRule)
     LMFParticiple(rule.pgender, rule.pcase, rule.pnumber, rule.ptense, rule.pvoice)
 end
 

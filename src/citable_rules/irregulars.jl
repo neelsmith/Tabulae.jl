@@ -109,7 +109,7 @@ end
 """Instantiate `LatinMorphologicalForm` identified by `rule`.
 $(SIGNATURES)
 """
-function lmForm(rule::TabulaeIrregularRule) 
+function latinForm(rule::TabulaeIrregularRule) 
     nothing
 end
 

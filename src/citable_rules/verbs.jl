@@ -169,7 +169,7 @@ end
 """Create a `LMFFiniteVerb` from `rule`.
 $(SIGNATURES)
 """
-function lmForm(rule::TabulaeFiniteVerbRule)
+function latinForm(rule::TabulaeFiniteVerbRule)
     LMFFiniteVerb(rule.vperson, rule.vnumber, rule.vtense, rule.vmood, rule.vvoice)
 end
 

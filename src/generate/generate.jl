@@ -17,15 +17,15 @@ function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vec
         for stem in stemlist
             stemgender = lmpGender(stem)
             if stemgender == targetgender
-                classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmForm(r) == nounform, rules)
+                classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == nounform, rules)
                 for rule in classrules
-                    if lmForm(rule) isa LMFNoun
-                        rulegender = lmpGender(lmForm(rule))
+                    if latinForm(rule) isa LMFNoun
+                        rulegender = lmpGender(latinForm(rule))
                         if targetgender == rulegender
                             token = string(stemvalue(stem), ending(rule))
                             tokenid = "A"
-                            @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(lmForm(rule))")
-                            push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token, tokenid))
+                            @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(latinForm(rule))")
+                            push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(latinForm(rule)), urn(stem),urn(rule), token, tokenid))
                         end
                     end
                 end
@@ -53,13 +53,13 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
         
         rules = rulesarray(td)
         for stem in stemlist
-            classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmForm(r) == frm, rules)
+            classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == frm, rules)
             @debug("Filtered rules and got $(length(classrules)) for $(inflectionclass(stem))")
             for rule in classrules
                 token = string(stemvalue(stem), ending(rule))
                 tokenid = "A"
-                @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(lmForm(rule))")
-                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token, tokenid))
+                @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(latinForm(rule))")
+                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(latinForm(rule)), urn(stem),urn(rule), token, tokenid))
             end
             
         end
@@ -80,5 +80,5 @@ $(SIGNATURES)
 """
 function generate(stem::TStem, rule::TRule, td::Tabulae.Dataset)::Vector{Analysis} where {TRule <: TabulaeRule, TStem <: TabulaeStem}
     @debug("generate from stem/rule $(stem) / $(rule) from a dataset")
-    generate(lexeme(stem),lmForm(rule),  td)
+    generate(lexeme(stem),latinForm(rule),  td)
 end 

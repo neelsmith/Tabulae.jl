@@ -39,7 +39,7 @@ infinrule = fromcex(infinitiveruletext, TabulaeInfinitiveRule)
 All rule types identify a morphological form, an inflectional type, and a string value for the stem, that you can retrieve with the following functions:
 
 ```{julia}
-lmForm(infinrule)
+latinForm(infinrule)
 ```
 
 ```{julia}

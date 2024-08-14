@@ -135,7 +135,7 @@ function tokenvalue(irrv::TabulaeIrregularVerb)
     irrv.form
 end
 
-function lmForm(irrv::TabulaeIrregularVerb)
+function latinForm(irrv::TabulaeIrregularVerb)
     LMFFiniteVerb(
         lmpPerson(irrv),
         lmpNumber(irrv),

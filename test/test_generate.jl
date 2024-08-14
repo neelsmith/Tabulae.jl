@@ -11,7 +11,7 @@
     ruleresults = generate(stem, rule,  tds)
     @test ruleresults == [expected]
     
-    frm = lmForm(rule)
+    frm = latinForm(rule)
     lex = lexeme(stem)
     formresults  = generate(lex,frm,  tds)
     @test formresults == ruleresults

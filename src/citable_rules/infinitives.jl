@@ -133,7 +133,7 @@ end
 """Create a `LMFInfinitive` from `rule`.
 $(SIGNATURES)
 """
-function lmForm(rule::TabulaeInfinitiveRule)
+function latinForm(rule::TabulaeInfinitiveRule)
     LMFInfinitive(rule.vtense, rule.vvoice)
 end
 

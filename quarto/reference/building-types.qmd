@@ -1,3 +1,9 @@
+---
+editor:
+    render-on-save: true
+---
+
+
 # Overview of the infrastructure for an analytical type ("part of speech")
 
 This page outlines the types and functions required by a given analytical type ("part of speech").  
@@ -25,9 +31,9 @@ When you compile a parser with `Tabulae`, you create all possible forms for a gi
 The names of stem and rule types for pronouns are `TabulaePronounStem` and `TabulaePronounRule`
 :::
 
-Forms and stems are citable objects. They implement both the citable trait and the CEX serializable trait of the `CitableBase` package.
+Forms and stems are citable objects. They implement both the citable trait and the CEX serializable trait of the `CitableBase` package. (See [documentation](https://neelsmith.quarto.pub/citablebase/).)
 
-**ADD LINK TO QUARTO DOCS FOR BASE**
+
 
 
 
@@ -37,7 +43,7 @@ In addition, they implement the following functions that enable `Tabulae` to bui
 - `inflectionclass`. Both stems and rules implement this function: rules and stems are only combined if they share the same inflection class.
 - `stemvalue` and `ending`. The `stemvalue` function is implemented by citable stems, and yields a string value for the stem; the `ending` function is implemented by citable rules, and yields a string value for the ending. Tokens are created by concatenating stem values and endings.
 - `lexeme`. The stem type implements this function which identifies the lexical item the stem belongs to
-- `formurn`.  The `formurn` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `formurn` function is implemented for the rule type.
+- `latinForm`.  The `formurn` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `formurn` function is implemented for the rule type.
 
 
 
@@ -46,36 +52,17 @@ In addition, they implement the following functions that enable `Tabulae` to bui
 `Tabulae` builds a parser entry for the pronoun *tu* by combining a pronoun stem cited as `latcommon.pron49339a` and a pronoun rule cited as `proninfl.pronouns4`.  For both stem and rule, `inflectionclass` produces the value `personal`.  The `stemvalue` function produces the string `"tu"` and the `ending` yields the empty string; the resulting token is `"tu" * ""` -- that is, `"tu"`.
 
 
-Because this is a pronoun type, we apply `formurn` to the stem.
+Because this is a pronoun type, we apply `latinForm` to the stem.
 
 :::
-
-
-## Parsing
-
-Parsing will work automatically once the following functions are implemented:
-
-on stem:
-
-
-- `lexeme`
-- `formurn` unless the type is "build from rule"
-
-
-
-on rule:
-
-
-- `formurn` if the type is "build from rule" (irregulars, uninflected, pronouns)
-
 
 
 ## TBA
 
 What are:
 
-- `lmForm`
-- `latinForm`
+- `latinForm`: gets a Latin morphological form from an analysis, a rule or a stem
+
 
 
 - `formurn`: from CPB package, gets a URN value for the ofrm of an Analysis

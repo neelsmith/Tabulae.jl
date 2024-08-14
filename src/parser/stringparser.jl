@@ -116,13 +116,13 @@ function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}; delimiter =
         mtokenid = "a"
         
         if buildfromrule(rule)
-            #push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token, delimiter, mtoken))
-            #pieces = [token, lexeme(stem), Tabulae.formurn(lmForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
-            pieces = [token, lexeme(stem), Tabulae.formurn(lmForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
+            #push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(latinForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token, delimiter, mtoken))
+            #pieces = [token, lexeme(stem), Tabulae.formurn(latinForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
+            pieces = [token, lexeme(stem), Tabulae.formurn(latinForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
             record = join(pieces, delimiter)
             push!(generated, record)
         else
-            pieces = [token, lexeme(stem), Tabulae.formurn(lmForm(stem)), urn(stem), urn(rule), mtoken, mtokenid]
+            pieces = [token, lexeme(stem), Tabulae.formurn(latinForm(stem)), urn(stem), urn(rule), mtoken, mtokenid]
             record = join(pieces, delimiter) 
             push!(generated, record)
         end
@@ -140,7 +140,7 @@ function buildparseable(stem::T,  rules::Vector{Rule}; delimiter = "|") where {T
         @debug("Process rule $(rule) with infl type $(inflectionclass(rule))")
         token = tokenvalue(stem)
         mtoken = "a"
-        push!(generated, string(token, delimiter, lexeme(stem), delimiter, formurn(lmForm(stem)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token,delimiter,mtoken))
+        push!(generated, string(token, delimiter, lexeme(stem), delimiter, formurn(latinForm(stem)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token,delimiter,mtoken))
         @debug("Pushed $(token)")
     end
     generated
@@ -153,7 +153,7 @@ function buildparseable(stem::Stem,  rules::Vector{Rule}; delimiter = "|")
     for rule in classrules
         token = string(stemvalue(stem), ending(rule))
         mtoken = "a"
-        push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(lmForm(rule)), delimiter, urn(stem), delimiter, urn(rule), delimiter, token, delimiter, mtoken))
+        push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(latinForm(rule)), delimiter, urn(stem), delimiter, urn(rule), delimiter, token, delimiter, mtoken))
 
     end
     generated
