@@ -43,7 +43,7 @@ In addition, they implement the following functions that enable `Tabulae` to bui
 - `inflectionclass`. Both stems and rules implement this function: rules and stems are only combined if they share the same inflection class.
 - `stemvalue` and `ending`. The `stemvalue` function is implemented by citable stems, and yields a string value for the stem; the `ending` function is implemented by citable rules, and yields a string value for the ending. Tokens are created by concatenating stem values and endings.
 - `lexeme`. The stem type implements this function which identifies the lexical item the stem belongs to
-- `latinForm`.  The `formurn` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `formurn` function is implemented for the rule type.
+- `latinForm`.  The `latinForm` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `latinForm` function is implemented for the rule type. (THere is also a method of this function that gets a Latin morphological form from an `Analysis`.)
 
 
 
@@ -56,16 +56,6 @@ Because this is a pronoun type, we apply `latinForm` to the stem.
 
 :::
 
-
-## TBA
-
-What are:
-
-- `latinForm`: gets a Latin morphological form from an analysis, a rule or a stem
-
-
-
-- `formurn`: from CPB package, gets a URN value for the ofrm of an Analysis
 
 
 ## Testing
