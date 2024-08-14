@@ -46,6 +46,11 @@ In addition, they implement the following functions that enable `Tabulae` to bui
 - `latinForm`.  The `latinForm` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `latinForm` function is implemented for the rule type. (THere is also a method of this function that gets a Latin morphological form from an `Analysis`.)
 
 
+## ALSO...
+
+
+- `formurn` pretty sure we need this too
+
 
 ::: {.callout-tip title="Example: combining pronoun stems and rules"}
 
@@ -57,6 +62,10 @@ Because this is a pronoun type, we apply `latinForm` to the stem.
 :::
 
 
+## Datasets
+
+- `src/dataset/rulesarray.jl` : list changes
+- `src/data/stemsarray.jl`: list changes
 
 ## Testing
 

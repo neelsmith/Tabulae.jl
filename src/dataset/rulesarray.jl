@@ -17,7 +17,8 @@ function rulesarray(dirlist; delimiter = "|")
         "verbs" => TabulaeFiniteVerbRule,
         "infinitives" => TabulaeInfinitiveRule,
         "participles" => TabulaeParticipleRule,
-        "irregulars" => TabulaeIrregularRule
+        "irregulars" => TabulaeIrregularRule,
+        "pronouns" => TabulaePronounRule
         ]
     )
     rulesdirs = [
@@ -25,20 +26,22 @@ function rulesarray(dirlist; delimiter = "|")
         "verbs",
         "infinitives",
         "participles",
-        "irregulars"
+        "irregulars", 
+        "pronouns"
         
     ]
     rulesarr = Rule[]
 
     for datasrc in dirlist
         for dir in rulesdirs 
-            #@info("PROCESSING DIR ", dirname)
+            @debug("PROCESSING DIR ", dir)
             fullpath = joinpath(datasrc, "rules-tables", dir)
+            @debug("full path ", fullpath)
             cexfiles = glob("*.cex", fullpath)
 
             delimitedtype = (iodict[dir])
             for f in cexfiles
-                #@info("PROCESS FILE ", f)
+                @debug("PROCESS FILE ", f)
                 raw = readlines(f)
                 lines = filter(s -> ! isempty(s), raw)
                 for ln in lines[2:end]

@@ -206,3 +206,8 @@ $(SIGNATURES)
 function formurn(pns::TabulaePronounStem; cite2urn = false)
     cite2urn ? Cite2Urn("$(BASE_MORPHOLOGY_URN)." * code(pns) ) :  FormUrn("latinforms." * code(pns))
 end
+
+
+function latinForm(pns::TabulaePronounStem)
+    LMFPronoun(pns.gender, pns.case, pns.number)
+end

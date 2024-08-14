@@ -101,6 +101,15 @@ function buildfromrule(r::T) where {T <: TabulaeRule}
 end
 
 
+
+function buildfromstem(st::T) where {T <: TabulaeStem}
+    isa(st, TabulaePronounStem)  ||
+    isa(st, TabulaeUninflectedStem)  ||
+    isa(st, TabulaeIrregularStem) 
+end
+
+
+
 """Generate all forms possible for `stem`.
 $(SIGNATURES)
 """
