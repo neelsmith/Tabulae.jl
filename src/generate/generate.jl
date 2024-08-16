@@ -1,4 +1,4 @@
-function generatenoun(lex::LexemeUrn, nounform::LMFNoun, td::Tabulae.Dataset)::Vector{Analysis}
+function generatenoun(lex::LexemeUrn, nounform::LMFNoun, td::Tabulae.Dataset)##::Vector{Analysis}
     @info("generate a noun form from a lexeme urn + form + dataset")
     generated = Analysis[]   
     targetgender = lmpGender(nounform) 
@@ -76,7 +76,7 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset) where {T <: Lat
         generatenoun(lex, frm, td)
 
     else
-        @info("generate $(lex) in form $(frm) from a dataset")
+        @debug("generate $(lex) in form $(frm) from a dataset")
         
         stems = stemsarray(td)
         rules = rulesarray(td)
@@ -91,27 +91,27 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset) where {T <: Lat
             for stem in stemlist
                 if buildfromstem(stem)
                     if latinForm(stem) == frm
-                        @info("BUILD IT!")
-                        classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(stem) == frm, rules)
-                        @info(classrules)
+                        @debug("BUILD FORM FROM STEM: $(frm)")
+                        classrules = filter(rules) do r
+                            inflectionclass(r) == inflectionclass(stem) #&& latinForm(stem) == frm
+                        end
+                        @debug(classrules)
                         for rule in classrules
                             token = string(stemvalue(stem), ending(rule))
                             tokenid = "A"
-                            @info("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(latinForm(rule))")
+                            @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(latinForm(rule))")
                             push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(frm), urn(stem),urn(rule), token, tokenid))
                         end
                     end
 
                 else   
-                    @info("Build from form")
+                    @info("Build from rule")
+                    classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == frm, rules)
+               
                     
                 end
                 #=
-                stemform = buildfromstem(stem) ? latinForm(stem) : nothing
-
-
-
-
+               
 
                 classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == frm, rules)
                 @info("Filtered rules and got $(length(classrules)) for $(inflectionclass(stem)) == $(inflectionclass(r))")
@@ -127,6 +127,9 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset) where {T <: Lat
             
 
         end
+        
+        
+        generated
     end
     #elseif buildfromstem(stem)
     #    generatefromstemform(lex,frm,td)
@@ -167,7 +170,6 @@ function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset) where {T <: Lat
         end
         generated
         =#
-    
 end 
 
 

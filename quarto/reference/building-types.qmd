@@ -15,6 +15,8 @@ Each analytical type is represented by a citable form: that is, a concrete subty
 The names of the types for forms begin with `LMF` (for Latin Morphological Form) followed by a traditional name for the type.
 
 
+Forms have to implement the `formurn` function.
+
 ::: {.callout-tip title="Example: pronouns"}
 
 The name of the type for a pronouns form is `LMFPronoun`.  It has properties for gender, case, number, that are of the types `LMPGender`, `LMPCase` and `LMPNumber`.

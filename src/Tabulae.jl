@@ -83,6 +83,7 @@ export TabulaeNounStem
 export TabulaePronounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
 export TabulaeStringParser, tabulaeStringParser
+export TabulaeUninflectedStem
 export orthography
 
 export md_declension
@@ -118,7 +119,7 @@ include("citable_stems/pronouns.jl")
 include("citable_stems/regularverbs.jl")
 include("citable_stems/irregularfiniteverbs.jl")
 include("citable_stems/compoundverbs.jl")
-
+include("citable_stems/uninflected.jl")
 
 
 

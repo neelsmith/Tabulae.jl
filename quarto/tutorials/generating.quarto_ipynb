@@ -1,0 +1,167 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "editor:\n",
+        "    render-on-save: true\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Generating forms\n"
+      ],
+      "id": "9212ec2b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "#| output: false\n",
+        "#repo  = pwd()\n",
+        "repo = pwd() |> dirname |> dirname"
+      ],
+      "id": "13d39134",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "You can generate a complete analysis, including a string token,  for a givein lexeme and morphological form. Tabulae can generate forms using either a parser or a dataset.\n",
+        "\n",
+        "The following cell creates a Tabulae dataset from directories in the github repository's `datasets` directory, and builds a parser from it.\n"
+      ],
+      "id": "44d06f40"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| output: false\n",
+        "using Tabulae, CitableParserBuilder\n",
+        "\n",
+        "shareddir = joinpath(repo, \"datasets\", \"core-infl-shared\") \n",
+        "lat25dir = joinpath(repo, \"datasets\", \"core-infl-lat25\") \n",
+        "ds = dataset([shareddir, lat25dir])\n",
+        "parser =  tabulaeStringParser(ds)"
+      ],
+      "id": "99ccde43",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Generating forms using a parser\n",
+        "\n",
+        "To illustrate generating forms with a parser, we'll first analyze a token.\n",
+        "\n",
+        "\n",
+        "\n",
+        "# THIS IS ALL BROKEN\n"
+      ],
+      "id": "32df9c91"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "parses = parsetoken(\"animo\", parser)"
+      ],
+      "id": "1e9588e1",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "*animo* is morphologically ambiguous: it has two possible analyses.  We'll use the `latinForm` function to see the morphological form of the first analysis.\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "```{juliabroken}\n",
+        "form1 = latinForm(parses[1])\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "We'll now try to generate the same form using identifying URNs for the form and the lexeme.\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "```{juliabroken}\n",
+        "lex = lexemeurn(parses[1])\n",
+        "mform = formurn(parses[1])\n",
+        "\n",
+        "generated = generate(lex, mform, parser)\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "The result is a vector of `Analysis` objects -- the same structure that  `parsetoken` returns, but we only have one possible result for this specific form of this lexeme.  The `token` function extracts the string value of the token from an analysis\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "```{juliabroken}\n",
+        "token(generated[1])\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Generating forms using a Tabulae dataset\n",
+        "\n",
+        "Using a dataset instead of a parser, we get the same results:\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "```{juliabroken}\n",
+        "dsgenerated = generate(lex, mform, ds)\n",
+        "dsgenerated .|> token\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "With a dataset, you also have the option of generating analyses from the combination of a lexeme identifier plus a full Latin morphological form, such as the noun form we saved from a previous analysis:\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "```{juliabroken}\n",
+        "generate(lex, form1, ds)\n",
+        "```"
+      ],
+      "id": "f6cb2bce"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "julia-1.10",
+      "language": "julia",
+      "display_name": "Julia 1.10.4",
+      "path": "/Users/nsmith/Library/Jupyter/kernels/julia-1.10"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

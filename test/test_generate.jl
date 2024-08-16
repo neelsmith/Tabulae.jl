@@ -1,4 +1,13 @@
-@testset "Test generating noun forms" begin
+@testset "Test generating regular verb forms" begin
+    repo = dirname(pwd())
+    srcdir = joinpath(repo, "datasets", "core-infl-shared") 
+    tds = dataset([srcdir])
+
+    vstem = fromcex("latcommon.verbn12387|ls.n12387|deb|conj2", TabulaeVerbStem)
+    
+end
+
+@testset "Test generating regular noun forms" begin
     repo = dirname(pwd())
     srcdir = joinpath(repo, "datasets", "core-infl-shared") 
     tds = dataset([srcdir])
