@@ -4,7 +4,12 @@
     tds = dataset([srcdir])
 
     vstem = fromcex("latcommon.verbn12387|ls.n12387|deb|conj2", TabulaeVerbStem)
-    
+    vrule = fromcex("latcommon.ere_conj2fut3|conj2|ebit|third|singular|future|indicative|active", TabulaeFiniteVerbRule)
+
+    regularforms = generate(vstem, vrule, tds)
+    expected = Analysis("debebit", LexemeUrn("ls.n12387"), FormUrn("forms.3313110000"), 
+    StemUrn("latcommon.verbn12387"), RuleUrn("latcommon.ere_conj2fut3"), "debebit", "A")
+    @test regularforms == [expected]
 end
 
 @testset "Test generating regular noun forms" begin
@@ -37,5 +42,9 @@ end
     stemcex = "latcommon.pron49339a|ls.n49339|tu|masculine|nominative|singular|personal"
     stem = fromcex(stemcex, TabulaePronounStem)
 
+    results = generate(stem, rule, tds)
+    expected = Analysis("tu", LexemeUrn("ls.n49339"), FormUrn("forms.8010001100"), 
+    StemUrn("latcommon.pron49339a"), RuleUrn("proninfl.pronouns4"), "tu", "A")
+    @test results == [expected]
 
 end
