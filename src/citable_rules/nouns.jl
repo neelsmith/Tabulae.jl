@@ -167,11 +167,3 @@ function id(n::TabulaeNounRule)
     n.ruleid
 end
 
-"""Compose an abbreviated URN for a rule from a `TabulaeNounRule`.
-
-$(SIGNATURES)
-"""
-function formurn(rule::TabulaeNounRule)
-    # PosPNTMVGCDCat
-    FormUrn(string("tabulaeforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
-end

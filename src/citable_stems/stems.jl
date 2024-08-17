@@ -71,3 +71,12 @@ function lmpUninflected(stem::T) where {T <: TabulaeStem}
     @warn "Function lmpUninflected not implemented for stems of type $(typeof(stem))."
     nothing
 end
+
+
+"""Compose an abbreviated URN for a rule.
+
+$(SIGNATURES)
+"""
+function formurn(stem::T) where {T <: TabulaeStem}
+    latinForm(stem) |> formurn
+end

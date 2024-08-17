@@ -166,3 +166,13 @@ function ruleset(u, freader::Type{UrlReader};  delim = "|")
     #@info("Data for rules set: $(data)")
     ruleset(data, StringReader; delim = delim)
 end
+
+
+
+"""Compose an abbreviated URN for a rule.
+
+$(SIGNATURES)
+"""
+function formurn(rule::T) where {T <: TabulaeRule}
+    latinForm(rule) |> formurn
+end
