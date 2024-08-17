@@ -171,7 +171,7 @@ end
 
 $(SIGNATURES)
 """
-function ruleurn(rule::TabulaeNounRule)
+function formurn(rule::TabulaeNounRule)
     # PosPNTMVGCDCat
-    RuleUrn(string("tabulaeforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
+    FormUrn(string("tabulaeforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
 end

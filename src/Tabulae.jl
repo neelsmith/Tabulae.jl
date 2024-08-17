@@ -32,8 +32,6 @@ import CitableBase: cextrait
 import CitableBase: cex
 import CitableBase: fromcex
 
-
-
 using LatinOrthography
 using CitableObject
 
@@ -45,6 +43,9 @@ export rulesarray, stemsarray
 export rulesclasses, stemsclasses
 export ruleset
 export registry
+
+
+export analysis, analyses
 
 export label, code
 export LatinMorphologicalProperty

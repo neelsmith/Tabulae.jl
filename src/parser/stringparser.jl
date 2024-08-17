@@ -101,13 +101,18 @@ function buildfromrule(r::T) where {T <: TabulaeRule}
 end
 
 
-
 function buildfromstem(st::T) where {T <: TabulaeStem}
     isa(st, TabulaePronounStem)  ||
     isa(st, TabulaeUninflectedStem)  ||
     isa(st, TabulaeIrregularStem) 
 end
 
+
+function buildfromstem(frm::T) where {T <: LatinMorphologicalForm}
+    isa(st, LMFPronoun)  ||
+    isa(st, TabulaeUninflectedStem)  ||
+    isa(st, TabulaeIrregularStem) 
+end
 
 
 """Generate all forms possible for `stem`.
