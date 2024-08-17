@@ -87,8 +87,6 @@ function analyses(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
                     for rule in classrules
                         token = string(stemvalue(stem), ending(rule))
                         tknid = "A"
-                        #@debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(latinForm(rule))")
-                        #push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(frm), urn(stem),urn(rule), token, tokenid))
                         push!(generated, analysis(stem, rule; tokenid = tknid))
                     end  
                 end 
@@ -100,13 +98,13 @@ function analyses(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
 end 
 
 
+"""Generate vector of possible strings for a lexeme in a form identified by a form URN
 
-function generate(lex::LexemeUrn, frmUrn::FormUrn,  td::Tabulae.Dataset)#::Vector{Analysis} 
+$(SIGNATURES)
+"""
+function analyses(lex::LexemeUrn, frmUrn::FormUrn,  td::Tabulae.Dataset)#::Vector{Analysis} 
     @info("generate $(lex) from form urn $(frmUrn) from a dataset")
-    #generate(lex, latinForm(frmUrn), td)
-    "Figure out rule or stem for lex/form/ds combo?"
-    
-
+    analyses(lex, latinForm(frmUrn), td)
 end
 
 

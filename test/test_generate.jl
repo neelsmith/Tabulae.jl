@@ -6,10 +6,10 @@
     vstem = fromcex("latcommon.verbn12387|ls.n12387|deb|conj2", TabulaeVerbStem)
     vrule = fromcex("latcommon.ere_conj2fut3|conj2|ebit|third|singular|future|indicative|active", TabulaeFiniteVerbRule)
 
-    regularforms = generate(vstem, vrule, tds)
+    regularforms = analysis(vstem, vrule)
     expected = Analysis("debebit", LexemeUrn("ls.n12387"), FormUrn("forms.3313110000"), 
     StemUrn("latcommon.verbn12387"), RuleUrn("latcommon.ere_conj2fut3"), "debebit", "A")
-    @test regularforms == [expected]
+    @test regularforms == expected
 end
 
 @testset "Test generating regular noun forms" begin
@@ -22,13 +22,13 @@ end
     rule = TabulaeNounRule(RuleUrn("nouninfl.us_i13"), "us_i", "um", LMPGender(3), LMPCase(1), LMPNumber(1))
     expected = Analysis("donum", LexemeUrn("ls.n14736"), FormUrn("forms.2010003100"), StemUrn("latcommon.nounn14736"), RuleUrn("nouninfl.us_i13"), "donum", "A")
 
-    ruleresults = generate(stem, rule,  tds)
-    @test ruleresults == [expected]
+    ruleresults = analysis(stem, rule)
+    @test ruleresults == expected
     
     frm = latinForm(rule)
     lex = lexeme(stem)
-    formresults  = generate(lex,frm,  tds)
-    @test formresults == ruleresults
+    formresults  = analyses(lex,frm, tds)
+    @test formresults == [ruleresults]  
 end
 
 @testset "Test generating pronoun forms" begin
@@ -42,9 +42,9 @@ end
     stemcex = "latcommon.pron49339a|ls.n49339|tu|masculine|nominative|singular|personal"
     stem = fromcex(stemcex, TabulaePronounStem)
 
-    results = generate(stem, rule, tds)
+    results = analysis(stem, rule)
     expected = Analysis("tu", LexemeUrn("ls.n49339"), FormUrn("forms.8010001100"), 
     StemUrn("latcommon.pron49339a"), RuleUrn("proninfl.pronouns4"), "tu", "A")
-    @test results == [expected]
+    @test results == expected
 
 end

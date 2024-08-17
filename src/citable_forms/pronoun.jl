@@ -174,7 +174,7 @@ function pronounanalyses(td::Tabulae.Dataset)::Vector{Analysis}
        
         # THEN generate for those forms
         for f in filter(nf -> lmpGender(nf) == lmpGender(pronounstem),  pronounforms())
-            generated = generate(lexeme(nounstem), f,  td)
+            generated = analyses(lexeme(nounstem), f,  td)
             for g in generated
                 push!(formlist, g)
             end
