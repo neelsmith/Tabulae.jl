@@ -50,6 +50,7 @@ end
 $(SIGNATURES)
 """
 function analyses(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
+    @debug("Genrerating analyzes from lexeme urn + form in a dataset")
     if frm isa LMFNoun
         generatenoun(lex, frm, td)
 
@@ -98,6 +99,13 @@ function analyses(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
 end 
 
 
+function analyses(lex::LexemeUrn, frm::FormUrn, td::Tabulae.Dataset)::Vector{Analysis} 
+    @debug("Genrerating analyzes from lexeme urn + form urn in a dataset")
+    analyses(lex, latinForm(frm), td)
+end
+
+
+#=
 """Generate vector of possible strings for a lexeme in a form identified by a form URN
 
 $(SIGNATURES)
@@ -106,6 +114,7 @@ function analyses(lex::LexemeUrn, frmUrn::FormUrn,  td::Tabulae.Dataset)#::Vecto
     @info("generate $(lex) from form urn $(frmUrn) from a dataset")
     analyses(lex, latinForm(frmUrn), td)
 end
+=#
 
 
 """Generate an `Analysis` frm the combination of a stem and a rule.

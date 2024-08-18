@@ -4,7 +4,7 @@ editor:
 ---
 
 
-# Generating forms
+# Generating analyses
 
 ```{julia}
 #| echo: false
@@ -14,9 +14,51 @@ repo = pwd() |> dirname |> dirname
 ```
 
 
-You can generate a complete analysis, including a string token,  for a givein lexeme and morphological form. Tabulae can generate forms using either a parser or a dataset.
 
-The following cell creates a Tabulae dataset from directories in the github repository's `datasets` directory, and builds a parser from it.
+In Tabulae's model, a parser is just a collection of pre-computed analyses.
+
+
+The only "generating" we need to do is precomputing `Analysis` objects.
+
+## rule + stem == Analysis
+
+
+Example:
+
+```{julia}
+using CitableBase, Tabulae
+vstem = fromcex("latcommon.verbn12387|ls.n12387|deb|conj2", TabulaeVerbStem)
+vrule = fromcex("latcommon.ere_conj2fut3|conj2|ebit|third|singular|future|indicative|active", TabulaeFiniteVerbRule)
+verb = analysis(vstem, vrule)
+```
+
+
+## analyses from a dataset
+
+A dataset gives you a whole collection of stems and rules to work with!
+
+```{julia}
+coresrcdir = joinpath(repo, "datasets", "core-infl-shared") 
+tds = dataset([coresrcdir])
+```
+
+
+### Lexeme + form
+
+Becuase stems are associated with a lexeme, you can generate analysis for a given form for a given lexem:
+
+```{julia}
+using CitableParserBuilder
+lex = LexemeUrn("ls.n12387")
+vform = formurn(vrule)
+analyses(lex, vform, tds)
+```
+
+
+
+
+
+# THIS IS ALL BROKEN
 
 
 ```{julia}
@@ -37,9 +79,7 @@ To illustrate generating forms with a parser, we'll first analyze a token.
 
 
 
-# THIS IS ALL BROKEN
-
-```{julia}
+```{juliabroken}
 parses = parsetoken("animo", parser)
 ```
 

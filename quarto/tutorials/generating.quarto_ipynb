@@ -13,9 +13,9 @@
         "\n",
         "\n",
         "\n",
-        "# Generating forms\n"
+        "# Generating analyses\n"
       ],
-      "id": "9212ec2b"
+      "id": "c8186f79"
     },
     {
       "cell_type": "code",
@@ -26,7 +26,7 @@
         "#repo  = pwd()\n",
         "repo = pwd() |> dirname |> dirname"
       ],
-      "id": "13d39134",
+      "id": "41bc0d94",
       "execution_count": null,
       "outputs": []
     },
@@ -34,11 +34,82 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "You can generate a complete analysis, including a string token,  for a givein lexeme and morphological form. Tabulae can generate forms using either a parser or a dataset.\n",
+        "In Tabulae's model, a parser is just a collection of pre-computed analyses.\n",
         "\n",
-        "The following cell creates a Tabulae dataset from directories in the github repository's `datasets` directory, and builds a parser from it.\n"
+        "\n",
+        "The only \"generating\" we need to do is precomputing `Analysis` objects.\n",
+        "\n",
+        "## rule + stem == Analysis\n",
+        "\n",
+        "\n",
+        "Example:\n"
       ],
-      "id": "44d06f40"
+      "id": "318f9885"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "using CitableBase, Tabulae\n",
+        "vstem = fromcex(\"latcommon.verbn12387|ls.n12387|deb|conj2\", TabulaeVerbStem)\n",
+        "vrule = fromcex(\"latcommon.ere_conj2fut3|conj2|ebit|third|singular|future|indicative|active\", TabulaeFiniteVerbRule)\n",
+        "verb = analysis(vstem, vrule)"
+      ],
+      "id": "02b64b49",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## analyses from a dataset\n",
+        "\n",
+        "A dataset gives you a whole collection of stems and rules to work with!\n"
+      ],
+      "id": "1dc355f5"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "coresrcdir = joinpath(repo, \"datasets\", \"core-infl-shared\") \n",
+        "tds = dataset([coresrcdir])"
+      ],
+      "id": "7966da17",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### Lexeme + form\n",
+        "\n",
+        "Becuase stems are associated with a lexeme, you can generate analysis for a given form for a given lexem:\n"
+      ],
+      "id": "8e5e2b9a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "using CitableParserBuilder\n",
+        "lex = LexemeUrn(\"ls.n12387\")\n",
+        "vform = formurn(vrule)\n",
+        "analyses(lex, vform, tds)"
+      ],
+      "id": "74b71136",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "# THIS IS ALL BROKEN\n"
+      ],
+      "id": "06d48fa8"
     },
     {
       "cell_type": "code",
@@ -53,7 +124,7 @@
         "ds = dataset([shareddir, lat25dir])\n",
         "parser =  tabulaeStringParser(ds)"
       ],
-      "id": "99ccde43",
+      "id": "99b432c1",
       "execution_count": null,
       "outputs": []
     },
@@ -67,24 +138,16 @@
         "\n",
         "\n",
         "\n",
-        "# THIS IS ALL BROKEN\n"
-      ],
-      "id": "32df9c91"
-    },
-    {
-      "cell_type": "code",
-      "metadata": {},
-      "source": [
-        "parses = parsetoken(\"animo\", parser)"
-      ],
-      "id": "1e9588e1",
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {},
-      "source": [
+        "\n",
+        "\n",
+        "\n",
+        "```{juliabroken}\n",
+        "parses = parsetoken(\"animo\", parser)\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
         "*animo* is morphologically ambiguous: it has two possible analyses.  We'll use the `latinForm` function to see the morphological form of the first analysis.\n",
         "\n",
         "\n",
@@ -151,7 +214,7 @@
         "generate(lex, form1, ds)\n",
         "```"
       ],
-      "id": "f6cb2bce"
+      "id": "e42eaf61"
     }
   ],
   "metadata": {

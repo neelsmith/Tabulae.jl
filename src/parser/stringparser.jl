@@ -63,15 +63,22 @@ end
 """Instantiate a `TabulaeStringParser` for `td`.
 $(SIGNATURES)
 """
-function tabulaeStringParser(td::Tabulae.Dataset)
-    analyses = []
-    rules = rulesarray(td)
-    for stem in stemsarray(td)
-        append!(analyses, buildparseable(stem, rules))
-    end
-    analyses |> TabulaeStringParser
+function tabulaeStringParser(tds::Tabulae.Dataset)
+
+    TabulaeStringParser(analyses(tds))
 end
 
+
+function analyses(ds::Tabulae.Dataset)
+    analysisvect = []
+    rules = rulesarray(ds)
+    for stem in stemsarray(ds)
+        for a in analyses(stem, rules)
+            push!(analysisvect, a)
+        end
+    end
+    analysisvect
+end
 """Instantiate a `TabulaeStringParser` from a set of analyses read from a local file.
 $(SIGNATURES)
 """
@@ -114,61 +121,11 @@ function buildfromstem(frm::T) where {T <: LatinMorphologicalForm}
     isa(st, TabulaeIrregularStem) 
 end
 
-
-"""Generate all forms possible for `stem`.
-$(SIGNATURES)
-"""
-function buildparseable(stem::TabulaeNounStem,  rules::Vector{Rule}; delimiter = "|") 
-    generated = []        
-    classrules = filter(rules) do r
-        inflectionclass(r) == inflectionclass(stem) &&
-        lmpGender(r) == lmpGender(stem)
-    end
-    @debug("$(stem) matches rules $(classrules)")
-    for rule in classrules
-        mtoken = string(stemvalue(stem), ending(rule))
-        mtokenid = "a"
-        
-        if buildfromrule(rule)
-            #push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(latinForm(rule)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token, delimiter, mtoken))
-            #pieces = [token, lexeme(stem), Tabulae.formurn(latinForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
-            pieces = [token, lexeme(stem), Tabulae.formurn(latinForm(rule)), urn(stem), urn(rule), mtoken, mtokenid]
-            record = join(pieces, delimiter)
-            push!(generated, record)
-        else
-            pieces = [token, lexeme(stem), Tabulae.formurn(latinForm(stem)), urn(stem), urn(rule), mtoken, mtokenid]
-            record = join(pieces, delimiter) 
-            push!(generated, record)
-        end
-    end
-    generated
-end
-
-function buildparseable(stem::T,  rules::Vector{Rule}; delimiter = "|") where {T <: TabulaeIrregularStem}
-    @debug("BUILD FOR AN IRREGULAR: stem $(stem) with infl type $(inflectionclass(stem))")
-    
+function analyses(stem::Stem,  rules::Vector{Rule}; delimiter = "|")::Vector{Analysis}
     generated = []        
     classrules = filter(r -> inflectionclass(r) == inflectionclass(stem), rules)
-    @debug("Rules $(classrules)")
     for rule in classrules
-        @debug("Process rule $(rule) with infl type $(inflectionclass(rule))")
-        token = tokenvalue(stem)
-        mtoken = "a"
-        push!(generated, string(token, delimiter, lexeme(stem), delimiter, formurn(latinForm(stem)), delimiter, urn(stem), delimiter, urn(rule),delimiter,token,delimiter,mtoken))
-        @debug("Pushed $(token)")
-    end
-    generated
-end
-
-function buildparseable(stem::Stem,  rules::Vector{Rule}; delimiter = "|")
-    generated = []        
-    classrules = filter(r -> inflectionclass(r) == inflectionclass(stem), rules)
-    #@info("$(stem) matches rules $(classrules)")
-    for rule in classrules
-        token = string(stemvalue(stem), ending(rule))
-        mtoken = "a"
-        push!(generated, string(token, delimiter, lexeme(stem), delimiter, Tabulae.formurn(latinForm(rule)), delimiter, urn(stem), delimiter, urn(rule), delimiter, token, delimiter, mtoken))
-
+        push!(generated, analysis(stem,rule))
     end
     generated
 end
@@ -196,6 +153,7 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
     @info("Looking for $(s) in parser data")
     matches = filter(ln -> startswith(ln, ptrn), datasource(parser))
     @info("Got $(matches)")
+    
     if isempty(matches)
         # Try again for enclitics if result is empty!    
         results = Analysis[]
@@ -225,7 +183,6 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
         @debug("Found results $(matches)")
         map(ln -> fromcex(ln, Analysis), matches)
     end
-
     
 end
 
