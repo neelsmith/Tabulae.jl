@@ -10,7 +10,7 @@
     tds = dataset([srcdir])
     tdlines = analyses(tds) .|> cex
     donum = filter(l -> startswith(l, "donum|"),  tdlines)
-    @test_broken length(donum) == 3 # nom, acc, voc sing
+    @test length(donum) == 3 # neut. nom, acc, voc sing
 
 
     # THIS IS NOT A THING:
@@ -21,7 +21,7 @@
     parser1 = tabulaeStringParser(u, UrlReader)
     @test parser1 isa TabulaeStringParser
 
-    f = joinpath(pwd(), "samplecex", "analyses.cex")
+    f = joinpath(repo, "test", "samplecex", "analyses.cex")
     parser2 = tabulaeStringParser(f, FileReader)
     @test parser2 isa TabulaeStringParser
     @test length(parser1.entries) == length(parser2.entries)

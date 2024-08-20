@@ -1,5 +1,5 @@
 function generatenoun(lex::LexemeUrn, nounform::LMFNoun, td::Tabulae.Dataset)::Vector{Analysis}
-    @info("generate a noun form from a lexeme urn + form + dataset")
+    @debug("generate a noun form from a lexeme urn + form + dataset")
     generated = Analysis[]   
     targetgender = lmpGender(nounform) 
     stems = stemsarray(td)
@@ -15,7 +15,9 @@ function generatenoun(lex::LexemeUrn, nounform::LMFNoun, td::Tabulae.Dataset)::V
                 classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == nounform, rules)
                 for rule in classrules
                     if latinForm(rule) isa LMFNoun
+                        
                         rulegender = lmpGender(latinForm(rule))
+                        @debug("Check if gender of stem's $(targetgender) to match rule's $(rulegender)")
                         if targetgender == rulegender
                            # token = string(stemvalue(stem), ending(rule))
                             tknid = "A"
@@ -84,7 +86,7 @@ function analyses(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
 
                 else   
                     classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == frm, rules)
-                    @info("Build from rule: $(classrules)")
+                    @debug("Build from rule: $(classrules)")
                     for rule in classrules
                         token = string(stemvalue(stem), ending(rule))
                         tknid = "A"

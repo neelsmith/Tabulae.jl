@@ -19,12 +19,6 @@ function show(io::IO, p::TabulaeStringParser)
 end
 
 
-"""Instantiate a generic `StringParser` (from the `CitableParserBuilder` package) from a `TabulaeStringParser`.
-$(SIGNATURES)
-"""
-function stringParser(p::TabulaeStringParser)
-    StringParser(p.entries, p.ortho, p.delimiter)
-end
 
 
 """Get data source for parser.
@@ -60,13 +54,7 @@ function tofile(p::TabulaeStringParser, f)
     end
 end
 
-"""Instantiate a `TabulaeStringParser` for `td`.
-$(SIGNATURES)
-"""
-function tabulaeStringParser(tds::Tabulae.Dataset)
 
-    TabulaeStringParser(analyses(tds))
-end
 
 
 """Find all analyses that can be composed from
@@ -85,25 +73,9 @@ function analyses(ds::Tabulae.Dataset)
 end
 
 
-"""Instantiate a `TabulaeStringParser` from a set of analyses read from a local file.
-$(SIGNATURES)
-"""
-function tabulaeStringParser(f, freader::Type{FileReader})
-    TabulaeStringParser(readlines(f))
-end
-
-"""Instantiate a `TabulaeStringParser` from a set of analyses read from a URL.
-$(SIGNATURES)
-"""
-function tabulaeStringParser(u, ureader::Type{UrlReader})
-    tmpfile = Downloads.download(u) 
-    sp = readlines(tmpfile) |> TabulaeStringParser
-    rm(tmpfile)
-    sp
-end
 
 
-"""True if form IDs are build from the `Rule` of a
+"""True if form IDs are built from the `Rule` of a
 stem-rule pair.
 $(SIGNATURES)
 """
@@ -114,29 +86,49 @@ function buildfromrule(r::T) where {T <: TabulaeRule}
 end
 
 
+"""True if a form ID can be built from a given stem.
+$(SIGNATURES)
+"""
 function buildfromstem(st::T) where {T <: TabulaeStem}
     isa(st, TabulaePronounStem)  ||
     isa(st, TabulaeUninflectedStem)  ||
     isa(st, TabulaeIrregularStem) 
 end
 
-
-function buildfromstem(frm::T) where {T <: LatinMorphologicalForm}
+"""True if a form ID can be built from a given morphological form object.
+$(SIGNATURES)
+"""
+function buildfromstem(frm::T)::Vector{String} where {T <: LatinMorphologicalForm}
     isa(st, LMFPronoun)  ||
     isa(st, TabulaeUninflectedStem)  ||
     isa(st, TabulaeIrregularStem) 
 end
 
-function analyses(stem::Stem,  rules::Vector{Rule}; delimiter = "|")::Vector{Analysis}
-    generated = []        
-    classrules = filter(r -> inflectionclass(r) == inflectionclass(stem), rules)
-    for rule in classrules
-        push!(generated, analysis(stem,rule))
+"""Find all possible analyses from crossing a given stem with a set of rules.
+$(SIGNATURES)
+"""
+function analyses(stem::S, rules::Vector{Rule}; delimiter = "|")::Vector{Analysis} where S <: Union{TabulaeStem, TabulaeIrregularStem}
+    generated = Analysis[]
+
+    if stem isa TabulaeNounStem
+        classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmpGender(r) == lmpGender(stem), rules)
+        for rule in classrules
+            @debug("Cross $stem with $(rule)")
+            push!(generated, analysis(stem,rule))
+        end
+    else
+        classrules = filter(r -> inflectionclass(r) == inflectionclass(stem), rules)
+        for rule in classrules
+            push!(generated, analysis(stem,rule))
+        end
     end
     generated
 end
 
-function setotoken(a::Analysis, orthotoken::AbstractString)
+
+
+
+function encliticseqtotoken(a::Analysis, orthotoken::AbstractString)
     Analysis(
         orthotoken,
         lexemeurn(a),
@@ -148,6 +140,9 @@ function setotoken(a::Analysis, orthotoken::AbstractString)
 
     )
 end
+
+
+
 enclitics = ["que", "ve", "ne", "cum", "met"]
 
 
@@ -156,9 +151,9 @@ $(SIGNATURES)
 """
 function parsetoken(s::AbstractString, parser::TabulaeStringParser)
     ptrn = lowercase(s) * delimiter(parser)
-    @info("Looking for $(s) in parser data")
+    @debug("Looking for $(s) in parser data")
     matches = filter(ln -> startswith(ln, ptrn), datasource(parser))
-    @info("Got $(matches)")
+    @debug("Got $(matches)")
     
     if isempty(matches)
         # Try again for enclitics if result is empty!    
@@ -175,10 +170,11 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
                 otkn = s
                 @debug("Tokens: $(tkn) + $(e)")
                 for prs in parsetoken(mtkn, parser)
-                    push!(results, setotoken(prs, otkn))
+                    #push!(results, prs)
+                    push!(results, encliticseqtotoken(prs, otkn))
                 end
                 for prs in parsetoken(e, parser)
-                    push!(results, setotoken(prs, otkn))
+                    push!(results, encliticseqtotoken(prs, otkn))
                 end
                   
             end
@@ -220,4 +216,40 @@ function fromcex(trait::TabulaeStringParserCex, cexsrc::AbstractString, T;
     ortho = isnothing(configuration) ? latin25() : configuration
     entries = split(cexsrc, "\n")
     TabulaeStringParser(entries, ortho, delimiter)
+end
+
+
+
+
+"""Instantiate a generic `StringParser` (from the `CitableParserBuilder` package) from a `TabulaeStringParser`.
+$(SIGNATURES)
+"""
+function stringParser(p::TabulaeStringParser)
+    StringParser(p.entries, p.ortho, p.delimiter)
+end
+
+
+
+"""Instantiate a `TabulaeStringParser` from a set of analyses read from a local file.
+$(SIGNATURES)
+"""
+function tabulaeStringParser(f, freader::Type{FileReader}; ortho = latin25(), delimiter = "|")
+    TabulaeStringParser(readlines(f), ortho, delimiter)
+end
+
+"""Instantiate a `TabulaeStringParser` from a set of analyses read from a URL.
+$(SIGNATURES)
+"""
+function tabulaeStringParser(u, ureader::Type{UrlReader}; ortho = latin25(), delimiter = "|")
+    tmpfile = Downloads.download(u) 
+    sp = TabulaeStringParser(readlines(tmpfile), ortho, delimiter )
+    rm(tmpfile)
+    sp
+end
+
+"""Instantiate a `TabulaeStringParser` for `td`.
+$(SIGNATURES)
+"""
+function tabulaeStringParser(tds::Tabulae.Dataset; ortho = latin25(), delimiter = "|")
+    TabulaeStringParser(analyses(tds), ortho, delimiter)
 end

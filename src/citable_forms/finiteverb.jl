@@ -81,7 +81,7 @@ $(SIGNATURES)
 function lmfFiniteVerb(code::AbstractString)
     morphchars = split(code,"")
     # PosPNTMVGCDCat
-    @info("Get verb from code $(code)")
+    @debug("Get verb from code $(code)")
     tns = lmpTense(parse(Int64, morphchars[4]))
     md = lmpMood(parse(Int64, morphchars[5]))
     vc = lmpVoice(parse(Int64,morphchars[6]))

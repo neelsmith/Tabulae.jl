@@ -159,11 +159,11 @@ end
 $(SIGNATURES)
 """
 function ruleset(u, freader::Type{UrlReader};  delim = "|")  
-    @info("Read a rules set from a URL source")
+    @debug("Read a rules set from a URL source")
     tmp = Downloads.download(u)
     data = read(tmp, String)
     rm(tmp)
-    #@info("Data for rules set: $(data)")
+    #@debug("Data for rules set: $(data)")
     ruleset(data, StringReader; delim = delim)
 end
 
