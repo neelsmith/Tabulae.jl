@@ -22,9 +22,16 @@ $(SIGNATURES)
 
 All subclasses of `LatinMorphologicalForm` should implement this specifically for their subclass.
 """
-function urn(mf::T) where {T <: LatinMorphologicalForm}
-    @warn("urn: unrecognized type of LatinMorphologicalForm.")
-    nothing
+function urn(mf::T) where {T <: LatinMorphologicalForm}    
+    string(BASE_MORPHOLOGY_URN, code(mf)) |> Cite2Urn
+end
+
+"""Compose a `FormUrn` for a `LMFFiniteVerb`.
+
+$(SIGNATURES)
+"""
+function formurn(mf::T) where {T <: LatinMorphologicalForm}
+    FormUrn(string("forms.", code(mf)))
 end
 
 """Label for a form.
@@ -50,7 +57,7 @@ end
 """Generate a complete list of possible morphological forms.
 $(SIGNATURES)
 """
-function analyses(td::Tabulae.Dataset)::Vector{Analysis}
+function analysesXX(td::Tabulae.Dataset)::Vector{Analysis}
     formlist = Analysis[]
     @debug("Analyzing all noun forms in dataset...")
     formlist = append!(formlist, nounanalyses(td)) 

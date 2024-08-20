@@ -45,7 +45,7 @@ $(SIGNATURES)
 function generatefromruleform(lex::LexemeUrn, frm::T, td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
 end
 
-"""Generate vector of possible strings for a form of `lex` identified by `form`.
+"""Find all analyses that can be composed from a given dataset for a given lexeme in a given form.
 
 $(SIGNATURES)
 """
@@ -98,23 +98,14 @@ function analyses(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysi
     end
 end 
 
+"""Find all analyses that can be composed from a given dataset for a given lexeme URN + a given form URN.
 
+$(SIGNATURES)
+"""
 function analyses(lex::LexemeUrn, frm::FormUrn, td::Tabulae.Dataset)::Vector{Analysis} 
     @debug("Genrerating analyzes from lexeme urn + form urn in a dataset")
     analyses(lex, latinForm(frm), td)
 end
-
-
-#=
-"""Generate vector of possible strings for a lexeme in a form identified by a form URN
-
-$(SIGNATURES)
-"""
-function analyses(lex::LexemeUrn, frmUrn::FormUrn,  td::Tabulae.Dataset)#::Vector{Analysis} 
-    @info("generate $(lex) from form urn $(frmUrn) from a dataset")
-    analyses(lex, latinForm(frmUrn), td)
-end
-=#
 
 
 """Generate an `Analysis` frm the combination of a stem and a rule.

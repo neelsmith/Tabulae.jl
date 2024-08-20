@@ -3,8 +3,8 @@
     @test noun == LMFNoun(LMPGender(1), LMPCase(4), LMPNumber(1))
 
     @test label(noun) == "masculine accusative singular" 
-    @test urn(noun) == Cite2Urn("urn:cite2:tabulae:forms.v1:2010001400")
-    @test cex(noun) == "urn:cite2:tabulae:forms.v1:2010001400|masculine accusative singular"
+    @test urn(noun) == Cite2Urn("urn:cite2:tabulae:latinforms.v1:2010001400")
+    @test cex(noun) == "urn:cite2:tabulae:latinforms.v1:2010001400|masculine accusative singular"
     @test lmfNoun(urn(noun)) == noun
 
     
@@ -25,5 +25,5 @@ end
     noun = LMFNoun(lmpGender("masculine"), lmpCase("accusative"), lmpNumber("singular")) 
     @test citable(noun)
     @test label(noun) == "masculine accusative singular"
-    @test urn(noun) == Cite2Urn("urn:cite2:tabulae:forms.v1:2010001400")
+    @test urn(noun) == Cite2Urn("urn:cite2:tabulae:latinforms.v1:2010001400")
 end

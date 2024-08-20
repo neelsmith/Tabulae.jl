@@ -15,7 +15,7 @@ Each analytical type is represented by a citable form: that is, a concrete subty
 The names of the types for forms begin with `LMF` (for Latin Morphological Form) followed by a traditional name for the type.
 
 
-Forms have to implement the `formurn` function.
+Forms have to implement the `code` function.
 
 ::: {.callout-tip title="Example: pronouns"}
 
@@ -45,13 +45,7 @@ In addition, they implement the following functions that enable `Tabulae` to bui
 - `inflectionclass`. Both stems and rules implement this function: rules and stems are only combined if they share the same inflection class.
 - `stemvalue` and `ending`. The `stemvalue` function is implemented by citable stems, and yields a string value for the stem; the `ending` function is implemented by citable rules, and yields a string value for the ending. Tokens are created by concatenating stem values and endings.
 - `lexeme`. The stem type implements this function which identifies the lexical item the stem belongs to
-- `latinForm`.  The `latinForm` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `latinForm` function is implemented for the rule type. (THere is also a method of this function that gets a Latin morphological form from an `Analysis`.)
-
-
-## ALSO...
-
-
-- `formurn` pretty sure we need this too
+- `latinForm` and `code`.  The `latinForm` function is implemented by the stem type for regular inflected forms; for irregular forms and uninflected forms (includling pronouns), the `latinForm` function is implemented for the rule type. (There is also a method of this function that gets a Latin morphological form from an `Analysis`.) `code` must be implemented to create the correct sequence of digits for each type of form.
 
 
 ::: {.callout-tip title="Example: combining pronoun stems and rules"}

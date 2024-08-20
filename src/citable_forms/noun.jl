@@ -5,8 +5,6 @@ struct LMFNoun <: LatinMorphologicalForm
     nnumber::LMPNumber
 end
 
-
-
 """Override Base.show for a noun form.
 $(SIGNATURES)
 """
@@ -39,12 +37,6 @@ function label(noun::LMFNoun)
     join([ label(noun.ngender), label(noun.ncase), label(noun.nnumber)], " ")
 end
 
-"""Compose a Cite2Urn for a `LMFNoun`.
-$(SIGNATURES)
-"""
-function urn(noun::LMFNoun)
-    Cite2Urn(code(noun))
-end
 
 
 """Construct a `LMFNoun` from string values.
@@ -115,21 +107,11 @@ function lmfNoun(f::FormUrn)
 end
 
 
-"""Compose a `FormUrn` for a `LMFNoun`.
-
-$(SIGNATURES)
-"""
-function formurn(noun::LMFNoun)
-    FormUrn(string("forms.", NOUN,"0",code(noun.nnumber),"000", code(noun.ngender), code(noun.ncase), "00"))
-end
-
-
 """Sequence of digits encoding form `noun`
 $(SIGNATURES)
 """
-function code(noun::LMFNoun)
-     # PosPNTMVGCDCat
-     string(BASE_MORPHOLOGY_URN, NOUN,"0",code(noun.nnumber),"000",code(noun.ngender),code(noun.ncase),"00")
+function code(noun::LMFNoun)::String
+     string(NOUN,"0",code(noun.nnumber),"000",code(noun.ngender),code(noun.ncase),"00")
 end
 
 

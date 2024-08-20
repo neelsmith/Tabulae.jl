@@ -91,6 +91,7 @@ website:
         - reference/analytical_types.qmd  
         - reference/ruletypes.qmd
         - reference/stemtypes.qmd
+        - reference/compounding.qmd
         - text: "---"
         - text: "Tabulae datasets:"
         - reference/file_layout.qmd

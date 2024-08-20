@@ -1,0 +1,12 @@
+# Compound verbs
+
+::: {.callout-caution title="TBA"}
+Content to be added
+:::
+
+
+- simplex verbs vs. compound verbs
+- format of data records for compound verbs
+
+
+Note on analysis by simplex lexeme?

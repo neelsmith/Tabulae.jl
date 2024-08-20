@@ -69,6 +69,10 @@ function tabulaeStringParser(tds::Tabulae.Dataset)
 end
 
 
+"""Find all analyses that can be composed from
+the stems and rules in a given dataset.
+$(SIGNATURES)
+"""
 function analyses(ds::Tabulae.Dataset)
     analysisvect = []
     rules = rulesarray(ds)
@@ -79,6 +83,8 @@ function analyses(ds::Tabulae.Dataset)
     end
     analysisvect
 end
+
+
 """Instantiate a `TabulaeStringParser` from a set of analyses read from a local file.
 $(SIGNATURES)
 """

@@ -28,13 +28,6 @@ function citabletrait(::Type{LMFInfinitive})
     CitableByCite2Urn()
 end
 
-"""Compose a Cite2Urn for a `LMFInfinitive`.
-$(SIGNATURES)
-"""
-function urn(inf::LMFInfinitive)
-    # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, INFINITIVE,"00",code(inf.tense),"0", code(inf.voice),"0000"))
-end
 
 """Compose a label for a `LMFInfinitive`.
 $(SIGNATURES)
@@ -61,15 +54,13 @@ function lmpVoice(inf::LMFInfinitive)
 end
 
 
-
 """Sequence of digits encoding form `verb`
 $(SIGNATURES)
 """
-function code(verb::LMFFiniteVerb)
-    urn(verb) |> objectcomponent
+function code(infinitive::LMFInfinitive)
+    string(INFINITIVE, "00" ,
+    code(infinitive.tense), "0", code(infinitive.voice), "0000")
 end
-
-
 
 
 """Create an `LMFInfinitive` from a string value.
@@ -106,16 +97,6 @@ $(SIGNATURES)
 """
 function lmfInfinitive(f::FormUrn)
     lmfInfinitive(f.objectid)
-end
-
-
-"""Compose a `FormUrn` for a `LMFInfinitive`.
-
-$(SIGNATURES)
-"""
-function formurn(infinitive::LMFInfinitive)
-    FormUrn(string("forms.", INFINITIVE, "00" ,
-    code(infinitive.tense), "0", code(infinitive.voice), "0000"))
 end
 
 

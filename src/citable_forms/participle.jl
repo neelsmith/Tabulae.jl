@@ -36,15 +36,6 @@ function citabletrait(::Type{LMFParticiple})
 end
 
 
-"""Compose a Cite2Urn for a `LMFParticiple`.
-
-$(SIGNATURES)
-"""
-function urn(p::LMFParticiple)
-    # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
-end
-
 
 """Compose a label for a `LMFParticiple`.
 
@@ -57,8 +48,8 @@ end
 """Sequence of digits encoding form `verb`
 $(SIGNATURES)
 """
-function code(verb::LMFParticiple)
-    urn(verb) |> objectcomponent
+function code(p::LMFParticiple)
+    string(PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00")
 end
 
 
@@ -141,15 +132,6 @@ $(SIGNATURES)
 """
 function lmfParticiple(f::FormUrn)
     lmfParticiple(f.objectid)
-end
-
-
-"""Compose a `FormUrn` for a `LMFParticiple`.
-
-$(SIGNATURES)
-"""
-function formurn(p::LMFParticiple)
-    FormUrn(string("forms.", PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
 end
 
 

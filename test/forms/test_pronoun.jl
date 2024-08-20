@@ -4,8 +4,8 @@
     @test pronoun == LMFPronoun(LMPGender(1), LMPCase(4), LMPNumber(1))
 
     @test label(pronoun) == "masculine accusative singular" 
-    @test urn(pronoun) == Cite2Urn("urn:cite2:tabulae:forms.v1:8010001400")
-    @test cex(pronoun) == "urn:cite2:tabulae:forms.v1:8010001400|masculine accusative singular"
+    @test urn(pronoun) == Cite2Urn("urn:cite2:tabulae:latinforms.v1:8010001400")
+    @test cex(pronoun) == "urn:cite2:tabulae:latinforms.v1:8010001400|masculine accusative singular"
     @test lmfPronoun(urn(pronoun)) == pronoun
 
     #=
@@ -27,5 +27,5 @@ end
     pronoun = LMFPronoun(lmpGender("masculine"), lmpCase("accusative"), lmpNumber("singular")) 
     @test citable(pronoun)
     @test label(pronoun) == "masculine accusative singular"
-    @test urn(pronoun) == Cite2Urn("urn:cite2:tabulae:forms.v1:8010001400")
+    @test urn(pronoun) == Cite2Urn("urn:cite2:tabulae:latinforms.v1:8010001400")
 end

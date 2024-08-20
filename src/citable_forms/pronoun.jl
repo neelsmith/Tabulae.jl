@@ -39,14 +39,6 @@ function label(pronoun::LMFPronoun)
     join([ label(pronoun.pngender), label(pronoun.pncase), label(pronoun.pnnumber)], " ")
 end
 
-"""Compose a Cite2Urn for a `LMFPronoun`.
-$(SIGNATURES)
-"""
-function urn(pronoun::LMFPronoun)
-    Cite2Urn(code(pronoun))
-end
-
-
 """Construct a `LMFPronoun` from string values.
 $(SIGNATURES)
 """
@@ -187,7 +179,7 @@ end
 
 
 
-
+#=
 """Compose a `FormUrn` for a `LMFFiniteVerb`.
 
 $(SIGNATURES)
@@ -195,3 +187,4 @@ $(SIGNATURES)
 function formurn(pron::LMFPronoun)
     FormUrn(string("forms.", code(pron)))
 end
+=#

@@ -49,14 +49,15 @@ function label(verb::LMFFiniteVerb)
         ], " ")
 end
 
-"""Compose a Cite2Urn for a `LMFFiniteVerb`.
+"""Sequence of digits encoding a finite verb form.
 $(SIGNATURES)
 """
-function urn(verb::LMFFiniteVerb)
+function code(verb::LMFFiniteVerb)
     # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000"))
+    @debug("Here are the codes:")
+    @debug("PNTMV:", code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice))
+    string(FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000")
 end
-
 
 """Construct a `LMFFiniteVerb` from string values.
 $(SIGNATURES)
@@ -80,7 +81,7 @@ $(SIGNATURES)
 function lmfFiniteVerb(code::AbstractString)
     morphchars = split(code,"")
     # PosPNTMVGCDCat
-    
+    @info("Get verb from code $(code)")
     tns = lmpTense(parse(Int64, morphchars[4]))
     md = lmpMood(parse(Int64, morphchars[5]))
     vc = lmpVoice(parse(Int64,morphchars[6]))
@@ -164,15 +165,6 @@ $(SIGNATURES)
 """
 function lmpNumber(verb::LMFFiniteVerb)
     verb.vnumber
-end
-
-
-"""Compose a `FormUrn` for a `LMFFiniteVerb`.
-
-$(SIGNATURES)
-"""
-function formurn(verbform::LMFFiniteVerb)
-    FormUrn(string("forms.", FINITEVERB, code(verbform.vperson), code(verbform.vnumber), code(verbform.vtense), code(verbform.vmood), code(verbform.vvoice), "0000"))
 end
 
 
