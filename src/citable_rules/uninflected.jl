@@ -1,4 +1,4 @@
-"Inflectional rule for a pronoun rule."
+"Inflectional rule for an uninflected form rule."
 struct TabulaeUninflectedRule <: TabulaeRule
     ruleid::RuleUrn
     uninflectedtype::LMPUninflectedType

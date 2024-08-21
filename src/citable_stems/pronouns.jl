@@ -115,7 +115,7 @@ function fromcex(traitvalue::TabulaePronounStemCex, cexsrc::AbstractString, T;
 
     @debug("$(length(parts)) parts: $(parts)")
     if length(parts) < 7
-        throw(DomainError("Too few parts in $(delimited)"))
+        throw(DomainError("Too few parts in $(parts)"))
     else
         
         stemid = StemUrn(parts[1])
