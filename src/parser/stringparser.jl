@@ -146,7 +146,7 @@ end
 enclitics = ["que", "ve", "ne", "cum", "met"]
 
 
-"""Parse a Latin token, checking for possibility of enclitics.
+"""Parse a Latin orthographic token, checking for possibility of enclitics.
 $(SIGNATURES)
 """
 function parsetoken(s::AbstractString, parser::TabulaeStringParser)

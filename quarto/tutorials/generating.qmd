@@ -14,21 +14,19 @@ repo = pwd() |> dirname |> dirname
 ```
 
 
-
 In Tabulae's model, a parser is just a collection of pre-computed analyses.
-
-
-The only "generating" we need to do is precomputing `Analysis` objects.
 
 ## rule + stem == Analysis
 
 
-Example:
+The tables of data that Tabulae uses to build a parser are grouped into stems and rules.  The combination of a stem and a rule yields an `Analysis` object. You can generate a single analysis with the `analysis` function.
 
 ```{julia}
 using CitableBase, Tabulae
+
 vstem = fromcex("latcommon.verbn12387|ls.n12387|deb|conj2", TabulaeVerbStem)
 vrule = fromcex("latcommon.ere_conj2fut3|conj2|ebit|third|singular|future|indicative|active", TabulaeFiniteVerbRule)
+
 verb = analysis(vstem, vrule)
 ```
 
