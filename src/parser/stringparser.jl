@@ -123,16 +123,21 @@ $(SIGNATURES)
 function analyses(stem::S, rules::Vector{Rule}; delimiter = "|")::Vector{Analysis} where S <: Union{TabulaeStem, TabulaeIrregularStem}
     generated = Analysis[]
 
+
+    initialCP = 64
     if stem isa TabulaeNounStem
         classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmpGender(r) == lmpGender(stem), rules)
-        for rule in classrules
+        for (idx, rule) in enumerate(classrules)
+            tokenid = "A" # Char(initialCP + idx) |> string
             @debug("Cross $stem with $(rule)")
-            push!(generated, analysis(stem,rule))
+            push!(generated, analysis(stem,rule; tokenid = tokenid))
         end
     else
         classrules = filter(r -> inflectionclass(r) == inflectionclass(stem), rules)
-        for rule in classrules
-            push!(generated, analysis(stem,rule))
+        for (idx, rule) in enumerate(classrules)
+            #tokenid = Char(initialCP + idx) |> string
+            tokenid = "A"
+            push!(generated, analysis(stem,rule; tokenid = tokenid))
         end
     end
     generated
@@ -141,16 +146,15 @@ end
 
 
 
-function encliticseqtotoken(a::Analysis, orthotoken::AbstractString)
+function analysisforencliticseq(a::Analysis, otoken::AbstractString, mtokenid::AbstractString)
     Analysis(
-        orthotoken,
+        otoken,
         lexemeurn(a),
         CitableParserBuilder.formurn(a),
         stemurn(a),
         CitableParserBuilder.ruleurn(a),
         mtoken(a),
-        a.mtokenid
-
+        mtokenid
     )
 end
 
@@ -184,10 +188,11 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
                 @debug("Tokens: $(tkn) + $(e)")
                 for prs in parsetoken(mtkn, parser)
                     #push!(results, prs)
-                    push!(results, encliticseqtotoken(prs, otkn))
+                    push!(results, analysisforencliticseq(prs, s, "A"))
                 end
+
                 for prs in parsetoken(e, parser)
-                    push!(results, encliticseqtotoken(prs, otkn))
+                    push!(results, analysisforencliticseq(prs, s, "B"))
                 end
                   
             end
