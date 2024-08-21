@@ -78,6 +78,7 @@ function fromcex(traitvalue::TabulaeUninflectedRuleCex, cexsrc::AbstractString, 
     delimiter = "|", configuration = nothing, strict = true)
     parts = split(cexsrc, delimiter)
     ruleid = RuleUrn(parts[1])
+    @debug("Get uninflected type for $(parts[2])")
     uninfltype = lmpUninflectedType(parts[2])
  
     TabulaeUninflectedRule(ruleid,uninfltype)

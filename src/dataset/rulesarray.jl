@@ -18,7 +18,8 @@ function rulesarray(dirlist; delimiter = "|")
         "infinitives" => TabulaeInfinitiveRule,
         "participles" => TabulaeParticipleRule,
         "irregulars" => TabulaeIrregularRule,
-        "pronouns" => TabulaePronounRule
+        "pronouns" => TabulaePronounRule,
+        "uninflected" => TabulaeUninflectedRule
         ]
     )
     rulesdirs = [
@@ -27,7 +28,8 @@ function rulesarray(dirlist; delimiter = "|")
         "infinitives",
         "participles",
         "irregulars", 
-        "pronouns"
+        "pronouns",
+        "uninflected"
         
     ]
     rulesarr = Rule[]

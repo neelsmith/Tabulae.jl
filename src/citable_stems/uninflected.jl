@@ -142,3 +142,7 @@ end
 function id(st::TabulaeUninflectedStem)
     st.stemid
 end
+
+function inflectionclass(st::TabulaeUninflectedStem)
+    string(st.inflectionclass)
+end

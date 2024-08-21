@@ -19,7 +19,7 @@ function stemsarray(dirlist; delimiter = "|")
         #"adjectives" => AdjectiveIO("adjective"),
         "nouns" => TabulaeNounStem,
         "pronouns" => TabulaePronounStem,
-        #"uninflected" => UninflectedIO("uninflected"),
+        "uninflected" => TabulaeUninflectedStem,
         "verbs-simplex" => TabulaeVerbStem,
         "verbs-compound" => TabulaeCompoundVerbStem,
         ]
@@ -28,7 +28,7 @@ function stemsarray(dirlist; delimiter = "|")
         #"adjectives",
         "nouns",
         "pronouns",
-        #"uninflected",
+        "uninflected",
         "verbs-simplex",
         #"verbs-compound",
         
