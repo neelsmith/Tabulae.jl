@@ -82,7 +82,7 @@ By default, the `urn` function will return a `StemUrn`; see documentation about 
 ### Regular verb stems: compound verbs
 ### Regular noun stems
 ### Regular adjective stems
-### Indeclinable stems
+### Uninflected stems
 
 
 ## Irregular stems
