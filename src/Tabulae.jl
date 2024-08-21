@@ -64,6 +64,7 @@ export analyses
 export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFParticiple, lmfParticiple
+export LMFUninflected
 
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export LMFPronoun, lmfPronoun, pronounformcodes, pronounforms
@@ -113,6 +114,7 @@ include("citable_forms/pronoun.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
 include("citable_forms/participle.jl")
+include("citable_forms/uninflected.jl")
 
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
