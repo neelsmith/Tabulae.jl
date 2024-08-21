@@ -72,7 +72,20 @@ function analyses(ds::Tabulae.Dataset)
     analysisvect
 end
 
-
+"""Find all analyses for a given lexeme in a given dataset.
+$(SIGNATURES)
+"""
+function analyses(lex::LexemeUrn, ds::Tabulae.Dataset)
+    analysisvect = []
+    stems = filter(st -> lexeme(st) == lex, stemsarray(ds)) 
+    rules = rulesarray(ds)
+    for stem in stems
+        for a in analyses(stem, rules)
+            push!(analysisvect, a)
+        end
+    end
+    analysisvect
+end
 
 
 """True if form IDs are built from the `Rule` of a
@@ -251,5 +264,5 @@ end
 $(SIGNATURES)
 """
 function tabulaeStringParser(tds::Tabulae.Dataset; ortho = latin25(), delimiter = "|")
-    TabulaeStringParser(analyses(tds), ortho, delimiter)
+    TabulaeStringParser(cex.(analyses(tds)), ortho, delimiter)
 end

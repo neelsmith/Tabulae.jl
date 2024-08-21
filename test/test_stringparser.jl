@@ -13,17 +13,20 @@
     @test length(donum) == 3 # neut. nom, acc, voc sing
 
 
-    # THIS IS NOT A THING:
-    alist = map(ln -> fromcex(ln, Analysis), donum)
-    @test alist isa Vector{Analysis}
+    
+    #alist = map(ln -> fromcex(ln, Analysis), donum)
+    #@test alist isa Vector{Analysis}
 
     u = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/dev/test/samplecex/analyses.cex"
     parser1 = tabulaeStringParser(u, UrlReader)
     @test parser1 isa TabulaeStringParser
+    @test datasource(parser1) isa Vector{String}
 
     f = joinpath(repo, "test", "samplecex", "analyses.cex")
     parser2 = tabulaeStringParser(f, FileReader)
     @test parser2 isa TabulaeStringParser
+    @test datasource(parser2) isa Vector{String}
+
     @test length(parser1.entries) == length(parser2.entries)
 end
 
@@ -33,6 +36,8 @@ end
     lat25 = joinpath(repo, "datasets", "core-infl-lat25") 
     tds = dataset([common, lat25])
     parser = tabulaeStringParser(tds) 
-
-    #   @test parsetoken("amo",p) # |> CitableParserBuilder.tokens    
+    @test parser isa TabulaeStringParser
+    @test datasource(parser) isa Vector{String}
+    
+    @test parsetoken("amo",p) # |> CitableParserBuilder.tokens    
 end

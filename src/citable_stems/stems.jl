@@ -1,13 +1,6 @@
 abstract type TabulaeStem <: Stem end
 abstract type TabulaeIrregularStem <: TabulaeStem end
 
-"""Find lexeme identifier recorded in `stem`.
-$(SIGNATURES)
-"""
-function lexemeurn(stem::T) where {T <: TabulaeStem}
-    @warn "Function lexemeurn not implemented for stems of type $(typeof(stem))."
-    nothing
-end
 
 """Identify inflection type for `stem`.
 $(SIGNATURES)
