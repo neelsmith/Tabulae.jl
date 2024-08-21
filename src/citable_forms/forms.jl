@@ -45,6 +45,7 @@ function label(mf::T) where {T <: LatinMorphologicalForm}
     nothing
 end
 
+
 """Convert a `LatinMorphologicalForm` form to a delimited-text string. 
 
 $(SIGNATURES)
@@ -52,6 +53,8 @@ $(SIGNATURES)
 function cex(mf::T; delimiter = "|") where {T <: LatinMorphologicalForm}
     join([urn(mf), label(mf)], delimiter)
 end
+
+
 
 
 """Generate a complete list of possible morphological forms.
