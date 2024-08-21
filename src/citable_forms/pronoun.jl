@@ -109,8 +109,6 @@ end
 $(SIGNATURES)
 """
 function code(pronoun::LMFPronoun)
-     # PosPNTMVGCDCat
-     #string(BASE_MORPHOLOGY_URN, PRONOUN,"0",code(pronoun.pnnumber),"000",code(pronoun.pngender),code(pronoun.pncase),"00")
      string(PRONOUN,"0",code(pronoun.pnnumber),"000",code(pronoun.pngender),code(pronoun.pncase),"00")
 end
 
