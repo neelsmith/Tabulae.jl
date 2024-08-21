@@ -39,5 +39,5 @@ end
     @test parser isa TabulaeStringParser
     @test datasource(parser) isa Vector{String}
     
-    @test parsetoken("amo",p) # |> CitableParserBuilder.tokens    
+    @test parsetoken("amo",parser) # |> CitableParserBuilder.tokens    
 end

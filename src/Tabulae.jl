@@ -64,20 +64,21 @@ export analyses
 export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFParticiple, lmfParticiple
-export LMFUninflected
+export LMFUninflected, lmfUninflected
 
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export LMFPronoun, lmfPronoun, pronounformcodes, pronounforms
 export latinForm
 
 export TabulaeRule, inflectionclass, ending, id
-export delimitedrule #, fromdelimited, 
+export delimitedrule
 export formrule, formurn
 export TabulaeNounRule
 export TabulaePronounRule
 export TabulaeFiniteVerbRule
 export TabulaeInfinitiveRule
 export TabulaeParticipleRule
+export TabulaeUninflectedRule
 export TabulaeIrregularRule
 
 export TabulaeStem, TabulaeIrregularStem, lexeme, stemvalue

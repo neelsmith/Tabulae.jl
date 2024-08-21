@@ -5,8 +5,6 @@ struct LMFPronoun <: LatinMorphologicalForm
     pnnumber::LMPNumber
 end
 
-
-
 """Override Base.show for a pronoun form.
 $(SIGNATURES)
 """
@@ -107,15 +105,6 @@ function lmfPronoun(f::FormUrn)
 end
 
 
-"""Compose a `FormUrn` for a `LMFPronoun`.
-
-$(SIGNATURES)
-"""
-function latinForm(pronoun::LMFPronoun)
-    FormUrn(string("forms.", PRONOUN,"0",code(pronoun.pnnumber),"000", code(pronoun.pngender), code(pronoun.pncase), "00"))
-end
-
-
 """Sequence of digits encoding form `noun`
 $(SIGNATURES)
 """
@@ -178,13 +167,3 @@ function pronounanalyses(td::Tabulae.Dataset)::Vector{Analysis}
 end
 
 
-
-#=
-"""Compose a `FormUrn` for a `LMFFiniteVerb`.
-
-$(SIGNATURES)
-"""
-function formurn(pron::LMFPronoun)
-    FormUrn(string("forms.", code(pron)))
-end
-=#

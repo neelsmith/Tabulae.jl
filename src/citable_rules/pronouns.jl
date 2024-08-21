@@ -11,9 +11,9 @@ function show(io::IO, pronoun::TabulaePronounRule)
     print(io, label(pronoun))
 end
 
-
-
-
+"""Override Base.== for pronoun rule type.
+$(SIGNATURES)
+"""
 function ==(pn1::TabulaePronounRule, pn2::TabulaePronounRule)
     pn1.ruleid == pn2.ruleid &&
     pn1.pronountype == pn2.pronountype
