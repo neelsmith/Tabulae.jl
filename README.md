@@ -14,7 +14,7 @@ Beginning with version 0.10.0, the package is being completely rewritten based o
 
 | Analytical type	| morphology | analyze | generate |
 | --- | --- | --- | --- |
-| uninflected token | |||
+| uninflected token | ✅ | ✅ | ✅ |
 | noun | ✅ |  ✅ |  ✅ |
 | adjective | |||
 | finite verb | ✅ |✅ | ✅ |
