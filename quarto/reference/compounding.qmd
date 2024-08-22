@@ -7,7 +7,7 @@ editor:
 
 # Compound verbs
 
-
+`TabulaeCompoundVerbStem` type
 
 - simplex verbs vs. compound verbs
 - format of data records for compound verbs

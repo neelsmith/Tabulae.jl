@@ -3,8 +3,8 @@
 
 $(SIGNATURES)
 """
-function stemsarray(kd::Tabulae.Dataset)
-    stemsarray(kd.dirs)
+function stemsarray(tds::Tabulae.Dataset)
+    stemsarray(tds.dirs)
 end
 
 
@@ -50,7 +50,6 @@ function stemsarray(dirlist; delimiter = "|")
                 # Trim lines first:
                 lines = filter(s -> ! isempty(s), raw)
                 for ln in lines[2:end]
-                    #stem = readstemrow(delimitedreader, lines[i]; delimiter = delimiter)
                     stem = fromcex(ln, delimitedtype)
                     push!(stemsarr,stem)
                 end
@@ -103,41 +102,49 @@ function stemsarray(dirlist; delimiter = "|")
     )
 
   
-    @info("Getting irregular stems for $dirlist")
+    @debug("Getting irregular stems for $dirlist")
     irregulars = Union{TabulaeStem, TabulaeIrregularStem}[]
     for datasrc in dirlist
         for dirname in irregstemdirs 
-            @info("Collecting irregular stems from dir $(dirname) in src $(datasrc).")
+        
             dir = joinpath(datasrc, "irregular-stems", dirname)
+            @debug("Collecting irregular stems from $(dir)")
             cexfiles = glob("*.cex", dir)
             if ! isempty(cexfiles)
-                @info("Found these files for irregulars: $(cexfiles)")
+                @debug("Found these files for irregulars: $(cexfiles)")
             end
             delimitedtype = irregiodict[dirname]
             infltype = irreginfltypes[dirname]
             for f in cexfiles
                 raw = readlines(f)
-                lines = filter(s -> ! isempty(s), raw)
-                for ln in lines[2:end]
-                    #stem = readstemrow(delimitedreader, lines[i]; delimiter = delimiter)
+                lines = filter(s -> ! isempty(s), raw[2:end])
+                for ln in lines
                     data = join([ln,infltype], delimiter)
                     stem = fromcex(data, delimitedtype)
-                    @debug("row $(ln) yielded $(stem)")
+                    @debug("row yielded a $(typeof(stem))")
                     push!(irregulars,stem)
                     
                 end
             end
         end
     end
-
+    @info("Collected $(length(irregulars)) irregular stems")
+    irreginfins = filter(st -> st isa TabulaeIrregularInfinitive, irregulars)
+    @info("Collected $(length(irreginfins)) irregular infinitive stems")
 
     # Add compounds of irregular verbs:
     for datasrc in dirlist
         dirname = "verbs-compound"
         dir = joinpath(datasrc, "stems-tables", dirname)
+        @debug("Looking for irreg verb data in $(dir)")
+        
         delimitedtype = iodict[dirname]
 
         cexfiles = glob("*.cex", dir)
+
+
+        @debug("Files to examine for compounding: $(cexfiles)")
+
         for f in cexfiles
             raw = readlines(f)
             # Trim lines first:
@@ -145,8 +152,10 @@ function stemsarray(dirlist; delimiter = "|")
             for ln in lines[2:end]
                 stem = fromcex(ln, delimitedtype)
                 @debug("Handle stem $(stem)")
-                for newstem in irregularstems(stem, irregulars)
-                    @debug("Add stem $(newstem)")
+                #for newstem in irregularstems(stem, irregulars)
+                for newstem in irregularstems(stem, irreginfins)
+                
+                    @info("Add stem $(newstem)")
                     push!(stemsarr,newstem)
                 end
             end
