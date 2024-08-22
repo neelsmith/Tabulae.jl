@@ -43,7 +43,7 @@ end
 $(SIGNATURES)
 """
 function label(vs::TabulaeCompoundVerbStem)
-    isempty(vs.notes) ? string("Compound verb (", vs.lexid,") formed by addding ", vs.prefix, " to simplex ", vs.simplex) : string("Compound verb (", vs.lexid,") formed by addding ", vs.prefix, " to simplex ", vs.simplex, " (", vs.notes, ")")
+    isempty(vs.notes) ? string("Compound verb (", vs.lexid,") formed by addding ", vs.prefix, " to simplex ", vs.simplex) : string("Compound verb $(vs.notes) (", vs.lexid,") formed by addding ", vs.prefix, " to simplex ", vs.simplex)
 end
 
 
@@ -93,12 +93,15 @@ function fromcex(traitvalue::TabulaeCompoundVerbStemCex, cexsrc::AbstractString,
     if length(cols) < 5
         throw(ArgumentError("Cannot form compound verb stem: too few columns in $(cols)"))
     end
+
+    notes = cols[5]
+    @debug("Notes: $(notes)")
     TabulaeCompoundVerbStem(
         StemUrn(cols[1]),
         LexemeUrn(cols[2]),
         cols[3],
         LexemeUrn(cols[4]),
-        cols[5]
+        notes
     )
 end
 
@@ -175,18 +178,24 @@ to each `Stem` in `stemlist`.
 $(SIGNATURES)
 """
 function irregularstems(compound::TabulaeCompoundVerbStem, stemlist, ortho = latin25())
-    
+    @debug("For compound $(compound), work with $(length(stemlist)) stems")
     results = Stem[]
     simplexstems = filter(s -> lexeme(s) == simplex(compound),  stemlist)
     @debug("Compounding/stem count", compound, length(simplexstems))
     irrverbs = filter(s -> s isa TabulaeIrregularVerb, simplexstems)
     finiteresults = irregularverbstems(compound, irrverbs, ortho)
 
-   # irrinfins = filter(s -> s isa IrregularInfinitiveStem, simplexstems)
-    infinitiveresults = []# irregularinfinitivestems(compound, irrinfins, ortho)
+    irrinfins = filter(s -> s isa TabulaeIrregularInfinitive, simplexstems)
+    infinitiveresults = irregularinfinitivestems(compound, irrinfins, ortho)
+    @debug("forming irreg compounds: $(length(irrinfins)) irregular infinitives produced $(length(infinitiveresults)) results")
+    @debug("Cross compound", compound)
+    @debug("with irregs ", lexeme.(irrinfins) )
+
     # Add:
     # Participle
-    # Verbal adjective
+    # Gerundive
+    # Gerund
+    # supine
     results = vcat(finiteresults, infinitiveresults)
 end
 
@@ -216,11 +225,11 @@ end
 
 function irregularinfinitivestems(compound::TabulaeCompoundVerbStem, stemlist, ortho = literaryGreek())
     @debug("Now make irregular infinitive verb forms")
-    #=
-    compounds = TabulaeIrregularInfinitiveStem[]
+    
+    compounds = TabulaeIrregularInfinitive[]
     for s in stemlist
-        catted = string(prefix(compound), "#", stemstring(s))
-        newstem = IrregularInfinitiveStem(
+        catted = string(prefix(compound), stemvalue(s))
+        newstem = TabulaeIrregularInfinitive(
             stemid(compound),
             lexeme(compound),
             catted,
@@ -231,7 +240,6 @@ function irregularinfinitivestems(compound::TabulaeCompoundVerbStem, stemlist, o
         push!(compounds, newstem)
     end
     compounds
-    =#
-    []
+
 end
 

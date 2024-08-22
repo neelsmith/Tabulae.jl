@@ -27,7 +27,7 @@ $(SIGNATURES)
 function ==(s1::TabulaeIrregularVerb, s2::TabulaeIrregularVerb)
     id(s1) == id(s2) &&
     lexeme(s1) == lexeme(s2) &&
-    tokenvalue(s1) == tokenvalue(s2)  &&
+    stemvalue(s1) == stemvalue(s2)  &&
 
     lmpPerson(s1) == lmpPerson(s2)  &&
     lmpNumber(s1) == lmpNumber(s2)  &&
@@ -86,14 +86,14 @@ Required for `CitableTrait`.
 function cex(verb::TabulaeIrregularVerb; delimiter = "|", registry = nothing)
     if isnothing(registry)
         join([
-            id(verb), lexeme(verb), tokenvalue(verb),
+            id(verb), lexeme(verb), stemvalue(verb),
             
             label(verb.vperson), label(verb.vnumber), label(verb.vtense), label(verb.vmood), label(verb.vvoice),
             inflectionclass(verb)
         ], delimiter)
     else
         c2urn = expand(verb.stemid, registry)
-        join([c2urn,  lexeme(verb), tokenvalue(verb),
+        join([c2urn,  lexeme(verb), stemvalue(verb),
             
         label(verb.vperson), label(verb.vnumber), label(verb.vtense), label(verb.vmood), label(verb.vvoice),
         inflectionclass(verb) ], delimiter)
@@ -131,9 +131,6 @@ end
 =#
 
 
-function tokenvalue(irrv::TabulaeIrregularVerb)
-    irrv.form
-end
 
 function latinForm(irrv::TabulaeIrregularVerb)
     LMFFiniteVerb(
@@ -206,7 +203,6 @@ end
 
 
 
-
 """Compose a digital code string for the form identified in `verb`.
 $(SIGNATURES)
 """
@@ -232,10 +228,3 @@ $(SIGNATURES)
 function id(vs::TabulaeIrregularVerb)
     vs.stemid
 end
-
-#=
-function greekForm(verb::TabulaeIrregularVerb) 
-    formurn(verb) |> greekForm
-end
-
-=#

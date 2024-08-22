@@ -1,12 +1,18 @@
+---
+editor:
+    render-on-save: true
+---
+
+
+
 # Compound verbs
 
-::: {.callout-caution title="TBA"}
-Content to be added
-:::
-
+`TabulaeCompoundVerbStem` type
 
 - simplex verbs vs. compound verbs
 - format of data records for compound verbs
 
 
 Note on analysis by simplex lexeme?
+
+Regular vs irregular verbs
