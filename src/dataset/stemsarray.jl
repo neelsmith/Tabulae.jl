@@ -128,9 +128,9 @@ function stemsarray(dirlist; delimiter = "|")
             end
         end
     end
-    @info("Collected $(length(irregulars)) irregular stems")
+    @debug("Collected $(length(irregulars)) irregular stems")
     irreginfins = filter(st -> st isa TabulaeIrregularInfinitive, irregulars)
-    @info("Collected $(length(irreginfins)) irregular infinitive stems")
+    @debug("Collected $(length(irreginfins)) irregular infinitive stems")
 
     # Add compounds of irregular verbs:
     for datasrc in dirlist
@@ -155,7 +155,7 @@ function stemsarray(dirlist; delimiter = "|")
                 #for newstem in irregularstems(stem, irregulars)
                 for newstem in irregularstems(stem, irreginfins)
                 
-                    @info("Add stem $(newstem)")
+                    @debug("Add stem $(newstem)")
                     push!(stemsarr,newstem)
                 end
             end

@@ -95,7 +95,7 @@ function fromcex(traitvalue::TabulaeCompoundVerbStemCex, cexsrc::AbstractString,
     end
 
     notes = cols[5]
-    @info("Notes: $(notes)")
+    @debug("Notes: $(notes)")
     TabulaeCompoundVerbStem(
         StemUrn(cols[1]),
         LexemeUrn(cols[2]),
@@ -178,7 +178,7 @@ to each `Stem` in `stemlist`.
 $(SIGNATURES)
 """
 function irregularstems(compound::TabulaeCompoundVerbStem, stemlist, ortho = latin25())
-    @info("For compound $(compound), work with $(length(stemlist)) stems")
+    @debug("For compound $(compound), work with $(length(stemlist)) stems")
     results = Stem[]
     simplexstems = filter(s -> lexeme(s) == simplex(compound),  stemlist)
     @debug("Compounding/stem count", compound, length(simplexstems))
@@ -187,9 +187,9 @@ function irregularstems(compound::TabulaeCompoundVerbStem, stemlist, ortho = lat
 
     irrinfins = filter(s -> s isa TabulaeIrregularInfinitive, simplexstems)
     infinitiveresults = irregularinfinitivestems(compound, irrinfins, ortho)
-    @info("forming irreg compounds: $(length(irrinfins)) irregular infinitives produced $(length(infinitiveresults)) results")
-    @info("Cross compound", compound)
-    @info("with irregs ", lexeme.(irrinfins) )
+    @debug("forming irreg compounds: $(length(irrinfins)) irregular infinitives produced $(length(infinitiveresults)) results")
+    @debug("Cross compound", compound)
+    @debug("with irregs ", lexeme.(irrinfins) )
 
     # Add:
     # Participle
@@ -224,7 +224,7 @@ end
 
 
 function irregularinfinitivestems(compound::TabulaeCompoundVerbStem, stemlist, ortho = literaryGreek())
-    @info("Now make irregular infinitive verb forms")
+    @debug("Now make irregular infinitive verb forms")
     
     compounds = TabulaeIrregularInfinitive[]
     for s in stemlist
