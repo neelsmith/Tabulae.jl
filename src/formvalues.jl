@@ -12,7 +12,8 @@ const ADJECTIVE = 6
 const ADVERB = 7
 const PRONOUN = 8
 const GERUND = 9
-const GERUNDIVE = 10
+const GERUNDIVE = 'a'
+const SUPINE = 'b'
 
 
 """Dictionary of labels for analytical types ("parts of speech").
@@ -30,7 +31,8 @@ const poslabels = Dict(
     ADVERB => "adverb",
     PRONOUN => "pronoun",
     GERUND => "gerund",
-    GERUNDIVE => "gerundive"
+    GERUNDIVE => "gerundive",
+    SUPINE => "supine"
 )
 
 

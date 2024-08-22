@@ -83,7 +83,6 @@ function stemsarray(dirlist; delimiter = "|")
 
     irregiodict = Dict(
         [
-        #"uninflected" => UninflectedIO("uninflected"),
         #"nouns" => IrregularNounIO("noun"),
         "verbs" => TabulaeIrregularVerb,
         #"infinitives" => IrregularInfinitiveIO("infinitive"),

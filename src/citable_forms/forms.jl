@@ -12,7 +12,7 @@ encoded in first digit of `codestring`.
 $(SIGNATURES)
 """
 function poscode(codestring::AbstractString)
-    parse(Int32, codestring[1])
+    parse(Int32, codestring[1], base = 16)
 end
 
 
@@ -68,6 +68,7 @@ function analysesXX(td::Tabulae.Dataset)::Vector{Analysis}
 end
 
 
+#function hex(n, pad) = string(n, base = 16, pad = pad),
 
 """Create a `LatinMorphologicalForm` from a form code.
 $(SIGNATURES)
@@ -87,6 +88,8 @@ function latinForm(codestr::AbstractString)
         lmfPronoun(codestr)
     elseif poscode(codestr) == UNINFLECTED
         lmfUninflected(codestr)
+    elseif poscode(codestr) == 10
+        lmfGerundive(codestr)
     end
 end
 

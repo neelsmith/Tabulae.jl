@@ -63,6 +63,7 @@ export LatinMorphologicalForm, latinForm, code
 export analyses
 export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
+export LMFGerundive, lmfGerundive
 export LMFParticiple, lmfParticiple
 export LMFUninflected, lmfUninflected
 
@@ -76,6 +77,8 @@ export formrule, formurn
 export TabulaeNounRule
 export TabulaePronounRule
 export TabulaeFiniteVerbRule
+export TabulaeGerundiveRule
+export TabulaeGerundRule
 export TabulaeInfinitiveRule
 export TabulaeParticipleRule
 export TabulaeUninflectedRule
@@ -114,6 +117,8 @@ include("citable_forms/noun.jl")
 include("citable_forms/pronoun.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
+include("citable_forms/gerundive.jl")
+include("citable_forms/gerund.jl")
 include("citable_forms/participle.jl")
 include("citable_forms/uninflected.jl")
 
@@ -132,6 +137,8 @@ include("citable_rules/nouns.jl")
 include("citable_rules/pronouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
+include("citable_rules/gerundives.jl")
+include("citable_rules/gerunds.jl")
 include("citable_rules/participles.jl")
 include("citable_rules/irregulars.jl")
 include("citable_rules/uninflected.jl")
