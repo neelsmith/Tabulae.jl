@@ -5,7 +5,7 @@ theme: spacelab
 execute:
   freeze: auto
 date: last-modified  
-margin-header: "Package version: `0.13.0`"
+margin-header: "Package version: `0.14.0`"
 
 format:
   html: 
@@ -110,6 +110,7 @@ website:
         - text: "System architecture:"
         - reference/architecture/rules-stems-pipeline.qmd
         - reference/architecture/building-types.qmd
+        - reference/architecture/irregulars.qmd
 
 
 

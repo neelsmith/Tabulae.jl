@@ -1,0 +1,30 @@
+---
+editor:
+    render-on-save: true
+---
+
+# Overview of the infrastructure for an irregular type
+
+
+*Regular* tokens are generated/analyzed from a combination of regular stem + regular rule.
+
+Example: "For verb stems in `conj1` class, add ending *are* to the stem to create the present active infinitive." -> stem *am* + ending *are* yields present active infinitive *amare*.
+
+*Irregular* tokens cannot be generated from the set of regular rules. Rules for creating irregular tokens will be subtypes of the abstract `TabulaeIrregularRule` type; stems will be subtypes of the abstract `TabulaeIrregularStem` type.
+
+
+Stems and rules are both citable and cex serializable (that is, they implement those traits from the `CitableBase` package).
+
+
+
+
+## Stems, rules and building a parse
+
+Irregular stems will have the complete token, as well as full information for the morphological form of the token. 
+
+
+
+- `inflectionclass`. Both stems and rules.
+- `stemvalue` on stem; `ending` on rule will returen string `""`. 
+- `lexeme` on stem.
+- `latinForm` and `code` on stem.
