@@ -1,8 +1,12 @@
+---
+editor:
+    render-on-save: true
+---
+
+
+
 # Compound verbs
 
-::: {.callout-caution title="TBA"}
-Content to be added
-:::
 
 
 - simplex verbs vs. compound verbs
@@ -10,3 +14,5 @@ Content to be added
 
 
 Note on analysis by simplex lexeme?
+
+Regular vs irregular verbs

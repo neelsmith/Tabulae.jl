@@ -38,5 +38,3 @@ Maybe rules are entirely handled by dispatch from abstract supertype?
 - `src/dataset/rulesarray.jl` : no changes if all dispatched to abstract supertype
 - `src/data/stemsarray.jl`: add entries to two Dicts:  `irregiodict` and `irreginfltypes` and vector `irregstemdirs`
 
-
-## Compound verbs: how they work

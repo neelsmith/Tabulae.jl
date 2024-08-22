@@ -13,10 +13,10 @@ function md_declension(lex::LexemeUrn, td::Tabulae.Dataset)
         gndr = lmpGender(stemmatches[1])
         genderforms = filter(f -> lmpGender(f) ==  gndr, nounforms())
         sing = filter(f -> lmpNumber(f) ==  LMPNumber(1), genderforms)
-        sing_analyses = map(f -> generate(lex,f,  td), sing)
+        sing_analyses = map(f -> analyses(lex,f,  td), sing)
 
         pl = filter(f -> lmpNumber(f) ==  LMPNumber(2), genderforms)
-        pl_analyses  = map(f -> generate(lex, f,  td), pl)
+        pl_analyses  = map(f -> analyses(lex, f,  td), pl)
 
         for (i,f) in enumerate(sing)
             caselabel = lmpCase(f) |> label
@@ -57,7 +57,7 @@ function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; headi
         for (j,lex) in enumerate(lexemelist)
             gndr = genderlist[j]
             frm = LMFNoun(gndr, lmpCase(i), lmpNumber(1))
-            token = join(CitableParserBuilder.tokens(generate(lex, frm, td)), ", ")
+            token = join(CitableParserBuilder.tokens(analyses(lex, frm, td)), ", ")
             push!(row, token)
         end
 
@@ -72,7 +72,7 @@ function md_declension(lexemelist::Vector{LexemeUrn}, td::Tabulae.Dataset; headi
         for (j,lex) in enumerate(lexemelist)
             gndr = genderlist[j]
             frm = LMFNoun(gndr, lmpCase(i), lmpNumber(2))
-            token = join(CitableParserBuilder.tokens(generate(lex, frm, td)), ", ")
+            token = join(CitableParserBuilder.tokens(analyses(lex, frm, td)), ", ")
             push!(row, token)
         end
 
