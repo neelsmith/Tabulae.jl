@@ -34,7 +34,7 @@ cex(nounstem)
 These can always be round tripped:
 
 ```{julia}
-fromcex(delimited, TabulaeNounStem) |> cex == stemdelimited
+fromcex(stemdelimited, TabulaeNounStem) |> cex == stemdelimited
 ```
 
 ## Example of a noun rule

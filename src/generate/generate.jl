@@ -1,13 +1,9 @@
-"""Generate vector of possible strings for a form of `lex` identified by `form`.
-
-$(SIGNATURES)
-"""
-function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vector{Analysis}
+function generatenoun(lex::LexemeUrn, nounform::LMFNoun, td::Tabulae.Dataset)::Vector{Analysis}
+    @debug("generate a noun form from a lexeme urn + form + dataset")
     generated = Analysis[]   
     targetgender = lmpGender(nounform) 
     stems = stemsarray(td)
-    stemlist = filter(s -> lexeme(s) == lex && s isa TabulaeNounStem, stems)
-
+    stemlist = filter(s -> lexeme(s) == lex, stems)
     if isempty(stemlist)
         @warn("No stems matched lexeme $(lex)")   
 
@@ -16,14 +12,16 @@ function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vec
         for stem in stemlist
             stemgender = lmpGender(stem)
             if stemgender == targetgender
-                classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmForm(r) == nounform, rules)
+                classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == nounform, rules)
                 for rule in classrules
-                    if lmForm(rule) isa LMFNoun
-                        rulegender = lmpGender(lmForm(rule))
+                    if latinForm(rule) isa LMFNoun
+                        
+                        rulegender = lmpGender(latinForm(rule))
+                        @debug("Check if gender of stem's $(targetgender) to match rule's $(rulegender)")
                         if targetgender == rulegender
-                            token = string(stemvalue(stem), ending(rule))
-                            @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(lmForm(rule))")
-                            push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
+                           # token = string(stemvalue(stem), ending(rule))
+                            tknid = "A"
+                            push!(generated, analysis(stem, rule; tokenid = tknid))
                         end
                     end
                 end
@@ -35,44 +33,89 @@ function generate(lex::LexemeUrn, nounform::LMFNoun,   td::Tabulae.Dataset)::Vec
     generated
 end
 
-"""Generate vector of possible strings for a form of `lex` identified by `form`.
+"""Generate vector of possible strings for a form of `lex` identified by `form` for types where stem encodes the form.
 
 $(SIGNATURES)
 """
-function generate(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
+function generatefromstemform(lex::LexemeUrn, frm::T, td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
+end
 
-    generated = Analysis[]
-    stems = stemsarray(td)
-    stemlist = filter(s -> lexeme(s) == lex, stems)
-    if isempty(stemlist)
-        @warn("No stems matched lexeme $(lex)")
-        
+"""Generate vector of possible strings for a form of `lex` identified by `form` for types where stem encodes the form.
+
+$(SIGNATURES)
+"""
+function generatefromruleform(lex::LexemeUrn, frm::T, td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
+end
+
+"""Find all analyses that can be composed from a given dataset for a given lexeme in a given form.
+
+$(SIGNATURES)
+"""
+function analyses(lex::LexemeUrn, frm::T,   td::Tabulae.Dataset)::Vector{Analysis} where {T <: LatinMorphologicalForm}
+    @debug("Genrerating analyzes from lexeme urn + form in a dataset")
+    if frm isa LMFNoun
+        generatenoun(lex, frm, td)
+
     else
+        @debug("generate $(lex) in form $(frm) from a dataset")
         
+        stems = stemsarray(td)
         rules = rulesarray(td)
-        for stem in stemlist
-            classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmForm(r) == frm, rules)
-            for rule in classrules
-                token = string(stemvalue(stem), ending(rule))
-                @debug("Matching, created $(token) for infl type $(inflectionclass(rule)) and form $(lmForm(rule))")
-                push!(generated, Analysis(token, lexeme(stem),Tabulae.formurn(lmForm(rule)), urn(stem),urn(rule), token))
+
+        generated = Analysis[]
+
+        stemlist = filter(s -> lexeme(s) == lex, stems)
+        if isempty(stemlist)
+            @warn("No stems matched lexeme $(lex)")
+
+        else
+            for stem in stemlist
+                if buildfromstem(stem)
+                    if latinForm(stem) == frm
+                        @debug("BUILD FORM FROM STEM: $(frm)")
+                        classrules = filter(rules) do r
+                            inflectionclass(r) == inflectionclass(stem) #&& latinForm(stem) == frm
+                        end
+                        @debug(classrules)
+                        for rule in classrules
+                            token = string(stemvalue(stem), ending(rule))
+                            tknid = "A"
+                            push!(generated, analysis(stem, rule; tokenid = tknid))
+                        end
+                    end
+
+                else   
+                    classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && latinForm(r) == frm, rules)
+                    @debug("Build from rule: $(classrules)")
+                    for rule in classrules
+                        token = string(stemvalue(stem), ending(rule))
+                        tknid = "A"
+                        push!(generated, analysis(stem, rule; tokenid = tknid))
+                    end  
+                end 
             end
-            
         end
+        
+        generated
     end
-    generated
 end 
 
+"""Find all analyses that can be composed from a given dataset for a given lexeme URN + a given form URN.
 
-function generate(lex::LexemeUrn, frmUrn::FormUrn,  td::Tabulae.Dataset)::Vector{Analysis} 
-    generate(lex, latinForm(frmUrn), td)
+$(SIGNATURES)
+"""
+function analyses(lex::LexemeUrn, frm::FormUrn, td::Tabulae.Dataset)::Vector{Analysis} 
+    @debug("Genrerating analyzes from lexeme urn + form urn in a dataset")
+    analyses(lex, latinForm(frm), td)
 end
 
 
-"""Generate vector of possible strings the combination of `rule` and `stem`.
+"""Generate an `Analysis` frm the combination of a stem and a rule.
 
 $(SIGNATURES)
 """
-function generate(stem::TStem, rule::TRule, td::Tabulae.Dataset)::Vector{Analysis} where {TRule <: TabulaeRule, TStem <: TabulaeStem}
-    generate(lexeme(stem),lmForm(rule),  td)
+function analysis(stem::TStem, rule::TRule; tokenid = "A")::Analysis where {TRule <: TabulaeRule, TStem <: TabulaeStem}
+    morphform = buildfromrule(rule) ? latinForm(rule) : latinForm(stem)
+    token = string(stemvalue(stem), ending(rule))
+    Analysis(token, lexeme(stem),Tabulae.formurn(morphform), urn(stem),urn(rule), token, tokenid)
 end 

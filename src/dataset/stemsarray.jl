@@ -13,12 +13,13 @@ end
 $(SIGNATURES)
 """
 function stemsarray(dirlist; delimiter = "|")
+    finalarr = []
     iodict = Dict(
         [
         #"adjectives" => AdjectiveIO("adjective"),
         "nouns" => TabulaeNounStem,
-        #"pronouns" => PronounIO("pronoun"),
-        #"uninflected" => UninflectedIO("uninflected"),
+        "pronouns" => TabulaePronounStem,
+        "uninflected" => TabulaeUninflectedStem,
         "verbs-simplex" => TabulaeVerbStem,
         "verbs-compound" => TabulaeCompoundVerbStem,
         ]
@@ -26,24 +27,26 @@ function stemsarray(dirlist; delimiter = "|")
     stemdirs = [
         #"adjectives",
         "nouns",
-        #"pronouns",
-        #"uninflected",
+        "pronouns",
+        "uninflected",
         "verbs-simplex",
         #"verbs-compound",
         
     ]
 
-    stemsarr = Union{TabulaeStem, TabulaeIrregularStem}[]
+    #stemsarr = Union{TabulaeStem, TabulaeIrregularStem}[]
+    stemsarr = Stem[]
+    #stemsarr = Vector{<: Stem}()
     for datasrc in dirlist
         for dirname in stemdirs 
-            #@info("Read stems from dir ", dirname)
+            @debug("Read stems from dir ", dirname)
             dir = joinpath(datasrc, "stems-tables", dirname)
-            #@info("dir = ", dir)
+            @debug("dir = ", dir)
             cexfiles = glob("*.cex", dir)
             delimitedtype = iodict[dirname]
             for f in cexfiles
                 raw = readlines(f)
-                #@info("reading steam from raw ", raw)
+                @debug("reading steam from raw ", raw)
                 # Trim lines first:
                 lines = filter(s -> ! isempty(s), raw)
                 for ln in lines[2:end]
@@ -80,7 +83,6 @@ function stemsarray(dirlist; delimiter = "|")
 
     irregiodict = Dict(
         [
-        #"uninflected" => UninflectedIO("uninflected"),
         #"nouns" => IrregularNounIO("noun"),
         "verbs" => TabulaeIrregularVerb,
         #"infinitives" => IrregularInfinitiveIO("infinitive"),
@@ -101,8 +103,8 @@ function stemsarray(dirlist; delimiter = "|")
     )
 
   
-    @info("Getting irregular stems for $dirlist")
-    irregulars = []
+    @debug("Getting irregular stems for $dirlist")
+    irregulars = Union{TabulaeStem, TabulaeIrregularStem}[]
     for datasrc in dirlist
         for dirname in irregstemdirs 
             @debug("Collecting irregular stems from dir $(dirname) in src $(datasrc).")
@@ -142,7 +144,7 @@ function stemsarray(dirlist; delimiter = "|")
             lines = filter(s -> ! isempty(s), raw)
             for ln in lines[2:end]
                 stem = fromcex(ln, delimitedtype)
-                @info("Handle stem $(stem)")
+                @debug("Handle stem $(stem)")
                 for newstem in irregularstems(stem, irregulars)
                     @debug("Add stem $(newstem)")
                     push!(stemsarr,newstem)

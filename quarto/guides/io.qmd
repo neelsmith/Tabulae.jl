@@ -1,0 +1,8 @@
+# Reading and writing analyses and parsers
+
+
+Reading and writing anlayses:
+
+- use the `fromcex` and `cex` functions from `CitableBase` with type `Analysis`
+
+Parsers are just analyses with metadata. We can serialize the parsing data the same way.

@@ -14,7 +14,15 @@ end
 $SIGNATURES
 """
 function poslabel(f::FormUrn)
-    poscode(f) == 0 ? "none" : valuedict(pospairs)[poscode(f)]
+    if poscode(f) == 10
+        "gerundive"
+    elseif poscode(f) == 11
+        "supine"
+    elseif poscode(f) == 0 
+        "none" 
+    else
+        valuedict(pospairs)[poscode(f)]
+    end
 end
 
 """Extract person code from a `FormUrn`.

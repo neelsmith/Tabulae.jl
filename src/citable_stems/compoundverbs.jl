@@ -193,7 +193,7 @@ end
 
 
 function irregularverbstems(compound::TabulaeCompoundVerbStem, stemlist, ortho = literaryGreek())
-    @info("Now make finite verb forms")
+    @debug("Now make finite verb forms")
     compounds = TabulaeIrregularVerb[]
     for s in stemlist
         catted = string(prefix(compound), stemvalue(s))

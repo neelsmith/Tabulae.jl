@@ -21,6 +21,7 @@ end
 $(SIGNATURES)
 """
 function lmpUninflectedType(s::AbstractString)
+    @debug("Get uninflected type for string $(s)")
     s in keys(uninflectedcodes) ? LMPUninflectedType(uninflectedcodes[s]) : throw(DomainError(string(s, " is not a valid value for uninflected part of speech.")) )
 end
 
@@ -56,7 +57,7 @@ const uninflectedlabels = Dict(
     1 => "conjunction",
     2 => "preposition",
     3 => "adverb",
-    4 => "numeral",
+    4 => "number",
     5 => "interjection"
 
 )
@@ -69,6 +70,6 @@ const uninflectedcodes = Dict(
     "conjunction" => 1,
     "preposition" => 2,
     "adverb" => 3,
-    "numeral" => 4,
+    "number" => 4,
     "interjection" => 5
 )

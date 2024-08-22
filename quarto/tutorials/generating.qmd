@@ -1,4 +1,11 @@
-# Generating forms
+---
+editor:
+    render-on-save: true
+---
+
+
+
+# Generating analyses
 
 ```{julia}
 #| echo: false
@@ -8,36 +15,85 @@ repo = pwd() |> dirname |> dirname
 ```
 
 
-You can generate a complete analysis, including a string token,  for a givein lexeme and morphological form. Tabulae can generate forms using either a parser or a dataset.
+In Tabulae's model, a parser is just a collection of pre-computed analyses.
 
-The following cell creates a Tabulae dataset from directories in the github repository's `datasets` directory, and builds a parser from it.
+## rule + stem == analysis
+
+The tables of data that Tabulae uses to build a parser are grouped into stems and rules.  The combination of a stem and a rule yields an `Analysis` object. You can generate a single analysis with the `analysis` function.
 
 
 ```{julia}
-#| warning: false
-#| output: false
-using Tabulae, CitableParserBuilder
-
-shareddir = joinpath(repo, "datasets", "core-infl-shared") 
-lat25dir = joinpath(repo, "datasets", "core-infl-lat25") 
-ds = dataset([shareddir, lat25dir])
-parser =  tabulaeStringParser(ds)
+using CitableBase, Tabulae
+vstem = fromcex("latcommon.verbn12387|ls.n12387|deb|conj2", TabulaeVerbStem)
+vrule = fromcex("latcommon.ere_conj2fut3|conj2|ebit|third|singular|future|indicative|active", TabulaeFiniteVerbRule)
+verbanalysis = analysis(vstem, vrule)
 ```
 
 
-## Generating forms using a parser
+## Analyses from data in a dataset
 
-To illustrate generating forms with a parser, we'll first analyze a token.
+A dataset gives you a collection of stems and rules to work with, stored in delimited text files. 
 
 ```{julia}
+coresrcdir = joinpath(repo, "datasets", "core-infl-shared") 
+tds = dataset([coresrcdir])
+```
+
+You can use the `analyses` function to generate analyses from the stems and rules in a dataset:
+
+- for a specific lexeme in a specific form
+- for all forms of a lexeme
+- for all forms of all lexemes in the dataset. The resulting set of anlayses is a "parser."
+
+
+
+### Lexeme + form
+
+
+```{julia}
+using CitableParserBuilder
+lex = LexemeUrn("ls.n12387")
+verbform = LMFFiniteVerb(lmpPerson("third"), lmpNumber("singular"), lmpTense("future"), lmpMood("indicative"), lmpVoice("active"))
+analyses(lex, verbform, tds)
+```
+
+While the combination of a single rule + stem yields a single analysis, a lexeme + a form always yields a *vector* of analyses, since some combinations could produce more than one token value.
+
+```{julia}
+credo = LexemeUrn("ls.n11525")
+futind2sgpass = LMFFiniteVerb(lmpPerson("second"), lmpNumber("singular"), lmpTense("present"), lmpMood("indicative"),  lmpVoice("passive"))
+multianalyses = analyses(credo, futind2sgpass, tds)
+```
+
+### All forms of a lexeme
+
+```{julia}
+animus = LexemeUrn("ls.n2636")
+animus_analyzed = analyses(animus, tds)
+```
+
+### All forms of all lexemes
+
+```{julia}
+analysisvect = analyses(tds)
+```
+
+
+
+## Parsers
+
+Generating all analyses possible for a dataset is a parser!
+
+```{julia}
+parser = tabulaeStringParser(tds)
 parses = parsetoken("animo", parser)
 ```
 
 *animo* is morphologically ambiguous: it has two possible analyses.  We'll use the `latinForm` function to see the morphological form of the first analysis.
 
+
 ```{julia}
 form1 = latinForm(parses[1])
-label(form1)
 ```
 
 We'll now try to generate the same form using identifying URNs for the form and the lexeme.
@@ -46,7 +102,7 @@ We'll now try to generate the same form using identifying URNs for the form and 
 lex = lexemeurn(parses[1])
 mform = formurn(parses[1])
 
-generated = generate(lex, mform, parser)
+generated = analyses(lex, mform, tds)
 ```
 
 The result is a vector of `Analysis` objects -- the same structure that  `parsetoken` returns, but we only have one possible result for this specific form of this lexeme.  The `token` function extracts the string value of the token from an analysis
@@ -55,19 +111,3 @@ The result is a vector of `Analysis` objects -- the same structure that  `parset
 token(generated[1])
 ```
 
-
-
-## Generating forms using a Tabulae dataset
-
-Using a dataset instead of a parser, we get the same results:
-
-```{julia}
-dsgenerated = generate(lex, mform, ds)
-dsgenerated .|> token
-```
-
-With a dataset, you also have the option of generating analyses from the combination of a lexeme identifier plus a full Latin morphological form, such as the noun form we saved from a previous analysis:
-
-```{julia}
-generate(lex, form1, ds)
-```

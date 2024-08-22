@@ -35,12 +35,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     # Indicative singular:
     for i in 1:3
         indic = tenseforms[i]
-        indicative = join(CitableParserBuilder.tokens(generate(lex,indic,td)), ", ")
+        indicative = join(CitableParserBuilder.tokens(analyses(lex,indic,td)), ", ")
         rowheader = join([label(lmpPerson(indic)), label(lmpNumber(indic)) ], " ")
 
         if hassubjunctive(t)
             subj = tenseforms[i + 6]
-            subjunctive = join(CitableParserBuilder.tokens( generate(lex,subj,td)), ", ")
+            subjunctive = join(CitableParserBuilder.tokens( analyses(lex,subj,td)), ", ")
             push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
         else
             push!(mdlines, "| **$(rowheader)** | $(indicative) | - | ")
@@ -51,12 +51,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
     
     for i in 4:6
         indic = tenseforms[i]
-        indicative = join(CitableParserBuilder.tokens( generate(lex,indic,td)), ", ")
+        indicative = join(CitableParserBuilder.tokens( analyses(lex,indic,td)), ", ")
         rowheader = join([label(lmpPerson(indic)), label(lmpNumber(indic)) ], " ")
 
         if hassubjunctive(t)
             subj = tenseforms[i + 6]
-            subjunctive = join(CitableParserBuilder.tokens( generate(lex,subj,td)), ", ")
+            subjunctive = join(CitableParserBuilder.tokens( analyses(lex,subj,td)), ", ")
             push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
         else
             push!(mdlines, "| **$(rowheader)** | $(indicative) | - | ")
@@ -76,12 +76,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
         push!(mdlines, "| --- | --- | --- |")
         for i in passive_origin:passive_origin+2
             ind = tenseforms[i]
-            indicative = join(CitableParserBuilder.tokens( generate(lex,ind,td)), ", ")
+            indicative = join(CitableParserBuilder.tokens( analyses(lex,ind,td)), ", ")
             rowheader = join([label(lmpPerson(ind)), label(lmpNumber(ind)) ], " ")
 
             if hassubjunctive(t)
                 subj = tenseforms[i + offset]
-                subjunctive = join(CitableParserBuilder.tokens( generate(lex,subj,td)), ", ")
+                subjunctive = join(CitableParserBuilder.tokens( analyses(lex,subj,td)), ", ")
                 push!(mdlines, "| **$(rowheader)** | $(indicative) |  $(subjunctive) | ")
             else
                 push!(mdlines, "| **$(rowheader)** | $(indicative) |  - | ")
@@ -89,12 +89,12 @@ function md_tenseconjugation(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
         end
         for i in passive_origin+3:passive_origin+5
             ind = tenseforms[i]
-            indicative = join(CitableParserBuilder.tokens( generate(lex,ind,td)), ", ")
+            indicative = join(CitableParserBuilder.tokens( analyses(lex,ind,td)), ", ")
             rowheader = join([label(lmpPerson(ind)), label(lmpNumber(ind)) ], " ")
 
             if hassubjunctive(t)
                 subj = tenseforms[i + offset]
-                subjunctive = join(CitableParserBuilder.tokens( generate(lex,subj,td)), ", ")
+                subjunctive = join(CitableParserBuilder.tokens( analyses(lex,subj,td)), ", ")
                 push!(mdlines, "| **$(rowheader)** | $(indicative) | $(subjunctive) | ")
             else
                 push!(mdlines, "| **$(rowheader)** | $(indicative) |  - | ")
@@ -123,7 +123,7 @@ function md_perfectsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
     inf_act = LMFInfinitive(
         lmpTense("perfect"), lmpVoice("active")
     )
-    inf_actforms = join(token.(generate(lexu, formurn(inf_act), td)), ", ")
+    inf_actforms = join(token.(analyses(lexu, formurn(inf_act), td)), ", ")
 
 
     passptcpl = participleslashline(lexu, lmpTense("perfect"), lmpVoice("passive"), td)   
@@ -192,7 +192,7 @@ function imperativeconjugation_md(lex::LexemeUrn, td::Tabulae.Dataset)
     ]
     generatedsing = []
     for f in singforms
-        frmstring = join(generate(lex, formurn(f), td) .|> token,", ")
+        frmstring = join(analyses(lex, formurn(f), td) .|> token,", ")
         push!(generatedsing, frmstring)
     end
     plforms = [
@@ -201,7 +201,7 @@ function imperativeconjugation_md(lex::LexemeUrn, td::Tabulae.Dataset)
     ]
     generatedpl = []
     for f in plforms
-        frmstring = join(generate(lex, formurn(f),td) .|> token,", ")
+        frmstring = join(analyses(lex, formurn(f),td) .|> token,", ")
         push!(generatedpl,frmstring)
     end
     for i in 1:2
@@ -220,11 +220,11 @@ function md_presentsystem(lexu::LexemeUrn, td::Tabulae.Dataset)
     inf_act = LMFInfinitive(
         lmpTense("present"), lmpVoice("active")
     )
-    inf_actforms = join(token.(generate(lexu, formurn(inf_act), td)), ", ")
+    inf_actforms = join(token.(analyses(lexu, formurn(inf_act), td)), ", ")
     inf_pass = LMFInfinitive(
         lmpTense("present"), lmpVoice("passive")
     )
-    inf_passforms = join(token.(generate(lexu, formurn(inf_pass), td)), ", ")
+    inf_passforms = join(token.(analyses(lexu, formurn(inf_pass), td)), ", ")
     actptcpl = participleslashline(lexu, lmpTense("present"), lmpVoice("active"), td)   
     #passptcpl = participleslashline(lexu, lmpTense("present"), lmpVoice("passive"), td)
     
@@ -303,7 +303,7 @@ function participleslashline(
 
     formslist = filter(f -> f isa LMFParticiple && lmpTense(f) == tense && lmpVoice(f) == voice && lmpNumber(f) == lmpNumber(1) && lmpCase(f) == examplecase, allforms())
 
-    generated = map(f -> token.(generate(lex, formurn(f), td)),  formslist)
+    generated = map(f -> token.(analyses(lex, formurn(f), td)),  formslist)
     join(map(v -> isempty(v) ? "" : v[1], generated), ", ")
 end
 

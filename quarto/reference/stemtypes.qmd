@@ -2,23 +2,28 @@
 
 
 
-::: {.callout-caution title="Contents TBA"}
-This page is being expanded as coverage of stem types is added to version 0.10.0 of Tabulae.
-:::
-
 
 ## Reading and writing stem records
 
 
-Tabulae defines a subtype of the `TabulaeStem` abstraction for each kind of stem record that can be included in a Tabulae dataset.  Each of the types implements the `readstemrow` and `writestemrow` functions to instantiate a stem from a delimited-text string.  For each stem type, there is a corresponding subtype of the abstract `TabulaeIO` that is used to dispatch `readstemrow` and `writestemrow` to the correct methods. To read a verb stem, for example, `readstemrow` is invoked with an instance of the `VerbIO` type.
+Tabulae defines a concrete subtype of the `TabulaeStem` abstraction for each kind of stem record that can be included in a Tabulae dataset.  
 
-```
+Each type implements the `fromcex` and `cex` functoins from the `CitableBase` package.
+
+```{julia}
 #| warning: false
-using Tabulae
-verbrow = "latcommon.verbn2280|ls.n2280|am|conj1"
+using Tabulae, CitableBase
 
-verbio = VerbIO("verb reader")
-verbstem = Tabulae.readstemrow(verbio, verbrow)
+verbrow = "latcommon.verbn2280|ls.n2280|am|conj1"
+verbstem = fromcex(verbrow, TabulaeVerbStem)
+```
+
+
+These can always be roundtripped.
+
+
+```{julia}
+cex(verbstem) == verbrow
 ```
 
 
@@ -26,17 +31,17 @@ verbstem = Tabulae.readstemrow(verbio, verbrow)
 
 All stem types identify a lexeme, an inflectional type, and a string value for the stem, that you can retrieve with the following functions from the `CitableParserBuider` and `Tabulae` packages:
 
-```
+```{julia}
 using CitableParserBuilder
-lexemeurn(verbstem)
+lexeme(verbstem)
 ```
 
 
-```
+```{julia}
 stemvalue(verbstem)
 ```
 
-```
+```{julia}
 inflectionclass(verbstem)
 ```
 
@@ -52,7 +57,12 @@ In addition, noun stems include an inherent gender which you can find with the `
 Stems are citable objects in the CITE architecture interface, so you can also use these generic functions:
 
 
+```{julia}
+label(verbstem)
 ```
+
+
+```{julia}
 urn(verbstem)
 ```
 
@@ -60,15 +70,8 @@ urn(verbstem)
 By default, the `urn` function will return a `StemUrn`; see documentation about expanding that value to a full `Cite2Urn`.
 :::
 
-```
-label(verbstem)
-```
 
 
-
-```
-cex(verbstem)
-```
 
 ## Regular stems
 
@@ -79,11 +82,16 @@ cex(verbstem)
 ### Regular verb stems: compound verbs
 ### Regular noun stems
 ### Regular adjective stems
-### Indeclinable stems
+### Uninflected stems
 
 
 ## Irregular stems
+:::{.callout-note title="Delimited formats and Tabulae data sets"} 
 
+- examples here include a column with joining inflectional type
+- these are given by directory location in a Tabulae files data set, so text files will have one fewer column. The type is added automatically when you build a dataset.
+
+:::
 
 ### Irregular adjectives
 ### Irregular adverbs
@@ -92,8 +100,7 @@ cex(verbstem)
 ### Irregular pronouns
 ### Irregular finite verbs
 
-```
-irregverbrow = "latcommon.irregverbn46529a|ls.n46529|sum|first|singular|present|indicative|active"
-irregverbio = IrregularVerbIO("irregular verb reader")
-irregentry = Tabulae.readstemrow(irregverbio, irregverbrow)
+```{julia}
+irregverbrow = "latcommon.irregverbn46529a|ls.n46529|sum|first|singular|present|indicative|active|irregularverb"
+irregentry = fromcex(irregverbrow, TabulaeIrregularVerb)
 ```

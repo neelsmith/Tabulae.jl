@@ -5,7 +5,7 @@ theme: spacelab
 execute:
   freeze: auto
 date: last-modified  
-margin-header: "Package version: `0.12.0`"
+margin-header: "Package version: `0.13.0`"
 
 format:
   html: 
@@ -13,6 +13,7 @@ format:
 
 
 website:
+  
   title: "tabulae"
   navbar:
     background: primary
@@ -73,9 +74,11 @@ website:
     - title: "Guides"
       contents:
         - guides/index.qmd
+        - text: "---"
+        - guides/urns.qmd
         - guides/properties-guide.qmd
         - guides/forms-guide.qmd
-        - guides/urns.qmd
+        - guides/io.qmd
         - guides/serializing-rules.qmd
         - guides/multiortho.qmd
         
@@ -88,6 +91,7 @@ website:
         - reference/analytical_types.qmd  
         - reference/ruletypes.qmd
         - reference/stemtypes.qmd
+        - reference/compounding.qmd
         - text: "---"
         - text: "Tabulae datasets:"
         - reference/file_layout.qmd
@@ -105,6 +109,7 @@ website:
         - text: "---"
         - text: "System architecture:"
         - reference/architecture/rules-stems-pipeline.qmd
+        - reference/architecture/building-types.qmd
 
 
 

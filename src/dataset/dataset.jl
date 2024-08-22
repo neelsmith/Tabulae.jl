@@ -1,7 +1,7 @@
 """
 A Tabulae dataset in a local file system.  
 
-# Members
+**Members**:
 
 - `dirs` is a list of full paths to the root directory of one or more datasets.  
 Their subdirectory organization must follow Tabulae's specifications.

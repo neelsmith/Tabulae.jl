@@ -1,6 +1,8 @@
 StemUrn|LexicalEntity|StemString|MorphologicalClass|Notes
 latcommon.verbn2280|ls.n2280|am|conj1
 
+latcommon.verbn4453|ls.n4453|aud|conj4
+
 latcommon.verbn12387|ls.n12387|deb|conj2
 
 latcommon.verbn11525a|ls.n11525|cred|c3pres
@@ -11,4 +13,8 @@ latcommon.verbn6614a|ls.n6614|cap|c3iopres
 latcommon.verbn6614b|ls.n6614|cep|pftact
 latcommon.verbn6614c|ls.n6614|capt|pftpass
 
-latcommon.verbn4453|ls.n4453|aud|conj4
+
+latcommon.n20088|ls.n20088|habit|conj1
+
+
+

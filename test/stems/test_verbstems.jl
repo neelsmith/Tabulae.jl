@@ -7,7 +7,7 @@
 
 
     @test citable(stem)
-    @test label(stem) == "Verb stem am-"
+    @test label(stem) == "Verb stem am- (ls.n2280)"
     @test urn(stem) == StemUrn("latcommon.verbn2280")
     @test urn(stem; registry = dict) == Cite2Urn("urn:cite2:tabulae:latcommon.v1:verbn2280")
 

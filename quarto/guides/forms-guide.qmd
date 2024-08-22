@@ -89,7 +89,7 @@ Object identifiers in this collection are ten-character strings with each charac
 In the following line, the initial digit `2` means "noun form"; the number value `1` means singular; the gender value `3` means "neuter" and the case value `1` means "nominative".
 
 ```{julia}
-urn(noun)
+#urn(noun)
 ```
 
 Convenience methods let you work with these identifiers directly, or as a `FormUrn` (from the `CitableParserBuilder` package).
@@ -108,8 +108,9 @@ code(noun)
 For each subtype of `LatinMorphologicalForm`, a corresponding constructor function (with a name beginning in lowercase) accepts a variety of kinds of sources for a form, such as a `Cite2Urn`:
 
 ```{julia}
-u = urn(noun)
-lmfNoun(u) == noun
+#using CitableBase
+#u = urn(noun)
+# lmfNoun(u) == noun
 ```
 
 Other sources you can use to create a `LatinMorphologicalForm` include strings, abbreviated URNs, `Analysis` objects and `TabulaeRule` objects.  See the API documentation for details.

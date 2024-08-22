@@ -2,8 +2,8 @@
     infinitive = LMFInfinitive(lmpTense("present"), lmpVoice("active"))
     @test infinitive == LMFInfinitive(LMPTense(1), LMPVoice(1))
     @test label(infinitive) == "present active infinitive"
-    @test urn(infinitive) == Cite2Urn("urn:cite2:tabulae:forms.v1:4001010000")
-    @test cex(infinitive) == "urn:cite2:tabulae:forms.v1:4001010000|present active infinitive"
+    @test urn(infinitive) == Cite2Urn("urn:cite2:tabulae:latinforms.v1:4001010000")
+    @test cex(infinitive) == "urn:cite2:tabulae:latinforms.v1:4001010000|present active infinitive"
 
     @test lmfInfinitive("4001010000") == infinitive
     @test lmfInfinitive(urn(infinitive)) == infinitive
@@ -18,5 +18,5 @@ end
     infinitive = LMFInfinitive(lmpTense("present"), lmpVoice("active"))
     @test citable(infinitive)    
     @test label(infinitive) == "present active infinitive"
-    @test urn(infinitive) == Cite2Urn("urn:cite2:tabulae:forms.v1:4001010000")
+    @test urn(infinitive) == Cite2Urn("urn:cite2:tabulae:latinforms.v1:4001010000")
 end

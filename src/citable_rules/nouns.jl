@@ -115,8 +115,10 @@ end
 """Instantiate a noun rule from a noun form and associated information.
 $(SIGNATURES)
 """
-function formrule(id::AbstractString, infltype::AbstractString, ending::AbstractString, noun::LMFNoun)
-    TabulaeNounRule(id, infltype, ending,
+function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, noun::LMFNoun)
+
+    @debug("Create noun form!")
+    TabulaeNounRule(RuleUrn(id), infltype, ending,
     lmpGender(noun), lmpCase(noun), lmpNumber(noun)
     )
 end
@@ -124,7 +126,7 @@ end
 """Create a `LMFNoun` form from a rule.
 $(SIGNATURES)
 """
-function lmForm(rule::TabulaeNounRule)
+function latinForm(rule::TabulaeNounRule)
     LMFNoun(rule.ngender, rule.ncase, rule.nnumber)
 end
 
@@ -165,11 +167,3 @@ function id(n::TabulaeNounRule)
     n.ruleid
 end
 
-"""Compose an abbreviated URN for a rule from a `TabulaeNounRule`.
-
-$(SIGNATURES)
-"""
-function ruleurn(rule::TabulaeNounRule)
-    # PosPNTMVGCDCat
-    RuleUrn(string("tabulaeforms.", NOUN,"0",code(rule.nnumber),"000",code(rule.ngender),code(rule.ncase),"00"))
-end

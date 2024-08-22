@@ -49,16 +49,17 @@ function label(verb::LMFFiniteVerb)
         ], " ")
 end
 
-"""Compose a Cite2Urn for a `LMFFiniteVerb`.
+"""Sequence of digits encoding a finite verb form.
 $(SIGNATURES)
 """
-function urn(verb::LMFFiniteVerb)
+function code(verb::LMFFiniteVerb)
     # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000"))
+    @debug("Here are the codes:")
+    @debug("PNTMV:", code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice))
+    string(FINITEVERB, code(verb.vperson),code(verb.vnumber), code(verb.vtense), code(verb.vmood), code(verb.vvoice),"0000")
 end
 
-
-"""Construct a `LMFNoun` from string values.
+"""Construct a `LMFFiniteVerb` from string values.
 $(SIGNATURES)
 """
 function lmfFiniteVerb(p::AbstractString, n::AbstractString, t::AbstractString, m::AbstractString, v::AbstractString)
@@ -80,7 +81,7 @@ $(SIGNATURES)
 function lmfFiniteVerb(code::AbstractString)
     morphchars = split(code,"")
     # PosPNTMVGCDCat
-    
+    @debug("Get verb from code $(code)")
     tns = lmpTense(parse(Int64, morphchars[4]))
     md = lmpMood(parse(Int64, morphchars[5]))
     vc = lmpVoice(parse(Int64,morphchars[6]))
@@ -167,15 +168,6 @@ function lmpNumber(verb::LMFFiniteVerb)
 end
 
 
-"""Compose a `FormUrn` for a `LMFFiniteVerb`.
-
-$(SIGNATURES)
-"""
-function formurn(verbform::LMFFiniteVerb)
-    FormUrn(string("forms.", FINITEVERB, code(verbform.vperson), code(verbform.vnumber), code(verbform.vtense), code(verbform.vmood), code(verbform.vvoice), "0000"))
-end
-
-
 """Generate a complete list of all possible verb forms.
 $(SIGNATURES)
 """
@@ -187,7 +179,7 @@ function verbanalyses(td::Tabulae.Dataset)::Vector{Analysis}
     for (i, verbstem) in enumerate(verbstems)
         @debug("Analyzing verb $(i)/$(length(verbstems))")
         for f in finiteverbforms()
-            generated = generate(lexeme(verbstem), f, td)
+            generated = analyses(lexeme(verbstem), f, td)
             for g in generated
                 @debug("Generated $(typeof(g)): ", g)
                 push!(analysislist, g)
@@ -266,7 +258,7 @@ function verbanalyses(verbstems::Vector{Stem}, rules::Vector{Rule})::Vector{Anal
     for (i, verbstem) in enumerate(verbstems)
         @debug("Analyzing verb $(i)/$(length(verbstems))")
         for f in finiteverbforms()
-            generated = generate(lexeme(verbstem),  f, rules)
+            generated = analyses(lexeme(verbstem),  f, rules)
             for g in generated
                 @debug("Generated $(typeof(g)): ", g)
                 push!(analysislist, g)

@@ -19,11 +19,11 @@ end
 $(SIGNATURES)
 """
 function ==(p1::LMFParticiple, p2::LMFParticiple)
-    lmpGender(vb1)  == lmpGender(vb2) &&
-    lmpCase(vb1)  == lmpCase(vb2) &&
-    lmpNumber(vb1)  == lmpNumber(vb2) &&
-    lmpTense(vb1)  == lmpTense(vb2) &&
-    lmpVoice(vb1)  == lmpVoice(vb2) 
+    lmpGender(p1)  == lmpGender(p2) &&
+    lmpCase(p1)  == lmpCase(p2) &&
+    lmpNumber(p1)  == lmpNumber(p2) &&
+    lmpTense(p1)  == lmpTense(p2) &&
+    lmpVoice(p1)  == lmpVoice(p2) 
 end
 
 
@@ -35,15 +35,6 @@ function citabletrait(::Type{LMFParticiple})
     CitableByCite2Urn()
 end
 
-
-"""Compose a Cite2Urn for a `LMFParticiple`.
-
-$(SIGNATURES)
-"""
-function urn(p::LMFParticiple)
-    # PosPNTMVGCDCat
-    Cite2Urn(string(BASE_MORPHOLOGY_URN, PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
-end
 
 
 """Compose a label for a `LMFParticiple`.
@@ -57,8 +48,8 @@ end
 """Sequence of digits encoding form `verb`
 $(SIGNATURES)
 """
-function code(verb::LMFParticiple)
-    urn(verb) |> objectcomponent
+function code(p::LMFParticiple)
+    string(PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00")
 end
 
 
@@ -141,15 +132,6 @@ $(SIGNATURES)
 """
 function lmfParticiple(f::FormUrn)
     lmfParticiple(f.objectid)
-end
-
-
-"""Compose a `FormUrn` for a `LMFParticiple`.
-
-$(SIGNATURES)
-"""
-function formurn(p::LMFParticiple)
-    FormUrn(string("forms.", PARTICIPLE,"0", code(p.pnumber),code(p.ptense),"0", code(p.pvoice),code(p.pgender),code(p.pcase),"00"))
 end
 
 

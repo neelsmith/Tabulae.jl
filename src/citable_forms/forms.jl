@@ -1,18 +1,18 @@
 """Abstract type of a morphological form."""
 abstract type LatinMorphologicalForm end
 
-const BASE_MORPHOLOGY_URN = "urn:cite2:tabulae:forms.v1:"
+const BASE_MORPHOLOGY_URN = "urn:cite2:tabulae:latinforms.v1:"
 
 
 """Latin morphological forms are citable by Cite2Urn"""
 CitableTrait(::T) where {T <: LatinMorphologicalForm} = CitableByCite2Urn()
 
-"""Return Tabi;ae code for analytical type
+"""Return Tabulae code for analytical type
 encoded in first digit of `codestring`.
 $(SIGNATURES)
 """
 function poscode(codestring::AbstractString)
-    parse(Int32, codestring[1])
+    parse(Int32, codestring[1], base = 16)
 end
 
 
@@ -22,9 +22,16 @@ $(SIGNATURES)
 
 All subclasses of `LatinMorphologicalForm` should implement this specifically for their subclass.
 """
-function urn(mf::T) where {T <: LatinMorphologicalForm}
-    @warn("urn: unrecognized type of LatinMorphologicalForm.")
-    nothing
+function urn(mf::T) where {T <: LatinMorphologicalForm}    
+    string(BASE_MORPHOLOGY_URN, code(mf)) |> Cite2Urn
+end
+
+"""Compose a `FormUrn` for a `LMFFiniteVerb`.
+
+$(SIGNATURES)
+"""
+function formurn(mf::T) where {T <: LatinMorphologicalForm}
+    FormUrn(string("forms.", code(mf)))
 end
 
 """Label for a form.
@@ -38,6 +45,7 @@ function label(mf::T) where {T <: LatinMorphologicalForm}
     nothing
 end
 
+
 """Convert a `LatinMorphologicalForm` form to a delimited-text string. 
 
 $(SIGNATURES)
@@ -47,10 +55,12 @@ function cex(mf::T; delimiter = "|") where {T <: LatinMorphologicalForm}
 end
 
 
+
+
 """Generate a complete list of possible morphological forms.
 $(SIGNATURES)
 """
-function analyses(td::Tabulae.Dataset)::Vector{Analysis}
+function analysesXX(td::Tabulae.Dataset)::Vector{Analysis}
     formlist = Analysis[]
     @debug("Analyzing all noun forms in dataset...")
     formlist = append!(formlist, nounanalyses(td)) 
@@ -58,6 +68,7 @@ function analyses(td::Tabulae.Dataset)::Vector{Analysis}
 end
 
 
+#function hex(n, pad) = string(n, base = 16, pad = pad),
 
 """Create a `LatinMorphologicalForm` from a form code.
 $(SIGNATURES)
@@ -77,6 +88,8 @@ function latinForm(codestr::AbstractString)
         lmfPronoun(codestr)
     elseif poscode(codestr) == UNINFLECTED
         lmfUninflected(codestr)
+    elseif poscode(codestr) == 10
+        lmfGerundive(codestr)
     end
 end
 
