@@ -85,33 +85,33 @@ function stemsarray(dirlist; delimiter = "|")
         [
         #"nouns" => IrregularNounIO("noun"),
         "verbs" => TabulaeIrregularVerb,
-        #"infinitives" => IrregularInfinitiveIO("infinitive"),
+        "infinitives" => TabulaeIrregularInfinitive,
         #"adjectives" => IrregularAdjectiveIO("adjectives")
         ]
     )
     irregstemdirs = [
         #"nouns",
         "verbs",
-        #"infinitives",
+        "infinitives",
         #"adjectives"
     ]
     irreginfltypes = Dict(
         # "nouns" => "irregularnoun",
         # "adjectives" => "irregularadjective",
         "verbs" => "irregularfiniteverb",
-        # "infinitives" => "irregularinfinitive",
+        "infinitives" => "irregularinfinitive",
     )
 
   
-    @debug("Getting irregular stems for $dirlist")
+    @info("Getting irregular stems for $dirlist")
     irregulars = Union{TabulaeStem, TabulaeIrregularStem}[]
     for datasrc in dirlist
         for dirname in irregstemdirs 
-            @debug("Collecting irregular stems from dir $(dirname) in src $(datasrc).")
+            @info("Collecting irregular stems from dir $(dirname) in src $(datasrc).")
             dir = joinpath(datasrc, "irregular-stems", dirname)
             cexfiles = glob("*.cex", dir)
             if ! isempty(cexfiles)
-                @debug("Found these files for irregulars: $(cexfiles)")
+                @info("Found these files for irregulars: $(cexfiles)")
             end
             delimitedtype = irregiodict[dirname]
             infltype = irreginfltypes[dirname]

@@ -28,3 +28,15 @@ Irregular stems will have the complete token, as well as full information for th
 - `stemvalue` on stem; `ending` on rule will returen string `""`. 
 - `lexeme` on stem.
 - `latinForm` and `code` on stem.
+
+
+Maybe rules are entirely handled by dispatch from abstract supertype?
+
+
+## Datasets
+
+- `src/dataset/rulesarray.jl` : no changes if all dispatched to abstract supertype
+- `src/data/stemsarray.jl`: add entries to two Dicts:  `irregiodict` and `irreginfltypes` and vector `irregstemdirs`
+
+
+## Compound verbs: how they work
