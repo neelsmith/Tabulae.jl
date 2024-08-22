@@ -32,7 +32,7 @@ Beginning with version 0.10.0, the package is being completely rewritten based o
 | finite verb | ✅  |✅  | ✅ |
 | infinitive | |||
 | noun | |||
-| pronoun | |||
+| pronoun | ✅ | ✅ | ✅ |
 | adverb | |||
 
 
