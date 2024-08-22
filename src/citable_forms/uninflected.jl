@@ -48,10 +48,15 @@ end
 """Construct an uninflected form a from a string value.
 $(SIGNATURES)
 """
-function lmfUninflected(pos::AbstractString)
+function lmfUninflected(str::AbstractString)
+   #= 
+    pos = poscode(str)
+    @info("Create uninflected from code $(str), pos = $(pos) ")
     LMFUninflected(
         lmpUninflectedType(uninflectedcodes[pos])
     )
+        =#
+        
 end
 
 """Find part of speech of uninflected form.
