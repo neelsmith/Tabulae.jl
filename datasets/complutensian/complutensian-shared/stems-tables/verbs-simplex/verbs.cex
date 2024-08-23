@@ -1,4 +1,17 @@
 StemUrn|LexicalEntity|StemString|MorphologicalClass
 
 
-latcommon.n33030|ls.n33030|or|conj1
+
+latcommon.verbn2197|ls.n2197|ambul|conj1
+
+
+
+
+latcommon.verbn33030|ls.n33030|or|conj1
+
+latcomon.verbn33634a|ls.n33634|pang|c1pres
+latcomon.verbn33634b|ls.n33634|panx|pftact
+latcomon.verbn33634c|ls.n33634|panct|pftpass
+latcomon.verbn33634d|ls.n33634|pepig|pftact
+latcomon.verbn33634e|ls.n33634|peg|pftact
+latcomon.verbn33634f|ls.n33634|peg|pftpass

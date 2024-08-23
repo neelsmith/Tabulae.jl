@@ -14,7 +14,6 @@ latcommon.verbn1605b|ls.n1605|eg|pftact
 latcommon.verbn1605c|ls.n1605|act|pftpass
 latcommon.verbn1947|ls.n1947|allig|conj1
 latcommon.verbn2074|ls.n2074|mir|conj1
-latcommon.verbn2197|ls.n2197|ambul|conj1
 latcommon.verbn2280|ls.n2280|am|conj1
 latcommon.verbn2980a|ls.n2980|aper|c4pres
 latcommon.verbn2980b|ls.n2980|aperu|pftact
@@ -142,9 +141,6 @@ latcommon.verbn13454|ls.n13454|destin|conj1
 latcommon.verbn13456a|ls.n13456|destitu|c3pres
 latcommon.verbn13456b|ls.n13456|destitu|pftact
 latcommon.verbn13456c|ls.n13456|destitut|pftpass
-latcommon.verb13804a|ls.n13804|dic|conj3
-latcommon.verb13804b|ls.n13804|dix|pftact
-latcommon.verb13804c|ls.n13804|dict|pftpass
 latcommon.verbn13822|ls.n13822|dictit|conj1
 latcommon.verbn14028a|ls.n14028|dimitt|c3pres
 latcommon.verbn14028b|ls.n14028|dimis|pftact
