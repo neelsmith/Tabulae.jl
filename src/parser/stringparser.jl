@@ -160,7 +160,7 @@ end
 
 
 
-enclitics = ["que", "ve", "ne", "cum", "met"]
+enclitics = ["que", "ve", "ne", "cum"]
 
 
 """Parse a Latin orthographic token, checking for possibility of enclitics.
@@ -177,7 +177,7 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
         results = Analysis[]
         endings = orthography(parser) isa Latin23 ? map(enc -> replace(enc, "v" => "u"), enclitics) : enclitics
         for e in endings
-            @debug("CHeck for enclitic $(e) in string $(s)")
+            @debug("Check for enclitic $(e) in string $(s)")
             if endswith(s,e) && ! isequal(s,e)
                 @debug("Found  possible  enclitic")
                 
@@ -187,7 +187,6 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
                 otkn = s
                 @debug("Tokens: $(tkn) + $(e)")
                 for prs in parsetoken(mtkn, parser)
-                    #push!(results, prs)
                     push!(results, analysisforencliticseq(prs, s, "A"))
                 end
 
