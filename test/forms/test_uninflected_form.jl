@@ -11,7 +11,11 @@
 end
 
 @testset "Test form manipulation of uninflected forms" begin
-    codestring = "forms.1000000001"
+    codestring = "1000000001"
     lform = latinForm(codestring)
-    @info("lform is $(lform)")
+    @test lform isa LMFUninflected
+
+    conj = lmpUninflectedType("conjunction")
+    @test lmpUninflectedType(lform) == conj
+    @test LMFUninflected(conj) == lform
 end
