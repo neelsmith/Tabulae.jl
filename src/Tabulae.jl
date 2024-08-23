@@ -95,6 +95,7 @@ export orthography
 
 export md_declension
 export md_tenseconjugation, md_verb_conjugation
+export md_tenseconjugation_deponent, md_deponent_conjugation
 
 
 

@@ -68,7 +68,8 @@ website:
         - appendices/verbs-2nd.qmd                
         - appendices/verbs-3rd.qmd                
         - appendices/verbs-3rd-io.qmd                
-        - appendices/verbs-4th.qmd                
+        - appendices/verbs-4th.qmd   
+        - appendices/verbs1-dep.qmd             
 
         
     - title: "Guides"
