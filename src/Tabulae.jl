@@ -159,6 +159,7 @@ include("parser/stringparser.jl")
 
 include("for-apps/mddeclension.jl")
 include("for-apps/verbparadigms.jl")
+include("for-apps/deponentverbs.jl")
 
 include("utils/coredata.jl")
 

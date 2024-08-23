@@ -1,24 +1,4 @@
-function cyclethem(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
-    tenseforms = filter(f -> f.vtense == t, finiteverbforms())
-    println("IND ACT")
-    for i in 1:3
-        println(label(tenseforms[i]))
-    end
-    println("SUBJ ACT")
-    for i in 7:9
-        println(label(tenseforms[i]))
-    end
 
-    println("IND PASS")
-    for i in 13:15
-        println(label(tenseforms[i]))
-    end
-    println("SUBJ PASS")
-    for i in 19:21
-        println(label(tenseforms[i]))
-    end
-
-end
 
 """Format markdown to display conjugational paradigm of a single tense system of `lex`.
 $(SIGNATURES)
@@ -330,3 +310,27 @@ function allforms()
     allformcodes() .|> latinForm
 end
 
+
+
+
+function cyclethem(t::LMPTense, lex::LexemeUrn, td::Tabulae.Dataset)
+    tenseforms = filter(f -> f.vtense == t, finiteverbforms())
+    println("IND ACT")
+    for i in 1:3
+        println(label(tenseforms[i]))
+    end
+    println("SUBJ ACT")
+    for i in 7:9
+        println(label(tenseforms[i]))
+    end
+
+    println("IND PASS")
+    for i in 13:15
+        println(label(tenseforms[i]))
+    end
+    println("SUBJ PASS")
+    for i in 19:21
+        println(label(tenseforms[i]))
+    end
+
+end
