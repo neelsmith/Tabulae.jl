@@ -70,6 +70,10 @@ website:
         - appendices/verbs-3rd-io.qmd                
         - appendices/verbs-4th.qmd   
         - appendices/verbs1-dep.qmd             
+        - appendices/verbs2-dep.qmd       
+        - appendices/verbs3-dep.qmd       
+        - appendices/verbs3io-dep.qmd       
+        - appendices/verbs4-dep.qmd       
 
         
     - title: "Guides"
