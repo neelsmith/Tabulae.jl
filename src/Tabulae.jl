@@ -89,7 +89,7 @@ export TabulaeNounStem
 export TabulaePronounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
 export TabulaeIrregularInfinitive
-export TabulaeStringParser, tabulaeStringParser
+export TabulaeStringParser, tabulaeStringParser, tsp
 export TabulaeUninflectedStem
 export orthography
 
