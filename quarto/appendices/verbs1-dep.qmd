@@ -1,4 +1,4 @@
-# First-conjugation verbs
+# First-conjugation verbs, deponent
 
 ```{julia}
 #| warning: false
