@@ -58,7 +58,8 @@ const uninflectedlabels = Dict(
     2 => "preposition",
     3 => "adverb",
     4 => "number",
-    5 => "interjection"
+    5 => "interjection", 
+    6 => "particle"
 
 )
 
@@ -71,5 +72,6 @@ const uninflectedcodes = Dict(
     "preposition" => 2,
     "adverb" => 3,
     "number" => 4,
-    "interjection" => 5
+    "interjection" => 5,
+    "particle" => 6
 )

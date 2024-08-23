@@ -111,5 +111,6 @@ end
 $(SIGNATURES)
 """
 function latinForm(a::Analysis)
+    @debug("Find form from analysis by looking at a.form: $(a.form) ")
     latinForm(a.form)
 end

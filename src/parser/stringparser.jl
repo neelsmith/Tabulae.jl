@@ -247,6 +247,9 @@ function stringParser(p::TabulaeStringParser)
 end
 
 
+function tsp(tds::Tabulae.Dataset; ortho = latin25(), delimiter = "|")
+    tabulaeStringParser(tds; ortho = ortho, delimiter = delimiter)
+end
 
 """Instantiate a `TabulaeStringParser` from a set of analyses read from a local file.
 $(SIGNATURES)

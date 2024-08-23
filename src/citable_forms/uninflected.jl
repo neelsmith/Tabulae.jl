@@ -49,14 +49,9 @@ end
 $(SIGNATURES)
 """
 function lmfUninflected(str::AbstractString)
-   #= 
-    pos = poscode(str)
-    @info("Create uninflected from code $(str), pos = $(pos) ")
-    LMFUninflected(
-        lmpUninflectedType(uninflectedcodes[pos])
-    )
-        =#
-        
+    typecode =  parse(Int,str[10])
+    propvalue = lmpUninflectedType(typecode)
+    LMFUninflected(propvalue)
 end
 
 """Find part of speech of uninflected form.
