@@ -1,11 +1,20 @@
 StemUrn|LexicalEntity|StemString|MorphologicalClass
 
-
+latcommon.verbn1140|ls.n1140|aedific|conj1
 
 latcommon.verbn2197|ls.n2197|ambul|conj1
 
+latcommon.verbn2628|ls.n2628|anim|conj1
 
 
+
+latcomon.verbn3873a|ls.n3873|ascend|c3pres
+latcomon.verbn3873b|ls.n3873|ascend|pftact
+latcomon.verbn3873c|ls.n3873|ascens|pftpass
+
+
+
+latcommon.verbn14747|ls.n14747|dorm|conj4
 
 latcommon.verbn19424|ls.n19424|gener|conj1
 
@@ -17,3 +26,27 @@ latcomon.verbn33634c|ls.n33634|panct|pftpass
 latcomon.verbn33634d|ls.n33634|pepig|pftact
 latcomon.verbn33634e|ls.n33634|peg|pftact
 latcomon.verbn33634f|ls.n33634|peg|pftpass
+
+latcomon.verbn35002a|ls.n35002|perg|c3pres
+latcomon.verbn35002b|ls.n35002|perrex|pftact
+latcomon.verbn35002c|ls.n35002|perrect|pftpass
+
+
+
+
+
+latcomon.verbn36573|ls.n36573|plant|conj1
+
+
+latcomon.verbn40911|ls.n40911|regn|conj1
+
+latcomon.verbn47035a|ls.n47035|surg|c3pres
+latcomon.verbn47035b|ls.n47035|surrex|pftact
+latcomon.verbn47035c|ls.n47035|surrect|pftpass
+latcomon.verbn47035d|ls.n47035|subrex|pftact
+latcomon.verbn47035e|ls.n47035|subrect|pftpass
+
+
+latcomon.verbn48489a|ls.n48489|toll|c3pres
+
+latcomon.verbn50915|ls.n50915|vigil|conj1

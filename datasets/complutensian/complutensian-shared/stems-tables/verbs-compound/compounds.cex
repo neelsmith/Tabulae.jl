@@ -1,11 +1,24 @@
 Stem|LexicalEntity|Prefix|Simplex|Note
 
-
+latcommon.compoundn65|ls.n65|ab|ls.n15868|abeo
+latcommon.compoundn743|ls.n743|ad|ls.n14847|adduco
 latcommon.compoundn981|ls.n981|ad|ls.n33030|adoro
+latcommon.compoundn1460|ls.n1460|af|ls.n17964|affero
 
 latcommon.compoundn5170|ls.n5170|bene|ls.n13804|benedico|
 
+latcommon.compoundn9841|ls.n9841|con|ls.n6614|concipio
+latcommon.compoundn10709|ls.n10709|con|ls.n47035|consurgo
+
+latcommon.compoundnn23394|ls.n15329|e|ls.n19798|egredior
+
+latcommon.compoundn16484|ls.n16484|e|ls.n50915|evigilo
 
 latcommon.compoundnn23394|ls.n23394|in|ls.n19798|ingredior
-
 latcommon.compoundn24445|ls.n24445|inter|ls.n41838|interrogo
+latcommon.compoundn24614|ls.n24614|intro|ls.n14847|introduco
+
+latcommon.compoundn32374|ls.n32374|ob|ls.n17964|obfero
+
+latcommon.compoundn34815|ls.n34815|per|ls.n14847|perduco
+latcommon.compoundn37409|ls.n37409|prae|ls.n6614|praecipio
