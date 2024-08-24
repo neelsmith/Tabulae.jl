@@ -20,6 +20,8 @@ import CitableParserBuilder: lexemeurn, lexeme
 import CitableParserBuilder: stringParser
 import CitableParserBuilder: analyses
 import CitableParserBuilder: formurn
+import CitableParserBuilder: ruleurn
+import CitableParserBuilder: stemurn
 
 
 
