@@ -195,6 +195,9 @@ latcommon.verbn19570a|ls.n19570|gign|c3pres
 latcommon.verbn19570b|ls.n19570|genu|pftact
 latcommon.verbn19570c|ls.n19570|genit|pftpass
 
+latcommon.verbn19798a|ls.n19798|grad|c3iodep
+latcommon.verbn19798b|ls.n19798|gress|pftpass
+latcommon.verbn19798c|ls.n19798|gred|c3iodep
 
 latcommon.verbn20077a|ls.n20077|hab|conj2
 latcommon.verbn20088|ls.n20088|habit|conj1
