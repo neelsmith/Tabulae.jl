@@ -12,11 +12,23 @@ latcomon.verbn3873a|ls.n3873|ascend|c3pres
 latcomon.verbn3873b|ls.n3873|ascend|pftact
 latcomon.verbn3873c|ls.n3873|ascens|pftpass
 
+latcomon.verbn5980a|ls.n5980|cad|c3pres
+latcomon.verbn5980b|ls.n5980|cecid|pftact
+latcomon.verbn5980c|ls.n5980|cas|pftpass
 
 
 latcommon.verbn14747|ls.n14747|dorm|conj4
 
+latcommon.verbn15585a|ls.n15585|emarcesc|c3pres
+latcommon.verbn15585b|ls.n15585|emarcu|pftact
+
+
+
+
 latcommon.verbn19424|ls.n19424|gener|conj1
+
+
+latcomon.verbn30406|ls.n30406|narr|conj1
 
 latcommon.verbn33030|ls.n33030|or|conj1
 
@@ -32,6 +44,14 @@ latcomon.verbn35002b|ls.n35002|perrex|pftact
 latcomon.verbn35002c|ls.n35002|perrect|pftpass
 
 
+latcomon.verbn41740a|ls.n41740|rid|c2pres
+latcomon.verbn41740b|ls.n41740|ris|pftact
+latcomon.verbn41740c|ls.n41740|ris|pftpass
+
+
+
+
+latcomon.verbn50683a|ls.n50683|vesc|conj3dep
 
 
 

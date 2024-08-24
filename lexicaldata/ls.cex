@@ -2,6 +2,7 @@ abbrun|lemma
 ls.n4|ab
 ls.n65|abeo
 ls.n254|absum
+ls.n357|accido
 ls.n743|adduco
 ls.n981|adoro
 ls.n1140|aedifico
@@ -24,6 +25,7 @@ ls.n10709|consurgo
 ls.n10676|consul
 ls.n11525|credo
 ls.n11872|cum
+ls.n12030|curro
 ls.n12387|debeo
 ls.n14736|donum
 ls.n14747|dormio
@@ -34,8 +36,13 @@ ls.n19424|genero
 ls.n19798|gradior
 ls.n23394|ingredior
 ls.n24614|introduco
+ls.n24808|invoco
+ls.n27699|maledico
+ls.n30406|narro
 ls.n30584|ne
+ls.n31613|obeo
 ls.n31849|observo
+ls.n32128|occurro
 ls.n32374|offero
 ls.n33030|oro
 ls.n33634|pango
@@ -49,4 +56,5 @@ ls.n46529|sum
 ls.n47035|surgo
 ls.n49339|tu
 ls.n50271|ve
+ls.n50683|vescor
 ls.n50915|vigilo

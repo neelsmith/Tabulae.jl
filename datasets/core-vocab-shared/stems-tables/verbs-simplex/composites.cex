@@ -1,7 +1,18 @@
 StemUrn|LexicalEntity|StemString|MorphologicalClass|Simplex
 
 
-composites.cipio|ls.n6614|cip|c3iopres|
-composites.ficio|ls.n17516|fic|c3iopres|
+composites.ago|ls.n1605|ig|conj3|
 
-composites.gradior|ls.n19798|gred|conj3iodep|
+
+latcomon.cado_a|ls.n5980|cid|c3pres
+latcomon.cado_b|ls.n5980|cid|pftact
+latcomon.cado_a|ls.n5980|cis|pftpass
+
+
+composites.capioa|ls.n6614|cip|c3iopres|
+composites.capiob|ls.n6614|cept|pftpass|
+
+
+composites.facio|ls.n17516|fic|c3iopres|
+
+composites.gredior|ls.n19798|gred|conj3iodep|

@@ -1,6 +1,9 @@
 Stem|LexicalEntity|Prefix|Simplex|Note
 
 latcommon.compoundn65|ls.n65|ab|ls.n15868|abeo
+
+latcommon.compoundn357|ls.n357|acc|ls.n5980|accido
+
 latcommon.compoundn743|ls.n743|ad|ls.n14847|adduco
 latcommon.compoundn981|ls.n981|ad|ls.n33030|adoro
 latcommon.compoundn1460|ls.n1460|af|ls.n17964|affero
@@ -18,7 +21,21 @@ latcommon.compoundnn23394|ls.n23394|in|ls.n19798|ingredior
 latcommon.compoundn24445|ls.n24445|inter|ls.n41838|interrogo
 latcommon.compoundn24614|ls.n24614|intro|ls.n14847|introduco
 
+
+latcommon.compoundn24808|ls.n24808|in|ls.n51266|invoco
+
+latcommon.compoundn27699|ls.n27699|male|ls.n13804|maledico|
+
+
+latcommon.compoundn31613|ls.n31613|ob|ls.n15868|obeo
 latcommon.compoundn32374|ls.n32374|ob|ls.n17964|obfero
+
+latcommon.compoundn32128|ls.n32128|oc|ls.n12030|occuro
+
+
 
 latcommon.compoundn34815|ls.n34815|per|ls.n14847|perduco
 latcommon.compoundn37409|ls.n37409|prae|ls.n6614|praecipio
+
+
+ latcommon.compoundn48811|ls.n48811|trans|ls.n1605|transago
