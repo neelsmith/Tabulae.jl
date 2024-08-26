@@ -2,6 +2,7 @@ Stem|LexicalEntity|Prefix|Simplex|Note
 
 latcommon.compoundn65|ls.n65|ab|ls.n15868|abeo
 
+latcommon.compoundn318|ls.n318|ac|ls.n7275|accedo
 latcommon.compoundn357|ls.n357|acc|ls.n5980|accido
 
 latcommon.compoundn743|ls.n743|ad|ls.n14847|adduco
@@ -17,13 +18,19 @@ latcommon.compoundn5170|ls.n5170|bene|ls.n13804|benedico|
 latcommon.compoundn8135|ls.n8135|circum|ls.n6011|circumcido
 
 latcommon.compoundn9841|ls.n9841|con|ls.n6614|concipio
+
+
+latcommon.compoundn6011|ls.n9810|con|ls.n6011|concido
+
 latcommon.compoundn10709|ls.n10709|con|ls.n47035|consurgo
 
 latcommon.compoundn13329|ls.n13329|de|ls.n42862|descendo
 
 
 
-latcommon.compoundnn23394|ls.n15329|e|ls.n19798|egredior
+latcommon.compoundn23394|ls.n15329|e|ls.n19798|egredior
+
+latcommon.compoundn16132|ls.n16132|e|ls.n40913|erigo
 
 latcommon.compoundn16484|ls.n16484|e|ls.n50915|evigilo
 
@@ -33,6 +40,10 @@ latcommon.compoundn24614|ls.n24614|intro|ls.n14847|introduco
 
 
 latcommon.compoundn24808|ls.n24808|in|ls.n51266|invoco
+
+
+latcommon.compoundn25021|ls.n25021|ir|ls.n42026|irruo
+
 
 latcommon.compoundn27699|ls.n27699|male|ls.n13804|maledico|
 
@@ -50,6 +61,11 @@ latcommon.compoundn37409|ls.n37409|prae|ls.n6614|praecipio
 
 latcommon.compoundn38610|ls.n38610|pro|ls.n17964|profero
 
+
+latcommon.compoundn40530|ls.n40530|re|ls.n7275|recedo
+
+
+latcommon.compound|ls.n40711|red|ls.n14599|reddo
 latcommon.compoundn41009|ls.n41009|re|ls.n27858|remaneo
 
 latcommon.compoundn41378|ls.n41378|re|ls.|respicio

@@ -19,10 +19,14 @@ latcomon.caedo_a|ls.n6011|cis|pftpass
 composites.capioa|ls.n6614|cip|c3iopres|
 composites.capiob|ls.n6614|cept|pftpass|
 
+composites.do_a|ls.n14599|d|c3pres
+composites.do_b|ls.n14599|did|pftact
+composites.do_c|ls.n14599|dit|pftpass
 
 
-
-composites.facio|ls.n17516|fic|c3iopres|
+composites.facio_a|ls.n17516|fic|c3iopres|
+composites.facio_b|ls.n17516|fic|pftact|
+composites.facio_c|ls.n17516|fect|pftpass|
 
 composites.gredior|ls.n19798|gred|conj3iodep|
 
