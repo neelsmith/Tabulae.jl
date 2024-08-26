@@ -4,9 +4,16 @@ StemUrn|LexicalEntity|StemString|MorphologicalClass|Simplex
 composites.ago|ls.n1605|ig|conj3|
 
 
+
 latcomon.cado_a|ls.n5980|cid|c3pres
 latcomon.cado_b|ls.n5980|cid|pftact
 latcomon.cado_a|ls.n5980|cis|pftpass
+
+
+latcomon.caedo_a|ls.n6011|cid|c3pres
+latcomon.caedo_b|ls.n6011|cid|pftact
+latcomon.caedo_a|ls.n6011|cis|pftpass
+
 
 
 composites.capioa|ls.n6614|cip|c3iopres|

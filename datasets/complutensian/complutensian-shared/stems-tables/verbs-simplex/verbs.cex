@@ -12,12 +12,27 @@ latcomon.verbn3873a|ls.n3873|ascend|c3pres
 latcomon.verbn3873b|ls.n3873|ascend|pftact
 latcomon.verbn3873c|ls.n3873|ascens|pftpass
 
+
+latcomon.verbn6011a|ls.n6011|caed|c3pres
+latcomon.verbn6011b|ls.n6011|cecid|pftact
+latcomon.verbn6011c|ls.n6011|caes|pftpass
+
+
 latcomon.verbn5980a|ls.n5980|cad|c3pres
 latcomon.verbn5980b|ls.n5980|cecid|pftact
 latcomon.verbn5980c|ls.n5980|cas|pftpass
 
 
+
+
+
+
+latcommon.verbn12881|ls.n12881|del|conj2
 latcommon.verbn14747|ls.n14747|dorm|conj4
+
+latcomon.verbn15156a|ls.n15156|ed|c3pres
+latcomon.verbn15156b|ls.n15156|ed|pftact
+latcomon.verbn15156c|ls.n15156|es|pftpass
 
 latcommon.verbn15585a|ls.n15585|emarcesc|c3pres
 latcommon.verbn15585b|ls.n15585|emarcu|pftact
@@ -39,9 +54,32 @@ latcomon.verbn33634d|ls.n33634|pepig|pftact
 latcomon.verbn33634e|ls.n33634|peg|pftact
 latcomon.verbn33634f|ls.n33634|peg|pftpass
 
+
+latcomon.verbn34012a|ls.n34012|pasc|c3pres
+latcomon.verbn34012b|ls.n34012|pav|pftact
+latcomon.verbn34012c|ls.n34012|past|pftpass
+
+
+latcomon.verbn34842|ls.n34842|peregrin|conj1dep
+
+
+
 latcomon.verbn35002a|ls.n35002|perg|c3pres
 latcomon.verbn35002b|ls.n35002|perrex|pftact
 latcomon.verbn35002c|ls.n35002|perrect|pftpass
+
+latcomon.verbn40641|ls.n40641|record|conj1dep
+
+
+latcomon.verbn41583a|ls.n41583|revert|c3pres
+latcomon.verbn41583b|ls.n41583|revert|pftact
+latcomon.verbn41583c|ls.n41583|revers|pftpass
+
+
+
+
+
+
 
 
 latcomon.verbn41740a|ls.n41740|rid|c2pres
@@ -51,15 +89,15 @@ latcomon.verbn41740c|ls.n41740|ris|pftpass
 
 
 
-latcomon.verbn50683a|ls.n50683|vesc|conj3dep
-
-
 
 latcomon.verbn36573|ls.n36573|plant|conj1
 
 
 latcomon.verbn40911|ls.n40911|regn|conj1
 
+
+
+latcomon.verbn43701|ls.n43701|separ|conj1
 latcomon.verbn47035a|ls.n47035|surg|c3pres
 latcomon.verbn47035b|ls.n47035|surrex|pftact
 latcomon.verbn47035c|ls.n47035|surrect|pftpass
@@ -69,4 +107,6 @@ latcomon.verbn47035e|ls.n47035|subrect|pftpass
 
 latcomon.verbn48489a|ls.n48489|toll|c3pres
 
+
+latcomon.verbn50683a|ls.n50683|vesc|conj3dep
 latcomon.verbn50915|ls.n50915|vigil|conj1

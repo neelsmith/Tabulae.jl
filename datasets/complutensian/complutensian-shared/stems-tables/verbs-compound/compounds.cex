@@ -10,6 +10,10 @@ latcommon.compoundn1460|ls.n1460|af|ls.n17964|affero
 
 latcommon.compoundn5170|ls.n5170|bene|ls.n13804|benedico|
 
+
+
+latcommon.compoundn8135|ls.n8135|circum|ls.n6011|circumcido
+
 latcommon.compoundn9841|ls.n9841|con|ls.n6614|concipio
 latcommon.compoundn10709|ls.n10709|con|ls.n47035|consurgo
 
@@ -38,4 +42,9 @@ latcommon.compoundn34815|ls.n34815|per|ls.n14847|perduco
 latcommon.compoundn37409|ls.n37409|prae|ls.n6614|praecipio
 
 
- latcommon.compoundn48811|ls.n48811|trans|ls.n1605|transago
+latcommon.compoundn41009|ls.n41009|re|ls.n27858|remaneo
+
+latcommon.compoundn41378|ls.n41378|re|ls.|respicio
+
+
+latcommon.compoundn48811|ls.n48811|trans|ls.n1605|transago
