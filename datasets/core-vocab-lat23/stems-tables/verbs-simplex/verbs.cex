@@ -125,11 +125,15 @@ lat23morph.verbn50442b|ls.n50442|uen|pftact
 lat23morph.verbn50442c|ls.n50442|uent|pftpass
 lat23morph.verbn50445|ls.n50445|uen|conj1dep
 lat23morph.verbn50537|ls.n50537|uer|conj2dep
+
 lat23morph.verbn506543a|ls.n50654|uert|c3pres
+lat23morph.verbn506543a2|ls.n50654|uort|c3pres
 lat23morph.verbn50654b|ls.n50654|uert|pftact
+lat23morph.verbn50654b2|ls.n50654|uort|pftact
 lat23morph.verbn50654c|ls.n50654|uers|pftpass
-lat23morph.verbn50654a|ls.n50654|uert|c3pres
-lat23morph.verbn50654b|ls.n50654|uers|pftact
+lat23morph.verbn50654c2|ls.n50654|uors|pft
+
+
 lat23morph.verb50883a|ls.n50883|uid|c2pres
 lat23morph.verb50883b|ls.n50883|uid|pftact
 lat23morph.verb50883c|ls.n50883|uis|pftpass

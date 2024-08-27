@@ -1,0 +1,16 @@
+RuleUrn|InflectionClasses|Ending|Person|Number|Tense|Mood|Voice
+
+lat24.c4pftact_pft1|conj4|ivi|first|singular|perfect|indicative|active
+lat24.c4pftact_pft2|conj4|ivisti|second|singular|perfect|indicative|active
+lat24.c4pftact_pft3|conj4|ivit|third|singular|perfect|indicative|active
+lat24.c4pftact_pft4|conj4|ivimus|first|plural|perfect|indicative|active
+lat24.c4pftact_pft5|conj4|ivistis|second|plural|perfect|indicative|active
+lat24.c4pftact_pft6|conj4|iverunt|third|plural|perfect|indicative|active
+lat24.c4pftact_pft6b|conj4|ivere|third|plural|perfect|indicative|active
+
+lat24.c4pftact_pft7|conj4|iverim|first|singular|perfect|subjunctive|active
+lat24.c4pftact_pft8|conj4|iveris|second|singular|perfect|subjunctive|active
+lat24.c4pftact_pft9|conj4|iverit|third|singular|perfect|subjunctive|active
+lat24.c4pftact_pft10|conj4|iverimus|first|plural|perfect|subjunctive|active
+lat24.c4pftact_pft11|conj4|iveristis|second|plural|perfect|subjunctive|active
+lat24.c4pftact_pft12|conj4|iverint|third|plural|perfect|subjunctive|active

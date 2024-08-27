@@ -56,8 +56,8 @@ latcommon.compoundn32128|ls.n32128|oc|ls.n12030|occuro
 
 
 latcommon.compoundn34815|ls.n34815|per|ls.n14847|perduco
-latcommon.compoundn37409|ls.n37409|prae|ls.n6614|praecipio
-
+latcommon.compoundn37409a|ls.n37409|prae|ls.n6614|praecipio
+latcommon.compoundn37409b|ls.n37409|pre|ls.n6614|praecipio
 
 latcommon.compoundn38610|ls.n38610|pro|ls.n17964|profero
 
@@ -68,7 +68,9 @@ latcommon.compoundn40530|ls.n40530|re|ls.n7275|recedo
 latcommon.compound|ls.n40711|red|ls.n14599|reddo
 latcommon.compoundn41009|ls.n41009|re|ls.n27858|remaneo
 
-latcommon.compoundn41378|ls.n41378|re|ls.|respicio
+latcommon.compoundn41378|ls.n41378|re|ls.n44917|respicio
+
+latcommon.compoundn41583|ls.n41583|re|ls.n50654|reuerto
 
 
 latcommon.compoundn48811|ls.n48811|trans|ls.n1605|transago

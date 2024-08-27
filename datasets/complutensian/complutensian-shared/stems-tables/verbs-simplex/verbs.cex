@@ -1,6 +1,7 @@
 StemUrn|LexicalEntity|StemString|MorphologicalClass
 
-latcommon.verbn1140|ls.n1140|aedific|conj1
+latcommon.verbn1140a|ls.n1140|aedific|conj1
+latcommon.verbn1140b|ls.n1140|edific|conj1
 
 latcommon.verbn2197|ls.n2197|ambul|conj1
 
@@ -47,9 +48,12 @@ latcommon.verbn19424|ls.n19424|gener|conj1
 latcommon.verbn24670|ls.n24670|inund|conj1
 
 latcommon.verbn30406|ls.n30406|narr|conj1
+latcommon.verbn31472b|ls.n31472|nunci|conj1
 
 latcommon.verbn32676|ls.n32676|oper|conj1dep
 latcommon.verbn33030|ls.n33030|or|conj1
+latcommon.verbn33117|ls.n33117|oscul|conj1dep
+
 
 latcommon.verbn33634a|ls.n33634|pang|c1pres
 latcommon.verbn33634b|ls.n33634|panx|pftact
@@ -84,9 +88,6 @@ latcommon.verbn40913a|ls.n40913|rect|pftpass
 
 
 
-latcommon.verbn41583a|ls.n41583|revert|c3pres
-latcommon.verbn41583b|ls.n41583|revert|pftact
-latcommon.verbn41583c|ls.n41583|revers|pftpass
 
 
 latcommon.verbn41740a|ls.n41740|rid|c2pres
