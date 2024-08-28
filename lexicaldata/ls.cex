@@ -3,8 +3,10 @@ ls.n4|ab
 ls.n65|abeo
 ls.n105|ablacto
 ls.n254|absum
+ls.n270|abundo
 ls.n318|accedo
 ls.n357|accido
+ls.n395|accresco
 ls.n735|addo
 ls.n743|adduco
 ls.n981|adoro
@@ -19,7 +21,9 @@ ls.n2628|animo
 ls.n2636|animus
 ls.n2695|annuntio
 ls.n3120|appareo
+ls.n3191|apprehendo
 ls.n3873|ascendo
+ls.n4107|assumo
 ls.n4453|audio
 ls.n5170|benedico
 ls.n6614|capio
@@ -31,9 +35,11 @@ ls.n9841|concipio
 ls.n9872|concludo
 ls.n10709|consurgo
 ls.n10676|consul
+ls.n10029|condo
 ls.n11525|credo
 ls.n11872|cum
 ls.n12030|curro
+ls.n12074|custodio
 ls.n12371|deambulo
 ls.n12387|debeo
 ls.n12498|decipio
@@ -58,7 +64,9 @@ ls.n19424|genero
 ls.n19798|gradior
 ls.n20524|heredito
 ls.n21057|humilio
+ls.n21948|impleo
 ls.n22911|induco
+ls.n23008|ineo
 ls.n23394|ingredior
 ls.n24614|introduco
 ls.n24670|inundo
@@ -81,11 +89,14 @@ ls.n33117|osculor
 ls.n33634|pango
 ls.n34815|perduco
 ls.n34842|peregrinor
+ls.n35612|perterreo
 ls.n36573|planto
 ls.n37152|porto
 ls.n37409|praecipio
 ls.n38573|produco
 ls.n38610|profero
+ls.n37845|praepono
+ls.n38246|prehendo
 ls.n38910|propinquo
 ls.n39076|prospero
 ls.n40071|que
@@ -112,5 +123,6 @@ ls.n48510|tondeo
 ls.n48956|tremo
 ls.n49339|tu
 ls.n50271|ve
+ls.n50477|venumdo
 ls.n50683|vescor
 ls.n50915|vigilo

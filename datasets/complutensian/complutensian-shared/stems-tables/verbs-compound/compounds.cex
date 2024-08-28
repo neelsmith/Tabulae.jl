@@ -1,12 +1,25 @@
 Stem|LexicalEntity|Prefix|Simplex|Note
 
+
+
+
+
+
+
+
+
+
+
 latcommon.compoundn65|ls.n65|ab|ls.n15868|abeo
 
-
+latcommon.compoundn202|ls.n202|abscon|ls.n14599|abscondo
 
 
 latcommon.compoundn318|ls.n318|ac|ls.n7275|accedo
 latcommon.compoundn357|ls.n357|acc|ls.n5980|accido
+
+
+latcommon.compoundn395|ls.n395|ac|ls.n11570|accresco
 
 latcommon.compoundn735|ls.n735|ad|ls.n14599|addo
 
@@ -26,6 +39,7 @@ latcommon.compoundn3210|ls.n3210|ap|ls.n38910|appropinquo
 
 latcommon.compoundn3873|ls.n3873|a|ls.n42862|ascendo
 
+latcommon.compound|n4107ls.n4107|as|ls.n46587|assumo
 
 latcommon.compoundn5170|ls.n5170|bene|ls.n13804|benedico|
 
@@ -47,11 +61,19 @@ latcommon.compoundn6011|ls.n9810|con|ls.n6011|concido
 
 latcommon.compoundn9872|ls.n9872|con|ls.n8535|concludo
 
+latcommon.compoundn10029|ls.n10029|con|ls.n14599|condo
+
+latcommon.compoundn45294|ls.n45294|con|ls.n45294|constituo
+
 latcommon.compoundn10709|ls.n10709|con|ls.n47035|consurgo
 
 latcommon.compoundn12371|ls.n12371|de|ls.n2197|deambulo
 
-latcommon.compound|ls.n12498|de|ls.n6614|decipio
+latcommon.compoundn12498|ls.n12498|de|ls.n6614|decipio
+
+
+latcommon.compoundn13135|ls.n13135|de|ls.n31472|denuntio
+
 
 latcommon.compoundn13329|ls.n13329|de|ls.n42862|descendo
 
@@ -73,7 +95,11 @@ latcommon.compoundn16484|ls.n16484|e|ls.n50915|evigilo
 latcommon.compound|ls.n16562|ex|ls.n2055|exalto
 
 
+latcommon.compoundn21948|ls.n21948|im|ls.n16922|impleo
 latcommon.compoundn22911|ls.n22911|in|ls.n14847|induco
+
+latcommon.compoundn23008|ls.n23008|in|ls.n15868|ineo
+
 latcommon.compoundnn23394|ls.n23394|in|ls.n19798|ingredior
 latcommon.compoundn24445|ls.n24445|inter|ls.n41838|interrogo
 latcommon.compoundn24614|ls.n24614|intro|ls.n14847|introduco
@@ -102,9 +128,17 @@ latcommon.compoundn32128|ls.n32128|oc|ls.n12030|occuro
 
 latcommon.compoundn34805|ls.n34805|per|ls.n14599|perdo
 latcommon.compoundn34815|ls.n34815|per|ls.n14847|perduco
+
+latcommon.compoundn35612|ls.n35612|per|ls.n47901|perterreo
 latcommon.compoundn37409a|ls.n37409|prae|ls.n6614|praecipio
 latcommon.compoundn37409b|ls.n37409|pre|ls.n6614|praecipio
 
+latcommon.compoundn37845|ls.n37845|prae|ls.n37010|praepono
+
+
+latcommon.compoundnn3191|ls.n3191|ap|ls.n38246|apprehendo
+
+latcommon.compoundn38568|ls.n38568|pro|ls.n14599|prodo
 latcommon.compoundn38573|ls.n38573|pro|ls.n14847|produco
 
 
@@ -128,3 +162,6 @@ latcommon.compoundn41583|ls.n41583|re|ls.n50654|reuerto
 
 
 latcommon.compoundn48811|ls.n48811|trans|ls.n1605|transago
+
+latcommon.compoundn50477a|ls.n50477|venum|ls.n14599|venumdo
+latcommon.compoundn50477b|ls.n50477|venun|ls.n14599|venumdo

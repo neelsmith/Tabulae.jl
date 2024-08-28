@@ -2,6 +2,9 @@ StemUrn|LexicalEntity|StemString|MorphologicalClass
 
 
 latcommon.verbn105|ls.n105|ablact|conj1
+
+latcommon.verbn270|ls.n270|abund|conj1
+
 latcommon.verbn701|ls.n701|adaqu|conj1
 
 
@@ -37,6 +40,14 @@ latcommon.verbn7275a|ls.n7275|ced|c3pres
 latcommon.verbn7275b|ls.n7275|cess|pftact
 latcommon.verbn7275c|ls.n7275|cess|pftpass
 
+latcommon.verbn7554a|ls.n7554|cern|c3pres
+
+latcommon.verbc7554a|ls.n7554|cret|pftpass
+
+
+
+
+
 
 
 latcommon.verbn10557|ls.n10557|consol|conj1dep
@@ -46,6 +57,13 @@ latcommon.verbn10557|ls.n10557|consol|conj1dep
 latcommon.verbn11121a|ls.n11121|coqu|c3pres
 latcommon.verbn11121b|ls.n11121|cox|pftact
 latcommon.verbn11121c|ls.n11121|coct|pftpass
+
+
+
+latcommon.verbn11570a|ls.n11570|cresc|c3pres
+latcommon.verbn11570c|ls.n11570|cret|pftpass
+
+
 
 
 
@@ -108,6 +126,7 @@ latcommon.verbn28955a|ls.n28955|met|c3pres
 latcommon.verbn28955b|ls.n28955|messu|pftact
 latcommon.verbn28955c|ls.n28955|mess|pftpass
 
+latcommon.verbn29155|ls.n29155|ministr|conj1
 
 latcommon.verbn30406|ls.n30406|narr|conj1
 latcommon.verbn31472b|ls.n31472|nunci|conj1
@@ -128,9 +147,6 @@ latcommon.verbn33634e|ls.n33634|peg|pftact
 latcommon.verbn33634f|ls.n33634|peg|pftpass
 
 
-
-
-
 latcommon.verbn33828a|ls.n33828|parc|c3pres
 latcommon.verbn33828b|ls.n33828|peperc|pftact
 latcommon.verbn33828c|ls.n33828|pars|pftpass
@@ -141,18 +157,24 @@ latcommon.verbn34012b|ls.n34012|pav|pftact
 latcommon.verbn34012c|ls.n34012|past|pftpass
 
 latcommon.verbn34265|ls.n34265|pecc|conj1
-
 latcommon.verbn34842|ls.n34842|peregrin|conj1dep
 
 latcommon.verbn35002a|ls.n35002|perg|c3pres
 latcommon.verbn35002b|ls.n35002|perrex|pftact
 latcommon.verbn35002c|ls.n35002|perrect|pftpass
 
+latcommon.verbn36556a|ls.n36556|plang|c3pres
+latcommon.verbn36556b|ls.n36556|planx|pftact
+latcommon.verbn36556c|ls.n36556|planct|pftpass
+
 latcommon.verbn36573|ls.n36573|plant|conj1
-
+latcommon.verbn36652|ls.n36652|ple|conj2
 latcommon.verbn37152|ls.n37152|port|conj1
-
 latcommon.verbn37321|ls.n37321|pot|conj1
+
+latcommon.verbn38246a|ls.n38246|prehend|c3pres
+latcommon.verbn38246b|ls.n38246|prehend|pftact
+latcommon.verbn38246c|ls.n38246|prehens|pftpass
 
 
 latcommon.verbn38910|ls.n38910|propinqu|conj1
