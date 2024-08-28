@@ -17,6 +17,13 @@ latcommon.compoundn1460a|ls.n1460|af|ls.n17964|affero
 latcommon.compoundn1460b|ls.n1460|at|ls.n17964|affero
 latcommon.compoundn1460c|ls.n1460|ad|ls.n17964|affero
 
+latcommon.compound|ls.n2695|an|ls.n31472|annuntio
+
+
+
+latcommon.compoundn3210|ls.n3210|ap|ls.n38910|appropinquo
+
+
 latcommon.compoundn3873|ls.n3873|a|ls.n42862|ascendo
 
 
@@ -26,6 +33,9 @@ latcommon.compoundn5170|ls.n5170|bene|ls.n13804|benedico|
 
 latcommon.compoundn8135a|ls.n8135|circum|ls.n6011|circumcido
 latcommon.compoundn8135b|ls.n8135|circun|ls.n6011|circumcido
+
+
+latcommon.compoundn8166|ls.n8166|circu|ls.n15868|circumeo
 
 latcommon.compoundn8882|ls.n8882|co|ls.n15868|coeo
 

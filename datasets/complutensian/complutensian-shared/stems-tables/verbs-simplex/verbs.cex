@@ -37,6 +37,10 @@ latcommon.verbn7275a|ls.n7275|ced|c3pres
 latcommon.verbn7275b|ls.n7275|cess|pftact
 latcommon.verbn7275c|ls.n7275|cess|pftpass
 
+
+
+latcommon.verbn10557|ls.n10557|consol|conj1dep
+
 latcommon.verbn12550|ls.n12550|decortic|conj1
 
 latcommon.verbn12881|ls.n12881|del|conj2
@@ -53,10 +57,10 @@ latcommon.verbn15661a|ls.n15661|em|c3pres
 latcommon.verbn15661b|ls.n15661|em|pftact
 latcommon.verbn15661c|ls.n15661|empt|pftact
 
+latcommon.verbn17239|ls.n17239|expect|conj1
+
+
 latcommon.verbn18034|ls.n18034|festin|conj1
-
-
-
 
 
 latcommon.verbn18483a|ls.n18483|fod|c3pres
@@ -129,8 +133,14 @@ latcommon.verbn37152|ls.n37152|port|conj1
 latcommon.verbn37321|ls.n37321|pot|conj1
 
 
+latcommon.verbn38910|ls.n38910|propinqu|conj1
+
 
 latcommon.verbn39076|ls.n39076|prosper|conj1
+
+latcommon.verbn41284a|ls.n41284|quiesc|c3pres
+latcommon.verbn41284c|ls.n41284|quiet|pftpass
+
 
 latcommon.verbn40641|ls.n40641|record|conj1dep
 latcommon.verbn40911|ls.n40911|regn|conj1
