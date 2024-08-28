@@ -2,12 +2,18 @@ Stem|LexicalEntity|Prefix|Simplex|Note
 
 latcommon.compoundn65|ls.n65|ab|ls.n15868|abeo
 
+
+
+
 latcommon.compoundn318|ls.n318|ac|ls.n7275|accedo
 latcommon.compoundn357|ls.n357|acc|ls.n5980|accido
 
 latcommon.compoundn743|ls.n743|ad|ls.n14847|adduco
 latcommon.compoundn981|ls.n981|ad|ls.n33030|adoro
-latcommon.compoundn1460|ls.n1460|af|ls.n17964|affero
+latcommon.compoundn1460a|ls.n1460|af|ls.n17964|affero
+latcommon.compoundn1460b|ls.n1460|at|ls.n17964|affero
+latcommon.compoundn1460c|ls.n1460|ad|ls.n17964|affero
+
 latcommon.compoundn3873|ls.n3873|a|ls.n42862|ascendo
 
 
@@ -27,12 +33,19 @@ latcommon.compoundn10709|ls.n10709|con|ls.n47035|consurgo
 latcommon.compoundn13329|ls.n13329|de|ls.n42862|descendo
 
 
+latcommon.compoundn15174|ls.n15174|e|ls.n14847|educo
+
 
 latcommon.compoundn23394|ls.n15329|e|ls.n19798|egredior
+latcommon.compoundn15658|ls.n15658|e|ls.n29328|emitto
 
 latcommon.compoundn16132|ls.n16132|e|ls.n40913|erigo
 
 latcommon.compoundn16484|ls.n16484|e|ls.n50915|evigilo
+
+
+
+
 
 latcommon.compoundnn23394|ls.n23394|in|ls.n19798|ingredior
 latcommon.compoundn24445|ls.n24445|inter|ls.n41838|interrogo
@@ -55,6 +68,10 @@ latcommon.compoundn32128|ls.n32128|oc|ls.n12030|occuro
 
 
 
+
+
+
+latcommon.compoundn34805|ls.n34805|per|ls.n14599|perdo
 latcommon.compoundn34815|ls.n34815|per|ls.n14847|perduco
 latcommon.compoundn37409a|ls.n37409|prae|ls.n6614|praecipio
 latcommon.compoundn37409b|ls.n37409|pre|ls.n6614|praecipio
