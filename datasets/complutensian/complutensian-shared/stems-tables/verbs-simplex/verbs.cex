@@ -128,6 +128,14 @@ latcommon.verbn33634e|ls.n33634|peg|pftact
 latcommon.verbn33634f|ls.n33634|peg|pftpass
 
 
+
+
+
+latcommon.verbn33828a|ls.n33828|parc|c3pres
+latcommon.verbn33828b|ls.n33828|peperc|pftact
+latcommon.verbn33828c|ls.n33828|pars|pftpass
+
+
 latcommon.verbn34012a|ls.n34012|pasc|c3pres
 latcommon.verbn34012b|ls.n34012|pav|pftact
 latcommon.verbn34012c|ls.n34012|past|pftpass
@@ -211,5 +219,3 @@ latcommon.verbn48489a|ls.n48489|toll|c3pres
 
 latcommon.verbn48956a|ls.n48956|trem|c3pres
 latcommon.verbn48956b|ls.n48956|tremu|pftact
-
-
