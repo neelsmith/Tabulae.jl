@@ -41,6 +41,20 @@ latcommon.verbn7275c|ls.n7275|cess|pftpass
 
 latcommon.verbn10557|ls.n10557|consol|conj1dep
 
+
+
+latcommon.verbn11121a|ls.n11121|coqu|c3pres
+latcommon.verbn11121b|ls.n11121|cox|pftact
+latcommon.verbn11121c|ls.n11121|coct|pftpass
+
+
+
+latcommon.verbn12074|ls.n12074|custod|conj4
+
+
+
+latcommon.verbn12519|ls.n12519|declin|conj1
+
 latcommon.verbn12550|ls.n12550|decortic|conj1
 
 latcommon.verbn12881|ls.n12881|del|conj2
@@ -199,5 +213,3 @@ latcommon.verbn48956a|ls.n48956|trem|c3pres
 latcommon.verbn48956b|ls.n48956|tremu|pftact
 
 
-latcommon.verbn50683a|ls.n50683|vesc|conj3dep
-latcommon.verbn50915|ls.n50915|vigil|conj1
