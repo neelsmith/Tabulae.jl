@@ -1,10 +1,15 @@
 StemUrn|LexicalEntity|StemString|MorphologicalClass
 
+
+latcommon.verbn105|ls.n105|ablact|conj1
+latcommon.verbn701|ls.n701|adaqu|conj1
+
+
 latcommon.verbn1140a|ls.n1140|aedific|conj1
 latcommon.verbn1140b|ls.n1140|edific|conj1
 
 latcommon.verbnn1320a|ls.n1320|aequ|conj1
-
+latcommon.verbnn2055|ls.n2055|alt|conj1
 
 latcommon.verbn2197|ls.n2197|ambul|conj1
 
@@ -32,6 +37,8 @@ latcommon.verbn7275a|ls.n7275|ced|c3pres
 latcommon.verbn7275b|ls.n7275|cess|pftact
 latcommon.verbn7275c|ls.n7275|cess|pftpass
 
+latcommon.verbn12550|ls.n12550|decortic|conj1
+
 latcommon.verbn12881|ls.n12881|del|conj2
 latcommon.verbn14747|ls.n14747|dorm|conj4
 
@@ -48,14 +55,36 @@ latcommon.verbn15661c|ls.n15661|empt|pftact
 
 latcommon.verbn18034|ls.n18034|festin|conj1
 
+
+
+
+
+latcommon.verbn18483a|ls.n18483|fod|c3pres
+latcommon.verbn18483b|ls.n18483|fod|pftact
+latcommon.verbn18483c|ls.n18483|foss|pftpass
+
+
+latcommon.verbn470354|ls.n47035|friger|conj1
+
+latcommon.verbn19123|ls.n19123|fur|conj1dep
+
+
 latcommon.verbn19424|ls.n19424|gener|conj1
 
 latcommon.verbn20524|ls.n20524|heredit|conj1
 
+latcommon.verbn21057|ls.n21057|humili|conj1
+
+
+latcommon.verbn2939a|ls.n22939|indu|c3pres
+latcommon.verbn22939b|ls.n22939|indu|pftact
+latcommon.verbn22939c|ls.n22939|indut|pftpass
 
 latcommon.verbn24670|ls.n24670|inund|conj1
 
+latcommon.verbn27197|ls.n27197|lumin|conj1
 
+latcommon.verbn27877|ls.n27877|manic|conj1
 
 latcommon.verbn28955a|ls.n28955|met|c3pres
 latcommon.verbn28955b|ls.n28955|messu|pftact
@@ -97,6 +126,12 @@ latcommon.verbn36573|ls.n36573|plant|conj1
 
 latcommon.verbn37152|ls.n37152|port|conj1
 
+latcommon.verbn37321|ls.n37321|pot|conj1
+
+
+
+latcommon.verbn39076|ls.n39076|prosper|conj1
+
 latcommon.verbn40641|ls.n40641|record|conj1dep
 latcommon.verbn40911|ls.n40911|regn|conj1
 
@@ -133,12 +168,20 @@ latcommon.verbn47035c|ls.n47035|surrect|pftpass
 latcommon.verbn47035d|ls.n47035|subrex|pftact
 latcommon.verbn47035e|ls.n47035|subrect|pftpass
 
+
+latcommon.verbn47977|ls.n47977|testific|conj1dep
+
+
+
 latcommon.verbn48510a|ls.n48510|tond|conj2
 latcommon.verbn48510b|ls.n48510|totond|pftact
 latcommon.verbn48510c|ls.n48510|tons|pftpass
 
 
 latcommon.verbn48489a|ls.n48489|toll|c3pres
+
+latcommon.verbn48956a|ls.n48956|trem|c3pres
+latcommon.verbn48956b|ls.n48956|tremu|pftact
 
 
 latcommon.verbn50683a|ls.n50683|vesc|conj3dep

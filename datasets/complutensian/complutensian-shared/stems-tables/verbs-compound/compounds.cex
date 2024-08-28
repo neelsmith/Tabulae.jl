@@ -8,6 +8,9 @@ latcommon.compoundn65|ls.n65|ab|ls.n15868|abeo
 latcommon.compoundn318|ls.n318|ac|ls.n7275|accedo
 latcommon.compoundn357|ls.n357|acc|ls.n5980|accido
 
+latcommon.compoundn735|ls.n735|ad|ls.n14599|addo
+
+
 latcommon.compoundn743|ls.n743|ad|ls.n14847|adduco
 latcommon.compoundn981|ls.n981|ad|ls.n33030|adoro
 latcommon.compoundn1460a|ls.n1460|af|ls.n17964|affero
@@ -21,37 +24,45 @@ latcommon.compoundn5170|ls.n5170|bene|ls.n13804|benedico|
 
 
 
-latcommon.compoundn8135|ls.n8135|circum|ls.n6011|circumcido
+latcommon.compoundn8135a|ls.n8135|circum|ls.n6011|circumcido
+latcommon.compoundn8135b|ls.n8135|circun|ls.n6011|circumcido
+
+latcommon.compoundn8882|ls.n8882|co|ls.n15868|coeo
+
 
 latcommon.compoundn9841|ls.n9841|con|ls.n6614|concipio
 
 
 latcommon.compoundn6011|ls.n9810|con|ls.n6011|concido
 
+latcommon.compoundn9872|ls.n9872|con|ls.n8535|concludo
+
 latcommon.compoundn10709|ls.n10709|con|ls.n47035|consurgo
+
+latcommon.compoundn12371|ls.n12371|de|ls.n2197|deambulo
+
+latcommon.compound|ls.n12498|de|ls.n6614|decipio
 
 latcommon.compoundn13329|ls.n13329|de|ls.n42862|descendo
 
+latcommon.compoundn13984|ls.n13984|di|ls.n26186|diligo
+
+latcommon.compoundn14145|ls.n14145|dis|ls.n7275|discedo
 
 latcommon.compoundn15174|ls.n15174|e|ls.n14847|educo
-
-
+latcommon.compoundn15481|ls.n15481|e|ls.n26186|eligo
 latcommon.compoundn23394|ls.n15329|e|ls.n19798|egredior
 latcommon.compoundn15658|ls.n15658|e|ls.n29328|emitto
-
 latcommon.compoundn16132|ls.n16132|e|ls.n40913|erigo
-
 latcommon.compoundn16484|ls.n16484|e|ls.n50915|evigilo
 
+latcommon.compound|ls.n16562|ex|ls.n2055|exalto
 
 
-
-
+latcommon.compoundn22911|ls.n22911|in|ls.n14847|induco
 latcommon.compoundnn23394|ls.n23394|in|ls.n19798|ingredior
 latcommon.compoundn24445|ls.n24445|inter|ls.n41838|interrogo
 latcommon.compoundn24614|ls.n24614|intro|ls.n14847|introduco
-
-
 latcommon.compoundn24808|ls.n24808|in|ls.n51266|invoco
 
 
@@ -59,7 +70,7 @@ latcommon.compoundn25021|ls.n25021|ir|ls.n42026|irruo
 
 
 latcommon.compoundn27699|ls.n27699|male|ls.n13804|maledico|
-
+latcommon.compoundn27707|ls.n27707|male|ls.n17516|malefacio|
 
 latcommon.compoundn31613|ls.n31613|ob|ls.n15868|obeo
 latcommon.compoundn32374|ls.n32374|ob|ls.n17964|obfero
@@ -83,9 +94,14 @@ latcommon.compoundn40530|ls.n40530|re|ls.n7275|recedo
 
 
 latcommon.compound|ls.n40711|red|ls.n14599|reddo
+
+latcommon.compoundn40848|ls.n40848|re|ls.n18796|refrigero
+
 latcommon.compoundn41009|ls.n41009|re|ls.n27858|remaneo
 
 latcommon.compoundn41378|ls.n41378|re|ls.n44917|respicio
+
+latcommon.compoundn41449|ls.n41449|re|ls.n47035|resurgo
 
 latcommon.compoundn41583|ls.n41583|re|ls.n50654|reuerto
 

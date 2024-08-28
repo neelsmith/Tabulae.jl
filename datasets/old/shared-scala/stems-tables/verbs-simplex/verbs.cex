@@ -68,9 +68,7 @@ latcommon.verbn7375c|ls.n7375|cens|pftpass
 latcommon.verbn7581|ls.n7581|cogit|conj1
 latcommon.verbn7590|ls.n7590|cert|conj1
 latcommon.verbn8443|ls.n8443|cit|conj1
-latcommon.verbn8535a|ls.n8535|claud|c3pres
-latcommon.verbn8535b|ls.n8535|claus|pftact
-latcommon.verbn8535c|ls.n8535|claus|pftpass
+
 latcommon.verbn8883|ls.n8883|coep|conj3io
 latcommon.verbn8939a|ls.n8939|cog|c3pres
 latcommon.verbn8939b|ls.n8939|coeg|pftact
@@ -263,9 +261,7 @@ latcommon.verbn25504|ls.n25504|labor|conj1
 latcommon.verbn25592|ls.n25592|lact|conj1
 latcommon.verbn25650|ls.n25650|laet|conj1
 latcommon.verbn26064|ls.n26064|laud|conj1
-latcommon.verbn26186a|ls.n26186|leg|c3pres
-latcommon.verbn26186b|ls.n26186|leg|pftact
-latcommon.verbn26186c|ls.n26186|lect|pftpass
+
 latcommon.verbn26479|ls.n26479|liber|conj1
 latcommon.verbn26488|ls.n26488|lib|conj2
 latcommon.verbn26721a|ls.n26721|linqu|c3pres
