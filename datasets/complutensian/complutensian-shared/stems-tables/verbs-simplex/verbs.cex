@@ -172,6 +172,11 @@ latcommon.verbn44917a|ls.n44917|spec|c3iopres
 latcommon.verbn44917b|ls.n44917|spex|pftact
 latcommon.verbn44917c|ls.n44917|spect|pftpass
 
+
+latcommon.verbn45638a|ls.n45638|stru|c3pres
+latcommon.verbn45638b|ls.n45638|strux|pftact
+latcommon.verbn45638c|ls.n45638|struct|pftpass
+
 latcommon.verbn47035a|ls.n47035|surg|c3pres
 latcommon.verbn47035b|ls.n47035|surrex|pftact
 latcommon.verbn47035c|ls.n47035|surrect|pftpass

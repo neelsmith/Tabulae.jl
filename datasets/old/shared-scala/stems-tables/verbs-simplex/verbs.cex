@@ -543,9 +543,6 @@ latcommon.verbn45457a|ls.n45457|st|c1pres
 latcommon.verbn45457b|ls.n45457|stet|pftact
 latcommon.verbn45457c|ls.n45457|stat|pftpass
 latcommon.verbn45502|ls.n45502|strament|conj1dep
-latcommon.verbn45638a|ls.n45638|stru|c3pres
-latcommon.verbn45638b|ls.n45638|strux|pftact
-latcommon.verbn45638c|ls.n45638|struct|pftpass
 latcommon.verbn45877a|ls.n45877|subig|c3pres
 latcommon.verbn45877b|ls.n45877|subeg|pftact
 latcommon.verbn45877c|ls.n45877|subact|pftpass
