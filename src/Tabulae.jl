@@ -74,6 +74,7 @@ export is_verb
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export LMFPronoun, lmfPronoun, pronounformcodes, pronounforms
 export LMFAdjective, lmfAdjective
+export LMFAdverb, lmfAdverb
 export latinForm
 
 export TabulaeRule, inflectionclass, ending, id
@@ -123,6 +124,7 @@ include("properties/uninflected.jl")
 include("citable_forms/noun.jl")
 include("citable_forms/pronoun.jl")
 include("citable_forms/adjective.jl")
+include("citable_forms/adverb.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
 include("citable_forms/gerundive.jl")
