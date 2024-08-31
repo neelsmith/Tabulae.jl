@@ -67,10 +67,13 @@ export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFGerundive, lmfGerundive
 export LMFParticiple, lmfParticiple
+export LMFSupine, lmfSupine
 export LMFUninflected, lmfUninflected
+export is_verb
 
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export LMFPronoun, lmfPronoun, pronounformcodes, pronounforms
+export LMFAdjective, lmfAdjective
 export latinForm
 
 export TabulaeRule, inflectionclass, ending, id
@@ -119,11 +122,13 @@ include("properties/uninflected.jl")
 
 include("citable_forms/noun.jl")
 include("citable_forms/pronoun.jl")
+include("citable_forms/adjective.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
 include("citable_forms/gerundive.jl")
 include("citable_forms/gerund.jl")
 include("citable_forms/participle.jl")
+include("citable_forms/supine.jl")
 include("citable_forms/uninflected.jl")
 
 include("citable_stems/stems.jl")

@@ -18,6 +18,6 @@
     @test lmpGender(gdv) == lmpGender("masculine")
     @test lmpCase(gdv) == lmpCase("accusative")
     @test lmpNumber(gdv) == lmpNumber("singular")
-
+    @test is_verb(gdv)
 end
 

@@ -11,7 +11,7 @@
     frm = FormUrn("forms.4001010000")
     @test lmfInfinitive(frm) == infinitive
     @test Tabulae.formurn(infinitive) == frm
-
+    @test is_verb(infinitive)
 end
 
 @testset "Test citable interface on infinitives" begin
