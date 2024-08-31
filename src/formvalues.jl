@@ -36,3 +36,14 @@ const poslabels = Dict(
 )
 
 
+"""True if form is a verbal form.
+$(SIGNATURES)
+"""
+function is_verb(frm::T) where {T <: LatinMorphologicalForm}
+    frm isa LMFFiniteVerb ||
+	frm isa LMFInfinitive ||
+	frm isa LMFParticiple ||
+    frm isa LMFGerund ||
+    frm isa LMFGerundive  ||
+    frm isa LMFSupine
+end

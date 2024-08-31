@@ -19,3 +19,13 @@ end
     @test lmpUninflectedType(lform) == conj
     @test LMFUninflected(conj) == lform
 end
+
+#=
+1 => "conjunction",
+    2 => "preposition",
+    3 => "adverb",
+    4 => "number",
+    5 => "interjection", 
+    6 => "particle",
+    7 => "foreign
+=#

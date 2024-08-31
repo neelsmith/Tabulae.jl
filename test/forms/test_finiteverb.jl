@@ -13,6 +13,7 @@
     fromcode = lmfFiniteVerb("3314110000")
     frm = FormUrn("forms.3314110000")
     @test Tabulae.formurn(fromcode) == frm
+    @test is_verb(verb)
 end
 
 @testset "Test CITE interfaces on finite verb forms" begin

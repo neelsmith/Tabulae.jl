@@ -20,6 +20,8 @@ import CitableParserBuilder: lexemeurn, lexeme
 import CitableParserBuilder: stringParser
 import CitableParserBuilder: analyses
 import CitableParserBuilder: formurn
+import CitableParserBuilder: ruleurn
+import CitableParserBuilder: stemurn
 
 
 
@@ -65,10 +67,14 @@ export LMFFiniteVerb, lmfFiniteVerb, perfectsystem, finiteverbforms
 export LMFInfinitive, lmfInfinitive
 export LMFGerundive, lmfGerundive
 export LMFParticiple, lmfParticiple
+export LMFSupine, lmfSupine
 export LMFUninflected, lmfUninflected
+export is_verb
 
 export LMFNoun, lmfNoun, nounformcodes, nounforms
 export LMFPronoun, lmfPronoun, pronounformcodes, pronounforms
+export LMFAdjective, lmfAdjective
+export LMFAdverb, lmfAdverb
 export latinForm
 
 export TabulaeRule, inflectionclass, ending, id
@@ -95,6 +101,7 @@ export orthography
 
 export md_declension
 export md_tenseconjugation, md_verb_conjugation
+export md_tenseconjugation_deponent, md_deponent_conjugation
 
 
 
@@ -116,11 +123,14 @@ include("properties/uninflected.jl")
 
 include("citable_forms/noun.jl")
 include("citable_forms/pronoun.jl")
+include("citable_forms/adjective.jl")
+include("citable_forms/adverb.jl")
 include("citable_forms/finiteverb.jl")
 include("citable_forms/infinitive.jl")
 include("citable_forms/gerundive.jl")
 include("citable_forms/gerund.jl")
 include("citable_forms/participle.jl")
+include("citable_forms/supine.jl")
 include("citable_forms/uninflected.jl")
 
 include("citable_stems/stems.jl")
@@ -159,6 +169,7 @@ include("parser/stringparser.jl")
 
 include("for-apps/mddeclension.jl")
 include("for-apps/verbparadigms.jl")
+include("for-apps/deponentverbs.jl")
 
 include("utils/coredata.jl")
 

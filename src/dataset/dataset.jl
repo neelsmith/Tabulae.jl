@@ -12,10 +12,10 @@ struct Dataset
     orthography::LatinOrthographicSystem
     function Dataset(dirlist; ortho::T = latin25()) where {T <: LatinOrthographicSystem}
         if isempty(rulesarray(dirlist))
-            throw(ArgumentError("No inflectional rules found."))
+            throw(ArgumentError("No inflectional rules found in dirlist $(dirlist)."))
 
         elseif isempty(stemsarray(dirlist))
-            throw(ArgumentError("No lexicon of stems found."))
+            throw(ArgumentError("No lexicon of stems found in dirlist $(dirlist)."))
         
         # elseif ## if no urn registry ...
         # need to enforce referential integrity of data

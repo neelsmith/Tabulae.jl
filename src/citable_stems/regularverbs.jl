@@ -97,7 +97,7 @@ function fromcex(traitvalue::TabulaeVerbStemCex, cexsrc::AbstractString, T;
     delimiter = "|", configuration = nothing, strict = true)
     parts = split(cexsrc, delimiter)
     if length(parts) < 4
-        throw(DomainError("Too few parts in $(delimited)"))
+        throw(DomainError("Too few parts in $(parts)"))
     else
         stemid = StemUrn(parts[1])
         lexid = LexemeUrn(parts[2])

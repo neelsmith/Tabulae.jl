@@ -19,7 +19,13 @@ end
 $(SIGNATURES)
 """
 function lmpNumber(s::AbstractString)
-    s in keys(numbercodedict) ? LMPNumber(numbercodedict[s]) : DomainError(string(s, " is not a valid value for number.")) 
+    if s in keys(numbercodedict) 
+        LMPNumber(numbercodedict[s]) 
+    else
+        msg = string(s, " is not a valid value for number.")
+        @warn(msg)
+        DomainError(msg) 
+    end
 end
 
 """Create `LMPPerson` from integer code.

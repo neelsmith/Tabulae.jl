@@ -125,11 +125,14 @@ lat25morph.verbn50442b|ls.n50442|ven|pftact
 lat25morph.verbn50442c|ls.n50442|vent|pftpass
 lat25morph.verbn50445|ls.n50445|ven|conj1dep
 lat25morph.verbn50537|ls.n50537|ver|conj2dep
+
 lat25morph.verbn506543a|ls.n50654|vert|c3pres
+lat25morph.verbn506543a2|ls.n50654|vort|c3pres
 lat25morph.verbn50654b|ls.n50654|vert|pftact
+lat25morph.verbn50654b2|ls.n50654|vort|pftact
 lat25morph.verbn50654c|ls.n50654|vers|pftpass
-lat25morph.verbn50654a|ls.n50654|vert|c3pres
-lat25morph.verbn50654b|ls.n50654|vers|pftact
+lat25morph.verbn50654c2|ls.n50654|vors|pftpass
+
 lat25morph.verb50883a|ls.n50883|vid|c2pres
 lat25morph.verb50883b|ls.n50883|vid|pftact
 lat25morph.verb50883c|ls.n50883|vis|pftpass
@@ -149,7 +152,7 @@ lat25morph.verbn51238a|ls.n51238|viv|c3pres
 lat25morph.verbn51238b|ls.n51238|vix|pftact
 lat25morph.verbn51238c|ls.n51238|vict|pftpass
 lat25morph.verbn51261|ls.n51261|vocifer|conj1
-lat25morph.verbn51266|ls.n51266|vocative|conj1
+lat25morph.verbn51266|ls.n51266|voc|conj1
 lat25morph.verbn51299|ls.n51299|vol|conj1
 lat25morph.verbn51405a|ls.n51405|vov|c2pres
 lat25morph.verbn51405b|ls.n51405|vov|pftact

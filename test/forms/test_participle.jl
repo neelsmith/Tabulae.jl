@@ -1,7 +1,9 @@
 @testset "Test constructors and accessors on participle" begin
     ptcpl = LMFParticiple(LMPGender(3), LMPCase(1), LMPNumber(1), LMPTense(4),  LMPVoice(1))
     # Add tests here!
-    
+
+
+    @test is_verb(ptcpl) 
 end
 
 @testset "Test CITE interface on participle" begin
