@@ -100,5 +100,10 @@ end
 
 function label(lemma::LexemeUrn, dict = nothing)
     lemmadict = isnothing(dict) ? lexlemma_dict_remote() : dict
-    string(lemma, " (", lemmadict[string(lemma)], ")")
+    keystring = string(lemma)
+    if haskey(lemmadict, string(keystring))
+        string(lemma, " (", lemmadict[string(lemma)], ")")
+    else
+        keystring * " (?)"
+    end
 end
