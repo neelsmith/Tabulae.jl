@@ -7,3 +7,4 @@ _freeze/
 _site/
 *_files/
 scratch/
+.DS_Store
