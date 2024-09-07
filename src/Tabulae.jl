@@ -99,6 +99,10 @@ export TabulaeStringParser, tabulaeStringParser, tsp
 export TabulaeUninflectedStem
 export orthography
 
+export lsid_dict, lexid_dict
+export lslemma_dict, lexlemma_dict
+
+
 export md_declension
 export md_tenseconjugation, md_verb_conjugation
 export md_tenseconjugation_deponent, md_deponent_conjugation
@@ -172,5 +176,6 @@ include("for-apps/verbparadigms.jl")
 include("for-apps/deponentverbs.jl")
 
 include("utils/coredata.jl")
+include("utils/lexemelabels.jl")
 
 end # module
