@@ -6,12 +6,14 @@ ls.n254|absum
 ls.n270|abundo
 ls.n318|accedo
 ls.n357|accido
+ls.n363|accipio
 ls.n395|accresco
 ls.n735|addo
 ls.n743|adduco
 ls.n981|adoro
 ls.n1140|aedifico
 ls.n1460|affero
+ls.n1605|ago
 ls.n1626|agricola
 ls.n1659|aio
 ls.n2197|ambulo
@@ -41,6 +43,7 @@ ls.n10676|consul
 ls.n10029|condo
 ls.n11525|credo
 ls.n11543|creo
+ls.n11570|cresco
 ls.n11872|cum
 ls.n12030|curro
 ls.n12074|custodio
@@ -84,6 +87,7 @@ ls.n19798|gradior
 ls.n20077|habeo
 ls.n20524|heredito
 ls.n21057|humilio
+ls.n21376|igitur
 ls.n21574|illumino
 ls.n21948|impleo
 ls.n22911|induco
@@ -153,6 +157,7 @@ ls.n48510|tondeo
 ls.n48956|tremo
 ls.n49339|tu
 ls.n50271|ve
+ls.n50442|venio
 ls.n50477|venumdo
 ls.n50683|vescor
 ls.n50883|video
