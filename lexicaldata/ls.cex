@@ -26,12 +26,13 @@ ls.n2628|animo
 ls.n2636|animus
 ls.n2695|annuntio
 ls.n3120|appareo
-ls.n3134|appello2
+ls.n3134|appello
 ls.n3191|apprehendo
 ls.n3873|ascendo
 ls.n4107|assumo
 ls.n4453|audio
 ls.n5170|benedico
+ls.n5275|bibo
 ls.n6614|capio
 ls.n7021|casus
 ls.n7554|cerno
@@ -149,6 +150,7 @@ ls.n24039|insufflo
 ls.n24808|invoco
 ls.n25029|is
 ls.n26111|lavo
+ls.n26988|loquor
 ls.n27045|luceo
 ls.n27197|lumino
 ls.n27699|maledico
@@ -207,6 +209,7 @@ ls.n43681|sentio
 ls.n43701|separo
 ls.n44913|species
 ls.n44917|specio
+ls.n45457|sto
 ls.n46529|sum
 ls.n47035|surgo
 ls.n47977|testificor
