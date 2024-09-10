@@ -73,9 +73,9 @@ function lexlemma_dict(repodir = pwd())
     iddict
 end
 
-function lexlemma_dict_remote()
+function lexlemma_dict_remote(branch = "dev")
     iddict = Dict()
-    url1 = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/main/lexicaldata/ls.cex"
+    url1 = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/$(branch)/lexicaldata/ls.cex"
     f1 = Downloads.download(url1)
     idpairs = filter(ln -> !isempty(ln), readlines(f1))
     rm(f1)
@@ -85,7 +85,7 @@ function lexlemma_dict_remote()
         iddict[pieces[1]]= pieces[2]
     end
 
-    url2 = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/main/lexicaldata/lsx.cex"
+    url2 = "https://raw.githubusercontent.com/neelsmith/Tabulae.jl/dev/lexicaldata/lsx.cex"
     f2 = Downloads.download(url2)
     idpairs = filter(ln -> !isempty(ln), readlines(f2))
     rm(f2)

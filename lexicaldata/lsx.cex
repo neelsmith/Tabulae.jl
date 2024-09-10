@@ -54,7 +54,6 @@ lsx.n51|abditus
 lsx.n52|abdo
 lsx.n53|Abdolonymus
 lsx.n54|abdomen
-lsx.n55|abduco
 lsx.n56|abductio
 lsx.n57|abductus
 lsx.n58|Abeatae
@@ -85,7 +84,6 @@ lsx.n83|abiga
 lsx.n84|abigeator
 lsx.n85|abigeatus
 lsx.n86|abigeus
-lsx.n87|abigo
 lsx.n88|Abii
 lsx.n89|abitio
 lsx.n90|abito
@@ -199,7 +197,6 @@ lsx.n198|abscissus
 lsx.n199|abscisus
 lsx.n200|abscondite
 lsx.n201|absconditor
-lsx.n202|abscondo
 lsx.n203|absegmen
 lsx.n204|absens
 lsx.n205|absentia
@@ -356,7 +353,6 @@ lsx.n359|accinctus
 lsx.n360|accingo
 lsx.n361|accino
 lsx.n362|accio
-lsx.n363|accipio
 lsx.n364|accipenser
 lsx.n365|accipiter
 lsx.n366|accipitrina
@@ -420,7 +416,6 @@ lsx.n424|accusatorie
 lsx.n425|accusatorius
 lsx.n426|accusatrix
 lsx.n427|accusito
-lsx.n428|accuso
 lsx.n429|Ace
 lsx.n430|acedior
 lsx.n431|acentetus
@@ -683,7 +678,6 @@ lsx.n687|adamas
 lsx.n688|adamator
 lsx.n689|adambulo
 lsx.n690|Adamiani
-lsx.n691|adamo
 lsx.n692|adampliatus
 lsx.n693|adamplio
 lsx.n694|adamussim
@@ -693,7 +687,6 @@ lsx.n697|adapertio
 lsx.n698|adapertus
 lsx.n699|adaptatus
 lsx.n700|adapto
-lsx.n701|adaquo
 lsx.n702|adaquor
 lsx.n703|adarca
 lsx.n704|adaresco
@@ -787,7 +780,6 @@ lsx.n793|adiantum
 lsx.n794|adiaphoros
 lsx.n795|Adiatorix
 lsx.n796|adibilis
-lsx.n797|adicio
 lsx.n798|adigo
 lsx.n799|adimo
 lsx.n800|adimpleo
@@ -892,7 +884,6 @@ lsx.n898|admissus1
 lsx.n899|admissus2
 lsx.n900|admistio
 lsx.n901|admistus
-lsx.n902|admitto
 lsx.n903|admixtio
 lsx.n904|admixtus1
 lsx.n905|admixtus2
@@ -940,7 +931,6 @@ lsx.n946|Adolenda
 lsx.n947|adoleo1
 lsx.n948|adoleo2
 lsx.n949|adolesc
-lsx.n950|adolesco
 lsx.n951|adominatio
 lsx.n952|Adoneus1
 lsx.n953|Adoneus2
@@ -999,7 +989,6 @@ lsx.n1006|adse
 lsx.n1007|adsp
 lsx.n1008|adst
 lsx.n1009|adsu
-lsx.n1010|adsum
 lsx.n1011|adt
 lsx.n1012|Aduatuca
 lsx.n1013|Aduatuci
@@ -1094,7 +1083,6 @@ lsx.n1101|advocatio
 lsx.n1102|advocator
 lsx.n1103|advocatus1
 lsx.n1104|advocatus2
-lsx.n1105|advoco
 lsx.n1106|advolatus
 lsx.n1107|advolitans
 lsx.n1108|advolo
@@ -1590,9 +1578,7 @@ lsx.n1599|agnomentum
 lsx.n1600|agnominatio
 lsx.n1601|agnos
 lsx.n1602|agnoscibilis
-lsx.n1603|agnosco
 lsx.n1604|agnus
-lsx.n1605|ago
 lsx.n1606|Agoce
 lsx.n1607|agogae
 lsx.n1608|agolum
@@ -1933,7 +1919,6 @@ lsx.n1943|alligamentum
 lsx.n1944|alligatio
 lsx.n1945|alligator
 lsx.n1946|alligatura
-lsx.n1947|alligo
 lsx.n1948|allino
 lsx.n1949|Alliphae
 lsx.n1950|allisio
@@ -2041,7 +2026,6 @@ lsx.n2051|altiuscule
 lsx.n2052|altiusculus
 lsx.n2053|altivolans
 lsx.n2054|altivolus
-lsx.n2055|alto
 lsx.n2056|altor
 lsx.n2057|altrinsecus
 lsx.n2058|altrix
@@ -2963,7 +2947,6 @@ lsx.n2976|aper1
 lsx.n2977|Aper2
 lsx.n2978|Aperantia
 lsx.n2979|aperibilis
-lsx.n2980|aperio
 lsx.n2981|Aperta
 lsx.n2982|apertibilis
 lsx.n2983|apertio
@@ -3116,7 +3099,6 @@ lsx.n3130|appellator
 lsx.n3131|appellatorius
 lsx.n3132|appellito
 lsx.n3133|appello1
-lsx.n3134|appello2
 lsx.n3135|appendeo
 lsx.n3136|appendicium
 lsx.n3137|appendicula
@@ -3159,7 +3141,6 @@ lsx.n3173|apploro
 lsx.n3174|applosus
 lsx.n3175|appluda
 lsx.n3176|applumbo
-lsx.n3177|appono
 lsx.n3178|apporrectus
 lsx.n3179|apportatio
 lsx.n3180|apporto
@@ -3191,7 +3172,6 @@ lsx.n3206|appromitto
 lsx.n3207|approno
 lsx.n3208|appropero
 lsx.n3209|appropinquatio
-lsx.n3210|appropinquo
 lsx.n3211|appropriatio
 lsx.n3212|approprio
 lsx.n3213|approximo
@@ -3646,7 +3626,6 @@ lsx.n3661|aritudo
 lsx.n3662|Arius1
 lsx.n3663|Arius2
 lsx.n3664|Ariusius
-lsx.n3665|arma
 lsx.n3666|armamaxa
 lsx.n3667|armamenta
 lsx.n3668|armamentarium
@@ -3678,7 +3657,6 @@ lsx.n3693|armipotentia
 lsx.n3694|armisonus
 lsx.n3695|armita
 lsx.n3696|armites
-lsx.n3697|armo
 lsx.n3698|armon
 lsx.n3699|armoracia
 lsx.n3700|Armoricae
@@ -3696,7 +3674,6 @@ lsx.n3711|arnion
 lsx.n3712|Arnobius
 lsx.n3713|arnoglossa
 lsx.n3714|Arnus
-lsx.n3715|aro
 lsx.n3716|aroma
 lsx.n3717|aromatarius
 lsx.n3718|aromaticus
@@ -3730,7 +3707,6 @@ lsx.n3745|Arria
 lsx.n3746|arrideo
 lsx.n3747|arrigo
 lsx.n3748|arrilator
-lsx.n3749|arripio
 lsx.n3750|arrisio
 lsx.n3751|arrisor
 lsx.n3752|arrodo
@@ -4429,7 +4405,6 @@ lsx.n4446|audax
 lsx.n4447|audens
 lsx.n4448|audenter
 lsx.n4449|audentia
-lsx.n4450|audeo
 lsx.n4451|audiens
 lsx.n4452|audientia
 lsx.n4454|auditavi
@@ -4448,7 +4423,6 @@ lsx.n4466|Aufidus
 lsx.n4467|aufugio
 lsx.n4468|Auge
 lsx.n4469|Augeas
-lsx.n4470|augeo
 lsx.n4471|augesco
 lsx.n4472|Augias
 lsx.n4473|augifico
@@ -5252,7 +5226,6 @@ lsx.n5271|bibliothecalis
 lsx.n5272|bibliothecarius
 lsx.n5273|bibliothecula
 lsx.n5274|biblus
-lsx.n5275|bibo1
 lsx.n5276|bibo2
 lsx.n5277|bibonius
 lsx.n5278|bibosus
@@ -5957,7 +5930,6 @@ lsx.n5976|Cadmeis
 lsx.n5977|cadmia
 lsx.n5978|cadmitis
 lsx.n5979|Cadmus
-lsx.n5980|cado
 lsx.n5981|caducarius
 lsx.n5982|caduceator
 lsx.n5983|caduceatus
@@ -5987,8 +5959,6 @@ lsx.n6006|Caeculus
 lsx.n6007|caecus1
 lsx.n6008|Caecus2
 lsx.n6009|caecutio
-lsx.n6010|caedes
-lsx.n6011|caedo
 lsx.n6012|caeduus
 lsx.n6013|caelamen
 lsx.n6014|caelator
@@ -6701,7 +6671,6 @@ lsx.n6720|capulo1
 lsx.n6721|capulo2
 lsx.n6722|capulus
 lsx.n6723|capus
-lsx.n6724|caput
 lsx.n6725|Capys
 lsx.n6726|Car
 lsx.n6727|carabus1
@@ -7207,7 +7176,6 @@ lsx.n7226|cautionalis
 lsx.n7227|cautor
 lsx.n7228|cautroma
 lsx.n7229|cautulus
-lsx.n7230|cautus
 lsx.n7231|cavaedium
 lsx.n7232|cavamen
 lsx.n7233|cavannus
@@ -7252,7 +7220,6 @@ lsx.n7271|Cebren
 lsx.n7272|Cecaumena
 lsx.n7273|Cecrops
 lsx.n7274|cedenter
-lsx.n7275|cedo1
 lsx.n7276|cedo2
 lsx.n7277|cedrelate
 lsx.n7278|cedreus
@@ -7277,7 +7244,6 @@ lsx.n7296|celebratus
 lsx.n7297|celebresco
 lsx.n7298|celebritas
 lsx.n7299|celebriter
-lsx.n7300|celebro
 lsx.n7301|Celeja
 lsx.n7302|Celelates
 lsx.n7303|Celemna
@@ -7531,7 +7497,6 @@ lsx.n7550|ceritis
 lsx.n7551|cerium
 lsx.n7552|Cermalus
 lsx.n7553|cernentia
-lsx.n7554|cerno
 lsx.n7555|cernualia
 lsx.n7556|cernulo
 lsx.n7557|cernulus
@@ -7599,7 +7564,6 @@ lsx.n7618|cessicius
 lsx.n7619|cessim
 lsx.n7620|cessio
 lsx.n7621|cessitius
-lsx.n7622|cesso
 lsx.n7623|cesticillus
 lsx.n7624|cesticus
 lsx.n7625|Cestius
@@ -8142,7 +8106,6 @@ lsx.n8162|circumductor
 lsx.n8163|circumductum
 lsx.n8164|circumductus1
 lsx.n8165|circumductus2
-lsx.n8166|circumeo
 lsx.n8167|circumequito
 lsx.n8168|circumerro
 lsx.n8169|circumfarcio
@@ -8419,7 +8382,6 @@ lsx.n8439|citiremis
 lsx.n8440|Citium
 lsx.n8441|Citius
 lsx.n8442|cito1
-lsx.n8443|cito2
 lsx.n8444|citocacium
 lsx.n8445|citra
 lsx.n8446|citrago
@@ -8511,7 +8473,6 @@ lsx.n8531|claudigo
 lsx.n8532|Claudiopolis
 lsx.n8533|clauditas
 lsx.n8534|Claudius
-lsx.n8535|claudo1
 lsx.n8536|claudo2
 lsx.n8537|claudus
 lsx.n8538|Clausala
@@ -8858,7 +8819,6 @@ lsx.n8878|coenon
 lsx.n8879|coenositas
 lsx.n8880|coenula
 lsx.n8881|coenum
-lsx.n8883|coepio
 lsx.n8884|coepiscopatus
 lsx.n8885|coepiscopus
 lsx.n8886|coepto
@@ -8909,12 +8869,9 @@ lsx.n8930|cognomen
 lsx.n8931|cognomentum
 lsx.n8932|cognominatio
 lsx.n8933|cognominis
-lsx.n8934|cognomino
 lsx.n8935|cognoscens
 lsx.n8936|cognoscenter
 lsx.n8937|cognoscibilis
-lsx.n8938|cognosco
-lsx.n8939|cogo
 lsx.n8940|cohabitatio
 lsx.n8941|cohabitator
 lsx.n8942|cohabito
@@ -9047,7 +9004,6 @@ lsx.n9068|collido
 lsx.n9069|colliga
 lsx.n9070|colligate
 lsx.n9071|colligatio
-lsx.n9072|colligo1
 lsx.n9073|colligo2
 lsx.n9074|collimitaneus
 lsx.n9075|collimitium
@@ -9109,7 +9065,6 @@ lsx.n9130|collyriolum
 lsx.n9131|collyris
 lsx.n9132|collyrium
 lsx.n9133|Colminiana
-lsx.n9134|colo1
 lsx.n9135|colo2
 lsx.n9136|colobathrarius
 lsx.n9137|colobicus
@@ -9131,7 +9086,6 @@ lsx.n9152|colonicus
 lsx.n9153|colonus
 lsx.n9154|Colophon1
 lsx.n9155|colophon2
-lsx.n9156|color
 lsx.n9157|colorabilis
 lsx.n9158|colorate
 lsx.n9159|colorator
@@ -9378,7 +9332,6 @@ lsx.n9400|commissus
 lsx.n9401|commistim
 lsx.n9402|commistus
 lsx.n9403|commitigo
-lsx.n9404|committo
 lsx.n9405|commixtim
 lsx.n9406|commixtio
 lsx.n9407|commixtum
@@ -9463,7 +9416,6 @@ lsx.n9485|commutabilis
 lsx.n9486|commutate
 lsx.n9487|commutatio
 lsx.n9488|commutatus
-lsx.n9489|commuto
 lsx.n9490|como1
 lsx.n9491|como2
 lsx.n9492|comoedia
@@ -9506,7 +9458,6 @@ lsx.n9528|comparatus
 lsx.n9529|comparco
 lsx.n9530|compareo
 lsx.n9531|comparilis
-lsx.n9532|comparo1
 lsx.n9533|comparo2
 lsx.n9534|comparticeps
 lsx.n9535|compartior
@@ -9621,7 +9572,6 @@ lsx.n9643|Complutum
 lsx.n9644|compluviatus
 lsx.n9645|compluvium
 lsx.n9646|componderans
-lsx.n9647|compono
 lsx.n9648|comportatio
 lsx.n9649|comportionalis
 lsx.n9650|comporto
@@ -9784,7 +9734,6 @@ lsx.n9806|conchyliatus
 lsx.n9807|conchylilegulus
 lsx.n9808|conchylium
 lsx.n9809|concido1
-lsx.n9810|concido2
 lsx.n9811|conciens
 lsx.n9812|concieo
 lsx.n9813|conciliabulum
@@ -9914,7 +9863,6 @@ lsx.n9938|concubo
 lsx.n9939|conculcatio
 lsx.n9940|conculcatus
 lsx.n9941|conculco
-lsx.n9942|concumbo
 lsx.n9943|concumulatus
 lsx.n9944|concupio
 lsx.n9945|concupiscentia
@@ -10263,7 +10211,6 @@ lsx.n10288|congregatio
 lsx.n10289|congregativus
 lsx.n10290|congregator
 lsx.n10291|congregatus
-lsx.n10292|congrego
 lsx.n10293|congregus
 lsx.n10294|congressio
 lsx.n10295|congressor
@@ -10275,7 +10222,6 @@ lsx.n10300|congrue
 lsx.n10301|congruens
 lsx.n10302|congruenter
 lsx.n10303|congruentia
-lsx.n10304|congruo
 lsx.n10305|congrus
 lsx.n10306|congruus
 lsx.n10307|congyro
@@ -10350,7 +10296,6 @@ lsx.n10375|connumero
 lsx.n10376|Connus
 lsx.n10377|Conon
 lsx.n10378|conopeum
-lsx.n10379|conor
 lsx.n10380|conp
 lsx.n10381|conquadro
 lsx.n10382|conquaero
@@ -10528,7 +10473,6 @@ lsx.n10553|consolidator
 lsx.n10554|consolido
 lsx.n10555|consolidus
 lsx.n10556|consolo
-lsx.n10557|consolor
 lsx.n10558|consolutus
 lsx.n10559|consomnio
 lsx.n10560|consonans
@@ -10557,7 +10501,6 @@ lsx.n10582|conspicabundus
 lsx.n10583|conspiciendus
 lsx.n10584|conspicientia
 lsx.n10585|conspicillum
-lsx.n10586|conspicio1
 lsx.n10587|conspicio2
 lsx.n10588|conspicor
 lsx.n10589|conspicuus
@@ -10599,11 +10542,9 @@ lsx.n10624|constellatio
 lsx.n10625|constellatus
 lsx.n10626|consternatio
 lsx.n10627|consterno1
-lsx.n10628|consterno2
 lsx.n10629|constipatio
 lsx.n10630|constipo
 lsx.n10631|constitio
-lsx.n10632|constituo
 lsx.n10633|constitutio
 lsx.n10634|constitutionarius
 lsx.n10635|constitutor
@@ -10672,7 +10613,6 @@ lsx.n10697|consummatio
 lsx.n10698|consummator
 lsx.n10699|consummatus
 lsx.n10700|consummo
-lsx.n10701|consumo
 lsx.n10702|consumptibilis
 lsx.n10703|consumptio
 lsx.n10704|consumptor
@@ -10740,7 +10680,6 @@ lsx.n10766|contemptor
 lsx.n10767|contemptrix
 lsx.n10768|contemptus1
 lsx.n10769|contemptus2
-lsx.n10770|contendo
 lsx.n10771|contenebrasco
 lsx.n10772|contenebresco
 lsx.n10773|contenebro
@@ -10947,7 +10886,6 @@ lsx.n10973|convena
 lsx.n10974|conveniens
 lsx.n10975|convenienter
 lsx.n10976|convenientia
-lsx.n10977|convenio
 lsx.n10978|conventicius
 lsx.n10979|conventiculum
 lsx.n10980|conventio
@@ -10974,7 +10912,6 @@ lsx.n11000|conversus1
 lsx.n11001|conversus2
 lsx.n11002|conversus3
 lsx.n11003|convertibilis
-lsx.n11004|converto
 lsx.n11005|convertor
 lsx.n11006|convescor
 lsx.n11007|convestio
@@ -11014,7 +10951,6 @@ lsx.n11040|convivo2
 lsx.n11041|convivor
 lsx.n11042|convocatio
 lsx.n11043|convocium
-lsx.n11044|convoco
 lsx.n11045|convolnero
 lsx.n11046|convolo
 lsx.n11047|convoluto
@@ -11091,7 +11027,6 @@ lsx.n11117|coquino
 lsx.n11118|coquinus
 lsx.n11119|coquitare
 lsx.n11120|coquitatio
-lsx.n11121|coquo
 lsx.n11122|coquula
 lsx.n11123|coquus
 lsx.n11124|cor
@@ -11280,7 +11215,6 @@ lsx.n11306|corruda
 lsx.n11307|corrugis
 lsx.n11308|corrugo
 lsx.n11309|corrugus
-lsx.n11310|corrumpo
 lsx.n11311|corruo
 lsx.n11312|corrupte
 lsx.n11313|corruptela
@@ -11513,7 +11447,6 @@ lsx.n11539|Cremutius
 lsx.n11540|crena
 lsx.n11541|Crenaeus
 lsx.n11542|Crene
-lsx.n11543|creo1
 lsx.n11544|Creo2
 lsx.n11545|crepae
 lsx.n11546|crepatura
@@ -11540,7 +11473,6 @@ lsx.n11566|crepusculascens
 lsx.n11567|crepusculum
 lsx.n11568|Cres
 lsx.n11569|crescentia
-lsx.n11570|cresco
 lsx.n11571|Cresius
 lsx.n11572|Creta1
 lsx.n11573|creta2
@@ -12040,11 +11972,9 @@ lsx.n12067|cuspis
 lsx.n12068|Cuspius
 lsx.n12069|cussiliris
 lsx.n12070|custodela
-lsx.n12071|custodia
 lsx.n12072|custodiarium
 lsx.n12073|custodiarius
 lsx.n12075|custoditio
-lsx.n12076|custos
 lsx.n12077|Cusus
 lsx.n12078|cuticula
 lsx.n12079|Cutilia
@@ -12330,7 +12260,6 @@ lsx.n12357|dautia
 lsx.n12358|David
 lsx.n12359|Davus
 lsx.n12360|de1
-lsx.n12361|de2
 lsx.n12362|dea
 lsx.n12363|deacinatus
 lsx.n12364|deactio
@@ -12486,7 +12415,6 @@ lsx.n12515|declinabilis
 lsx.n12516|declinatio
 lsx.n12517|declinatus
 lsx.n12518|declinis
-lsx.n12519|declino
 lsx.n12520|declivis
 lsx.n12521|declivitas
 lsx.n12522|decocta
@@ -12594,7 +12522,6 @@ lsx.n12624|dediticius
 lsx.n12625|deditim
 lsx.n12626|deditio
 lsx.n12627|deditus
-lsx.n12628|dedo
 lsx.n12629|dedoceo
 lsx.n12630|dedolentia
 lsx.n12631|dedoleo
@@ -12630,7 +12557,6 @@ lsx.n12660|defector
 lsx.n12661|defectrix
 lsx.n12662|defectus1
 lsx.n12663|defectus2
-lsx.n12664|defendo
 lsx.n12665|defenero
 lsx.n12666|defensa
 lsx.n12667|defensabilis
@@ -12643,7 +12569,6 @@ lsx.n12673|defenso
 lsx.n12674|defensor
 lsx.n12675|defensorius
 lsx.n12676|defenstrix
-lsx.n12677|defero
 lsx.n12678|Deferunda
 lsx.n12679|defervefacio
 lsx.n12680|deferveo
@@ -13100,7 +13025,6 @@ lsx.n13131|denudo
 lsx.n13132|denuntiatio
 lsx.n13133|denuntiativus
 lsx.n13134|denuntiator
-lsx.n13135|denuntio
 lsx.n13136|denuo
 lsx.n13137|deocco
 lsx.n13138|Deois
@@ -13166,7 +13090,6 @@ lsx.n13197|depompatio
 lsx.n13198|depompo
 lsx.n13199|depondero
 lsx.n13200|deponens
-lsx.n13201|depono
 lsx.n13202|depontani
 lsx.n13203|deponto
 lsx.n13204|depopulatio
@@ -13206,7 +13129,6 @@ lsx.n13237|deprecator
 lsx.n13238|deprecatorius
 lsx.n13239|deprecatrix
 lsx.n13240|depreciator
-lsx.n13241|deprecor
 lsx.n13242|deprehendo
 lsx.n13243|deprehensio
 lsx.n13244|deprehensus
@@ -13316,7 +13238,6 @@ lsx.n13348|desectio
 lsx.n13349|desenesco
 lsx.n13350|deseps
 lsx.n13351|desero1
-lsx.n13352|desero2
 lsx.n13353|deserpo
 lsx.n13354|desertio
 lsx.n13355|desertor
@@ -13456,7 +13377,6 @@ lsx.n13488|desultor
 lsx.n13489|desultorius
 lsx.n13490|desultrix
 lsx.n13491|desultura
-lsx.n13492|desum
 lsx.n13493|desumo
 lsx.n13494|desuo
 lsx.n13495|desuper
@@ -13515,7 +13435,6 @@ lsx.n13547|detractor
 lsx.n13548|detractorius
 lsx.n13549|detractus1
 lsx.n13550|detractus2
-lsx.n13551|detraho
 lsx.n13552|detrectatio
 lsx.n13553|detrectator
 lsx.n13554|detrecto
@@ -13594,7 +13513,6 @@ lsx.n13626|devoratio
 lsx.n13627|devorator
 lsx.n13628|devoratorius
 lsx.n13629|devoratrix
-lsx.n13630|devoro
 lsx.n13631|devorsor
 lsx.n13632|devortium
 lsx.n13633|devotamentum
@@ -13990,7 +13908,6 @@ lsx.n14024|dimissio
 lsx.n14025|dimissor
 lsx.n14026|dimissoriaelitterae
 lsx.n14027|dimissus
-lsx.n14028|dimitto
 lsx.n14029|dimotus
 lsx.n14030|dimoveo
 lsx.n14031|Dinaea
@@ -14302,7 +14219,6 @@ lsx.n14337|displosus
 lsx.n14338|displuviata
 lsx.n14339|dispolio
 lsx.n14340|dispondeus
-lsx.n14341|dispono
 lsx.n14342|dispositio
 lsx.n14343|dispositor
 lsx.n14344|dispositura
@@ -14520,7 +14436,6 @@ lsx.n14555|divexus
 lsx.n14556|Divico
 lsx.n14557|dividia
 lsx.n14558|dividicula
-lsx.n14559|divido
 lsx.n14560|dividuitas
 lsx.n14561|dividus
 lsx.n14562|dividuus
@@ -14560,10 +14475,8 @@ lsx.n14595|divulsio
 lsx.n14596|divulsus
 lsx.n14597|divum
 lsx.n14598|divus
-lsx.n14599|do1
 lsx.n14600|do2
 lsx.n14601|do3
-lsx.n14602|doceo
 lsx.n14603|dochlea
 lsx.n14604|dochmius
 lsx.n14605|docibilis
@@ -14658,7 +14571,6 @@ lsx.n14693|dominatrix
 lsx.n14694|dominatus
 lsx.n14695|dominicus
 lsx.n14696|dominium
-lsx.n14697|dominor
 lsx.n14698|dominulus
 lsx.n14699|dominus
 lsx.n14700|domiporta
@@ -14696,7 +14608,6 @@ lsx.n14731|donec
 lsx.n14732|donicum
 lsx.n14733|donifico
 lsx.n14734|donique
-lsx.n14735|dono
 lsx.n14736|donum
 lsx.n14737|Donusa
 lsx.n14738|dorcadion
@@ -14794,7 +14705,6 @@ lsx.n14829|dubitatim
 lsx.n14830|dubitatio
 lsx.n14831|dubitativus
 lsx.n14832|dubitator
-lsx.n14833|dubito
 lsx.n14834|dubius
 lsx.n14835|ducalis
 lsx.n14836|ducator
@@ -14808,7 +14718,6 @@ lsx.n14843|ducenti
 lsx.n14844|ducenties
 lsx.n14845|ducentum
 lsx.n14846|ducianus
-lsx.n14847|duco
 lsx.n14848|ductabilitas
 lsx.n14849|ductarius
 lsx.n14850|ductilis
@@ -14963,7 +14872,6 @@ lsx.n14998|duumviralitas
 lsx.n14999|duumviratus
 lsx.n15000|duumviri1
 lsx.n15001|duumviri2
-lsx.n15002|dux
 lsx.n15003|dyas
 lsx.n15004|Dymas
 lsx.n15005|Dyme
@@ -15117,7 +15025,6 @@ lsx.n15152|editor
 lsx.n15153|editum
 lsx.n15154|editus1
 lsx.n15155|editus2
-lsx.n15157|edo2
 lsx.n15158|edo3
 lsx.n15159|edocenter
 lsx.n15160|edoceo
@@ -15134,7 +15041,6 @@ lsx.n15170|educatio
 lsx.n15171|educator
 lsx.n15172|educatrix
 lsx.n15173|educatus
-lsx.n15175|educo2
 lsx.n15176|eductio
 lsx.n15177|eductor
 lsx.n15178|edulco
@@ -15251,7 +15157,6 @@ lsx.n15289|effulgeo
 lsx.n15290|effultus
 lsx.n15291|effumigatus
 lsx.n15292|effumo
-lsx.n15293|effundo
 lsx.n15294|effuse
 lsx.n15295|effusio
 lsx.n15296|effusor
@@ -15266,7 +15171,6 @@ lsx.n15304|egelo
 lsx.n15305|egens
 lsx.n15306|egenulus
 lsx.n15307|egenus
-lsx.n15308|egeo
 lsx.n15309|Egeria
 lsx.n15310|egeries
 lsx.n15311|egermino
@@ -15301,7 +15205,6 @@ lsx.n15340|eho
 lsx.n15341|ei1
 lsx.n15342|ei2
 lsx.n15343|eia
-lsx.n15344|eicio
 lsx.n15345|eidem
 lsx.n15346|eii
 lsx.n15347|ejaculo
@@ -15437,7 +15340,6 @@ lsx.n15477|Elicius
 lsx.n15478|Elidensis
 lsx.n15479|elido
 lsx.n15480|eligans
-lsx.n15481|eligo
 lsx.n15482|elimatio
 lsx.n15483|elimator
 lsx.n15484|Elimea
@@ -15541,7 +15443,6 @@ lsx.n15581|emaneo
 lsx.n15582|emano
 lsx.n15583|emansio
 lsx.n15584|emansor
-lsx.n15585|emarcesco
 lsx.n15586|emargino
 lsx.n15587|emasculator
 lsx.n15588|emasculo
@@ -15616,7 +15517,6 @@ lsx.n15656|emissus2
 lsx.n15657|emitesco
 lsx.n15659|emmanes
 lsx.n15660|emmoton
-lsx.n15661|emo
 lsx.n15662|emoderor
 lsx.n15663|emodulor
 lsx.n15664|emolimentum
@@ -15823,7 +15723,6 @@ lsx.n15864|enuptio
 lsx.n15865|enutrio
 lsx.n15866|enutritio
 lsx.n15867|Enyo
-lsx.n15868|eo1
 lsx.n15869|eo2
 lsx.n15870|eoad
 lsx.n15871|eodem
@@ -16087,7 +15986,6 @@ lsx.n16128|ericius
 lsx.n16129|Eridanus
 lsx.n16130|erifuga
 lsx.n16131|erigeron
-lsx.n16132|erigo
 lsx.n16133|Erigone
 lsx.n16134|Erigonus
 lsx.n16135|erilis
@@ -16160,7 +16058,6 @@ lsx.n16201|erugatio
 lsx.n16202|erugo1
 lsx.n16203|erugo2
 lsx.n16204|Erulus
-lsx.n16205|erumpo
 lsx.n16206|erunco
 lsx.n16207|eruo
 lsx.n16208|eruptio
@@ -16414,7 +16311,6 @@ lsx.n16455|eveho
 lsx.n16456|evelatum
 lsx.n16457|evello
 lsx.n16458|Eveninus
-lsx.n16459|evenio
 lsx.n16460|eventilo
 lsx.n16461|eventum
 lsx.n16462|eventus
@@ -16595,7 +16491,6 @@ lsx.n16640|excastratus
 lsx.n16641|excaudico
 lsx.n16642|excavatio
 lsx.n16643|excavo
-lsx.n16644|excedo
 lsx.n16645|excellens
 lsx.n16646|excellenter
 lsx.n16647|excellentia
@@ -16628,7 +16523,6 @@ lsx.n16673|excido1
 lsx.n16674|excido2
 lsx.n16675|excieo
 lsx.n16676|excio
-lsx.n16677|excipio
 lsx.n16678|excipula
 lsx.n16679|excipuum
 lsx.n16680|excisatus
@@ -16755,7 +16649,6 @@ lsx.n16800|exemptus1
 lsx.n16801|exemptus2
 lsx.n16802|exenia
 lsx.n16803|exentero
-lsx.n16804|exeo
 lsx.n16805|exequiae
 lsx.n16806|exerceo
 lsx.n16807|exercibilis
@@ -17190,7 +17083,6 @@ lsx.n17235|exspectatio
 lsx.n17236|exspectator
 lsx.n17237|exspectatrix
 lsx.n17238|exspectatus
-lsx.n17239|exspecto
 lsx.n17240|exspergo
 lsx.n17241|exspersus
 lsx.n17242|exspes
@@ -17466,7 +17358,6 @@ lsx.n17512|facilitas
 lsx.n17513|faciliter
 lsx.n17514|facinorosus
 lsx.n17515|facinus
-lsx.n17516|facio
 lsx.n17517|facitergium
 lsx.n17518|facteon
 lsx.n17519|facticiosus
@@ -17793,7 +17684,6 @@ lsx.n17839|favorabiliter
 lsx.n17840|favoratus
 lsx.n17841|Favorinus
 lsx.n17842|favus
-lsx.n17843|fax
 lsx.n17844|faxim
 lsx.n17845|Febrarius
 lsx.n17846|febresco
@@ -17914,7 +17804,6 @@ lsx.n17960|fermentatus
 lsx.n17961|fermentesco
 lsx.n17962|fermento
 lsx.n17963|fermentum
-lsx.n17964|fero
 lsx.n17965|ferocia
 lsx.n17966|ferocio
 lsx.n17967|ferocitas
@@ -18099,7 +17988,6 @@ lsx.n18146|fidusta
 lsx.n18147|figlinus
 lsx.n18148|figmen
 lsx.n18149|figmentum
-lsx.n18150|figo
 lsx.n18151|figularis
 lsx.n18152|figularius
 lsx.n18153|figulatio
@@ -18158,7 +18046,6 @@ lsx.n18205|finitio
 lsx.n18206|finitivus
 lsx.n18207|finitor
 lsx.n18208|finitus
-lsx.n18209|fio
 lsx.n18210|fircus
 lsx.n18211|firmamen
 lsx.n18212|firmamentum
@@ -18301,10 +18188,8 @@ lsx.n18348|flavissae
 lsx.n18349|Flavius
 lsx.n18350|flavus
 lsx.n18351|flebilis
-lsx.n18352|flecto
 lsx.n18353|flegma
 lsx.n18354|flemina
-lsx.n18355|fleo
 lsx.n18356|fletifer
 lsx.n18357|fletus1
 lsx.n18358|fletus2
@@ -18432,7 +18317,6 @@ lsx.n18479|foculus
 lsx.n18480|focus
 lsx.n18481|fodico
 lsx.n18482|fodina
-lsx.n18483|fodio
 lsx.n18484|fodo
 lsx.n18485|foecunde
 lsx.n18486|foede
@@ -18545,7 +18429,6 @@ lsx.n18592|formidulosus
 lsx.n18593|formidus
 lsx.n18594|formio
 lsx.n18595|formitas
-lsx.n18596|formo
 lsx.n18597|formose
 lsx.n18598|formositas
 lsx.n18599|formosulus
@@ -18675,7 +18558,6 @@ lsx.n18722|fraudatorius
 lsx.n18723|fraudatrix
 lsx.n18724|fraudifer
 lsx.n18725|fraudiger
-lsx.n18726|fraudo
 lsx.n18727|fraudulenter
 lsx.n18728|fraudulentia
 lsx.n18729|fraudulentus
@@ -18883,7 +18765,6 @@ lsx.n18930|fucus
 lsx.n18931|fue
 lsx.n18932|Fufidius
 lsx.n18933|Fufius
-lsx.n18934|fuga
 lsx.n18935|fugacitas
 lsx.n18936|fugaciter
 lsx.n18937|fugalia
@@ -18892,13 +18773,11 @@ lsx.n18939|fugatrix
 lsx.n18940|fugax
 lsx.n18941|fugela
 lsx.n18942|fugiens
-lsx.n18943|fugio
 lsx.n18944|fugitans
 lsx.n18945|fugitivarius
 lsx.n18946|fugitivus
 lsx.n18947|fugito
 lsx.n18948|fugitor
-lsx.n18949|fugo
 lsx.n18950|fulcimen
 lsx.n18951|fulcimentum
 lsx.n18952|Fulcinius
@@ -18997,7 +18876,6 @@ lsx.n19044|fundibulum
 lsx.n19045|fundito
 lsx.n19046|funditor
 lsx.n19047|funditus
-lsx.n19048|fundo1
 lsx.n19049|fundo2
 lsx.n19050|fundula
 lsx.n19051|fundulus
@@ -19072,8 +18950,6 @@ lsx.n19119|furnarius
 lsx.n19120|Furnius
 lsx.n19121|furnus
 lsx.n19122|furo
-lsx.n19123|furor1
-lsx.n19124|furor2
 lsx.n19125|Furrina
 lsx.n19126|furtificus
 lsx.n19127|furtim
@@ -19459,8 +19335,6 @@ lsx.n19507|germen
 lsx.n19508|germinasco
 lsx.n19509|germinatio
 lsx.n19510|germinatus
-lsx.n19511|germino
-lsx.n19512|gero1
 lsx.n19513|gero2
 lsx.n19514|Geronium
 lsx.n19515|gerontea
@@ -19518,7 +19392,6 @@ lsx.n19566|Gigantomachia
 lsx.n19567|Gigas
 lsx.n19568|gigeria
 lsx.n19569|gignentia
-lsx.n19570|gigno
 lsx.n19571|gilbus
 lsx.n19572|gillo1
 lsx.n19573|Gillo2
@@ -20024,7 +19897,6 @@ lsx.n20073|ha!
 lsx.n20074|habena
 lsx.n20075|habentia
 lsx.n20076|habenula
-lsx.n20077|habeo
 lsx.n20078|habilis
 lsx.n20079|habilitas
 lsx.n20080|habiliter
@@ -20035,7 +19907,6 @@ lsx.n20084|habitatiuncula
 lsx.n20085|habitator
 lsx.n20086|habitatrix
 lsx.n20087|habitio
-lsx.n20088|habito
 lsx.n20089|habitudo
 lsx.n20090|habituo
 lsx.n20091|habiturio
@@ -20077,7 +19948,6 @@ lsx.n20126|haemorrhousa
 lsx.n20127|haemostasis
 lsx.n20128|Haemus
 lsx.n20129|haereditas
-lsx.n20130|haereo
 lsx.n20131|haeres
 lsx.n20132|haeresco
 lsx.n20133|haeresiarcha
@@ -21266,7 +21136,6 @@ lsx.n21317|Ichnusa
 lsx.n21318|ichthyocolla
 lsx.n21319|Ichthyophagi
 lsx.n21320|Icilius
-lsx.n21321|icio
 lsx.n21322|icon
 lsx.n21323|iconicus
 lsx.n21324|iconismus
@@ -21321,7 +21190,6 @@ lsx.n21372|Idyllium
 lsx.n21373|Ierne
 lsx.n21374|Iesus
 lsx.n21375|Igilium
-lsx.n21376|igitur
 lsx.n21377|ignarus
 lsx.n21378|ignave
 lsx.n21379|ignavesco
@@ -21519,7 +21387,6 @@ lsx.n21570|illuminate
 lsx.n21571|illuminatio
 lsx.n21572|illuminator
 lsx.n21573|illuminatrix
-lsx.n21574|illumino
 lsx.n21575|illuminus
 lsx.n21576|illunis
 lsx.n21577|illuo
@@ -21657,7 +21524,6 @@ lsx.n21708|immetatus
 lsx.n21709|immetuens
 lsx.n21710|immigro
 lsx.n21711|imminentia
-lsx.n21712|immineo
 lsx.n21713|imminuo
 lsx.n21714|imminutio
 lsx.n21715|imminutus1
@@ -21697,7 +21563,6 @@ lsx.n21748|immolaticius
 lsx.n21749|immolatio
 lsx.n21750|immolator
 lsx.n21751|immolitus
-lsx.n21752|immolo
 lsx.n21753|immoranter
 lsx.n21754|immordeo
 lsx.n21755|immorior
@@ -21831,7 +21696,6 @@ lsx.n21882|impermeabilis
 lsx.n21883|impermisceo
 lsx.n21884|impermissus
 lsx.n21885|impermixtus
-lsx.n21886|impero
 lsx.n21887|imperpetuus
 lsx.n21888|imperscrutabilis
 lsx.n21889|impersonalis
@@ -21924,7 +21788,6 @@ lsx.n21976|impolitia
 lsx.n21977|impolitus
 lsx.n21978|impollutus
 lsx.n21979|impomenta
-lsx.n21980|impono
 lsx.n21981|Imporcitor
 lsx.n21982|imporco
 lsx.n21983|importabilis
@@ -22294,7 +22157,6 @@ lsx.n22346|incingo
 lsx.n22347|incingulum
 lsx.n22348|incino
 lsx.n22349|incipesso
-lsx.n22350|incipio
 lsx.n22351|incipisso
 lsx.n22352|incircum
 lsx.n22353|incircumcisus
@@ -22553,7 +22415,6 @@ lsx.n22605|increpatorius
 lsx.n22606|increpito
 lsx.n22607|increpitus1
 lsx.n22608|increpitus2
-lsx.n22609|increpo
 lsx.n22610|increpundia
 lsx.n22611|incresco
 lsx.n22612|increto
@@ -22725,7 +22586,6 @@ lsx.n22777|indicens
 lsx.n22778|indicina
 lsx.n22779|indicium
 lsx.n22780|indicivus
-lsx.n22781|indico1
 lsx.n22782|indico2
 lsx.n22783|indicticius
 lsx.n22784|indictio
@@ -22882,7 +22742,6 @@ lsx.n22935|indultum
 lsx.n22936|indultus1
 lsx.n22937|indultus2
 lsx.n22938|indumentum
-lsx.n22939|induo
 lsx.n22940|indupedio
 lsx.n22941|induperans
 lsx.n22942|indupero
@@ -23109,7 +22968,6 @@ lsx.n23163|infernalis
 lsx.n23164|infernas
 lsx.n23165|inferne
 lsx.n23166|infernus
-lsx.n23167|infero
 lsx.n23168|infersus
 lsx.n23169|infertilis
 lsx.n23170|infertilitas
@@ -23406,7 +23264,6 @@ lsx.n23461|inhumectus
 lsx.n23462|inhumigo
 lsx.n23463|inhumo
 lsx.n23464|inibi
-lsx.n23465|inicio
 lsx.n23466|inidonee
 lsx.n23467|iniens
 lsx.n23468|inigo
@@ -23615,7 +23472,6 @@ lsx.n23670|inp
 lsx.n23671|inpraesentiarum
 lsx.n23672|inprimis
 lsx.n23673|inquaesitus
-lsx.n23674|inquam
 lsx.n23675|inquassatus
 lsx.n23676|inquies1
 lsx.n23677|inquies2
@@ -23778,7 +23634,6 @@ lsx.n23833|insidianter
 lsx.n23834|insidiator
 lsx.n23835|insidiatrix
 lsx.n23836|insidio
-lsx.n23837|insidior
 lsx.n23838|insidiose
 lsx.n23839|insidiosus
 lsx.n23840|insido
@@ -23980,7 +23835,6 @@ lsx.n24035|insuetus2
 lsx.n24036|insufficiens
 lsx.n24037|insufficientia
 lsx.n24038|insufflatio
-lsx.n24039|insufflo
 lsx.n24040|insula1
 lsx.n24041|Insula2
 lsx.n24042|insulanus
@@ -24055,7 +23909,6 @@ lsx.n24110|intellegens
 lsx.n24111|intellegenter
 lsx.n24112|intellegentia
 lsx.n24113|intellegibilis
-lsx.n24114|intellego
 lsx.n24115|intelligo
 lsx.n24116|Intemelii
 lsx.n24117|intemerabilis
@@ -24077,7 +23930,6 @@ lsx.n24132|intempestus
 lsx.n24133|intemporalis
 lsx.n24134|intemporalitas
 lsx.n24135|intenditus
-lsx.n24136|intendo
 lsx.n24137|intenibilis
 lsx.n24138|intensio
 lsx.n24139|intentabilis
@@ -24198,7 +24050,6 @@ lsx.n24253|interfectrix
 lsx.n24254|interfectus
 lsx.n24255|interfeminium
 lsx.n24256|interfemus
-lsx.n24257|interficio
 lsx.n24258|interfio
 lsx.n24259|interfluo
 lsx.n24260|interfluus
@@ -24357,7 +24208,6 @@ lsx.n24412|interpretator
 lsx.n24413|interpretatorius
 lsx.n24414|interpretatus
 lsx.n24415|interpretium
-lsx.n24416|interpretor
 lsx.n24417|interprimo
 lsx.n24418|Interprominius
 lsx.n24419|interpunctio
@@ -24386,7 +24236,6 @@ lsx.n24441|interrogative
 lsx.n24442|interrogativus
 lsx.n24443|interrogator
 lsx.n24444|interrogatorius
-lsx.n24445|interrogo
 lsx.n24446|interrumpo
 lsx.n24447|interruptio
 lsx.n24448|interruptor
@@ -24448,7 +24297,6 @@ lsx.n24503|intervacans
 lsx.n24504|intervallatio
 lsx.n24505|intervallo
 lsx.n24506|intervallum
-lsx.n24507|intervenio
 lsx.n24508|intervenium
 lsx.n24509|interventio
 lsx.n24510|interventor
@@ -24584,7 +24432,6 @@ lsx.n24640|introvocatus
 lsx.n24641|introvoco
 lsx.n24642|intrudo
 lsx.n24643|intubus
-lsx.n24644|intueor
 lsx.n24645|intuitus
 lsx.n24646|intumesco
 lsx.n24647|intumulatus
@@ -24656,7 +24503,6 @@ lsx.n24713|invenalis
 lsx.n24714|invendibilis
 lsx.n24715|invenditus
 lsx.n24716|inveniabilis
-lsx.n24717|invenio
 lsx.n24718|inventarium
 lsx.n24719|inventio
 lsx.n24720|inventiuncula
@@ -24815,7 +24661,6 @@ lsx.n24873|ipsiplices
 lsx.n24874|ipsippe
 lsx.n24875|ipsullices
 lsx.n24876|ir
-lsx.n24877|ira
 lsx.n24878|iracunde
 lsx.n24879|iracundia
 lsx.n24880|iracunditer
@@ -24823,7 +24668,6 @@ lsx.n24881|iracundus
 lsx.n24882|irascentia
 lsx.n24883|irascibilis
 lsx.n24884|irascitivus
-lsx.n24885|irascor
 lsx.n24886|irate
 lsx.n24887|iratus
 lsx.n24888|ircei
@@ -24959,7 +24803,6 @@ lsx.n25017|irrumator
 lsx.n25018|irrumo
 lsx.n25019|irrumpibilis
 lsx.n25020|irrumpo
-lsx.n25021|irruo
 lsx.n25022|irruptio
 lsx.n25023|irruptus1
 lsx.n25024|irruptus2
@@ -24967,7 +24810,6 @@ lsx.n25025|irruptus3
 lsx.n25026|irrutilo
 lsx.n25027|irtiola
 lsx.n25028|Irus
-lsx.n25029|is
 lsx.n25030|Isaac
 lsx.n25031|Isacia
 lsx.n25032|Isaeus
@@ -25202,7 +25044,6 @@ lsx.n25260|juba1
 lsx.n25261|Juba2
 lsx.n25262|jubar
 lsx.n25263|jubatus
-lsx.n25264|jubeo
 lsx.n25265|Juberna
 lsx.n25266|jubilaeus
 lsx.n25267|jubilatio
@@ -25232,7 +25073,6 @@ lsx.n25290|judicialis
 lsx.n25291|judiciarius
 lsx.n25292|judiciolum
 lsx.n25293|judicium
-lsx.n25294|judico
 lsx.n25295|jugabilis
 lsx.n25296|jugalis
 lsx.n25297|jugalitas
@@ -25288,7 +25128,6 @@ lsx.n25346|junctura
 lsx.n25347|junctus1
 lsx.n25348|junctus2
 lsx.n25349|juncus
-lsx.n25350|jungo
 lsx.n25351|Junianus
 lsx.n25352|juniculus
 lsx.n25353|junior
@@ -25328,7 +25167,6 @@ lsx.n25386|jurisdictio
 lsx.n25387|jurisonus
 lsx.n25388|jurisperitus
 lsx.n25389|jurisprudentia
-lsx.n25390|juro
 lsx.n25391|juror
 lsx.n25392|jurulentia
 lsx.n25393|jurulentus
@@ -25433,7 +25271,6 @@ lsx.n25491|labiosus
 lsx.n25492|labium
 lsx.n25493|labo
 lsx.n25494|labor1
-lsx.n25495|labor2
 lsx.n25496|laboratio
 lsx.n25497|laboratus1
 lsx.n25498|laboratus2
@@ -25442,7 +25279,6 @@ lsx.n25500|laborifer
 lsx.n25501|Laborinus
 lsx.n25502|laboriose
 lsx.n25503|laboriosus
-lsx.n25504|laboro
 lsx.n25505|labos
 lsx.n25506|labosus
 lsx.n25507|Labrandius
@@ -26002,7 +25838,6 @@ lsx.n26060|laudatus
 lsx.n26061|Laudiceni
 lsx.n26062|laudidignus
 lsx.n26063|laudifico
-lsx.n26064|laudo
 lsx.n26065|laurago
 lsx.n26066|laurea
 lsx.n26067|laureatus
@@ -26123,7 +25958,6 @@ lsx.n26182|legitimus
 lsx.n26183|legito
 lsx.n26184|legiuncula
 lsx.n26185|lego1
-lsx.n26186|lego2
 lsx.n26187|legula
 lsx.n26188|leguleius
 lsx.n26189|legulus
@@ -26365,10 +26199,8 @@ lsx.n26424|leviter
 lsx.n26425|Levites
 lsx.n26426|levitonarium
 lsx.n26427|levitudo
-lsx.n26428|levo1
 lsx.n26429|levo2
 lsx.n26430|levor
-lsx.n26431|lex
 lsx.n26432|Lexanor
 lsx.n26433|lexidium
 lsx.n26434|lexipyretos
@@ -26416,7 +26248,6 @@ lsx.n26475|liberator
 lsx.n26476|liberatrix
 lsx.n26477|libere
 lsx.n26478|liberi
-lsx.n26479|libero
 lsx.n26480|liberta
 lsx.n26481|libertas
 lsx.n26482|libertina
@@ -26425,7 +26256,6 @@ lsx.n26484|libertinium
 lsx.n26485|libertinus1
 lsx.n26486|libertinus2
 lsx.n26487|libertus
-lsx.n26488|libet
 lsx.n26489|Libethra
 lsx.n26490|Libethrum
 lsx.n26491|Libici
@@ -26925,7 +26755,6 @@ lsx.n26984|loquela
 lsx.n26985|loquelaris
 lsx.n26986|loquentia
 lsx.n26987|loquitor
-lsx.n26988|loquor
 lsx.n26989|lora1
 lsx.n26990|lora2
 lsx.n26991|Loracina
@@ -26982,7 +26811,6 @@ lsx.n27041|Luceium
 lsx.n27042|lucellum
 lsx.n27043|lucens
 lsx.n27044|Lucensis
-lsx.n27045|luceo
 lsx.n27046|Luceres
 lsx.n27047|Luceria
 lsx.n27048|lucerna
@@ -27695,7 +27523,6 @@ lsx.n27757|Mallos
 lsx.n27758|mallus
 lsx.n27759|malluviae
 lsx.n27760|malluvium
-lsx.n27761|malo
 lsx.n27762|malobathratus
 lsx.n27763|malobathrinus
 lsx.n27764|malobathron
@@ -27775,7 +27602,6 @@ lsx.n27837|mandatus1
 lsx.n27838|mandatus2
 lsx.n27839|Mandela
 lsx.n27840|mandibula
-lsx.n27841|mando1
 lsx.n27842|mando2
 lsx.n27843|mando3
 lsx.n27844|Mandonius
@@ -28887,7 +28713,6 @@ lsx.n28951|metitor
 lsx.n28952|metitus
 lsx.n28953|Metius
 lsx.n28954|meto1
-lsx.n28955|meto2
 lsx.n28956|Meto3
 lsx.n28957|metoche
 lsx.n28958|metodium
@@ -29087,7 +28912,6 @@ lsx.n29151|ministrator
 lsx.n29152|ministratorius
 lsx.n29153|ministratrix
 lsx.n29154|ministrix
-lsx.n29155|ministro
 lsx.n29156|minitabiliter
 lsx.n29157|minitabundus
 lsx.n29158|minitatio
@@ -29260,7 +29084,6 @@ lsx.n29324|mitratus
 lsx.n29325|mitrula
 lsx.n29326|mittendarius
 lsx.n29327|mittix
-lsx.n29328|mitto
 lsx.n29329|mitulus
 lsx.n29330|Mitylene
 lsx.n29331|mitylus
@@ -29548,7 +29371,6 @@ lsx.n29612|monstrifice
 lsx.n29613|monstrificus
 lsx.n29614|monstrigena
 lsx.n29615|monstriger
-lsx.n29616|monstro
 lsx.n29617|monstrose
 lsx.n29618|monstrositas
 lsx.n29619|monstrum
@@ -29639,7 +29461,6 @@ lsx.n29703|Morini
 lsx.n29704|morio1
 lsx.n29705|morio2
 lsx.n29706|morion
-lsx.n29707|morior
 lsx.n29708|Moritasgus
 lsx.n29709|moriturio
 lsx.n29710|mormorion
@@ -29687,7 +29508,6 @@ lsx.n29751|morum
 lsx.n29752|morus1
 lsx.n29753|morus2
 lsx.n29754|Morvinnicus
-lsx.n29755|mos
 lsx.n29756|Mosa
 lsx.n29757|Moschi
 lsx.n29758|Moschis
@@ -29713,7 +29533,6 @@ lsx.n29777|motorius
 lsx.n29778|motus1
 lsx.n29779|motus2
 lsx.n29780|movens
-lsx.n29781|moveo
 lsx.n29782|mox
 lsx.n29783|Moyses
 lsx.n29784|Moysiticus
@@ -29856,7 +29675,6 @@ lsx.n29920|multiplicatio
 lsx.n29921|multiplicator
 lsx.n29922|multiplicitas
 lsx.n29923|multipliciter
-lsx.n29924|multiplico
 lsx.n29925|multiplicus
 lsx.n29926|multipotens
 lsx.n29927|multiradix
@@ -30111,7 +29929,6 @@ lsx.n30175|mutitio
 lsx.n30176|mutito
 lsx.n30177|mutitus
 lsx.n30178|Mutius
-lsx.n30179|muto1
 lsx.n30180|muto2
 lsx.n30181|Muto3
 lsx.n30182|mutoniatus
@@ -30354,7 +30171,6 @@ lsx.n30419|nascentia2
 lsx.n30420|nascibilis
 lsx.n30421|Nascio
 lsx.n30422|nasco
-lsx.n30423|nascor
 lsx.n30424|nasica1
 lsx.n30425|Nasica2
 lsx.n30426|Nasidianus
@@ -30514,7 +30330,6 @@ lsx.n30579|Naxos
 lsx.n30580|Nazaraeus1
 lsx.n30581|Nazaraeus2
 lsx.n30582|Nazareth
-lsx.n30583|ne1
 lsx.n30585|ne3
 lsx.n30586|Neaera
 lsx.n30587|Neaethus
@@ -30554,7 +30369,6 @@ lsx.n30620|neceunt
 lsx.n30621|nechon
 lsx.n30622|necne
 lsx.n30623|necnon
-lsx.n30624|neco
 lsx.n30625|necopinans
 lsx.n30626|necopinato
 lsx.n30627|necopinatus
@@ -30611,7 +30425,6 @@ lsx.n30677|neglegens
 lsx.n30678|neglegenter
 lsx.n30679|neglegentia
 lsx.n30680|neglego
-lsx.n30681|nego
 lsx.n30682|negotialis
 lsx.n30683|negotians
 lsx.n30684|negotiatio
@@ -30938,7 +30751,6 @@ lsx.n31004|Nisa
 lsx.n31005|Nisaeus
 lsx.n31006|Niseis
 lsx.n31007|Niseius
-lsx.n31008|nisi
 lsx.n31009|Nisias
 lsx.n31010|Nisibis
 lsx.n31011|nisus1
@@ -30965,7 +30777,6 @@ lsx.n31031|nitido
 lsx.n31032|nitidulus
 lsx.n31033|nitidus
 lsx.n31034|Nitiobriges
-lsx.n31035|nitor1
 lsx.n31036|nitor2
 lsx.n31037|nitraria
 lsx.n31038|nitratus
@@ -31003,7 +30814,6 @@ lsx.n31069|nobiscum
 lsx.n31070|nocens
 lsx.n31071|nocenter
 lsx.n31072|nocentia
-lsx.n31073|noceo
 lsx.n31074|nocivus
 lsx.n31075|noctanter
 lsx.n31076|noctesco
@@ -31054,14 +30864,12 @@ lsx.n31120|nolens
 lsx.n31121|nolenter
 lsx.n31122|nolentia
 lsx.n31123|Noliba
-lsx.n31124|nolo
 lsx.n31125|noluntas
 lsx.n31126|Nomades
 lsx.n31127|nomae
 lsx.n31128|Nomaeus
 lsx.n31129|Nomas
 lsx.n31130|nome
-lsx.n31131|nomen
 lsx.n31132|nomenclatio
 lsx.n31133|nomenclator
 lsx.n31134|nomenclatura
@@ -31076,7 +30884,6 @@ lsx.n31142|nominatorius
 lsx.n31143|nominatus1
 lsx.n31144|nominatus2
 lsx.n31145|nominito
-lsx.n31146|nomino
 lsx.n31147|Nomio
 lsx.n31148|nomisma
 lsx.n31149|Nomius
@@ -31142,7 +30949,6 @@ lsx.n31208|noscentia
 lsx.n31209|noscibilis
 lsx.n31210|noscitabundus
 lsx.n31211|noscito
-lsx.n31212|nosco
 lsx.n31213|nosmet
 lsx.n31214|nosocomium
 lsx.n31215|nosocomus
@@ -31343,13 +31149,11 @@ lsx.n31409|Numeria
 lsx.n31410|numerius1
 lsx.n31411|Numerius2
 lsx.n31412|Numerius3
-lsx.n31413|numero1
 lsx.n31414|numero2
 lsx.n31415|numerose
 lsx.n31416|numerositas
 lsx.n31417|numerositer
 lsx.n31418|numerosus
-lsx.n31419|numerus
 lsx.n31420|Numicius1
 lsx.n31421|Numicius2
 lsx.n31422|Numida
@@ -31402,7 +31206,6 @@ lsx.n31468|nuntia
 lsx.n31469|nuntiatio
 lsx.n31470|nuntiator
 lsx.n31471|nuntiatrix
-lsx.n31472|nuntio
 lsx.n31473|nuntius
 lsx.n31474|nuper
 lsx.n31475|nuperus
@@ -31442,7 +31245,6 @@ lsx.n31508|nutricula
 lsx.n31509|nutrimen
 lsx.n31510|nutrimentalis
 lsx.n31511|nutrimentum
-lsx.n31512|nutrio
 lsx.n31513|nutrior
 lsx.n31514|nutritius
 lsx.n31515|nutritor
@@ -31857,7 +31659,6 @@ lsx.n31925|obstructus
 lsx.n31926|obstrudo
 lsx.n31927|obstrudulentus
 lsx.n31929|obstrusus
-lsx.n31930|obstupefacio
 lsx.n31931|obstupefactus
 lsx.n31932|obstupefio
 lsx.n31933|obstupendus
@@ -32015,7 +31816,6 @@ lsx.n32084|occidens
 lsx.n32085|occidentalis
 lsx.n32086|occidio
 lsx.n32087|occidium
-lsx.n32088|occido1
 lsx.n32089|occido2
 lsx.n32090|occido3
 lsx.n32091|occidualis
@@ -32212,7 +32012,6 @@ lsx.n32282|odoratus2
 lsx.n32283|odorifer
 lsx.n32284|odorificatus
 lsx.n32285|odorisequus
-lsx.n32286|odoro
 lsx.n32287|odoror
 lsx.n32288|odorus
 lsx.n32289|odos
@@ -32285,7 +32084,6 @@ lsx.n32355|offectus2
 lsx.n32356|offendiculum
 lsx.n32357|offendimentum
 lsx.n32358|offendix
-lsx.n32359|offendo1
 lsx.n32360|offendo2
 lsx.n32361|offensa
 lsx.n32362|offensaculum
@@ -32924,7 +32722,6 @@ lsx.n32996|orinda
 lsx.n32997|Orine
 lsx.n32998|oriola
 lsx.n32999|Orion
-lsx.n33000|orior
 lsx.n33001|oripelargus
 lsx.n33002|oriputidus
 lsx.n33003|Oritae
@@ -32952,7 +32749,6 @@ lsx.n33024|Orneus2
 lsx.n33025|ornithias
 lsx.n33026|ornithogale
 lsx.n33027|ornithon
-lsx.n33028|orno
 lsx.n33029|ornus
 lsx.n33031|Oroanda
 lsx.n33032|orobanche
@@ -33016,7 +32812,6 @@ lsx.n33089|ortyx
 lsx.n33090|orum
 lsx.n33091|oryx
 lsx.n33092|oryza
-lsx.n33093|os1
 lsx.n33094|os2
 lsx.n33095|Osca
 lsx.n33096|Osce
@@ -33069,7 +32864,6 @@ lsx.n33143|ossuarius
 lsx.n33144|ossuculum
 lsx.n33145|ossum
 lsx.n33146|ossuosus
-lsx.n33147|ostendo
 lsx.n33148|ostensio
 lsx.n33149|ostensionalis
 lsx.n33150|ostensor
@@ -33749,7 +33543,6 @@ lsx.n33824|parcimonia
 lsx.n33825|parcipromus
 lsx.n33826|parcitas
 lsx.n33827|parciter
-lsx.n33828|parco
 lsx.n33829|parcus
 lsx.n33830|pardalianches
 lsx.n33831|pardalios
@@ -33800,7 +33593,6 @@ lsx.n33875|parilitas
 lsx.n33876|pariliter
 lsx.n33877|Parilitius
 lsx.n33878|pario1
-lsx.n33879|pario2
 lsx.n33880|pario3
 lsx.n33881|Parion
 lsx.n33882|Paris
@@ -33851,7 +33643,6 @@ lsx.n33926|parricida
 lsx.n33927|parricidatus
 lsx.n33928|parricidialis
 lsx.n33929|parricidium
-lsx.n33930|pars
 lsx.n33931|parsimonia
 lsx.n33932|parsimonium
 lsx.n33933|Parstrymonia
@@ -33911,7 +33702,6 @@ lsx.n33986|parturibundus
 lsx.n33987|parturio
 lsx.n33988|parturitio
 lsx.n33989|partus1
-lsx.n33990|partus2
 lsx.n33991|partus3
 lsx.n33992|parum
 lsx.n33993|parumper
@@ -33987,7 +33777,6 @@ lsx.n34063|pastio
 lsx.n34064|pastito
 lsx.n34065|pastophori
 lsx.n34066|pastophorium
-lsx.n34067|pastor
 lsx.n34068|pastoralis
 lsx.n34069|pastoricius
 lsx.n34070|pastorius
@@ -34041,8 +33830,8 @@ lsx.n34117|patina1
 lsx.n34118|Patina2
 lsx.n34119|patinarius
 lsx.n34120|patio
-lsx.n34121|patior
 lsx.n34122|patiscens
+lsx.n34121|patior
 lsx.n34123|Patmos
 lsx.n34124|pator
 lsx.n34125|Patrae
@@ -34366,9 +34155,7 @@ lsx.n34443|pellio
 lsx.n34444|pellion
 lsx.n34445|pellionarius
 lsx.n34446|pelliris
-lsx.n34447|pellis
 lsx.n34448|pellitus
-lsx.n34449|pello
 lsx.n34450|Pellonia
 lsx.n34451|pellos
 lsx.n34452|pelluceo
@@ -34619,7 +34406,6 @@ lsx.n34696|percieo
 lsx.n34697|percingo
 lsx.n34698|percio
 lsx.n34699|percipibilis
-lsx.n34700|percipio
 lsx.n34701|percis
 lsx.n34702|percisus
 lsx.n34703|percito
@@ -34690,7 +34476,6 @@ lsx.n34767|percussor
 lsx.n34768|percussura
 lsx.n34769|percussus1
 lsx.n34770|percussus2
-lsx.n34771|percutio
 lsx.n34772|perdagatus
 lsx.n34773|perdecipio
 lsx.n34774|perdecorus
@@ -34724,7 +34509,6 @@ lsx.n34801|perdives
 lsx.n34802|perdivisus
 lsx.n34803|perdix1
 lsx.n34804|Perdix2
-lsx.n34805|perdo
 lsx.n34806|perdoceo
 lsx.n34807|perdoleo
 lsx.n34808|perdolesco
@@ -34827,7 +34611,6 @@ lsx.n34906|perfervefio
 lsx.n34907|perferveo
 lsx.n34908|perfervidus
 lsx.n34909|Perfica
-lsx.n34910|perficio
 lsx.n34911|perficus
 lsx.n34912|perfide
 lsx.n34913|perfidelis
@@ -34919,7 +34702,6 @@ lsx.n34998|pergaudeo
 lsx.n34999|pergenitus
 lsx.n35000|perglisco
 lsx.n35001|pergnarus
-lsx.n35002|pergo
 lsx.n35003|pergracilis
 lsx.n35004|pergraecor
 lsx.n35005|pergrandesco
@@ -35408,7 +35190,6 @@ lsx.n35487|persephonium
 lsx.n35488|Persepolis
 lsx.n35489|persequax
 lsx.n35490|persequens
-lsx.n35491|persequor
 lsx.n35492|persero1
 lsx.n35493|persero2
 lsx.n35494|perserpo
@@ -35423,7 +35204,6 @@ lsx.n35502|perseveranter
 lsx.n35503|perseverantia
 lsx.n35504|perseveratio
 lsx.n35505|persevere
-lsx.n35506|persevero
 lsx.n35507|perseverus
 lsx.n35508|Persia
 lsx.n35509|Persianae
@@ -35618,7 +35398,6 @@ lsx.n35698|pervector
 lsx.n35699|pervectus
 lsx.n35700|perveho
 lsx.n35701|pervello
-lsx.n35702|pervenio
 lsx.n35703|pervenor
 lsx.n35704|perventio
 lsx.n35705|perventor
@@ -35738,7 +35517,6 @@ lsx.n35818|petitum
 lsx.n35819|petiturio
 lsx.n35820|petitus1
 lsx.n35821|petitus2
-lsx.n35822|peto
 lsx.n35823|petoritum
 lsx.n35824|Petosiris
 lsx.n35825|Petovio
@@ -36420,7 +36198,6 @@ lsx.n36500|placenta
 lsx.n36501|placentarius
 lsx.n36502|placentia1
 lsx.n36503|Placentia2
-lsx.n36504|placeo
 lsx.n36505|placibilis
 lsx.n36506|placide
 lsx.n36507|Placideianus
@@ -36472,7 +36249,6 @@ lsx.n36552|planetarius
 lsx.n36553|planetes
 lsx.n36554|planeticus
 lsx.n36555|plangimonium
-lsx.n36556|plango
 lsx.n36557|plangor
 lsx.n36558|planguncula
 lsx.n36559|planiloquus
@@ -36610,7 +36386,6 @@ lsx.n36691|plorabilis
 lsx.n36692|ploratio
 lsx.n36693|plorator
 lsx.n36694|ploratus
-lsx.n36695|ploro
 lsx.n36696|plosor
 lsx.n36697|plostellum
 lsx.n36698|plostrarius
@@ -36777,7 +36552,6 @@ lsx.n36858|pollex1
 lsx.n36859|Pollex2
 lsx.n36860|Pollia
 lsx.n36861|pollicaris
-lsx.n36862|polliceor
 lsx.n36863|pollicitatio
 lsx.n36864|pollicitator
 lsx.n36865|pollicitatrix
@@ -36925,7 +36699,6 @@ lsx.n37006|pondo
 lsx.n37007|pondus
 lsx.n37008|pondusculum
 lsx.n37009|pone
-lsx.n37010|pono
 lsx.n37011|pons1
 lsx.n37012|Pons2
 lsx.n37013|Pontia1
@@ -37039,7 +36812,6 @@ lsx.n37120|porrixo
 lsx.n37121|porro
 lsx.n37122|porrum
 lsx.n37123|Porsena
-lsx.n37124|porta
 lsx.n37125|portabilis
 lsx.n37126|portarius
 lsx.n37127|portatio
@@ -37105,9 +36877,7 @@ lsx.n37187|possessus2
 lsx.n37188|possestrix
 lsx.n37189|possibilis
 lsx.n37190|possibilitas
-lsx.n37191|possideo
 lsx.n37192|possido
-lsx.n37193|possum
 lsx.n37194|post
 lsx.n37195|postauctumnalis
 lsx.n37196|postea
@@ -37221,7 +36991,6 @@ lsx.n37303|potio1
 lsx.n37304|potio2
 lsx.n37305|potionarius
 lsx.n37306|potiono
-lsx.n37307|potior1
 lsx.n37308|potitus1
 lsx.n37309|potior2
 lsx.n37310|potis
@@ -37235,7 +37004,6 @@ lsx.n37317|Potitus3
 lsx.n37318|potiuncula
 lsx.n37319|potius
 lsx.n37320|Potniae
-lsx.n37321|poto
 lsx.n37322|potor
 lsx.n37323|potorius
 lsx.n37324|potrix
@@ -37255,7 +37023,6 @@ lsx.n37337|praeambulo
 lsx.n37338|praeambulus
 lsx.n37339|praeaudio
 lsx.n37340|praebenda
-lsx.n37341|praebeo
 lsx.n37342|praebia
 lsx.n37343|praebibo
 lsx.n37344|praebita
@@ -37431,7 +37198,6 @@ lsx.n37514|praedicator
 lsx.n37515|praedicatorius
 lsx.n37516|praedicatrix
 lsx.n37517|praedico1
-lsx.n37518|praedico2
 lsx.n37519|praedictio
 lsx.n37520|praedictivus
 lsx.n37521|praedictum
@@ -37500,7 +37266,6 @@ lsx.n37583|praefervidus
 lsx.n37584|praefestinatim
 lsx.n37585|praefestino
 lsx.n37586|praefica
-lsx.n37587|praeficio
 lsx.n37588|praefidens
 lsx.n37589|praefigo
 lsx.n37590|praefiguratio
@@ -37924,7 +37689,6 @@ lsx.n38008|praestitor
 lsx.n38009|praestituo
 lsx.n38010|praestitus
 lsx.n38011|praesto1
-lsx.n38012|praesto2
 lsx.n38013|praestolatio
 lsx.n38014|praestolor
 lsx.n38015|praestrangulo
@@ -37948,7 +37712,6 @@ lsx.n38032|praesulsus
 lsx.n38033|praesultator
 lsx.n38034|praesulto
 lsx.n38035|praesultor
-lsx.n38036|praesum
 lsx.n38037|praesumenter
 lsx.n38038|praesumo
 lsx.n38039|praesumptio
@@ -38194,7 +37957,6 @@ lsx.n38279|pretio
 lsx.n38280|pretiose
 lsx.n38281|pretiositas
 lsx.n38282|pretiosus
-lsx.n38283|pretium
 lsx.n38284|prex
 lsx.n38285|Priamus
 lsx.n38286|Priantae
@@ -38292,7 +38054,6 @@ lsx.n38377|privicloes
 lsx.n38378|privignus
 lsx.n38379|privilegiarius
 lsx.n38380|privilegium
-lsx.n38381|privo
 lsx.n38382|privus
 lsx.n38383|pro1
 lsx.n38384|pro2
@@ -38409,7 +38170,6 @@ lsx.n38494|procreabilis
 lsx.n38495|procreatio
 lsx.n38496|procreator
 lsx.n38497|procreatrix
-lsx.n38498|procreo
 lsx.n38499|procresco
 lsx.n38500|Procris
 lsx.n38501|Procrustes
@@ -38527,8 +38287,6 @@ lsx.n38614|professorius
 lsx.n38615|professus
 lsx.n38616|profestus
 lsx.n38617|proficienter
-lsx.n38618|proficio
-lsx.n38619|proficisco
 lsx.n38620|proficiscor
 lsx.n38621|proficuus
 lsx.n38622|profiteor
@@ -38544,7 +38302,6 @@ lsx.n38631|proflo
 lsx.n38632|profluens
 lsx.n38633|profluenter
 lsx.n38634|profluentia
-lsx.n38635|profluo
 lsx.n38636|profluus
 lsx.n38637|profluvium
 lsx.n38638|profluvius
@@ -38691,7 +38448,6 @@ lsx.n38778|promissor
 lsx.n38779|promissum
 lsx.n38780|promissus1
 lsx.n38781|promissus2
-lsx.n38782|promitto
 lsx.n38783|promnion
 lsx.n38784|promo
 lsx.n38785|promoneo
@@ -38828,7 +38584,6 @@ lsx.n38916|propitiator
 lsx.n38917|propitiatorius
 lsx.n38918|propitiatrix
 lsx.n38919|propitietas
-lsx.n38920|propitio
 lsx.n38921|propitius
 lsx.n38922|propius
 lsx.n38923|proplasma
@@ -39372,7 +39127,6 @@ lsx.n39461|pugillum2
 lsx.n39462|pugilor
 lsx.n39463|pugio
 lsx.n39464|pugiunculus
-lsx.n39465|pugna
 lsx.n39466|pugnacitas
 lsx.n39467|pugnaciter
 lsx.n39468|pugnaculum
@@ -39384,7 +39138,6 @@ lsx.n39473|pugnax
 lsx.n39474|pugneus
 lsx.n39475|pugnicula
 lsx.n39476|pugnitus
-lsx.n39477|pugno
 lsx.n39478|pugnus
 lsx.n39479|Puilia
 lsx.n39480|pulcer
@@ -39610,7 +39363,6 @@ lsx.n39699|putidulus
 lsx.n39700|putidus
 lsx.n39701|putillus
 lsx.n39702|putisco
-lsx.n39703|puto
 lsx.n39704|putor
 lsx.n39705|putramen
 lsx.n39706|putredo
@@ -39848,7 +39600,6 @@ lsx.n39937|quadrurbem
 lsx.n39938|quadrus
 lsx.n39939|quadruus
 lsx.n39940|quaerito
-lsx.n39941|quaero
 lsx.n39942|quaesitio
 lsx.n39943|quaesitor
 lsx.n39944|quaesitum
@@ -39995,7 +39746,6 @@ lsx.n40085|querimonia
 lsx.n40086|queritor
 lsx.n40087|querneus
 lsx.n40088|quernus
-lsx.n40089|queror
 lsx.n40090|querquedula
 lsx.n40091|querquerus
 lsx.n40092|querquetulanus
@@ -40310,7 +40060,6 @@ lsx.n40401|rapina1
 lsx.n40402|rapina2
 lsx.n40403|rapinatio
 lsx.n40404|rapinator
-lsx.n40405|rapio
 lsx.n40406|rapistrum
 lsx.n40407|rapo
 lsx.n40408|rapso
@@ -40479,7 +40228,6 @@ lsx.n40571|reciperatio
 lsx.n40572|reciperativus
 lsx.n40573|reciperator
 lsx.n40574|reciperatorius
-lsx.n40575|recipero
 lsx.n40576|recipie
 lsx.n40577|recipio
 lsx.n40578|recipisco
@@ -40621,7 +40369,6 @@ lsx.n40715|redemptor
 lsx.n40716|redemptrix
 lsx.n40717|redemptura
 lsx.n40718|redemptus
-lsx.n40719|redeo
 lsx.n40720|redhalo
 lsx.n40721|redhibeo
 lsx.n40722|redhibitio
@@ -40662,7 +40409,6 @@ lsx.n40756|redordior
 lsx.n40757|redormio
 lsx.n40758|redormitio
 lsx.n40759|redorno
-lsx.n40760|reduco
 lsx.n40761|reductio
 lsx.n40762|reducto
 lsx.n40763|reductor
@@ -40693,7 +40439,6 @@ lsx.n40787|refello
 lsx.n40788|refercio
 lsx.n40789|referio
 lsx.n40790|referiva
-lsx.n40791|refero
 lsx.n40792|refert
 lsx.n40793|refertus
 lsx.n40794|referveo
@@ -40812,8 +40557,6 @@ lsx.n40907|reglutino
 lsx.n40908|regnator
 lsx.n40909|regnatrix
 lsx.n40910|regnicola
-lsx.n40912|regnum
-lsx.n40913|rego
 lsx.n40914|regradatio
 lsx.n40915|regrado
 lsx.n40916|regredior
@@ -40882,7 +40625,6 @@ lsx.n40978|religiosulus
 lsx.n40979|religiosus
 lsx.n40980|religo
 lsx.n40981|relino
-lsx.n40982|relinquo
 lsx.n40983|reliquatio
 lsx.n40984|reliquator
 lsx.n40985|reliquatrix
@@ -40949,7 +40691,6 @@ lsx.n41046|remissio
 lsx.n41047|remissivus
 lsx.n41048|remissor
 lsx.n41049|remissus
-lsx.n41050|remitto
 lsx.n41051|remivagus
 lsx.n41052|remixtus
 lsx.n41053|Remmius
@@ -41094,7 +40835,6 @@ lsx.n41191|repignero
 lsx.n41192|repigro
 lsx.n41193|repingo
 lsx.n41194|replaudo
-lsx.n41195|repleo
 lsx.n41196|repletio
 lsx.n41197|repletus
 lsx.n41198|replexus
@@ -41151,7 +40891,6 @@ lsx.n41248|reptabundus
 lsx.n41249|reptatio
 lsx.n41250|reptatus
 lsx.n41251|reptilis
-lsx.n41252|repto
 lsx.n41253|repubesco
 lsx.n41254|repudiatio
 lsx.n41255|repudiator
@@ -41183,7 +40922,6 @@ lsx.n41280|reputatio
 lsx.n41281|reputesco
 lsx.n41282|reputo
 lsx.n41283|requies
-lsx.n41284|requiesco
 lsx.n41285|requietio
 lsx.n41286|requietorium
 lsx.n41287|requietus
@@ -41285,7 +41023,6 @@ lsx.n41383|respiratus
 lsx.n41384|respiro
 lsx.n41385|resplendentia
 lsx.n41386|resplendeo
-lsx.n41387|respondeo
 lsx.n41388|responsio
 lsx.n41389|responsito
 lsx.n41390|responsive
@@ -41521,7 +41258,6 @@ lsx.n41621|revorsio
 lsx.n41622|revorto
 lsx.n41623|revulsio
 lsx.n41624|revulsus
-lsx.n41625|rex1
 lsx.n41626|Rex2
 lsx.n41627|Rha
 lsx.n41628|rhabdos
@@ -41636,7 +41372,6 @@ lsx.n41736|ricto
 lsx.n41737|rictum
 lsx.n41738|rictus
 lsx.n41739|ricula
-lsx.n41740|rideo
 lsx.n41741|ridibundus
 lsx.n41742|ridica
 lsx.n41743|ridicula
@@ -41907,7 +41642,6 @@ lsx.n42008|rumito
 lsx.n42009|rumo
 lsx.n42010|rumor
 lsx.n42011|rumpia
-lsx.n42012|rumpo
 lsx.n42013|rumpotinetum
 lsx.n42014|rumpotinus
 lsx.n42015|rumpus
@@ -42086,7 +41820,6 @@ lsx.n42188|sacrificator
 lsx.n42189|sacrificatus
 lsx.n42190|sacrificiolus
 lsx.n42191|sacrificium
-lsx.n42192|sacrifico
 lsx.n42193|sacrificulus
 lsx.n42194|sacrificus
 lsx.n42195|sacrilege
@@ -42309,7 +42042,6 @@ lsx.n42411|salubris
 lsx.n42412|salubritas
 lsx.n42413|salubriter
 lsx.n42414|salum
-lsx.n42415|salus
 lsx.n42416|Salustius
 lsx.n42417|salutabundus
 lsx.n42418|salutaris
@@ -42322,7 +42054,6 @@ lsx.n42424|salutificator
 lsx.n42425|salutiger
 lsx.n42426|salutigerulus
 lsx.n42427|Salutio
-lsx.n42428|saluto
 lsx.n42429|Saluvii
 lsx.n42430|salvamentum
 lsx.n42431|salvatio
@@ -42383,7 +42114,6 @@ lsx.n42486|sanctesco
 lsx.n42487|sanctificatio
 lsx.n42488|sanctificator
 lsx.n42489|sanctificium
-lsx.n42490|sanctifico
 lsx.n42491|sanctificus
 lsx.n42492|sanctiloquus
 lsx.n42493|sanctimonia
@@ -42861,14 +42591,12 @@ lsx.n42965|scilliticus
 lsx.n42966|scimpodion
 lsx.n42967|scin'
 lsx.n42968|scincos
-lsx.n42969|scindo
 lsx.n42970|scindula
 lsx.n42971|scinifes
 lsx.n42972|scintilla
 lsx.n42973|scintillatio
 lsx.n42974|scintillo
 lsx.n42975|scintillula
-lsx.n42976|scio
 lsx.n42977|sciolus
 lsx.n42978|Sciopodes
 lsx.n42979|sciothericon
@@ -42890,7 +42618,6 @@ lsx.n42994|scirrosis
 lsx.n42995|sciscitatio
 lsx.n42996|sciscitator
 lsx.n42997|sciscito
-lsx.n42998|sciscitor
 lsx.n42999|scisco
 lsx.n43000|scissilis
 lsx.n43001|scissim
@@ -43196,7 +42923,6 @@ lsx.n43301|sedecies
 lsx.n43302|sedecim
 lsx.n43303|sedecula
 lsx.n43304|sedentarius
-lsx.n43305|sedeo
 lsx.n43306|sedes
 lsx.n43307|sedibilis
 lsx.n43308|Sedigitus
@@ -43412,7 +43138,6 @@ lsx.n43517|seminator
 lsx.n43518|seminecis
 lsx.n43519|seminium
 lsx.n43520|seminiverbius
-lsx.n43521|semino
 lsx.n43522|seminosus
 lsx.n43523|seminudus
 lsx.n43524|Seminumida
@@ -43572,7 +43297,6 @@ lsx.n43677|sentinator
 lsx.n43678|sentino
 lsx.n43679|sentinosus
 lsx.n43680|Sentinus
-lsx.n43681|sentio
 lsx.n43682|sentis1
 lsx.n43683|Sentis2
 lsx.n43684|sentisco
@@ -43593,7 +43317,6 @@ lsx.n43698|separatrix
 lsx.n43699|separatus1
 lsx.n43700|separatus2
 lsx.n43702|sepelibilis
-lsx.n43703|sepelio
 lsx.n43704|sepes1
 lsx.n43705|sepes2
 lsx.n43706|sepia
@@ -43713,7 +43436,6 @@ lsx.n43819|sequestratorium
 lsx.n43820|sequestro
 lsx.n43821|sequior
 lsx.n43822|sequius
-lsx.n43823|sequor
 lsx.n43824|sequutio
 lsx.n43825|Ser
 lsx.n43826|sera
@@ -43773,7 +43495,6 @@ lsx.n43879|sermonalis
 lsx.n43880|sermonari
 lsx.n43881|sermunculus
 lsx.n43882|serniosus
-lsx.n43883|sero1
 lsx.n43884|sero2
 lsx.n43885|sero3
 lsx.n43886|sero4
@@ -43830,14 +43551,12 @@ lsx.n43936|serviculus
 lsx.n43937|Servilianus
 lsx.n43938|servilis
 lsx.n43939|Servilius
-lsx.n43940|servio
 lsx.n43941|servitium
 lsx.n43942|servitor
 lsx.n43943|servitritius
 lsx.n43944|servitudo
 lsx.n43945|servitus
 lsx.n43946|Servius
-lsx.n43947|servo
 lsx.n43948|servula
 lsx.n43949|servulicola
 lsx.n43950|servulus
@@ -44370,7 +44089,6 @@ lsx.n44476|siser
 lsx.n44477|Sisichthon
 lsx.n44478|sison agrion
 lsx.n44479|sispes
-lsx.n44480|sisto
 lsx.n44481|sistratus
 lsx.n44482|sistrum
 lsx.n44483|sisura
@@ -44498,7 +44216,6 @@ lsx.n44604|soleatus
 lsx.n44605|solemnis
 lsx.n44606|solen
 lsx.n44607|solennis
-lsx.n44608|soleo
 lsx.n44609|solers
 lsx.n44610|Soletum
 lsx.n44611|Soli
@@ -44588,7 +44305,6 @@ lsx.n44694|solutor
 lsx.n44695|solutrix
 lsx.n44696|solutus
 lsx.n44697|Solva
-lsx.n44698|solvo
 lsx.n44699|Solyma
 lsx.n44700|Solymus
 lsx.n44701|somnialis
@@ -44803,7 +44519,6 @@ lsx.n44909|speciaria
 lsx.n44910|speciarius
 lsx.n44911|speciatim
 lsx.n44912|speciatus
-lsx.n44913|species
 lsx.n44914|specillatus
 lsx.n44915|specillum
 lsx.n44916|specimen
@@ -44989,7 +44704,6 @@ lsx.n45096|sponda
 lsx.n45097|spondaeus
 lsx.n45098|spondaicus
 lsx.n45099|spondalium
-lsx.n45100|spondeo
 lsx.n45101|spondeus
 lsx.n45102|spondiacus
 lsx.n45103|spondyle
@@ -45173,7 +44887,6 @@ lsx.n45280|Statones
 lsx.n45281|stator1
 lsx.n45282|Stator2
 lsx.n45283|Statorius
-lsx.n45284|statua
 lsx.n45285|statualis
 lsx.n45286|statuarius
 lsx.n45287|statuliber
@@ -45183,7 +44896,6 @@ lsx.n45290|statumen
 lsx.n45291|statuminatio
 lsx.n45292|statumino
 lsx.n45293|statunculum
-lsx.n45294|statuo
 lsx.n45295|statura
 lsx.n45296|staturosus
 lsx.n45297|status1
@@ -45346,7 +45058,6 @@ lsx.n45453|stlembus
 lsx.n45454|stlis
 lsx.n45455|stlocus
 lsx.n45456|stloppus
-lsx.n45457|sto
 lsx.n45458|Stobi
 lsx.n45459|stobrus
 lsx.n45460|stoebe
@@ -45759,7 +45470,6 @@ lsx.n45866|subhorridus
 lsx.n45867|subhumidus
 lsx.n45868|Subi
 lsx.n45869|subices
-lsx.n45870|subicio
 lsx.n45871|subicitare
 lsx.n45872|subiculum
 lsx.n45873|subidus
@@ -46295,7 +46005,6 @@ lsx.n46402|Suffenus
 lsx.n46403|sufferctus
 lsx.n46404|sufferentia
 lsx.n46405|suffermentatus
-lsx.n46406|suffero
 lsx.n46407|suffertus
 lsx.n46408|suffervefacio
 lsx.n46409|suffervefio
@@ -46305,7 +46014,6 @@ lsx.n46412|suffibulum
 lsx.n46413|sufficiens
 lsx.n46414|sufficienter
 lsx.n46415|sufficientia
-lsx.n46416|sufficio
 lsx.n46417|suffigo
 lsx.n46418|suffimen
 lsx.n46419|suffimento
@@ -46475,7 +46183,6 @@ lsx.n46583|summurmuro
 lsx.n46584|summus
 lsx.n46585|summussi
 lsx.n46586|summuto
-lsx.n46587|sumo
 lsx.n46588|sumpsio
 lsx.n46589|sumptifacio
 lsx.n46590|sumptio
@@ -46712,7 +46419,6 @@ lsx.n46820|supernomino
 lsx.n46821|supernumerarius
 lsx.n46822|supernumero
 lsx.n46823|supernus
-lsx.n46824|supero
 lsx.n46825|superobductus
 lsx.n46826|superobruo
 lsx.n46827|superobrutus
@@ -46868,7 +46574,6 @@ lsx.n46976|supplosio
 lsx.n46977|suppo
 lsx.n46978|suppoenitet
 lsx.n46979|suppolitor
-lsx.n46980|suppono
 lsx.n46981|supportatio
 lsx.n46982|supportatorium
 lsx.n46983|supporto
@@ -47033,7 +46738,6 @@ lsx.n47142|sustentatio
 lsx.n47143|sustentatus
 lsx.n47144|sustento
 lsx.n47145|sustinentia
-lsx.n47146|sustineo
 lsx.n47147|sustollo
 lsx.n47148|sustuli
 lsx.n47149|susum
@@ -47347,7 +47051,6 @@ lsx.n47456|tandem
 lsx.n47457|Tanetum
 lsx.n47458|Tanfana
 lsx.n47459|tangibilis
-lsx.n47460|tango
 lsx.n47461|taniacae
 lsx.n47462|tanos
 lsx.n47463|tanquam
@@ -47527,7 +47230,6 @@ lsx.n47636|tegillum
 lsx.n47637|tegimen
 lsx.n47638|tegimentum
 lsx.n47639|tegmen
-lsx.n47640|tego
 lsx.n47641|tegulae
 lsx.n47642|tegulicius
 lsx.n47643|tegulum
@@ -47638,7 +47340,6 @@ lsx.n47747|tenax
 lsx.n47748|Tenchtheri
 lsx.n47749|Tendeba
 lsx.n47750|tendicula
-lsx.n47751|tendo
 lsx.n47752|tendor
 lsx.n47753|Tenea
 lsx.n47754|tenebellae
@@ -47657,7 +47358,6 @@ lsx.n47766|tenebrosus
 lsx.n47767|Tenedos
 lsx.n47768|tenellulus
 lsx.n47769|tenellus
-lsx.n47770|teneo
 lsx.n47771|tener
 lsx.n47772|tenerasco
 lsx.n47773|tenere
@@ -47784,11 +47484,9 @@ lsx.n47893|ternox
 lsx.n47894|ternus
 lsx.n47895|tero
 lsx.n47896|Terpsichore
-lsx.n47897|terra
 lsx.n47898|Terracina
 lsx.n47899|terralis herba
 lsx.n47900|terrenus
-lsx.n47901|terreo
 lsx.n47902|terrestris
 lsx.n47903|terreus
 lsx.n47904|terribilis
@@ -48244,7 +47942,6 @@ lsx.n48354|Timarchus
 lsx.n48355|Timarete
 lsx.n48356|Timavus
 lsx.n48357|timefactus
-lsx.n48358|timeo
 lsx.n48359|timescens
 lsx.n48360|timide
 lsx.n48361|timiditas
@@ -48375,7 +48072,6 @@ lsx.n48485|Toletum
 lsx.n48486|Tolistobogii
 lsx.n48487|tolleno
 lsx.n48488|tolles
-lsx.n48489|tollo
 lsx.n48490|Tolosa
 lsx.n48491|Tolostobogii
 lsx.n48492|Tolumnius
@@ -48482,7 +48178,6 @@ lsx.n48593|torrido
 lsx.n48594|torridus
 lsx.n48595|torris
 lsx.n48596|torror
-lsx.n48597|torsio
 lsx.n48598|torta
 lsx.n48599|torte
 lsx.n48600|torticordius
@@ -48556,7 +48251,6 @@ lsx.n48667|traditio
 lsx.n48668|traditor
 lsx.n48669|traditus1
 lsx.n48670|traditus2
-lsx.n48671|trado
 lsx.n48672|traducianus
 lsx.n48673|traduco
 lsx.n48674|traductio
@@ -48594,7 +48288,6 @@ lsx.n48705|traha
 lsx.n48706|traharius
 lsx.n48707|trahax
 lsx.n48708|trahea
-lsx.n48709|traho
 lsx.n48710|traicio
 lsx.n48711|Trajanus
 lsx.n48712|trajecticius
@@ -48656,11 +48349,9 @@ lsx.n48767|transditus
 lsx.n48768|transdo
 lsx.n48769|transduco
 lsx.n48770|transenna
-lsx.n48771|transeo
 lsx.n48772|transero
 lsx.n48773|transertus
 lsx.n48774|transeunter
-lsx.n48775|transfero
 lsx.n48776|transfigo
 lsx.n48777|transfigurabilis
 lsx.n48778|transfiguratio
@@ -48696,7 +48387,6 @@ lsx.n48807|transgressivus
 lsx.n48808|transgressor
 lsx.n48809|transgressus1
 lsx.n48810|transgressus2
-lsx.n48811|transigo
 lsx.n48812|transilio
 lsx.n48813|transilis
 lsx.n48814|transilitio
@@ -48841,7 +48531,6 @@ lsx.n48952|trementer
 lsx.n48953|tremesco
 lsx.n48954|tremipes
 lsx.n48955|tremis
-lsx.n48957|tremor
 lsx.n48958|tremule
 lsx.n48959|tremulus
 lsx.n48960|trepidanter
@@ -48886,7 +48575,6 @@ lsx.n48998|tribunal
 lsx.n48999|tribunatus
 lsx.n49000|tribunicius
 lsx.n49001|tribunus
-lsx.n49002|tribuo
 lsx.n49003|tribus
 lsx.n49004|tributarius
 lsx.n49005|tributim
@@ -49256,7 +48944,6 @@ lsx.n49368|tudiculo
 lsx.n49369|tuditans
 lsx.n49370|Tuditanus
 lsx.n49371|tueo
-lsx.n49372|tueor
 lsx.n49373|tufa
 lsx.n49374|Tugio
 lsx.n49375|tuguriolum
@@ -49873,7 +49560,6 @@ lsx.n49985|utercumque
 lsx.n49986|uterinus
 lsx.n49987|uterlibet
 lsx.n49988|uterque
-lsx.n49989|uterus
 lsx.n49990|utervis
 lsx.n49991|uti1
 lsx.n49992|uti2
@@ -49886,7 +49572,6 @@ lsx.n49998|utinam
 lsx.n49999|utique1
 lsx.n50000|utique2
 lsx.n50001|uto
-lsx.n50002|utor
 lsx.n50003|utpote
 lsx.n50004|utputa
 lsx.n50005|utralibet
@@ -49961,7 +49646,6 @@ lsx.n50073|Vada2
 lsx.n50074|Vada3
 lsx.n50075|Vadimonis
 lsx.n50076|vadimonium
-lsx.n50077|vado1
 lsx.n50078|vado2
 lsx.n50079|vador
 lsx.n50080|vadosus
@@ -50006,7 +49690,6 @@ lsx.n50118|valentia1
 lsx.n50119|Valentia2
 lsx.n50120|Valentiniani
 lsx.n50121|valentulus
-lsx.n50122|valeo
 lsx.n50123|valeria
 lsx.n50124|Valerianus1
 lsx.n50125|Valerianus2
@@ -50134,7 +49817,6 @@ lsx.n50246|vastificus
 lsx.n50247|vastitas
 lsx.n50248|vastities
 lsx.n50249|vastitudo
-lsx.n50250|vasto
 lsx.n50251|vastulus
 lsx.n50252|vastus
 lsx.n50253|vasum
@@ -50294,7 +49976,6 @@ lsx.n50407|vendito
 lsx.n50408|venditor
 lsx.n50409|venditrix
 lsx.n50410|venditus
-lsx.n50411|vendo
 lsx.n50412|Venedi
 lsx.n50413|venefica
 lsx.n50414|veneficium
@@ -50325,10 +50006,8 @@ lsx.n50438|veniabilis
 lsx.n50439|venialis
 lsx.n50440|venilia1
 lsx.n50441|Venilia2
-lsx.n50442|venio
 lsx.n50443|Vennenses
 lsx.n50444|Vennonius
-lsx.n50445|venor
 lsx.n50446|venosus
 lsx.n50447|venter
 lsx.n50448|Ventidianus
@@ -50536,7 +50215,6 @@ lsx.n50650|verticula
 lsx.n50651|vertigino
 lsx.n50652|vertiginosus
 lsx.n50653|vertigo
-lsx.n50654|verto
 lsx.n50655|vertraga
 lsx.n50656|Vertumnus
 lsx.n50657|veru
@@ -50764,7 +50442,6 @@ lsx.n50879|vicus
 lsx.n50880|videlicet
 lsx.n50881|viden'?
 lsx.n50882|videns
-lsx.n50883|video
 lsx.n50884|vidualis
 lsx.n50885|viduatus
 lsx.n50886|viduertas
@@ -50847,7 +50524,6 @@ lsx.n50963|vinca pervinca
 lsx.n50964|vinceus
 lsx.n50965|vinciam
 lsx.n50966|vincibilis
-lsx.n50967|vincio
 lsx.n50968|vinco
 lsx.n50969|vinctio
 lsx.n50970|vinctor
@@ -50924,7 +50600,6 @@ lsx.n51040|virdicatus
 lsx.n51041|Virdumarus
 lsx.n51042|virectum
 lsx.n51043|virens
-lsx.n51044|vireo1
 lsx.n51045|vireo2
 lsx.n51046|vires
 lsx.n51047|viresco
@@ -51071,7 +50746,6 @@ lsx.n51187|vitiparra
 lsx.n51188|vitis
 lsx.n51189|vitisator
 lsx.n51190|vitium
-lsx.n51191|vito
 lsx.n51192|vitor
 lsx.n51193|vitreamen
 lsx.n51194|vitrearius
@@ -51118,7 +50792,6 @@ lsx.n51234|vivificus
 lsx.n51235|viviparus
 lsx.n51236|viviradix
 lsx.n51237|vivisco
-lsx.n51238|vivo
 lsx.n51239|vivus
 lsx.n51240|vix
 lsx.n51241|vixdum
@@ -51146,7 +50819,6 @@ lsx.n51262|vocifico
 lsx.n51263|Vocio
 lsx.n51264|vocito
 lsx.n51265|vocivus
-lsx.n51266|voco
 lsx.n51267|Voconius
 lsx.n51268|Vocontii
 lsx.n51269|vocula
@@ -51178,8 +50850,6 @@ lsx.n51294|volgo
 lsx.n51295|volitatus
 lsx.n51296|volito
 lsx.n51297|volnus
-lsx.n51298|volo1
-lsx.n51299|volo2
 lsx.n51300|volo3
 lsx.n51301|Vologessia
 lsx.n51302|Vologesus
@@ -51285,7 +50955,6 @@ lsx.n51401|votivus
 lsx.n51402|voto
 lsx.n51403|votum
 lsx.n51404|votus
-lsx.n51405|voveo
 lsx.n51406|vox
 lsx.n51407|Vulcanus
 lsx.n51408|vulgaris
@@ -51298,7 +50967,6 @@ lsx.n51414|vulgatus1
 lsx.n51415|vulgatus2
 lsx.n51416|vulgivagus
 lsx.n51417|vulgo1
-lsx.n51418|vulgo2
 lsx.n51419|vulgus
 lsx.n51420|vulnerabilis
 lsx.n51421|vulnerarius
