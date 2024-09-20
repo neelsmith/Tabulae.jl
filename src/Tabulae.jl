@@ -45,6 +45,7 @@ export rulesarray, stemsarray
 export rulesclasses, stemsclasses
 export ruleset
 export registry
+export compoundsmap, simplex
 
 
 export analysis, analyses
@@ -177,5 +178,6 @@ include("for-apps/deponentverbs.jl")
 
 include("utils/coredata.jl")
 include("utils/lexemelabels.jl")
+include("utils/compounds.jl")
 
 end # module
