@@ -1,3 +1,7 @@
+---
+engine: julia
+---
+
 # Stem types and paradigms
 
 

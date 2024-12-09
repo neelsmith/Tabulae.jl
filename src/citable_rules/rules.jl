@@ -83,13 +83,18 @@ end
 
 
 function delimitedrule(r::T; delimiter = "|") where {T <: TabulaeRule}
-    data = [
-        id(r),
-        inflectionclass(r),
-        ending(r),
-        abbreviate(urn(latinForm(r)))
-    ]
-    join(data, delimiter)
+    if isnothing(latinForm(r))
+        @warn("Yikes got nothing for a rule of type $(typeof(r))...")
+    else
+        data = [
+            id(r),
+            inflectionclass(r),
+            ending(r),
+            abbreviate(urn(latinForm(r)))
+        ]
+        
+        join(data, delimiter)
+    end
 end
 
 
@@ -119,11 +124,12 @@ end
 $(SIGNATURES)
 """
 function tofile(v::Vector{Rule}, f; delimiter = "|")
-    @debug("Writing rules to file with delimiter $(delimiter)")
+    @info("Writing rules to file $(f) with delimiter $(delimiter)")
     headings = ["Rule", "Inflectional type","Ending","Form"]
     hdr = join(headings, delimiter)
     data = delimitedrule.(v; delimiter = delimiter )
-    content = hdr * "\n" * join(data,"\n")
+    cleaner = filter(item -> ! isnothing(item), data)
+    content = hdr * "\n" * join(cleaner,"\n")
     open(f, "w") do io
         write(f, content)
     end
@@ -138,7 +144,7 @@ function ruleset(s, freader::Type{StringReader};  delim = "|")
     data = filter(row -> !isempty(row),split(s,"\n"))[2:end]
 
     map(data) do row
-        @debug("Mapping row $(row)")
+        @info("Mapping row $(row)")
         fromdelimited(row; delimiter = delim)
     end
     #fromdelimited.(data; delimiter = delim)
@@ -163,7 +169,7 @@ function ruleset(u, freader::Type{UrlReader};  delim = "|")
     tmp = Downloads.download(u)
     data = read(tmp, String)
     rm(tmp)
-    #@debug("Data for rules set: $(data)")
+    @debug("Data for rules set: $(data)")
     ruleset(data, StringReader; delim = delim)
 end
 

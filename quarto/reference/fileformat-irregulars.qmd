@@ -1,3 +1,7 @@
+---
+engine: julia
+---
+
 # Delimited file format: irregular forms
 
 ::: {.callout-caution title="TBA"}

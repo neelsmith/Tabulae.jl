@@ -1,3 +1,8 @@
+---
+engine: julia
+---
+
+
 # Delimited file format: stems for verbal forms
 
 ::: {.callout-caution title="TBA"}

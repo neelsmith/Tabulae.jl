@@ -1,3 +1,8 @@
+---
+engine: julia
+---
+
+
 # Verbs with irreglar principal parts
 
 

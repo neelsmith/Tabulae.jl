@@ -1,3 +1,7 @@
+---
+engine: julia
+---
+
 # Saving and loading a compiled parser
 
 ::: {.callout-caution}

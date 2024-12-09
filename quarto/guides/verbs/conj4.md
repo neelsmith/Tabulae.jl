@@ -1,3 +1,7 @@
+---
+engine: julia
+---
+
 # Fourth conjugation verbs
 
 `conj4`

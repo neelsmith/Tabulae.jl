@@ -1,3 +1,7 @@
+---
+engine: julia
+---
+
 # First conjugation verbs
 
 Stem type: `conj1`

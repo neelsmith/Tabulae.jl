@@ -115,7 +115,7 @@ end
 
 
 function id(rule::TabulaeIrregularRule)
-    rule.id
+    rule.ruleid
 end
 
 #=
