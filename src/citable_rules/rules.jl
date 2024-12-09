@@ -83,13 +83,18 @@ end
 
 
 function delimitedrule(r::T; delimiter = "|") where {T <: TabulaeRule}
-    data = [
-        id(r),
-        inflectionclass(r),
-        ending(r),
-        abbreviate(urn(latinForm(r)))
-    ]
-    join(data, delimiter)
+    if isnothing(latinForm(r))
+        @warn("Yikes got nothing for a rule of type $(typeof(r))...")
+    else
+        data = [
+            id(r),
+            inflectionclass(r),
+            ending(r),
+            abbreviate(urn(latinForm(r)))
+        ]
+        
+        join(data, delimiter)
+    end
 end
 
 
@@ -119,7 +124,7 @@ end
 $(SIGNATURES)
 """
 function tofile(v::Vector{Rule}, f; delimiter = "|")
-    @debug("Writing rules to file with delimiter $(delimiter)")
+    @info("Writing rules to file $(f) with delimiter $(delimiter)")
     headings = ["Rule", "Inflectional type","Ending","Form"]
     hdr = join(headings, delimiter)
     data = delimitedrule.(v; delimiter = delimiter )

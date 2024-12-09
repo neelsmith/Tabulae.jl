@@ -5,7 +5,7 @@ using Dates
 using Tabulae, CitableParserBuilder
 
 
-function complut_ds_pair()
+function complut_ds_pair(repo)
 
     medieval = joinpath(repo, "datasets", "medieval-shared") 
 
@@ -30,8 +30,8 @@ function complut_ds_pair()
     (ds23, ds25)
 end
 
-function buildcomplut_all()
-    (ds23, ds25) = complut_ds_pair()
+function buildcomplut_all(repo)
+    (ds23, ds25) = complut_ds_pair(repo)
 
     p23 = tabulaeStringParser(ds23)
     p25 = tabulaeStringParser(ds25)
@@ -55,6 +55,23 @@ function buildcomplut_all()
 
     tofile(p25, out25)
     tofile(p25, curr25)
+
+    
+    rulesout23 = joinpath(repo, "scratch", "complut-lat23-rules-$(datestr).cex")
+    rulesout25 = joinpath(repo, "scratch", "complut-lat25-rules-$(datestr).cex")
+    Tabulae.tofile(rulesarray(ds23), rulesout23)
+    Tabulae.tofile(rulesarray(ds25), rulesout25)
+
+
+    rulescurrent23 = joinpath(repo, "scratch", "complut-lat23-rules-current.cex")
+    rulescurrent25 = joinpath(repo, "scratch", "complut-lat25-rules-current.cex")
+
+    Tabulae.tofile(rulesarray(ds23), rulescurrent23)
+    Tabulae.tofile(rulesarray(ds25), rulescurrent25)
+
+
 end
 
-@time buildcomplut_all()
+@time buildcomplut_all(pwd())
+
+
