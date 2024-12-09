@@ -116,11 +116,10 @@ end
 $(SIGNATURES)
 """
 function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, noun::LMFNoun)
-
-    @debug("Create noun form!")
-    TabulaeNounRule(RuleUrn(id), infltype, ending,
+    TabulaeNounRule(id, infltype, ending,
     lmpGender(noun), lmpCase(noun), lmpNumber(noun)
     )
+    
 end
 
 """Create a `LMFNoun` form from a rule.
