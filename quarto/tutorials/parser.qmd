@@ -1,4 +1,5 @@
 ---
+engine: julia
 title: "Build a parser and parse Latin strings"
 ---
 

@@ -1,3 +1,8 @@
+---
+engine: julia
+---
+
+
 # Third-declension nouns
 
 ::: {.callout-caution title="Incomplete"}

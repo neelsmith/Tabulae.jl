@@ -1,6 +1,10 @@
+---
+engine: julia
+---
 
-```@setup datasets
-repo = pwd() |> dirname |> dirname  |> dirname
+
+```{julia}
+repo = pwd() |> dirname |> dirname 
 ```
 
 # Datasets
@@ -18,7 +22,7 @@ repo = pwd() |> dirname |> dirname  |> dirname
 
 Create a `Tabulae.Dataset` with a Vector of directories following the prescribed structure:
 
-```@example datasets
+```{julia}
 using Tabulae
 srcdata = joinpath(repo, "datasets", "core-infl-shared")
 tabds = Tabulae.Dataset([srcdata])

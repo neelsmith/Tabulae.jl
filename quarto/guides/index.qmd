@@ -1,5 +1,6 @@
 ---
 title: "How-to guides"
+engine: julia
 ---
 
 This section collects recipes for how to do specific tasks in Tabulae. If you are just starting out, you may want to explore the tutorials first.  You can learn more about the underlying concepts behind these tasks in the "Concepts" section of the site.

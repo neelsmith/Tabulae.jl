@@ -1,6 +1,6 @@
 ---
 title: "Tabulae.jl"
-jupyter: julia-1.10
+engine: julia
 ---
 
 > ☛ *Build customized Latin morphological parsers*

@@ -1,3 +1,7 @@
+---
+engine: julia
+---
+
 # Stems
 
 Each stem entry is identified by an abbreviated URN, and identifies a lexeme with a second abbreviated URN.

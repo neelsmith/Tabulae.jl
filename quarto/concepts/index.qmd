@@ -1,5 +1,6 @@
 ---
 title: "Fundamental concepts"
+engine: julia
 ---
 
 This section explains what makes Tabulae different from other approaches to Latin morphological parsing.
