@@ -4,8 +4,157 @@ engine: julia
 
 # Inflectional classes
 
+```{julia}
+#| output: false
+#| echo: false
+using Tabulae, CitableParserBuilder
+repo = pwd() |> dirname |> dirname
+ds = Tabulae.coredata(repo)
+using Markdown
+```
 
-::: {.callout-caution title="Contents TBA"}
-A full list of inflectional classes used in the core Tabulae datasets will be 
-added here.
+
+
+
+## Nouns
+
+::: {.callout-caution title="Contents in progress"}
+The lists of inflectional classes for nouns are not yet complete.
+:::
+
+Format of CEX entries:
+    `StemUrn|LexicalEntity|Stem|Gender|InflClass`
+
+
+
+### First declension
+
+- `a_ae` class. First declension nouns, masculine or feminine gender, with genitive singular in -*ae*. Example CEX entry:
+
+    `latcommon.nounn2612|ls.n2612|anim|feminine|a_ae`
+
+
+    Produces:
+
+
+```{julia}
+#| output: asis
+#| echo: false
+anima = LexemeUrn("ls.n2612")
+md_declension(anima, ds) |> Markdown.parse
+```
+
+
+- `a_ae_pl`class. First declension nouns, masculine or feminine gender, extant only in the plural with genitive in -*arum*. Example CEX entry:
+
+    `latcommon.nounn47755|ls.n47755|tenebr|feminine|a_ae_pl`
+
+
+    Produces:
+
+```{julia}
+#| output: asis
+#| echo: false
+tenebra = LexemeUrn("ls.n47755")
+md_declension(tenebra, ds) |> Markdown.parse
+```
+
+
+### Second declension
+
+- `us_i` class. Second declension nouns, masculine or neuter gender, with genitive singular in -*i*. Example CEX entries:
+
+    `latcommon.nounn14736|ls.n14736|don|neuter|us_i`
+    `latcommon.nounn2636|ls.n2636|anim|masculine|us_i`
+
+    Produces:
+
+```{julia}
+#| output: asis
+#| echo: false
+donum = LexemeUrn("ls.n14736")
+animus = LexemeUrn("ls.n2636")
+md_declension([animus, donum], ds) |> Markdown.parse
+```
+
+
+### Third declension
+
+- `0_is` class. Third declension nouns, any gender. Stem of genitive singular is identical to nominative singular form. Example CEX entry:
+
+    `latcommon.nounn50039|ls.n50039|uxor|feminine|0_is`
+
+    Produces:
+
+```{julia}
+#| output: asis
+#| echo: false
+uxor = LexemeUrn("ls.n50039")
+md_declension(uxor, ds) |> Markdown.parse
+```
+
+### Fourth declension 
+
+- `us_us` class. Fourth declension nouns with genitive singular ending in -*us*. Example CEX entry:
+
+
+    `latcommon.nounn7021|ls.n7021|cas|masculine|us_us`
+
+    Produces:
+
+
+```{julia}
+#| output: asis
+#| echo: false
+casus = LexemeUrn("ls.n7021")
+md_declension(casus, ds) |> Markdown.parse
+```
+
+
+
+### Fifth declension
+
+- `es_ei` class. Fifth-declension nouns with genitive singular in -*ei*. Example CEX entry:
+
+    `latcommon.nounn41293|ls.n41293|r|feminine|es_ei`
+
+    Produces:
+
+
+```{julia}
+#| output: asis
+#| echo: false
+res = LexemeUrn("ls.n41293")
+md_declension(res, ds) |> Markdown.parse
+```
+
+
+## Verbs: simplex forms
+
+::: {.callout-caution title="Contents in progress"}
+The lists of inflectional classes for verbs are not yet complete.
+:::
+
+## Verbs: compound forms
+
+
+
+## Adjectives
+
+
+::: {.callout-caution title="Contents in progress"}
+The lists of inflectional classes for verbs are not yet complete.
+:::
+
+## Adverbs
+
+::: {.callout-caution title="Contents in progress"}
+The lists of inflectional classes for adverbs are not yet complete.
+:::
+
+
+## Uninflected forms
+
+::: {.callout-caution title="Contents in progress"}
+The lists of inflectional classes for adverbs are not yet complete.
 :::
