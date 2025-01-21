@@ -14,6 +14,7 @@ function rulesarray(dirlist; delimiter = "|")
     iodict = Dict(
         [
         "nouns" => TabulaeNounRule,
+        "adjectives" => TabulaeAdjectiveRule,
         "verbs" => TabulaeFiniteVerbRule,
         "infinitives" => TabulaeInfinitiveRule,
         "gerundives" => TabulaeGerundiveRule,
@@ -25,6 +26,7 @@ function rulesarray(dirlist; delimiter = "|")
     )
     rulesdirs = [
         "nouns",
+        "adjectives",
         "verbs",
         "infinitives",
         "gerundives",

@@ -160,7 +160,7 @@ end
 
 
 
-enclitics = ["que", "ve", "ne", "cum"]
+enclitics = ["que", "ve", "ne", "cum","n'"]
 
 
 """Parse a Latin orthographic token, checking for possibility of enclitics.
