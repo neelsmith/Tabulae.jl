@@ -96,11 +96,13 @@ export TabulaeIrregularRule
 export TabulaeStem, TabulaeIrregularStem, lexeme, stemvalue
 export TabulaeNounStem
 export TabulaeAdjectiveStem
+export TabulaeIrregularAdverb
 export TabulaePronounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
 export TabulaeIrregularInfinitive
 export TabulaeStringParser, tabulaeStringParser, tsp
 export TabulaeUninflectedStem
+export TabulaeIrregularAdverbStem
 export orthography
 
 export lsid_dict, lexid_dict
@@ -150,7 +152,7 @@ include("citable_stems/irregularfiniteverbs.jl")
 include("citable_stems/irregularinfinitives.jl")
 include("citable_stems/compoundverbs.jl")
 include("citable_stems/uninflected.jl")
-
+include("citable_stems/irregularadverbs.jl")
 
 
 include("citable_rules/rules.jl")

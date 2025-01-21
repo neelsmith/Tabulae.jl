@@ -87,6 +87,7 @@ function stemsarray(dirlist; delimiter = "|")
         #"nouns" => IrregularNounIO("noun"),
         "verbs" => TabulaeIrregularVerb,
         "infinitives" => TabulaeIrregularInfinitive,
+        "adverbs" => TabulaeIrregularAdverb,
         #"adjectives" => IrregularAdjectiveIO("adjectives")
         ]
     )
@@ -94,6 +95,7 @@ function stemsarray(dirlist; delimiter = "|")
         #"nouns",
         "verbs",
         "infinitives",
+        "adverbs"
         #"adjectives"
     ]
     irreginfltypes = Dict(
@@ -101,6 +103,7 @@ function stemsarray(dirlist; delimiter = "|")
         # "adjectives" => "irregularadjective",
         "verbs" => "irregularfiniteverb",
         "infinitives" => "irregularinfinitive",
+        "adverbs" => "irregularadverb"
     )
 
   
