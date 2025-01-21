@@ -83,6 +83,7 @@ export delimitedrule
 export formrule, formurn
 export TabulaeNounRule
 export TabulaePronounRule
+export TabulaeAdjectiveRule
 
 export TabulaeFiniteVerbRule
 export TabulaeGerundiveRule
