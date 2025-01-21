@@ -18,6 +18,7 @@ monthday = datesrc |> day
 datestr = join([yr,mo,monthday], "-")
 
 
+# Names of output files:
 out23 = joinpath(reporoot, "scratch", "lewisshort-lat23-$(datestr).cex")
 curr23 = joinpath(reporoot, "scratch", "lewisshort-lat23-current.cex")
 
@@ -28,7 +29,7 @@ out25 = joinpath(reporoot, "scratch", "lewisshort-lat25-$(datestr).cex")
 curr25 = joinpath(reporoot, "scratch", "lewisshort-lat25-current.cex")
 
 
-
+# Tabulae datasets:
 inflcommon = joinpath(reporoot, "datasets", "core-infl-shared")
 common = joinpath(dsroot, "common")
 
@@ -36,7 +37,7 @@ l23dirs = [joinpath(dsroot, "lat23"), inflcommon, common]
 l24dirs = [joinpath(dsroot, "lat24"), inflcommon, common] 
 l25dirs = [joinpath(dsroot, "lat25"), inflcommon, common] 
 
-
+# Parsers:
 @time p23 = dataset(l23dirs) |> tabulaeStringParser
 @time p24 = dataset(l24dirs) |> tabulaeStringParser
 @time p25 = dataset(l25dirs) |> tabulaeStringParser
