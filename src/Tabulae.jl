@@ -83,6 +83,7 @@ export delimitedrule
 export formrule, formurn
 export TabulaeNounRule
 export TabulaePronounRule
+
 export TabulaeFiniteVerbRule
 export TabulaeGerundiveRule
 export TabulaeGerundRule
@@ -153,6 +154,7 @@ include("citable_stems/uninflected.jl")
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
+include("citable_rules/adjectives.jl")
 include("citable_rules/pronouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
