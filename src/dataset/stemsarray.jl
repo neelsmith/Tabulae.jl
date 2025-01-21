@@ -13,7 +13,8 @@ end
 $(SIGNATURES)
 """
 function stemsarray(dirlist; delimiter = "|")
-    finalarr = []
+    @debug("READING STEMS FROM $(dirlist)")
+    
     iodict = Dict(
         [
         #"adjectives" => AdjectiveIO("adjective"),
@@ -39,6 +40,7 @@ function stemsarray(dirlist; delimiter = "|")
     #stemsarr = Vector{<: Stem}()
     for datasrc in dirlist
         for dirname in stemdirs 
+            
             @debug("Read stems from dir ", dirname)
             dir = joinpath(datasrc, "stems-tables", dirname)
             @debug("dir = ", dir)
