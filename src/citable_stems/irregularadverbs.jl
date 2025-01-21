@@ -158,7 +158,7 @@ function code(adv::TabulaeIrregularAdverb)
 end
 
 function latinForm(adv::TabulaeIrregularAdverb)
-    LMFInAdverb(
+    LMFAdverb(
         lmpDegree(adv)
     )
 end
