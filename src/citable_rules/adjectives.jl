@@ -6,6 +6,7 @@ struct TabulaeAdjectiveRule <: TabulaeRule
     adjgender::LMPGender
     adjcase::LMPCase
     adjnumber::LMPNumber
+    adjdegree::LMPDegree
 end
 
 
@@ -25,7 +26,8 @@ function ==(a1::TabulaeAdjectiveRule, a2::TabulaeAdjectiveRule)
     a1.ending == a2.ending &&
     lmpGender(a1) == lmpGender(a2) && 
     lmpCase(a1) == lmpCase(a2) && 
-    lmpNumber(a1) == lmpNumber(a2) 
+    lmpNumber(a1) == lmpNumber(a2)  &&
+    lmpDegree(a1) == lmpDegree(a2)
 end
 
 
@@ -43,7 +45,7 @@ $(SIGNATURES)
 Required for `CitableTrait`.
 """
 function label(adj::TabulaeAdjectiveRule)
-    string("Adjective inflection rule: ending -", adj.ending, " in class ", adj.inflectionclass, " can be ", label(adj.adjgender), " ", label(adj.adjcase), " ", label(adj.adjnumber), ".")
+    string("Adjective inflection rule: ending -", adj.ending, " in class ", adj.inflectionclass, " can be ", label(adj.adjgender), " ", label(adj.adjcase), " ", label(adj.adjnumber), " ", label(adj.adjdegree), ".")
 end
 
 """Identifying URN for a `TabulaeAdjectiveRule`.  If
@@ -80,25 +82,28 @@ Required for `CitableTrait`.
 """
 function cex(adj::TabulaeAdjectiveRule; delimiter = "|", registry = nothing)
     if isnothing(registry)
-        join([urn(adj), inflectionclass(adj), ending(adj),
-        label(lmpGender(adj)), label(lmpCase(adj)), label(lmpNumber(adj))
+        @info("Making adj cex with no registry")
+        join([
+            urn(adj), 
+            inflectionclass(adj), ending(adj),
+            label(lmpGender(adj)), label(lmpCase(adj)), label(lmpNumber(adj)), label(lmpDegree(adj))
         ], delimiter)
     else
         c2urn = expand(adj.ruleid, registry)
         join([c2urn, inflectionclass(adj), ending(adj),
-        label(lmpGender(adj)), label(lmpCase(adj)), label(lmpNumber(adj))], delimiter)
+        label(lmpGender(adj)), label(lmpCase(adj)), label(lmpNumber(adj)), label(lmpDegree(adj))], delimiter)
     end
 end
 
 
-"""Instantiate a noun rule from delimited-text source.
+"""Instantiate an adjective rule from delimited-text source.
 $(SIGNATURES)
 """
 function fromcex(traitvalue::TabulaeAdjectiveRuleCex, cexsrc::AbstractString, T;      
     delimiter = "|", configuration = nothing, strict = true)
     parts = split(cexsrc, delimiter)
-    if length(parts) < 6
-        msg = "Invalid syntax for noun rule: too few components in $(cexsrc)"
+    if length(parts) < 7
+        msg = "Invalid syntax for adjective rule: too few components in $(cexsrc)"
         throw(ArgumentError(msg))
     else
         ruleid = RuleUrn(parts[1])
@@ -107,17 +112,18 @@ function fromcex(traitvalue::TabulaeAdjectiveRuleCex, cexsrc::AbstractString, T;
         g = lmpGender(parts[4])
         c = lmpCase(parts[5])
         n = lmpNumber(parts[6])
+        d = lmpDegree(parts[7])
  
-        TabulaeAdjectiveRule(ruleid, inflclass, ending, g,c,n)
+        TabulaeAdjectiveRule(ruleid, inflclass, ending, g,c,n, d)
     end
 end
 
-"""Instantiate a noun rule from a noun form and associated information.
+"""Instantiate an adjective rule from an adjective form and associated information.
 $(SIGNATURES)
 """
 function formrule(id::RuleUrn, infltype::AbstractString, ending::AbstractString, adj::LMFAdjective)
     TabulaeAdjectiveRule(id, infltype, ending,
-    lmpGender(adj), lmpCase(adj), lmpNumber(adj)
+    lmpGender(adj), lmpCase(adj), lmpNumber(adj), lmpDegree(adj)
     )
     
 end
@@ -126,7 +132,7 @@ end
 $(SIGNATURES)
 """
 function latinForm(adj::TabulaeAdjectiveRule)
-    LMFAdjective(adj.adjgender, adj.adjcase, adj.adjnumber)
+    LMFAdjective(adj.adjgender, adj.adjcase, adj.adjnumber, adj.adjdegree)
 end
 
 """Identify inflection type for `rule`.
@@ -156,7 +162,9 @@ function lmpNumber(adj::TabulaeAdjectiveRule)
     adj.adjnumber
 end
 
-
+function lmpDegree(adj::TabulaeAdjectiveRule)
+    adj.adjdegree
+end
 """Identifier for a  `TabulaeNounRule`, as an
 abbreviated URN.
 

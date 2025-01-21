@@ -17,7 +17,7 @@ function stemsarray(dirlist; delimiter = "|")
     
     iodict = Dict(
         [
-        #"adjectives" => AdjectiveIO("adjective"),
+        "adjectives" => TabulaeAdjectiveStem,
         "nouns" => TabulaeNounStem,
         "pronouns" => TabulaePronounStem,
         "uninflected" => TabulaeUninflectedStem,
@@ -26,7 +26,7 @@ function stemsarray(dirlist; delimiter = "|")
         ]
     )
     stemdirs = [
-        #"adjectives",
+        "adjectives",
         "nouns",
         "pronouns",
         "uninflected",
