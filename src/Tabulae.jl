@@ -93,6 +93,7 @@ export TabulaeIrregularRule
 
 export TabulaeStem, TabulaeIrregularStem, lexeme, stemvalue
 export TabulaeNounStem
+export TabulaeAdjectiveStem
 export TabulaePronounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
 export TabulaeIrregularInfinitive
@@ -141,6 +142,7 @@ include("citable_forms/uninflected.jl")
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
 include("citable_stems/pronouns.jl")
+include("citable_stems/regularadjectives.jl")
 include("citable_stems/regularverbs.jl")
 include("citable_stems/irregularfiniteverbs.jl")
 include("citable_stems/irregularinfinitives.jl")
