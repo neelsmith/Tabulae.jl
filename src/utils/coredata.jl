@@ -15,6 +15,11 @@ function coredata(repo = pwd(); orthodir = "lat25", medieval = false)
 end
 
 
+function min_data(repo = pwd(); orthodir = "lat25")
+    basicrules = joinpath(repo, "datasets", "core-infl-shared")
+    orthovariantrules = joinpath(repo,"datasets", "core-infl-$(orthodir)")
+    [basicrules, orthovariantrules] |> dataset
+end
 
 
 """Compile a string parser with core rule and vocabulary sets.

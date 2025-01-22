@@ -3,7 +3,7 @@ module Tabulae
 using Downloads
 using Glob, Unicode
 using DocStringExtensions, Documenter
-
+using EnumX
 
 import Base: show
 import Base: ==
@@ -78,6 +78,9 @@ export LMFAdjective, lmfAdjective
 export LMFAdverb, lmfAdverb
 export latinForm
 
+export TabulaeInflectionClass
+export id, paradigms, pos
+
 export TabulaeRule, inflectionclass, ending, id
 export delimitedrule
 export formrule, formurn
@@ -131,6 +134,7 @@ include("properties/case.jl")
 include("properties/degree.jl")
 include("properties/uninflected.jl")
 
+include("citable_forms/pos.jl")
 include("citable_forms/noun.jl")
 include("citable_forms/pronoun.jl")
 include("citable_forms/adjective.jl")
@@ -168,6 +172,7 @@ include("citable_rules/irregulars.jl")
 include("citable_rules/uninflected.jl")
 
 include("inflectionclasses/inflclasses.jl")
+include("inflectionclasses/nounclasses.jl")
 
 include("dataset/rulesarray.jl")
 include("dataset/stemsarray.jl")
