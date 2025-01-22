@@ -167,7 +167,7 @@ include("citable_rules/participles.jl")
 include("citable_rules/irregulars.jl")
 include("citable_rules/uninflected.jl")
 
-
+include("inflectionclasses/inflclasses.jl")
 
 include("dataset/rulesarray.jl")
 include("dataset/stemsarray.jl")

@@ -48,9 +48,9 @@ ls23 = joinpath(dsroot, "lat23")
 ls24 = joinpath(dsroot, "lat24")
 ls25 = joinpath(dsroot, "lat25")
 
-l23dirs = [joinpath(dsroot, "lat23"), inflcommon, vocabcommon, vocab23, infl23, lscommon, ls23] 
-l24dirs = [joinpath(dsroot, "lat24"), inflcommon, vocabcommon, vocab24, infl24, lscommon, ls24] 
-l25dirs = [joinpath(dsroot, "lat25"), inflcommon, vocabcommon, vocab25, infl25, lscommon, ls25] 
+l23dirs = [inflcommon, vocabcommon, vocab23, infl23, lscommon, ls23] 
+l24dirs = [inflcommon, vocabcommon, vocab24, infl24, lscommon, ls24]
+l25dirs = [inflcommon, vocabcommon, vocab25, infl25, lscommon, ls25] 
 
 # Parsers:
 @time p23 = dataset(l23dirs) |> tabulaeStringParser
