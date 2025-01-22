@@ -1,40 +1,40 @@
 StemUrn|LexicalEntity|String|Person|Number|Tense|Mood|Voice
 
-livymorph.irrvsatisfio1|livylex.irrverb1|satisfio|first|singular|present|indicative|active
-livymorph.irrvsatisfio2|livylex.irrverb1|satisfis|second|singular|present|indicative|active
-livymorph.irrvsatisfio3|livylex.irrverb1|satisfit|third|singular|present|indicative|active
-livymorph.irrvsatisfio4|livylex.irrverb1|satisfimus|first|plural|present|indicative|active
-livymorph.irrvsatisfio5|livylex.irrverb1|satisfitis|second|plural|present|indicative|active
-livymorph.irrvsatisfio6|livylex.irrverb1|satisfiunt|third|plural|present|indicative|active
+ls.irrvsatisfio1|lssupplement.irrverb1|satisfio|first|singular|present|indicative|active
+ls.irrvsatisfio2|lssupplement.irrverb1|satisfis|second|singular|present|indicative|active
+ls.irrvsatisfio3|lssupplement.irrverb1|satisfit|third|singular|present|indicative|active
+ls.irrvsatisfio4|lssupplement.irrverb1|satisfimus|first|plural|present|indicative|active
+ls.irrvsatisfio5|lssupplement.irrverb1|satisfitis|second|plural|present|indicative|active
+ls.irrvsatisfio6|lssupplement.irrverb1|satisfiunt|third|plural|present|indicative|active
 
-livymorph.irrvsatisfio7|livylex.irrverb1|satisfiebam|first|singular|imperfect|indicative|active
-livymorph.irrvsatisfio8|livylex.irrverb1|satisfiebas|second|singular|imperfect|indicative|active
-livymorph.irrvsatisfio9|livylex.irrverb1|satisfiebat|third|singular|imperfect|indicative|active
-livymorph.irrvsatisfio10|livylex.irrverb1|satisfiebamus|first|plural|imperfect|indicative|active
-livymorph.irrvsatisfio11|livylex.irrverb1|satisfiebatis|second|plural|imperfect|indicative|active
-livymorph.irrvsatisfio12|livylex.irrverb1|satisfiebant|third|plural|imperfect|indicative|active
+ls.irrvsatisfio7|lssupplement.irrverb1|satisfiebam|first|singular|imperfect|indicative|active
+ls.irrvsatisfio8|lssupplement.irrverb1|satisfiebas|second|singular|imperfect|indicative|active
+ls.irrvsatisfio9|lssupplement.irrverb1|satisfiebat|third|singular|imperfect|indicative|active
+ls.irrvsatisfio10|lssupplement.irrverb1|satisfiebamus|first|plural|imperfect|indicative|active
+ls.irrvsatisfio11|lssupplement.irrverb1|satisfiebatis|second|plural|imperfect|indicative|active
+ls.irrvsatisfio12|lssupplement.irrverb1|satisfiebant|third|plural|imperfect|indicative|active
 
-livymorph.irrvsatisfio13|livylex.irrverb1|satisfiam|first|singular|future|indicative|active
-livymorph.irrvsatisfio14|livylex.irrverb1|satisfies|second|singular|future|indicative|active
-livymorph.irrvsatisfio15|livylex.irrverb1|satisfiet|third|singular|future|indicative|active
-livymorph.irrvsatisfio16|livylex.irrverb1|satisfiemus|first|plural|future|indicative|active
-livymorph.irrvsatisfio17|livylex.irrverb1|satisfietis|second|plural|future|indicative|active
-livymorph.irrvsatisfio18|livylex.irrverb1|satisfient|third|plural|future|indicative|active
+ls.irrvsatisfio13|lssupplement.irrverb1|satisfiam|first|singular|future|indicative|active
+ls.irrvsatisfio14|lssupplement.irrverb1|satisfies|second|singular|future|indicative|active
+ls.irrvsatisfio15|lssupplement.irrverb1|satisfiet|third|singular|future|indicative|active
+ls.irrvsatisfio16|lssupplement.irrverb1|satisfiemus|first|plural|future|indicative|active
+ls.irrvsatisfio17|lssupplement.irrverb1|satisfietis|second|plural|future|indicative|active
+ls.irrvsatisfio18|lssupplement.irrverb1|satisfient|third|plural|future|indicative|active
 
-livymorph.irrvsatisfio19|livylex.irrverb1|satisfiam|first|singular|present|subjunctive|active
-livymorph.irrvsatisfio20|livylex.irrverb1|satisfias|second|singular|present|subjunctive|active
-livymorph.irrvsatisfio21|livylex.irrverb1|satisfiat|third|singular|present|subjunctive|active
-livymorph.irrvsatisfio22|livylex.irrverb1|satisfiamus|first|plural|present|subjunctive|active
-livymorph.irrvsatisfio23|livylex.irrverb1|satisfiatis|second|plural|present|subjunctive|active
-livymorph.irrvsatisfio24|livylex.irrverb1|satisfiant|third|plural|present|subjunctive|active
+ls.irrvsatisfio19|lssupplement.irrverb1|satisfiam|first|singular|present|subjunctive|active
+ls.irrvsatisfio20|lssupplement.irrverb1|satisfias|second|singular|present|subjunctive|active
+ls.irrvsatisfio21|lssupplement.irrverb1|satisfiat|third|singular|present|subjunctive|active
+ls.irrvsatisfio22|lssupplement.irrverb1|satisfiamus|first|plural|present|subjunctive|active
+ls.irrvsatisfio23|lssupplement.irrverb1|satisfiatis|second|plural|present|subjunctive|active
+ls.irrvsatisfio24|lssupplement.irrverb1|satisfiant|third|plural|present|subjunctive|active
 
-livymorph.irrvsatisfio25|livylex.irrverb1|satisfierem|first|singular|imperfect|subjunctive|active
-livymorph.irrvsatisfio26|livylex.irrverb1|satisfieres|second|singular|imperfect|subjunctive|active
-livymorph.irrvsatisfio27|livylex.irrverb1|satisfieret|third|singular|imperfect|subjunctive|active
-livymorph.irrvsatisfio28|livylex.irrverb1|satisfieremus|first|plural|imperfect|subjunctive|active
-livymorph.irrvsatisfio29|livylex.irrverb1|satisfieretis|second|plural|imperfect|subjunctive|active
-livymorph.irrvsatisfio30|livylex.irrverb1|satisfierent|third|plural|imperfect|subjunctive|active
+ls.irrvsatisfio25|lssupplement.irrverb1|satisfierem|first|singular|imperfect|subjunctive|active
+ls.irrvsatisfio26|lssupplement.irrverb1|satisfieres|second|singular|imperfect|subjunctive|active
+ls.irrvsatisfio27|lssupplement.irrverb1|satisfieret|third|singular|imperfect|subjunctive|active
+ls.irrvsatisfio28|lssupplement.irrverb1|satisfieremus|first|plural|imperfect|subjunctive|active
+ls.irrvsatisfio29|lssupplement.irrverb1|satisfieretis|second|plural|imperfect|subjunctive|active
+ls.irrvsatisfio30|lssupplement.irrverb1|satisfierent|third|plural|imperfect|subjunctive|active
 
-livymorph.irrvsatisfio31|livylex.irrverb1|satisfi|second|singular|present|imperative|active
-livymorph.irrvsatisfio32|livylex.irrverb1|satisfite|second|plural|present|imperative|active
-livymorph.irrvsatisfio33|livylex.irrverb1|satisfito|second|singular|future|imperative|active
+ls.irrvsatisfio31|lssupplement.irrverb1|satisfi|second|singular|present|imperative|active
+ls.irrvsatisfio32|lssupplement.irrverb1|satisfite|second|plural|present|imperative|active
+ls.irrvsatisfio33|lssupplement.irrverb1|satisfito|second|singular|future|imperative|active
