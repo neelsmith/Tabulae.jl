@@ -10,7 +10,7 @@ end
 $(SIGNATURES)
 """
 function show(io::IO, iclass::TabulaeInflectionClass)
-    print(io, label(iclass))
+    print(io, string(iclass.id, ": ", label(iclass)))
 end
 
 """Description for a TabulaeInflectionClass.
