@@ -79,7 +79,7 @@ export LMFAdverb, lmfAdverb
 export latinForm
 
 export TabulaeInflectionClass
-export id, paradigms, pos
+export id, paradigms, pos, inflectionclasses
 
 export TabulaeRule, inflectionclass, ending, id
 export delimitedrule
@@ -172,7 +172,13 @@ include("citable_rules/irregulars.jl")
 include("citable_rules/uninflected.jl")
 
 include("inflectionclasses/inflclasses.jl")
+include("inflectionclasses/decl1.jl")
+include("inflectionclasses/decl2.jl")
+include("inflectionclasses/decl3.jl")
+include("inflectionclasses/decl4.jl")
+include("inflectionclasses/decl5.jl")
 include("inflectionclasses/nounclasses.jl")
+include("inflectionclasses/all.jl")
 
 include("dataset/rulesarray.jl")
 include("dataset/stemsarray.jl")
