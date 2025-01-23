@@ -1,4 +1,23 @@
 
+"""Compile a minimal Tabulae dataset with a single vocabulary item for each inflectional class.
+
+$(SIGNATURES)
+"""
+function min_data(repo = pwd(); orthodir = "lat25")
+    basicrules = joinpath(repo, "datasets", "core-infl-shared")
+    orthovariantrules = joinpath(repo,"datasets", "core-infl-$(orthodir)")
+    [basicrules, orthovariantrules] |> dataset
+end
+
+
+"""Compile a minimal Tabulae parse with a single vocabulary item for each inflectional class.
+
+$(SIGNATURES)
+"""
+function min_parser(repo = pwd(); orthodir = "lat25")
+    min_data(repo; orthodir = orthodir) |> tabulaeStringParser
+end
+
 """Compile a Tabulae dataset with core rule and vocabulary sets.
 
 $(SIGNATURES)
@@ -15,11 +34,6 @@ function coredata(repo = pwd(); orthodir = "lat25", medieval = false)
 end
 
 
-function min_data(repo = pwd(); orthodir = "lat25")
-    basicrules = joinpath(repo, "datasets", "core-infl-shared")
-    orthovariantrules = joinpath(repo,"datasets", "core-infl-$(orthodir)")
-    [basicrules, orthovariantrules] |> dataset
-end
 
 
 """Compile a string parser with core rule and vocabulary sets.

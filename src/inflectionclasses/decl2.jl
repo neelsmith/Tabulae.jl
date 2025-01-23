@@ -8,6 +8,14 @@ const us_i = TabulaeInflectionClass(
 )
 
 
+const puer = LexemeUrn("ls.n39429")
+const null_i = TabulaeInflectionClass(
+    "0_i",
+    "Second declension nouns with genitive singular in -i and nominative singular with empty stem.",
+    [puer],
+    PartOfSpeech.noun
+)
+
 const mythos = LexemeUrn("ls.n30316")
 const os_i = TabulaeInflectionClass(
     "os_i",
