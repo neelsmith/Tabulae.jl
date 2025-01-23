@@ -1,3 +1,3 @@
 function inflectionclasses()
-    nounclasses
+    nounclasses()
 end
