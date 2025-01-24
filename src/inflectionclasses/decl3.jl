@@ -40,3 +40,12 @@ const x_cis = TabulaeInflectionClass(
     [dux],
     PartOfSpeech.noun
 )
+
+
+const cor = LexemeUrn("ls.n11124")
+const null_dis = TabulaeInflectionClass(
+    "0_dis",
+    "Third declension nouns with dental stem: dental absent from nominative singular, genitive singular ends in -dis.",
+    [cor],
+    PartOfSpeech.noun
+)

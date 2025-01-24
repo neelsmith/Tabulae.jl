@@ -67,3 +67,32 @@ $(SIGNATURES)
 function stemclasses(td::Tabulae.Dataset)
     map(v -> inflectionclass(v), stemsarray(td)) |> unique |> sort
 end
+
+function nounstems(td::Tabulae.Dataset)
+    filter(s -> s isa TabulaeNounStem, stemsarray(td))
+end
+
+function nounstemclasses(td::Tabulae.Dataset)
+    map(s -> inflectionclass(s), nounstems(td)) |> unique |> sort
+end
+
+
+
+function nounrules(td::Tabulae.Dataset)
+    filter(s -> s isa TabulaeNounRule, rulesarray(td))
+end
+
+function nounruleclasses(td::Tabulae.Dataset)
+    map(s -> inflectionclass(s), nounrules(td)) |> unique |> sort
+end
+
+
+
+function verbstems(td::Tabulae.Dataset)
+    filter(s -> s isa TabulaeVerbStem, stemsarray(td))
+end
+
+function verbstemclasses(td::Tabulae.Dataset)
+    map(s -> inflectionclass(s), verbstems(td)) |> unique |> sort
+end
+

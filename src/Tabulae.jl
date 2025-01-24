@@ -42,7 +42,9 @@ export ruleurn
 
 export dataset
 export rulesarray, stemsarray
-export rulesclasses, stemsclasses
+export ruleclasses, stemclasses
+export nounstems, nounstemclasses, nounrules, nounruleclasses
+export verbstems, verbstemclasses
 export ruleset
 export registry
 export compoundsmap, simplex
