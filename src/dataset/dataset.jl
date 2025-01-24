@@ -96,3 +96,5 @@ function verbstemclasses(td::Tabulae.Dataset)
     map(s -> inflectionclass(s), verbstems(td)) |> unique |> sort
 end
 
+function lexemes(td::Tabulae.Dataset)
+end
