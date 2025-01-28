@@ -18,6 +18,9 @@ monthday = datesrc |> day
 datestr = join([yr,mo,monthday], "-")
 
 
+
+
+
 # Names of output files:
 out23 = joinpath(reporoot, "scratch", "lewisshort-lat23-$(datestr).cex")
 curr23 = joinpath(reporoot, "scratch", "lewisshort-lat23-current.cex")
@@ -29,29 +32,59 @@ out25 = joinpath(reporoot, "scratch", "lewisshort-lat25-$(datestr).cex")
 curr25 = joinpath(reporoot, "scratch", "lewisshort-lat25-current.cex")
 
 
-# Tabulae core datasets:
-inflcommon = joinpath(reporoot, "datasets", "core-infl-shared")
-infl23 = joinpath(reporoot, "datasets", "core-infl-lat23")
-infl24 = joinpath(reporoot, "datasets", "core-infl-lat24")
-infl25 = joinpath(reporoot, "datasets", "core-infl-lat25")
 
-vocabcommon = joinpath(reporoot, "datasets", "core-vocab-shared")
-vocab23 = joinpath(reporoot, "datasets", "core-vocab-lat23")
-vocab24 = joinpath(reporoot, "datasets", "core-vocab-lat24")
-vocab25 = joinpath(reporoot, "datasets", "core-vocab-lat25")
+function ds23dirlist(tabulaeroot, lexmineroot)
+    # Tabulae core datasets:
+    inflcommon = joinpath(tabulaeroot, "datasets", "core-infl-shared")
+    vocabcommon = joinpath(tabulaeroot, "datasets", "core-vocab-shared")
+    infl23 = joinpath(tabulaeroot, "datasets", "core-infl-lat23")
+    vocab23 = joinpath(tabulaeroot, "datasets", "core-vocab-lat23")
 
-# manually vetted vocabulary:
-manualcommon = joinpath(reporoot, "datasets", "manual", "common")
+    # Tabulae manually vetted vocabulary:
+    manualcommon = joinpath(tabulaeroot, "datasets", "manual", "common")
 
-# Lewis-Short auto-generated datasets:
-lscommon = joinpath(dsroot, "common")
-ls23 = joinpath(dsroot, "lat23")
-ls24 = joinpath(dsroot, "lat24")
-ls25 = joinpath(dsroot, "lat25")
+    # Lewis-Short auto-generated datasets:
+    lscommon = joinpath(lexmineroot, "common")
+    ls23 = joinpath(lexmineroot, "lat23")
+    [inflcommon, vocabcommon, infl23, vocab23, manualcommon, lscommon, ls23 ] 
+end
+l23dirs = ds23dirlist(reporoot, dsroot)
 
-l23dirs = [inflcommon, vocabcommon, vocab23, infl23, lscommon, ls23, manualcommon] 
-l24dirs = [inflcommon, vocabcommon, vocab24, infl24, lscommon, ls24, manualcommon]
-l25dirs = [inflcommon, vocabcommon, vocab25, infl25, lscommon, ls25, manualcommon] 
+
+function ds24dirlist(tabulaeroot, lexmineroot)
+    # Tabulae core datasets:
+    inflcommon = joinpath(tabulaeroot, "datasets", "core-infl-shared")
+    vocabcommon = joinpath(tabulaeroot, "datasets", "core-vocab-shared")
+    infl24 = joinpath(tabulaeroot, "datasets", "core-infl-lat24")
+    vocab24 = joinpath(tabulaeroot, "datasets", "core-vocab-lat24")
+
+    # Tabulae manually vetted vocabulary:
+    manualcommon = joinpath(tabulaeroot, "datasets", "manual", "common")
+
+    # Lewis-Short auto-generated datasets:
+    lscommon = joinpath(lexmineroot, "common")
+    ls24 = joinpath(lexmineroot, "lat24")
+    [inflcommon, vocabcommon, infl24, vocab24, manualcommon, lscommon, ls24 ] 
+end
+l24dirs = ds24dirlist(reporoot, dsroot)
+
+
+function ds25dirlist(tabulaeroot, lexmineroot)
+    # Tabulae core datasets:
+    inflcommon = joinpath(tabulaeroot, "datasets", "core-infl-shared")
+    vocabcommon = joinpath(tabulaeroot, "datasets", "core-vocab-shared")
+    infl25 = joinpath(tabulaeroot, "datasets", "core-infl-lat25")
+    vocab25 = joinpath(tabulaeroot, "datasets", "core-vocab-lat25")
+
+    # Tabulae manually vetted vocabulary:
+    manualcommon = joinpath(tabulaeroot, "datasets", "manual", "common")
+
+    # Lewis-Short auto-generated datasets:
+    lscommon = joinpath(lexmineroot, "common")
+    ls25 = joinpath(lexmineroot, "lat25")
+    [inflcommon, vocabcommon, infl25, vocab25, manualcommon, lscommon, ls25 ] 
+end
+l25dirs = ds25dirlist(reporoot, dsroot)
 
 # Parsers:
 @time p23 = dataset(l23dirs) |> tabulaeStringParser
