@@ -11,12 +11,14 @@ isdir(dsroot)
 
 
 using Dates
-datesrc = now() 
-yr = datesrc |> year
-mo = datesrc |> month
-monthday = datesrc |> day
-datestr = join([yr,mo,monthday], "-")
-
+function getdatestr()
+    datesrc = now() 
+    yr = datesrc |> year
+    mo = datesrc |> month
+    monthday = datesrc |> day
+    join([yr,mo,monthday], "-")
+end
+datestr = getdatestr()
 
 
 
