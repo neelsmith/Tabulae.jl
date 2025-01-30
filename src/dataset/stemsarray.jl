@@ -84,23 +84,23 @@ function stemsarray(dirlist; delimiter = "|")
 
     irregiodict = Dict(
         [
-        #"nouns" => IrregularNounIO("noun"),
+        "nouns" => TabulaeIrregularNounStem,
         "verbs" => TabulaeIrregularVerb,
-        "infinitives" => TabulaeIrregularInfinitive,
+        "infinitives" => TabulaeIrregularInfinitiveStem,
         "adverbs" => TabulaeIrregularAdverbStem,
-        #"adjectives" => IrregularAdjectiveIO("adjectives")
+        "adjectives" => TabulaeIrregularAdjectiveStem
         ]
     )
     irregstemdirs = [
-        #"nouns",
+        "nouns",
         "verbs",
         "infinitives",
-        "adverbs"
-        #"adjectives"
+        "adverbs",
+        "adjectives"
     ]
     irreginfltypes = Dict(
-        # "nouns" => "irregularnoun",
-        # "adjectives" => "irregularadjective",
+        "nouns" => "irregularnoun",
+        "adjectives" => "irregularadjective",
         "verbs" => "irregularfiniteverb",
         "infinitives" => "irregularinfinitive",
         "adverbs" => "irregularadverb"
@@ -134,7 +134,7 @@ function stemsarray(dirlist; delimiter = "|")
         end
     end
     @debug("Collected $(length(irregulars)) irregular stems")
-    irreginfins = filter(st -> st isa TabulaeIrregularInfinitive, irregulars)
+    irreginfins = filter(st -> st isa TabulaeIrregularInfinitiveStem, irregulars)
     @debug("Collected $(length(irreginfins)) irregular infinitive stems")
 
     # Add compounds of irregular verbs:

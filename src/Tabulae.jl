@@ -104,7 +104,7 @@ export TabulaeAdjectiveStem
 
 export TabulaePronounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
-export TabulaeIrregularInfinitive
+export TabulaeIrregularInfinitiveStem
 export TabulaeStringParser, tabulaeStringParser, tsp
 export TabulaeUninflectedStem
 export TabulaeIrregularAdverbStem
