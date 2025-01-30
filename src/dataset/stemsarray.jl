@@ -87,7 +87,7 @@ function stemsarray(dirlist; delimiter = "|")
         #"nouns" => IrregularNounIO("noun"),
         "verbs" => TabulaeIrregularVerb,
         "infinitives" => TabulaeIrregularInfinitive,
-        "adverbs" => TabulaeIrregularAdverb,
+        "adverbs" => TabulaeIrregularAdverbStem,
         #"adjectives" => IrregularAdjectiveIO("adjectives")
         ]
     )
