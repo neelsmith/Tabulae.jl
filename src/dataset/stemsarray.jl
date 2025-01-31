@@ -13,10 +13,11 @@ end
 $(SIGNATURES)
 """
 function stemsarray(dirlist; delimiter = "|")
-    finalarr = []
+    @debug("READING STEMS FROM $(dirlist)")
+    
     iodict = Dict(
         [
-        #"adjectives" => AdjectiveIO("adjective"),
+        "adjectives" => TabulaeAdjectiveStem,
         "nouns" => TabulaeNounStem,
         "pronouns" => TabulaePronounStem,
         "uninflected" => TabulaeUninflectedStem,
@@ -25,7 +26,7 @@ function stemsarray(dirlist; delimiter = "|")
         ]
     )
     stemdirs = [
-        #"adjectives",
+        "adjectives",
         "nouns",
         "pronouns",
         "uninflected",
@@ -39,6 +40,7 @@ function stemsarray(dirlist; delimiter = "|")
     #stemsarr = Vector{<: Stem}()
     for datasrc in dirlist
         for dirname in stemdirs 
+            
             @debug("Read stems from dir ", dirname)
             dir = joinpath(datasrc, "stems-tables", dirname)
             @debug("dir = ", dir)
@@ -82,23 +84,26 @@ function stemsarray(dirlist; delimiter = "|")
 
     irregiodict = Dict(
         [
-        #"nouns" => IrregularNounIO("noun"),
+        "nouns" => TabulaeIrregularNounStem,
         "verbs" => TabulaeIrregularVerb,
-        "infinitives" => TabulaeIrregularInfinitive,
-        #"adjectives" => IrregularAdjectiveIO("adjectives")
+        "infinitives" => TabulaeIrregularInfinitiveStem,
+        "adverbs" => TabulaeIrregularAdverbStem,
+        "adjectives" => TabulaeIrregularAdjectiveStem
         ]
     )
     irregstemdirs = [
-        #"nouns",
+        "nouns",
         "verbs",
         "infinitives",
-        #"adjectives"
+        "adverbs",
+        "adjectives"
     ]
     irreginfltypes = Dict(
-        # "nouns" => "irregularnoun",
-        # "adjectives" => "irregularadjective",
+        "nouns" => "irregularnoun",
+        "adjectives" => "irregularadjective",
         "verbs" => "irregularfiniteverb",
         "infinitives" => "irregularinfinitive",
+        "adverbs" => "irregularadverb"
     )
 
   
@@ -129,7 +134,7 @@ function stemsarray(dirlist; delimiter = "|")
         end
     end
     @debug("Collected $(length(irregulars)) irregular stems")
-    irreginfins = filter(st -> st isa TabulaeIrregularInfinitive, irregulars)
+    irreginfins = filter(st -> st isa TabulaeIrregularInfinitiveStem, irregulars)
     @debug("Collected $(length(irreginfins)) irregular infinitive stems")
 
     # Add compounds of irregular verbs:

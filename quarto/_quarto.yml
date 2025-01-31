@@ -5,7 +5,7 @@ theme: spacelab
 execute:
   freeze: auto
 date: last-modified  
-margin-header: "Package version: `0.15.1`"
+margin-header: "Package version: `0.16.0`"
 
 format:
   html: 
@@ -37,10 +37,8 @@ website:
         aria-label: GitHub
       - icon: person-circle
         menu:
-          - text: "About me"
+          - text: "Neel Smith: digital scholarship"
             href: https://neelsmith.quarto.pub
-          - text: "More of my digital scholarship"
-            href: https://neelsmith.quarto.pub/digschol/
         aria-label: "More of my work"
         
   sidebar:

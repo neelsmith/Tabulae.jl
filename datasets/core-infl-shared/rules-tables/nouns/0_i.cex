@@ -1,0 +1,15 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+nouninfl.0_i1|0_i||masculine|nominative|singular
+nouninfl.0_i2|0_i|i|masculine|genitive|singular
+nouninfl.0_i3|0_i|o|masculine|dative|singular
+nouninfl.0_i4|0_i|um|masculine|accusative|singular
+nouninfl.0_i5|0_i|o|masculine|ablative|singular
+nouninfl.0_i11|0_i|e|masculine|vocative|singular
+
+nouninfl.0_i6|0_i|i|masculine|nominative|plural
+nouninfl.0_i7|0_i|orum|masculine|genitive|plural
+nouninfl.0_i8|0_i|is|masculine|dative|plural
+nouninfl.0_i9|0_i|os|masculine|accusative|plural
+nouninfl.0_i10|0_i|is|masculine|ablative|plural
+nouninfl.0_i12|0_i|i|masculine|vocative|plural

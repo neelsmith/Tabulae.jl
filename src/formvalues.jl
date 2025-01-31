@@ -20,7 +20,7 @@ const SUPINE = 'b'
 
 $(SIGNATURES)
 """
-const poslabels = Dict(
+const analytical_types = Dict(
     UNANALYZED => "unanalyzed",
     UNINFLECTED => "uninflected",
     NOUN => "noun",

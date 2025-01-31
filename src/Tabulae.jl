@@ -3,7 +3,7 @@ module Tabulae
 using Downloads
 using Glob, Unicode
 using DocStringExtensions, Documenter
-
+using EnumX
 
 import Base: show
 import Base: ==
@@ -42,7 +42,9 @@ export ruleurn
 
 export dataset
 export rulesarray, stemsarray
-export rulesclasses, stemsclasses
+export ruleclasses, stemclasses
+export nounstems, nounstemclasses, nounrules, nounruleclasses
+export verbstems, verbstemclasses
 export ruleset
 export registry
 export compoundsmap, simplex
@@ -78,11 +80,16 @@ export LMFAdjective, lmfAdjective
 export LMFAdverb, lmfAdverb
 export latinForm
 
+export TabulaeInflectionClass
+export id, paradigms, pos, inflectionclasses
+
 export TabulaeRule, inflectionclass, ending, id
 export delimitedrule
 export formrule, formurn
 export TabulaeNounRule
 export TabulaePronounRule
+export TabulaeAdjectiveRule
+
 export TabulaeFiniteVerbRule
 export TabulaeGerundiveRule
 export TabulaeGerundRule
@@ -93,11 +100,17 @@ export TabulaeIrregularRule
 
 export TabulaeStem, TabulaeIrregularStem, lexeme, stemvalue
 export TabulaeNounStem
+export TabulaeAdjectiveStem
+
 export TabulaePronounStem
 export TabulaeVerbStem, TabulaeIrregularVerb
-export TabulaeIrregularInfinitive
+export TabulaeIrregularInfinitiveStem
 export TabulaeStringParser, tabulaeStringParser, tsp
 export TabulaeUninflectedStem
+export TabulaeIrregularAdverbStem
+export TabulaeIrregularAdjectiveStem
+export TabulaeIrregularNounStem
+
 export orthography
 
 export lsid_dict, lexid_dict
@@ -126,6 +139,7 @@ include("properties/case.jl")
 include("properties/degree.jl")
 include("properties/uninflected.jl")
 
+include("citable_forms/pos.jl")
 include("citable_forms/noun.jl")
 include("citable_forms/pronoun.jl")
 include("citable_forms/adjective.jl")
@@ -141,16 +155,20 @@ include("citable_forms/uninflected.jl")
 include("citable_stems/stems.jl")
 include("citable_stems/regularnouns.jl")
 include("citable_stems/pronouns.jl")
+include("citable_stems/regularadjectives.jl")
 include("citable_stems/regularverbs.jl")
 include("citable_stems/irregularfiniteverbs.jl")
 include("citable_stems/irregularinfinitives.jl")
 include("citable_stems/compoundverbs.jl")
 include("citable_stems/uninflected.jl")
-
+include("citable_stems/irregularadverbs.jl")
+include("citable_stems/irregularadjectives.jl")
+include("citable_stems/irregularnouns.jl")
 
 
 include("citable_rules/rules.jl")
 include("citable_rules/nouns.jl")
+include("citable_rules/adjectives.jl")
 include("citable_rules/pronouns.jl")
 include("citable_rules/verbs.jl")
 include("citable_rules/infinitives.jl")
@@ -160,7 +178,14 @@ include("citable_rules/participles.jl")
 include("citable_rules/irregulars.jl")
 include("citable_rules/uninflected.jl")
 
-
+include("inflectionclasses/inflclasses.jl")
+include("inflectionclasses/decl1.jl")
+include("inflectionclasses/decl2.jl")
+include("inflectionclasses/decl3.jl")
+include("inflectionclasses/decl4.jl")
+include("inflectionclasses/decl5.jl")
+include("inflectionclasses/nounclasses.jl")
+include("inflectionclasses/all.jl")
 
 include("dataset/rulesarray.jl")
 include("dataset/stemsarray.jl")

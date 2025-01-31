@@ -185,7 +185,7 @@ function irregularstems(compound::TabulaeCompoundVerbStem, stemlist, ortho = lat
     irrverbs = filter(s -> s isa TabulaeIrregularVerb, simplexstems)
     finiteresults = irregularverbstems(compound, irrverbs, ortho)
 
-    irrinfins = filter(s -> s isa TabulaeIrregularInfinitive, simplexstems)
+    irrinfins = filter(s -> s isa TabulaeIrregularInfinitiveStem, simplexstems)
     infinitiveresults = irregularinfinitivestems(compound, irrinfins, ortho)
     @debug("forming irreg compounds: $(length(irrinfins)) irregular infinitives produced $(length(infinitiveresults)) results")
     @debug("Cross compound", compound)
@@ -226,10 +226,10 @@ end
 function irregularinfinitivestems(compound::TabulaeCompoundVerbStem, stemlist, ortho = literaryGreek())
     @debug("Now make irregular infinitive verb forms")
     
-    compounds = TabulaeIrregularInfinitive[]
+    compounds = TabulaeIrregularInfinitiveStem[]
     for s in stemlist
         catted = string(prefix(compound), stemvalue(s))
-        newstem = TabulaeIrregularInfinitive(
+        newstem = TabulaeIrregularInfinitiveStem(
             stemid(compound),
             lexeme(compound),
             catted,

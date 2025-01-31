@@ -1,0 +1,3 @@
+function inflectionclasses()
+    nounclasses()
+end

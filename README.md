@@ -16,7 +16,7 @@ Beginning with version 0.10.0, the package is being completely rewritten based o
 | --- | --- | --- | --- |
 | uninflected token | ✅ | ✅ | ✅ |
 | noun | ✅ |  ✅ |  ✅ |
-| adjective | |||
+| adjective | ✅ | ✅ | ✅|
 | finite verb | ✅ |✅ | ✅ |
 | infinitive | ✅|✅|✅|
 | participle | ✅ | ✅| ✅ |
@@ -31,9 +31,10 @@ Beginning with version 0.10.0, the package is being completely rewritten based o
 | --- | --- | --- | --- |
 | finite verb | ✅  |✅  | ✅ |
 | infinitive | ✅ | ✅ | ✅ |
-| noun | |||
+| noun | ✅| ✅|✅|
 | pronoun | ✅ | ✅ | ✅ |
-| adverb | |||
+| adverb | ✅  | ✅ | ✅  |
+| adjective | ✅  | ✅ | ✅ |
 
 
 ## Unit tests

@@ -1,0 +1,16 @@
+RuleUrn|InflectionClasses|Ending|Gender|Case|Number
+
+
+latcommoninfl.indeclinable1|indeclinable||neuter|nominative|singular
+latcommoninfl.indeclinable2|indeclinable||neuter|genitive|singular
+latcommoninfl.indeclinable3|indeclinable||neuter|dative|singular
+latcommoninfl.indeclinable4|indeclinable||neuter|accusative|singular
+latcommoninfl.indeclinable5|indeclinable||neuter|ablative|singular
+latcommoninfl.indeclinable6|indeclinable||neuter|nominative|plural
+latcommoninfl.indeclinable7|indeclinable||neuter|genitive|plural
+latcommoninfl.indeclinable8|indeclinable||neuter|dative|plural
+latcommoninfl.indeclinable9|indeclinable||neuter|accusative|plural
+latcommoninfl.indeclinable9b|indeclinable||neuter|accusative|plural
+latcommoninfl.indeclinable10|indeclinable|tius|neuter|ablative|plural
+latcommoninfl.indeclinable11|indeclinable||neuter|vocative|singular
+latcommoninfl.indeclinable12|indeclinable||neuter|vocative|plural
