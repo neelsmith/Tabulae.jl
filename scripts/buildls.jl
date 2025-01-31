@@ -93,7 +93,7 @@ l25dirs = ds25dirlist(reporoot, dsroot)
 @time p24 = dataset(l24dirs) |> tabulaeStringParser
 @time p25 = dataset(l25dirs) |> tabulaeStringParser
 
-parsetoken("mecum",p24)
+parsetoken("confiteri",p24)
 
 tofile(p23, out23)
 tofile(p23, curr23)

@@ -1,0 +1,15 @@
+StemUrn|LexicalEntity|String|Gender|Case|Number
+
+
+lat23.irregn51113a|ls.n51113|uis|feminine|nominative|singular
+lat23.irregn51113b|ls.n51113|uis|feminine|genitive|singular
+lat23.irregn51113c|ls.n51113|ui|feminine|dative|singular
+lat23.irregn51113d|ls.n51113|uim|feminine|accusative|singular
+lat23.irregn51113e|ls.n51113|ui|feminine|ablative|singular
+
+lat23.irregn51113a|ls.n51113|uires|feminine|nominative|plural
+lat23.irregn51113b|ls.n51113|uirium|feminine|genitive|plural
+lat23.irregn51113c|ls.n51113|uiribus|feminine|dative|plural
+lat23.irregn51113d|ls.n51113|uiris|feminine|accusative|plural
+lat23.irregn51113d2|ls.n51113|uires|feminine|accusative|plural
+lat23.irregn51113e|ls.n51113|uiribius|feminine|ablative|plural
