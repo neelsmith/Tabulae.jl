@@ -1,3 +1,11 @@
 function inflectionclasses()
-    nounclasses()
+    vcat(
+        nounclasses(),
+        verbclasses(),
+        
+        # adjectiveclasses()
+        # pronounclasses()
+        # irregularclasses()
+        # uninflectedclasses()
+    )
 end
