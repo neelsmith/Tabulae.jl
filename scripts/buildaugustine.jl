@@ -51,11 +51,12 @@ confessionsdirs = confessionsdirlist(reporoot, dsroot)
 
 # Parser:
 function reparse()
-    parser = dataset(confessionsdirs) |> tabulaeStringParser
-    tofile(parser, outfile)
-    tofile(parser, currfile)
+    newparser = dataset(confessionsdirs) |> tabulaeStringParser
+    tofile(newparser, outfile)
+    tofile(newparser, currfile)
+    newparser
 end
-@time reparse()
-parsetoken("Christus",parser)
+@time parser = reparse()
+parsetoken("idipsum",parser)
 
 
