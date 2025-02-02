@@ -5,6 +5,8 @@ latcommon.verbn4453|ls.n4453|aud|conj4
 
 latcommon.verbn12387|ls.n12387|deb|conj2
 
+
+
 latcommon.verbn11525a|ls.n11525|cred|c3pres
 latcommon.verbn11525b|ls.n11525|credid|pftact
 latcommon.verbn11525c|ls.n11525|credit|pftpass
@@ -21,6 +23,8 @@ latcommon.n20088|ls.n20088|habit|conj1
 
 latcommon.verbn29707a|ls.n29707|mor|c3iopresdep
 latcommon.verbn29707c|ls.n29707|mortu|pftpass
+
+latcommon.verbn35822|ls.n35822|pet|conj3
 
 latcommon.verbn37307|ls.n37307|pot|conj4dep
 

@@ -1,17 +1,5 @@
-#=
-latcommon.verbn11525a|ls.n11525|cred|c3pres
-latcommon.verbn11525b|ls.n11525|credid|pftact
-latcommon.verbn11525c|ls.n11525|credit|pftpass
-=#
 
-#=
-latcommon.verbn11525a|ls.n11525|cred|c3pres
-latcommon.verbn11525b|ls.n11525|credid|pftact
-latcommon.verbn11525c|ls.n11525|credit|pftpass
-=#
-
-
-
+# add pres for other conjugations!
 
 const credo = LexemeUrn("ls.n11525")
 const c3pres = TabulaeInflectionClass(

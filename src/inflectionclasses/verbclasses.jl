@@ -3,7 +3,7 @@ conj1classes = [conj1, conj1dep]
 conj2classes = [conj2, conj2dep]
 
 # Add conj3, conj3io and c3iopres:
-conj3classes = [c3pres]
+conj3classes = [conj3, c3pres]
 conj4classes = [conj4, conj4dep]
 
 
