@@ -57,6 +57,6 @@ function reparse()
     newparser
 end
 @time parser = reparse()
-parsetoken("metimur",parser)
+parsetoken("oblitus",parser)
 
 
