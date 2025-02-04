@@ -57,6 +57,6 @@ function reparse()
     newparser
 end
 @time parser = reparse()
-parsetoken("oblitus",parser)
+a1 = parsetoken("cupio",parser)
 
 

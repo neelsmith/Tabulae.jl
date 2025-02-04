@@ -13,6 +13,7 @@ latcommoninfl.ere_inf2|conj2|eri|present|passive
 latcommoninfl.ere_inf3|conj2|uisse|perfect|active
 latcommoninfl.ere_inf4|c2pres|ere|present|active
 latcommoninfl.ere_inf5|c2pres|eri|present|passive
+latcommoninfl.ere_inf6|c2presdep|eri|present|passive
 
 latcommoninfl.ere3_inf1|conj3|ere|present|active
 latcommoninfl.ere3_inf2|conj3|i|present|passive
