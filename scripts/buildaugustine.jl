@@ -57,6 +57,7 @@ function reparse()
     newparser
 end
 @time parser = reparse()
-a1 = parsetoken("cupio",parser)
+a1 = parsetoken("Alypius",parser)
 
 
+currfile

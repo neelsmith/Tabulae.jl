@@ -11,7 +11,7 @@ end
 $(SIGNATURES)
 """
 function show(io::IO, adj::LMFAdjective)
-    print(io, label(adj))
+    println(io, label(adj))
 end
 
 """Override Base.== for a noun form.
@@ -36,7 +36,8 @@ end
 $(SIGNATURES)
 """
 function label(adj::LMFAdjective)    
-    join([ label(adj.ngender), adj(noun.ncase), adj(noun.nnumber)], " ")
+    valuelist = [adj.agender, adj.acase, adj.anumber, adj.adegree]
+    join(valuelist, " ")
 end
 
 
@@ -60,11 +61,14 @@ function adjectiveformcodes()
     genderints = keys(Tabulae.genderlabeldict) |> collect |> sort
     caseints = keys(Tabulae.caselabeldict) |> collect |> sort
     numints = keys(Tabulae.numberlabeldict) |> collect |> sort
+    degreeints = keys(Tabulae.degreelabeldict) |> collect |> sort
     formlist = []
     for n in numints
         for g in genderints
             for c in caseints
-                push!(formlist, "$(ADJECTIVE)0$(n)000$(g)$(c)00")
+                for d in degreeints
+                    push!(formlist, "$(ADJECTIVE)0$(n)000$(g)$(c)$(d)0")
+                end
             end
         end
     end
@@ -85,11 +89,11 @@ $(SIGNATURES)
 """
 function lmfAdjective(code::AbstractString)
     morphchars = split(code, "")
-    ngender = lmpGender(parse(Int64, morphchars[7]))
-    ncase = lmpCase(parse(Int64, morphchars[8]))
-    nnumber = lmpNumber(parse(Int64,morphchars[3]))
-    
-    LMFAdjective(ngender, ncase, nnumber)
+    gender = lmpGender(parse(Int64, morphchars[7]))
+    case = lmpCase(parse(Int64, morphchars[8]))
+    number = lmpNumber(parse(Int64,morphchars[3]))
+    degree = lmpDegree(parse(Int, morphchars[9]))
+    LMFAdjective(gender, case, number, degree)
 end
 
 """Create a `LMFAdjective` from a `Cite2Urn`.
@@ -113,7 +117,7 @@ end
 $(SIGNATURES)
 """
 function code(adj::LMFAdjective)::String
-     string(ADJECTIVE,"0",code(adj.anumber),"000",code(adj.agender),code(adj.acase),"00")
+     string(ADJECTIVE,"0",code(adj.anumber),"000",code(adj.agender),code(adj.acase),code(adj.adegree),"0")
 end
 
 
@@ -134,6 +138,7 @@ function lmpCase(adj::LMFAdjective)
     adj.acase
 end
 
+
 """Find number of a `LMFAdjective`.
 
 $(SIGNATURES)
@@ -141,6 +146,17 @@ $(SIGNATURES)
 function lmpNumber(adj::LMFAdjective)
     adj.anumber
 end
+
+
+"""Find degree of a `LMFAdjective`.
+
+$(SIGNATURES)
+"""
+function lmpDegree(adj::LMFAdjective)
+    adj.adegree
+end
+
+
 
 """Generate a complete list of all possible noun forms.
 $(SIGNATURES)
