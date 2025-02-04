@@ -13,15 +13,15 @@ latcommoninfl.x_cis10|x_cis|cibus|masculine|ablative|plural
 latcommoninfl.x_cis11|x_cis|x|masculine|vocative|singular
 latcommoninfl.x_cis12|x_cis|ces|masculine|vocative|plural
 
-latcommoninfl.x_cis1|x_cis|x|feminine|nominative|singular
-latcommoninfl.x_cis2|x_cis|cis|feminine|genitive|singular
-latcommoninfl.x_cis3|x_cis|ci|feminine|dative|singular
-latcommoninfl.x_cis4|x_cis|cem|feminine|accusative|singular
-latcommoninfl.x_cis5|x_cis|ce|feminine|ablative|singular
-latcommoninfl.x_cis6|x_cis|ces|feminine|nominative|plural
-latcommoninfl.x_cis7|x_cis|cum|feminine|genitive|plural
-latcommoninfl.x_cis8|x_cis|cibus|feminine|dative|plural
-latcommoninfl.x_cis9|x_cis|ces|feminine|accusative|plural
-latcommoninfl.x_cis10|x_cis|cibus|feminine|ablative|plural
-latcommoninfl.x_cis11|x_cis|x|feminine|vocative|singular
-latcommoninfl.x_cis12|x_cis|ces|feminine|vocative|plural
+latcommoninfl.x_cis21|x_cis|x|feminine|nominative|singular
+latcommoninfl.x_cis22|x_cis|cis|feminine|genitive|singular
+latcommoninfl.x_cis23|x_cis|ci|feminine|dative|singular
+latcommoninfl.x_cis24|x_cis|cem|feminine|accusative|singular
+latcommoninfl.x_cis25|x_cis|ce|feminine|ablative|singular
+latcommoninfl.x_cis26|x_cis|ces|feminine|nominative|plural
+latcommoninfl.x_cis27|x_cis|cum|feminine|genitive|plural
+latcommoninfl.x_cis28|x_cis|cibus|feminine|dative|plural
+latcommoninfl.x_cis29|x_cis|ces|feminine|accusative|plural
+latcommoninfl.x_cis30|x_cis|cibus|feminine|ablative|plural
+latcommoninfl.x_cis31|x_cis|x|feminine|vocative|singular
+latcommoninfl.x_cis32|x_cis|ces|feminine|vocative|plural

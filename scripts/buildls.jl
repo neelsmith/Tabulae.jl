@@ -4,6 +4,7 @@ using CitableParserBuilder
 
 # Root directory of Tabulae repo:
 reporoot = pwd()
+
 # Root directory of LexiconMining repo:
 lmroot = joinpath(dirname(pwd()), "LexiconMining.jl")
 dsroot = joinpath(lmroot, "tabulae-datasets", "lewis-short")
@@ -93,7 +94,7 @@ l25dirs = ds25dirlist(reporoot, dsroot)
 @time p24 = dataset(l24dirs) |> tabulaeStringParser
 @time p25 = dataset(l25dirs) |> tabulaeStringParser
 
-parsetoken("confiteri",p24)
+parsetoken("iustitia",p24)
 
 tofile(p23, out23)
 tofile(p23, curr23)
