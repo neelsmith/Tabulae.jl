@@ -192,6 +192,7 @@ include("inflectionclasses/conj3.jl")
 include("inflectionclasses/conj4.jl")
 include("inflectionclasses/principalparts.jl")
 include("inflectionclasses/verbclasses.jl")
+include("inflectionclasses/adjectiveclasses.jl")
 
 include("dataset/rulesarray.jl")
 include("dataset/stemsarray.jl")
