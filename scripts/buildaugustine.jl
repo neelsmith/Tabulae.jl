@@ -57,4 +57,4 @@ function reparse()
     newparser
 end
 @time parser = reparse()
-a1 = parsetoken("adam",parser)
+a1 = parsetoken("ponticianus",parser)
