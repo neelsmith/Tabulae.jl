@@ -6,7 +6,7 @@ abstract type TabulaeIrregularStem <: TabulaeStem end
 $(SIGNATURES)
 """
 function inflectionclass(stem::T) where {T <: TabulaeStem}
-    @warn "Function inflectionclass not implemented for stems of type $(typeof(stem))."
+    @debug "Function inflectionclass not implemented for stems of type $(typeof(stem))."
     nothing
 end
 

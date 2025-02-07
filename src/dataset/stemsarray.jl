@@ -31,7 +31,7 @@ function stemsarray(dirlist; delimiter = "|")
         "pronouns",
         "uninflected",
         "verbs-simplex",
-        #"verbs-compound",
+        "verbs-compound",
         
     ]
 
@@ -59,7 +59,7 @@ function stemsarray(dirlist; delimiter = "|")
         end
     end
 
-    # Add compounds of regular verbs:
+    @info(" Add compounds of regular verbs:")
     for datasrc in dirlist
         dirname = "verbs-compound"
         dir = joinpath(datasrc, "stems-tables", dirname)
@@ -73,7 +73,7 @@ function stemsarray(dirlist; delimiter = "|")
             for ln in lines[2:end]
                 stem = fromcex(ln, delimitedtype)
                 for newstem in stems(stem, stemsarr)
-                    @debug("Add stem $(newstem)")
+                    @info("Add stem $(newstem)")
                     push!(stemsarr,newstem)
                 end
             end
@@ -135,9 +135,12 @@ function stemsarray(dirlist; delimiter = "|")
     end
     @debug("Collected $(length(irregulars)) irregular stems")
     irreginfins = filter(st -> st isa TabulaeIrregularInfinitiveStem, irregulars)
+    irregfinites = filter(st -> st isa TabulaeIrregularVerb, irregulars)
     @debug("Collected $(length(irreginfins)) irregular infinitive stems")
+                
+                
 
-    # Add compounds of irregular verbs:
+    @info(" Add compounds of irregular verbs:")
     for datasrc in dirlist
         dirname = "verbs-compound"
         dir = joinpath(datasrc, "stems-tables", dirname)
@@ -148,7 +151,7 @@ function stemsarray(dirlist; delimiter = "|")
         cexfiles = glob("*.cex", dir)
 
 
-        @debug("Files to examine for compounding: $(cexfiles)")
+        @info("Files to examine for compounding: $(cexfiles)")
 
         for f in cexfiles
             raw = readlines(f)
@@ -156,13 +159,19 @@ function stemsarray(dirlist; delimiter = "|")
             lines = filter(s -> ! isempty(s), raw)
             for ln in lines[2:end]
                 stem = fromcex(ln, delimitedtype)
-                @debug("Handle stem $(stem)")
+                @info("Handle stem $(stem)")
                 #for newstem in irregularstems(stem, irregulars)
                 for newstem in irregularstems(stem, irreginfins)
                 
-                    @debug("Add stem $(newstem)")
+                    @info("Add infinitive stem $(newstem)")
                     push!(stemsarr,newstem)
                 end
+                # Get irregular finite forms
+                for newstem in irregularstems(stem, irregfinites)
+                    @info("Add finite verb stem $(newstem)")
+                    push!(stemsarr,newstem)
+                end
+                # HERE
             end
         end
     end
