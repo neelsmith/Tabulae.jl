@@ -57,4 +57,4 @@ function reparse()
     newparser
 end
 @time parser = reparse()
-a1 = parsetoken("didici",parser)
+a1 = parsetoken("expertus",parser)
