@@ -57,7 +57,4 @@ function reparse()
     newparser
 end
 @time parser = reparse()
-a1 = parsetoken("Alypius",parser)
-
-
-currfile
+a1 = parsetoken("didici",parser)

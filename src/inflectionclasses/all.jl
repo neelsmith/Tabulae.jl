@@ -3,7 +3,7 @@ function inflectionclasses()
         nounclasses(),
         verbclasses(),
         
-        # adjectiveclasses()
+        adjectiveclasses()
         # pronounclasses()
         # irregularclasses()
         # uninflectedclasses()

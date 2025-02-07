@@ -31,7 +31,7 @@ function stemsarray(dirlist; delimiter = "|")
         "pronouns",
         "uninflected",
         "verbs-simplex",
-        #"verbs-compound",
+        "verbs-compound",
         
     ]
 
@@ -59,7 +59,7 @@ function stemsarray(dirlist; delimiter = "|")
         end
     end
 
-    # Add compounds of regular verbs:
+    @debug(" Add compounds of regular verbs:")
     for datasrc in dirlist
         dirname = "verbs-compound"
         dir = joinpath(datasrc, "stems-tables", dirname)
@@ -135,9 +135,12 @@ function stemsarray(dirlist; delimiter = "|")
     end
     @debug("Collected $(length(irregulars)) irregular stems")
     irreginfins = filter(st -> st isa TabulaeIrregularInfinitiveStem, irregulars)
+    irregfinites = filter(st -> st isa TabulaeIrregularVerb, irregulars)
     @debug("Collected $(length(irreginfins)) irregular infinitive stems")
+                
+                
 
-    # Add compounds of irregular verbs:
+    @debug(" Add compounds of irregular verbs:")
     for datasrc in dirlist
         dirname = "verbs-compound"
         dir = joinpath(datasrc, "stems-tables", dirname)
@@ -160,9 +163,15 @@ function stemsarray(dirlist; delimiter = "|")
                 #for newstem in irregularstems(stem, irregulars)
                 for newstem in irregularstems(stem, irreginfins)
                 
-                    @debug("Add stem $(newstem)")
+                    @debug("Add infinitive stem $(newstem)")
                     push!(stemsarr,newstem)
                 end
+                # Get irregular finite forms
+                for newstem in irregularstems(stem, irregfinites)
+                    @debug("Add finite verb stem $(newstem)")
+                    push!(stemsarr,newstem)
+                end
+                # HERE
             end
         end
     end
