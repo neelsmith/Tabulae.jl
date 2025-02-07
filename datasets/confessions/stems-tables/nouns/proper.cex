@@ -1,10 +1,15 @@
 StemUrn|LexicalEntity|Stem|Gender|InflClass
 
+
+
+
 confessions.nounsalypius|confessions.alypius|alypi|masculine|us_i
 confessions.nounsnebridius|confessions.nebridius|nebridi|masculine|us_i
 
 confessions.nounsponticianus|confessions.ponticianus|pontician|masculine|us_i
 
+
+latcommon.n683|ls.n683|adam|masculine|indeclinable
 
 latcommon.nounsn6894|ls.n6894|carthag|feminine|o_inis
 latcommon.nounsn7895|ls.n7895|christ|masculine|us_i
