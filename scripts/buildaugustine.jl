@@ -58,3 +58,5 @@ function reparse()
 end
 @time parser = reparse()
 a1 = parsetoken("ponticianus",parser)
+
+typeof(a1)
