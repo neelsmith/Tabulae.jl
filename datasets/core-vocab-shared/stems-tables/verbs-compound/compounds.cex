@@ -83,7 +83,7 @@ compounds.n23167|ls.n23167|in|ls.n17964|infero
 compounds.n24136|ls.n24136|in|ls.n47751|intendo
 compounds.n24241|ls.n24241|inter|ls.n15868|intereo
 compounds.n24446|ls.n24446|inter|ls.n42012|interrumpo
-compounds.n24507|ls.n24507|e|ls.n50442|intervenio
+compounds.n39941|ls.n39941|inter|ls.n50442|intervenio
 compounds.n24644|ls.n24644|in|ls.n49372|intueor
 compounds.n25020|ls.n25020|in|ls.n42012|inrumpo
 compounds.n31613|ls.n31613|ob|ls.n15868|obeo
@@ -106,7 +106,12 @@ compounds.n38075|ls.n38075|praeter|ls.n15868|praetereo
 
 compounds.n38642|ls.n38642|pro|ls.n18943|profugio
 compounds.n38782|ls.n38782|pro|ls.n29328|promitto
-compounds.n39941|ls.n39941|inter|ls.n50442|intervenio
+
+
+compounds.n39105a|ls.n39105|pro|ls.n46529|prosum
+compounds.n39105b|ls.n39105|prod|ls.n46529|prosum
+
+
 
 compounds.n40719|ls.n40719|red|ls.n15868|redeo
 compounds.n40760|ls.n40760|re|ls.n14847|reduco
