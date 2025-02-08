@@ -58,5 +58,3 @@ function reparse()
 end
 @time parser = reparse()
 a1 = parsetoken("inest",parser)
-
-typeof(a1)
