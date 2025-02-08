@@ -57,6 +57,6 @@ function reparse()
     newparser
 end
 @time parser = reparse()
-a1 = parsetoken("treveri",parser)
+a1 = parsetoken("gentis",parser)
 
 typeof(a1)
