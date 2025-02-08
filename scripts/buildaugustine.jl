@@ -56,5 +56,7 @@ function reparse()
     tofile(newparser, currfile)
     newparser
 end
+
 @time parser = reparse()
+
 a1 = parsetoken("inest",parser)
