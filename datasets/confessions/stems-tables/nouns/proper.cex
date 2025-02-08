@@ -1,16 +1,24 @@
 StemUrn|LexicalEntity|Stem|Gender|InflClass
 
 
+confessions.nounsadeodatus|confessions.adeodatus|adeodat|masculine|us_i
 confessions.nounsalypius|confessions.alypius|alypi|masculine|us_i
 confessions.nounsnebridius|confessions.nebridius|nebridi|masculine|us_i
 
 confessions.nounsponticianus|confessions.ponticianus|pontician|masculine|us_i
 confessions.nounsvictorinus|confessions.victorinus|victorin|masculine|us_i
 
-latcommon.n683|ls.n683|adam|masculine|indeclinable
+latcommon.nounsn683|ls.n683|adam|masculine|indeclinable
+
+latcommon.nounsn1511|ls.n1511|afric|feminine|a_ae
+
+latcommon.nounsn2928|ls.n2928|antoni|masculine|us_i
 
 latcommon.nounsn6894|ls.n6894|carthag|feminine|o_inis
 latcommon.nounsn7895|ls.n7895|christ|masculine|us_i
+
+
+latcommon.nounsn15927|ls.n15927|epicur|masculine|us_i
 
 latcommon.n27875|ls.n27875|manichae|masculine|us_i
 
@@ -21,7 +29,7 @@ lat24.nounsn48973|ls.n48973|trever|masculine|us_i
 latcommon.nounsn49272|ls.n49272|troi|feminine|a_ae
 
 lat24.nounsn50120|ls.n50120|valentinian|masculine|us_i
-lat24.nounsn50545|ls.n50545|vergili|maculine|us_i
+lat24.nounsn50545|ls.n50545|vergili|masculine|us_i
 
 
 
