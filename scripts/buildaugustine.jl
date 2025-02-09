@@ -59,4 +59,4 @@ end
 
 @time parser = reparse()
 
-a1 = parsetoken("inrideo",parser)
+a1 = parsetoken("prior",parser)
