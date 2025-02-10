@@ -1,6 +1,6 @@
 StemUrn|LexicalEntity|Stem|InflClass
 
-latcommon.adjn1896|ls.n1896|ali|us_ius
+latcommon.adjn1896|ls.n1896|al|us_ius
 latcommon.adjn2015|ls.n2015|alter|0_ius
 
 
@@ -13,5 +13,5 @@ latcommon.adjn32583|ls.n32583|omn|is_e
 
 
 latcommon.adjn5558|ls.n5558|bon|us_a_um_positive
-latcommon.adjn5558b|ls.n5558|meli|comparative
+latcommon.adjn5558b|ls.n5558|mel|comparative
 latcommon.adjn5558c|ls.n5558|optim|superlative
