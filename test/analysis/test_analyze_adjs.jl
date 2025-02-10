@@ -39,4 +39,10 @@
     for adj in latinForm.(carior)
         @test adj in expectedcarior
     end
+
+
+    carissimus = parsetoken("carissimus", p)
+    expectedsuperlative = [LMFAdjective(masc, nom, sg, sup)]
+    @test latinForm.(carissimus) == expectedsuperlative
+
 end
