@@ -68,7 +68,24 @@ end
     for adj in latinForm.(levis)
         @test adj in expectedlevis
     end
+
+
+    levior = parsetoken("levior", p)
+    expectedlevior = [
+        LMFAdjective(masc, nom, sg, comp),
+        LMFAdjective(fem, nom, sg, comp),
+    ]
+    @test length(levior) == 2
+    for adj in latinForm.(levior)
+        @test adj in expectedlevior
+    end
     
+
+    levissimus = parsetoken("levissimus", p)
+    expectedsuperlative = [LMFAdjective(masc, nom, sg, sup)]
+    @test latinForm.(levissimus) == expectedsuperlative
+
+
 end
 #=
 masculine nominative singular positive
