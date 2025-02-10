@@ -87,22 +87,6 @@ end
 
 
 end
-#=
-masculine nominative singular positive
-
- masculine genitive singular positive
-
- masculine vocative singular positive
-
- neuter genitive singular positive
-
- feminine nominative singular positive
-
- feminine genitive singular positive
-
- feminine vocative singular positive
-=#
-
 
 @testset "Test analysis of parsing results for adjectives with differing stems for different degrees" begin
     repo = dirname(pwd())
@@ -126,5 +110,5 @@ masculine nominative singular positive
     expectedsup = [ LMFAdjective(masc,nom,sg,sup)]
     @test latinForm.(optimus) == expectedsup
 end
+
 # 0_ius 
-# is_e
