@@ -9,7 +9,10 @@ import Base: show
 import Base: ==
 
 
-using CitableParserBuilder
+#using CitableParserBuilder
+import CitableParserBuilder: CitableParser
+import CitableParserBuilder: FormUrn, Analysis, Stem, Rule 
+import CitableParserBuilder: AbbreviatedUrn, StemUrn, RuleUrn, LexemeUrn
 import CitableParserBuilder: parsetoken #, parsewordlist,  parselistfromfile, parselistfromurl
 import CitableParserBuilder: tofile
 import CitableParserBuilder: datasource
@@ -17,12 +20,15 @@ import CitableParserBuilder: orthography
 import CitableParserBuilder: delimiter
 import CitableParserBuilder: generate
 import CitableParserBuilder: lexemeurn, lexeme
-import CitableParserBuilder: stringParser
+import CitableParserBuilder: AbstractStringParser, stringParser
 import CitableParserBuilder: analyses
 import CitableParserBuilder: formurn
 import CitableParserBuilder: ruleurn
 import CitableParserBuilder: stemurn
 
+import CitableParserBuilder: objectid
+
+import CitableParserBuilder
 
 
 using CitableBase
@@ -48,6 +54,7 @@ export verbstems, verbstemclasses
 export ruleset
 export registry
 export compoundsmap, simplex
+export parsetoken
 
 
 export analysis, analyses

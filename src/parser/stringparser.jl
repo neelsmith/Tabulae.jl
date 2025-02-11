@@ -1,5 +1,5 @@
 """A parser parsing tokens by looking them up in a precomputed dictionary of all recognized forms."""
-struct TabulaeStringParser <: AbstractStringParser
+struct TabulaeStringParser <: CitableParser
     entries
     ortho::LatinOrthographicSystem
     delimiter::AbstractString
