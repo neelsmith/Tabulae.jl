@@ -11,6 +11,24 @@ const us_a_um = TabulaeInflectionClass(
 )
 
 
+const dexter =  LexemeUrn("ls.n13648")
+const er_era_erum = TabulaeInflectionClass(
+    "er_era_erum",
+    "Stem for regular three-termination adjectives with 2/1/2 declension pattern, nominative singular ending in -er-, genitive singular stem ending in -er-.",
+    [dexter],
+    PartOfSpeech.adjective
+)
+
+
+const noster =  LexemeUrn("ls.n31216")
+const er_ra_rum = TabulaeInflectionClass(
+    "er_ra_rum",
+    "Stem for regular three-termination adjectives with 2/1/2 declension pattern, nominative singular ending in -er-, genitive singular stem ending in -r-.",
+    [noster],
+    PartOfSpeech.adjective
+)
+
+
 const bonus =  LexemeUrn("ls.n5558")
 const us_a_um_positive = TabulaeInflectionClass(
     "us_a_um_positive",
@@ -28,10 +46,24 @@ const comparative = TabulaeInflectionClass(
 )
 
 
+const optimus =  LexemeUrn("ls.n5558")
+const superlative = TabulaeInflectionClass(
+    "superlative",
+    "Stem for the superlative degree of an adjective with distinct stems for different degrees.",
+    [optimus],
+    PartOfSpeech.adjective
+)
+
+
 regularadjectiveclasses = [
     us_a_um,
+    er_era_erum, er_ra_rum,
+
+
     us_a_um_positive,
-    comparative
+    comparative,
+    superlative 
+    
 ]
 
 irregularadjectiveclasses = [
