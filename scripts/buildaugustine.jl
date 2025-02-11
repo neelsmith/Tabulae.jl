@@ -59,6 +59,6 @@ end
 
 @time parser = reparse()
 
-a1 = parsetoken("meque",parser)
+a1 = parsetoken("carnem",parser)
 
 

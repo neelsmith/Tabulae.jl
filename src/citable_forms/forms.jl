@@ -96,8 +96,9 @@ end
 """Create a `LatinMorphologicalForm` from a `FormUrn`.
 $(SIGNATURES)
 """
-function latinForm(u::CitableParserBuilder.FormUrn)
-    latinForm(CitableParserBuilder.objectid(u))
+function latinForm(u::FormUrn)
+    #latinForm(CitableParserBuilder.objectid(u))
+    latinForm(objectid(u))
 end
 
 """Create a `LatinMorphologicalForm` from `u`, a `Cite2Urn` identifying a form.
