@@ -59,6 +59,6 @@ end
 
 @time parser = reparse()
 
-a1 = parsetoken("juxta",parser)
+a1 = parsetoken("iuxta",parser)
 
 
