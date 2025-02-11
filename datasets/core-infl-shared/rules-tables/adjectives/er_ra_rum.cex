@@ -33,6 +33,7 @@ latcommonadjinfl.er_ra_rum26|er_ra_rum|rae|feminine|genitive|singular|positive
 latcommonadjinfl.er_ra_rum27|er_ra_rum|rae|feminine|dative|singular|positive
 latcommonadjinfl.er_ra_rum28|er_ra_rum|ram|feminine|accusative|singular|positive
 latcommonadjinfl.er_ra_rum29|er_ra_rum|ra|feminine|ablative|singular|positive
+
 latcommonadjinfl.er_ra_rum30|er_ra_rum|rae|feminine|nominative|plural|positive
 latcommonadjinfl.er_ra_rum31|er_ra_rum|rarum|feminine|genitive|plural|positive
 latcommonadjinfl.er_ra_rum32|er_ra_rum|ris|feminine|dative|plural|positive
@@ -40,16 +41,3 @@ latcommonadjinfl.er_ra_rum33|er_ra_rum|ras|feminine|accusative|plural|positive
 latcommonadjinfl.er_ra_rum34|er_ra_rum|ris|feminine|ablative|plural|positive
 latcommonadjinfl.er_ra_rum35|er_ra_rum|ra|feminine|vocative|singular|positive
 latcommonadjinfl.er_ra_rum36|er_ra_rum|rae|feminine|vocative|plural|positive
-
-latcommonadjinfl.er_ra_rum37|er_ra_rum|ra|masculine|nominative|singular|positive
-latcommonadjinfl.er_ra_rum38|er_ra_rum|rae|masculine|genitive|singular|positive
-latcommonadjinfl.er_ra_rum39|er_ra_rum|rae|masculine|dative|singular|positive
-latcommonadjinfl.er_ra_rum40|er_ra_rum|ram|masculine|accusative|singular|positive
-latcommonadjinfl.er_ra_rum41|er_ra_rum|ra|masculine|ablative|singular|positive
-latcommonadjinfl.er_ra_rum42|er_ra_rum|rae|masculine|nominative|plural|positive
-latcommonadjinfl.er_ra_rum43|er_ra_rum|rarum|masculine|genitive|plural|positive
-latcommonadjinfl.er_ra_rum44|er_ra_rum|ris|masculine|dative|plural|positive
-latcommonadjinfl.er_ra_rum45|er_ra_rum|ras|masculine|accusative|plural|positive
-latcommonadjinfl.er_ra_rum46|er_ra_rum|ris|masculine|ablative|plural|positive
-latcommonadjinfl.er_ra_rum47|er_ra_rum|ra|masculine|vocative|singular|positive
-latcommonadjinfl.er_ra_rum48|er_ra_rum|rae|masculine|vocative|plural|positive

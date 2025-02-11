@@ -1,4 +1,4 @@
-# Build parser in Latin 24 orthography, including Lewis-Short with custom additions for Augustine, Confessions.
+# Build parser in Latin 25 orthography, including Lewis-Short with custom additions for :atom Vulgate.
 using Tabulae
 using CitableParserBuilder
 
@@ -24,39 +24,41 @@ datestr = getdatestr()
 
 
 # Names of output files:
-outfile = joinpath(reporoot, "scratch", "confessions-$(datestr).cex")
-currfile = joinpath(reporoot, "scratch", "confessions-current.cex")
+outfile = joinpath(reporoot, "scratch", "vulgate-$(datestr).cex")
+currfile = joinpath(reporoot, "scratch", "vulgate-current.cex")
 
 
 
-function confessionsdirlist(tabulaeroot, lexmineroot)
+function vulgatedirlist(tabulaeroot, lexmineroot)
     # Tabulae core datasets:
     inflcommon = joinpath(tabulaeroot, "datasets", "core-infl-shared")
     vocabcommon = joinpath(tabulaeroot, "datasets", "core-vocab-shared")
-    infl24 = joinpath(tabulaeroot, "datasets", "core-infl-lat24")
-    vocab24 = joinpath(tabulaeroot, "datasets", "core-vocab-lat24")
-
-    tailored = joinpath(tabulaeroot, "datasets", "confessions")
+    infl25 = joinpath(tabulaeroot, "datasets", "core-infl-lat25")
+    vocab25 = joinpath(tabulaeroot, "datasets", "core-vocab-lat25")
 
     # Tabulae manually vetted vocabulary:
     manualcommon = joinpath(tabulaeroot, "datasets", "manual", "common")
 
     # Lewis-Short auto-generated datasets:
     lscommon = joinpath(lexmineroot, "common")
-    ls24 = joinpath(lexmineroot, "lat24")
-    [inflcommon, vocabcommon, infl24, vocab24, manualcommon, lscommon, ls24 , tailored] 
+    ls25 = joinpath(lexmineroot, "lat25")
+
+    # Corpus-specific additions:
+
+    tailored = joinpath(tabulaeroot, "datasets", "complutensian")
+    [inflcommon, vocabcommon, infl25, vocab25, manualcommon, lscommon, ls25 , tailored] 
 end
-confessionsdirs = confessionsdirlist(reporoot, dsroot)
+vulgatedirs = vulgatedirlist(reporoot, dsroot)
 
 
 # Parser:
-function reparse()
-    newparser = dataset(confessionsdirs) |> tabulaeStringParser
+function reparse(srcdirs, outfile, currfile)
+    newparser = dataset(srcdirs) |> tabulaeStringParser
     tofile(newparser, outfile)
     tofile(newparser, currfile)
     newparser
 end
 
-@time parser = reparse()
+@time parser = reparse(vulgatedirs, outfile, currfile)
 
-a1 = parsetoken("maioribus",parser)
+a1 = parsetoken("prior",parser)
