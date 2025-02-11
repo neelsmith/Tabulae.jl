@@ -1,8 +1,13 @@
 StemUrn|LexicalEntity|Stem|InflClass
 
 
-latcommon.adjn27649b|ls.n27649|ma|comparative
-latcommon.adjn27649c|ls.n27649|optim|superlative
+
+
+latcommon.adjn5558b|ls.n5558|ma|comparative
+latcommon.adjn5558c|ls.n5558|optim|superlative
+
+latcommon.adjn24286|ls.n24286|inter|comparative
+
 
 latcommon.adjn34005b|ls.n34005|min|comparative
 latcommon.adjn34005c|ls.n34005|minim|superlative
@@ -10,3 +15,4 @@ latcommon.adjn34005c|ls.n34005|minim|superlative
 
 latcommon.adjn38352b|ls.n38352|pr|comparative
 latcommon.adjn38352c|ls.n38352|prim|superlative
+

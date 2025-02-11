@@ -177,7 +177,7 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser; verbose = fa
         results = Analysis[]
         endings = orthography(parser) isa Latin23 ? map(enc -> replace(enc, "v" => "u"), enclitics) : enclitics
         for e in endings
-            vebose ? @warn("Check for enclitic $(e) in string $(s)") :        @info("Check for enclitic $(e) in string $(s)")
+            verbose ? @warn("Check for enclitic $(e) in string $(s)") :        @info("Check for enclitic $(e) in string $(s)")
             if endswith(s,e) && ! isequal(s,e)
                 verbose ? @warn("Found  possible  enclitic") :    @debug("Found  possible  enclitic")
                 
