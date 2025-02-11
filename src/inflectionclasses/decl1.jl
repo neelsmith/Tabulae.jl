@@ -15,3 +15,13 @@ const a_ae_pl = TabulaeInflectionClass(
     [tenebrae],
     PartOfSpeech.noun
 )
+
+
+
+const moyses =  LexemeUrn("ls.n29762")
+const es_ae = TabulaeInflectionClass(
+    "es_ae",
+    "First declension, masculines, Greek declension with nominative singular in -es.",
+    [moyses],
+    PartOfSpeech.noun
+)
