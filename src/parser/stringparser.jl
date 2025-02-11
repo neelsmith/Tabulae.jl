@@ -166,9 +166,9 @@ enclitics = ["que", "ve", "ne", "cum","n'"]
 """Parse a Latin orthographic token, checking for possibility of enclitics.
 $(SIGNATURES)
 """
-function parsetoken(s::AbstractString, parser::TabulaeStringParser)
+function parsetoken(s::AbstractString, parser::TabulaeStringParser; verbose = false)
     ptrn = lowercase(s) * delimiter(parser)
-    @debug("Looking for $(s) in parser data")
+    verbose ? @warn("Looking for $(s) in parser data") :     @debug("Looking for $(s) in parser data")
     matches = filter(ln -> startswith(ln, ptrn), datasource(parser))
     @debug("Got $(matches)")
     
@@ -177,15 +177,15 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser)
         results = Analysis[]
         endings = orthography(parser) isa Latin23 ? map(enc -> replace(enc, "v" => "u"), enclitics) : enclitics
         for e in endings
-            #@info("Check for enclitic $(e) in string $(s)")
+            vebose ? @warn("Check for enclitic $(e) in string $(s)") :        @info("Check for enclitic $(e) in string $(s)")
             if endswith(s,e) && ! isequal(s,e)
-                @debug("Found  possible  enclitic")
+                verbose ? @warn("Found  possible  enclitic") :    @debug("Found  possible  enclitic")
                 
                 rng = findlast(e, s)
                 lastch = rng[1] - 1
                 mtkn = s[1:lastch]
                 otkn = s
-                @debug("Tokens: $(tkn) + $(e)")
+                verbose ? @warn("Tokens: $(tkn) + $(e)") : @debug("Tokens: $(tkn) + $(e)")
                 for prs in parsetoken(mtkn, parser)
                     push!(results, analysisforencliticseq(prs, s, "A"))
                 end
