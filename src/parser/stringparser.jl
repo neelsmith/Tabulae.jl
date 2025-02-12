@@ -18,9 +18,6 @@ function show(io::IO, p::TabulaeStringParser)
     print(io, msg)
 end
 
-
-
-
 """Get data source for parser.
 $(SIGNATURES)
 """
@@ -124,7 +121,7 @@ function analyses(stem::S, rules::Vector{Rule}; delimiter = "|")::Vector{Analysi
     generated = Analysis[]
 
 
-    initialCP = 64
+    #initialCP = 64
     if stem isa TabulaeNounStem
         classrules = filter(r -> inflectionclass(r) == inflectionclass(stem) && lmpGender(r) == lmpGender(stem), rules)
         for (idx, rule) in enumerate(classrules)
