@@ -25,8 +25,10 @@ import CitableParserBuilder: analyses
 import CitableParserBuilder: formurn
 import CitableParserBuilder: ruleurn
 import CitableParserBuilder: stemurn
+import CitableParserBuilder: expand
 import CitableParserBuilder: mtoken
 import CitableParserBuilder: objectid
+
 
 import CitableParserBuilder
 
