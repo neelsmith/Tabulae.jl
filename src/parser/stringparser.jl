@@ -185,7 +185,7 @@ function parsetoken(s::AbstractString, parser::TabulaeStringParser; verbose = fa
                 lastch = rng[1] - 1
                 mtkn = s[1:lastch]
                 otkn = s
-                verbose ? @warn("Tokens: $(tkn) + $(e)") : @debug("Tokens: $(tkn) + $(e)")
+                verbose ? @warn("Tokens: $(mtkn) + $(e)") : @debug("Tokens: $(mtkn) + $(e)")
                 for prs in parsetoken(mtkn, parser)
                     push!(results, analysisforencliticseq(prs, s, "A"))
                 end
